@@ -1,0 +1,16 @@
+{
+  "valid": true,
+  "checks": 335,
+  "box_count": 80,
+  "sorties": 25,
+  "weighted_tardiness_exact": 0,
+  "primary_objective_optimal": true,
+  "upper_bound_fraction": "1180607631/200000",
+  "upper_bound_s": 5903.038155,
+  "unrounded_makespan_fraction": "4427278615970680249/750000000000000",
+  "min_hard_slack_s": 458.9434082464341,
+  "minimum_soc_lower": 0.2009738280072747,
+  "new_solution_search": false,
+  "method": "same resource paths replayed with rational durations; sqrt enclosed upward at 1e-24; charge upper rounded to nanosecond; scalar UB rounded UP to microsecond",
+  "global_optimal_proved": false
+}

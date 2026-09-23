@@ -1,0 +1,12 @@
+{
+  "problem": "Q2, lexicographic weighted tardiness then makespan",
+  "zero_tardiness_optimal": true,
+  "certified_lower_bound_s": 5173.2737979,
+  "certified_upper_bound_s": 5903.038155,
+  "absolute_gap_s": 729.7643570999999,
+  "gap_over_upper_bound": 0.12362521432829869,
+  "global_optimal_proved": false,
+  "full_original_branch_price_check_implemented": false,
+  "implemented": "relaxed column generation with exhaustive mass-volume pricing, two rounded capacity cuts, exact integer dual verification, rational feasible schedule replay",
+  "model_scope": "fixed normalized geometry and established energy calibration; full energy before preparation; no communication"
+}

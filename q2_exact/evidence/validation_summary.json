@@ -1,0 +1,16 @@
+{
+ "stage":"Q2 exact-verification stage 1",
+ "upstream_incumbent_checks":3964,
+ "upstream_incumbent_failures":0,
+ "rational_upper_checks":335,
+ "unit_tests_passed":6,
+ "unit_tests_failed":0,
+ "clean_directory_rebuild":true,
+ "clean_rebuild_equal_objects":["rational_upper_bound.json","rational_upper_schedule.json","rational_certificate_cuts.json","rational_certificate_cuts_verification.json","status.json"],
+ "remote_tested_source_blob_comparisons":10,
+ "remote_tested_source_blob_mismatches":0,
+ "new_dem_extraction":false,
+ "new_feasible_solution_search":false,
+ "global_optimal_proved":false,
+ "upload_status":"input snapshot, independent upper/lower verifiers, audit, tests and bound results published; batch upload of two column-generation search source files was rejected; complete search source and full logs are in the conversation ZIP"
+}

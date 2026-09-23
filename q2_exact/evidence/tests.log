@@ -1,0 +1,41 @@
+test_certificate_tampering_rejected (test_certificates.Tests.test_certificate_tampering_rejected) ... ok
+test_current_certificates (test_certificates.Tests.test_current_certificates) ... ok
+test_duplicate_box_rejected (test_certificates.Tests.test_duplicate_box_rejected) ... ok
+test_price_against_exhaustive_small (test_certificates.Tests.test_price_against_exhaustive_small) ... ok
+test_rational_rounds_outward (test_certificates.Tests.test_rational_rounds_outward) ... ok
+test_wrong_snapshot_rejected (test_certificates.Tests.test_wrong_snapshot_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.316s
+
+OK
+{
+  "certificate_valid": true,
+  "arithmetic": "int64 guarded against overflow + Fraction for input rounding",
+  "lower_bound_exact_fraction": "51732737979/10000000",
+  "lower_bound_s": 5173.2737979,
+  "min_reduced_cost_integers": [
+    2670977400,
+    2185555526,
+    12700176224
+  ],
+  "fleet_dual_budget_numerator": 99999996,
+  "fleet_dual_budget_denominator": 100000000,
+  "original_global_optimal_proved": false
+}
+{
+  "valid": true,
+  "checks": 335,
+  "box_count": 80,
+  "sorties": 25,
+  "weighted_tardiness_exact": 0,
+  "primary_objective_optimal": true,
+  "upper_bound_fraction": "1180607631/200000",
+  "upper_bound_s": 5903.038155,
+  "unrounded_makespan_fraction": "4427278615970680249/750000000000000",
+  "min_hard_slack_s": 458.9434082464341,
+  "minimum_soc_lower": 0.2009738280072747,
+  "new_solution_search": false,
+  "method": "same resource paths replayed with rational durations; sqrt enclosed upward at 1e-24; charge upper rounded to nanosecond; scalar UB rounded UP to microsecond",
+  "global_optimal_proved": false
+}
