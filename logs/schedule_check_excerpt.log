@@ -1,0 +1,37 @@
+# Tail excerpt; complete original log retained in downloadable evidence package.
+     89882    4242     26713  69.56%   5582.952338     inf                  inf     9797    129   7374     1179k   103.9s
+     94715    4533     28232  69.71%   5582.952338     inf                  inf     9524     98   7354     1240k   109.0s
+     98664    4785     29470  70.45%   5602.485969     inf                  inf    10034    170   7129     1332k   116.7s
+    101826    5052     30463  70.92%   5611.091023     inf                  inf    10168     86   7781     1371k   120.0s
+
+Solving report
+  Status            Time limit reached
+  Primal bound      inf
+  Dual bound        5611.0910233
+  Gap               inf
+  P-D integral      0
+  Solution status   -
+  Timing            120.00 (total)
+                    0.00 (presolve)
+                    0.00 (solve)
+                    0.00 (postsolve)
+  Max sub-MIP depth 3
+  Nodes             101826
+  Repair LPs        0 (0 feasible; 0 iterations)
+  LP iterations     1371081 (total)
+                    479 (strong br.)
+                    164041 (separation)
+                    118375 (heuristics)
+FINAL {
+  "scope": "fixed-selected-sorties exact scheduling only",
+  "sorties": 25,
+  "variables": 359,
+  "constraints": 2197,
+  "status": 1,
+  "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+  "cap_s": 5903.038154627574,
+  "objective_s": null,
+  "solver_fixed_task_dual_bound_s": null,
+  "solver_gap": null,
+  "elapsed_s": 120.009846144
+}

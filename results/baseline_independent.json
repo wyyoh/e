@@ -1,0 +1,16 @@
+{
+  "checked_file": "baseline.json",
+  "checks": 373,
+  "failed": 0,
+  "failures": [],
+  "metrics": {
+    "makespan_s": 5903.038154627573,
+    "energy_kwh": 66.68205689601092,
+    "sorties": 25,
+    "weighted_tardiness_s": 0,
+    "min_hard_slack_s": 458.94340824643405,
+    "min_return_soc": 0.20097382800727448,
+    "used_aircraft": 8,
+    "used_batteries": 14
+  }
+}

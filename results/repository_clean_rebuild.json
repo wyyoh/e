@@ -1,0 +1,7 @@
+{
+  "exit_code": 0,
+  "elapsed_s": 17.60302209854126,
+  "proof_status_matches": true,
+  "starts_with": "only tracked source, encoded data parts, manifest and certificate; no prior expanded data, columns or compiled binaries",
+  "scope": "full lower-bound CG rebuilt plus incumbent, pricing unit tests and certificate; 90/120s primal searches not repeated"
+}

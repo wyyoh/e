@@ -1,0 +1,37 @@
+# Tail excerpt; complete original log retained in downloadable evidence package.
+
+Solving report
+  Status            Time limit reached
+  Primal bound      5743.17198667
+  Dual bound        5433.77354191
+  Gap               5.39%
+  P-D integral      4.9963353199
+  Solution status   feasible
+                    5743.17198667 (objective)
+                    0 (bound viol.)
+                    0 (int. viol.)
+                    0 (row viol.)
+  Timing            90.01 (total)
+                    0.00 (presolve)
+                    0.00 (solve)
+                    0.00 (postsolve)
+  Max sub-MIP depth 8
+  Nodes             4232
+  Repair LPs        0 (0 feasible; 0 iterations)
+  LP iterations     348071 (total)
+                    173286 (strong br.)
+                    7223 (separation)
+                    27609 (heuristics)
+FINAL {
+  "scope": "INCOMPLETE pool + workload relaxation; neither feasible schedule nor global lower bound",
+  "pool_columns": 1163,
+  "variables": 4118,
+  "constraints": 1230,
+  "status": 1,
+  "message": "Time limit reached. (HiGHS Status 13: Time limit reached)",
+  "elapsed_s": 90.05032367800004,
+  "objective_s": 5743.171986670201,
+  "solver_pool_dual_bound_s": 5433.773541906755,
+  "solver_pool_gap": 0.053872397602153295,
+  "selected_jobs": 25
+}

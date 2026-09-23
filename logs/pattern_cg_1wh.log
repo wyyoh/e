@@ -1,0 +1,19 @@
+{"iteration": 0, "columns": 314, "restricted_lp_s": 5521.879351352873, "verified_lb_s": -31872.64880810715, "pricing_minima": [-163182917640, -132477533061, -467433991904], "labels": [1536, 2760, 392871], "added": 218, "elapsed_s": 0.24015602800000124}
+{"iteration": 1, "columns": 532, "restricted_lp_s": 5486.50484145021, "verified_lb_s": -5219.42331515337, "pricing_minima": [-122081092836, -99167183980, -133824231773], "labels": [1432, 2355, 221972], "added": 175, "elapsed_s": 0.3705334630000152}
+{"iteration": 2, "columns": 707, "restricted_lp_s": 5374.597530371449, "verified_lb_s": -3561.1039483763097, "pricing_minima": [-45283012200, -36190371372, -111696534916], "labels": [793, 1158, 109496], "added": 100, "elapsed_s": 0.45489359999999124}
+{"iteration": 3, "columns": 807, "restricted_lp_s": 5374.597530371448, "verified_lb_s": 2076.6487041077753, "pricing_minima": [911544, 950940, -41224203070], "labels": [810, 1180, 107479], "added": 15, "elapsed_s": 0.5240910570000779}
+{"iteration": 4, "columns": 822, "restricted_lp_s": 5362.353417226202, "verified_lb_s": 5149.847600914394, "pricing_minima": [1205312, 450680, -2655935543], "labels": [810, 1131, 91602], "added": 1, "elapsed_s": 0.5880000500000051}
+{"iteration": 5, "columns": 823, "restricted_lp_s": 5362.114002271025, "verified_lb_s": 802.9693881836708, "pricing_minima": [-56989246568, -19954930616, -12614953136], "labels": [843, 1188, 93760], "added": 21, "elapsed_s": 0.6471944770000846}
+{"iteration": 6, "columns": 844, "restricted_lp_s": 5362.114002271025, "verified_lb_s": 5362.081790509257, "pricing_minima": [1205312, 450680, 1026536], "labels": [764, 1087, 96321], "added": 0, "elapsed_s": 0.7092720699999973}
+FINAL {
+  "scope": "global lower-bound relaxation (energy minorants, repeated visits/items, no scheduling/deadlines)",
+  "energy_quantum_kwh": 0.001,
+  "stop": "complete_integer_pricing_nonnegative",
+  "iterations": 7,
+  "columns_generated": 844,
+  "upper_bound_s": 5903.038154627574,
+  "verified_lower_bound_s": 5362.081790509257,
+  "global_optimality_proved": false,
+  "elapsed_s": 0.7094441740000548,
+  "gap_over_ub": 0.09164032993658432
+}

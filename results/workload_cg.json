@@ -1,0 +1,13 @@
+{
+  "scope": "full-80-box lower-bound relaxation; not full scheduling optimum",
+  "stop": "complete_pricing_no_negative_column",
+  "iterations": 14,
+  "columns_generated": 1699,
+  "restricted_lp_s": 4744.981711179828,
+  "pricing_minima": [-3.552713678800501e-14, -1.4210854715202004e-14, -1.7053025658242404e-13],
+  "verified_lower_bound_s": 4744.95319828081,
+  "upper_bound_s": 5903.038154627574,
+  "gap_over_ub": 0.19618456225611638,
+  "elapsed_s": 4.458907422999971,
+  "global_optimality_proved": false
+}

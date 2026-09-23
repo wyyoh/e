@@ -1,0 +1,13 @@
+{
+  "scope": "fixed-selected-sorties exact scheduling only",
+  "sorties": 25,
+  "variables": 359,
+  "constraints": 2197,
+  "status": 1,
+  "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+  "cap_s": 5903.038154627574,
+  "objective_s": null,
+  "solver_fixed_task_dual_bound_s": null,
+  "solver_gap": null,
+  "elapsed_s": 120.009846144
+}
