@@ -1,0 +1,11 @@
+{
+  "version": "Q2-GLOBAL-VERIFY-V1",
+  "all_80_boxes_included": true,
+  "weighted_tardiness_optimum": 0,
+  "verified_upper_bound_s": 5903.038154627573,
+  "verified_lower_bound_s": 5362.081790509257,
+  "normalized_gap_over_ub": 0.09164032993658418,
+  "global_optimality_proved": false,
+  "scope": "complete pricing for a relaxation; no full-original Branch-Price-and-Check certificate",
+  "tolerance_s": 1e-06
+}

@@ -1,0 +1,15 @@
+{
+  "version": "Q2-GLOBAL-VERIFY-V1",
+  "fixed_inputs_sha256": {
+    "data/instance.json": "ce9ed762a3e5a1b9bffb3614e82aa149002de2ec5ebe45ab88e2c0509a7628c6",
+    "data/baseline.json": "2fb72de004c0ed211b404d031637adb123203a9c3ff68fa7efb892c737b8f243"
+  },
+  "upstream_archive": "D题_第二问_ALNS对照与可复现代码.zip",
+  "original_model": "literature-derived cruise and additional-climb, full usable energy constant-payload range calibration; prepare-after-full-battery policy",
+  "software": {
+    "python": "3.13.5",
+    "scipy": "1.17.0",
+    "numpy": "2.3.5",
+    "numba": "0.65.1"
+  }
+}
