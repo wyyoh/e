@@ -1,0 +1,33 @@
+{
+  "version": "Q2-FINAL-INTEGRATION",
+  "weighted_tardiness_optimum": 0,
+  "verified_upper_bound_s": 5693.231489105106,
+  "verified_lower_bound_s": 5414.564006,
+  "gap_over_upper_bound": 0.04894715481679972,
+  "makespan_global_optimality_proven": false,
+  "full_lexicographic_global_optimality_proven": false,
+  "lower_bound_source": {
+    "branch": "research/q2-assistant-parallel-v5",
+    "audit": "assistant V5 retained V4 coverage certificate repricing",
+    "cutset_nodes": 126,
+    "splits": 125,
+    "repricing_calls": 378,
+    "failures": 0
+  },
+  "primal_source": {
+    "branch": "research/q2-assistant-parallel-v5",
+    "sorties": 23,
+    "energy_kwh": 66.21445957313102,
+    "hard_late_boxes": 0,
+    "used_aircraft": 8,
+    "used_batteries": 14
+  },
+  "closing_search_source": {
+    "branch": "research/q2-closing",
+    "neighborhoods": 330,
+    "infeasible_local_models": 329,
+    "timeout_unknown": 1,
+    "found_better_makespan": false,
+    "found_22_sortie_feasible_witness": true
+  }
+}
