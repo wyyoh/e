@@ -1,0 +1,138 @@
+[
+  {
+    "service_area": "S006",
+    "stage": "min_N",
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "success": true,
+    "mip_gap": 0.0,
+    "dual_bound": 1.0,
+    "objective_value": 1.0,
+    "objective_scale": 1,
+    "variables": 57,
+    "constraints": 4,
+    "runtime_s": 0.0018559999880380929,
+    "formulation": "exact_symmetry_quotient_binary_copies",
+    "raw_box_subset_patterns": 101,
+    "time_limit_s": 300,
+    "mip_node_count": 1,
+    "selected": [
+      {
+        "aircraft_type": "C",
+        "box_ids": [
+          "S006-MED-01",
+          "S006-FOD-01",
+          "S006-HYG-01",
+          "S006-WAT-01",
+          "S006-WAT-02",
+          "S006-WAT-03"
+        ]
+      }
+    ],
+    "n": 1,
+    "e": 2.5979878649119104,
+    "t": 1561.5538679616175
+  },
+  {
+    "service_area": "S006",
+    "stage": "fixed_N_min_E",
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "success": true,
+    "mip_gap": 0.0,
+    "dual_bound": 2597987.86491191,
+    "objective_value": 2597987.86491191,
+    "objective_scale": 1000000.0,
+    "variables": 57,
+    "constraints": 5,
+    "runtime_s": 0.0008187000057660043,
+    "formulation": "exact_symmetry_quotient_binary_copies",
+    "raw_box_subset_patterns": 101,
+    "time_limit_s": 300,
+    "mip_node_count": 0,
+    "selected": [
+      {
+        "aircraft_type": "C",
+        "box_ids": [
+          "S006-MED-01",
+          "S006-FOD-01",
+          "S006-HYG-01",
+          "S006-WAT-01",
+          "S006-WAT-02",
+          "S006-WAT-03"
+        ]
+      }
+    ],
+    "n": 1,
+    "e": 2.5979878649119104,
+    "t": 1561.5538679616175
+  },
+  {
+    "service_area": "S006",
+    "stage": "fixed_N_E_min_T",
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "success": true,
+    "mip_gap": 0.0,
+    "dual_bound": 1561.5538679616175,
+    "objective_value": 1561.5538679616175,
+    "objective_scale": 1,
+    "variables": 57,
+    "constraints": 6,
+    "runtime_s": 0.0007471999851986766,
+    "formulation": "exact_symmetry_quotient_binary_copies",
+    "raw_box_subset_patterns": 101,
+    "time_limit_s": 300,
+    "mip_node_count": 0,
+    "selected": [
+      {
+        "aircraft_type": "C",
+        "box_ids": [
+          "S006-MED-01",
+          "S006-FOD-01",
+          "S006-HYG-01",
+          "S006-WAT-01",
+          "S006-WAT-02",
+          "S006-WAT-03"
+        ]
+      }
+    ],
+    "n": 1,
+    "e": 2.5979878649119104,
+    "t": 1561.5538679616175
+  },
+  {
+    "service_area": "S006",
+    "stage": "min_T",
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "success": true,
+    "mip_gap": 0.0,
+    "dual_bound": 1561.5538679616175,
+    "objective_value": 1561.5538679616175,
+    "objective_scale": 1,
+    "variables": 57,
+    "constraints": 4,
+    "runtime_s": 0.0015403999714180827,
+    "formulation": "exact_symmetry_quotient_binary_copies",
+    "raw_box_subset_patterns": 101,
+    "time_limit_s": 300,
+    "mip_node_count": 1,
+    "selected": [
+      {
+        "aircraft_type": "C",
+        "box_ids": [
+          "S006-MED-01",
+          "S006-FOD-01",
+          "S006-HYG-01",
+          "S006-WAT-01",
+          "S006-WAT-02",
+          "S006-WAT-03"
+        ]
+      }
+    ],
+    "n": 1,
+    "e": 2.5979878649119104,
+    "t": 1561.5538679616175
+  }
+]
