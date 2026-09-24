@@ -77,7 +77,7 @@ def internal_check(plan,m):
         for rid in {j[resource] for j in plan}:
             chain=sorted([j for j in plan if j[resource]==rid],key=lambda j:j['start_s'])
             for a,b in zip(chain,chain[1:]):assert a[end]<=b['start_s']+1e-7
-    return {'box_count':80,'coverage':True,'physical_job_recomputations':len(plan),'aircraft_chains_checked':8,'battery_chains_checked':14,'zero_lateness':True}
+    return {'box_count':len(m.boxes),'coverage':True,'physical_job_recomputations':len(plan),'aircraft_chains_checked':len({j['aircraft'] for j in plan}),'battery_chains_checked':len({j['battery'] for j in plan}),'zero_lateness':True}
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('--seconds',type=float,default=15);p.add_argument('--max-neighborhoods',type=int,default=150);p.add_argument('--resume',action='store_true');p.add_argument('--manifest');a=p.parse_args()

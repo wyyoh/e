@@ -1,0 +1,22 @@
+{
+  "checks": 603,
+  "failed": 0,
+  "failures": [],
+  "metrics": {
+    "makespan_s": 5693.231489105107,
+    "energy_kwh": 66.22567019577264,
+    "sorties": 23,
+    "type_sorties": {
+      "A": 11,
+      "B": 6,
+      "C": 6
+    },
+    "weighted_tardiness_s": 0,
+    "late_boxes": 0,
+    "minimum_hard_deadline_slack_s": 202.09605769731206,
+    "minimum_expected_deadline_slack_s": 202.09605769731206,
+    "minimum_return_soc": 0.2009738280072063,
+    "used_aircraft": 8,
+    "used_batteries": 14
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "box_count": 80,
+  "coverage": true,
+  "physical_job_recomputations": 23,
+  "aircraft_chains_checked": 8,
+  "battery_chains_checked": 14,
+  "zero_lateness": true
+}

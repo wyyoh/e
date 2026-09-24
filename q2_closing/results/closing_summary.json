@@ -1,0 +1,22 @@
+{
+  "improved": false,
+  "retained_upper_bound_s": 5693.231489105107,
+  "inherited_v4_lower_bound_s": 5411.2162,
+  "gap_over_upper_bound": 0.04953518746686975,
+  "lower_bound_recertified_this_round": false,
+  "neighborhood_counts": {
+    "1-route/type": 6,
+    "2-route": 117,
+    "22-feasibility": 3,
+    "3-route": 204
+  },
+  "neighborhoods": 330,
+  "physical_route_evaluations": 1985044,
+  "milp_status_counts": {
+    "2": 329,
+    "1": 1
+  },
+  "sum_neighborhood_runtime_s": 137.34854740009177,
+  "main_search_stopped": true,
+  "twenty_two": "verified_feasible"
+}

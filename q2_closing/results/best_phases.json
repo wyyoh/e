@@ -1,0 +1,1407 @@
+[
+  {
+    "flight_id": "V4-08",
+    "kind": "prepare_load",
+    "start_s": 0.0,
+    "end_s": 360.0
+  },
+  {
+    "flight_id": "V4-08",
+    "leg": 0,
+    "kind": "climb",
+    "start_s": 360.0,
+    "end_s": 408.45220336914065
+  },
+  {
+    "flight_id": "V4-08",
+    "leg": 0,
+    "kind": "cruise",
+    "start_s": 408.45220336914065,
+    "end_s": 662.9504403290157
+  },
+  {
+    "flight_id": "V4-08",
+    "leg": 0,
+    "kind": "descent",
+    "start_s": 662.9504403290157,
+    "end_s": 698.5730843719845
+  },
+  {
+    "flight_id": "V4-08",
+    "leg": 0,
+    "kind": "handover",
+    "start_s": 698.5730843719845,
+    "end_s": 908.5730843719845
+  },
+  {
+    "flight_id": "V4-08",
+    "leg": 1,
+    "kind": "climb",
+    "start_s": 908.5730843719845,
+    "end_s": 938.2586210744585
+  },
+  {
+    "flight_id": "V4-08",
+    "leg": 1,
+    "kind": "cruise",
+    "start_s": 938.2586210744585,
+    "end_s": 1192.7568580343334
+  },
+  {
+    "flight_id": "V4-08",
+    "leg": 1,
+    "kind": "descent",
+    "start_s": 1192.7568580343334,
+    "end_s": 1250.8995020773023
+  },
+  {
+    "flight_id": "V4-17",
+    "kind": "prepare_load",
+    "start_s": 0.0,
+    "end_s": 360.0
+  },
+  {
+    "flight_id": "V4-17",
+    "leg": 0,
+    "kind": "climb",
+    "start_s": 360.0,
+    "end_s": 450.4939412434896
+  },
+  {
+    "flight_id": "V4-17",
+    "leg": 0,
+    "kind": "cruise",
+    "start_s": 450.4939412434896,
+    "end_s": 854.597472679248
+  },
+  {
+    "flight_id": "V4-17",
+    "leg": 0,
+    "kind": "descent",
+    "start_s": 854.597472679248,
+    "end_s": 873.5902021714355
+  },
+  {
+    "flight_id": "V4-17",
+    "leg": 0,
+    "kind": "handover",
+    "start_s": 873.5902021714355,
+    "end_s": 1083.5902021714355
+  },
+  {
+    "flight_id": "V4-17",
+    "leg": 1,
+    "kind": "climb",
+    "start_s": 1083.5902021714355,
+    "end_s": 1099.4174767482584
+  },
+  {
+    "flight_id": "V4-17",
+    "leg": 1,
+    "kind": "cruise",
+    "start_s": 1099.4174767482584,
+    "end_s": 1503.5210081840169
+  },
+  {
+    "flight_id": "V4-17",
+    "leg": 1,
+    "kind": "descent",
+    "start_s": 1503.5210081840169,
+    "end_s": 1612.1137376762044
+  },
+  {
+    "flight_id": "V4-15",
+    "kind": "prepare_load",
+    "start_s": 0.0,
+    "end_s": 360.0
+  },
+  {
+    "flight_id": "V4-15",
+    "leg": 0,
+    "kind": "climb",
+    "start_s": 360.0,
+    "end_s": 488.0910583496094
+  },
+  {
+    "flight_id": "V4-15",
+    "leg": 0,
+    "kind": "cruise",
+    "start_s": 488.0910583496094,
+    "end_s": 865.9627722508313
+  },
+  {
+    "flight_id": "V4-15",
+    "leg": 0,
+    "kind": "descent",
+    "start_s": 865.9627722508313,
+    "end_s": 931.3520422703626
+  },
+  {
+    "flight_id": "V4-15",
+    "leg": 0,
+    "kind": "handover",
+    "start_s": 931.3520422703626,
+    "end_s": 1141.3520422703627
+  },
+  {
+    "flight_id": "V4-15",
+    "leg": 1,
+    "kind": "climb",
+    "start_s": 1141.3520422703627,
+    "end_s": 1195.8431006199721
+  },
+  {
+    "flight_id": "V4-15",
+    "leg": 1,
+    "kind": "cruise",
+    "start_s": 1195.8431006199721,
+    "end_s": 1573.714814521194
+  },
+  {
+    "flight_id": "V4-15",
+    "leg": 1,
+    "kind": "descent",
+    "start_s": 1573.714814521194,
+    "end_s": 1727.4240845407253
+  },
+  {
+    "flight_id": "V4-21",
+    "kind": "prepare_load",
+    "start_s": 0.0,
+    "end_s": 390.0
+  },
+  {
+    "flight_id": "V4-21",
+    "leg": 0,
+    "kind": "climb",
+    "start_s": 390.0,
+    "end_s": 445.8872517903646
+  },
+  {
+    "flight_id": "V4-21",
+    "leg": 0,
+    "kind": "cruise",
+    "start_s": 445.8872517903646,
+    "end_s": 679.8934378471391
+  },
+  {
+    "flight_id": "V4-21",
+    "leg": 0,
+    "kind": "descent",
+    "start_s": 679.8934378471391,
+    "end_s": 713.1981399955766
+  },
+  {
+    "flight_id": "V4-21",
+    "leg": 0,
+    "kind": "handover",
+    "start_s": 713.1981399955766,
+    "end_s": 893.1981399955766
+  },
+  {
+    "flight_id": "V4-21",
+    "leg": 1,
+    "kind": "climb",
+    "start_s": 893.1981399955766,
+    "end_s": 942.8777786674516
+  },
+  {
+    "flight_id": "V4-21",
+    "leg": 1,
+    "kind": "cruise",
+    "start_s": 942.8777786674516,
+    "end_s": 1393.1889976390153
+  },
+  {
+    "flight_id": "V4-21",
+    "leg": 1,
+    "kind": "descent",
+    "start_s": 1393.1889976390153,
+    "end_s": 1446.3245640452653
+  },
+  {
+    "flight_id": "V4-21",
+    "leg": 1,
+    "kind": "handover",
+    "start_s": 1446.3245640452653,
+    "end_s": 1656.3245640452653
+  },
+  {
+    "flight_id": "V4-21",
+    "leg": 2,
+    "kind": "climb",
+    "start_s": 1656.3245640452653,
+    "end_s": 1712.9709527985206
+  },
+  {
+    "flight_id": "V4-21",
+    "leg": 2,
+    "kind": "cruise",
+    "start_s": 1712.9709527985206,
+    "end_s": 2355.862323558255
+  },
+  {
+    "flight_id": "V4-21",
+    "leg": 2,
+    "kind": "descent",
+    "start_s": 2355.862323558255,
+    "end_s": 2464.077990062161
+  },
+  {
+    "flight_id": "V4-16",
+    "kind": "prepare_load",
+    "start_s": 1250.899502077302,
+    "end_s": 1640.899502077302
+  },
+  {
+    "flight_id": "V4-16",
+    "leg": 0,
+    "kind": "climb",
+    "start_s": 1640.899502077302,
+    "end_s": 1696.0758061951406
+  },
+  {
+    "flight_id": "V4-16",
+    "leg": 0,
+    "kind": "cruise",
+    "start_s": 1696.0758061951406,
+    "end_s": 2171.504553051531
+  },
+  {
+    "flight_id": "V4-16",
+    "leg": 0,
+    "kind": "descent",
+    "start_s": 2171.504553051531,
+    "end_s": 2196.796117992937
+  },
+  {
+    "flight_id": "V4-16",
+    "leg": 0,
+    "kind": "handover",
+    "start_s": 2196.796117992937,
+    "end_s": 2376.796117992937
+  },
+  {
+    "flight_id": "V4-16",
+    "leg": 1,
+    "kind": "climb",
+    "start_s": 2376.796117992937,
+    "end_s": 2409.558335196713
+  },
+  {
+    "flight_id": "V4-16",
+    "leg": 1,
+    "kind": "cruise",
+    "start_s": 2409.558335196713,
+    "end_s": 2553.270602048934
+  },
+  {
+    "flight_id": "V4-16",
+    "leg": 1,
+    "kind": "descent",
+    "start_s": 2553.270602048934,
+    "end_s": 2596.7852626934655
+  },
+  {
+    "flight_id": "V4-16",
+    "leg": 1,
+    "kind": "handover",
+    "start_s": 2596.7852626934655,
+    "end_s": 2776.7852626934655
+  },
+  {
+    "flight_id": "V4-16",
+    "leg": 2,
+    "kind": "climb",
+    "start_s": 2776.7852626934655,
+    "end_s": 2829.3553717429445
+  },
+  {
+    "flight_id": "V4-16",
+    "leg": 2,
+    "kind": "cruise",
+    "start_s": 2829.3553717429445,
+    "end_s": 3207.699811443313
+  },
+  {
+    "flight_id": "V4-16",
+    "leg": 2,
+    "kind": "descent",
+    "start_s": 3207.699811443313,
+    "end_s": 3217.903942302688
+  },
+  {
+    "flight_id": "V4-16",
+    "leg": 2,
+    "kind": "handover",
+    "start_s": 3217.903942302688,
+    "end_s": 3397.903942302688
+  },
+  {
+    "flight_id": "V4-16",
+    "leg": 3,
+    "kind": "climb",
+    "start_s": 3397.903942302688,
+    "end_s": 3413.731216879511
+  },
+  {
+    "flight_id": "V4-16",
+    "leg": 3,
+    "kind": "cruise",
+    "start_s": 3413.731216879511,
+    "end_s": 3817.8347483152693
+  },
+  {
+    "flight_id": "V4-16",
+    "leg": 3,
+    "kind": "descent",
+    "start_s": 3817.8347483152693,
+    "end_s": 3926.427477807457
+  },
+  {
+    "flight_id": "V4-19",
+    "kind": "prepare_load",
+    "start_s": 1612.113737676263,
+    "end_s": 1972.113737676263
+  },
+  {
+    "flight_id": "V4-19",
+    "leg": 0,
+    "kind": "climb",
+    "start_s": 1972.113737676263,
+    "end_s": 2100.2047960258724
+  },
+  {
+    "flight_id": "V4-19",
+    "leg": 0,
+    "kind": "cruise",
+    "start_s": 2100.2047960258724,
+    "end_s": 2478.0765099270943
+  },
+  {
+    "flight_id": "V4-19",
+    "leg": 0,
+    "kind": "descent",
+    "start_s": 2478.0765099270943,
+    "end_s": 2543.4657799466254
+  },
+  {
+    "flight_id": "V4-19",
+    "leg": 0,
+    "kind": "handover",
+    "start_s": 2543.4657799466254,
+    "end_s": 2753.4657799466254
+  },
+  {
+    "flight_id": "V4-19",
+    "leg": 1,
+    "kind": "climb",
+    "start_s": 2753.4657799466254,
+    "end_s": 2807.9568382962348
+  },
+  {
+    "flight_id": "V4-19",
+    "leg": 1,
+    "kind": "cruise",
+    "start_s": 2807.9568382962348,
+    "end_s": 3185.8285521974567
+  },
+  {
+    "flight_id": "V4-19",
+    "leg": 1,
+    "kind": "descent",
+    "start_s": 3185.8285521974567,
+    "end_s": 3339.537822216988
+  },
+  {
+    "flight_id": "V4-20",
+    "kind": "prepare_load",
+    "start_s": 2121.3550272147386,
+    "end_s": 2481.3550272147386
+  },
+  {
+    "flight_id": "V4-20",
+    "leg": 0,
+    "kind": "climb",
+    "start_s": 2481.3550272147386,
+    "end_s": 2571.5347493013273
+  },
+  {
+    "flight_id": "V4-20",
+    "leg": 0,
+    "kind": "cruise",
+    "start_s": 2571.5347493013273,
+    "end_s": 3214.4261200610617
+  },
+  {
+    "flight_id": "V4-20",
+    "leg": 0,
+    "kind": "descent",
+    "start_s": 3214.4261200610617,
+    "end_s": 3282.401786564968
+  },
+  {
+    "flight_id": "V4-20",
+    "leg": 0,
+    "kind": "handover",
+    "start_s": 3282.401786564968,
+    "end_s": 3492.401786564968
+  },
+  {
+    "flight_id": "V4-20",
+    "leg": 1,
+    "kind": "climb",
+    "start_s": 3492.401786564968,
+    "end_s": 3549.048175318223
+  },
+  {
+    "flight_id": "V4-20",
+    "leg": 1,
+    "kind": "cruise",
+    "start_s": 3549.048175318223,
+    "end_s": 4191.939546077957
+  },
+  {
+    "flight_id": "V4-20",
+    "leg": 1,
+    "kind": "descent",
+    "start_s": 4191.939546077957,
+    "end_s": 4300.155212581863
+  },
+  {
+    "flight_id": "V4-18",
+    "kind": "prepare_load",
+    "start_s": 2697.242479319197,
+    "end_s": 3087.242479319197
+  },
+  {
+    "flight_id": "V4-18",
+    "leg": 0,
+    "kind": "climb",
+    "start_s": 3087.242479319197,
+    "end_s": 3231.9438587137283
+  },
+  {
+    "flight_id": "V4-18",
+    "leg": 0,
+    "kind": "cruise",
+    "start_s": 3231.9438587137283,
+    "end_s": 3837.2087967601624
+  },
+  {
+    "flight_id": "V4-18",
+    "leg": 0,
+    "kind": "descent",
+    "start_s": 3837.2087967601624,
+    "end_s": 3926.5304520336
+  },
+  {
+    "flight_id": "V4-18",
+    "leg": 0,
+    "kind": "handover",
+    "start_s": 3926.5304520336,
+    "end_s": 4136.530452033599
+  },
+  {
+    "flight_id": "V4-18",
+    "leg": 1,
+    "kind": "climb",
+    "start_s": 4136.530452033599,
+    "end_s": 4186.330073615631
+  },
+  {
+    "flight_id": "V4-18",
+    "leg": 1,
+    "kind": "cruise",
+    "start_s": 4186.330073615631,
+    "end_s": 4404.36067795397
+  },
+  {
+    "flight_id": "V4-18",
+    "leg": 1,
+    "kind": "descent",
+    "start_s": 4404.36067795397,
+    "end_s": 4409.720223852407
+  },
+  {
+    "flight_id": "V4-18",
+    "leg": 1,
+    "kind": "handover",
+    "start_s": 4409.720223852407,
+    "end_s": 4589.720223852407
+  },
+  {
+    "flight_id": "V4-18",
+    "leg": 2,
+    "kind": "climb",
+    "start_s": 4589.720223852407,
+    "end_s": 4622.153308976105
+  },
+  {
+    "flight_id": "V4-18",
+    "leg": 2,
+    "kind": "cruise",
+    "start_s": 4622.153308976105,
+    "end_s": 5122.935223277766
+  },
+  {
+    "flight_id": "V4-18",
+    "leg": 2,
+    "kind": "descent",
+    "start_s": 5122.935223277766,
+    "end_s": 5300.574925426204
+  },
+  {
+    "flight_id": "V4-01",
+    "kind": "prepare_load",
+    "start_s": 3339.5378222170475,
+    "end_s": 3699.5378222170475
+  },
+  {
+    "flight_id": "V4-01",
+    "leg": 0,
+    "kind": "climb",
+    "start_s": 3699.5378222170475,
+    "end_s": 3847.5709073407456
+  },
+  {
+    "flight_id": "V4-01",
+    "leg": 0,
+    "kind": "cruise",
+    "start_s": 3847.5709073407456,
+    "end_s": 4348.352821642407
+  },
+  {
+    "flight_id": "V4-01",
+    "leg": 0,
+    "kind": "descent",
+    "start_s": 4348.352821642407,
+    "end_s": 4387.272523790845
+  },
+  {
+    "flight_id": "V4-01",
+    "leg": 0,
+    "kind": "handover",
+    "start_s": 4387.272523790845,
+    "end_s": 4597.272523790845
+  },
+  {
+    "flight_id": "V4-01",
+    "leg": 1,
+    "kind": "climb",
+    "start_s": 4597.272523790845,
+    "end_s": 4629.7056089145435
+  },
+  {
+    "flight_id": "V4-01",
+    "leg": 1,
+    "kind": "cruise",
+    "start_s": 4629.7056089145435,
+    "end_s": 5130.487523216205
+  },
+  {
+    "flight_id": "V4-01",
+    "leg": 1,
+    "kind": "descent",
+    "start_s": 5130.487523216205,
+    "end_s": 5308.127225364642
+  },
+  {
+    "flight_id": "V4-22",
+    "kind": "prepare_load",
+    "start_s": 3926.4274778074787,
+    "end_s": 4286.427477807479
+  },
+  {
+    "flight_id": "V4-22",
+    "leg": 0,
+    "kind": "climb",
+    "start_s": 4286.427477807479,
+    "end_s": 4341.603781925317
+  },
+  {
+    "flight_id": "V4-22",
+    "leg": 0,
+    "kind": "cruise",
+    "start_s": 4341.603781925317,
+    "end_s": 4817.032528781707
+  },
+  {
+    "flight_id": "V4-22",
+    "leg": 0,
+    "kind": "descent",
+    "start_s": 4817.032528781707,
+    "end_s": 4842.324093723113
+  },
+  {
+    "flight_id": "V4-22",
+    "leg": 0,
+    "kind": "handover",
+    "start_s": 4842.324093723113,
+    "end_s": 5052.324093723113
+  },
+  {
+    "flight_id": "V4-22",
+    "leg": 1,
+    "kind": "climb",
+    "start_s": 5052.324093723113,
+    "end_s": 5073.400397840952
+  },
+  {
+    "flight_id": "V4-22",
+    "leg": 1,
+    "kind": "cruise",
+    "start_s": 5073.400397840952,
+    "end_s": 5548.829144697342
+  },
+  {
+    "flight_id": "V4-22",
+    "leg": 1,
+    "kind": "descent",
+    "start_s": 5548.829144697342,
+    "end_s": 5615.040709638748
+  },
+  {
+    "flight_id": "V4-23",
+    "kind": "prepare_load",
+    "start_s": 4389.970246872384,
+    "end_s": 4749.970246872384
+  },
+  {
+    "flight_id": "V4-23",
+    "leg": 0,
+    "kind": "climb",
+    "start_s": 4749.970246872384,
+    "end_s": 4805.857498662749
+  },
+  {
+    "flight_id": "V4-23",
+    "leg": 0,
+    "kind": "cruise",
+    "start_s": 4805.857498662749,
+    "end_s": 5039.863684719524
+  },
+  {
+    "flight_id": "V4-23",
+    "leg": 0,
+    "kind": "descent",
+    "start_s": 5039.863684719524,
+    "end_s": 5073.168386867961
+  },
+  {
+    "flight_id": "V4-23",
+    "leg": 0,
+    "kind": "handover",
+    "start_s": 5073.168386867961,
+    "end_s": 5283.168386867961
+  },
+  {
+    "flight_id": "V4-23",
+    "leg": 1,
+    "kind": "climb",
+    "start_s": 5283.168386867961,
+    "end_s": 5310.9223053249925
+  },
+  {
+    "flight_id": "V4-23",
+    "leg": 1,
+    "kind": "cruise",
+    "start_s": 5310.9223053249925,
+    "end_s": 5544.928491381767
+  },
+  {
+    "flight_id": "V4-23",
+    "leg": 1,
+    "kind": "descent",
+    "start_s": 5544.928491381767,
+    "end_s": 5611.993193530205
+  },
+  {
+    "flight_id": "V4-05",
+    "kind": "prepare_load",
+    "start_s": 0.0,
+    "end_s": 390.0
+  },
+  {
+    "flight_id": "V4-05",
+    "leg": 0,
+    "kind": "climb",
+    "start_s": 390.0,
+    "end_s": 485.20033162434896
+  },
+  {
+    "flight_id": "V4-05",
+    "leg": 0,
+    "kind": "cruise",
+    "start_s": 485.20033162434896,
+    "end_s": 977.8997774228271
+  },
+  {
+    "flight_id": "V4-05",
+    "leg": 0,
+    "kind": "descent",
+    "start_s": 977.8997774228271,
+    "end_s": 1031.300175372046
+  },
+  {
+    "flight_id": "V4-05",
+    "leg": 0,
+    "kind": "handover",
+    "start_s": 1031.300175372046,
+    "end_s": 1271.300175372046
+  },
+  {
+    "flight_id": "V4-05",
+    "leg": 1,
+    "kind": "climb",
+    "start_s": 1271.300175372046,
+    "end_s": 1315.800506996395
+  },
+  {
+    "flight_id": "V4-05",
+    "leg": 1,
+    "kind": "cruise",
+    "start_s": 1315.800506996395,
+    "end_s": 1808.499952794873
+  },
+  {
+    "flight_id": "V4-05",
+    "leg": 1,
+    "kind": "descent",
+    "start_s": 1808.499952794873,
+    "end_s": 1922.7403507440918
+  },
+  {
+    "flight_id": "V4-10",
+    "kind": "prepare_load",
+    "start_s": 0.0,
+    "end_s": 390.0
+  },
+  {
+    "flight_id": "V4-10",
+    "leg": 0,
+    "kind": "climb",
+    "start_s": 390.0,
+    "end_s": 544.7491292317709
+  },
+  {
+    "flight_id": "V4-10",
+    "leg": 0,
+    "kind": "cruise",
+    "start_s": 544.7491292317709,
+    "end_s": 906.0559197793136
+  },
+  {
+    "flight_id": "V4-10",
+    "leg": 0,
+    "kind": "descent",
+    "start_s": 906.0559197793136,
+    "end_s": 1002.4348748574387
+  },
+  {
+    "flight_id": "V4-10",
+    "leg": 0,
+    "kind": "handover",
+    "start_s": 1002.4348748574387,
+    "end_s": 1242.4348748574387
+  },
+  {
+    "flight_id": "V4-10",
+    "leg": 1,
+    "kind": "climb",
+    "start_s": 1242.4348748574387,
+    "end_s": 1322.7506707558762
+  },
+  {
+    "flight_id": "V4-10",
+    "leg": 1,
+    "kind": "cruise",
+    "start_s": 1322.7506707558762,
+    "end_s": 1684.057461303419
+  },
+  {
+    "flight_id": "V4-10",
+    "leg": 1,
+    "kind": "descent",
+    "start_s": 1684.057461303419,
+    "end_s": 1869.7564163815439
+  },
+  {
+    "flight_id": "V4-11",
+    "kind": "prepare_load",
+    "start_s": 1869.7564163815437,
+    "end_s": 2229.7564163815437
+  },
+  {
+    "flight_id": "V4-11",
+    "leg": 0,
+    "kind": "climb",
+    "start_s": 2229.7564163815437,
+    "end_s": 2319.9361384681324
+  },
+  {
+    "flight_id": "V4-11",
+    "leg": 0,
+    "kind": "cruise",
+    "start_s": 2319.9361384681324,
+    "end_s": 2834.24923507592
+  },
+  {
+    "flight_id": "V4-11",
+    "leg": 0,
+    "kind": "descent",
+    "start_s": 2834.24923507592,
+    "end_s": 2902.224901579826
+  },
+  {
+    "flight_id": "V4-11",
+    "leg": 0,
+    "kind": "handover",
+    "start_s": 2902.224901579826,
+    "end_s": 3112.224901579826
+  },
+  {
+    "flight_id": "V4-11",
+    "leg": 1,
+    "kind": "climb",
+    "start_s": 3112.224901579826,
+    "end_s": 3168.871290333081
+  },
+  {
+    "flight_id": "V4-11",
+    "leg": 1,
+    "kind": "cruise",
+    "start_s": 3168.871290333081,
+    "end_s": 3683.1843869408685
+  },
+  {
+    "flight_id": "V4-11",
+    "leg": 1,
+    "kind": "descent",
+    "start_s": 3683.1843869408685,
+    "end_s": 3791.4000534447746
+  },
+  {
+    "flight_id": "V4-12",
+    "kind": "prepare_load",
+    "start_s": 1922.7403507440445,
+    "end_s": 2312.7403507440445
+  },
+  {
+    "flight_id": "V4-12",
+    "leg": 0,
+    "kind": "climb",
+    "start_s": 2312.7403507440445,
+    "end_s": 2415.385862625555
+  },
+  {
+    "flight_id": "V4-12",
+    "leg": 0,
+    "kind": "cruise",
+    "start_s": 2415.385862625555,
+    "end_s": 2734.3521860684873
+  },
+  {
+    "flight_id": "V4-12",
+    "leg": 0,
+    "kind": "descent",
+    "start_s": 2734.3521860684873,
+    "end_s": 2767.9668003262996
+  },
+  {
+    "flight_id": "V4-12",
+    "leg": 0,
+    "kind": "handover",
+    "start_s": 2767.9668003262996,
+    "end_s": 3007.9668003262996
+  },
+  {
+    "flight_id": "V4-12",
+    "leg": 1,
+    "kind": "climb",
+    "start_s": 3007.9668003262996,
+    "end_s": 3035.9789788744765
+  },
+  {
+    "flight_id": "V4-12",
+    "leg": 1,
+    "kind": "cruise",
+    "start_s": 3035.9789788744765,
+    "end_s": 3354.9453023174087
+  },
+  {
+    "flight_id": "V4-12",
+    "leg": 1,
+    "kind": "descent",
+    "start_s": 3354.9453023174087,
+    "end_s": 3478.1199165752214
+  },
+  {
+    "flight_id": "V4-13",
+    "kind": "prepare_load",
+    "start_s": 3478.1199165752214,
+    "end_s": 3868.1199165752214
+  },
+  {
+    "flight_id": "V4-13",
+    "leg": 0,
+    "kind": "climb",
+    "start_s": 3868.1199165752214,
+    "end_s": 3949.856360667018
+  },
+  {
+    "flight_id": "V4-13",
+    "leg": 0,
+    "kind": "cruise",
+    "start_s": 3949.856360667018,
+    "end_s": 4488.458568161874
+  },
+  {
+    "flight_id": "V4-13",
+    "leg": 0,
+    "kind": "descent",
+    "start_s": 4488.458568161874,
+    "end_s": 4529.26230107203
+  },
+  {
+    "flight_id": "V4-13",
+    "leg": 0,
+    "kind": "handover",
+    "start_s": 4529.26230107203,
+    "end_s": 4769.26230107203
+  },
+  {
+    "flight_id": "V4-13",
+    "leg": 1,
+    "kind": "climb",
+    "start_s": 4769.26230107203,
+    "end_s": 4803.265411830494
+  },
+  {
+    "flight_id": "V4-13",
+    "leg": 1,
+    "kind": "cruise",
+    "start_s": 4803.265411830494,
+    "end_s": 5341.86761932535
+  },
+  {
+    "flight_id": "V4-13",
+    "leg": 1,
+    "kind": "descent",
+    "start_s": 5341.86761932535,
+    "end_s": 5439.9513522355055
+  },
+  {
+    "flight_id": "V4-14",
+    "kind": "prepare_load",
+    "start_s": 3791.4000534448223,
+    "end_s": 4151.400053444822
+  },
+  {
+    "flight_id": "V4-14",
+    "leg": 0,
+    "kind": "climb",
+    "start_s": 4151.400053444822,
+    "end_s": 4233.13649753662
+  },
+  {
+    "flight_id": "V4-14",
+    "leg": 0,
+    "kind": "cruise",
+    "start_s": 4233.13649753662,
+    "end_s": 4771.738705031476
+  },
+  {
+    "flight_id": "V4-14",
+    "leg": 0,
+    "kind": "descent",
+    "start_s": 4771.738705031476,
+    "end_s": 4812.542437941632
+  },
+  {
+    "flight_id": "V4-14",
+    "leg": 0,
+    "kind": "handover",
+    "start_s": 4812.542437941632,
+    "end_s": 5022.542437941632
+  },
+  {
+    "flight_id": "V4-14",
+    "leg": 1,
+    "kind": "climb",
+    "start_s": 5022.542437941632,
+    "end_s": 5056.545548700095
+  },
+  {
+    "flight_id": "V4-14",
+    "leg": 1,
+    "kind": "cruise",
+    "start_s": 5056.545548700095,
+    "end_s": 5595.147756194951
+  },
+  {
+    "flight_id": "V4-14",
+    "leg": 1,
+    "kind": "descent",
+    "start_s": 5595.147756194951,
+    "end_s": 5693.231489105107
+  },
+  {
+    "flight_id": "V4-02",
+    "kind": "prepare_load",
+    "start_s": 0.0,
+    "end_s": 450.0
+  },
+  {
+    "flight_id": "V4-02",
+    "leg": 0,
+    "kind": "climb",
+    "start_s": 450.0,
+    "end_s": 508.14264404296875
+  },
+  {
+    "flight_id": "V4-02",
+    "leg": 0,
+    "kind": "cruise",
+    "start_s": 508.14264404296875,
+    "end_s": 711.7412336108688
+  },
+  {
+    "flight_id": "V4-02",
+    "leg": 0,
+    "kind": "descent",
+    "start_s": 711.7412336108688,
+    "end_s": 756.2695386645797
+  },
+  {
+    "flight_id": "V4-02",
+    "leg": 0,
+    "kind": "handover",
+    "start_s": 756.2695386645797,
+    "end_s": 1116.2695386645796
+  },
+  {
+    "flight_id": "V4-02",
+    "leg": 1,
+    "kind": "climb",
+    "start_s": 1116.2695386645796,
+    "end_s": 1151.8921827075483
+  },
+  {
+    "flight_id": "V4-02",
+    "leg": 1,
+    "kind": "cruise",
+    "start_s": 1151.8921827075483,
+    "end_s": 1355.4907722754483
+  },
+  {
+    "flight_id": "V4-02",
+    "leg": 1,
+    "kind": "descent",
+    "start_s": 1355.4907722754483,
+    "end_s": 1428.1690773291593
+  },
+  {
+    "flight_id": "V4-03",
+    "kind": "prepare_load",
+    "start_s": 0.0,
+    "end_s": 540.0
+  },
+  {
+    "flight_id": "V4-03",
+    "leg": 0,
+    "kind": "climb",
+    "start_s": 540.0,
+    "end_s": 598.1426440429688
+  },
+  {
+    "flight_id": "V4-03",
+    "leg": 0,
+    "kind": "cruise",
+    "start_s": 598.1426440429688,
+    "end_s": 801.7412336108688
+  },
+  {
+    "flight_id": "V4-03",
+    "leg": 0,
+    "kind": "descent",
+    "start_s": 801.7412336108688,
+    "end_s": 846.2695386645797
+  },
+  {
+    "flight_id": "V4-03",
+    "leg": 0,
+    "kind": "handover",
+    "start_s": 846.2695386645797,
+    "end_s": 1314.2695386645796
+  },
+  {
+    "flight_id": "V4-03",
+    "leg": 1,
+    "kind": "climb",
+    "start_s": 1314.2695386645796,
+    "end_s": 1349.8921827075483
+  },
+  {
+    "flight_id": "V4-03",
+    "leg": 1,
+    "kind": "cruise",
+    "start_s": 1349.8921827075483,
+    "end_s": 1553.4907722754483
+  },
+  {
+    "flight_id": "V4-03",
+    "leg": 1,
+    "kind": "descent",
+    "start_s": 1553.4907722754483,
+    "end_s": 1626.1690773291593
+  },
+  {
+    "flight_id": "V4-04",
+    "kind": "prepare_load",
+    "start_s": 1428.1690773291593,
+    "end_s": 1908.1690773291593
+  },
+  {
+    "flight_id": "V4-04",
+    "leg": 0,
+    "kind": "climb",
+    "start_s": 1908.1690773291593,
+    "end_s": 2003.5282130713467
+  },
+  {
+    "flight_id": "V4-04",
+    "leg": 0,
+    "kind": "cruise",
+    "start_s": 2003.5282130713467,
+    "end_s": 2215.9420916322338
+  },
+  {
+    "flight_id": "V4-04",
+    "leg": 0,
+    "kind": "descent",
+    "start_s": 2215.9420916322338,
+    "end_s": 2241.591011309968
+  },
+  {
+    "flight_id": "V4-04",
+    "leg": 0,
+    "kind": "handover",
+    "start_s": 2241.591011309968,
+    "end_s": 2637.591011309968
+  },
+  {
+    "flight_id": "V4-04",
+    "leg": 1,
+    "kind": "climb",
+    "start_s": 2637.591011309968,
+    "end_s": 2658.1101470521558
+  },
+  {
+    "flight_id": "V4-04",
+    "leg": 1,
+    "kind": "cruise",
+    "start_s": 2658.1101470521558,
+    "end_s": 2870.524025613043
+  },
+  {
+    "flight_id": "V4-04",
+    "leg": 1,
+    "kind": "descent",
+    "start_s": 2870.524025613043,
+    "end_s": 2989.7229452907773
+  },
+  {
+    "flight_id": "V4-06",
+    "kind": "prepare_load",
+    "start_s": 1626.1690773291593,
+    "end_s": 2136.1690773291593
+  },
+  {
+    "flight_id": "V4-06",
+    "leg": 0,
+    "kind": "climb",
+    "start_s": 2136.1690773291593,
+    "end_s": 2208.6707789893157
+  },
+  {
+    "flight_id": "V4-06",
+    "leg": 0,
+    "kind": "cruise",
+    "start_s": 2208.6707789893157,
+    "end_s": 2702.758142661571
+  },
+  {
+    "flight_id": "V4-06",
+    "leg": 0,
+    "kind": "descent",
+    "start_s": 2702.758142661571,
+    "end_s": 2747.4852697367664
+  },
+  {
+    "flight_id": "V4-06",
+    "leg": 0,
+    "kind": "handover",
+    "start_s": 2747.4852697367664,
+    "end_s": 3179.4852697367664
+  },
+  {
+    "flight_id": "V4-06",
+    "leg": 1,
+    "kind": "climb",
+    "start_s": 3179.4852697367664,
+    "end_s": 3215.2669713969226
+  },
+  {
+    "flight_id": "V4-06",
+    "leg": 1,
+    "kind": "cruise",
+    "start_s": 3215.2669713969226,
+    "end_s": 3709.354335069178
+  },
+  {
+    "flight_id": "V4-06",
+    "leg": 1,
+    "kind": "descent",
+    "start_s": 3709.354335069178,
+    "end_s": 3799.9814621443734
+  },
+  {
+    "flight_id": "V4-07",
+    "kind": "prepare_load",
+    "start_s": 2989.7229452907886,
+    "end_s": 3499.7229452907886
+  },
+  {
+    "flight_id": "V4-07",
+    "leg": 0,
+    "kind": "climb",
+    "start_s": 3499.7229452907886,
+    "end_s": 3653.43221531032
+  },
+  {
+    "flight_id": "V4-07",
+    "leg": 0,
+    "kind": "cruise",
+    "start_s": 3653.43221531032,
+    "end_s": 3955.7295864312973
+  },
+  {
+    "flight_id": "V4-07",
+    "leg": 0,
+    "kind": "descent",
+    "start_s": 3955.7295864312973,
+    "end_s": 4037.4661739557114
+  },
+  {
+    "flight_id": "V4-07",
+    "leg": 0,
+    "kind": "handover",
+    "start_s": 4037.4661739557114,
+    "end_s": 4253.466173955711
+  },
+  {
+    "flight_id": "V4-07",
+    "leg": 1,
+    "kind": "climb",
+    "start_s": 4253.466173955711,
+    "end_s": 4278.345910283836
+  },
+  {
+    "flight_id": "V4-07",
+    "leg": 1,
+    "kind": "cruise",
+    "start_s": 4278.345910283836,
+    "end_s": 4460.630018570677
+  },
+  {
+    "flight_id": "V4-07",
+    "leg": 1,
+    "kind": "descent",
+    "start_s": 4460.630018570677,
+    "end_s": 4496.729688980833
+  },
+  {
+    "flight_id": "V4-07",
+    "leg": 1,
+    "kind": "handover",
+    "start_s": 4496.729688980833,
+    "end_s": 4892.729688980833
+  },
+  {
+    "flight_id": "V4-07",
+    "leg": 2,
+    "kind": "climb",
+    "start_s": 4892.729688980833,
+    "end_s": 4982.051344254271
+  },
+  {
+    "flight_id": "V4-07",
+    "leg": 2,
+    "kind": "cruise",
+    "start_s": 4982.051344254271,
+    "end_s": 5466.263294691418
+  },
+  {
+    "flight_id": "V4-07",
+    "leg": 2,
+    "kind": "descent",
+    "start_s": 5466.263294691418,
+    "end_s": 5683.315363783215
+  },
+  {
+    "flight_id": "V4-09",
+    "kind": "prepare_load",
+    "start_s": 3799.9814621443734,
+    "end_s": 4279.981462144373
+  },
+  {
+    "flight_id": "V4-09",
+    "leg": 0,
+    "kind": "climb",
+    "start_s": 4279.981462144373,
+    "end_s": 4359.465817613123
+  },
+  {
+    "flight_id": "V4-09",
+    "leg": 0,
+    "kind": "cruise",
+    "start_s": 4359.465817613123,
+    "end_s": 4711.50628007135
+  },
+  {
+    "flight_id": "V4-09",
+    "leg": 0,
+    "kind": "descent",
+    "start_s": 4711.50628007135,
+    "end_s": 4777.211724407288
+  },
+  {
+    "flight_id": "V4-09",
+    "leg": 0,
+    "kind": "handover",
+    "start_s": 4777.211724407288,
+    "end_s": 5173.211724407288
+  },
+  {
+    "flight_id": "V4-09",
+    "leg": 1,
+    "kind": "climb",
+    "start_s": 5173.211724407288,
+    "end_s": 5225.776079876038
+  },
+  {
+    "flight_id": "V4-09",
+    "leg": 1,
+    "kind": "cruise",
+    "start_s": 5225.776079876038,
+    "end_s": 5577.816542334265
+  },
+  {
+    "flight_id": "V4-09",
+    "leg": 1,
+    "kind": "descent",
+    "start_s": 5577.816542334265,
+    "end_s": 5677.171986670202
+  }
+]
