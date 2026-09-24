@@ -1,0 +1,13 @@
+{
+  "distance_method": "aeqd_o01",
+  "dem_segment": "continuous AEQD straight segment inverse-transformed into original EPSG:4326 raster",
+  "distance_provenance": "Explicit user clarification: WGS84 AEQD centred on O01; independent GeographicLib WGS84 distance cross-check only",
+  "gravity_mps2": 9.81,
+  "gravity_provenance": "origin/research/q2-proof-unified-v3:docs/EXPERIMENT_V1.md",
+  "base_reserve": 0.2,
+  "energy_tol_kwh": 1e-10,
+  "time_tol_s": 1e-7,
+  "mass_tol_kg": 1e-9,
+  "volume_tol_m3": 1e-12,
+  "threshold_tol": 2e-14
+}
