@@ -1,0 +1,26 @@
+{
+  "scope": "S001 C-type same-route same-box-count comparison",
+  "pairs": [
+    {
+      "new_id": "Q2-ASSISTANT-V5-07",
+      "old_id": "Q2-V4-07",
+      "old_mass": 70,
+      "new_mass": 68,
+      "old_energy": 2.720392502747031,
+      "new_energy": 2.6647831410542304,
+      "removed": ["S001-FOD-02"],
+      "added": ["S001-HYG-01"]
+    },
+    {
+      "new_id": "Q2-ASSISTANT-V5-08",
+      "old_id": "Q2-V4-08",
+      "old_mass": 62,
+      "new_mass": 64,
+      "old_energy": 2.521179646872999,
+      "new_energy": 2.565578385924292,
+      "removed": ["S001-HYG-01"],
+      "added": ["S001-FOD-02"]
+    }
+  ],
+  "net_energy_change_kwh": -0.011210622641513623
+}
