@@ -1,0 +1,74 @@
+{
+  "version": "D-PAPER-EVIDENCE-V1",
+  "source_merge_commit": "8ba4cf4e0efe9dcd8ab9b3f995f8142900689edb",
+  "Q1": {
+    "commit": "f905acc8482966cef7f65be0caeda69fb9f02b5c",
+    "path": "problems/D/q1",
+    "objective_order": ["sorties", "energy", "sum_work_time"],
+    "sorties": 18,
+    "energy_kwh": 59.131296022053,
+    "sum_work_min": 546.266929148593,
+    "optimizer_rerun_this_session": false
+  },
+  "Q2": {
+    "primal_commit": "bec0b12020bad8fba26f5dac2c7a3746d4512940",
+    "path": "q2_final/solution/main_23/decisions.json",
+    "decision_sha256": "d9dfee9ab3103af6a387db3467b0b93dfed5173fc264c86cb9afcbfd472402fa",
+    "proof_version": "Q2-EVIDENCE-V6",
+    "sorties": 23,
+    "makespan_s": 5693.231489105106,
+    "energy_kwh": 66.21445957313102,
+    "certified_lower_bound_s": 5432.287415,
+    "rational_upper_bound_s": 5693.231490,
+    "gap_over_upper_bound": 0.045834088330738154,
+    "global_makespan_optimality_proven": false
+  },
+  "Q3": {
+    "version": "Q3-FINAL-V1",
+    "primary": "time",
+    "path": "problems/D/q3/release_final/primary",
+    "transport_sorties": 23,
+    "relay_sorties": 4,
+    "joint_makespan_s": 6340.439338658365,
+    "total_energy_kwh": 69.30853085578303,
+    "extra_loss_db": 0,
+    "min_hard_slack_s": 30,
+    "global_optimality_proven": false,
+    "finite_relay_count_scope": "5755 fixed candidate locations and fixed geometric requirements: lower bound 4; not free continuous placement"
+  },
+  "Q4": {
+    "version": "Q4-SENSITIVITY-V2",
+    "primary_model": "strict",
+    "upstream": "Q3-FINAL-V1/time/extra_loss_0dB",
+    "vector_order": ["A_plane","B_plane","C_plane","A_battery","B_battery","C_battery","R_plane","R_component"],
+    "K2_shortage_vector": [0,0,1,0,0,1,0,0],
+    "K3_shortage_vector": [1,0,3,1,0,2,0,0],
+    "strict_partitions": {"2":3,"3":1},
+    "counterfactual_partitions": {"2":511,"3":9330},
+    "copy_model_not_official_primary": true
+  },
+  "archives_supplied_in_companion_package_not_remote_code": [
+    {"filename":"D题_Q2证据强化V6_代码证书与复核.zip","sha256":"8d4f13751c647315350ad95b34d61239eab08df097e8eb8ed5f70373acb0d2f4","size_bytes":10357922,"target_root":"q2_evidence_v6"},
+    {"filename":"D题_Q3正式封口_FINAL_源码结果与交接.zip","sha256":"97f5ea8018a557d604bee87d6886675ecf7648f035e8df0f47f20ff6e7fbc56b","size_bytes":33080082,"target_root":"problems/D/q3"},
+    {"filename":"D题_Q4稳健性完善V2_源码结果与验证.zip","sha256":"9c8d1a6410c2de0a410318fc3525dc162613deabf4ba9dd1d59cdeb98437f5b4","size_bytes":4518170,"target_root":"problems/D/q4"}
+  ],
+  "session_acceptance": {
+    "Q2_upper_checks":3712,
+    "Q2_upper_rational_checks":173,
+    "Q2_certificates_repriced":685,
+    "Q2_full_pricing_calls":2055,
+    "Q3_primary_checks":19215,
+    "Q3_independent_points":36995,
+    "Q3_key_json_identical":7,
+    "Q4_assertions":253349,
+    "Q4_partitions":9845,
+    "Q4_matching_subproblems":8184,
+    "Q4_full_witnesses":31,
+    "Q4_inventory_scenarios":32,
+    "cross_version_checks":123,
+    "Q3_Q4_source_files":58,
+    "failures":0,
+    "all_four_questions_single_full_replay_completed":false,
+    "remaining":"Run frozen Q1 and then the assembled complete orchestrator. No fresh Q2/Q3 search was started."
+  }
+}
