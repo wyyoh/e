@@ -1,0 +1,10 @@
+{
+  "source": "assistant V5 retained V4 certificate re-audit",
+  "verified_lower_bound_s": 5414.564006,
+  "cutset_nodes": 126,
+  "splits": 125,
+  "repricing_calls": 378,
+  "failures": 0,
+  "forged_dual_rejected": true,
+  "note": "Summary only. The historical source branches and V5 proof code are preserved in the merged Git history; this integration does not claim makespan global optimality."
+}
