@@ -1,0 +1,10 @@
+{
+  "source": "q2_closing/results/raw_input_audit.json",
+  "attachment_field_checks": 959,
+  "undirected_legs": 120,
+  "directed_legs": 240,
+  "independent_full_cell_agreement": true,
+  "max_snapshot_distance_difference_m": 1.046373654389754e-09,
+  "changed_max_dem_legs": [],
+  "minimum_monotonic_margin": 0.003625781558344314
+}
