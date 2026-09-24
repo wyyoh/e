@@ -1,0 +1,20 @@
+{
+  "version": "Q2-FINAL-INTEGRATION",
+  "hard_late_boxes": 0,
+  "hard_lateness_s": 0.0,
+  "weighted_tardiness_s": 0.0,
+  "late_boxes": 0,
+  "max_tardiness_s": 0.0,
+  "makespan_s": 5693.231489105106,
+  "energy_kwh": 66.21445957313102,
+  "sorties": 23,
+  "last_delivery_s": 5283.168386867932,
+  "min_hard_slack_s": 202.09605769731934,
+  "min_return_soc": 0.2009738280072748,
+  "type_counts": {"A": 11, "B": 6, "C": 6},
+  "used_aircraft": 8,
+  "used_batteries": 14,
+  "source": "assistant V5 validated incumbent",
+  "replaces_for_final_comparison_only": "q2_closing 23-sortie incumbent at same makespan with 66.225670195773 kWh",
+  "global_makespan_optimality_proven": false
+}
