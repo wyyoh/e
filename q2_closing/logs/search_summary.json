@@ -1,0 +1,8 @@
+{
+  "elapsed_s": 129.02506120002363,
+  "neighborhoods": 330,
+  "improved": false,
+  "stopped_by": "bounded_search_budget",
+  "max_neighborhoods": 180,
+  "seconds_per_master": 8.0
+}

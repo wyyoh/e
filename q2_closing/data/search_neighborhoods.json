@@ -1,0 +1,2843 @@
+[
+  {
+    "kind": "1-route/type",
+    "removed": [
+      "V4-05"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "1-route/type",
+    "removed": [
+      "V4-10"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "1-route/type",
+    "removed": [
+      "V4-11"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "1-route/type",
+    "removed": [
+      "V4-12"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "1-route/type",
+    "removed": [
+      "V4-13"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "1-route/type",
+    "removed": [
+      "V4-14"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-10",
+      "V4-17"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-11",
+      "V4-20"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-11",
+      "V4-06"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-13",
+      "V4-14"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-05",
+      "V4-16"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-12",
+      "V4-17"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "22-feasibility",
+    "removed": [
+      "V4-13",
+      "V4-14",
+      "V4-09"
+    ],
+    "max_sorties": 22
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-13",
+      "V4-14",
+      "V4-09"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "22-feasibility",
+    "removed": [
+      "V4-05",
+      "V4-16",
+      "V4-17"
+    ],
+    "max_sorties": 22
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-05",
+      "V4-16",
+      "V4-17"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "22-feasibility",
+    "removed": [
+      "V4-10",
+      "V4-12",
+      "V4-17"
+    ],
+    "max_sorties": 22
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-12",
+      "V4-17"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-01",
+      "V4-05"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-01",
+      "V4-10"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-01",
+      "V4-11"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-01",
+      "V4-12"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-01",
+      "V4-13"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-01",
+      "V4-14"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-02",
+      "V4-05"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-02",
+      "V4-10"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-02",
+      "V4-11"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-02",
+      "V4-12"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-02",
+      "V4-13"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-02",
+      "V4-14"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-03",
+      "V4-05"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-03",
+      "V4-10"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-03",
+      "V4-11"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-03",
+      "V4-12"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-03",
+      "V4-13"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-03",
+      "V4-14"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-04",
+      "V4-05"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-04",
+      "V4-10"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-04",
+      "V4-11"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-04",
+      "V4-12"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-04",
+      "V4-13"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-04",
+      "V4-14"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-05",
+      "V4-06"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-05",
+      "V4-07"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-05",
+      "V4-08"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-05",
+      "V4-09"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-05",
+      "V4-10"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-05",
+      "V4-11"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-05",
+      "V4-12"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-05",
+      "V4-13"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-05",
+      "V4-14"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-05",
+      "V4-15"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-05",
+      "V4-17"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-05",
+      "V4-18"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-05",
+      "V4-19"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-05",
+      "V4-20"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-05",
+      "V4-21"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-05",
+      "V4-22"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-05",
+      "V4-23"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-06",
+      "V4-10"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-06",
+      "V4-12"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-06",
+      "V4-13"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-06",
+      "V4-14"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-07",
+      "V4-10"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-07",
+      "V4-11"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-07",
+      "V4-12"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-07",
+      "V4-13"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-07",
+      "V4-14"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-08",
+      "V4-10"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-08",
+      "V4-11"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-08",
+      "V4-12"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-08",
+      "V4-13"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-08",
+      "V4-14"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-09",
+      "V4-10"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-09",
+      "V4-11"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-09",
+      "V4-12"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-09",
+      "V4-13"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-09",
+      "V4-14"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-10",
+      "V4-11"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-10",
+      "V4-12"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-10",
+      "V4-13"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-10",
+      "V4-14"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-10",
+      "V4-15"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-10",
+      "V4-16"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-10",
+      "V4-18"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-10",
+      "V4-19"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-10",
+      "V4-20"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-10",
+      "V4-21"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-10",
+      "V4-22"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-10",
+      "V4-23"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-11",
+      "V4-12"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-11",
+      "V4-13"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-11",
+      "V4-14"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-11",
+      "V4-15"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-11",
+      "V4-16"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-11",
+      "V4-17"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-11",
+      "V4-18"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-11",
+      "V4-19"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-11",
+      "V4-21"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-11",
+      "V4-22"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-11",
+      "V4-23"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-12",
+      "V4-13"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-12",
+      "V4-14"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-12",
+      "V4-15"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-12",
+      "V4-16"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-12",
+      "V4-18"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-12",
+      "V4-19"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-12",
+      "V4-20"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-12",
+      "V4-21"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-12",
+      "V4-22"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-12",
+      "V4-23"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-13",
+      "V4-15"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-13",
+      "V4-16"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-13",
+      "V4-17"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-13",
+      "V4-18"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-13",
+      "V4-19"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-13",
+      "V4-20"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-13",
+      "V4-21"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-13",
+      "V4-22"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-13",
+      "V4-23"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-14",
+      "V4-15"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-14",
+      "V4-16"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-14",
+      "V4-17"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-14",
+      "V4-18"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-14",
+      "V4-19"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-14",
+      "V4-20"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-14",
+      "V4-21"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-14",
+      "V4-22"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "2-route",
+    "removed": [
+      "V4-14",
+      "V4-23"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-01",
+      "V4-08"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-01",
+      "V4-15"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-01",
+      "V4-16"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-01",
+      "V4-17"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-01",
+      "V4-18"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-01",
+      "V4-19"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-01",
+      "V4-20"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-01",
+      "V4-21"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-01",
+      "V4-22"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-01",
+      "V4-23"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-08",
+      "V4-15"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-08",
+      "V4-16"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-08",
+      "V4-17"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-08",
+      "V4-18"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-08",
+      "V4-19"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-08",
+      "V4-20"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-08",
+      "V4-21"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-08",
+      "V4-22"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-08",
+      "V4-23"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-15",
+      "V4-16"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-15",
+      "V4-17"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-06",
+      "V4-20"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-09",
+      "V4-20"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-06",
+      "V4-22"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-09",
+      "V4-22"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-09",
+      "V4-13"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-09",
+      "V4-14"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-09",
+      "V4-20"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-09",
+      "V4-01"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-06",
+      "V4-13"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-06",
+      "V4-14"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-06",
+      "V4-13"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-06",
+      "V4-20"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-02",
+      "V4-08"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-02",
+      "V4-20"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-02",
+      "V4-22"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-03",
+      "V4-08"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-03",
+      "V4-20"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-03",
+      "V4-22"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-06",
+      "V4-08"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-09",
+      "V4-08"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-06",
+      "V4-22"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-09",
+      "V4-22"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-02",
+      "V4-08"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-02",
+      "V4-12"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-02",
+      "V4-17"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-03",
+      "V4-08"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-03",
+      "V4-12"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-03",
+      "V4-17"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-02",
+      "V4-05"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-03",
+      "V4-05"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-06",
+      "V4-05"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-09",
+      "V4-23"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-02",
+      "V4-21"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-02",
+      "V4-23"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-03",
+      "V4-21"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-03",
+      "V4-23"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-09",
+      "V4-21"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-09",
+      "V4-23"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-09",
+      "V4-21"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-02",
+      "V4-05"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-03",
+      "V4-05"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-09",
+      "V4-05"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-02",
+      "V4-01"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-03",
+      "V4-01"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-09",
+      "V4-01"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-06",
+      "V4-21"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-06",
+      "V4-23"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-06",
+      "V4-21"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-06",
+      "V4-23"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-09",
+      "V4-15"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-09",
+      "V4-19"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-02",
+      "V4-13"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-02",
+      "V4-14"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-03",
+      "V4-13"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-03",
+      "V4-14"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-02",
+      "V4-01"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-02",
+      "V4-08"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-02",
+      "V4-13"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-02",
+      "V4-15"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-02",
+      "V4-19"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-02",
+      "V4-20"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-02",
+      "V4-21"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-02",
+      "V4-22"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-02",
+      "V4-23"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-03",
+      "V4-01"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-03",
+      "V4-08"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-03",
+      "V4-13"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-03",
+      "V4-15"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-03",
+      "V4-19"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-03",
+      "V4-20"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-03",
+      "V4-21"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-03",
+      "V4-22"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-03",
+      "V4-23"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-06",
+      "V4-08"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-09",
+      "V4-08"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-02",
+      "V4-16"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-02",
+      "V4-17"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-03",
+      "V4-16"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-03",
+      "V4-17"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-06",
+      "V4-16"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-06",
+      "V4-17"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-09",
+      "V4-16"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-09",
+      "V4-17"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-07",
+      "V4-01"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-07",
+      "V4-13"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-07",
+      "V4-15"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-07",
+      "V4-18"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-07",
+      "V4-19"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-07",
+      "V4-23"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-02",
+      "V4-22"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-03",
+      "V4-22"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-09",
+      "V4-18"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-02",
+      "V4-15"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-02",
+      "V4-19"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-03",
+      "V4-15"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-03",
+      "V4-19"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-09",
+      "V4-15"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-09",
+      "V4-19"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-02",
+      "V4-23"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-03",
+      "V4-23"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-06",
+      "V4-01"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-06",
+      "V4-01"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-02",
+      "V4-12"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-03",
+      "V4-12"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-06",
+      "V4-12"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-09",
+      "V4-12"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-02",
+      "V4-16"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-03",
+      "V4-16"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-06",
+      "V4-05"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-06",
+      "V4-08"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-06",
+      "V4-12"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-06",
+      "V4-16"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-06",
+      "V4-17"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-06",
+      "V4-22"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-06",
+      "V4-23"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-02",
+      "V4-18"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-03",
+      "V4-18"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-07",
+      "V4-08"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-02",
+      "V4-05"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-03",
+      "V4-05"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-06",
+      "V4-05"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-09",
+      "V4-05"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-09",
+      "V4-05"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-09",
+      "V4-08"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-09",
+      "V4-12"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-09",
+      "V4-16"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-09",
+      "V4-17"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-09",
+      "V4-22"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-09",
+      "V4-23"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-02",
+      "V4-16"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-02",
+      "V4-17"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-03",
+      "V4-16"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-03",
+      "V4-17"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-06",
+      "V4-16"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-06",
+      "V4-17"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-09",
+      "V4-16"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-09",
+      "V4-17"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-04",
+      "V4-01"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-04",
+      "V4-08"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-04",
+      "V4-13"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-04",
+      "V4-15"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-04",
+      "V4-17"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-04",
+      "V4-18"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-04",
+      "V4-19"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-04",
+      "V4-22"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-04",
+      "V4-23"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-06",
+      "V4-15"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-06",
+      "V4-19"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-06",
+      "V4-15"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-06",
+      "V4-19"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-02",
+      "V4-18"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-03",
+      "V4-18"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-07",
+      "V4-01"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-07",
+      "V4-08"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-07",
+      "V4-13"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-07",
+      "V4-14"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-07",
+      "V4-15"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-07",
+      "V4-18"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-07",
+      "V4-19"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-07",
+      "V4-20"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-07",
+      "V4-21"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-07",
+      "V4-23"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-09",
+      "V4-18"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-07",
+      "V4-20"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-07",
+      "V4-21"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-04",
+      "V4-08"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-04",
+      "V4-12"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-04",
+      "V4-17"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-04",
+      "V4-22"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-04",
+      "V4-23"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-04",
+      "V4-01"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-04",
+      "V4-08"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-04",
+      "V4-12"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-04",
+      "V4-13"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-04",
+      "V4-14"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-04",
+      "V4-15"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-04",
+      "V4-17"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-04",
+      "V4-18"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-04",
+      "V4-19"
+    ],
+    "max_sorties": 23
+  },
+  {
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-04",
+      "V4-20"
+    ],
+    "max_sorties": 23
+  }
+]

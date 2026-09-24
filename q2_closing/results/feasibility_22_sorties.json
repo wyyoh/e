@@ -1,0 +1,167 @@
+{
+  "status": "verified_feasible",
+  "proven_infeasible": false,
+  "globally_optimal": false,
+  "metrics": {
+    "makespan_s": 7767.058323174642,
+    "energy_kwh": 66.32302412562316,
+    "sorties": 22,
+    "type_sorties": {
+      "A": 11,
+      "B": 4,
+      "C": 7
+    },
+    "weighted_tardiness_s": 0,
+    "late_boxes": 0,
+    "minimum_hard_deadline_slack_s": 645.0171340362012,
+    "minimum_expected_deadline_slack_s": 309.91807652020634,
+    "minimum_return_soc": 0.2009738280072063,
+    "used_aircraft": 8,
+    "used_batteries": 14
+  },
+  "removed": [
+    "V4-13",
+    "V4-14"
+  ],
+  "replacement": {
+    "flight_id": "FEAS22-MERGED",
+    "type": "C",
+    "box_ids": [
+      "S008-FOD-01",
+      "S008-HYG-01",
+      "S008-MED-01",
+      "S008-WAT-01",
+      "S008-WAT-02"
+    ],
+    "route": [
+      "S008"
+    ],
+    "payload_kg": 45,
+    "volume_m3": 0.129,
+    "energy_kwh": 5.836011711483562,
+    "return_soc": 0.27049853606455476,
+    "energy_budget_kwh": 6.4,
+    "duration_s": 2199.7012130854146,
+    "prep_load_s": 450,
+    "flight_s": 1389.7012130854143,
+    "handover_s": 360.0,
+    "charge_s": 2413.919838526798,
+    "latest_start_s": 5702.309393457293,
+    "delivery_offsets": {
+      "S008-FOD-01": 1497.6906065427072,
+      "S008-HYG-01": 1497.6906065427072,
+      "S008-MED-01": 1497.6906065427072,
+      "S008-WAT-01": 1497.6906065427072,
+      "S008-WAT-02": 1497.6906065427072
+    },
+    "legs": [
+      {
+        "origin": "O01",
+        "destination": "S008",
+        "distance_m": 8079.033112422834,
+        "max_dem_m": 322.9093322753906,
+        "up_m": 245.20933227539064,
+        "down_m": 102.00933227539065,
+        "payload_kg": 45,
+        "flight_s": 687.6906065427072,
+        "departure_offset_s": 450,
+        "arrival_offset_s": 1137.6906065427072,
+        "energy_kwh": 3.323168587826716
+      },
+      {
+        "origin": "S008",
+        "destination": "O01",
+        "distance_m": 8079.033112422834,
+        "max_dem_m": 322.9093322753906,
+        "up_m": 102.00933227539065,
+        "down_m": 245.20933227539064,
+        "payload_kg": 0,
+        "flight_s": 702.0106065427071,
+        "departure_offset_s": 1497.6906065427072,
+        "arrival_offset_s": 2199.7012130854146,
+        "energy_kwh": 2.512843123656846
+      }
+    ],
+    "feasible": true,
+    "failures": []
+  },
+  "independent_validation": {
+    "checks": 580,
+    "failed": 0,
+    "failures": [],
+    "metrics": {
+      "makespan_s": 7767.058323174642,
+      "energy_kwh": 66.32302412562316,
+      "sorties": 22,
+      "type_sorties": {
+        "A": 11,
+        "B": 4,
+        "C": 7
+      },
+      "weighted_tardiness_s": 0,
+      "late_boxes": 0,
+      "minimum_hard_deadline_slack_s": 645.0171340362012,
+      "minimum_expected_deadline_slack_s": 309.91807652020634,
+      "minimum_return_soc": 0.2009738280072063,
+      "used_aircraft": 8,
+      "used_batteries": 14
+    }
+  },
+  "improves_current_upper_bound": false,
+  "scope": "constructive 22-flight feasibility witness; no minimal-makespan claim",
+  "earlier_improvement_capped_search": {
+    "status": "search_failed_to_find_feasible",
+    "proven_infeasible": false,
+    "globally_optimal": false,
+    "scope": "bounded local neighborhoods, not complete 22-sortie space",
+    "attempts": [
+      {
+        "index": 12,
+        "kind": "22-feasibility",
+        "removed": [
+          "V4-13",
+          "V4-14",
+          "V4-09"
+        ],
+        "max_sorties": 22,
+        "pool_size": 213,
+        "physical_evaluations": 4004,
+        "workload_pruned": 2549,
+        "energy": 1242,
+        "outcome": "finite_pool_no_candidate",
+        "elapsed_s": 0.09475859999656677
+      },
+      {
+        "index": 14,
+        "kind": "22-feasibility",
+        "removed": [
+          "V4-05",
+          "V4-16",
+          "V4-17"
+        ],
+        "max_sorties": 22,
+        "pool_size": 172,
+        "physical_evaluations": 330,
+        "energy": 91,
+        "workload_pruned": 67,
+        "outcome": "finite_pool_no_candidate",
+        "elapsed_s": 0.010936300037428737
+      },
+      {
+        "index": 16,
+        "kind": "22-feasibility",
+        "removed": [
+          "V4-10",
+          "V4-12",
+          "V4-17"
+        ],
+        "max_sorties": 22,
+        "pool_size": 218,
+        "physical_evaluations": 218,
+        "outcome": "finite_pool_no_candidate",
+        "elapsed_s": 0.018428599985782057
+      }
+    ],
+    "reason": "Bounded search budget reached"
+  }
+}

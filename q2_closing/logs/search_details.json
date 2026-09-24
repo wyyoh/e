@@ -1,0 +1,4952 @@
+[
+  {
+    "neighborhood": 0,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 81,
+      "constraints": 89,
+      "elapsed_s": 0.13980300002731383,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 1,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 81,
+      "constraints": 89,
+      "elapsed_s": 0.06035470002098009,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 2,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 73,
+      "constraints": 89,
+      "elapsed_s": 0.012982499960344285,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 3,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 93,
+      "constraints": 89,
+      "elapsed_s": 0.00807169999461621,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 4,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 81,
+      "constraints": 89,
+      "elapsed_s": 0.007508700015023351,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 5,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 73,
+      "constraints": 89,
+      "elapsed_s": 0.12033679999876767,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 6,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 183,
+      "constraints": 89,
+      "elapsed_s": 0.059211800049524754,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 7,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 107,
+      "constraints": 89,
+      "elapsed_s": 0.004639999999199063,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 8,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 401,
+      "constraints": 89,
+      "elapsed_s": 0.018468600057531148,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 9,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 99,
+      "constraints": 89,
+      "elapsed_s": 0.15478300000540912,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 10,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 339,
+      "constraints": 89,
+      "elapsed_s": 0.05011369998101145,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 11,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 159,
+      "constraints": 89,
+      "elapsed_s": 0.034879100043326616,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 12,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 501,
+      "constraints": 89,
+      "elapsed_s": 0.010208899970166385,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 13,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 501,
+      "constraints": 89,
+      "elapsed_s": 0.07130040001356974,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 14,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 569,
+      "constraints": 89,
+      "elapsed_s": 0.002664599975105375,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 15,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 569,
+      "constraints": 89,
+      "elapsed_s": 0.518807000014931,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 16,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 639,
+      "constraints": 89,
+      "elapsed_s": 0.009555099997669458,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 17,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 639,
+      "constraints": 89,
+      "elapsed_s": 0.05266089999349788,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 18,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 119,
+      "constraints": 89,
+      "elapsed_s": 0.1534086000174284,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 19,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 119,
+      "constraints": 89,
+      "elapsed_s": 0.10661210003308952,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 20,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 95,
+      "constraints": 89,
+      "elapsed_s": 0.010531399981118739,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 21,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 119,
+      "constraints": 89,
+      "elapsed_s": 0.006141800025943667,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 22,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 127,
+      "constraints": 89,
+      "elapsed_s": 0.008781699987594038,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 23,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 95,
+      "constraints": 89,
+      "elapsed_s": 0.004047199967317283,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 24,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 251,
+      "constraints": 89,
+      "elapsed_s": 0.02395740000065416,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 25,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 191,
+      "constraints": 89,
+      "elapsed_s": 0.013618999975733459,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 26,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 215,
+      "constraints": 89,
+      "elapsed_s": 0.04730019997805357,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 27,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 203,
+      "constraints": 89,
+      "elapsed_s": 0.005090599996037781,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 28,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 243,
+      "constraints": 89,
+      "elapsed_s": 0.05743099999381229,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 29,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 183,
+      "constraints": 89,
+      "elapsed_s": 0.01877209998201579,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 30,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 933,
+      "constraints": 89,
+      "elapsed_s": 0.13419579999754205,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 31,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 837,
+      "constraints": 89,
+      "elapsed_s": 0.042037000006530434,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 32,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 887,
+      "constraints": 89,
+      "elapsed_s": 0.18821089999983087,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 33,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 861,
+      "constraints": 89,
+      "elapsed_s": 0.03505179996136576,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 34,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 927,
+      "constraints": 89,
+      "elapsed_s": 0.1368129999609664,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 35,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 829,
+      "constraints": 89,
+      "elapsed_s": 0.041494400007650256,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 36,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 309,
+      "constraints": 89,
+      "elapsed_s": 0.07318279996979982,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 37,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 309,
+      "constraints": 89,
+      "elapsed_s": 0.010603000002447516,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 38,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 301,
+      "constraints": 89,
+      "elapsed_s": 0.09830810001585633,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 39,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 327,
+      "constraints": 89,
+      "elapsed_s": 0.019994899979792535,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 40,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 309,
+      "constraints": 89,
+      "elapsed_s": 0.017766299948561937,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 41,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 301,
+      "constraints": 89,
+      "elapsed_s": 0.013384099991526455,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 42,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 417,
+      "constraints": 89,
+      "elapsed_s": 0.11848320002900437,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 43,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 515,
+      "constraints": 89,
+      "elapsed_s": 0.019793500017840415,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 44,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 183,
+      "constraints": 89,
+      "elapsed_s": 0.06822019995888695,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 45,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 277,
+      "constraints": 89,
+      "elapsed_s": 0.18410350003978238,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 46,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 137,
+      "constraints": 89,
+      "elapsed_s": 0.013283699983730912,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 47,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 89,
+      "constraints": 89,
+      "elapsed_s": 0.013373699970543385,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 48,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 185,
+      "constraints": 89,
+      "elapsed_s": 0.05798430001595989,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 49,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 93,
+      "constraints": 89,
+      "elapsed_s": 0.010261400020681322,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 50,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 85,
+      "constraints": 89,
+      "elapsed_s": 0.010364099987782538,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 51,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 119,
+      "constraints": 89,
+      "elapsed_s": 0.3437275000032969,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 52,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 199,
+      "constraints": 89,
+      "elapsed_s": 0.06372750003356487,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 53,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 149,
+      "constraints": 89,
+      "elapsed_s": 0.01207199995405972,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 54,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 119,
+      "constraints": 89,
+      "elapsed_s": 0.010042000038083643,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 55,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 119,
+      "constraints": 89,
+      "elapsed_s": 0.013188200013246387,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 56,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 197,
+      "constraints": 89,
+      "elapsed_s": 0.010843599971849471,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 57,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 199,
+      "constraints": 89,
+      "elapsed_s": 0.08839420002186671,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 58,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 155,
+      "constraints": 89,
+      "elapsed_s": 0.045321399986278266,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 59,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 417,
+      "constraints": 89,
+      "elapsed_s": 0.02005930000450462,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 60,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 415,
+      "constraints": 89,
+      "elapsed_s": 0.03893350000726059,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 61,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 417,
+      "constraints": 89,
+      "elapsed_s": 0.02457379997940734,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 62,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 401,
+      "constraints": 89,
+      "elapsed_s": 0.011372100037988275,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 63,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 515,
+      "constraints": 89,
+      "elapsed_s": 0.015822799992747605,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 64,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 499,
+      "constraints": 89,
+      "elapsed_s": 0.16777510003885254,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 65,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 513,
+      "constraints": 89,
+      "elapsed_s": 0.01781930000288412,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 66,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 539,
+      "constraints": 89,
+      "elapsed_s": 0.1936602999921888,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 67,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 499,
+      "constraints": 89,
+      "elapsed_s": 0.016041700029745698,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 68,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 159,
+      "constraints": 89,
+      "elapsed_s": 0.07176169997546822,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 69,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 117,
+      "constraints": 89,
+      "elapsed_s": 0.17856710002524778,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 70,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 159,
+      "constraints": 89,
+      "elapsed_s": 0.06215080001857132,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 71,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 177,
+      "constraints": 89,
+      "elapsed_s": 0.08934840001165867,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 72,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 103,
+      "constraints": 89,
+      "elapsed_s": 0.007617399969603866,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 73,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 277,
+      "constraints": 89,
+      "elapsed_s": 0.18027040001470596,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 74,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 317,
+      "constraints": 89,
+      "elapsed_s": 0.0476380999898538,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 75,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 303,
+      "constraints": 89,
+      "elapsed_s": 0.008399000042118132,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 76,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 343,
+      "constraints": 89,
+      "elapsed_s": 0.0499831999768503,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 77,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 269,
+      "constraints": 89,
+      "elapsed_s": 0.016796600015368313,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 78,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 85,
+      "constraints": 89,
+      "elapsed_s": 0.00317649997305125,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 79,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 189,
+      "constraints": 89,
+      "elapsed_s": 0.048120299994479865,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 80,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 93,
+      "constraints": 89,
+      "elapsed_s": 0.10077580000506714,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 81,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 85,
+      "constraints": 89,
+      "elapsed_s": 0.00895340001443401,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 82,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 119,
+      "constraints": 89,
+      "elapsed_s": 0.11245600000256673,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 83,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 275,
+      "constraints": 89,
+      "elapsed_s": 0.027629199961666018,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 84,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 149,
+      "constraints": 89,
+      "elapsed_s": 0.10339190001832321,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 85,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 119,
+      "constraints": 89,
+      "elapsed_s": 0.07227429997874424,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 86,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 119,
+      "constraints": 89,
+      "elapsed_s": 0.009504900022875518,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 87,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 189,
+      "constraints": 89,
+      "elapsed_s": 0.010529600025620311,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 88,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 139,
+      "constraints": 89,
+      "elapsed_s": 0.005181799991987646,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 89,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 159,
+      "constraints": 89,
+      "elapsed_s": 0.13960479997331277,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 90,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 103,
+      "constraints": 89,
+      "elapsed_s": 0.013369599997531623,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 91,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 101,
+      "constraints": 89,
+      "elapsed_s": 0.016627400007564574,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 92,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 89,
+      "constraints": 89,
+      "elapsed_s": 0.00968059996375814,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 93,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 95,
+      "constraints": 89,
+      "elapsed_s": 0.15140400000382215,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 94,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 179,
+      "constraints": 89,
+      "elapsed_s": 0.015037600009236485,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 95,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 95,
+      "constraints": 89,
+      "elapsed_s": 0.00869099999545142,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 96,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 125,
+      "constraints": 89,
+      "elapsed_s": 0.14105659996857867,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 97,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 95,
+      "constraints": 89,
+      "elapsed_s": 0.00936219998402521,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 98,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 189,
+      "constraints": 89,
+      "elapsed_s": 0.09658469998976216,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 99,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 117,
+      "constraints": 89,
+      "elapsed_s": 0.25934270001016557,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 100,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 117,
+      "constraints": 89,
+      "elapsed_s": 0.11199820000911132,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 101,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 105,
+      "constraints": 89,
+      "elapsed_s": 0.010286500037182122,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 102,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 97,
+      "constraints": 89,
+      "elapsed_s": 0.012323300004936755,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 103,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 139,
+      "constraints": 89,
+      "elapsed_s": 0.010982099978718907,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 104,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 311,
+      "constraints": 89,
+      "elapsed_s": 0.01134309999179095,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 105,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 143,
+      "constraints": 89,
+      "elapsed_s": 0.0039163000183179975,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 106,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 159,
+      "constraints": 89,
+      "elapsed_s": 0.004547499993350357,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 107,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 113,
+      "constraints": 89,
+      "elapsed_s": 0.010092500015161932,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 108,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 183,
+      "constraints": 89,
+      "elapsed_s": 0.007868000015150756,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 109,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 159,
+      "constraints": 89,
+      "elapsed_s": 0.014568399987183511,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 110,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 159,
+      "constraints": 89,
+      "elapsed_s": 0.21096050000051036,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 111,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 119,
+      "constraints": 89,
+      "elapsed_s": 0.014946800016332418,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 112,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 179,
+      "constraints": 89,
+      "elapsed_s": 0.1964227000134997,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 113,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 119,
+      "constraints": 89,
+      "elapsed_s": 0.009502700006123632,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 114,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 165,
+      "constraints": 89,
+      "elapsed_s": 0.010432499984744936,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 115,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 127,
+      "constraints": 89,
+      "elapsed_s": 0.010499099968001246,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 116,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 127,
+      "constraints": 89,
+      "elapsed_s": 0.008982600003946573,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 117,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 249,
+      "constraints": 89,
+      "elapsed_s": 0.007216300000436604,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 118,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 123,
+      "constraints": 89,
+      "elapsed_s": 0.010152700007893145,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 119,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 195,
+      "constraints": 89,
+      "elapsed_s": 0.09638999996241182,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 120,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 95,
+      "constraints": 89,
+      "elapsed_s": 0.01225740002701059,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 121,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 155,
+      "constraints": 89,
+      "elapsed_s": 0.009533200005535036,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 122,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 95,
+      "constraints": 89,
+      "elapsed_s": 0.009963999968022108,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 123,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 133,
+      "constraints": 89,
+      "elapsed_s": 0.0035773999989032745,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 124,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 95,
+      "constraints": 89,
+      "elapsed_s": 0.011533599987160414,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 125,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 95,
+      "constraints": 89,
+      "elapsed_s": 0.0086571000283584,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 126,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 169,
+      "constraints": 89,
+      "elapsed_s": 0.006993399991188198,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 127,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 95,
+      "constraints": 89,
+      "elapsed_s": 0.006679599988274276,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 128,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 117,
+      "constraints": 89,
+      "elapsed_s": 0.051932399976067245,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 129,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 197,
+      "constraints": 89,
+      "elapsed_s": 0.00629679998382926,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 130,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 173,
+      "constraints": 89,
+      "elapsed_s": 0.15407709998544306,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 131,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 301,
+      "constraints": 89,
+      "elapsed_s": 0.00895029999082908,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 132,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 197,
+      "constraints": 89,
+      "elapsed_s": 0.05358989996602759,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 133,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 217,
+      "constraints": 89,
+      "elapsed_s": 0.11733520001871511,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 134,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 181,
+      "constraints": 89,
+      "elapsed_s": 0.026364199991803616,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 135,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 133,
+      "constraints": 89,
+      "elapsed_s": 0.004839700006414205,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 136,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 231,
+      "constraints": 89,
+      "elapsed_s": 0.036723700002767146,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 137,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 157,
+      "constraints": 89,
+      "elapsed_s": 0.008496100024785846,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 138,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 213,
+      "constraints": 89,
+      "elapsed_s": 0.19119610002962872,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 139,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 213,
+      "constraints": 89,
+      "elapsed_s": 0.22389829996973276,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 140,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 493,
+      "constraints": 89,
+      "elapsed_s": 0.2562628000159748,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 141,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 277,
+      "constraints": 89,
+      "elapsed_s": 0.11686249997001141,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 142,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 231,
+      "constraints": 89,
+      "elapsed_s": 0.05609169998206198,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 143,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 221,
+      "constraints": 89,
+      "elapsed_s": 0.04085410002153367,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 144,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 197,
+      "constraints": 89,
+      "elapsed_s": 0.09776660002535209,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 145,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 351,
+      "constraints": 89,
+      "elapsed_s": 0.1396750999847427,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 146,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 233,
+      "constraints": 89,
+      "elapsed_s": 0.05901730002369732,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 147,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 253,
+      "constraints": 89,
+      "elapsed_s": 0.09870710002724081,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 148,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 321,
+      "constraints": 89,
+      "elapsed_s": 0.007090600032825023,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 149,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 213,
+      "constraints": 89,
+      "elapsed_s": 0.04573899996466935,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 150,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 643,
+      "constraints": 89,
+      "elapsed_s": 0.22144470002967864,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 151,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 511,
+      "constraints": 89,
+      "elapsed_s": 0.06388450000667945,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 152,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 975,
+      "constraints": 89,
+      "elapsed_s": 0.4402393000200391,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 153,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 551,
+      "constraints": 89,
+      "elapsed_s": 0.06140180001966655,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 154,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 503,
+      "constraints": 89,
+      "elapsed_s": 0.05390120000811294,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 155,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 383,
+      "constraints": 89,
+      "elapsed_s": 0.06626580003648996,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 156,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 403,
+      "constraints": 89,
+      "elapsed_s": 0.006217200017999858,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 157,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 409,
+      "constraints": 89,
+      "elapsed_s": 0.010238300019409508,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 158,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 521,
+      "constraints": 89,
+      "elapsed_s": 0.02073079999536276,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 159,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 483,
+      "constraints": 89,
+      "elapsed_s": 0.051889299997128546,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 160,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 519,
+      "constraints": 89,
+      "elapsed_s": 0.15295270003844053,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 161,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 581,
+      "constraints": 89,
+      "elapsed_s": 0.21822169999359176,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 162,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 471,
+      "constraints": 89,
+      "elapsed_s": 0.41749879997223616,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 163,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 313,
+      "constraints": 89,
+      "elapsed_s": 0.06206999998539686,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 164,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 331,
+      "constraints": 89,
+      "elapsed_s": 0.05499829998007044,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 165,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 2611,
+      "constraints": 89,
+      "elapsed_s": 6.306076600041706,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 166,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1147,
+      "constraints": 89,
+      "elapsed_s": 0.15333160001318902,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 167,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1241,
+      "constraints": 89,
+      "elapsed_s": 0.2533093999954872,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 168,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 975,
+      "constraints": 89,
+      "elapsed_s": 0.10585370002081618,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 169,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 551,
+      "constraints": 89,
+      "elapsed_s": 0.13995969999814406,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 170,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 921,
+      "constraints": 89,
+      "elapsed_s": 0.11320889997296035,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 171,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 481,
+      "constraints": 89,
+      "elapsed_s": 0.07981779996771365,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 172,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 553,
+      "constraints": 89,
+      "elapsed_s": 0.23532549996161833,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 173,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 559,
+      "constraints": 89,
+      "elapsed_s": 0.05576870002551004,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 174,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 437,
+      "constraints": 89,
+      "elapsed_s": 0.06254050001734868,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 175,
+    "attempt": 0,
+    "master": {
+      "status": 1,
+      "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 2867,
+      "constraints": 89,
+      "elapsed_s": 8.008951399999205,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 176,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 2125,
+      "constraints": 89,
+      "elapsed_s": 0.14625200000591576,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 177,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1553,
+      "constraints": 89,
+      "elapsed_s": 0.15269529999932274,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 178,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 307,
+      "constraints": 89,
+      "elapsed_s": 0.050839100033044815,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 179,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1251,
+      "constraints": 89,
+      "elapsed_s": 0.13117239996790886,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 180,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 607,
+      "constraints": 89,
+      "elapsed_s": 0.02331290004076436,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 181,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 503,
+      "constraints": 89,
+      "elapsed_s": 0.1018165000132285,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 182,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 533,
+      "constraints": 89,
+      "elapsed_s": 0.09257330000400543,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 183,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 337,
+      "constraints": 89,
+      "elapsed_s": 0.04941139998845756,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 184,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1955,
+      "constraints": 89,
+      "elapsed_s": 0.1432859000051394,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 185,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1305,
+      "constraints": 89,
+      "elapsed_s": 0.115009100001771,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 186,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 955,
+      "constraints": 89,
+      "elapsed_s": 0.1297550000017509,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 187,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 551,
+      "constraints": 89,
+      "elapsed_s": 0.09589250001590699,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 188,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 823,
+      "constraints": 89,
+      "elapsed_s": 0.014503600017633289,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 189,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 419,
+      "constraints": 89,
+      "elapsed_s": 0.04379359999438748,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 190,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1647,
+      "constraints": 89,
+      "elapsed_s": 0.1562695000320673,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 191,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 431,
+      "constraints": 89,
+      "elapsed_s": 0.06012239999836311,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 192,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 309,
+      "constraints": 89,
+      "elapsed_s": 0.04560409998521209,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 193,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1141,
+      "constraints": 89,
+      "elapsed_s": 0.12319999997271225,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 194,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 457,
+      "constraints": 89,
+      "elapsed_s": 0.07469839998520911,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 195,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1051,
+      "constraints": 89,
+      "elapsed_s": 1.0670657000155188,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 196,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 715,
+      "constraints": 89,
+      "elapsed_s": 0.10449050000170246,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 197,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 953,
+      "constraints": 89,
+      "elapsed_s": 0.1285545999999158,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 198,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 683,
+      "constraints": 89,
+      "elapsed_s": 0.1625229999772273,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 199,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 409,
+      "constraints": 89,
+      "elapsed_s": 0.007119499961845577,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 200,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 465,
+      "constraints": 89,
+      "elapsed_s": 0.017020999977830797,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 201,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 303,
+      "constraints": 89,
+      "elapsed_s": 0.04830949997995049,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 202,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 263,
+      "constraints": 89,
+      "elapsed_s": 0.16332150000380352,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 203,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1243,
+      "constraints": 89,
+      "elapsed_s": 0.13784029998350888,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 204,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1001,
+      "constraints": 89,
+      "elapsed_s": 0.16916830005357042,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 205,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 237,
+      "constraints": 89,
+      "elapsed_s": 0.0036711000138893723,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 206,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 425,
+      "constraints": 89,
+      "elapsed_s": 1.0959881999879144,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 207,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 301,
+      "constraints": 89,
+      "elapsed_s": 0.156261500029359,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 208,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 277,
+      "constraints": 89,
+      "elapsed_s": 0.05382629996165633,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 209,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 285,
+      "constraints": 89,
+      "elapsed_s": 0.06238740001572296,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 210,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 237,
+      "constraints": 89,
+      "elapsed_s": 0.0036805999698117375,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 211,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 449,
+      "constraints": 89,
+      "elapsed_s": 0.010037300002295524,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 212,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 277,
+      "constraints": 89,
+      "elapsed_s": 0.04215629998361692,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 213,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 305,
+      "constraints": 89,
+      "elapsed_s": 0.06753670005127788,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 214,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1019,
+      "constraints": 89,
+      "elapsed_s": 0.09784130001207814,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 215,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 2539,
+      "constraints": 89,
+      "elapsed_s": 5.772460900014266,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 216,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1243,
+      "constraints": 89,
+      "elapsed_s": 0.14069049997488037,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 217,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1159,
+      "constraints": 89,
+      "elapsed_s": 0.18508440000005066,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 218,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1351,
+      "constraints": 89,
+      "elapsed_s": 0.3894920999882743,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 219,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1019,
+      "constraints": 89,
+      "elapsed_s": 0.04158680001273751,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 220,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1763,
+      "constraints": 89,
+      "elapsed_s": 0.0544400000362657,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 221,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1161,
+      "constraints": 89,
+      "elapsed_s": 0.14848769997479394,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 222,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1247,
+      "constraints": 89,
+      "elapsed_s": 0.18264789995737374,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 223,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 929,
+      "constraints": 89,
+      "elapsed_s": 0.5691337000462227,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 224,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 489,
+      "constraints": 89,
+      "elapsed_s": 0.1077489999588579,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 225,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 601,
+      "constraints": 89,
+      "elapsed_s": 0.06967130000703037,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 226,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 309,
+      "constraints": 89,
+      "elapsed_s": 0.05648329999530688,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 227,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 2121,
+      "constraints": 89,
+      "elapsed_s": 0.1920982000301592,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 228,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1219,
+      "constraints": 89,
+      "elapsed_s": 0.16761030000634491,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 229,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1521,
+      "constraints": 89,
+      "elapsed_s": 0.12453660002211109,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 230,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 663,
+      "constraints": 89,
+      "elapsed_s": 0.0886680000112392,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 231,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 903,
+      "constraints": 89,
+      "elapsed_s": 0.08868779998738319,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 232,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 529,
+      "constraints": 89,
+      "elapsed_s": 0.09240879997378215,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 233,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1271,
+      "constraints": 89,
+      "elapsed_s": 0.353235799993854,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 234,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 617,
+      "constraints": 89,
+      "elapsed_s": 0.61736870004097,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 235,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 2021,
+      "constraints": 89,
+      "elapsed_s": 4.271998699987307,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 236,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 2545,
+      "constraints": 89,
+      "elapsed_s": 2.283280499977991,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 237,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 2079,
+      "constraints": 89,
+      "elapsed_s": 0.91726810002001,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 238,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1369,
+      "constraints": 89,
+      "elapsed_s": 1.4514266999904066,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 239,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 393,
+      "constraints": 89,
+      "elapsed_s": 0.06430319999344647,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 240,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1469,
+      "constraints": 89,
+      "elapsed_s": 0.21585109998704866,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 241,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 475,
+      "constraints": 89,
+      "elapsed_s": 0.08162219997029752,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 242,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 309,
+      "constraints": 89,
+      "elapsed_s": 0.046377999999094754,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 243,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 317,
+      "constraints": 89,
+      "elapsed_s": 0.02955949999159202,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 244,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1217,
+      "constraints": 89,
+      "elapsed_s": 0.1482696000020951,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 245,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1409,
+      "constraints": 89,
+      "elapsed_s": 0.3072721000062302,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 246,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 457,
+      "constraints": 89,
+      "elapsed_s": 0.08075409999582916,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 247,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 513,
+      "constraints": 89,
+      "elapsed_s": 0.11262879997957498,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 248,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 419,
+      "constraints": 89,
+      "elapsed_s": 0.0378766999929212,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 249,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1529,
+      "constraints": 89,
+      "elapsed_s": 0.17712910001864657,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 250,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 541,
+      "constraints": 89,
+      "elapsed_s": 0.10482390003744513,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 251,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 509,
+      "constraints": 89,
+      "elapsed_s": 0.05531819997122511,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 252,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 321,
+      "constraints": 89,
+      "elapsed_s": 0.05575120000867173,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 253,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1277,
+      "constraints": 89,
+      "elapsed_s": 0.1640021000057459,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 254,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 623,
+      "constraints": 89,
+      "elapsed_s": 0.020772899966686964,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 255,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 519,
+      "constraints": 89,
+      "elapsed_s": 0.07188689999748021,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 256,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 821,
+      "constraints": 89,
+      "elapsed_s": 0.0695428000180982,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 257,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 2595,
+      "constraints": 89,
+      "elapsed_s": 0.21804900001734495,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 258,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 615,
+      "constraints": 89,
+      "elapsed_s": 0.06501790002221242,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 259,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 993,
+      "constraints": 89,
+      "elapsed_s": 0.8627435000380501,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 260,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 669,
+      "constraints": 89,
+      "elapsed_s": 0.14382120000664145,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 261,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1541,
+      "constraints": 89,
+      "elapsed_s": 1.1107609000173397,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 262,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 677,
+      "constraints": 89,
+      "elapsed_s": 0.09578630002215505,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 263,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 973,
+      "constraints": 89,
+      "elapsed_s": 0.6891856999718584,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 264,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 703,
+      "constraints": 89,
+      "elapsed_s": 0.10090749996015802,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 265,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 307,
+      "constraints": 89,
+      "elapsed_s": 0.006439200020395219,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 266,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1237,
+      "constraints": 89,
+      "elapsed_s": 0.04527340002823621,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 267,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 703,
+      "constraints": 89,
+      "elapsed_s": 0.06946179998340085,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 268,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 303,
+      "constraints": 89,
+      "elapsed_s": 0.055411199980881065,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 269,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1239,
+      "constraints": 89,
+      "elapsed_s": 0.1383161999983713,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 270,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 559,
+      "constraints": 89,
+      "elapsed_s": 0.1282772999838926,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 271,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 421,
+      "constraints": 89,
+      "elapsed_s": 0.05168609996326268,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 272,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 481,
+      "constraints": 89,
+      "elapsed_s": 0.01167660002829507,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 273,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 521,
+      "constraints": 89,
+      "elapsed_s": 0.057840999972540885,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 274,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 641,
+      "constraints": 89,
+      "elapsed_s": 0.11035059997811913,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 275,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 893,
+      "constraints": 89,
+      "elapsed_s": 0.11268939997535199,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 276,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 545,
+      "constraints": 89,
+      "elapsed_s": 0.09212829999160022,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 277,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 501,
+      "constraints": 89,
+      "elapsed_s": 0.09614979999605566,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 278,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 521,
+      "constraints": 89,
+      "elapsed_s": 0.0897407999727875,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 279,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 525,
+      "constraints": 89,
+      "elapsed_s": 0.049593099975027144,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 280,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 277,
+      "constraints": 89,
+      "elapsed_s": 0.04652059997897595,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 281,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1943,
+      "constraints": 89,
+      "elapsed_s": 0.21877169999061152,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 282,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1161,
+      "constraints": 89,
+      "elapsed_s": 0.15719340002397075,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 283,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1441,
+      "constraints": 89,
+      "elapsed_s": 0.14690920000430197,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 284,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 631,
+      "constraints": 89,
+      "elapsed_s": 0.09856640000361949,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 285,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 797,
+      "constraints": 89,
+      "elapsed_s": 0.08510870003374293,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 286,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 481,
+      "constraints": 89,
+      "elapsed_s": 0.10247260000323877,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 287,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 427,
+      "constraints": 89,
+      "elapsed_s": 0.09441720001632348,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 288,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 465,
+      "constraints": 89,
+      "elapsed_s": 0.08569209999404848,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 289,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 409,
+      "constraints": 89,
+      "elapsed_s": 0.22884920000797138,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 290,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 451,
+      "constraints": 89,
+      "elapsed_s": 0.07605600001988932,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 291,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 457,
+      "constraints": 89,
+      "elapsed_s": 0.08374490001006052,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 292,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 673,
+      "constraints": 89,
+      "elapsed_s": 0.011006599990651011,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 293,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 527,
+      "constraints": 89,
+      "elapsed_s": 0.10335599997779354,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 294,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 433,
+      "constraints": 89,
+      "elapsed_s": 0.06895689998054877,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 295,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 479,
+      "constraints": 89,
+      "elapsed_s": 0.05863739998312667,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 296,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 541,
+      "constraints": 89,
+      "elapsed_s": 0.018698700005188584,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 297,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 541,
+      "constraints": 89,
+      "elapsed_s": 0.13438649999443442,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 298,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 509,
+      "constraints": 89,
+      "elapsed_s": 0.13130259996978566,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 299,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 509,
+      "constraints": 89,
+      "elapsed_s": 0.17628219997277483,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 300,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 351,
+      "constraints": 89,
+      "elapsed_s": 0.06664630002342165,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 301,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1319,
+      "constraints": 89,
+      "elapsed_s": 0.22036649996880442,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 302,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1255,
+      "constraints": 89,
+      "elapsed_s": 1.4888536999933422,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 303,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 717,
+      "constraints": 89,
+      "elapsed_s": 0.12844340002629906,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 304,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 647,
+      "constraints": 89,
+      "elapsed_s": 0.4777612999896519,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 305,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 585,
+      "constraints": 89,
+      "elapsed_s": 0.9949894000310451,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 306,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 2021,
+      "constraints": 89,
+      "elapsed_s": 2.120714800024871,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 307,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 2529,
+      "constraints": 89,
+      "elapsed_s": 2.3719766999711283,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 308,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 2079,
+      "constraints": 89,
+      "elapsed_s": 1.881952799973078,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 309,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 613,
+      "constraints": 89,
+      "elapsed_s": 1.296134100004565,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 310,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1069,
+      "constraints": 89,
+      "elapsed_s": 1.379871400014963,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 311,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1369,
+      "constraints": 89,
+      "elapsed_s": 3.811764599988237,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 312,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 515,
+      "constraints": 89,
+      "elapsed_s": 0.1810327999992296,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 313,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 615,
+      "constraints": 89,
+      "elapsed_s": 1.1590427000191994,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 314,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 1031,
+      "constraints": 89,
+      "elapsed_s": 1.2589949000393972,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 315,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 641,
+      "constraints": 89,
+      "elapsed_s": 0.30073719995561987,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 316,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 841,
+      "constraints": 89,
+      "elapsed_s": 0.12640639999881387,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 317,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 665,
+      "constraints": 89,
+      "elapsed_s": 0.1638838000362739,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 318,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 597,
+      "constraints": 89,
+      "elapsed_s": 0.10919269995065406,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 319,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 641,
+      "constraints": 89,
+      "elapsed_s": 0.14987259998451918,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 320,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 427,
+      "constraints": 89,
+      "elapsed_s": 0.12043899996206164,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 321,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 479,
+      "constraints": 89,
+      "elapsed_s": 0.13953570002922788,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 322,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 509,
+      "constraints": 89,
+      "elapsed_s": 0.10871129995211959,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 323,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 405,
+      "constraints": 89,
+      "elapsed_s": 0.021335700002964586,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 324,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 351,
+      "constraints": 89,
+      "elapsed_s": 0.31642079999437556,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 325,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 451,
+      "constraints": 89,
+      "elapsed_s": 0.12556559999939054,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 326,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 457,
+      "constraints": 89,
+      "elapsed_s": 0.7472355000209063,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 327,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 665,
+      "constraints": 89,
+      "elapsed_s": 0.16475439997157082,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 328,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 527,
+      "constraints": 89,
+      "elapsed_s": 0.10836999997263774,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  },
+  {
+    "neighborhood": 329,
+    "attempt": 0,
+    "master": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+      "objective_s": null,
+      "dual_bound_s": null,
+      "mip_gap": null,
+      "variables": 335,
+      "constraints": 89,
+      "elapsed_s": 0.1477244999841787,
+      "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+    }
+  }
+]

@@ -1,0 +1,425 @@
+NEIGHBORHOOD 150 3-route ['V4-11', 'V4-06', 'V4-20'] 23
+OUTCOME {'index': 150, 'kind': '3-route', 'removed': ['V4-11', 'V4-06', 'V4-20'], 'max_sorties': 23, 'pool_size': 239, 'physical_evaluations': 3807, 'workload_pruned': 1367, 'energy': 2201, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.3021176000474952}
+NEIGHBORHOOD 151 3-route ['V4-11', 'V4-09', 'V4-20'] 23
+OUTCOME {'index': 151, 'kind': '3-route', 'removed': ['V4-11', 'V4-09', 'V4-20'], 'max_sorties': 23, 'pool_size': 185, 'physical_evaluations': 2018, 'workload_pruned': 1464, 'energy': 369, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.10733580001397058}
+NEIGHBORHOOD 152 3-route ['V4-11', 'V4-06', 'V4-22'] 23
+OUTCOME {'index': 152, 'kind': '3-route', 'removed': ['V4-11', 'V4-06', 'V4-22'], 'max_sorties': 23, 'pool_size': 404, 'physical_evaluations': 7797, 'workload_pruned': 1739, 'energy': 5654, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.6171997000346892}
+NEIGHBORHOOD 153 3-route ['V4-11', 'V4-09', 'V4-22'] 23
+OUTCOME {'index': 153, 'kind': '3-route', 'removed': ['V4-11', 'V4-09', 'V4-22'], 'max_sorties': 23, 'pool_size': 204, 'physical_evaluations': 4132, 'workload_pruned': 1449, 'energy': 2479, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.15394479996757582}
+NEIGHBORHOOD 154 3-route ['V4-11', 'V4-09', 'V4-13'] 23
+OUTCOME {'index': 154, 'kind': '3-route', 'removed': ['V4-11', 'V4-09', 'V4-13'], 'max_sorties': 23, 'pool_size': 214, 'physical_evaluations': 8915, 'workload_pruned': 1612, 'energy': 7089, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.2946218000142835}
+NEIGHBORHOOD 155 3-route ['V4-11', 'V4-09', 'V4-14'] 23
+OUTCOME {'index': 155, 'kind': '3-route', 'removed': ['V4-11', 'V4-09', 'V4-14'], 'max_sorties': 23, 'pool_size': 154, 'physical_evaluations': 4167, 'workload_pruned': 895, 'energy': 3118, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.1874932000064291}
+NEIGHBORHOOD 156 3-route ['V4-14', 'V4-09', 'V4-20'] 23
+OUTCOME {'index': 156, 'kind': '3-route', 'removed': ['V4-14', 'V4-09', 'V4-20'], 'max_sorties': 23, 'pool_size': 132, 'physical_evaluations': 4132, 'workload_pruned': 895, 'energy': 3105, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.11339750001206994}
+NEIGHBORHOOD 157 3-route ['V4-14', 'V4-09', 'V4-01'] 23
+OUTCOME {'index': 157, 'kind': '3-route', 'removed': ['V4-14', 'V4-09', 'V4-01'], 'max_sorties': 23, 'pool_size': 135, 'physical_evaluations': 4132, 'workload_pruned': 845, 'energy': 3152, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.12270519998855889}
+NEIGHBORHOOD 158 3-route ['V4-11', 'V4-06', 'V4-13'] 23
+OUTCOME {'index': 158, 'kind': '3-route', 'removed': ['V4-11', 'V4-06', 'V4-13'], 'max_sorties': 23, 'pool_size': 229, 'physical_evaluations': 16816, 'workload_pruned': 493, 'energy': 16094, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.4807538000168279}
+NEIGHBORHOOD 159 3-route ['V4-11', 'V4-06', 'V4-14'] 23
+OUTCOME {'index': 159, 'kind': '3-route', 'removed': ['V4-11', 'V4-06', 'V4-14'], 'max_sorties': 23, 'pool_size': 210, 'physical_evaluations': 7884, 'workload_pruned': 467, 'energy': 7207, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.2593168999883346}
+NEIGHBORHOOD 160 3-route ['V4-14', 'V4-06', 'V4-13'] 23
+OUTCOME {'index': 160, 'kind': '3-route', 'removed': ['V4-14', 'V4-06', 'V4-13'], 'max_sorties': 23, 'pool_size': 228, 'physical_evaluations': 7549, 'workload_pruned': 32, 'energy': 7289, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.38141600001836196}
+NEIGHBORHOOD 161 3-route ['V4-14', 'V4-06', 'V4-20'] 23
+OUTCOME {'index': 161, 'kind': '3-route', 'removed': ['V4-14', 'V4-06', 'V4-20'], 'max_sorties': 23, 'pool_size': 217, 'physical_evaluations': 7797, 'workload_pruned': 455, 'energy': 7125, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.45402339997235686}
+NEIGHBORHOOD 162 3-route ['V4-11', 'V4-02', 'V4-08'] 23
+OUTCOME {'index': 162, 'kind': '3-route', 'removed': ['V4-11', 'V4-02', 'V4-08'], 'max_sorties': 23, 'pool_size': 189, 'physical_evaluations': 904, 'workload_pruned': 529, 'energy': 186, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.4430568999960087}
+NEIGHBORHOOD 163 3-route ['V4-11', 'V4-02', 'V4-20'] 23
+OUTCOME {'index': 163, 'kind': '3-route', 'removed': ['V4-11', 'V4-02', 'V4-20'], 'max_sorties': 23, 'pool_size': 107, 'physical_evaluations': 996, 'workload_pruned': 701, 'energy': 188, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.09124790003988892}
+NEIGHBORHOOD 164 3-route ['V4-11', 'V4-02', 'V4-22'] 23
+OUTCOME {'index': 164, 'kind': '3-route', 'removed': ['V4-11', 'V4-02', 'V4-22'], 'max_sorties': 23, 'pool_size': 115, 'physical_evaluations': 2006, 'workload_pruned': 985, 'energy': 906, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.11140360002173111}
+NEIGHBORHOOD 165 3-route ['V4-11', 'V4-03', 'V4-08'] 23
+OUTCOME {'index': 165, 'kind': '3-route', 'removed': ['V4-11', 'V4-03', 'V4-08'], 'max_sorties': 23, 'pool_size': 1205, 'physical_evaluations': 6632, 'workload_pruned': 3865, 'energy': 1562, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 6.527597500011325}
+NEIGHBORHOOD 166 3-route ['V4-11', 'V4-03', 'V4-20'] 23
+OUTCOME {'index': 166, 'kind': '3-route', 'removed': ['V4-11', 'V4-03', 'V4-20'], 'max_sorties': 23, 'pool_size': 461, 'physical_evaluations': 7414, 'workload_pruned': 5239, 'energy': 1714, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.3392823999747634}
+NEIGHBORHOOD 167 3-route ['V4-11', 'V4-03', 'V4-22'] 23
+OUTCOME {'index': 167, 'kind': '3-route', 'removed': ['V4-11', 'V4-03', 'V4-22'], 'max_sorties': 23, 'pool_size': 507, 'physical_evaluations': 15188, 'workload_pruned': 7275, 'energy': 7406, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.6680419000331312}
+NEIGHBORHOOD 168 3-route ['V4-11', 'V4-06', 'V4-08'] 23
+OUTCOME {'index': 168, 'kind': '3-route', 'removed': ['V4-11', 'V4-06', 'V4-08'], 'max_sorties': 23, 'pool_size': 404, 'physical_evaluations': 7797, 'workload_pruned': 2120, 'energy': 5273, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.32233480003196746}
+NEIGHBORHOOD 169 3-route ['V4-11', 'V4-09', 'V4-08'] 23
+OUTCOME {'index': 169, 'kind': '3-route', 'removed': ['V4-11', 'V4-09', 'V4-08'], 'max_sorties': 23, 'pool_size': 204, 'physical_evaluations': 4132, 'workload_pruned': 2122, 'energy': 1806, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.2504171999753453}
+NEIGHBORHOOD 170 3-route ['V4-14', 'V4-06', 'V4-22'] 23
+OUTCOME {'index': 170, 'kind': '3-route', 'removed': ['V4-14', 'V4-06', 'V4-22'], 'max_sorties': 23, 'pool_size': 387, 'physical_evaluations': 7797, 'energy': 6814, 'workload_pruned': 596, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.3539157000486739}
+NEIGHBORHOOD 171 3-route ['V4-14', 'V4-09', 'V4-22'] 23
+OUTCOME {'index': 171, 'kind': '3-route', 'removed': ['V4-14', 'V4-09', 'V4-22'], 'max_sorties': 23, 'pool_size': 171, 'physical_evaluations': 4132, 'workload_pruned': 777, 'energy': 3184, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.18414150003809482}
+NEIGHBORHOOD 172 3-route ['V4-10', 'V4-02', 'V4-08'] 23
+OUTCOME {'index': 172, 'kind': '3-route', 'removed': ['V4-10', 'V4-02', 'V4-08'], 'max_sorties': 23, 'pool_size': 200, 'physical_evaluations': 1878, 'workload_pruned': 1520, 'energy': 158, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.2821688000112772}
+NEIGHBORHOOD 173 3-route ['V4-10', 'V4-02', 'V4-12'] 23
+OUTCOME {'index': 173, 'kind': '3-route', 'removed': ['V4-10', 'V4-02', 'V4-12'], 'max_sorties': 23, 'pool_size': 240, 'physical_evaluations': 9191, 'workload_pruned': 5640, 'energy': 3311, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.28614209999796003}
+NEIGHBORHOOD 174 3-route ['V4-10', 'V4-02', 'V4-17'] 23
+OUTCOME {'index': 174, 'kind': '3-route', 'removed': ['V4-10', 'V4-02', 'V4-17'], 'max_sorties': 23, 'pool_size': 138, 'physical_evaluations': 4256, 'workload_pruned': 2435, 'energy': 1683, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.16819709999253973}
+NEIGHBORHOOD 175 3-route ['V4-10', 'V4-03', 'V4-08'] 23
+OUTCOME {'index': 175, 'kind': '3-route', 'removed': ['V4-10', 'V4-03', 'V4-08'], 'max_sorties': 23, 'pool_size': 1253, 'physical_evaluations': 13878, 'workload_pruned': 11067, 'energy': 1558, 'outcome': 'solver_limit_no_candidate', 'elapsed_s': 8.393412200035527}
+NEIGHBORHOOD 176 3-route ['V4-10', 'V4-03', 'V4-12'] 23
+OUTCOME {'index': 176, 'kind': '3-route', 'removed': ['V4-10', 'V4-03', 'V4-12'], 'max_sorties': 23, 'pool_size': 994, 'physical_evaluations': 70219, 'workload_pruned': 41873, 'energy': 27352, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 2.1380804000073113}
+NEIGHBORHOOD 177 3-route ['V4-10', 'V4-03', 'V4-17'] 23
+OUTCOME {'index': 177, 'kind': '3-route', 'removed': ['V4-10', 'V4-03', 'V4-17'], 'max_sorties': 23, 'pool_size': 575, 'physical_evaluations': 32502, 'workload_pruned': 17755, 'energy': 14172, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 1.018428599985782}
+NEIGHBORHOOD 178 3-route ['V4-11', 'V4-02', 'V4-05'] 23
+OUTCOME {'index': 178, 'kind': '3-route', 'removed': ['V4-11', 'V4-02', 'V4-05'], 'max_sorties': 23, 'pool_size': 117, 'physical_evaluations': 4339, 'workload_pruned': 576, 'energy': 3646, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.15729990002000704}
+NEIGHBORHOOD 179 3-route ['V4-11', 'V4-03', 'V4-05'] 23
+OUTCOME {'index': 179, 'kind': '3-route', 'removed': ['V4-11', 'V4-03', 'V4-05'], 'max_sorties': 23, 'pool_size': 560, 'physical_evaluations': 32945, 'workload_pruned': 4339, 'energy': 28046, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 1.0607270000036806}
+NEIGHBORHOOD 180 3-route ['V4-11', 'V4-06', 'V4-05'] 23
+OUTCOME {'index': 180, 'kind': '3-route', 'removed': ['V4-11', 'V4-06', 'V4-05'], 'max_sorties': 23, 'pool_size': 272, 'physical_evaluations': 16816, 'workload_pruned': 1195, 'energy': 15349, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.5277691000374034}
+NEIGHBORHOOD 181 3-route ['V4-14', 'V4-09', 'V4-23'] 23
+OUTCOME {'index': 181, 'kind': '3-route', 'removed': ['V4-14', 'V4-09', 'V4-23'], 'max_sorties': 23, 'pool_size': 180, 'physical_evaluations': 4132, 'workload_pruned': 1945, 'energy': 2007, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.2231424999772571}
+NEIGHBORHOOD 182 3-route ['V4-11', 'V4-02', 'V4-21'] 23
+OUTCOME {'index': 182, 'kind': '3-route', 'removed': ['V4-11', 'V4-02', 'V4-21'], 'max_sorties': 23, 'pool_size': 172, 'physical_evaluations': 3824, 'workload_pruned': 1987, 'energy': 1665, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.1869674000190571}
+NEIGHBORHOOD 183 3-route ['V4-11', 'V4-02', 'V4-23'] 23
+OUTCOME {'index': 183, 'kind': '3-route', 'removed': ['V4-11', 'V4-02', 'V4-23'], 'max_sorties': 23, 'pool_size': 118, 'physical_evaluations': 2006, 'workload_pruned': 971, 'energy': 917, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.10103259998140857}
+NEIGHBORHOOD 184 3-route ['V4-11', 'V4-03', 'V4-21'] 23
+OUTCOME {'index': 184, 'kind': '3-route', 'removed': ['V4-11', 'V4-03', 'V4-21'], 'max_sorties': 23, 'pool_size': 710, 'physical_evaluations': 29548, 'workload_pruned': 14566, 'energy': 14272, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.9633485999656841}
+NEIGHBORHOOD 185 3-route ['V4-11', 'V4-03', 'V4-23'] 23
+OUTCOME {'index': 185, 'kind': '3-route', 'removed': ['V4-11', 'V4-03', 'V4-23'], 'max_sorties': 23, 'pool_size': 539, 'physical_evaluations': 15188, 'workload_pruned': 6988, 'energy': 7661, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.494439699978102}
+NEIGHBORHOOD 186 3-route ['V4-11', 'V4-09', 'V4-21'] 23
+OUTCOME {'index': 186, 'kind': '3-route', 'removed': ['V4-11', 'V4-09', 'V4-21'], 'max_sorties': 23, 'pool_size': 315, 'physical_evaluations': 7916, 'workload_pruned': 4393, 'energy': 3208, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.33310679998248816}
+NEIGHBORHOOD 187 3-route ['V4-11', 'V4-09', 'V4-23'] 23
+OUTCOME {'index': 187, 'kind': '3-route', 'removed': ['V4-11', 'V4-09', 'V4-23'], 'max_sorties': 23, 'pool_size': 204, 'physical_evaluations': 4132, 'workload_pruned': 2171, 'energy': 1757, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.20895299996482208}
+NEIGHBORHOOD 188 3-route ['V4-14', 'V4-09', 'V4-21'] 23
+OUTCOME {'index': 188, 'kind': '3-route', 'removed': ['V4-14', 'V4-09', 'V4-21'], 'max_sorties': 23, 'pool_size': 256, 'physical_evaluations': 6993, 'workload_pruned': 2471, 'energy': 4266, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.20967389998259023}
+NEIGHBORHOOD 189 3-route ['V4-10', 'V4-02', 'V4-05'] 23
+OUTCOME {'index': 189, 'kind': '3-route', 'removed': ['V4-10', 'V4-02', 'V4-05'], 'max_sorties': 23, 'pool_size': 173, 'physical_evaluations': 9191, 'workload_pruned': 1162, 'energy': 7856, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.31263050000416115}
+NEIGHBORHOOD 190 3-route ['V4-10', 'V4-03', 'V4-05'] 23
+OUTCOME {'index': 190, 'kind': '3-route', 'removed': ['V4-10', 'V4-03', 'V4-05'], 'max_sorties': 23, 'pool_size': 758, 'physical_evaluations': 70219, 'workload_pruned': 8057, 'energy': 61404, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 2.170585799962282}
+NEIGHBORHOOD 191 3-route ['V4-11', 'V4-09', 'V4-05'] 23
+OUTCOME {'index': 191, 'kind': '3-route', 'removed': ['V4-11', 'V4-09', 'V4-05'], 'max_sorties': 23, 'pool_size': 178, 'physical_evaluations': 8915, 'workload_pruned': 767, 'energy': 7970, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.3154352999990806}
+NEIGHBORHOOD 192 3-route ['V4-11', 'V4-02', 'V4-01'] 23
+OUTCOME {'index': 192, 'kind': '3-route', 'removed': ['V4-11', 'V4-02', 'V4-01'], 'max_sorties': 23, 'pool_size': 106, 'physical_evaluations': 2006, 'workload_pruned': 340, 'energy': 1560, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.09491050004726276}
+NEIGHBORHOOD 193 3-route ['V4-11', 'V4-03', 'V4-01'] 23
+OUTCOME {'index': 193, 'kind': '3-route', 'removed': ['V4-11', 'V4-03', 'V4-01'], 'max_sorties': 23, 'pool_size': 459, 'physical_evaluations': 15188, 'workload_pruned': 2659, 'energy': 12070, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.5515950000262819}
+NEIGHBORHOOD 194 3-route ['V4-11', 'V4-09', 'V4-01'] 23
+OUTCOME {'index': 194, 'kind': '3-route', 'removed': ['V4-11', 'V4-09', 'V4-01'], 'max_sorties': 23, 'pool_size': 159, 'physical_evaluations': 4132, 'workload_pruned': 738, 'energy': 3235, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.18361209996510297}
+NEIGHBORHOOD 195 3-route ['V4-11', 'V4-06', 'V4-21'] 23
+OUTCOME {'index': 195, 'kind': '3-route', 'removed': ['V4-11', 'V4-06', 'V4-21'], 'max_sorties': 23, 'pool_size': 366, 'physical_evaluations': 15041, 'workload_pruned': 3213, 'energy': 11462, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 1.473400800023228}
+NEIGHBORHOOD 196 3-route ['V4-11', 'V4-06', 'V4-23'] 23
+OUTCOME {'index': 196, 'kind': '3-route', 'removed': ['V4-11', 'V4-06', 'V4-23'], 'max_sorties': 23, 'pool_size': 274, 'physical_evaluations': 7797, 'workload_pruned': 1661, 'energy': 5862, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.3259739999775775}
+NEIGHBORHOOD 197 3-route ['V4-14', 'V4-06', 'V4-21'] 23
+OUTCOME {'index': 197, 'kind': '3-route', 'removed': ['V4-14', 'V4-06', 'V4-21'], 'max_sorties': 23, 'pool_size': 335, 'physical_evaluations': 13254, 'workload_pruned': 1315, 'energy': 11604, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.4676208000164479}
+NEIGHBORHOOD 198 3-route ['V4-14', 'V4-06', 'V4-23'] 23
+OUTCOME {'index': 198, 'kind': '3-route', 'removed': ['V4-14', 'V4-06', 'V4-23'], 'max_sorties': 23, 'pool_size': 266, 'physical_evaluations': 7797, 'energy': 6870, 'workload_pruned': 661, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.34822019998682663}
+NEIGHBORHOOD 199 3-route ['V4-14', 'V4-09', 'V4-15'] 23
+OUTCOME {'index': 199, 'kind': '3-route', 'removed': ['V4-14', 'V4-09', 'V4-15'], 'max_sorties': 23, 'pool_size': 135, 'physical_evaluations': 4132, 'workload_pruned': 791, 'energy': 3206, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.11055379995377734}
+NEIGHBORHOOD 200 3-route ['V4-14', 'V4-09', 'V4-19'] 23
+OUTCOME {'index': 200, 'kind': '3-route', 'removed': ['V4-14', 'V4-09', 'V4-19'], 'max_sorties': 23, 'pool_size': 149, 'physical_evaluations': 4286, 'workload_pruned': 840, 'energy': 3297, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.1256959000020288}
+NEIGHBORHOOD 201 3-route ['V4-11', 'V4-02', 'V4-13'] 23
+OUTCOME {'index': 201, 'kind': '3-route', 'removed': ['V4-11', 'V4-02', 'V4-13'], 'max_sorties': 23, 'pool_size': 115, 'physical_evaluations': 4339, 'workload_pruned': 713, 'energy': 3511, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.15832590003265068}
+NEIGHBORHOOD 202 3-route ['V4-11', 'V4-02', 'V4-14'] 23
+OUTCOME {'index': 202, 'kind': '3-route', 'removed': ['V4-11', 'V4-02', 'V4-14'], 'max_sorties': 23, 'pool_size': 95, 'physical_evaluations': 1995, 'workload_pruned': 391, 'energy': 1509, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.21513710002182052}
+NEIGHBORHOOD 203 3-route ['V4-11', 'V4-03', 'V4-13'] 23
+OUTCOME {'index': 203, 'kind': '3-route', 'removed': ['V4-11', 'V4-03', 'V4-13'], 'max_sorties': 23, 'pool_size': 556, 'physical_evaluations': 32945, 'workload_pruned': 4862, 'energy': 27527, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 1.0855239999946207}
+NEIGHBORHOOD 204 3-route ['V4-11', 'V4-03', 'V4-14'] 23
+OUTCOME {'index': 204, 'kind': '3-route', 'removed': ['V4-11', 'V4-03', 'V4-14'], 'max_sorties': 23, 'pool_size': 435, 'physical_evaluations': 15405, 'workload_pruned': 2819, 'energy': 12151, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.634828100039158}
+NEIGHBORHOOD 205 3-route ['V4-14', 'V4-02', 'V4-01'] 23
+OUTCOME {'index': 205, 'kind': '3-route', 'removed': ['V4-14', 'V4-02', 'V4-01'], 'max_sorties': 23, 'pool_size': 70, 'physical_evaluations': 2006, 'workload_pruned': 377, 'energy': 1559, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.05795889999717474}
+NEIGHBORHOOD 206 3-route ['V4-14', 'V4-02', 'V4-08'] 23
+OUTCOME {'index': 206, 'kind': '3-route', 'removed': ['V4-14', 'V4-02', 'V4-08'], 'max_sorties': 23, 'pool_size': 166, 'physical_evaluations': 904, 'workload_pruned': 452, 'energy': 286, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 1.123725600016769}
+NEIGHBORHOOD 207 3-route ['V4-14', 'V4-02', 'V4-13'] 23
+OUTCOME {'index': 207, 'kind': '3-route', 'removed': ['V4-14', 'V4-02', 'V4-13'], 'max_sorties': 23, 'pool_size': 114, 'physical_evaluations': 1968, 'workload_pruned': 1102, 'energy': 752, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.2079039000091143}
+NEIGHBORHOOD 208 3-route ['V4-14', 'V4-02', 'V4-15'] 23
+OUTCOME {'index': 208, 'kind': '3-route', 'removed': ['V4-14', 'V4-02', 'V4-15'], 'max_sorties': 23, 'pool_size': 90, 'physical_evaluations': 2006, 'workload_pruned': 355, 'energy': 1561, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.10029970004688948}
+NEIGHBORHOOD 209 3-route ['V4-14', 'V4-02', 'V4-19'] 23
+OUTCOME {'index': 209, 'kind': '3-route', 'removed': ['V4-14', 'V4-02', 'V4-19'], 'max_sorties': 23, 'pool_size': 92, 'physical_evaluations': 2078, 'workload_pruned': 365, 'energy': 1621, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.11191899998812005}
+NEIGHBORHOOD 210 3-route ['V4-14', 'V4-02', 'V4-20'] 23
+OUTCOME {'index': 210, 'kind': '3-route', 'removed': ['V4-14', 'V4-02', 'V4-20'], 'max_sorties': 23, 'pool_size': 70, 'physical_evaluations': 2006, 'workload_pruned': 407, 'energy': 1529, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.05429800000274554}
+NEIGHBORHOOD 211 3-route ['V4-14', 'V4-02', 'V4-21'] 23
+OUTCOME {'index': 211, 'kind': '3-route', 'removed': ['V4-14', 'V4-02', 'V4-21'], 'max_sorties': 23, 'pool_size': 133, 'physical_evaluations': 3437, 'workload_pruned': 1098, 'energy': 2206, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.09499979997053742}
+NEIGHBORHOOD 212 3-route ['V4-14', 'V4-02', 'V4-22'] 23
+OUTCOME {'index': 212, 'kind': '3-route', 'removed': ['V4-14', 'V4-02', 'V4-22'], 'max_sorties': 23, 'pool_size': 90, 'physical_evaluations': 2006, 'workload_pruned': 421, 'energy': 1495, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.09453459997894242}
+NEIGHBORHOOD 213 3-route ['V4-14', 'V4-02', 'V4-23'] 23
+OUTCOME {'index': 213, 'kind': '3-route', 'removed': ['V4-14', 'V4-02', 'V4-23'], 'max_sorties': 23, 'pool_size': 102, 'physical_evaluations': 2006, 'workload_pruned': 689, 'energy': 1215, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.11703980003949255}
+NEIGHBORHOOD 214 3-route ['V4-14', 'V4-03', 'V4-01'] 23
+OUTCOME {'index': 214, 'kind': '3-route', 'removed': ['V4-14', 'V4-03', 'V4-01'], 'max_sorties': 23, 'pool_size': 398, 'physical_evaluations': 15188, 'workload_pruned': 2585, 'energy': 12205, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.48823700001230463}
+NEIGHBORHOOD 215 3-route ['V4-14', 'V4-03', 'V4-08'] 23
+OUTCOME {'index': 215, 'kind': '3-route', 'removed': ['V4-14', 'V4-03', 'V4-08'], 'max_sorties': 23, 'pool_size': 1169, 'physical_evaluations': 6632, 'workload_pruned': 3085, 'energy': 2378, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 5.977293499978259}
+NEIGHBORHOOD 216 3-route ['V4-14', 'V4-03', 'V4-13'] 23
+OUTCOME {'index': 216, 'kind': '3-route', 'removed': ['V4-14', 'V4-03', 'V4-13'], 'max_sorties': 23, 'pool_size': 556, 'physical_evaluations': 14766, 'workload_pruned': 7804, 'energy': 6406, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.5276951999985613}
+NEIGHBORHOOD 217 3-route ['V4-14', 'V4-03', 'V4-15'] 23
+OUTCOME {'index': 217, 'kind': '3-route', 'removed': ['V4-14', 'V4-03', 'V4-15'], 'max_sorties': 23, 'pool_size': 468, 'physical_evaluations': 15188, 'workload_pruned': 2564, 'energy': 12156, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.6269533000304364}
+NEIGHBORHOOD 218 3-route ['V4-14', 'V4-03', 'V4-19'] 23
+OUTCOME {'index': 218, 'kind': '3-route', 'removed': ['V4-14', 'V4-03', 'V4-19'], 'max_sorties': 23, 'pool_size': 534, 'physical_evaluations': 16004, 'workload_pruned': 2619, 'energy': 12851, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.8583368000108749}
+NEIGHBORHOOD 219 3-route ['V4-14', 'V4-03', 'V4-20'] 23
+OUTCOME {'index': 219, 'kind': '3-route', 'removed': ['V4-14', 'V4-03', 'V4-20'], 'max_sorties': 23, 'pool_size': 398, 'physical_evaluations': 15188, 'workload_pruned': 2753, 'energy': 12037, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.4590079000336118}
+NEIGHBORHOOD 220 3-route ['V4-14', 'V4-03', 'V4-21'] 23
+OUTCOME {'index': 220, 'kind': '3-route', 'removed': ['V4-14', 'V4-03', 'V4-21'], 'max_sorties': 23, 'pool_size': 631, 'physical_evaluations': 26025, 'workload_pruned': 7628, 'energy': 17766, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.7576751000015065}
+NEIGHBORHOOD 221 3-route ['V4-14', 'V4-03', 'V4-22'] 23
+OUTCOME {'index': 221, 'kind': '3-route', 'removed': ['V4-14', 'V4-03', 'V4-22'], 'max_sorties': 23, 'pool_size': 469, 'physical_evaluations': 15188, 'workload_pruned': 3023, 'energy': 11696, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.5692433000076562}
+NEIGHBORHOOD 222 3-route ['V4-14', 'V4-03', 'V4-23'] 23
+OUTCOME {'index': 222, 'kind': '3-route', 'removed': ['V4-14', 'V4-03', 'V4-23'], 'max_sorties': 23, 'pool_size': 510, 'physical_evaluations': 15188, 'workload_pruned': 4836, 'energy': 9842, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.6132106999866664}
+NEIGHBORHOOD 223 3-route ['V4-14', 'V4-06', 'V4-08'] 23
+OUTCOME {'index': 223, 'kind': '3-route', 'removed': ['V4-14', 'V4-06', 'V4-08'], 'max_sorties': 23, 'pool_size': 389, 'physical_evaluations': 7797, 'workload_pruned': 615, 'energy': 6793, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.7671626000083052}
+NEIGHBORHOOD 224 3-route ['V4-14', 'V4-09', 'V4-08'] 23
+OUTCOME {'index': 224, 'kind': '3-route', 'removed': ['V4-14', 'V4-09', 'V4-08'], 'max_sorties': 23, 'pool_size': 173, 'physical_evaluations': 4132, 'workload_pruned': 1624, 'energy': 2335, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.22240269999019802}
+NEIGHBORHOOD 225 3-route ['V4-11', 'V4-02', 'V4-16'] 23
+OUTCOME {'index': 225, 'kind': '3-route', 'removed': ['V4-11', 'V4-02', 'V4-16'], 'max_sorties': 23, 'pool_size': 194, 'physical_evaluations': 2886, 'workload_pruned': 1271, 'energy': 1421, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.14207079994957894}
+NEIGHBORHOOD 226 3-route ['V4-11', 'V4-02', 'V4-17'] 23
+OUTCOME {'index': 226, 'kind': '3-route', 'removed': ['V4-11', 'V4-02', 'V4-17'], 'max_sorties': 23, 'pool_size': 106, 'physical_evaluations': 2006, 'workload_pruned': 396, 'energy': 1504, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.1152136999880895}
+NEIGHBORHOOD 227 3-route ['V4-11', 'V4-03', 'V4-16'] 23
+OUTCOME {'index': 227, 'kind': '3-route', 'removed': ['V4-11', 'V4-03', 'V4-16'], 'max_sorties': 23, 'pool_size': 783, 'physical_evaluations': 21758, 'workload_pruned': 9255, 'energy': 11720, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.8494571000337601}
+NEIGHBORHOOD 228 3-route ['V4-11', 'V4-03', 'V4-17'] 23
+OUTCOME {'index': 228, 'kind': '3-route', 'removed': ['V4-11', 'V4-03', 'V4-17'], 'max_sorties': 23, 'pool_size': 498, 'physical_evaluations': 15188, 'workload_pruned': 2935, 'energy': 11755, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.6052599999820814}
+NEIGHBORHOOD 229 3-route ['V4-11', 'V4-06', 'V4-16'] 23
+OUTCOME {'index': 229, 'kind': '3-route', 'removed': ['V4-11', 'V4-06', 'V4-16'], 'max_sorties': 23, 'pool_size': 588, 'physical_evaluations': 13179, 'energy': 9686, 'workload_pruned': 2905, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.47816430003149435}
+NEIGHBORHOOD 230 3-route ['V4-11', 'V4-06', 'V4-17'] 23
+OUTCOME {'index': 230, 'kind': '3-route', 'removed': ['V4-11', 'V4-06', 'V4-17'], 'max_sorties': 23, 'pool_size': 250, 'physical_evaluations': 7797, 'workload_pruned': 1021, 'energy': 6526, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.2816370999789797}
+NEIGHBORHOOD 231 3-route ['V4-11', 'V4-09', 'V4-16'] 23
+OUTCOME {'index': 231, 'kind': '3-route', 'removed': ['V4-11', 'V4-09', 'V4-16'], 'max_sorties': 23, 'pool_size': 308, 'physical_evaluations': 5844, 'workload_pruned': 1941, 'energy': 3595, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.2600706999655813}
+NEIGHBORHOOD 232 3-route ['V4-11', 'V4-09', 'V4-17'] 23
+OUTCOME {'index': 232, 'kind': '3-route', 'removed': ['V4-11', 'V4-09', 'V4-17'], 'max_sorties': 23, 'pool_size': 195, 'physical_evaluations': 4132, 'workload_pruned': 770, 'energy': 3167, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.20611169998301193}
+NEIGHBORHOOD 233 3-route ['V4-14', 'V4-07', 'V4-01'] 23
+OUTCOME {'index': 233, 'kind': '3-route', 'removed': ['V4-14', 'V4-07', 'V4-01'], 'max_sorties': 23, 'pool_size': 572, 'physical_evaluations': 6461, 'workload_pruned': 569, 'energy': 5320, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.5186561999726109}
+NEIGHBORHOOD 234 3-route ['V4-14', 'V4-07', 'V4-13'] 23
+OUTCOME {'index': 234, 'kind': '3-route', 'removed': ['V4-14', 'V4-07', 'V4-13'], 'max_sorties': 23, 'pool_size': 277, 'physical_evaluations': 13895, 'workload_pruned': 63, 'energy': 13555, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.9756476999609731}
+NEIGHBORHOOD 235 3-route ['V4-14', 'V4-07', 'V4-15'] 23
+OUTCOME {'index': 235, 'kind': '3-route', 'removed': ['V4-14', 'V4-07', 'V4-15'], 'max_sorties': 23, 'pool_size': 947, 'physical_evaluations': 8420, 'workload_pruned': 69, 'energy': 7404, 'deadline_necessary': 204, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 4.525143300008494}
+NEIGHBORHOOD 236 3-route ['V4-14', 'V4-07', 'V4-18'] 23
+OUTCOME {'index': 236, 'kind': '3-route', 'removed': ['V4-14', 'V4-07', 'V4-18'], 'max_sorties': 23, 'pool_size': 1174, 'physical_evaluations': 12753, 'energy': 10593, 'workload_pruned': 986, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 2.627132599998731}
+NEIGHBORHOOD 237 3-route ['V4-14', 'V4-07', 'V4-19'] 23
+OUTCOME {'index': 237, 'kind': '3-route', 'removed': ['V4-14', 'V4-07', 'V4-19'], 'max_sorties': 23, 'pool_size': 973, 'physical_evaluations': 8675, 'workload_pruned': 95, 'energy': 7607, 'deadline_necessary': 342, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 1.194928599987179}
+NEIGHBORHOOD 238 3-route ['V4-14', 'V4-07', 'V4-23'] 23
+OUTCOME {'index': 238, 'kind': '3-route', 'removed': ['V4-14', 'V4-07', 'V4-23'], 'max_sorties': 23, 'pool_size': 619, 'physical_evaluations': 6461, 'workload_pruned': 662, 'energy': 5180, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 1.613776400045026}
+NEIGHBORHOOD 239 3-route ['V4-10', 'V4-02', 'V4-22'] 23
+OUTCOME {'index': 239, 'kind': '3-route', 'removed': ['V4-10', 'V4-02', 'V4-22'], 'max_sorties': 23, 'pool_size': 121, 'physical_evaluations': 4256, 'workload_pruned': 1128, 'energy': 3007, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.17195430002175272}
+NEIGHBORHOOD 240 3-route ['V4-10', 'V4-03', 'V4-22'] 23
+OUTCOME {'index': 240, 'kind': '3-route', 'removed': ['V4-10', 'V4-03', 'V4-22'], 'max_sorties': 23, 'pool_size': 548, 'physical_evaluations': 32502, 'workload_pruned': 7998, 'energy': 23956, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 1.0658725999528542}
+NEIGHBORHOOD 241 3-route ['V4-14', 'V4-09', 'V4-18'] 23
+OUTCOME {'index': 241, 'kind': '3-route', 'removed': ['V4-14', 'V4-09', 'V4-18'], 'max_sorties': 23, 'pool_size': 151, 'physical_evaluations': 6993, 'workload_pruned': 784, 'energy': 6058, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.26882860000478104}
+NEIGHBORHOOD 242 3-route ['V4-11', 'V4-02', 'V4-15'] 23
+OUTCOME {'index': 242, 'kind': '3-route', 'removed': ['V4-11', 'V4-02', 'V4-15'], 'max_sorties': 23, 'pool_size': 106, 'physical_evaluations': 2006, 'workload_pruned': 351, 'energy': 1549, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.09675550000974908}
+NEIGHBORHOOD 243 3-route ['V4-11', 'V4-02', 'V4-19'] 23
+OUTCOME {'index': 243, 'kind': '3-route', 'removed': ['V4-11', 'V4-02', 'V4-19'], 'max_sorties': 23, 'pool_size': 108, 'physical_evaluations': 2078, 'workload_pruned': 358, 'energy': 1612, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.08528090000618249}
+NEIGHBORHOOD 244 3-route ['V4-11', 'V4-03', 'V4-15'] 23
+OUTCOME {'index': 244, 'kind': '3-route', 'removed': ['V4-11', 'V4-03', 'V4-15'], 'max_sorties': 23, 'pool_size': 497, 'physical_evaluations': 15188, 'workload_pruned': 2743, 'energy': 11948, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.5847414000309072}
+NEIGHBORHOOD 245 3-route ['V4-11', 'V4-03', 'V4-19'] 23
+OUTCOME {'index': 245, 'kind': '3-route', 'removed': ['V4-11', 'V4-03', 'V4-19'], 'max_sorties': 23, 'pool_size': 563, 'physical_evaluations': 16004, 'workload_pruned': 2776, 'energy': 12665, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.7373806000105105}
+NEIGHBORHOOD 246 3-route ['V4-11', 'V4-09', 'V4-15'] 23
+OUTCOME {'index': 246, 'kind': '3-route', 'removed': ['V4-11', 'V4-09', 'V4-15'], 'max_sorties': 23, 'pool_size': 159, 'physical_evaluations': 4132, 'workload_pruned': 754, 'energy': 3219, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.1807363000116311}
+NEIGHBORHOOD 247 3-route ['V4-11', 'V4-09', 'V4-19'] 23
+OUTCOME {'index': 247, 'kind': '3-route', 'removed': ['V4-11', 'V4-09', 'V4-19'], 'max_sorties': 23, 'pool_size': 173, 'physical_evaluations': 4286, 'workload_pruned': 784, 'energy': 3329, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.2180000999942422}
+NEIGHBORHOOD 248 3-route ['V4-10', 'V4-02', 'V4-23'] 23
+OUTCOME {'index': 248, 'kind': '3-route', 'removed': ['V4-10', 'V4-02', 'V4-23'], 'max_sorties': 23, 'pool_size': 129, 'physical_evaluations': 4256, 'workload_pruned': 1856, 'energy': 2271, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.1439445999567397}
+NEIGHBORHOOD 249 3-route ['V4-10', 'V4-03', 'V4-23'] 23
+OUTCOME {'index': 249, 'kind': '3-route', 'removed': ['V4-10', 'V4-03', 'V4-23'], 'max_sorties': 23, 'pool_size': 579, 'physical_evaluations': 32502, 'workload_pruned': 13215, 'energy': 18708, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 1.0866375000332482}
+NEIGHBORHOOD 250 3-route ['V4-11', 'V4-06', 'V4-01'] 23
+OUTCOME {'index': 250, 'kind': '3-route', 'removed': ['V4-11', 'V4-06', 'V4-01'], 'max_sorties': 23, 'pool_size': 207, 'physical_evaluations': 7797, 'workload_pruned': 449, 'energy': 7141, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.3024808000191115}
+NEIGHBORHOOD 251 3-route ['V4-14', 'V4-06', 'V4-01'] 23
+OUTCOME {'index': 251, 'kind': '3-route', 'removed': ['V4-14', 'V4-06', 'V4-01'], 'max_sorties': 23, 'pool_size': 199, 'physical_evaluations': 7797, 'energy': 7576, 'workload_pruned': 22, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.28061600000364706}
+NEIGHBORHOOD 252 3-route ['V4-11', 'V4-02', 'V4-12'] 23
+OUTCOME {'index': 252, 'kind': '3-route', 'removed': ['V4-11', 'V4-02', 'V4-12'], 'max_sorties': 23, 'pool_size': 121, 'physical_evaluations': 4339, 'workload_pruned': 622, 'energy': 3596, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.16102860000682995}
+NEIGHBORHOOD 253 3-route ['V4-11', 'V4-03', 'V4-12'] 23
+OUTCOME {'index': 253, 'kind': '3-route', 'removed': ['V4-11', 'V4-03', 'V4-12'], 'max_sorties': 23, 'pool_size': 570, 'physical_evaluations': 32945, 'workload_pruned': 4829, 'energy': 27546, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 1.0786058999947272}
+NEIGHBORHOOD 254 3-route ['V4-11', 'V4-06', 'V4-12'] 23
+OUTCOME {'index': 254, 'kind': '3-route', 'removed': ['V4-11', 'V4-06', 'V4-12'], 'max_sorties': 23, 'pool_size': 277, 'physical_evaluations': 16816, 'workload_pruned': 1099, 'energy': 15440, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.4767895999830216}
+NEIGHBORHOOD 255 3-route ['V4-11', 'V4-09', 'V4-12'] 23
+OUTCOME {'index': 255, 'kind': '3-route', 'removed': ['V4-11', 'V4-09', 'V4-12'], 'max_sorties': 23, 'pool_size': 219, 'physical_evaluations': 8915, 'workload_pruned': 1141, 'energy': 7555, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.3066020999685861}
+NEIGHBORHOOD 256 3-route ['V4-10', 'V4-02', 'V4-16'] 23
+OUTCOME {'index': 256, 'kind': '3-route', 'removed': ['V4-10', 'V4-02', 'V4-16'], 'max_sorties': 23, 'pool_size': 238, 'physical_evaluations': 5638, 'workload_pruned': 2236, 'energy': 3164, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.2045728000230156}
+NEIGHBORHOOD 257 3-route ['V4-10', 'V4-03', 'V4-16'] 23
+OUTCOME {'index': 257, 'kind': '3-route', 'removed': ['V4-10', 'V4-03', 'V4-16'], 'max_sorties': 23, 'pool_size': 881, 'physical_evaluations': 41326, 'workload_pruned': 16148, 'energy': 24297, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 1.386201000015717}
+NEIGHBORHOOD 258 3-route ['V4-10', 'V4-06', 'V4-05'] 23
+OUTCOME {'index': 258, 'kind': '3-route', 'removed': ['V4-10', 'V4-06', 'V4-05'], 'max_sorties': 23, 'pool_size': 276, 'physical_evaluations': 36122, 'workload_pruned': 851, 'energy': 34995, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 1.0294143999926746}
+NEIGHBORHOOD 259 3-route ['V4-10', 'V4-06', 'V4-08'] 23
+OUTCOME {'index': 259, 'kind': '3-route', 'removed': ['V4-10', 'V4-06', 'V4-08'], 'max_sorties': 23, 'pool_size': 409, 'physical_evaluations': 16707, 'workload_pruned': 650, 'energy': 15648, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 1.3122686000424437}
+NEIGHBORHOOD 260 3-route ['V4-10', 'V4-06', 'V4-12'] 23
+OUTCOME {'index': 260, 'kind': '3-route', 'removed': ['V4-10', 'V4-06', 'V4-12'], 'max_sorties': 23, 'pool_size': 300, 'physical_evaluations': 36122, 'workload_pruned': 796, 'energy': 35026, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 1.1057064000051469}
+NEIGHBORHOOD 261 3-route ['V4-10', 'V4-06', 'V4-16'] 23
+OUTCOME {'index': 261, 'kind': '3-route', 'removed': ['V4-10', 'V4-06', 'V4-16'], 'max_sorties': 23, 'pool_size': 590, 'physical_evaluations': 26491, 'energy': 24278, 'workload_pruned': 1623, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 1.853304099990055}
+NEIGHBORHOOD 262 3-route ['V4-10', 'V4-06', 'V4-17'] 23
+OUTCOME {'index': 262, 'kind': '3-route', 'removed': ['V4-10', 'V4-06', 'V4-17'], 'max_sorties': 23, 'pool_size': 251, 'physical_evaluations': 16707, 'workload_pruned': 623, 'energy': 15833, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.5324156999704428}
+NEIGHBORHOOD 263 3-route ['V4-10', 'V4-06', 'V4-22'] 23
+OUTCOME {'index': 263, 'kind': '3-route', 'removed': ['V4-10', 'V4-06', 'V4-22'], 'max_sorties': 23, 'pool_size': 404, 'physical_evaluations': 16707, 'workload_pruned': 634, 'energy': 15669, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 1.1619359000469558}
+NEIGHBORHOOD 264 3-route ['V4-10', 'V4-06', 'V4-23'] 23
+OUTCOME {'index': 264, 'kind': '3-route', 'removed': ['V4-10', 'V4-06', 'V4-23'], 'max_sorties': 23, 'pool_size': 264, 'physical_evaluations': 16707, 'workload_pruned': 717, 'energy': 15726, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.5361179000465199}
+NEIGHBORHOOD 265 3-route ['V4-14', 'V4-02', 'V4-18'] 23
+OUTCOME {'index': 265, 'kind': '3-route', 'removed': ['V4-14', 'V4-02', 'V4-18'], 'max_sorties': 23, 'pool_size': 88, 'physical_evaluations': 3437, 'workload_pruned': 491, 'energy': 2858, 'deadline_necessary': 26, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.09742419997928664}
+NEIGHBORHOOD 266 3-route ['V4-14', 'V4-03', 'V4-18'] 23
+OUTCOME {'index': 266, 'kind': '3-route', 'removed': ['V4-14', 'V4-03', 'V4-18'], 'max_sorties': 23, 'pool_size': 453, 'physical_evaluations': 26025, 'workload_pruned': 3311, 'energy': 22261, 'deadline_necessary': 1007, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.8235265999683179}
+NEIGHBORHOOD 267 3-route ['V4-14', 'V4-07', 'V4-08'] 23
+OUTCOME {'index': 267, 'kind': '3-route', 'removed': ['V4-14', 'V4-07', 'V4-08'], 'max_sorties': 23, 'pool_size': 298, 'physical_evaluations': 6461, 'energy': 5846, 'workload_pruned': 317, 'deadline_necessary': 73, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.2561530999955721}
+NEIGHBORHOOD 268 3-route ['V4-14', 'V4-02', 'V4-05'] 23
+OUTCOME {'index': 268, 'kind': '3-route', 'removed': ['V4-14', 'V4-02', 'V4-05'], 'max_sorties': 23, 'pool_size': 115, 'physical_evaluations': 4339, 'workload_pruned': 552, 'energy': 3672, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.16856379999080673}
+NEIGHBORHOOD 269 3-route ['V4-14', 'V4-03', 'V4-05'] 23
+OUTCOME {'index': 269, 'kind': '3-route', 'removed': ['V4-14', 'V4-03', 'V4-05'], 'max_sorties': 23, 'pool_size': 554, 'physical_evaluations': 32945, 'workload_pruned': 4121, 'energy': 28270, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 1.0282053999835625}
+NEIGHBORHOOD 270 3-route ['V4-14', 'V4-06', 'V4-05'] 23
+OUTCOME {'index': 270, 'kind': '3-route', 'removed': ['V4-14', 'V4-06', 'V4-05'], 'max_sorties': 23, 'pool_size': 248, 'physical_evaluations': 16816, 'workload_pruned': 768, 'energy': 15800, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.5792708999942988}
+NEIGHBORHOOD 271 3-route ['V4-14', 'V4-09', 'V4-05'] 23
+OUTCOME {'index': 271, 'kind': '3-route', 'removed': ['V4-14', 'V4-09', 'V4-05'], 'max_sorties': 23, 'pool_size': 173, 'physical_evaluations': 8915, 'workload_pruned': 741, 'energy': 8001, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.28820419998373836}
+NEIGHBORHOOD 272 3-route ['V4-10', 'V4-09', 'V4-05'] 23
+OUTCOME {'index': 272, 'kind': '3-route', 'removed': ['V4-10', 'V4-09', 'V4-05'], 'max_sorties': 23, 'pool_size': 203, 'physical_evaluations': 19195, 'workload_pruned': 689, 'energy': 18303, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.5397258999873884}
+NEIGHBORHOOD 273 3-route ['V4-10', 'V4-09', 'V4-08'] 23
+OUTCOME {'index': 273, 'kind': '3-route', 'removed': ['V4-10', 'V4-09', 'V4-08'], 'max_sorties': 23, 'pool_size': 183, 'physical_evaluations': 8852, 'workload_pruned': 733, 'energy': 7936, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.3007499999948777}
+NEIGHBORHOOD 274 3-route ['V4-10', 'V4-09', 'V4-12'] 23
+OUTCOME {'index': 274, 'kind': '3-route', 'removed': ['V4-10', 'V4-09', 'V4-12'], 'max_sorties': 23, 'pool_size': 280, 'physical_evaluations': 19195, 'workload_pruned': 1305, 'energy': 17610, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.6045289000030607}
+NEIGHBORHOOD 275 3-route ['V4-10', 'V4-09', 'V4-16'] 23
+OUTCOME {'index': 275, 'kind': '3-route', 'removed': ['V4-10', 'V4-09', 'V4-16'], 'max_sorties': 23, 'pool_size': 291, 'physical_evaluations': 11264, 'workload_pruned': 1289, 'energy': 9684, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.3925595000036992}
+NEIGHBORHOOD 276 3-route ['V4-10', 'V4-09', 'V4-17'] 23
+OUTCOME {'index': 276, 'kind': '3-route', 'removed': ['V4-10', 'V4-09', 'V4-17'], 'max_sorties': 23, 'pool_size': 195, 'physical_evaluations': 8852, 'workload_pruned': 667, 'energy': 7990, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.3367504000198096}
+NEIGHBORHOOD 277 3-route ['V4-10', 'V4-09', 'V4-22'] 23
+OUTCOME {'index': 277, 'kind': '3-route', 'removed': ['V4-10', 'V4-09', 'V4-22'], 'max_sorties': 23, 'pool_size': 178, 'physical_evaluations': 8852, 'workload_pruned': 649, 'energy': 8025, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.33025449997512624}
+NEIGHBORHOOD 278 3-route ['V4-10', 'V4-09', 'V4-23'] 23
+OUTCOME {'index': 278, 'kind': '3-route', 'removed': ['V4-10', 'V4-09', 'V4-23'], 'max_sorties': 23, 'pool_size': 183, 'physical_evaluations': 8852, 'workload_pruned': 725, 'energy': 7944, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.3299591999966651}
+NEIGHBORHOOD 279 3-route ['V4-14', 'V4-02', 'V4-16'] 23
+OUTCOME {'index': 279, 'kind': '3-route', 'removed': ['V4-14', 'V4-02', 'V4-16'], 'max_sorties': 23, 'pool_size': 160, 'physical_evaluations': 2886, 'workload_pruned': 823, 'energy': 1903, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.1230566999875009}
+NEIGHBORHOOD 280 3-route ['V4-14', 'V4-02', 'V4-17'] 23
+OUTCOME {'index': 280, 'kind': '3-route', 'removed': ['V4-14', 'V4-02', 'V4-17'], 'max_sorties': 23, 'pool_size': 90, 'physical_evaluations': 2006, 'workload_pruned': 341, 'energy': 1575, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.09409529995173216}
+NEIGHBORHOOD 281 3-route ['V4-14', 'V4-03', 'V4-16'] 23
+OUTCOME {'index': 281, 'kind': '3-route', 'removed': ['V4-14', 'V4-03', 'V4-16'], 'max_sorties': 23, 'pool_size': 714, 'physical_evaluations': 21758, 'workload_pruned': 6056, 'energy': 14988, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.8647303000325337}
+NEIGHBORHOOD 282 3-route ['V4-14', 'V4-03', 'V4-17'] 23
+OUTCOME {'index': 282, 'kind': '3-route', 'removed': ['V4-14', 'V4-03', 'V4-17'], 'max_sorties': 23, 'pool_size': 469, 'physical_evaluations': 15188, 'workload_pruned': 2562, 'energy': 12157, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.5936119999969378}
+NEIGHBORHOOD 283 3-route ['V4-14', 'V4-06', 'V4-16'] 23
+OUTCOME {'index': 283, 'kind': '3-route', 'removed': ['V4-14', 'V4-06', 'V4-16'], 'max_sorties': 23, 'pool_size': 566, 'physical_evaluations': 13179, 'energy': 11067, 'workload_pruned': 1546, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.5012375999940559}
+NEIGHBORHOOD 284 3-route ['V4-14', 'V4-06', 'V4-17'] 23
+OUTCOME {'index': 284, 'kind': '3-route', 'removed': ['V4-14', 'V4-06', 'V4-17'], 'max_sorties': 23, 'pool_size': 242, 'physical_evaluations': 7797, 'energy': 7005, 'workload_pruned': 550, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.3106535999686457}
+NEIGHBORHOOD 285 3-route ['V4-14', 'V4-09', 'V4-16'] 23
+OUTCOME {'index': 285, 'kind': '3-route', 'removed': ['V4-14', 'V4-09', 'V4-16'], 'max_sorties': 23, 'pool_size': 263, 'physical_evaluations': 5844, 'workload_pruned': 1335, 'energy': 4246, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.23614459997043014}
+NEIGHBORHOOD 286 3-route ['V4-14', 'V4-09', 'V4-17'] 23
+OUTCOME {'index': 286, 'kind': '3-route', 'removed': ['V4-14', 'V4-09', 'V4-17'], 'max_sorties': 23, 'pool_size': 171, 'physical_evaluations': 4132, 'workload_pruned': 697, 'energy': 3264, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.21757939999224618}
+NEIGHBORHOOD 287 3-route ['V4-14', 'V4-04', 'V4-01'] 23
+OUTCOME {'index': 287, 'kind': '3-route', 'removed': ['V4-14', 'V4-04', 'V4-01'], 'max_sorties': 23, 'pool_size': 150, 'physical_evaluations': 4132, 'workload_pruned': 470, 'energy': 3512, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.2063077000202611}
+NEIGHBORHOOD 288 3-route ['V4-14', 'V4-04', 'V4-08'] 23
+OUTCOME {'index': 288, 'kind': '3-route', 'removed': ['V4-14', 'V4-04', 'V4-08'], 'max_sorties': 23, 'pool_size': 167, 'physical_evaluations': 4132, 'workload_pruned': 472, 'energy': 3493, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.2318008000147529}
+NEIGHBORHOOD 289 3-route ['V4-14', 'V4-04', 'V4-13'] 23
+OUTCOME {'index': 289, 'kind': '3-route', 'removed': ['V4-14', 'V4-04', 'V4-13'], 'max_sorties': 23, 'pool_size': 159, 'physical_evaluations': 4004, 'workload_pruned': 307, 'energy': 3538, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.346064799989108}
+NEIGHBORHOOD 290 3-route ['V4-14', 'V4-04', 'V4-15'] 23
+OUTCOME {'index': 290, 'kind': '3-route', 'removed': ['V4-14', 'V4-04', 'V4-15'], 'max_sorties': 23, 'pool_size': 162, 'physical_evaluations': 4132, 'workload_pruned': 466, 'energy': 3504, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.18763939995551482}
+NEIGHBORHOOD 291 3-route ['V4-14', 'V4-04', 'V4-17'] 23
+OUTCOME {'index': 291, 'kind': '3-route', 'removed': ['V4-14', 'V4-04', 'V4-17'], 'max_sorties': 23, 'pool_size': 165, 'physical_evaluations': 4132, 'workload_pruned': 415, 'energy': 3552, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.1956423000083305}
+NEIGHBORHOOD 292 3-route ['V4-14', 'V4-04', 'V4-18'] 23
+OUTCOME {'index': 292, 'kind': '3-route', 'removed': ['V4-14', 'V4-04', 'V4-18'], 'max_sorties': 23, 'pool_size': 206, 'physical_evaluations': 6993, 'workload_pruned': 1161, 'energy': 5626, 'deadline_necessary': 286, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.22494679997907951}
+NEIGHBORHOOD 293 3-route ['V4-14', 'V4-04', 'V4-19'] 23
+OUTCOME {'index': 293, 'kind': '3-route', 'removed': ['V4-14', 'V4-04', 'V4-19'], 'max_sorties': 23, 'pool_size': 186, 'physical_evaluations': 4286, 'workload_pruned': 473, 'energy': 3627, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.2239019999979064}
+NEIGHBORHOOD 294 3-route ['V4-14', 'V4-04', 'V4-22'] 23
+OUTCOME {'index': 294, 'kind': '3-route', 'removed': ['V4-14', 'V4-04', 'V4-22'], 'max_sorties': 23, 'pool_size': 153, 'physical_evaluations': 4132, 'workload_pruned': 418, 'energy': 3561, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.17516719998093322}
+NEIGHBORHOOD 295 3-route ['V4-14', 'V4-04', 'V4-23'] 23
+OUTCOME {'index': 295, 'kind': '3-route', 'removed': ['V4-14', 'V4-04', 'V4-23'], 'max_sorties': 23, 'pool_size': 174, 'physical_evaluations': 4132, 'workload_pruned': 475, 'energy': 3483, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.16216910001821816}
+NEIGHBORHOOD 296 3-route ['V4-11', 'V4-06', 'V4-15'] 23
+OUTCOME {'index': 296, 'kind': '3-route', 'removed': ['V4-11', 'V4-06', 'V4-15'], 'max_sorties': 23, 'pool_size': 207, 'physical_evaluations': 7797, 'workload_pruned': 452, 'energy': 7138, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.21496720000868663}
+NEIGHBORHOOD 297 3-route ['V4-11', 'V4-06', 'V4-19'] 23
+OUTCOME {'index': 297, 'kind': '3-route', 'removed': ['V4-11', 'V4-06', 'V4-19'], 'max_sorties': 23, 'pool_size': 207, 'physical_evaluations': 8141, 'workload_pruned': 465, 'energy': 7469, 'deadline_necessary': 10, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.34867610002402216}
+NEIGHBORHOOD 298 3-route ['V4-14', 'V4-06', 'V4-15'] 23
+OUTCOME {'index': 298, 'kind': '3-route', 'removed': ['V4-14', 'V4-06', 'V4-15'], 'max_sorties': 23, 'pool_size': 199, 'physical_evaluations': 7797, 'energy': 7575, 'workload_pruned': 23, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.3545340999844484}
+NEIGHBORHOOD 299 3-route ['V4-14', 'V4-06', 'V4-19'] 23
+OUTCOME {'index': 299, 'kind': '3-route', 'removed': ['V4-14', 'V4-06', 'V4-19'], 'max_sorties': 23, 'pool_size': 199, 'physical_evaluations': 8141, 'energy': 7907, 'workload_pruned': 35, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.38545519998297095}
+NEIGHBORHOOD 300 3-route ['V4-11', 'V4-02', 'V4-18'] 23
+OUTCOME {'index': 300, 'kind': '3-route', 'removed': ['V4-11', 'V4-02', 'V4-18'], 'max_sorties': 23, 'pool_size': 112, 'physical_evaluations': 3437, 'workload_pruned': 453, 'energy': 2872, 'deadline_necessary': 179, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.1638886999571696}
+NEIGHBORHOOD 301 3-route ['V4-11', 'V4-03', 'V4-18'] 23
+OUTCOME {'index': 301, 'kind': '3-route', 'removed': ['V4-11', 'V4-03', 'V4-18'], 'max_sorties': 23, 'pool_size': 496, 'physical_evaluations': 26025, 'workload_pruned': 3297, 'energy': 22232, 'deadline_necessary': 2297, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.9118710000184365}
+NEIGHBORHOOD 302 3-route ['V4-11', 'V4-07', 'V4-01'] 23
+OUTCOME {'index': 302, 'kind': '3-route', 'removed': ['V4-11', 'V4-07', 'V4-01'], 'max_sorties': 23, 'pool_size': 564, 'physical_evaluations': 6461, 'energy': 5340, 'workload_pruned': 557, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 1.6545173999620602}
+NEIGHBORHOOD 303 3-route ['V4-11', 'V4-07', 'V4-08'] 23
+OUTCOME {'index': 303, 'kind': '3-route', 'removed': ['V4-11', 'V4-07', 'V4-08'], 'max_sorties': 23, 'pool_size': 305, 'physical_evaluations': 6461, 'energy': 5849, 'workload_pruned': 307, 'deadline_necessary': 275, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.3281870000064373}
+NEIGHBORHOOD 304 3-route ['V4-11', 'V4-07', 'V4-13'] 23
+OUTCOME {'index': 304, 'kind': '3-route', 'removed': ['V4-11', 'V4-07', 'V4-13'], 'max_sorties': 23, 'pool_size': 292, 'physical_evaluations': 12530, 'workload_pruned': 42, 'energy': 12196, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.7995021000388078}
+NEIGHBORHOOD 305 3-route ['V4-11', 'V4-07', 'V4-14'] 23
+OUTCOME {'index': 305, 'kind': '3-route', 'removed': ['V4-11', 'V4-07', 'V4-14'], 'max_sorties': 23, 'pool_size': 261, 'physical_evaluations': 6448, 'workload_pruned': 28, 'energy': 6159, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 1.1726512999739498}
+NEIGHBORHOOD 306 3-route ['V4-11', 'V4-07', 'V4-15'] 23
+OUTCOME {'index': 306, 'kind': '3-route', 'removed': ['V4-11', 'V4-07', 'V4-15'], 'max_sorties': 23, 'pool_size': 947, 'physical_evaluations': 8420, 'energy': 7425, 'workload_pruned': 48, 'deadline_necessary': 539, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 2.3495381000102498}
+NEIGHBORHOOD 307 3-route ['V4-11', 'V4-07', 'V4-18'] 23
+OUTCOME {'index': 307, 'kind': '3-route', 'removed': ['V4-11', 'V4-07', 'V4-18'], 'max_sorties': 23, 'pool_size': 1168, 'physical_evaluations': 12753, 'energy': 10605, 'workload_pruned': 980, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 2.724597399996128}
+NEIGHBORHOOD 308 3-route ['V4-11', 'V4-07', 'V4-19'] 23
+OUTCOME {'index': 308, 'kind': '3-route', 'removed': ['V4-11', 'V4-07', 'V4-19'], 'max_sorties': 23, 'pool_size': 973, 'physical_evaluations': 8675, 'energy': 7628, 'workload_pruned': 74, 'deadline_necessary': 873, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 2.1597493999870494}
+NEIGHBORHOOD 309 3-route ['V4-11', 'V4-07', 'V4-20'] 23
+OUTCOME {'index': 309, 'kind': '3-route', 'removed': ['V4-11', 'V4-07', 'V4-20'], 'max_sorties': 23, 'pool_size': 256, 'physical_evaluations': 7095, 'energy': 6813, 'workload_pruned': 26, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 1.490245099994354}
+NEIGHBORHOOD 310 3-route ['V4-11', 'V4-07', 'V4-21'] 23
+OUTCOME {'index': 310, 'kind': '3-route', 'removed': ['V4-11', 'V4-07', 'V4-21'], 'max_sorties': 23, 'pool_size': 454, 'physical_evaluations': 13371, 'energy': 12622, 'workload_pruned': 295, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 1.7617801000014879}
+NEIGHBORHOOD 311 3-route ['V4-11', 'V4-07', 'V4-23'] 23
+OUTCOME {'index': 311, 'kind': '3-route', 'removed': ['V4-11', 'V4-07', 'V4-23'], 'max_sorties': 23, 'pool_size': 619, 'physical_evaluations': 6461, 'energy': 5193, 'workload_pruned': 649, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 4.153450399986468}
+NEIGHBORHOOD 312 3-route ['V4-11', 'V4-09', 'V4-18'] 23
+OUTCOME {'index': 312, 'kind': '3-route', 'removed': ['V4-11', 'V4-09', 'V4-18'], 'max_sorties': 23, 'pool_size': 173, 'physical_evaluations': 6993, 'workload_pruned': 685, 'energy': 6135, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.509709500009194}
+NEIGHBORHOOD 313 3-route ['V4-14', 'V4-07', 'V4-20'] 23
+OUTCOME {'index': 313, 'kind': '3-route', 'removed': ['V4-14', 'V4-07', 'V4-20'], 'max_sorties': 23, 'pool_size': 258, 'physical_evaluations': 6461, 'energy': 6173, 'workload_pruned': 30, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 1.4421984000364318}
+NEIGHBORHOOD 314 3-route ['V4-14', 'V4-07', 'V4-21'] 23
+OUTCOME {'index': 314, 'kind': '3-route', 'removed': ['V4-14', 'V4-07', 'V4-21'], 'max_sorties': 23, 'pool_size': 438, 'physical_evaluations': 9624, 'energy': 8852, 'workload_pruned': 334, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 1.7188123000087216}
+NEIGHBORHOOD 315 3-route ['V4-10', 'V4-04', 'V4-08'] 23
+OUTCOME {'index': 315, 'kind': '3-route', 'removed': ['V4-10', 'V4-04', 'V4-08'], 'max_sorties': 23, 'pool_size': 213, 'physical_evaluations': 8852, 'workload_pruned': 1146, 'energy': 7493, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.6995830000378191}
+NEIGHBORHOOD 316 3-route ['V4-10', 'V4-04', 'V4-12'] 23
+OUTCOME {'index': 316, 'kind': '3-route', 'removed': ['V4-10', 'V4-04', 'V4-12'], 'max_sorties': 23, 'pool_size': 372, 'physical_evaluations': 19195, 'workload_pruned': 3275, 'energy': 15548, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 1.0958576999837533}
+NEIGHBORHOOD 317 3-route ['V4-10', 'V4-04', 'V4-17'] 23
+OUTCOME {'index': 317, 'kind': '3-route', 'removed': ['V4-10', 'V4-04', 'V4-17'], 'max_sorties': 23, 'pool_size': 225, 'physical_evaluations': 8852, 'workload_pruned': 1077, 'energy': 7550, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.5765873999916948}
+NEIGHBORHOOD 318 3-route ['V4-10', 'V4-04', 'V4-22'] 23
+OUTCOME {'index': 318, 'kind': '3-route', 'removed': ['V4-10', 'V4-04', 'V4-22'], 'max_sorties': 23, 'pool_size': 196, 'physical_evaluations': 8852, 'workload_pruned': 1059, 'energy': 7597, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.4872167000430636}
+NEIGHBORHOOD 319 3-route ['V4-10', 'V4-04', 'V4-23'] 23
+OUTCOME {'index': 319, 'kind': '3-route', 'removed': ['V4-10', 'V4-04', 'V4-23'], 'max_sorties': 23, 'pool_size': 213, 'physical_evaluations': 8852, 'workload_pruned': 1150, 'energy': 7489, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.5846392000094056}
+NEIGHBORHOOD 320 3-route ['V4-11', 'V4-04', 'V4-01'] 23
+OUTCOME {'index': 320, 'kind': '3-route', 'removed': ['V4-11', 'V4-04', 'V4-01'], 'max_sorties': 23, 'pool_size': 150, 'physical_evaluations': 4132, 'workload_pruned': 431, 'energy': 3551, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.30409639998106286}
+NEIGHBORHOOD 321 3-route ['V4-11', 'V4-04', 'V4-08'] 23
+OUTCOME {'index': 321, 'kind': '3-route', 'removed': ['V4-11', 'V4-04', 'V4-08'], 'max_sorties': 23, 'pool_size': 174, 'physical_evaluations': 4132, 'workload_pruned': 441, 'energy': 3517, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.3313031999859959}
+NEIGHBORHOOD 322 3-route ['V4-11', 'V4-04', 'V4-12'] 23
+OUTCOME {'index': 322, 'kind': '3-route', 'removed': ['V4-11', 'V4-04', 'V4-12'], 'max_sorties': 23, 'pool_size': 206, 'physical_evaluations': 8915, 'workload_pruned': 881, 'energy': 7828, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.5509706999873742}
+NEIGHBORHOOD 323 3-route ['V4-11', 'V4-04', 'V4-13'] 23
+OUTCOME {'index': 323, 'kind': '3-route', 'removed': ['V4-11', 'V4-04', 'V4-13'], 'max_sorties': 23, 'pool_size': 157, 'physical_evaluations': 8915, 'workload_pruned': 230, 'energy': 8528, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.4384796000085771}
+NEIGHBORHOOD 324 3-route ['V4-11', 'V4-04', 'V4-14'] 23
+OUTCOME {'index': 324, 'kind': '3-route', 'removed': ['V4-11', 'V4-04', 'V4-14'], 'max_sorties': 23, 'pool_size': 130, 'physical_evaluations': 4167, 'workload_pruned': 120, 'energy': 3917, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.5134959999704733}
+NEIGHBORHOOD 325 3-route ['V4-11', 'V4-04', 'V4-15'] 23
+OUTCOME {'index': 325, 'kind': '3-route', 'removed': ['V4-11', 'V4-04', 'V4-15'], 'max_sorties': 23, 'pool_size': 162, 'physical_evaluations': 4132, 'workload_pruned': 429, 'energy': 3541, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.31437279999954626}
+NEIGHBORHOOD 326 3-route ['V4-11', 'V4-04', 'V4-17'] 23
+OUTCOME {'index': 326, 'kind': '3-route', 'removed': ['V4-11', 'V4-04', 'V4-17'], 'max_sorties': 23, 'pool_size': 165, 'physical_evaluations': 4132, 'workload_pruned': 407, 'energy': 3560, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.9285597000271082}
+NEIGHBORHOOD 327 3-route ['V4-11', 'V4-04', 'V4-18'] 23
+OUTCOME {'index': 327, 'kind': '3-route', 'removed': ['V4-11', 'V4-04', 'V4-18'], 'max_sorties': 23, 'pool_size': 204, 'physical_evaluations': 6993, 'workload_pruned': 1132, 'energy': 5657, 'deadline_necessary': 461, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.48046930000418797}
+NEIGHBORHOOD 328 3-route ['V4-11', 'V4-04', 'V4-19'] 23
+OUTCOME {'index': 328, 'kind': '3-route', 'removed': ['V4-11', 'V4-04', 'V4-19'], 'max_sorties': 23, 'pool_size': 186, 'physical_evaluations': 4286, 'workload_pruned': 435, 'energy': 3665, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.3206032000016421}
+NEIGHBORHOOD 329 3-route ['V4-11', 'V4-04', 'V4-20'] 23
+OUTCOME {'index': 329, 'kind': '3-route', 'removed': ['V4-11', 'V4-04', 'V4-20'], 'max_sorties': 23, 'pool_size': 117, 'physical_evaluations': 2018, 'workload_pruned': 105, 'energy': 1796, 'outcome': 'finite_pool_no_candidate', 'elapsed_s': 0.23921909998171031}
+FINAL no improvement
+Solve 4: Forcing phase 2 since near primal feasible with unperturbed costs
+num / max / sum primal infeasiblitiles
+1 /    1.31e-06 /    1.31e-06 (  perturbed bounds)
+1 /    1.31e-06 /    1.31e-06 (unperturbed bounds)
+Solve 45: Forcing phase 2 since near primal feasible with unperturbed costs
+num / max / sum primal infeasiblitiles
+1 /   3.274e-05 /   3.274e-05 (  perturbed bounds)
+1 /   3.274e-05 /   3.274e-05 (unperturbed bounds)
+Solve 47: Forcing phase 2 since near primal feasible with unperturbed costs
+num / max / sum primal infeasiblitiles
+1 /   4.072e-06 /   4.072e-06 (  perturbed bounds)
+1 /   4.072e-06 /   4.072e-06 (unperturbed bounds)
+Solve 15: Forcing phase 2 since near primal feasible with unperturbed costs
+num / max / sum primal infeasiblitiles
+1 /   2.036e-06 /   2.036e-06 (  perturbed bounds)
+1 /   2.036e-06 /   2.036e-06 (unperturbed bounds)
+Solve 4: Forcing phase 2 since near primal feasible with unperturbed costs
+num / max / sum primal infeasiblitiles
+1 /   3.273e-05 /   3.273e-05 (  perturbed bounds)
+1 /   3.273e-05 /   3.273e-05 (unperturbed bounds)
+Solve 39: Forcing phase 2 since near primal feasible with unperturbed costs
+num / max / sum primal infeasiblitiles
+1 /   4.072e-06 /   4.072e-06 (  perturbed bounds)
+1 /   4.072e-06 /   4.072e-06 (unperturbed bounds)
+Solve 31: Forcing phase 2 since near primal feasible with unperturbed costs
+num / max / sum primal infeasiblitiles
+2 /   3.061e-05 /   6.122e-05 (  perturbed bounds)
+2 /   3.061e-05 /   6.122e-05 (unperturbed bounds)
+Solve 7: Forcing phase 2 since near primal feasible with unperturbed costs
+num / max / sum primal infeasiblitiles
+3 /   3.826e-06 /   9.565e-06 (  perturbed bounds)
+3 /   3.826e-06 /   9.565e-06 (unperturbed bounds)
+Solve 33: Forcing phase 2 since near primal feasible with unperturbed costs
+num / max / sum primal infeasiblitiles
+3 /   1.542e-06 /   4.625e-06 (  perturbed bounds)
+3 /   1.542e-06 /   4.625e-06 (unperturbed bounds)
+Solve 54: Forcing phase 2 since near primal feasible with unperturbed costs
+num / max / sum primal infeasiblitiles
+2 /   3.991e-05 /   7.981e-05 (  perturbed bounds)
+2 /   3.991e-05 /   7.981e-05 (unperturbed bounds)
+Solve 4: Forcing phase 2 since near primal feasible with unperturbed costs
+num / max / sum primal infeasiblitiles
+2 /   2.467e-05 /     3.7e-05 (  perturbed bounds)
+2 /   2.467e-05 /     3.7e-05 (unperturbed bounds)
+Solve 7: Forcing phase 2 since near primal feasible with unperturbed costs
+num / max / sum primal infeasiblitiles
+2 /   2.028e-06 /    3.38e-06 (  perturbed bounds)
+2 /   2.028e-06 /    3.38e-06 (unperturbed bounds)
+Solve 12: Forcing phase 2 since near primal feasible with unperturbed costs
+num / max / sum primal infeasiblitiles
+2 /   2.028e-06 /    3.38e-06 (  perturbed bounds)
+2 /   2.028e-06 /    3.38e-06 (unperturbed bounds)
+Solve 20: Forcing phase 2 since near primal feasible with unperturbed costs
+num / max / sum primal infeasiblitiles
+2 /   2.028e-06 /    3.38e-06 (  perturbed bounds)
+2 /   2.028e-06 /    3.38e-06 (unperturbed bounds)
+Solve 33: Forcing phase 2 since near primal feasible with unperturbed costs
+num / max / sum primal infeasiblitiles
+2 /   2.028e-06 /    3.38e-06 (  perturbed bounds)
+2 /   2.028e-06 /    3.38e-06 (unperturbed bounds)
+Solve 51: Forcing phase 2 since near primal feasible with unperturbed costs
+num / max / sum primal infeasiblitiles
+3 /   8.645e-06 /   2.161e-05 (  perturbed bounds)
+3 /   8.645e-06 /   2.161e-05 (unperturbed bounds)

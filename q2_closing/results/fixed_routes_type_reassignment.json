@@ -1,0 +1,16 @@
+{
+  "patterns": 51,
+  "solver": {
+    "status": 2,
+    "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+    "objective_s": null,
+    "dual_bound_s": null,
+    "mip_gap": null,
+    "variables": 125,
+    "constraints": 89,
+    "elapsed_s": 0.2072877999744378,
+    "scope": "finite-neighborhood route selection and aircraft workload only; no infeasibility claim for full problem"
+  },
+  "has_potential_improvement": false,
+  "scope": "all three types on each of the unchanged 23 box sets and routes; workload necessary condition"
+}

@@ -1,0 +1,1558 @@
+{
+  "flights": [
+    {
+      "flight_id": "V4-16",
+      "type": "A",
+      "box_ids": [
+        "S002-WAT-01",
+        "S009-MED-01",
+        "S013-MED-01"
+      ],
+      "route": [
+        "S009",
+        "S002",
+        "S013"
+      ],
+      "payload_kg": 20,
+      "volume_m3": 0.051,
+      "energy_kwh": 3.3898979134810308,
+      "return_soc": 0.24668935255977098,
+      "energy_budget_kwh": 3.6,
+      "duration_s": 2675.527975730177,
+      "prep_load_s": 390,
+      "flight_s": 1745.5279757301773,
+      "handover_s": 540.0,
+      "charge_s": 1479.3038416722977,
+      "latest_start_s": 1452.9955597746211,
+      "delivery_offsets": {
+        "S009-MED-01": 1125.8966159156348,
+        "S002-WAT-01": 1525.885760616163,
+        "S013-MED-01": 2147.004440225379
+      },
+      "legs": [
+        {
+          "origin": "O01",
+          "destination": "S009",
+          "distance_m": 5705.144962276681,
+          "max_dem_m": 243.22891235351562,
+          "up_m": 165.52891235351564,
+          "down_m": 63.228912353515625,
+          "payload_kg": 20,
+          "flight_s": 555.8966159156349,
+          "departure_offset_s": 390,
+          "arrival_offset_s": 945.8966159156349,
+          "energy_kwh": 1.254814958994106
+        },
+        {
+          "origin": "S009",
+          "destination": "S002",
+          "distance_m": 1724.5472022266513,
+          "max_dem_m": 278.2866516113281,
+          "up_m": 98.28665161132812,
+          "down_m": 108.78665161132812,
+          "payload_kg": 17,
+          "flight_s": 219.98914470052824,
+          "departure_offset_s": 1125.8966159156348,
+          "arrival_offset_s": 1345.885760616163,
+          "energy_kwh": 0.3819917642231805
+        },
+        {
+          "origin": "S002",
+          "destination": "S013",
+          "distance_m": 4540.13327640434,
+          "max_dem_m": 327.2103271484375,
+          "up_m": 157.7103271484375,
+          "down_m": 25.51032714843751,
+          "payload_kg": 3,
+          "flight_s": 441.11867960921586,
+          "departure_offset_s": 1525.885760616163,
+          "arrival_offset_s": 1967.0044402253789,
+          "energy_kwh": 0.8676481764227385
+        },
+        {
+          "origin": "S013",
+          "destination": "O01",
+          "distance_m": 4849.242377229453,
+          "max_dem_m": 349.18182373046875,
+          "up_m": 47.48182373046876,
+          "down_m": 271.48182373046876,
+          "payload_kg": 0,
+          "flight_s": 528.5235355047981,
+          "departure_offset_s": 2147.004440225379,
+          "arrival_offset_s": 2675.527975730177,
+          "energy_kwh": 0.8854430138410058
+        }
+      ],
+      "feasible": true,
+      "failures": [],
+      "start_s": 0.0,
+      "return_s": 2675.527975730177,
+      "takeoff_s": 390.0,
+      "charge_end_s": 4154.831817402474,
+      "aircraft": "U01",
+      "battery": "A-BAT01"
+    },
+    {
+      "flight_id": "V4-15",
+      "type": "A",
+      "box_ids": [
+        "S007-FOD-01",
+        "S007-WAT-01"
+      ],
+      "route": [
+        "S007"
+      ],
+      "payload_kg": 22,
+      "volume_m3": 0.055,
+      "energy_kwh": 1.970922394846492,
+      "return_soc": 0.5620172455896684,
+      "energy_budget_kwh": 3.6,
+      "duration_s": 1727.4240845407844,
+      "prep_load_s": 360,
+      "flight_s": 1157.4240845407844,
+      "handover_s": 210.0,
+      "charge_s": 1069.377580733431,
+      "latest_start_s": 2458.6479577296077,
+      "delivery_offsets": {
+        "S007-FOD-01": 1141.3520422703923,
+        "S007-WAT-01": 1141.3520422703923
+      },
+      "legs": [
+        {
+          "origin": "O01",
+          "destination": "S007",
+          "distance_m": 4534.460566815018,
+          "max_dem_m": 461.9731750488281,
+          "up_m": 384.27317504882814,
+          "down_m": 163.47317504882812,
+          "payload_kg": 22,
+          "flight_s": 571.3520422703922,
+          "departure_offset_s": 360,
+          "arrival_offset_s": 931.3520422703922,
+          "energy_kwh": 1.1114104537356722
+        },
+        {
+          "origin": "S007",
+          "destination": "O01",
+          "distance_m": 4534.460566815018,
+          "max_dem_m": 461.9731750488281,
+          "up_m": 163.47317504882812,
+          "down_m": 384.27317504882814,
+          "payload_kg": 0,
+          "flight_s": 586.0720422703921,
+          "departure_offset_s": 1141.3520422703923,
+          "arrival_offset_s": 1727.4240845407844,
+          "energy_kwh": 0.8595119411108199
+        }
+      ],
+      "feasible": true,
+      "failures": [],
+      "start_s": 0.0,
+      "return_s": 1727.4240845407844,
+      "takeoff_s": 360.0,
+      "charge_end_s": 2796.8016652742153,
+      "aircraft": "U02",
+      "battery": "A-BAT02"
+    },
+    {
+      "flight_id": "V4-19",
+      "type": "A",
+      "box_ids": [
+        "S007-MED-01",
+        "S007-WAT-02"
+      ],
+      "route": [
+        "S007"
+      ],
+      "payload_kg": 17,
+      "volume_m3": 0.039,
+      "energy_kwh": 1.9053430084223224,
+      "return_soc": 0.5765904425728172,
+      "energy_budget_kwh": 3.6,
+      "duration_s": 1727.4240845407844,
+      "prep_load_s": 360,
+      "flight_s": 1157.4240845407844,
+      "handover_s": 210.0,
+      "charge_s": 1050.4324246553374,
+      "latest_start_s": 2458.6479577296077,
+      "delivery_offsets": {
+        "S007-MED-01": 1141.3520422703923,
+        "S007-WAT-02": 1141.3520422703923
+      },
+      "legs": [
+        {
+          "origin": "O01",
+          "destination": "S007",
+          "distance_m": 4534.460566815018,
+          "max_dem_m": 461.9731750488281,
+          "up_m": 384.27317504882814,
+          "down_m": 163.47317504882812,
+          "payload_kg": 17,
+          "flight_s": 571.3520422703922,
+          "departure_offset_s": 360,
+          "arrival_offset_s": 931.3520422703922,
+          "energy_kwh": 1.0458310673115025
+        },
+        {
+          "origin": "S007",
+          "destination": "O01",
+          "distance_m": 4534.460566815018,
+          "max_dem_m": 461.9731750488281,
+          "up_m": 163.47317504882812,
+          "down_m": 384.27317504882814,
+          "payload_kg": 0,
+          "flight_s": 586.0720422703921,
+          "departure_offset_s": 1141.3520422703923,
+          "arrival_offset_s": 1727.4240845407844,
+          "energy_kwh": 0.8595119411108199
+        }
+      ],
+      "feasible": true,
+      "failures": [],
+      "start_s": 0.0,
+      "return_s": 1727.4240845407844,
+      "takeoff_s": 360.0,
+      "charge_end_s": 2777.856509196122,
+      "aircraft": "U03",
+      "battery": "A-BAT03"
+    },
+    {
+      "flight_id": "V4-17",
+      "type": "A",
+      "box_ids": [
+        "S013-FOD-01",
+        "S013-WAT-01"
+      ],
+      "route": [
+        "S013"
+      ],
+      "payload_kg": 22,
+      "volume_m3": 0.055,
+      "energy_kwh": 2.025445644148618,
+      "return_soc": 0.5499009679669737,
+      "energy_budget_kwh": 3.6,
+      "duration_s": 1612.113737676263,
+      "prep_load_s": 360,
+      "flight_s": 1042.113737676263,
+      "handover_s": 210.0,
+      "charge_s": 1085.128741642934,
+      "latest_start_s": 2516.4097978285354,
+      "delivery_offsets": {
+        "S013-FOD-01": 1083.5902021714649,
+        "S013-WAT-01": 1083.5902021714649
+      },
+      "legs": [
+        {
+          "origin": "O01",
+          "destination": "S013",
+          "distance_m": 4849.242377229453,
+          "max_dem_m": 349.18182373046875,
+          "up_m": 271.48182373046876,
+          "down_m": 47.48182373046876,
+          "payload_kg": 22,
+          "flight_s": 513.5902021714649,
+          "departure_offset_s": 360,
+          "arrival_offset_s": 873.5902021714649,
+          "energy_kwh": 1.1400026303076123
+        },
+        {
+          "origin": "S013",
+          "destination": "O01",
+          "distance_m": 4849.242377229453,
+          "max_dem_m": 349.18182373046875,
+          "up_m": 47.48182373046876,
+          "down_m": 271.48182373046876,
+          "payload_kg": 0,
+          "flight_s": 528.5235355047981,
+          "departure_offset_s": 1083.5902021714649,
+          "arrival_offset_s": 1612.113737676263,
+          "energy_kwh": 0.8854430138410058
+        }
+      ],
+      "feasible": true,
+      "failures": [],
+      "start_s": 0.0,
+      "return_s": 1612.113737676263,
+      "takeoff_s": 360.0,
+      "charge_end_s": 2697.242479319197,
+      "aircraft": "U04",
+      "battery": "A-BAT04"
+    },
+    {
+      "flight_id": "V4-08",
+      "type": "A",
+      "box_ids": [
+        "S001-FOD-01",
+        "S001-WAT-01"
+      ],
+      "route": [
+        "S001"
+      ],
+      "payload_kg": 22,
+      "volume_m3": 0.055,
+      "energy_kwh": 1.2823460485526663,
+      "return_soc": 0.7150342114327408,
+      "energy_budget_kwh": 3.6,
+      "duration_s": 1250.899502077302,
+      "prep_load_s": 360,
+      "flight_s": 680.899502077302,
+      "handover_s": 210.0,
+      "charge_s": 870.4555251374368,
+      "latest_start_s": 2691.4269156280156,
+      "delivery_offsets": {
+        "S001-FOD-01": 908.5730843719844,
+        "S001-WAT-01": 908.5730843719844
+      },
+      "legs": [
+        {
+          "origin": "O01",
+          "destination": "S001",
+          "distance_m": 3053.9788435184996,
+          "max_dem_m": 223.05661010742188,
+          "up_m": 145.3566101074219,
+          "down_m": 89.05661010742188,
+          "payload_kg": 22,
+          "flight_s": 338.57308437198435,
+          "departure_offset_s": 360,
+          "arrival_offset_s": 698.5730843719844,
+          "energy_kwh": 0.7090360395276825
+        },
+        {
+          "origin": "S001",
+          "destination": "O01",
+          "distance_m": 3053.9788435184996,
+          "max_dem_m": 223.05661010742188,
+          "up_m": 89.05661010742188,
+          "down_m": 145.3566101074219,
+          "payload_kg": 0,
+          "flight_s": 342.3264177053177,
+          "departure_offset_s": 908.5730843719844,
+          "arrival_offset_s": 1250.899502077302,
+          "energy_kwh": 0.5733100090249837
+        }
+      ],
+      "feasible": true,
+      "failures": [],
+      "start_s": 1612.113737676263,
+      "return_s": 2863.0132397535654,
+      "takeoff_s": 1972.113737676263,
+      "charge_end_s": 3733.468764891002,
+      "aircraft": "U04",
+      "battery": "A-BAT05"
+    },
+    {
+      "flight_id": "V4-18",
+      "type": "A",
+      "box_ids": [
+        "S003-MED-01",
+        "S003-WAT-01",
+        "S015-MED-01"
+      ],
+      "route": [
+        "S003",
+        "S015"
+      ],
+      "payload_kg": 20,
+      "volume_m3": 0.051,
+      "energy_kwh": 3.2972189227836624,
+      "return_soc": 0.2672846838258528,
+      "energy_budget_kwh": 3.6,
+      "duration_s": 2603.332446106929,
+      "prep_load_s": 390,
+      "flight_s": 1823.3324461069292,
+      "handover_s": 390.0,
+      "charge_s": 1452.5299110263911,
+      "latest_start_s": 5307.522255466867,
+      "delivery_offsets": {
+        "S003-MED-01": 1439.2879727143438,
+        "S003-WAT-01": 1439.2879727143438,
+        "S015-MED-01": 1892.4777445331324
+      },
+      "legs": [
+        {
+          "origin": "O01",
+          "destination": "S003",
+          "distance_m": 7263.179256556501,
+          "max_dem_m": 511.80413818359375,
+          "up_m": 434.10413818359376,
+          "down_m": 223.30413818359375,
+          "payload_kg": 20,
+          "flight_s": 839.2879727143438,
+          "departure_offset_s": 390,
+          "arrival_offset_s": 1229.2879727143438,
+          "energy_kwh": 1.6735815158056027
+        },
+        {
+          "origin": "S003",
+          "destination": "S015",
+          "distance_m": 2616.367252059837,
+          "max_dem_m": 437.89886474609375,
+          "up_m": 149.39886474609375,
+          "down_m": 13.39886474609375,
+          "payload_kg": 3,
+          "flight_s": 273.18977181878853,
+          "departure_offset_s": 1439.2879727143438,
+          "arrival_offset_s": 1712.4777445331324,
+          "energy_kwh": 0.516170926305865
+        },
+        {
+          "origin": "S015",
+          "destination": "O01",
+          "distance_m": 6009.382971619937,
+          "max_dem_m": 521.7992553710938,
+          "up_m": 97.29925537109375,
+          "down_m": 444.09925537109376,
+          "payload_kg": 0,
+          "flight_s": 710.8547015737968,
+          "departure_offset_s": 1892.4777445331324,
+          "arrival_offset_s": 2603.332446106929,
+          "energy_kwh": 1.1074664806721946
+        }
+      ],
+      "feasible": true,
+      "failures": [],
+      "start_s": 1727.4240845407844,
+      "return_s": 4330.756530647714,
+      "takeoff_s": 2117.4240845407844,
+      "charge_end_s": 5783.286441674105,
+      "aircraft": "U02",
+      "battery": "A-BAT06"
+    },
+    {
+      "flight_id": "V4-21",
+      "type": "A",
+      "box_ids": [
+        "S004-MED-01",
+        "S004-WAT-03",
+        "S011-MED-01"
+      ],
+      "route": [
+        "S011",
+        "S004"
+      ],
+      "payload_kg": 20,
+      "volume_m3": 0.051,
+      "energy_kwh": 3.2252546434280376,
+      "return_soc": 0.2832767459048805,
+      "energy_budget_kwh": 3.6,
+      "duration_s": 2464.077990062212,
+      "prep_load_s": 390,
+      "flight_s": 1684.0779900622117,
+      "handover_s": 390.0,
+      "charge_s": 1431.7402303236552,
+      "latest_start_s": 5543.675435954714,
+      "delivery_offsets": {
+        "S011-MED-01": 893.1981399955472,
+        "S004-MED-01": 1656.3245640452865,
+        "S004-WAT-03": 1656.3245640452865
+      },
+      "legs": [
+        {
+          "origin": "O01",
+          "destination": "S011",
+          "distance_m": 2808.0742326809413,
+          "max_dem_m": 245.36175537109375,
+          "up_m": 167.66175537109376,
+          "down_m": 83.26175537109376,
+          "payload_kg": 20,
+          "flight_s": 323.1981399955472,
+          "departure_offset_s": 390,
+          "arrival_offset_s": 713.1981399955472,
+          "energy_kwh": 0.6469782503720128
+        },
+        {
+          "origin": "S011",
+          "destination": "S004",
+          "distance_m": 5403.73462765937,
+          "max_dem_m": 311.138916015625,
+          "up_m": 149.038916015625,
+          "down_m": 132.838916015625,
+          "payload_kg": 17,
+          "flight_s": 553.1264240497392,
+          "departure_offset_s": 893.1981399955472,
+          "arrival_offset_s": 1446.3245640452865,
+          "energy_kwh": 1.1446089544870872
+        },
+        {
+          "origin": "S004",
+          "destination": "O01",
+          "distance_m": 7714.696449117167,
+          "max_dem_m": 348.2391662597656,
+          "up_m": 169.9391662597656,
+          "down_m": 270.53916625976564,
+          "payload_kg": 0,
+          "flight_s": 807.7534260169253,
+          "departure_offset_s": 1656.3245640452865,
+          "arrival_offset_s": 2464.077990062212,
+          "energy_kwh": 1.4336674385689374
+        }
+      ],
+      "feasible": true,
+      "failures": [],
+      "start_s": 2697.242479319197,
+      "return_s": 5161.32046938141,
+      "takeoff_s": 3087.242479319197,
+      "charge_end_s": 6593.0606997050645,
+      "aircraft": "U03",
+      "battery": "A-BAT04"
+    },
+    {
+      "flight_id": "V4-20",
+      "type": "A",
+      "box_ids": [
+        "S004-FOD-01",
+        "S004-WAT-02"
+      ],
+      "route": [
+        "S004"
+      ],
+      "payload_kg": 22,
+      "volume_m3": 0.055,
+      "energy_kwh": 3.1911204497526215,
+      "return_soc": 0.2908621222771952,
+      "energy_budget_kwh": 3.6,
+      "duration_s": 2178.800185367184,
+      "prep_load_s": 360,
+      "flight_s": 1608.800185367184,
+      "handover_s": 210.0,
+      "charge_s": 1421.8792410396459,
+      "latest_start_s": 5828.953240649742,
+      "delivery_offsets": {
+        "S004-FOD-01": 1371.0467593502585,
+        "S004-WAT-02": 1371.0467593502585
+      },
+      "legs": [
+        {
+          "origin": "O01",
+          "destination": "S004",
+          "distance_m": 7714.696449117167,
+          "max_dem_m": 348.2391662597656,
+          "up_m": 270.53916625976564,
+          "down_m": 169.9391662597656,
+          "payload_kg": 22,
+          "flight_s": 801.0467593502586,
+          "departure_offset_s": 360,
+          "arrival_offset_s": 1161.0467593502585,
+          "energy_kwh": 1.757453011183684
+        },
+        {
+          "origin": "S004",
+          "destination": "O01",
+          "distance_m": 7714.696449117167,
+          "max_dem_m": 348.2391662597656,
+          "up_m": 169.9391662597656,
+          "down_m": 270.53916625976564,
+          "payload_kg": 0,
+          "flight_s": 807.7534260169253,
+          "departure_offset_s": 1371.0467593502585,
+          "arrival_offset_s": 2178.800185367184,
+          "energy_kwh": 1.4336674385689374
+        }
+      ],
+      "feasible": true,
+      "failures": [],
+      "start_s": 2777.856509196122,
+      "return_s": 4956.656694563306,
+      "takeoff_s": 3137.856509196122,
+      "charge_end_s": 6378.535935602951,
+      "aircraft": "U01",
+      "battery": "A-BAT03"
+    },
+    {
+      "flight_id": "V4-01",
+      "type": "A",
+      "box_ids": [
+        "S015-FOD-01",
+        "S015-WAT-01"
+      ],
+      "route": [
+        "S015"
+      ],
+      "payload_kg": 22,
+      "volume_m3": 0.055,
+      "energy_kwh": 2.557694473533907,
+      "return_soc": 0.4316234503257985,
+      "energy_budget_kwh": 3.6,
+      "duration_s": 1968.5894031475937,
+      "prep_load_s": 360,
+      "flight_s": 1398.5894031475937,
+      "handover_s": 210.0,
+      "charge_s": 1238.8895145764618,
+      "latest_start_s": 9542.265298426202,
+      "delivery_offsets": {
+        "S015-FOD-01": 1257.7347015737969,
+        "S015-WAT-01": 1257.7347015737969
+      },
+      "legs": [
+        {
+          "origin": "O01",
+          "destination": "S015",
+          "distance_m": 6009.382971619937,
+          "max_dem_m": 521.7992553710938,
+          "up_m": 444.09925537109376,
+          "down_m": 97.29925537109375,
+          "payload_kg": 22,
+          "flight_s": 687.7347015737969,
+          "departure_offset_s": 360,
+          "arrival_offset_s": 1047.7347015737969,
+          "energy_kwh": 1.4502279928617121
+        },
+        {
+          "origin": "S015",
+          "destination": "O01",
+          "distance_m": 6009.382971619937,
+          "max_dem_m": 521.7992553710938,
+          "up_m": 97.29925537109375,
+          "down_m": 444.09925537109376,
+          "payload_kg": 0,
+          "flight_s": 710.8547015737968,
+          "departure_offset_s": 1257.7347015737969,
+          "arrival_offset_s": 1968.5894031475937,
+          "energy_kwh": 1.1074664806721946
+        }
+      ],
+      "feasible": true,
+      "failures": [],
+      "start_s": 2863.0132397535654,
+      "return_s": 4831.602642901159,
+      "takeoff_s": 3223.0132397535654,
+      "charge_end_s": 6070.492157477621,
+      "aircraft": "U04",
+      "battery": "A-BAT02"
+    },
+    {
+      "flight_id": "V4-22",
+      "type": "A",
+      "box_ids": [
+        "S009-FOD-01",
+        "S009-WAT-01"
+      ],
+      "route": [
+        "S009"
+      ],
+      "payload_kg": 22,
+      "volume_m3": 0.055,
+      "energy_kwh": 2.3313164072530776,
+      "return_soc": 0.48192968727709384,
+      "energy_budget_kwh": 3.6,
+      "duration_s": 1688.6132318312698,
+      "prep_load_s": 360,
+      "flight_s": 1118.6132318312698,
+      "handover_s": 210.0,
+      "charge_s": 1173.4914065397777,
+      "latest_start_s": 9674.103384084365,
+      "delivery_offsets": {
+        "S009-FOD-01": 1125.8966159156348,
+        "S009-WAT-01": 1125.8966159156348
+      },
+      "legs": [
+        {
+          "origin": "O01",
+          "destination": "S009",
+          "distance_m": 5705.144962276681,
+          "max_dem_m": 243.22891235351562,
+          "up_m": 165.52891235351564,
+          "down_m": 63.228912353515625,
+          "payload_kg": 22,
+          "flight_s": 555.8966159156349,
+          "departure_offset_s": 360,
+          "arrival_offset_s": 915.8966159156349,
+          "energy_kwh": 1.2876390431662845
+        },
+        {
+          "origin": "S009",
+          "destination": "O01",
+          "distance_m": 5705.144962276681,
+          "max_dem_m": 243.22891235351562,
+          "up_m": 63.228912353515625,
+          "down_m": 165.52891235351564,
+          "payload_kg": 0,
+          "flight_s": 562.7166159156349,
+          "departure_offset_s": 1125.8966159156348,
+          "arrival_offset_s": 1688.6132318312698,
+          "energy_kwh": 1.043677364086793
+        }
+      ],
+      "feasible": true,
+      "failures": [],
+      "start_s": 4330.756530647714,
+      "return_s": 6019.369762478984,
+      "takeoff_s": 4690.756530647714,
+      "charge_end_s": 7192.861169018762,
+      "aircraft": "U02",
+      "battery": "A-BAT05"
+    },
+    {
+      "flight_id": "V4-23",
+      "type": "A",
+      "box_ids": [
+        "S011-FOD-01",
+        "S011-WAT-01"
+      ],
+      "route": [
+        "S011"
+      ],
+      "payload_kg": 22,
+      "volume_m3": 0.055,
+      "energy_kwh": 1.1912986184997079,
+      "return_soc": 0.7352669736667317,
+      "energy_budget_kwh": 3.6,
+      "duration_s": 1222.0229466577612,
+      "prep_load_s": 360,
+      "flight_s": 652.022946657761,
+      "handover_s": 210.0,
+      "charge_s": 844.1529342332486,
+      "latest_start_s": 9906.801860004452,
+      "delivery_offsets": {
+        "S011-FOD-01": 893.1981399955472,
+        "S011-WAT-01": 893.1981399955472
+      },
+      "legs": [
+        {
+          "origin": "O01",
+          "destination": "S011",
+          "distance_m": 2808.0742326809413,
+          "max_dem_m": 245.36175537109375,
+          "up_m": 167.66175537109376,
+          "down_m": 83.26175537109376,
+          "payload_kg": 22,
+          "flight_s": 323.1981399955472,
+          "departure_offset_s": 360,
+          "arrival_offset_s": 683.1981399955472,
+          "energy_kwh": 0.6637866735101439
+        },
+        {
+          "origin": "S011",
+          "destination": "O01",
+          "distance_m": 2808.0742326809413,
+          "max_dem_m": 245.36175537109375,
+          "up_m": 83.26175537109376,
+          "down_m": 167.66175537109376,
+          "payload_kg": 0,
+          "flight_s": 328.82480666221386,
+          "departure_offset_s": 893.1981399955472,
+          "arrival_offset_s": 1222.0229466577612,
+          "energy_kwh": 0.527511944989564
+        }
+      ],
+      "feasible": true,
+      "failures": [],
+      "start_s": 4831.602642901159,
+      "return_s": 6053.62558955892,
+      "takeoff_s": 5191.602642901159,
+      "charge_end_s": 6897.778523792169,
+      "aircraft": "U04",
+      "battery": "A-BAT01"
+    },
+    {
+      "flight_id": "V4-05",
+      "type": "B",
+      "box_ids": [
+        "S012-FOD-01",
+        "S012-MED-01",
+        "S012-WAT-01"
+      ],
+      "route": [
+        "S012"
+      ],
+      "payload_kg": 25,
+      "volume_m3": 0.067,
+      "energy_kwh": 2.752414298801364,
+      "return_soc": 0.311896425299659,
+      "energy_budget_kwh": 3.2,
+      "duration_s": 1922.7403507440445,
+      "prep_load_s": 390,
+      "flight_s": 1292.7403507440445,
+      "handover_s": 240.0,
+      "charge_s": 1859.379529480591,
+      "latest_start_s": 2328.6998246279777,
+      "delivery_offsets": {
+        "S012-FOD-01": 1271.3001753720223,
+        "S012-MED-01": 1271.3001753720223,
+        "S012-WAT-01": 1271.3001753720223
+      },
+      "legs": [
+        {
+          "origin": "O01",
+          "destination": "S012",
+          "distance_m": 7390.491686976818,
+          "max_dem_m": 363.3009948730469,
+          "up_m": 285.6009948730469,
+          "down_m": 133.50099487304686,
+          "payload_kg": 25,
+          "flight_s": 641.3001753720222,
+          "departure_offset_s": 390,
+          "arrival_offset_s": 1031.3001753720223,
+          "energy_kwh": 1.663787600261378
+        },
+        {
+          "origin": "S012",
+          "destination": "O01",
+          "distance_m": 7390.491686976818,
+          "max_dem_m": 363.3009948730469,
+          "up_m": 133.50099487304686,
+          "down_m": 285.6009948730469,
+          "payload_kg": 0,
+          "flight_s": 651.4401753720222,
+          "departure_offset_s": 1271.3001753720223,
+          "arrival_offset_s": 1922.7403507440445,
+          "energy_kwh": 1.0886266985399857
+        }
+      ],
+      "feasible": true,
+      "failures": [],
+      "start_s": 0.0,
+      "return_s": 1922.7403507440445,
+      "takeoff_s": 390.0,
+      "charge_end_s": 3782.1198802246354,
+      "aircraft": "U05",
+      "battery": "B-BAT01"
+    },
+    {
+      "flight_id": "V4-10",
+      "type": "B",
+      "box_ids": [
+        "S014-FOD-01",
+        "S014-MED-01",
+        "S014-WAT-01"
+      ],
+      "route": [
+        "S014"
+      ],
+      "payload_kg": 25,
+      "volume_m3": 0.067,
+      "energy_kwh": 2.1403884821074026,
+      "return_soc": 0.46490287947314934,
+      "energy_budget_kwh": 3.2,
+      "duration_s": 1869.7564163815437,
+      "prep_load_s": 390,
+      "flight_s": 1239.7564163815437,
+      "handover_s": 240.0,
+      "charge_s": 1594.1683422465408,
+      "latest_start_s": 2357.5651251425616,
+      "delivery_offsets": {
+        "S014-FOD-01": 1242.4348748574384,
+        "S014-MED-01": 1242.4348748574384,
+        "S014-WAT-01": 1242.4348748574384
+      },
+      "legs": [
+        {
+          "origin": "O01",
+          "destination": "S014",
+          "distance_m": 5419.60185821314,
+          "max_dem_m": 541.9473876953125,
+          "up_m": 464.2473876953125,
+          "down_m": 240.9473876953125,
+          "payload_kg": 25,
+          "flight_s": 612.4348748574386,
+          "departure_offset_s": 390,
+          "arrival_offset_s": 1002.4348748574386,
+          "energy_kwh": 1.3068849146010162
+        },
+        {
+          "origin": "S014",
+          "destination": "O01",
+          "distance_m": 5419.60185821314,
+          "max_dem_m": 541.9473876953125,
+          "up_m": 240.9473876953125,
+          "down_m": 464.2473876953125,
+          "payload_kg": 0,
+          "flight_s": 627.3215415241052,
+          "departure_offset_s": 1242.4348748574384,
+          "arrival_offset_s": 1869.7564163815437,
+          "energy_kwh": 0.8335035675063862
+        }
+      ],
+      "feasible": true,
+      "failures": [],
+      "start_s": 0.0,
+      "return_s": 1869.7564163815437,
+      "takeoff_s": 390.0,
+      "charge_end_s": 3463.9247586280844,
+      "aircraft": "U06",
+      "battery": "B-BAT02"
+    },
+    {
+      "flight_id": "V4-12",
+      "type": "B",
+      "box_ids": [
+        "S010-FOD-01",
+        "S010-MED-01",
+        "S010-WAT-01"
+      ],
+      "route": [
+        "S010"
+      ],
+      "payload_kg": 25,
+      "volume_m3": 0.067,
+      "energy_kwh": 1.8231956980898132,
+      "return_soc": 0.5442010754775467,
+      "energy_budget_kwh": 3.2,
+      "duration_s": 1555.379565831177,
+      "prep_load_s": 390,
+      "flight_s": 925.3795658311769,
+      "handover_s": 240.0,
+      "charge_s": 1456.7181358389187,
+      "latest_start_s": 2514.773550417745,
+      "delivery_offsets": {
+        "S010-FOD-01": 1085.226449582255,
+        "S010-MED-01": 1085.226449582255,
+        "S010-WAT-01": 1085.226449582255
+      },
+      "legs": [
+        {
+          "origin": "O01",
+          "destination": "S010",
+          "distance_m": 4784.494851643984,
+          "max_dem_m": 385.63653564453125,
+          "up_m": 307.93653564453126,
+          "down_m": 84.03653564453123,
+          "payload_kg": 25,
+          "flight_s": 455.22644958225516,
+          "departure_offset_s": 390,
+          "arrival_offset_s": 845.2264495822551,
+          "energy_kwh": 1.1190228622136364
+        },
+        {
+          "origin": "S010",
+          "destination": "O01",
+          "distance_m": 4784.494851643984,
+          "max_dem_m": 385.63653564453125,
+          "up_m": 84.03653564453123,
+          "down_m": 307.93653564453126,
+          "payload_kg": 0,
+          "flight_s": 470.15311624892183,
+          "departure_offset_s": 1085.226449582255,
+          "arrival_offset_s": 1555.379565831177,
+          "energy_kwh": 0.7041728358761769
+        }
+      ],
+      "feasible": true,
+      "failures": [],
+      "start_s": 1869.7564163815437,
+      "return_s": 3425.1359822127206,
+      "takeoff_s": 2259.7564163815437,
+      "charge_end_s": 4881.8541180516395,
+      "aircraft": "U06",
+      "battery": "B-BAT03"
+    },
+    {
+      "flight_id": "V4-11",
+      "type": "B",
+      "box_ids": [
+        "S004-HYG-01",
+        "S004-WAT-01"
+      ],
+      "route": [
+        "S004"
+      ],
+      "payload_kg": 20,
+      "volume_m3": 0.062,
+      "energy_kwh": 2.6683684978530016,
+      "return_soc": 0.3329078755367496,
+      "energy_budget_kwh": 3.2,
+      "duration_s": 1921.6436370632784,
+      "prep_load_s": 360,
+      "flight_s": 1351.6436370632784,
+      "handover_s": 210.0,
+      "charge_s": 1822.9596824029672,
+      "latest_start_s": 5957.531514801694,
+      "delivery_offsets": {
+        "S004-HYG-01": 1242.4684851983059,
+        "S004-WAT-01": 1242.4684851983059
+      },
+      "legs": [
+        {
+          "origin": "O01",
+          "destination": "S004",
+          "distance_m": 7714.696449117167,
+          "max_dem_m": 348.2391662597656,
+          "up_m": 270.53916625976564,
+          "down_m": 169.9391662597656,
+          "payload_kg": 20,
+          "flight_s": 672.4684851983059,
+          "departure_offset_s": 360,
+          "arrival_offset_s": 1032.4684851983059,
+          "energy_kwh": 1.5244627900889762
+        },
+        {
+          "origin": "S004",
+          "destination": "O01",
+          "distance_m": 7714.696449117167,
+          "max_dem_m": 348.2391662597656,
+          "up_m": 169.9391662597656,
+          "down_m": 270.53916625976564,
+          "payload_kg": 0,
+          "flight_s": 679.1751518649726,
+          "departure_offset_s": 1242.4684851983059,
+          "arrival_offset_s": 1921.6436370632784,
+          "energy_kwh": 1.1439057077640251
+        }
+      ],
+      "feasible": true,
+      "failures": [],
+      "start_s": 1922.7403507440445,
+      "return_s": 3844.383987807323,
+      "takeoff_s": 2282.7403507440445,
+      "charge_end_s": 5667.34367021029,
+      "aircraft": "U05",
+      "battery": "B-BAT04"
+    },
+    {
+      "flight_id": "V4-06",
+      "type": "C",
+      "box_ids": [
+        "S002-FOD-01",
+        "S002-FOD-02",
+        "S002-HYG-01",
+        "S002-MED-01",
+        "S002-WAT-02",
+        "S002-WAT-03",
+        "S002-WAT-04"
+      ],
+      "route": [
+        "S002"
+      ],
+      "payload_kg": 67,
+      "volume_m3": 0.184,
+      "energy_kwh": 6.280824662604656,
+      "return_soc": 0.21489691717441795,
+      "energy_budget_kwh": 6.4,
+      "duration_s": 2173.812384815214,
+      "prep_load_s": 510,
+      "flight_s": 1231.812384815214,
+      "handover_s": 432.0,
+      "charge_s": 2534.3900127887605,
+      "latest_start_s": 2046.683807592393,
+      "delivery_offsets": {
+        "S002-FOD-01": 1553.316192407607,
+        "S002-FOD-02": 1553.316192407607,
+        "S002-HYG-01": 1553.316192407607,
+        "S002-MED-01": 1553.316192407607,
+        "S002-WAT-02": 1553.316192407607,
+        "S002-WAT-03": 1553.316192407607,
+        "S002-WAT-04": 1553.316192407607
+      },
+      "legs": [
+        {
+          "origin": "O01",
+          "destination": "S002",
+          "distance_m": 7411.310455083831,
+          "max_dem_m": 258.9542541503906,
+          "up_m": 181.25425415039064,
+          "down_m": 89.45425415039062,
+          "payload_kg": 67,
+          "flight_s": 611.316192407607,
+          "departure_offset_s": 510,
+          "arrival_offset_s": 1121.316192407607,
+          "energy_kwh": 3.9767561363572694
+        },
+        {
+          "origin": "S002",
+          "destination": "O01",
+          "distance_m": 7411.310455083831,
+          "max_dem_m": 258.9542541503906,
+          "up_m": 89.45425415039062,
+          "down_m": 181.25425415039064,
+          "payload_kg": 0,
+          "flight_s": 620.4961924076069,
+          "departure_offset_s": 1553.316192407607,
+          "arrival_offset_s": 2173.812384815214,
+          "energy_kwh": 2.3040685262473866
+        }
+      ],
+      "feasible": true,
+      "failures": [],
+      "start_s": 0.0,
+      "return_s": 2173.812384815214,
+      "takeoff_s": 510.0,
+      "charge_end_s": 4708.2023976039745,
+      "aircraft": "U07",
+      "battery": "C-BAT01"
+    },
+    {
+      "flight_id": "V4-03",
+      "type": "C",
+      "box_ids": [
+        "S001-FOD-02",
+        "S001-FOD-03",
+        "S001-HYG-02",
+        "S001-MED-01",
+        "S001-MED-02",
+        "S001-WAT-06",
+        "S001-WAT-07",
+        "S001-WAT-08"
+      ],
+      "route": [
+        "S001"
+      ],
+      "payload_kg": 70,
+      "volume_m3": 0.196,
+      "energy_kwh": 2.720392502747031,
+      "return_soc": 0.6599509371566211,
+      "energy_budget_kwh": 6.4,
+      "duration_s": 1626.1690773291593,
+      "prep_load_s": 540,
+      "flight_s": 618.1690773291593,
+      "handover_s": 468.0,
+      "charge_s": 1570.1063028273206,
+      "latest_start_s": 2285.7304613354204,
+      "delivery_offsets": {
+        "S001-FOD-02": 1314.2695386645796,
+        "S001-FOD-03": 1314.2695386645796,
+        "S001-HYG-02": 1314.2695386645796,
+        "S001-MED-01": 1314.2695386645796,
+        "S001-MED-02": 1314.2695386645796,
+        "S001-WAT-06": 1314.2695386645796,
+        "S001-WAT-07": 1314.2695386645796,
+        "S001-WAT-08": 1314.2695386645796
+      },
+      "legs": [
+        {
+          "origin": "O01",
+          "destination": "S001",
+          "distance_m": 3053.9788435184996,
+          "max_dem_m": 223.05661010742188,
+          "up_m": 145.3566101074219,
+          "down_m": 89.05661010742188,
+          "payload_kg": 70,
+          "flight_s": 306.26953866457967,
+          "departure_offset_s": 540,
+          "arrival_offset_s": 846.2695386645796,
+          "energy_kwh": 1.7571465930028158
+        },
+        {
+          "origin": "S001",
+          "destination": "O01",
+          "distance_m": 3053.9788435184996,
+          "max_dem_m": 223.05661010742188,
+          "up_m": 89.05661010742188,
+          "down_m": 145.3566101074219,
+          "payload_kg": 0,
+          "flight_s": 311.89953866457967,
+          "departure_offset_s": 1314.2695386645796,
+          "arrival_offset_s": 1626.1690773291593,
+          "energy_kwh": 0.963245909744215
+        }
+      ],
+      "feasible": true,
+      "failures": [],
+      "start_s": 0.0,
+      "return_s": 1626.1690773291593,
+      "takeoff_s": 540.0,
+      "charge_end_s": 3196.27538015648,
+      "aircraft": "U08",
+      "battery": "C-BAT02"
+    },
+    {
+      "flight_id": "V4-04",
+      "type": "C",
+      "box_ids": [
+        "S006-FOD-01",
+        "S006-HYG-01",
+        "S006-MED-01",
+        "S006-WAT-01",
+        "S006-WAT-02",
+        "S006-WAT-03"
+      ],
+      "route": [
+        "S006"
+      ],
+      "payload_kg": 59,
+      "volume_m3": 0.156,
+      "energy_kwh": 2.5979878649119788,
+      "return_soc": 0.6752515168860027,
+      "energy_budget_kwh": 6.4,
+      "duration_s": 1561.5538679616293,
+      "prep_load_s": 480,
+      "flight_s": 685.5538679616293,
+      "handover_s": 396.0,
+      "charge_s": 1536.955046746994,
+      "latest_start_s": 2390.5780660191854,
+      "delivery_offsets": {
+        "S006-FOD-01": 1209.4219339808146,
+        "S006-HYG-01": 1209.4219339808146,
+        "S006-MED-01": 1209.4219339808146,
+        "S006-WAT-01": 1209.4219339808146,
+        "S006-WAT-02": 1209.4219339808146,
+        "S006-WAT-03": 1209.4219339808146
+      },
+      "legs": [
+        {
+          "origin": "O01",
+          "destination": "S006",
+          "distance_m": 3186.208178413391,
+          "max_dem_m": 316.09783935546875,
+          "up_m": 238.39783935546876,
+          "down_m": 51.29783935546874,
+          "payload_kg": 59,
+          "flight_s": 333.42193398081463,
+          "departure_offset_s": 480,
+          "arrival_offset_s": 813.4219339808146,
+          "energy_kwh": 1.6040451674358704
+        },
+        {
+          "origin": "S006",
+          "destination": "O01",
+          "distance_m": 3186.208178413391,
+          "max_dem_m": 316.09783935546875,
+          "up_m": 51.29783935546874,
+          "down_m": 238.39783935546876,
+          "payload_kg": 0,
+          "flight_s": 352.13193398081467,
+          "departure_offset_s": 1209.4219339808146,
+          "arrival_offset_s": 1561.5538679616293,
+          "energy_kwh": 0.9939426974761083
+        }
+      ],
+      "feasible": true,
+      "failures": [],
+      "start_s": 1626.1690773291593,
+      "return_s": 3187.7229452907886,
+      "takeoff_s": 2106.1690773291593,
+      "charge_end_s": 4724.677992037783,
+      "aircraft": "U08",
+      "battery": "C-BAT03"
+    },
+    {
+      "flight_id": "V4-02",
+      "type": "C",
+      "box_ids": [
+        "S001-HYG-01",
+        "S001-WAT-02",
+        "S001-WAT-03",
+        "S001-WAT-04",
+        "S001-WAT-05"
+      ],
+      "route": [
+        "S001"
+      ],
+      "payload_kg": 62,
+      "volume_m3": 0.143,
+      "energy_kwh": 2.521179646872999,
+      "return_soc": 0.6848525441408752,
+      "energy_budget_kwh": 6.4,
+      "duration_s": 1428.1690773291593,
+      "prep_load_s": 450,
+      "flight_s": 618.1690773291593,
+      "handover_s": 360.0,
+      "charge_s": 1516.1528210281037,
+      "latest_start_s": 2483.7304613354204,
+      "delivery_offsets": {
+        "S001-HYG-01": 1116.2695386645796,
+        "S001-WAT-02": 1116.2695386645796,
+        "S001-WAT-03": 1116.2695386645796,
+        "S001-WAT-04": 1116.2695386645796,
+        "S001-WAT-05": 1116.2695386645796
+      },
+      "legs": [
+        {
+          "origin": "O01",
+          "destination": "S001",
+          "distance_m": 3053.9788435184996,
+          "max_dem_m": 223.05661010742188,
+          "up_m": 145.3566101074219,
+          "down_m": 89.05661010742188,
+          "payload_kg": 62,
+          "flight_s": 306.26953866457967,
+          "departure_offset_s": 450,
+          "arrival_offset_s": 756.2695386645796,
+          "energy_kwh": 1.5579337371287838
+        },
+        {
+          "origin": "S001",
+          "destination": "O01",
+          "distance_m": 3053.9788435184996,
+          "max_dem_m": 223.05661010742188,
+          "up_m": 89.05661010742188,
+          "down_m": 145.3566101074219,
+          "payload_kg": 0,
+          "flight_s": 311.89953866457967,
+          "departure_offset_s": 1116.2695386645796,
+          "arrival_offset_s": 1428.1690773291593,
+          "energy_kwh": 0.963245909744215
+        }
+      ],
+      "feasible": true,
+      "failures": [],
+      "start_s": 2173.812384815214,
+      "return_s": 3601.9814621443734,
+      "takeoff_s": 2623.812384815214,
+      "charge_end_s": 5118.134283172477,
+      "aircraft": "U07",
+      "battery": "C-BAT04"
+    },
+    {
+      "flight_id": "V4-07",
+      "type": "C",
+      "box_ids": [
+        "S003-FOD-01",
+        "S003-FOD-02",
+        "S003-HYG-01",
+        "S003-WAT-02",
+        "S003-WAT-03",
+        "S003-WAT-04",
+        "S007-HYG-01"
+      ],
+      "route": [
+        "S007",
+        "S003"
+      ],
+      "payload_kg": 70,
+      "volume_m3": 0.207,
+      "energy_kwh": 6.3922093759418015,
+      "return_soc": 0.2009738280072748,
+      "energy_budget_kwh": 6.4,
+      "duration_s": 2693.5924184923333,
+      "prep_load_s": 510,
+      "flight_s": 1571.5924184923333,
+      "handover_s": 612.0,
+      "charge_s": 2564.5567059842374,
+      "latest_start_s": 5296.993256310001,
+      "delivery_offsets": {
+        "S007-HYG-01": 1263.7432286649464,
+        "S003-FOD-01": 1903.006743689999,
+        "S003-FOD-02": 1903.006743689999,
+        "S003-HYG-01": 1903.006743689999,
+        "S003-WAT-02": 1903.006743689999,
+        "S003-WAT-03": 1903.006743689999,
+        "S003-WAT-04": 1903.006743689999
+      },
+      "legs": [
+        {
+          "origin": "O01",
+          "destination": "S007",
+          "distance_m": 4534.460566815018,
+          "max_dem_m": 461.9731750488281,
+          "up_m": 384.27317504882814,
+          "down_m": 163.47317504882812,
+          "payload_kg": 70,
+          "flight_s": 537.7432286649465,
+          "departure_offset_s": 510,
+          "arrival_offset_s": 1047.7432286649464,
+          "energy_kwh": 2.6981533984597283
+        },
+        {
+          "origin": "S007",
+          "destination": "S003",
+          "distance_m": 2734.2616243015686,
+          "max_dem_m": 360.6993408203125,
+          "up_m": 62.1993408203125,
+          "down_m": 72.1993408203125,
+          "payload_kg": 64,
+          "flight_s": 243.2635150250525,
+          "departure_offset_s": 1263.7432286649464,
+          "arrival_offset_s": 1507.006743689999,
+          "energy_kwh": 1.4001560158758801
+        },
+        {
+          "origin": "S003",
+          "destination": "O01",
+          "distance_m": 7263.179256556501,
+          "max_dem_m": 511.80413818359375,
+          "up_m": 223.30413818359375,
+          "down_m": 434.10413818359376,
+          "payload_kg": 0,
+          "flight_s": 790.5856748023344,
+          "departure_offset_s": 1903.006743689999,
+          "arrival_offset_s": 2693.5924184923333,
+          "energy_kwh": 2.293899961606194
+        }
+      ],
+      "feasible": true,
+      "failures": [],
+      "start_s": 3196.27538015648,
+      "return_s": 5889.867798648813,
+      "takeoff_s": 3706.27538015648,
+      "charge_end_s": 8454.42450463305,
+      "aircraft": "U08",
+      "battery": "C-BAT02"
+    },
+    {
+      "flight_id": "FEAS22-MERGED",
+      "type": "C",
+      "box_ids": [
+        "S008-FOD-01",
+        "S008-HYG-01",
+        "S008-MED-01",
+        "S008-WAT-01",
+        "S008-WAT-02"
+      ],
+      "route": [
+        "S008"
+      ],
+      "payload_kg": 45,
+      "volume_m3": 0.129,
+      "energy_kwh": 5.836011711483562,
+      "return_soc": 0.27049853606455476,
+      "energy_budget_kwh": 6.4,
+      "duration_s": 2199.7012130854146,
+      "prep_load_s": 450,
+      "flight_s": 1389.7012130854143,
+      "handover_s": 360.0,
+      "charge_s": 2413.919838526798,
+      "latest_start_s": 5702.309393457293,
+      "delivery_offsets": {
+        "S008-FOD-01": 1497.6906065427072,
+        "S008-HYG-01": 1497.6906065427072,
+        "S008-MED-01": 1497.6906065427072,
+        "S008-WAT-01": 1497.6906065427072,
+        "S008-WAT-02": 1497.6906065427072
+      },
+      "legs": [
+        {
+          "origin": "O01",
+          "destination": "S008",
+          "distance_m": 8079.033112422834,
+          "max_dem_m": 322.9093322753906,
+          "up_m": 245.20933227539064,
+          "down_m": 102.00933227539065,
+          "payload_kg": 45,
+          "flight_s": 687.6906065427072,
+          "departure_offset_s": 450,
+          "arrival_offset_s": 1137.6906065427072,
+          "energy_kwh": 3.323168587826716
+        },
+        {
+          "origin": "S008",
+          "destination": "O01",
+          "distance_m": 8079.033112422834,
+          "max_dem_m": 322.9093322753906,
+          "up_m": 102.00933227539065,
+          "down_m": 245.20933227539064,
+          "payload_kg": 0,
+          "flight_s": 702.0106065427071,
+          "departure_offset_s": 1497.6906065427072,
+          "arrival_offset_s": 2199.7012130854146,
+          "energy_kwh": 2.512843123656846
+        }
+      ],
+      "feasible": true,
+      "failures": [],
+      "start_s": 4708.2023976039745,
+      "return_s": 6907.903610689389,
+      "takeoff_s": 5158.2023976039745,
+      "charge_end_s": 9321.823449216186,
+      "aircraft": "U07",
+      "battery": "C-BAT01"
+    },
+    {
+      "flight_id": "V4-09",
+      "type": "C",
+      "box_ids": [
+        "S005-FOD-01",
+        "S005-HYG-01",
+        "S005-MED-01",
+        "S005-WAT-01",
+        "S005-WAT-02",
+        "S005-WAT-03"
+      ],
+      "route": [
+        "S005"
+      ],
+      "payload_kg": 59,
+      "volume_m3": 0.156,
+      "energy_kwh": 4.222192859507306,
+      "return_soc": 0.47222589256158676,
+      "energy_budget_kwh": 6.4,
+      "duration_s": 1877.190524525828,
+      "prep_load_s": 480,
+      "flight_s": 1001.1905245258283,
+      "handover_s": 396.0,
+      "charge_s": 1976.843899449895,
+      "latest_start_s": 9426.769737737086,
+      "delivery_offsets": {
+        "S005-FOD-01": 1373.230262262914,
+        "S005-HYG-01": 1373.230262262914,
+        "S005-MED-01": 1373.230262262914,
+        "S005-WAT-01": 1373.230262262914,
+        "S005-WAT-02": 1373.230262262914,
+        "S005-WAT-03": 1373.230262262914
+      },
+      "legs": [
+        {
+          "origin": "O01",
+          "destination": "S005",
+          "distance_m": 5280.606936873399,
+          "max_dem_m": 276.410888671875,
+          "up_m": 198.710888671875,
+          "down_m": 131.410888671875,
+          "payload_kg": 59,
+          "flight_s": 497.23026226291415,
+          "departure_offset_s": 480,
+          "arrival_offset_s": 977.2302622629142,
+          "energy_kwh": 2.5626257007138924
+        },
+        {
+          "origin": "S005",
+          "destination": "O01",
+          "distance_m": 5280.606936873399,
+          "max_dem_m": 276.410888671875,
+          "up_m": 131.410888671875,
+          "down_m": 198.710888671875,
+          "payload_kg": 0,
+          "flight_s": 503.96026226291417,
+          "departure_offset_s": 1373.230262262914,
+          "arrival_offset_s": 1877.190524525828,
+          "energy_kwh": 1.6595671587934135
+        }
+      ],
+      "feasible": true,
+      "failures": [],
+      "start_s": 5889.867798648813,
+      "return_s": 7767.0583231746405,
+      "takeoff_s": 6369.867798648813,
+      "charge_end_s": 9743.902222624536,
+      "aircraft": "U08",
+      "battery": "C-BAT03"
+    }
+  ],
+  "claimed_makespan_s": 7767.058323174642,
+  "metrics": {
+    "makespan_s": 7767.058323174642,
+    "energy_kwh": 66.32302412562316,
+    "sorties": 22,
+    "type_sorties": {
+      "A": 11,
+      "B": 4,
+      "C": 7
+    },
+    "weighted_tardiness_s": 0,
+    "late_boxes": 0,
+    "minimum_hard_deadline_slack_s": 645.0171340362012,
+    "minimum_expected_deadline_slack_s": 309.91807652020634,
+    "minimum_return_soc": 0.2009738280072063,
+    "used_aircraft": 8,
+    "used_batteries": 14
+  },
+  "internal_validation": {
+    "box_count": 80,
+    "coverage": true,
+    "physical_job_recomputations": 22,
+    "aircraft_chains_checked": 8,
+    "battery_chains_checked": 14,
+    "zero_lateness": true
+  },
+  "independent_validation": {
+    "checks": 580,
+    "failed": 0,
+    "failures": [],
+    "metrics": {
+      "makespan_s": 7767.058323174642,
+      "energy_kwh": 66.32302412562316,
+      "sorties": 22,
+      "type_sorties": {
+        "A": 11,
+        "B": 4,
+        "C": 7
+      },
+      "weighted_tardiness_s": 0,
+      "late_boxes": 0,
+      "minimum_hard_deadline_slack_s": 645.0171340362012,
+      "minimum_expected_deadline_slack_s": 309.91807652020634,
+      "minimum_return_soc": 0.2009738280072063,
+      "used_aircraft": 8,
+      "used_batteries": 14
+    }
+  }
+}

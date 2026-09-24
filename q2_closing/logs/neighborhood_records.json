@@ -1,0 +1,5128 @@
+[
+  {
+    "index": 0,
+    "kind": "1-route/type",
+    "removed": [
+      "V4-05"
+    ],
+    "max_sorties": 23,
+    "pool_size": 7,
+    "physical_evaluations": 13,
+    "workload_pruned": 6,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.14348950004205108
+  },
+  {
+    "index": 1,
+    "kind": "1-route/type",
+    "removed": [
+      "V4-10"
+    ],
+    "max_sorties": 23,
+    "pool_size": 7,
+    "physical_evaluations": 13,
+    "workload_pruned": 6,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.061152599984779954
+  },
+  {
+    "index": 2,
+    "kind": "1-route/type",
+    "removed": [
+      "V4-11"
+    ],
+    "max_sorties": 23,
+    "pool_size": 3,
+    "physical_evaluations": 5,
+    "workload_pruned": 2,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.013663100020494312
+  },
+  {
+    "index": 3,
+    "kind": "1-route/type",
+    "removed": [
+      "V4-12"
+    ],
+    "max_sorties": 23,
+    "pool_size": 10,
+    "physical_evaluations": 13,
+    "workload_pruned": 3,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.009026999992784113
+  },
+  {
+    "index": 4,
+    "kind": "1-route/type",
+    "removed": [
+      "V4-13"
+    ],
+    "max_sorties": 23,
+    "pool_size": 7,
+    "physical_evaluations": 13,
+    "workload_pruned": 6,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.008261999988462776
+  },
+  {
+    "index": 5,
+    "kind": "1-route/type",
+    "removed": [
+      "V4-14"
+    ],
+    "max_sorties": 23,
+    "pool_size": 3,
+    "physical_evaluations": 5,
+    "workload_pruned": 2,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.12114250002196059
+  },
+  {
+    "index": 6,
+    "kind": "2-route",
+    "removed": [
+      "V4-10",
+      "V4-17"
+    ],
+    "max_sorties": 23,
+    "pool_size": 41,
+    "physical_evaluations": 49,
+    "workload_pruned": 8,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.06144969997694716
+  },
+  {
+    "index": 7,
+    "kind": "2-route",
+    "removed": [
+      "V4-11",
+      "V4-20"
+    ],
+    "max_sorties": 23,
+    "pool_size": 16,
+    "physical_evaluations": 16,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.0056368999648839235
+  },
+  {
+    "index": 8,
+    "kind": "2-route",
+    "removed": [
+      "V4-11",
+      "V4-06"
+    ],
+    "max_sorties": 23,
+    "pool_size": 168,
+    "physical_evaluations": 984,
+    "workload_pruned": 475,
+    "energy": 341,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.03927590005332604
+  },
+  {
+    "index": 9,
+    "kind": "2-route",
+    "removed": [
+      "V4-13",
+      "V4-14"
+    ],
+    "max_sorties": 23,
+    "pool_size": 17,
+    "physical_evaluations": 28,
+    "workload_pruned": 11,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.15612309996504337
+  },
+  {
+    "index": 10,
+    "kind": "2-route",
+    "removed": [
+      "V4-05",
+      "V4-16"
+    ],
+    "max_sorties": 23,
+    "pool_size": 89,
+    "physical_evaluations": 183,
+    "energy": 58,
+    "workload_pruned": 36,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.05790519999573007
+  },
+  {
+    "index": 11,
+    "kind": "2-route",
+    "removed": [
+      "V4-12",
+      "V4-17"
+    ],
+    "max_sorties": 23,
+    "pool_size": 29,
+    "physical_evaluations": 49,
+    "workload_pruned": 20,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.03644779999740422
+  },
+  {
+    "index": 12,
+    "kind": "22-feasibility",
+    "removed": [
+      "V4-13",
+      "V4-14",
+      "V4-09"
+    ],
+    "max_sorties": 22,
+    "pool_size": 213,
+    "physical_evaluations": 4004,
+    "workload_pruned": 2549,
+    "energy": 1242,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.09475859999656677
+  },
+  {
+    "index": 13,
+    "kind": "3-route",
+    "removed": [
+      "V4-13",
+      "V4-14",
+      "V4-09"
+    ],
+    "max_sorties": 23,
+    "pool_size": 213,
+    "physical_evaluations": 4004,
+    "workload_pruned": 2549,
+    "energy": 1242,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.15771880000829697
+  },
+  {
+    "index": 14,
+    "kind": "22-feasibility",
+    "removed": [
+      "V4-05",
+      "V4-16",
+      "V4-17"
+    ],
+    "max_sorties": 22,
+    "pool_size": 172,
+    "physical_evaluations": 330,
+    "energy": 91,
+    "workload_pruned": 67,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.010936300037428737
+  },
+  {
+    "index": 15,
+    "kind": "3-route",
+    "removed": [
+      "V4-05",
+      "V4-16",
+      "V4-17"
+    ],
+    "max_sorties": 23,
+    "pool_size": 172,
+    "physical_evaluations": 330,
+    "energy": 91,
+    "workload_pruned": 67,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.5273660999955609
+  },
+  {
+    "index": 16,
+    "kind": "22-feasibility",
+    "removed": [
+      "V4-10",
+      "V4-12",
+      "V4-17"
+    ],
+    "max_sorties": 22,
+    "pool_size": 218,
+    "physical_evaluations": 218,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.018428599985782057
+  },
+  {
+    "index": 17,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-12",
+      "V4-17"
+    ],
+    "max_sorties": 23,
+    "pool_size": 218,
+    "physical_evaluations": 218,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.06163730000844225
+  },
+  {
+    "index": 18,
+    "kind": "2-route",
+    "removed": [
+      "V4-01",
+      "V4-05"
+    ],
+    "max_sorties": 23,
+    "pool_size": 19,
+    "physical_evaluations": 49,
+    "energy": 30,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.15571490000002086
+  },
+  {
+    "index": 19,
+    "kind": "2-route",
+    "removed": [
+      "V4-01",
+      "V4-10"
+    ],
+    "max_sorties": 23,
+    "pool_size": 19,
+    "physical_evaluations": 49,
+    "energy": 30,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.10863990004872903
+  },
+  {
+    "index": 20,
+    "kind": "2-route",
+    "removed": [
+      "V4-01",
+      "V4-11"
+    ],
+    "max_sorties": 23,
+    "pool_size": 11,
+    "physical_evaluations": 21,
+    "energy": 9,
+    "workload_pruned": 1,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.011646499973721802
+  },
+  {
+    "index": 21,
+    "kind": "2-route",
+    "removed": [
+      "V4-01",
+      "V4-12"
+    ],
+    "max_sorties": 23,
+    "pool_size": 19,
+    "physical_evaluations": 49,
+    "energy": 28,
+    "workload_pruned": 2,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.008030200027860701
+  },
+  {
+    "index": 22,
+    "kind": "2-route",
+    "removed": [
+      "V4-01",
+      "V4-13"
+    ],
+    "max_sorties": 23,
+    "pool_size": 21,
+    "physical_evaluations": 49,
+    "energy": 19,
+    "workload_pruned": 9,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.010533099994063377
+  },
+  {
+    "index": 23,
+    "kind": "2-route",
+    "removed": [
+      "V4-01",
+      "V4-14"
+    ],
+    "max_sorties": 23,
+    "pool_size": 11,
+    "physical_evaluations": 21,
+    "workload_pruned": 3,
+    "energy": 7,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.005308799969498068
+  },
+  {
+    "index": 24,
+    "kind": "2-route",
+    "removed": [
+      "V4-02",
+      "V4-05"
+    ],
+    "max_sorties": 23,
+    "pool_size": 88,
+    "physical_evaluations": 555,
+    "workload_pruned": 420,
+    "energy": 47,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.03764559997944161
+  },
+  {
+    "index": 25,
+    "kind": "2-route",
+    "removed": [
+      "V4-02",
+      "V4-10"
+    ],
+    "max_sorties": 23,
+    "pool_size": 58,
+    "physical_evaluations": 555,
+    "workload_pruned": 480,
+    "energy": 17,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.02922029996989295
+  },
+  {
+    "index": 26,
+    "kind": "2-route",
+    "removed": [
+      "V4-02",
+      "V4-11"
+    ],
+    "max_sorties": 23,
+    "pool_size": 70,
+    "physical_evaluations": 263,
+    "workload_pruned": 164,
+    "energy": 29,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.05490960000315681
+  },
+  {
+    "index": 27,
+    "kind": "2-route",
+    "removed": [
+      "V4-02",
+      "V4-12"
+    ],
+    "max_sorties": 23,
+    "pool_size": 61,
+    "physical_evaluations": 555,
+    "workload_pruned": 494,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.020758500031661242
+  },
+  {
+    "index": 28,
+    "kind": "2-route",
+    "removed": [
+      "V4-02",
+      "V4-13"
+    ],
+    "max_sorties": 23,
+    "pool_size": 84,
+    "physical_evaluations": 555,
+    "workload_pruned": 343,
+    "energy": 128,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.07026539999060333
+  },
+  {
+    "index": 29,
+    "kind": "2-route",
+    "removed": [
+      "V4-02",
+      "V4-14"
+    ],
+    "max_sorties": 23,
+    "pool_size": 54,
+    "physical_evaluations": 263,
+    "workload_pruned": 156,
+    "energy": 53,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.025728299980983138
+  },
+  {
+    "index": 30,
+    "kind": "2-route",
+    "removed": [
+      "V4-03",
+      "V4-05"
+    ],
+    "max_sorties": 23,
+    "pool_size": 400,
+    "physical_evaluations": 4087,
+    "workload_pruned": 3190,
+    "energy": 497,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.24500980001175776
+  },
+  {
+    "index": 31,
+    "kind": "2-route",
+    "removed": [
+      "V4-03",
+      "V4-10"
+    ],
+    "max_sorties": 23,
+    "pool_size": 352,
+    "physical_evaluations": 4087,
+    "workload_pruned": 3562,
+    "energy": 173,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.14187519997358322
+  },
+  {
+    "index": 32,
+    "kind": "2-route",
+    "removed": [
+      "V4-03",
+      "V4-11"
+    ],
+    "max_sorties": 23,
+    "pool_size": 377,
+    "physical_evaluations": 1919,
+    "workload_pruned": 1275,
+    "energy": 267,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.2381531000137329
+  },
+  {
+    "index": 33,
+    "kind": "2-route",
+    "removed": [
+      "V4-03",
+      "V4-12"
+    ],
+    "max_sorties": 23,
+    "pool_size": 361,
+    "physical_evaluations": 4087,
+    "workload_pruned": 3726,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.14550579997012392
+  },
+  {
+    "index": 34,
+    "kind": "2-route",
+    "removed": [
+      "V4-03",
+      "V4-13"
+    ],
+    "max_sorties": 23,
+    "pool_size": 397,
+    "physical_evaluations": 4087,
+    "workload_pruned": 2510,
+    "energy": 1180,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.24782509997021407
+  },
+  {
+    "index": 35,
+    "kind": "2-route",
+    "removed": [
+      "V4-03",
+      "V4-14"
+    ],
+    "max_sorties": 23,
+    "pool_size": 348,
+    "physical_evaluations": 1919,
+    "workload_pruned": 1082,
+    "energy": 489,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.09884770005010068
+  },
+  {
+    "index": 36,
+    "kind": "2-route",
+    "removed": [
+      "V4-04",
+      "V4-05"
+    ],
+    "max_sorties": 23,
+    "pool_size": 108,
+    "physical_evaluations": 1115,
+    "workload_pruned": 22,
+    "energy": 985,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.0996134000015445
+  },
+  {
+    "index": 37,
+    "kind": "2-route",
+    "removed": [
+      "V4-04",
+      "V4-10"
+    ],
+    "max_sorties": 23,
+    "pool_size": 108,
+    "physical_evaluations": 1115,
+    "workload_pruned": 708,
+    "energy": 299,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.038141799974255264
+  },
+  {
+    "index": 38,
+    "kind": "2-route",
+    "removed": [
+      "V4-04",
+      "V4-11"
+    ],
+    "max_sorties": 23,
+    "pool_size": 104,
+    "physical_evaluations": 519,
+    "workload_pruned": 48,
+    "energy": 367,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.11242939997464418
+  },
+  {
+    "index": 39,
+    "kind": "2-route",
+    "removed": [
+      "V4-04",
+      "V4-12"
+    ],
+    "max_sorties": 23,
+    "pool_size": 114,
+    "physical_evaluations": 1115,
+    "workload_pruned": 917,
+    "energy": 84,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.05289320001611486
+  },
+  {
+    "index": 40,
+    "kind": "2-route",
+    "removed": [
+      "V4-04",
+      "V4-13"
+    ],
+    "max_sorties": 23,
+    "pool_size": 108,
+    "physical_evaluations": 1115,
+    "workload_pruned": 183,
+    "energy": 824,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.048430200025904924
+  },
+  {
+    "index": 41,
+    "kind": "2-route",
+    "removed": [
+      "V4-04",
+      "V4-14"
+    ],
+    "max_sorties": 23,
+    "pool_size": 104,
+    "physical_evaluations": 519,
+    "workload_pruned": 73,
+    "energy": 342,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.02535180002450943
+  },
+  {
+    "index": 42,
+    "kind": "2-route",
+    "removed": [
+      "V4-05",
+      "V4-06"
+    ],
+    "max_sorties": 23,
+    "pool_size": 176,
+    "physical_evaluations": 2098,
+    "workload_pruned": 828,
+    "energy": 1094,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.1726420999621041
+  },
+  {
+    "index": 43,
+    "kind": "2-route",
+    "removed": [
+      "V4-05",
+      "V4-07"
+    ],
+    "max_sorties": 23,
+    "pool_size": 225,
+    "physical_evaluations": 3784,
+    "workload_pruned": 32,
+    "energy": 3527,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.1230443999520503
+  },
+  {
+    "index": 44,
+    "kind": "2-route",
+    "removed": [
+      "V4-05",
+      "V4-08"
+    ],
+    "max_sorties": 23,
+    "pool_size": 41,
+    "physical_evaluations": 49,
+    "workload_pruned": 8,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.0707601000322029
+  },
+  {
+    "index": 45,
+    "kind": "2-route",
+    "removed": [
+      "V4-05",
+      "V4-09"
+    ],
+    "max_sorties": 23,
+    "pool_size": 100,
+    "physical_evaluations": 1115,
+    "workload_pruned": 461,
+    "energy": 554,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.20844760001637042
+  },
+  {
+    "index": 46,
+    "kind": "2-route",
+    "removed": [
+      "V4-05",
+      "V4-10"
+    ],
+    "max_sorties": 23,
+    "pool_size": 36,
+    "physical_evaluations": 92,
+    "workload_pruned": 16,
+    "energy": 40,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.015995999972801656
+  },
+  {
+    "index": 47,
+    "kind": "2-route",
+    "removed": [
+      "V4-05",
+      "V4-11"
+    ],
+    "max_sorties": 23,
+    "pool_size": 12,
+    "physical_evaluations": 38,
+    "workload_pruned": 8,
+    "energy": 18,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.01489759999094531
+  },
+  {
+    "index": 48,
+    "kind": "2-route",
+    "removed": [
+      "V4-05",
+      "V4-12"
+    ],
+    "max_sorties": 23,
+    "pool_size": 57,
+    "physical_evaluations": 92,
+    "workload_pruned": 33,
+    "energy": 2,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.06150309997610748
+  },
+  {
+    "index": 49,
+    "kind": "2-route",
+    "removed": [
+      "V4-05",
+      "V4-13"
+    ],
+    "max_sorties": 23,
+    "pool_size": 14,
+    "physical_evaluations": 92,
+    "workload_pruned": 12,
+    "energy": 66,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.013305900036357343
+  },
+  {
+    "index": 50,
+    "kind": "2-route",
+    "removed": [
+      "V4-05",
+      "V4-14"
+    ],
+    "max_sorties": 23,
+    "pool_size": 10,
+    "physical_evaluations": 38,
+    "workload_pruned": 8,
+    "energy": 20,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.012013399973511696
+  },
+  {
+    "index": 51,
+    "kind": "2-route",
+    "removed": [
+      "V4-05",
+      "V4-15"
+    ],
+    "max_sorties": 23,
+    "pool_size": 19,
+    "physical_evaluations": 49,
+    "energy": 30,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.3455660000327043
+  },
+  {
+    "index": 52,
+    "kind": "2-route",
+    "removed": [
+      "V4-05",
+      "V4-17"
+    ],
+    "max_sorties": 23,
+    "pool_size": 49,
+    "physical_evaluations": 49,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.065490500011947
+  },
+  {
+    "index": 53,
+    "kind": "2-route",
+    "removed": [
+      "V4-05",
+      "V4-18"
+    ],
+    "max_sorties": 23,
+    "pool_size": 27,
+    "physical_evaluations": 167,
+    "energy": 134,
+    "workload_pruned": 6,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.016281699994578958
+  },
+  {
+    "index": 54,
+    "kind": "2-route",
+    "removed": [
+      "V4-05",
+      "V4-19"
+    ],
+    "max_sorties": 23,
+    "pool_size": 19,
+    "physical_evaluations": 59,
+    "energy": 40,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.01233269996009767
+  },
+  {
+    "index": 55,
+    "kind": "2-route",
+    "removed": [
+      "V4-05",
+      "V4-20"
+    ],
+    "max_sorties": 23,
+    "pool_size": 19,
+    "physical_evaluations": 49,
+    "energy": 29,
+    "workload_pruned": 1,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.014966499991714954
+  },
+  {
+    "index": 56,
+    "kind": "2-route",
+    "removed": [
+      "V4-05",
+      "V4-21"
+    ],
+    "max_sorties": 23,
+    "pool_size": 41,
+    "physical_evaluations": 167,
+    "workload_pruned": 17,
+    "energy": 109,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.015548700001090765
+  },
+  {
+    "index": 57,
+    "kind": "2-route",
+    "removed": [
+      "V4-05",
+      "V4-22"
+    ],
+    "max_sorties": 23,
+    "pool_size": 49,
+    "physical_evaluations": 49,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.0906358000356704
+  },
+  {
+    "index": 58,
+    "kind": "2-route",
+    "removed": [
+      "V4-05",
+      "V4-23"
+    ],
+    "max_sorties": 23,
+    "pool_size": 28,
+    "physical_evaluations": 49,
+    "workload_pruned": 17,
+    "energy": 4,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.047363300051074475
+  },
+  {
+    "index": 59,
+    "kind": "2-route",
+    "removed": [
+      "V4-06",
+      "V4-10"
+    ],
+    "max_sorties": 23,
+    "pool_size": 176,
+    "physical_evaluations": 2098,
+    "workload_pruned": 28,
+    "energy": 1894,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.0853798000025563
+  },
+  {
+    "index": 60,
+    "kind": "2-route",
+    "removed": [
+      "V4-06",
+      "V4-12"
+    ],
+    "max_sorties": 23,
+    "pool_size": 172,
+    "physical_evaluations": 2098,
+    "workload_pruned": 738,
+    "energy": 1188,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.09625360002974048
+  },
+  {
+    "index": 61,
+    "kind": "2-route",
+    "removed": [
+      "V4-06",
+      "V4-13"
+    ],
+    "max_sorties": 23,
+    "pool_size": 176,
+    "physical_evaluations": 2098,
+    "workload_pruned": 40,
+    "energy": 1882,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.08835710003040731
+  },
+  {
+    "index": 62,
+    "kind": "2-route",
+    "removed": [
+      "V4-06",
+      "V4-14"
+    ],
+    "max_sorties": 23,
+    "pool_size": 168,
+    "physical_evaluations": 984,
+    "workload_pruned": 26,
+    "energy": 790,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.04075030004605651
+  },
+  {
+    "index": 63,
+    "kind": "2-route",
+    "removed": [
+      "V4-07",
+      "V4-10"
+    ],
+    "max_sorties": 23,
+    "pool_size": 225,
+    "physical_evaluations": 3784,
+    "workload_pruned": 36,
+    "energy": 3523,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.1108754999586381
+  },
+  {
+    "index": 64,
+    "kind": "2-route",
+    "removed": [
+      "V4-07",
+      "V4-11"
+    ],
+    "max_sorties": 23,
+    "pool_size": 217,
+    "physical_evaluations": 1764,
+    "workload_pruned": 34,
+    "energy": 1513,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.22237969998968765
+  },
+  {
+    "index": 65,
+    "kind": "2-route",
+    "removed": [
+      "V4-07",
+      "V4-12"
+    ],
+    "max_sorties": 23,
+    "pool_size": 221,
+    "physical_evaluations": 3784,
+    "workload_pruned": 58,
+    "energy": 3505,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.1301314000156708
+  },
+  {
+    "index": 66,
+    "kind": "2-route",
+    "removed": [
+      "V4-07",
+      "V4-13"
+    ],
+    "max_sorties": 23,
+    "pool_size": 237,
+    "physical_evaluations": 3784,
+    "workload_pruned": 38,
+    "energy": 3509,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.2969671000028029
+  },
+  {
+    "index": 67,
+    "kind": "2-route",
+    "removed": [
+      "V4-07",
+      "V4-14"
+    ],
+    "max_sorties": 23,
+    "pool_size": 217,
+    "physical_evaluations": 1764,
+    "workload_pruned": 36,
+    "energy": 1511,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.06341239996254444
+  },
+  {
+    "index": 68,
+    "kind": "2-route",
+    "removed": [
+      "V4-08",
+      "V4-10"
+    ],
+    "max_sorties": 23,
+    "pool_size": 29,
+    "physical_evaluations": 49,
+    "workload_pruned": 20,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.07426760002272204
+  },
+  {
+    "index": 69,
+    "kind": "2-route",
+    "removed": [
+      "V4-08",
+      "V4-11"
+    ],
+    "max_sorties": 23,
+    "pool_size": 20,
+    "physical_evaluations": 21,
+    "energy": 1,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.18039980001049116
+  },
+  {
+    "index": 70,
+    "kind": "2-route",
+    "removed": [
+      "V4-08",
+      "V4-12"
+    ],
+    "max_sorties": 23,
+    "pool_size": 29,
+    "physical_evaluations": 49,
+    "workload_pruned": 20,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.06433690001722425
+  },
+  {
+    "index": 71,
+    "kind": "2-route",
+    "removed": [
+      "V4-08",
+      "V4-13"
+    ],
+    "max_sorties": 23,
+    "pool_size": 39,
+    "physical_evaluations": 49,
+    "energy": 4,
+    "workload_pruned": 6,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.09487630001967773
+  },
+  {
+    "index": 72,
+    "kind": "2-route",
+    "removed": [
+      "V4-08",
+      "V4-14"
+    ],
+    "max_sorties": 23,
+    "pool_size": 13,
+    "physical_evaluations": 21,
+    "workload_pruned": 7,
+    "energy": 1,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.008965599990915507
+  },
+  {
+    "index": 73,
+    "kind": "2-route",
+    "removed": [
+      "V4-09",
+      "V4-10"
+    ],
+    "max_sorties": 23,
+    "pool_size": 100,
+    "physical_evaluations": 1115,
+    "workload_pruned": 231,
+    "energy": 784,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.20787649997510016
+  },
+  {
+    "index": 74,
+    "kind": "2-route",
+    "removed": [
+      "V4-09",
+      "V4-11"
+    ],
+    "max_sorties": 23,
+    "pool_size": 120,
+    "physical_evaluations": 519,
+    "workload_pruned": 363,
+    "energy": 36,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.06061689998023212
+  },
+  {
+    "index": 75,
+    "kind": "2-route",
+    "removed": [
+      "V4-09",
+      "V4-12"
+    ],
+    "max_sorties": 23,
+    "pool_size": 110,
+    "physical_evaluations": 1115,
+    "workload_pruned": 863,
+    "energy": 142,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.03541760001098737
+  },
+  {
+    "index": 76,
+    "kind": "2-route",
+    "removed": [
+      "V4-09",
+      "V4-13"
+    ],
+    "max_sorties": 23,
+    "pool_size": 133,
+    "physical_evaluations": 1115,
+    "workload_pruned": 821,
+    "energy": 161,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.07835929997963831
+  },
+  {
+    "index": 77,
+    "kind": "2-route",
+    "removed": [
+      "V4-09",
+      "V4-14"
+    ],
+    "max_sorties": 23,
+    "pool_size": 96,
+    "physical_evaluations": 519,
+    "workload_pruned": 358,
+    "energy": 65,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.028441900038160384
+  },
+  {
+    "index": 78,
+    "kind": "2-route",
+    "removed": [
+      "V4-10",
+      "V4-11"
+    ],
+    "max_sorties": 23,
+    "pool_size": 10,
+    "physical_evaluations": 38,
+    "workload_pruned": 8,
+    "energy": 20,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.004792499996256083
+  },
+  {
+    "index": 79,
+    "kind": "2-route",
+    "removed": [
+      "V4-10",
+      "V4-12"
+    ],
+    "max_sorties": 23,
+    "pool_size": 59,
+    "physical_evaluations": 92,
+    "workload_pruned": 33,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.051784200011752546
+  },
+  {
+    "index": 80,
+    "kind": "2-route",
+    "removed": [
+      "V4-10",
+      "V4-13"
+    ],
+    "max_sorties": 23,
+    "pool_size": 14,
+    "physical_evaluations": 92,
+    "workload_pruned": 12,
+    "energy": 66,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.10404750000452623
+  },
+  {
+    "index": 81,
+    "kind": "2-route",
+    "removed": [
+      "V4-10",
+      "V4-14"
+    ],
+    "max_sorties": 23,
+    "pool_size": 10,
+    "physical_evaluations": 38,
+    "workload_pruned": 8,
+    "energy": 20,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.010469600034411997
+  },
+  {
+    "index": 82,
+    "kind": "2-route",
+    "removed": [
+      "V4-10",
+      "V4-15"
+    ],
+    "max_sorties": 23,
+    "pool_size": 19,
+    "physical_evaluations": 49,
+    "energy": 29,
+    "workload_pruned": 1,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.11475479998625815
+  },
+  {
+    "index": 83,
+    "kind": "2-route",
+    "removed": [
+      "V4-10",
+      "V4-16"
+    ],
+    "max_sorties": 23,
+    "pool_size": 63,
+    "physical_evaluations": 183,
+    "workload_pruned": 36,
+    "energy": 84,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.03361449996009469
+  },
+  {
+    "index": 84,
+    "kind": "2-route",
+    "removed": [
+      "V4-10",
+      "V4-18"
+    ],
+    "max_sorties": 23,
+    "pool_size": 27,
+    "physical_evaluations": 167,
+    "energy": 134,
+    "workload_pruned": 6,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.10739229997852817
+  },
+  {
+    "index": 85,
+    "kind": "2-route",
+    "removed": [
+      "V4-10",
+      "V4-19"
+    ],
+    "max_sorties": 23,
+    "pool_size": 19,
+    "physical_evaluations": 59,
+    "energy": 35,
+    "workload_pruned": 5,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.07493860000977293
+  },
+  {
+    "index": 86,
+    "kind": "2-route",
+    "removed": [
+      "V4-10",
+      "V4-20"
+    ],
+    "max_sorties": 23,
+    "pool_size": 19,
+    "physical_evaluations": 49,
+    "energy": 30,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.011139200010802597
+  },
+  {
+    "index": 87,
+    "kind": "2-route",
+    "removed": [
+      "V4-10",
+      "V4-21"
+    ],
+    "max_sorties": 23,
+    "pool_size": 37,
+    "physical_evaluations": 167,
+    "workload_pruned": 18,
+    "energy": 112,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.014615699998103082
+  },
+  {
+    "index": 88,
+    "kind": "2-route",
+    "removed": [
+      "V4-10",
+      "V4-22"
+    ],
+    "max_sorties": 23,
+    "pool_size": 24,
+    "physical_evaluations": 49,
+    "workload_pruned": 15,
+    "energy": 10,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.007312799978535622
+  },
+  {
+    "index": 89,
+    "kind": "2-route",
+    "removed": [
+      "V4-10",
+      "V4-23"
+    ],
+    "max_sorties": 23,
+    "pool_size": 29,
+    "physical_evaluations": 49,
+    "workload_pruned": 19,
+    "energy": 1,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.14154699997743592
+  },
+  {
+    "index": 90,
+    "kind": "2-route",
+    "removed": [
+      "V4-11",
+      "V4-12"
+    ],
+    "max_sorties": 23,
+    "pool_size": 16,
+    "physical_evaluations": 38,
+    "workload_pruned": 5,
+    "energy": 17,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.015111699991393834
+  },
+  {
+    "index": 91,
+    "kind": "2-route",
+    "removed": [
+      "V4-11",
+      "V4-13"
+    ],
+    "max_sorties": 23,
+    "pool_size": 18,
+    "physical_evaluations": 38,
+    "workload_pruned": 10,
+    "energy": 10,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.018519499979447573
+  },
+  {
+    "index": 92,
+    "kind": "2-route",
+    "removed": [
+      "V4-11",
+      "V4-14"
+    ],
+    "max_sorties": 23,
+    "pool_size": 12,
+    "physical_evaluations": 18,
+    "workload_pruned": 4,
+    "energy": 2,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.01060829998459667
+  },
+  {
+    "index": 93,
+    "kind": "2-route",
+    "removed": [
+      "V4-11",
+      "V4-15"
+    ],
+    "max_sorties": 23,
+    "pool_size": 11,
+    "physical_evaluations": 21,
+    "energy": 9,
+    "workload_pruned": 1,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.1527440000209026
+  },
+  {
+    "index": 94,
+    "kind": "2-route",
+    "removed": [
+      "V4-11",
+      "V4-16"
+    ],
+    "max_sorties": 23,
+    "pool_size": 37,
+    "physical_evaluations": 79,
+    "workload_pruned": 14,
+    "energy": 28,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.01822829997399822
+  },
+  {
+    "index": 95,
+    "kind": "2-route",
+    "removed": [
+      "V4-11",
+      "V4-17"
+    ],
+    "max_sorties": 23,
+    "pool_size": 11,
+    "physical_evaluations": 21,
+    "workload_pruned": 3,
+    "energy": 7,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.010096799989696592
+  },
+  {
+    "index": 96,
+    "kind": "2-route",
+    "removed": [
+      "V4-11",
+      "V4-18"
+    ],
+    "max_sorties": 23,
+    "pool_size": 19,
+    "physical_evaluations": 69,
+    "energy": 42,
+    "workload_pruned": 8,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.14434399997116998
+  },
+  {
+    "index": 97,
+    "kind": "2-route",
+    "removed": [
+      "V4-11",
+      "V4-19"
+    ],
+    "max_sorties": 23,
+    "pool_size": 11,
+    "physical_evaluations": 23,
+    "energy": 10,
+    "workload_pruned": 2,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.010693600052036345
+  },
+  {
+    "index": 98,
+    "kind": "2-route",
+    "removed": [
+      "V4-11",
+      "V4-21"
+    ],
+    "max_sorties": 23,
+    "pool_size": 41,
+    "physical_evaluations": 47,
+    "workload_pruned": 6,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.09913310001138598
+  },
+  {
+    "index": 99,
+    "kind": "2-route",
+    "removed": [
+      "V4-11",
+      "V4-22"
+    ],
+    "max_sorties": 23,
+    "pool_size": 20,
+    "physical_evaluations": 21,
+    "energy": 1,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.2608339000144042
+  },
+  {
+    "index": 100,
+    "kind": "2-route",
+    "removed": [
+      "V4-11",
+      "V4-23"
+    ],
+    "max_sorties": 23,
+    "pool_size": 20,
+    "physical_evaluations": 21,
+    "energy": 1,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.11357649997808039
+  },
+  {
+    "index": 101,
+    "kind": "2-route",
+    "removed": [
+      "V4-12",
+      "V4-13"
+    ],
+    "max_sorties": 23,
+    "pool_size": 17,
+    "physical_evaluations": 92,
+    "workload_pruned": 9,
+    "energy": 66,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.012794499984011054
+  },
+  {
+    "index": 102,
+    "kind": "2-route",
+    "removed": [
+      "V4-12",
+      "V4-14"
+    ],
+    "max_sorties": 23,
+    "pool_size": 13,
+    "physical_evaluations": 38,
+    "workload_pruned": 5,
+    "energy": 20,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.014553199987858534
+  },
+  {
+    "index": 103,
+    "kind": "2-route",
+    "removed": [
+      "V4-12",
+      "V4-15"
+    ],
+    "max_sorties": 23,
+    "pool_size": 24,
+    "physical_evaluations": 49,
+    "workload_pruned": 15,
+    "energy": 10,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.012912900012452155
+  },
+  {
+    "index": 104,
+    "kind": "2-route",
+    "removed": [
+      "V4-12",
+      "V4-16"
+    ],
+    "max_sorties": 23,
+    "pool_size": 67,
+    "physical_evaluations": 183,
+    "workload_pruned": 72,
+    "energy": 44,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.01753319997806102
+  },
+  {
+    "index": 105,
+    "kind": "2-route",
+    "removed": [
+      "V4-12",
+      "V4-18"
+    ],
+    "max_sorties": 23,
+    "pool_size": 24,
+    "physical_evaluations": 167,
+    "workload_pruned": 13,
+    "energy": 130,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.008017599990125746
+  },
+  {
+    "index": 106,
+    "kind": "2-route",
+    "removed": [
+      "V4-12",
+      "V4-19"
+    ],
+    "max_sorties": 23,
+    "pool_size": 29,
+    "physical_evaluations": 59,
+    "workload_pruned": 17,
+    "energy": 13,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.007486899965442717
+  },
+  {
+    "index": 107,
+    "kind": "2-route",
+    "removed": [
+      "V4-12",
+      "V4-20"
+    ],
+    "max_sorties": 23,
+    "pool_size": 16,
+    "physical_evaluations": 49,
+    "workload_pruned": 5,
+    "energy": 28,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.011884499981533736
+  },
+  {
+    "index": 108,
+    "kind": "2-route",
+    "removed": [
+      "V4-12",
+      "V4-21"
+    ],
+    "max_sorties": 23,
+    "pool_size": 34,
+    "physical_evaluations": 167,
+    "workload_pruned": 26,
+    "energy": 107,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.013671700027771294
+  },
+  {
+    "index": 109,
+    "kind": "2-route",
+    "removed": [
+      "V4-12",
+      "V4-22"
+    ],
+    "max_sorties": 23,
+    "pool_size": 29,
+    "physical_evaluations": 49,
+    "workload_pruned": 20,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.016585599980317056
+  },
+  {
+    "index": 110,
+    "kind": "2-route",
+    "removed": [
+      "V4-12",
+      "V4-23"
+    ],
+    "max_sorties": 23,
+    "pool_size": 29,
+    "physical_evaluations": 49,
+    "workload_pruned": 20,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.21315900003537536
+  },
+  {
+    "index": 111,
+    "kind": "2-route",
+    "removed": [
+      "V4-13",
+      "V4-15"
+    ],
+    "max_sorties": 23,
+    "pool_size": 19,
+    "physical_evaluations": 49,
+    "energy": 23,
+    "workload_pruned": 7,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.017084099992644042
+  },
+  {
+    "index": 112,
+    "kind": "2-route",
+    "removed": [
+      "V4-13",
+      "V4-16"
+    ],
+    "max_sorties": 23,
+    "pool_size": 37,
+    "physical_evaluations": 183,
+    "energy": 131,
+    "workload_pruned": 15,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.20320990000618622
+  },
+  {
+    "index": 113,
+    "kind": "2-route",
+    "removed": [
+      "V4-13",
+      "V4-17"
+    ],
+    "max_sorties": 23,
+    "pool_size": 19,
+    "physical_evaluations": 49,
+    "energy": 29,
+    "workload_pruned": 1,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.011223499954212457
+  },
+  {
+    "index": 114,
+    "kind": "2-route",
+    "removed": [
+      "V4-13",
+      "V4-18"
+    ],
+    "max_sorties": 23,
+    "pool_size": 31,
+    "physical_evaluations": 167,
+    "energy": 121,
+    "workload_pruned": 15,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.015182700008153915
+  },
+  {
+    "index": 115,
+    "kind": "2-route",
+    "removed": [
+      "V4-13",
+      "V4-19"
+    ],
+    "max_sorties": 23,
+    "pool_size": 21,
+    "physical_evaluations": 59,
+    "energy": 27,
+    "workload_pruned": 11,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.012400000006891787
+  },
+  {
+    "index": 116,
+    "kind": "2-route",
+    "removed": [
+      "V4-13",
+      "V4-20"
+    ],
+    "max_sorties": 23,
+    "pool_size": 21,
+    "physical_evaluations": 49,
+    "energy": 20,
+    "workload_pruned": 8,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.010860800044611096
+  },
+  {
+    "index": 117,
+    "kind": "2-route",
+    "removed": [
+      "V4-13",
+      "V4-21"
+    ],
+    "max_sorties": 23,
+    "pool_size": 61,
+    "physical_evaluations": 167,
+    "workload_pruned": 28,
+    "energy": 78,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.012305100040975958
+  },
+  {
+    "index": 118,
+    "kind": "2-route",
+    "removed": [
+      "V4-13",
+      "V4-22"
+    ],
+    "max_sorties": 23,
+    "pool_size": 20,
+    "physical_evaluations": 49,
+    "energy": 20,
+    "workload_pruned": 9,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.012382299988530576
+  },
+  {
+    "index": 119,
+    "kind": "2-route",
+    "removed": [
+      "V4-13",
+      "V4-23"
+    ],
+    "max_sorties": 23,
+    "pool_size": 47,
+    "physical_evaluations": 49,
+    "energy": 2,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.09856900002341717
+  },
+  {
+    "index": 120,
+    "kind": "2-route",
+    "removed": [
+      "V4-14",
+      "V4-15"
+    ],
+    "max_sorties": 23,
+    "pool_size": 11,
+    "physical_evaluations": 21,
+    "workload_pruned": 3,
+    "energy": 7,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.01368559995898977
+  },
+  {
+    "index": 121,
+    "kind": "2-route",
+    "removed": [
+      "V4-14",
+      "V4-16"
+    ],
+    "max_sorties": 23,
+    "pool_size": 29,
+    "physical_evaluations": 79,
+    "energy": 42,
+    "workload_pruned": 8,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.012388799979817122
+  },
+  {
+    "index": 122,
+    "kind": "2-route",
+    "removed": [
+      "V4-14",
+      "V4-17"
+    ],
+    "max_sorties": 23,
+    "pool_size": 11,
+    "physical_evaluations": 21,
+    "energy": 10,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.01128380000591278
+  },
+  {
+    "index": 123,
+    "kind": "2-route",
+    "removed": [
+      "V4-14",
+      "V4-18"
+    ],
+    "max_sorties": 23,
+    "pool_size": 21,
+    "physical_evaluations": 69,
+    "energy": 38,
+    "workload_pruned": 10,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.005871300003491342
+  },
+  {
+    "index": 124,
+    "kind": "2-route",
+    "removed": [
+      "V4-14",
+      "V4-19"
+    ],
+    "max_sorties": 23,
+    "pool_size": 11,
+    "physical_evaluations": 23,
+    "energy": 7,
+    "workload_pruned": 5,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.012726099987048656
+  },
+  {
+    "index": 125,
+    "kind": "2-route",
+    "removed": [
+      "V4-14",
+      "V4-20"
+    ],
+    "max_sorties": 23,
+    "pool_size": 11,
+    "physical_evaluations": 21,
+    "workload_pruned": 4,
+    "energy": 6,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.009849500027485192
+  },
+  {
+    "index": 126,
+    "kind": "2-route",
+    "removed": [
+      "V4-14",
+      "V4-21"
+    ],
+    "max_sorties": 23,
+    "pool_size": 34,
+    "physical_evaluations": 69,
+    "workload_pruned": 13,
+    "energy": 22,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.009498300030827522
+  },
+  {
+    "index": 127,
+    "kind": "2-route",
+    "removed": [
+      "V4-14",
+      "V4-22"
+    ],
+    "max_sorties": 23,
+    "pool_size": 11,
+    "physical_evaluations": 21,
+    "workload_pruned": 3,
+    "energy": 7,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.008337799983564764
+  },
+  {
+    "index": 128,
+    "kind": "2-route",
+    "removed": [
+      "V4-14",
+      "V4-23"
+    ],
+    "max_sorties": 23,
+    "pool_size": 20,
+    "physical_evaluations": 21,
+    "energy": 1,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.053838000050745904
+  },
+  {
+    "index": 129,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-01",
+      "V4-08"
+    ],
+    "max_sorties": 23,
+    "pool_size": 41,
+    "physical_evaluations": 117,
+    "workload_pruned": 28,
+    "energy": 48,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.01025549997575581
+  },
+  {
+    "index": 130,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-01",
+      "V4-15"
+    ],
+    "max_sorties": 23,
+    "pool_size": 39,
+    "physical_evaluations": 117,
+    "energy": 77,
+    "workload_pruned": 1,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.15869050001492724
+  },
+  {
+    "index": 131,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-01",
+      "V4-16"
+    ],
+    "max_sorties": 23,
+    "pool_size": 72,
+    "physical_evaluations": 371,
+    "workload_pruned": 43,
+    "energy": 256,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.022277100011706352
+  },
+  {
+    "index": 132,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-01",
+      "V4-17"
+    ],
+    "max_sorties": 23,
+    "pool_size": 47,
+    "physical_evaluations": 117,
+    "workload_pruned": 10,
+    "energy": 60,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.058718200016301125
+  },
+  {
+    "index": 133,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-01",
+      "V4-18"
+    ],
+    "max_sorties": 23,
+    "pool_size": 48,
+    "physical_evaluations": 310,
+    "energy": 239,
+    "workload_pruned": 23,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.12674750003498048
+  },
+  {
+    "index": 134,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-01",
+      "V4-19"
+    ],
+    "max_sorties": 23,
+    "pool_size": 43,
+    "physical_evaluations": 161,
+    "energy": 113,
+    "workload_pruned": 5,
+    "deadline_necessary": 2,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.0327075999812223
+  },
+  {
+    "index": 135,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-01",
+      "V4-20"
+    ],
+    "max_sorties": 23,
+    "pool_size": 25,
+    "physical_evaluations": 117,
+    "energy": 92,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.008062699984293431
+  },
+  {
+    "index": 136,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-01",
+      "V4-21"
+    ],
+    "max_sorties": 23,
+    "pool_size": 53,
+    "physical_evaluations": 351,
+    "workload_pruned": 21,
+    "energy": 277,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.04722130001755431
+  },
+  {
+    "index": 137,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-01",
+      "V4-22"
+    ],
+    "max_sorties": 23,
+    "pool_size": 31,
+    "physical_evaluations": 117,
+    "workload_pruned": 19,
+    "energy": 67,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.012659900006838143
+  },
+  {
+    "index": 138,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-01",
+      "V4-23"
+    ],
+    "max_sorties": 23,
+    "pool_size": 49,
+    "physical_evaluations": 117,
+    "workload_pruned": 19,
+    "energy": 49,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.1951023999718018
+  },
+  {
+    "index": 139,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-08",
+      "V4-15"
+    ],
+    "max_sorties": 23,
+    "pool_size": 49,
+    "physical_evaluations": 117,
+    "workload_pruned": 21,
+    "energy": 47,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.22802939999382943
+  },
+  {
+    "index": 140,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-08",
+      "V4-16"
+    ],
+    "max_sorties": 23,
+    "pool_size": 128,
+    "physical_evaluations": 371,
+    "workload_pruned": 107,
+    "energy": 136,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.2658389999996871
+  },
+  {
+    "index": 141,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-08",
+      "V4-17"
+    ],
+    "max_sorties": 23,
+    "pool_size": 71,
+    "physical_evaluations": 117,
+    "workload_pruned": 41,
+    "energy": 5,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.12205599999288097
+  },
+  {
+    "index": 142,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-08",
+      "V4-18"
+    ],
+    "max_sorties": 23,
+    "pool_size": 50,
+    "physical_evaluations": 351,
+    "workload_pruned": 43,
+    "energy": 258,
+    "deadline_necessary": 2,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.06648329994641244
+  },
+  {
+    "index": 143,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-08",
+      "V4-19"
+    ],
+    "max_sorties": 23,
+    "pool_size": 53,
+    "physical_evaluations": 161,
+    "workload_pruned": 25,
+    "energy": 83,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.04594729997916147
+  },
+  {
+    "index": 144,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-08",
+      "V4-20"
+    ],
+    "max_sorties": 23,
+    "pool_size": 41,
+    "physical_evaluations": 117,
+    "workload_pruned": 27,
+    "energy": 49,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.10174399998504668
+  },
+  {
+    "index": 145,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-08",
+      "V4-21"
+    ],
+    "max_sorties": 23,
+    "pool_size": 83,
+    "physical_evaluations": 351,
+    "workload_pruned": 82,
+    "energy": 186,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.15157500002533197
+  },
+  {
+    "index": 146,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-08",
+      "V4-22"
+    ],
+    "max_sorties": 23,
+    "pool_size": 54,
+    "physical_evaluations": 117,
+    "workload_pruned": 39,
+    "energy": 24,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.06331529997987673
+  },
+  {
+    "index": 147,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-08",
+      "V4-23"
+    ],
+    "max_sorties": 23,
+    "pool_size": 59,
+    "physical_evaluations": 117,
+    "workload_pruned": 48,
+    "energy": 10,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.10311869997531176
+  },
+  {
+    "index": 148,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-15",
+      "V4-16"
+    ],
+    "max_sorties": 23,
+    "pool_size": 77,
+    "physical_evaluations": 371,
+    "energy": 245,
+    "workload_pruned": 49,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.03865960001712665
+  },
+  {
+    "index": 149,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-15",
+      "V4-17"
+    ],
+    "max_sorties": 23,
+    "pool_size": 51,
+    "physical_evaluations": 117,
+    "workload_pruned": 15,
+    "energy": 51,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.04950830002781004
+  },
+  {
+    "index": 150,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-06",
+      "V4-20"
+    ],
+    "max_sorties": 23,
+    "pool_size": 239,
+    "physical_evaluations": 3807,
+    "workload_pruned": 1367,
+    "energy": 2201,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.3021176000474952
+  },
+  {
+    "index": 151,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-09",
+      "V4-20"
+    ],
+    "max_sorties": 23,
+    "pool_size": 185,
+    "physical_evaluations": 2018,
+    "workload_pruned": 1464,
+    "energy": 369,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.10733580001397058
+  },
+  {
+    "index": 152,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-06",
+      "V4-22"
+    ],
+    "max_sorties": 23,
+    "pool_size": 404,
+    "physical_evaluations": 7797,
+    "workload_pruned": 1739,
+    "energy": 5654,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.6171997000346892
+  },
+  {
+    "index": 153,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-09",
+      "V4-22"
+    ],
+    "max_sorties": 23,
+    "pool_size": 204,
+    "physical_evaluations": 4132,
+    "workload_pruned": 1449,
+    "energy": 2479,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.15394479996757582
+  },
+  {
+    "index": 154,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-09",
+      "V4-13"
+    ],
+    "max_sorties": 23,
+    "pool_size": 214,
+    "physical_evaluations": 8915,
+    "workload_pruned": 1612,
+    "energy": 7089,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.2946218000142835
+  },
+  {
+    "index": 155,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-09",
+      "V4-14"
+    ],
+    "max_sorties": 23,
+    "pool_size": 154,
+    "physical_evaluations": 4167,
+    "workload_pruned": 895,
+    "energy": 3118,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.1874932000064291
+  },
+  {
+    "index": 156,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-09",
+      "V4-20"
+    ],
+    "max_sorties": 23,
+    "pool_size": 132,
+    "physical_evaluations": 4132,
+    "workload_pruned": 895,
+    "energy": 3105,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.11339750001206994
+  },
+  {
+    "index": 157,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-09",
+      "V4-01"
+    ],
+    "max_sorties": 23,
+    "pool_size": 135,
+    "physical_evaluations": 4132,
+    "workload_pruned": 845,
+    "energy": 3152,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.12270519998855889
+  },
+  {
+    "index": 158,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-06",
+      "V4-13"
+    ],
+    "max_sorties": 23,
+    "pool_size": 229,
+    "physical_evaluations": 16816,
+    "workload_pruned": 493,
+    "energy": 16094,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.4807538000168279
+  },
+  {
+    "index": 159,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-06",
+      "V4-14"
+    ],
+    "max_sorties": 23,
+    "pool_size": 210,
+    "physical_evaluations": 7884,
+    "workload_pruned": 467,
+    "energy": 7207,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.2593168999883346
+  },
+  {
+    "index": 160,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-06",
+      "V4-13"
+    ],
+    "max_sorties": 23,
+    "pool_size": 228,
+    "physical_evaluations": 7549,
+    "workload_pruned": 32,
+    "energy": 7289,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.38141600001836196
+  },
+  {
+    "index": 161,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-06",
+      "V4-20"
+    ],
+    "max_sorties": 23,
+    "pool_size": 217,
+    "physical_evaluations": 7797,
+    "workload_pruned": 455,
+    "energy": 7125,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.45402339997235686
+  },
+  {
+    "index": 162,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-02",
+      "V4-08"
+    ],
+    "max_sorties": 23,
+    "pool_size": 189,
+    "physical_evaluations": 904,
+    "workload_pruned": 529,
+    "energy": 186,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.4430568999960087
+  },
+  {
+    "index": 163,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-02",
+      "V4-20"
+    ],
+    "max_sorties": 23,
+    "pool_size": 107,
+    "physical_evaluations": 996,
+    "workload_pruned": 701,
+    "energy": 188,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.09124790003988892
+  },
+  {
+    "index": 164,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-02",
+      "V4-22"
+    ],
+    "max_sorties": 23,
+    "pool_size": 115,
+    "physical_evaluations": 2006,
+    "workload_pruned": 985,
+    "energy": 906,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.11140360002173111
+  },
+  {
+    "index": 165,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-03",
+      "V4-08"
+    ],
+    "max_sorties": 23,
+    "pool_size": 1205,
+    "physical_evaluations": 6632,
+    "workload_pruned": 3865,
+    "energy": 1562,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 6.527597500011325
+  },
+  {
+    "index": 166,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-03",
+      "V4-20"
+    ],
+    "max_sorties": 23,
+    "pool_size": 461,
+    "physical_evaluations": 7414,
+    "workload_pruned": 5239,
+    "energy": 1714,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.3392823999747634
+  },
+  {
+    "index": 167,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-03",
+      "V4-22"
+    ],
+    "max_sorties": 23,
+    "pool_size": 507,
+    "physical_evaluations": 15188,
+    "workload_pruned": 7275,
+    "energy": 7406,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.6680419000331312
+  },
+  {
+    "index": 168,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-06",
+      "V4-08"
+    ],
+    "max_sorties": 23,
+    "pool_size": 404,
+    "physical_evaluations": 7797,
+    "workload_pruned": 2120,
+    "energy": 5273,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.32233480003196746
+  },
+  {
+    "index": 169,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-09",
+      "V4-08"
+    ],
+    "max_sorties": 23,
+    "pool_size": 204,
+    "physical_evaluations": 4132,
+    "workload_pruned": 2122,
+    "energy": 1806,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.2504171999753453
+  },
+  {
+    "index": 170,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-06",
+      "V4-22"
+    ],
+    "max_sorties": 23,
+    "pool_size": 387,
+    "physical_evaluations": 7797,
+    "energy": 6814,
+    "workload_pruned": 596,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.3539157000486739
+  },
+  {
+    "index": 171,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-09",
+      "V4-22"
+    ],
+    "max_sorties": 23,
+    "pool_size": 171,
+    "physical_evaluations": 4132,
+    "workload_pruned": 777,
+    "energy": 3184,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.18414150003809482
+  },
+  {
+    "index": 172,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-02",
+      "V4-08"
+    ],
+    "max_sorties": 23,
+    "pool_size": 200,
+    "physical_evaluations": 1878,
+    "workload_pruned": 1520,
+    "energy": 158,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.2821688000112772
+  },
+  {
+    "index": 173,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-02",
+      "V4-12"
+    ],
+    "max_sorties": 23,
+    "pool_size": 240,
+    "physical_evaluations": 9191,
+    "workload_pruned": 5640,
+    "energy": 3311,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.28614209999796003
+  },
+  {
+    "index": 174,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-02",
+      "V4-17"
+    ],
+    "max_sorties": 23,
+    "pool_size": 138,
+    "physical_evaluations": 4256,
+    "workload_pruned": 2435,
+    "energy": 1683,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.16819709999253973
+  },
+  {
+    "index": 175,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-03",
+      "V4-08"
+    ],
+    "max_sorties": 23,
+    "pool_size": 1253,
+    "physical_evaluations": 13878,
+    "workload_pruned": 11067,
+    "energy": 1558,
+    "outcome": "solver_limit_no_candidate",
+    "elapsed_s": 8.393412200035527
+  },
+  {
+    "index": 176,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-03",
+      "V4-12"
+    ],
+    "max_sorties": 23,
+    "pool_size": 994,
+    "physical_evaluations": 70219,
+    "workload_pruned": 41873,
+    "energy": 27352,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 2.1380804000073113
+  },
+  {
+    "index": 177,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-03",
+      "V4-17"
+    ],
+    "max_sorties": 23,
+    "pool_size": 575,
+    "physical_evaluations": 32502,
+    "workload_pruned": 17755,
+    "energy": 14172,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 1.018428599985782
+  },
+  {
+    "index": 178,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-02",
+      "V4-05"
+    ],
+    "max_sorties": 23,
+    "pool_size": 117,
+    "physical_evaluations": 4339,
+    "workload_pruned": 576,
+    "energy": 3646,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.15729990002000704
+  },
+  {
+    "index": 179,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-03",
+      "V4-05"
+    ],
+    "max_sorties": 23,
+    "pool_size": 560,
+    "physical_evaluations": 32945,
+    "workload_pruned": 4339,
+    "energy": 28046,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 1.0607270000036806
+  },
+  {
+    "index": 180,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-06",
+      "V4-05"
+    ],
+    "max_sorties": 23,
+    "pool_size": 272,
+    "physical_evaluations": 16816,
+    "workload_pruned": 1195,
+    "energy": 15349,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.5277691000374034
+  },
+  {
+    "index": 181,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-09",
+      "V4-23"
+    ],
+    "max_sorties": 23,
+    "pool_size": 180,
+    "physical_evaluations": 4132,
+    "workload_pruned": 1945,
+    "energy": 2007,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.2231424999772571
+  },
+  {
+    "index": 182,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-02",
+      "V4-21"
+    ],
+    "max_sorties": 23,
+    "pool_size": 172,
+    "physical_evaluations": 3824,
+    "workload_pruned": 1987,
+    "energy": 1665,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.1869674000190571
+  },
+  {
+    "index": 183,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-02",
+      "V4-23"
+    ],
+    "max_sorties": 23,
+    "pool_size": 118,
+    "physical_evaluations": 2006,
+    "workload_pruned": 971,
+    "energy": 917,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.10103259998140857
+  },
+  {
+    "index": 184,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-03",
+      "V4-21"
+    ],
+    "max_sorties": 23,
+    "pool_size": 710,
+    "physical_evaluations": 29548,
+    "workload_pruned": 14566,
+    "energy": 14272,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.9633485999656841
+  },
+  {
+    "index": 185,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-03",
+      "V4-23"
+    ],
+    "max_sorties": 23,
+    "pool_size": 539,
+    "physical_evaluations": 15188,
+    "workload_pruned": 6988,
+    "energy": 7661,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.494439699978102
+  },
+  {
+    "index": 186,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-09",
+      "V4-21"
+    ],
+    "max_sorties": 23,
+    "pool_size": 315,
+    "physical_evaluations": 7916,
+    "workload_pruned": 4393,
+    "energy": 3208,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.33310679998248816
+  },
+  {
+    "index": 187,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-09",
+      "V4-23"
+    ],
+    "max_sorties": 23,
+    "pool_size": 204,
+    "physical_evaluations": 4132,
+    "workload_pruned": 2171,
+    "energy": 1757,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.20895299996482208
+  },
+  {
+    "index": 188,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-09",
+      "V4-21"
+    ],
+    "max_sorties": 23,
+    "pool_size": 256,
+    "physical_evaluations": 6993,
+    "workload_pruned": 2471,
+    "energy": 4266,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.20967389998259023
+  },
+  {
+    "index": 189,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-02",
+      "V4-05"
+    ],
+    "max_sorties": 23,
+    "pool_size": 173,
+    "physical_evaluations": 9191,
+    "workload_pruned": 1162,
+    "energy": 7856,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.31263050000416115
+  },
+  {
+    "index": 190,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-03",
+      "V4-05"
+    ],
+    "max_sorties": 23,
+    "pool_size": 758,
+    "physical_evaluations": 70219,
+    "workload_pruned": 8057,
+    "energy": 61404,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 2.170585799962282
+  },
+  {
+    "index": 191,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-09",
+      "V4-05"
+    ],
+    "max_sorties": 23,
+    "pool_size": 178,
+    "physical_evaluations": 8915,
+    "workload_pruned": 767,
+    "energy": 7970,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.3154352999990806
+  },
+  {
+    "index": 192,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-02",
+      "V4-01"
+    ],
+    "max_sorties": 23,
+    "pool_size": 106,
+    "physical_evaluations": 2006,
+    "workload_pruned": 340,
+    "energy": 1560,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.09491050004726276
+  },
+  {
+    "index": 193,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-03",
+      "V4-01"
+    ],
+    "max_sorties": 23,
+    "pool_size": 459,
+    "physical_evaluations": 15188,
+    "workload_pruned": 2659,
+    "energy": 12070,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.5515950000262819
+  },
+  {
+    "index": 194,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-09",
+      "V4-01"
+    ],
+    "max_sorties": 23,
+    "pool_size": 159,
+    "physical_evaluations": 4132,
+    "workload_pruned": 738,
+    "energy": 3235,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.18361209996510297
+  },
+  {
+    "index": 195,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-06",
+      "V4-21"
+    ],
+    "max_sorties": 23,
+    "pool_size": 366,
+    "physical_evaluations": 15041,
+    "workload_pruned": 3213,
+    "energy": 11462,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 1.473400800023228
+  },
+  {
+    "index": 196,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-06",
+      "V4-23"
+    ],
+    "max_sorties": 23,
+    "pool_size": 274,
+    "physical_evaluations": 7797,
+    "workload_pruned": 1661,
+    "energy": 5862,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.3259739999775775
+  },
+  {
+    "index": 197,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-06",
+      "V4-21"
+    ],
+    "max_sorties": 23,
+    "pool_size": 335,
+    "physical_evaluations": 13254,
+    "workload_pruned": 1315,
+    "energy": 11604,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.4676208000164479
+  },
+  {
+    "index": 198,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-06",
+      "V4-23"
+    ],
+    "max_sorties": 23,
+    "pool_size": 266,
+    "physical_evaluations": 7797,
+    "energy": 6870,
+    "workload_pruned": 661,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.34822019998682663
+  },
+  {
+    "index": 199,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-09",
+      "V4-15"
+    ],
+    "max_sorties": 23,
+    "pool_size": 135,
+    "physical_evaluations": 4132,
+    "workload_pruned": 791,
+    "energy": 3206,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.11055379995377734
+  },
+  {
+    "index": 200,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-09",
+      "V4-19"
+    ],
+    "max_sorties": 23,
+    "pool_size": 149,
+    "physical_evaluations": 4286,
+    "workload_pruned": 840,
+    "energy": 3297,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.1256959000020288
+  },
+  {
+    "index": 201,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-02",
+      "V4-13"
+    ],
+    "max_sorties": 23,
+    "pool_size": 115,
+    "physical_evaluations": 4339,
+    "workload_pruned": 713,
+    "energy": 3511,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.15832590003265068
+  },
+  {
+    "index": 202,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-02",
+      "V4-14"
+    ],
+    "max_sorties": 23,
+    "pool_size": 95,
+    "physical_evaluations": 1995,
+    "workload_pruned": 391,
+    "energy": 1509,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.21513710002182052
+  },
+  {
+    "index": 203,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-03",
+      "V4-13"
+    ],
+    "max_sorties": 23,
+    "pool_size": 556,
+    "physical_evaluations": 32945,
+    "workload_pruned": 4862,
+    "energy": 27527,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 1.0855239999946207
+  },
+  {
+    "index": 204,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-03",
+      "V4-14"
+    ],
+    "max_sorties": 23,
+    "pool_size": 435,
+    "physical_evaluations": 15405,
+    "workload_pruned": 2819,
+    "energy": 12151,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.634828100039158
+  },
+  {
+    "index": 205,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-02",
+      "V4-01"
+    ],
+    "max_sorties": 23,
+    "pool_size": 70,
+    "physical_evaluations": 2006,
+    "workload_pruned": 377,
+    "energy": 1559,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.05795889999717474
+  },
+  {
+    "index": 206,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-02",
+      "V4-08"
+    ],
+    "max_sorties": 23,
+    "pool_size": 166,
+    "physical_evaluations": 904,
+    "workload_pruned": 452,
+    "energy": 286,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 1.123725600016769
+  },
+  {
+    "index": 207,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-02",
+      "V4-13"
+    ],
+    "max_sorties": 23,
+    "pool_size": 114,
+    "physical_evaluations": 1968,
+    "workload_pruned": 1102,
+    "energy": 752,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.2079039000091143
+  },
+  {
+    "index": 208,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-02",
+      "V4-15"
+    ],
+    "max_sorties": 23,
+    "pool_size": 90,
+    "physical_evaluations": 2006,
+    "workload_pruned": 355,
+    "energy": 1561,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.10029970004688948
+  },
+  {
+    "index": 209,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-02",
+      "V4-19"
+    ],
+    "max_sorties": 23,
+    "pool_size": 92,
+    "physical_evaluations": 2078,
+    "workload_pruned": 365,
+    "energy": 1621,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.11191899998812005
+  },
+  {
+    "index": 210,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-02",
+      "V4-20"
+    ],
+    "max_sorties": 23,
+    "pool_size": 70,
+    "physical_evaluations": 2006,
+    "workload_pruned": 407,
+    "energy": 1529,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.05429800000274554
+  },
+  {
+    "index": 211,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-02",
+      "V4-21"
+    ],
+    "max_sorties": 23,
+    "pool_size": 133,
+    "physical_evaluations": 3437,
+    "workload_pruned": 1098,
+    "energy": 2206,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.09499979997053742
+  },
+  {
+    "index": 212,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-02",
+      "V4-22"
+    ],
+    "max_sorties": 23,
+    "pool_size": 90,
+    "physical_evaluations": 2006,
+    "workload_pruned": 421,
+    "energy": 1495,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.09453459997894242
+  },
+  {
+    "index": 213,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-02",
+      "V4-23"
+    ],
+    "max_sorties": 23,
+    "pool_size": 102,
+    "physical_evaluations": 2006,
+    "workload_pruned": 689,
+    "energy": 1215,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.11703980003949255
+  },
+  {
+    "index": 214,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-03",
+      "V4-01"
+    ],
+    "max_sorties": 23,
+    "pool_size": 398,
+    "physical_evaluations": 15188,
+    "workload_pruned": 2585,
+    "energy": 12205,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.48823700001230463
+  },
+  {
+    "index": 215,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-03",
+      "V4-08"
+    ],
+    "max_sorties": 23,
+    "pool_size": 1169,
+    "physical_evaluations": 6632,
+    "workload_pruned": 3085,
+    "energy": 2378,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 5.977293499978259
+  },
+  {
+    "index": 216,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-03",
+      "V4-13"
+    ],
+    "max_sorties": 23,
+    "pool_size": 556,
+    "physical_evaluations": 14766,
+    "workload_pruned": 7804,
+    "energy": 6406,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.5276951999985613
+  },
+  {
+    "index": 217,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-03",
+      "V4-15"
+    ],
+    "max_sorties": 23,
+    "pool_size": 468,
+    "physical_evaluations": 15188,
+    "workload_pruned": 2564,
+    "energy": 12156,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.6269533000304364
+  },
+  {
+    "index": 218,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-03",
+      "V4-19"
+    ],
+    "max_sorties": 23,
+    "pool_size": 534,
+    "physical_evaluations": 16004,
+    "workload_pruned": 2619,
+    "energy": 12851,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.8583368000108749
+  },
+  {
+    "index": 219,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-03",
+      "V4-20"
+    ],
+    "max_sorties": 23,
+    "pool_size": 398,
+    "physical_evaluations": 15188,
+    "workload_pruned": 2753,
+    "energy": 12037,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.4590079000336118
+  },
+  {
+    "index": 220,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-03",
+      "V4-21"
+    ],
+    "max_sorties": 23,
+    "pool_size": 631,
+    "physical_evaluations": 26025,
+    "workload_pruned": 7628,
+    "energy": 17766,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.7576751000015065
+  },
+  {
+    "index": 221,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-03",
+      "V4-22"
+    ],
+    "max_sorties": 23,
+    "pool_size": 469,
+    "physical_evaluations": 15188,
+    "workload_pruned": 3023,
+    "energy": 11696,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.5692433000076562
+  },
+  {
+    "index": 222,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-03",
+      "V4-23"
+    ],
+    "max_sorties": 23,
+    "pool_size": 510,
+    "physical_evaluations": 15188,
+    "workload_pruned": 4836,
+    "energy": 9842,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.6132106999866664
+  },
+  {
+    "index": 223,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-06",
+      "V4-08"
+    ],
+    "max_sorties": 23,
+    "pool_size": 389,
+    "physical_evaluations": 7797,
+    "workload_pruned": 615,
+    "energy": 6793,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.7671626000083052
+  },
+  {
+    "index": 224,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-09",
+      "V4-08"
+    ],
+    "max_sorties": 23,
+    "pool_size": 173,
+    "physical_evaluations": 4132,
+    "workload_pruned": 1624,
+    "energy": 2335,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.22240269999019802
+  },
+  {
+    "index": 225,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-02",
+      "V4-16"
+    ],
+    "max_sorties": 23,
+    "pool_size": 194,
+    "physical_evaluations": 2886,
+    "workload_pruned": 1271,
+    "energy": 1421,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.14207079994957894
+  },
+  {
+    "index": 226,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-02",
+      "V4-17"
+    ],
+    "max_sorties": 23,
+    "pool_size": 106,
+    "physical_evaluations": 2006,
+    "workload_pruned": 396,
+    "energy": 1504,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.1152136999880895
+  },
+  {
+    "index": 227,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-03",
+      "V4-16"
+    ],
+    "max_sorties": 23,
+    "pool_size": 783,
+    "physical_evaluations": 21758,
+    "workload_pruned": 9255,
+    "energy": 11720,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.8494571000337601
+  },
+  {
+    "index": 228,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-03",
+      "V4-17"
+    ],
+    "max_sorties": 23,
+    "pool_size": 498,
+    "physical_evaluations": 15188,
+    "workload_pruned": 2935,
+    "energy": 11755,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.6052599999820814
+  },
+  {
+    "index": 229,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-06",
+      "V4-16"
+    ],
+    "max_sorties": 23,
+    "pool_size": 588,
+    "physical_evaluations": 13179,
+    "energy": 9686,
+    "workload_pruned": 2905,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.47816430003149435
+  },
+  {
+    "index": 230,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-06",
+      "V4-17"
+    ],
+    "max_sorties": 23,
+    "pool_size": 250,
+    "physical_evaluations": 7797,
+    "workload_pruned": 1021,
+    "energy": 6526,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.2816370999789797
+  },
+  {
+    "index": 231,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-09",
+      "V4-16"
+    ],
+    "max_sorties": 23,
+    "pool_size": 308,
+    "physical_evaluations": 5844,
+    "workload_pruned": 1941,
+    "energy": 3595,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.2600706999655813
+  },
+  {
+    "index": 232,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-09",
+      "V4-17"
+    ],
+    "max_sorties": 23,
+    "pool_size": 195,
+    "physical_evaluations": 4132,
+    "workload_pruned": 770,
+    "energy": 3167,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.20611169998301193
+  },
+  {
+    "index": 233,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-07",
+      "V4-01"
+    ],
+    "max_sorties": 23,
+    "pool_size": 572,
+    "physical_evaluations": 6461,
+    "workload_pruned": 569,
+    "energy": 5320,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.5186561999726109
+  },
+  {
+    "index": 234,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-07",
+      "V4-13"
+    ],
+    "max_sorties": 23,
+    "pool_size": 277,
+    "physical_evaluations": 13895,
+    "workload_pruned": 63,
+    "energy": 13555,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.9756476999609731
+  },
+  {
+    "index": 235,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-07",
+      "V4-15"
+    ],
+    "max_sorties": 23,
+    "pool_size": 947,
+    "physical_evaluations": 8420,
+    "workload_pruned": 69,
+    "energy": 7404,
+    "deadline_necessary": 204,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 4.525143300008494
+  },
+  {
+    "index": 236,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-07",
+      "V4-18"
+    ],
+    "max_sorties": 23,
+    "pool_size": 1174,
+    "physical_evaluations": 12753,
+    "energy": 10593,
+    "workload_pruned": 986,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 2.627132599998731
+  },
+  {
+    "index": 237,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-07",
+      "V4-19"
+    ],
+    "max_sorties": 23,
+    "pool_size": 973,
+    "physical_evaluations": 8675,
+    "workload_pruned": 95,
+    "energy": 7607,
+    "deadline_necessary": 342,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 1.194928599987179
+  },
+  {
+    "index": 238,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-07",
+      "V4-23"
+    ],
+    "max_sorties": 23,
+    "pool_size": 619,
+    "physical_evaluations": 6461,
+    "workload_pruned": 662,
+    "energy": 5180,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 1.613776400045026
+  },
+  {
+    "index": 239,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-02",
+      "V4-22"
+    ],
+    "max_sorties": 23,
+    "pool_size": 121,
+    "physical_evaluations": 4256,
+    "workload_pruned": 1128,
+    "energy": 3007,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.17195430002175272
+  },
+  {
+    "index": 240,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-03",
+      "V4-22"
+    ],
+    "max_sorties": 23,
+    "pool_size": 548,
+    "physical_evaluations": 32502,
+    "workload_pruned": 7998,
+    "energy": 23956,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 1.0658725999528542
+  },
+  {
+    "index": 241,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-09",
+      "V4-18"
+    ],
+    "max_sorties": 23,
+    "pool_size": 151,
+    "physical_evaluations": 6993,
+    "workload_pruned": 784,
+    "energy": 6058,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.26882860000478104
+  },
+  {
+    "index": 242,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-02",
+      "V4-15"
+    ],
+    "max_sorties": 23,
+    "pool_size": 106,
+    "physical_evaluations": 2006,
+    "workload_pruned": 351,
+    "energy": 1549,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.09675550000974908
+  },
+  {
+    "index": 243,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-02",
+      "V4-19"
+    ],
+    "max_sorties": 23,
+    "pool_size": 108,
+    "physical_evaluations": 2078,
+    "workload_pruned": 358,
+    "energy": 1612,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.08528090000618249
+  },
+  {
+    "index": 244,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-03",
+      "V4-15"
+    ],
+    "max_sorties": 23,
+    "pool_size": 497,
+    "physical_evaluations": 15188,
+    "workload_pruned": 2743,
+    "energy": 11948,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.5847414000309072
+  },
+  {
+    "index": 245,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-03",
+      "V4-19"
+    ],
+    "max_sorties": 23,
+    "pool_size": 563,
+    "physical_evaluations": 16004,
+    "workload_pruned": 2776,
+    "energy": 12665,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.7373806000105105
+  },
+  {
+    "index": 246,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-09",
+      "V4-15"
+    ],
+    "max_sorties": 23,
+    "pool_size": 159,
+    "physical_evaluations": 4132,
+    "workload_pruned": 754,
+    "energy": 3219,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.1807363000116311
+  },
+  {
+    "index": 247,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-09",
+      "V4-19"
+    ],
+    "max_sorties": 23,
+    "pool_size": 173,
+    "physical_evaluations": 4286,
+    "workload_pruned": 784,
+    "energy": 3329,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.2180000999942422
+  },
+  {
+    "index": 248,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-02",
+      "V4-23"
+    ],
+    "max_sorties": 23,
+    "pool_size": 129,
+    "physical_evaluations": 4256,
+    "workload_pruned": 1856,
+    "energy": 2271,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.1439445999567397
+  },
+  {
+    "index": 249,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-03",
+      "V4-23"
+    ],
+    "max_sorties": 23,
+    "pool_size": 579,
+    "physical_evaluations": 32502,
+    "workload_pruned": 13215,
+    "energy": 18708,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 1.0866375000332482
+  },
+  {
+    "index": 250,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-06",
+      "V4-01"
+    ],
+    "max_sorties": 23,
+    "pool_size": 207,
+    "physical_evaluations": 7797,
+    "workload_pruned": 449,
+    "energy": 7141,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.3024808000191115
+  },
+  {
+    "index": 251,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-06",
+      "V4-01"
+    ],
+    "max_sorties": 23,
+    "pool_size": 199,
+    "physical_evaluations": 7797,
+    "energy": 7576,
+    "workload_pruned": 22,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.28061600000364706
+  },
+  {
+    "index": 252,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-02",
+      "V4-12"
+    ],
+    "max_sorties": 23,
+    "pool_size": 121,
+    "physical_evaluations": 4339,
+    "workload_pruned": 622,
+    "energy": 3596,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.16102860000682995
+  },
+  {
+    "index": 253,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-03",
+      "V4-12"
+    ],
+    "max_sorties": 23,
+    "pool_size": 570,
+    "physical_evaluations": 32945,
+    "workload_pruned": 4829,
+    "energy": 27546,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 1.0786058999947272
+  },
+  {
+    "index": 254,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-06",
+      "V4-12"
+    ],
+    "max_sorties": 23,
+    "pool_size": 277,
+    "physical_evaluations": 16816,
+    "workload_pruned": 1099,
+    "energy": 15440,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.4767895999830216
+  },
+  {
+    "index": 255,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-09",
+      "V4-12"
+    ],
+    "max_sorties": 23,
+    "pool_size": 219,
+    "physical_evaluations": 8915,
+    "workload_pruned": 1141,
+    "energy": 7555,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.3066020999685861
+  },
+  {
+    "index": 256,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-02",
+      "V4-16"
+    ],
+    "max_sorties": 23,
+    "pool_size": 238,
+    "physical_evaluations": 5638,
+    "workload_pruned": 2236,
+    "energy": 3164,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.2045728000230156
+  },
+  {
+    "index": 257,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-03",
+      "V4-16"
+    ],
+    "max_sorties": 23,
+    "pool_size": 881,
+    "physical_evaluations": 41326,
+    "workload_pruned": 16148,
+    "energy": 24297,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 1.386201000015717
+  },
+  {
+    "index": 258,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-06",
+      "V4-05"
+    ],
+    "max_sorties": 23,
+    "pool_size": 276,
+    "physical_evaluations": 36122,
+    "workload_pruned": 851,
+    "energy": 34995,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 1.0294143999926746
+  },
+  {
+    "index": 259,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-06",
+      "V4-08"
+    ],
+    "max_sorties": 23,
+    "pool_size": 409,
+    "physical_evaluations": 16707,
+    "workload_pruned": 650,
+    "energy": 15648,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 1.3122686000424437
+  },
+  {
+    "index": 260,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-06",
+      "V4-12"
+    ],
+    "max_sorties": 23,
+    "pool_size": 300,
+    "physical_evaluations": 36122,
+    "workload_pruned": 796,
+    "energy": 35026,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 1.1057064000051469
+  },
+  {
+    "index": 261,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-06",
+      "V4-16"
+    ],
+    "max_sorties": 23,
+    "pool_size": 590,
+    "physical_evaluations": 26491,
+    "energy": 24278,
+    "workload_pruned": 1623,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 1.853304099990055
+  },
+  {
+    "index": 262,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-06",
+      "V4-17"
+    ],
+    "max_sorties": 23,
+    "pool_size": 251,
+    "physical_evaluations": 16707,
+    "workload_pruned": 623,
+    "energy": 15833,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.5324156999704428
+  },
+  {
+    "index": 263,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-06",
+      "V4-22"
+    ],
+    "max_sorties": 23,
+    "pool_size": 404,
+    "physical_evaluations": 16707,
+    "workload_pruned": 634,
+    "energy": 15669,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 1.1619359000469558
+  },
+  {
+    "index": 264,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-06",
+      "V4-23"
+    ],
+    "max_sorties": 23,
+    "pool_size": 264,
+    "physical_evaluations": 16707,
+    "workload_pruned": 717,
+    "energy": 15726,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.5361179000465199
+  },
+  {
+    "index": 265,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-02",
+      "V4-18"
+    ],
+    "max_sorties": 23,
+    "pool_size": 88,
+    "physical_evaluations": 3437,
+    "workload_pruned": 491,
+    "energy": 2858,
+    "deadline_necessary": 26,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.09742419997928664
+  },
+  {
+    "index": 266,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-03",
+      "V4-18"
+    ],
+    "max_sorties": 23,
+    "pool_size": 453,
+    "physical_evaluations": 26025,
+    "workload_pruned": 3311,
+    "energy": 22261,
+    "deadline_necessary": 1007,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.8235265999683179
+  },
+  {
+    "index": 267,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-07",
+      "V4-08"
+    ],
+    "max_sorties": 23,
+    "pool_size": 298,
+    "physical_evaluations": 6461,
+    "energy": 5846,
+    "workload_pruned": 317,
+    "deadline_necessary": 73,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.2561530999955721
+  },
+  {
+    "index": 268,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-02",
+      "V4-05"
+    ],
+    "max_sorties": 23,
+    "pool_size": 115,
+    "physical_evaluations": 4339,
+    "workload_pruned": 552,
+    "energy": 3672,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.16856379999080673
+  },
+  {
+    "index": 269,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-03",
+      "V4-05"
+    ],
+    "max_sorties": 23,
+    "pool_size": 554,
+    "physical_evaluations": 32945,
+    "workload_pruned": 4121,
+    "energy": 28270,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 1.0282053999835625
+  },
+  {
+    "index": 270,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-06",
+      "V4-05"
+    ],
+    "max_sorties": 23,
+    "pool_size": 248,
+    "physical_evaluations": 16816,
+    "workload_pruned": 768,
+    "energy": 15800,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.5792708999942988
+  },
+  {
+    "index": 271,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-09",
+      "V4-05"
+    ],
+    "max_sorties": 23,
+    "pool_size": 173,
+    "physical_evaluations": 8915,
+    "workload_pruned": 741,
+    "energy": 8001,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.28820419998373836
+  },
+  {
+    "index": 272,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-09",
+      "V4-05"
+    ],
+    "max_sorties": 23,
+    "pool_size": 203,
+    "physical_evaluations": 19195,
+    "workload_pruned": 689,
+    "energy": 18303,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.5397258999873884
+  },
+  {
+    "index": 273,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-09",
+      "V4-08"
+    ],
+    "max_sorties": 23,
+    "pool_size": 183,
+    "physical_evaluations": 8852,
+    "workload_pruned": 733,
+    "energy": 7936,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.3007499999948777
+  },
+  {
+    "index": 274,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-09",
+      "V4-12"
+    ],
+    "max_sorties": 23,
+    "pool_size": 280,
+    "physical_evaluations": 19195,
+    "workload_pruned": 1305,
+    "energy": 17610,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.6045289000030607
+  },
+  {
+    "index": 275,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-09",
+      "V4-16"
+    ],
+    "max_sorties": 23,
+    "pool_size": 291,
+    "physical_evaluations": 11264,
+    "workload_pruned": 1289,
+    "energy": 9684,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.3925595000036992
+  },
+  {
+    "index": 276,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-09",
+      "V4-17"
+    ],
+    "max_sorties": 23,
+    "pool_size": 195,
+    "physical_evaluations": 8852,
+    "workload_pruned": 667,
+    "energy": 7990,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.3367504000198096
+  },
+  {
+    "index": 277,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-09",
+      "V4-22"
+    ],
+    "max_sorties": 23,
+    "pool_size": 178,
+    "physical_evaluations": 8852,
+    "workload_pruned": 649,
+    "energy": 8025,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.33025449997512624
+  },
+  {
+    "index": 278,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-09",
+      "V4-23"
+    ],
+    "max_sorties": 23,
+    "pool_size": 183,
+    "physical_evaluations": 8852,
+    "workload_pruned": 725,
+    "energy": 7944,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.3299591999966651
+  },
+  {
+    "index": 279,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-02",
+      "V4-16"
+    ],
+    "max_sorties": 23,
+    "pool_size": 160,
+    "physical_evaluations": 2886,
+    "workload_pruned": 823,
+    "energy": 1903,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.1230566999875009
+  },
+  {
+    "index": 280,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-02",
+      "V4-17"
+    ],
+    "max_sorties": 23,
+    "pool_size": 90,
+    "physical_evaluations": 2006,
+    "workload_pruned": 341,
+    "energy": 1575,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.09409529995173216
+  },
+  {
+    "index": 281,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-03",
+      "V4-16"
+    ],
+    "max_sorties": 23,
+    "pool_size": 714,
+    "physical_evaluations": 21758,
+    "workload_pruned": 6056,
+    "energy": 14988,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.8647303000325337
+  },
+  {
+    "index": 282,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-03",
+      "V4-17"
+    ],
+    "max_sorties": 23,
+    "pool_size": 469,
+    "physical_evaluations": 15188,
+    "workload_pruned": 2562,
+    "energy": 12157,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.5936119999969378
+  },
+  {
+    "index": 283,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-06",
+      "V4-16"
+    ],
+    "max_sorties": 23,
+    "pool_size": 566,
+    "physical_evaluations": 13179,
+    "energy": 11067,
+    "workload_pruned": 1546,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.5012375999940559
+  },
+  {
+    "index": 284,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-06",
+      "V4-17"
+    ],
+    "max_sorties": 23,
+    "pool_size": 242,
+    "physical_evaluations": 7797,
+    "energy": 7005,
+    "workload_pruned": 550,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.3106535999686457
+  },
+  {
+    "index": 285,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-09",
+      "V4-16"
+    ],
+    "max_sorties": 23,
+    "pool_size": 263,
+    "physical_evaluations": 5844,
+    "workload_pruned": 1335,
+    "energy": 4246,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.23614459997043014
+  },
+  {
+    "index": 286,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-09",
+      "V4-17"
+    ],
+    "max_sorties": 23,
+    "pool_size": 171,
+    "physical_evaluations": 4132,
+    "workload_pruned": 697,
+    "energy": 3264,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.21757939999224618
+  },
+  {
+    "index": 287,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-04",
+      "V4-01"
+    ],
+    "max_sorties": 23,
+    "pool_size": 150,
+    "physical_evaluations": 4132,
+    "workload_pruned": 470,
+    "energy": 3512,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.2063077000202611
+  },
+  {
+    "index": 288,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-04",
+      "V4-08"
+    ],
+    "max_sorties": 23,
+    "pool_size": 167,
+    "physical_evaluations": 4132,
+    "workload_pruned": 472,
+    "energy": 3493,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.2318008000147529
+  },
+  {
+    "index": 289,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-04",
+      "V4-13"
+    ],
+    "max_sorties": 23,
+    "pool_size": 159,
+    "physical_evaluations": 4004,
+    "workload_pruned": 307,
+    "energy": 3538,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.346064799989108
+  },
+  {
+    "index": 290,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-04",
+      "V4-15"
+    ],
+    "max_sorties": 23,
+    "pool_size": 162,
+    "physical_evaluations": 4132,
+    "workload_pruned": 466,
+    "energy": 3504,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.18763939995551482
+  },
+  {
+    "index": 291,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-04",
+      "V4-17"
+    ],
+    "max_sorties": 23,
+    "pool_size": 165,
+    "physical_evaluations": 4132,
+    "workload_pruned": 415,
+    "energy": 3552,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.1956423000083305
+  },
+  {
+    "index": 292,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-04",
+      "V4-18"
+    ],
+    "max_sorties": 23,
+    "pool_size": 206,
+    "physical_evaluations": 6993,
+    "workload_pruned": 1161,
+    "energy": 5626,
+    "deadline_necessary": 286,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.22494679997907951
+  },
+  {
+    "index": 293,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-04",
+      "V4-19"
+    ],
+    "max_sorties": 23,
+    "pool_size": 186,
+    "physical_evaluations": 4286,
+    "workload_pruned": 473,
+    "energy": 3627,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.2239019999979064
+  },
+  {
+    "index": 294,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-04",
+      "V4-22"
+    ],
+    "max_sorties": 23,
+    "pool_size": 153,
+    "physical_evaluations": 4132,
+    "workload_pruned": 418,
+    "energy": 3561,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.17516719998093322
+  },
+  {
+    "index": 295,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-04",
+      "V4-23"
+    ],
+    "max_sorties": 23,
+    "pool_size": 174,
+    "physical_evaluations": 4132,
+    "workload_pruned": 475,
+    "energy": 3483,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.16216910001821816
+  },
+  {
+    "index": 296,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-06",
+      "V4-15"
+    ],
+    "max_sorties": 23,
+    "pool_size": 207,
+    "physical_evaluations": 7797,
+    "workload_pruned": 452,
+    "energy": 7138,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.21496720000868663
+  },
+  {
+    "index": 297,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-06",
+      "V4-19"
+    ],
+    "max_sorties": 23,
+    "pool_size": 207,
+    "physical_evaluations": 8141,
+    "workload_pruned": 465,
+    "energy": 7469,
+    "deadline_necessary": 10,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.34867610002402216
+  },
+  {
+    "index": 298,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-06",
+      "V4-15"
+    ],
+    "max_sorties": 23,
+    "pool_size": 199,
+    "physical_evaluations": 7797,
+    "energy": 7575,
+    "workload_pruned": 23,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.3545340999844484
+  },
+  {
+    "index": 299,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-06",
+      "V4-19"
+    ],
+    "max_sorties": 23,
+    "pool_size": 199,
+    "physical_evaluations": 8141,
+    "energy": 7907,
+    "workload_pruned": 35,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.38545519998297095
+  },
+  {
+    "index": 300,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-02",
+      "V4-18"
+    ],
+    "max_sorties": 23,
+    "pool_size": 112,
+    "physical_evaluations": 3437,
+    "workload_pruned": 453,
+    "energy": 2872,
+    "deadline_necessary": 179,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.1638886999571696
+  },
+  {
+    "index": 301,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-03",
+      "V4-18"
+    ],
+    "max_sorties": 23,
+    "pool_size": 496,
+    "physical_evaluations": 26025,
+    "workload_pruned": 3297,
+    "energy": 22232,
+    "deadline_necessary": 2297,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.9118710000184365
+  },
+  {
+    "index": 302,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-07",
+      "V4-01"
+    ],
+    "max_sorties": 23,
+    "pool_size": 564,
+    "physical_evaluations": 6461,
+    "energy": 5340,
+    "workload_pruned": 557,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 1.6545173999620602
+  },
+  {
+    "index": 303,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-07",
+      "V4-08"
+    ],
+    "max_sorties": 23,
+    "pool_size": 305,
+    "physical_evaluations": 6461,
+    "energy": 5849,
+    "workload_pruned": 307,
+    "deadline_necessary": 275,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.3281870000064373
+  },
+  {
+    "index": 304,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-07",
+      "V4-13"
+    ],
+    "max_sorties": 23,
+    "pool_size": 292,
+    "physical_evaluations": 12530,
+    "workload_pruned": 42,
+    "energy": 12196,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.7995021000388078
+  },
+  {
+    "index": 305,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-07",
+      "V4-14"
+    ],
+    "max_sorties": 23,
+    "pool_size": 261,
+    "physical_evaluations": 6448,
+    "workload_pruned": 28,
+    "energy": 6159,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 1.1726512999739498
+  },
+  {
+    "index": 306,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-07",
+      "V4-15"
+    ],
+    "max_sorties": 23,
+    "pool_size": 947,
+    "physical_evaluations": 8420,
+    "energy": 7425,
+    "workload_pruned": 48,
+    "deadline_necessary": 539,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 2.3495381000102498
+  },
+  {
+    "index": 307,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-07",
+      "V4-18"
+    ],
+    "max_sorties": 23,
+    "pool_size": 1168,
+    "physical_evaluations": 12753,
+    "energy": 10605,
+    "workload_pruned": 980,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 2.724597399996128
+  },
+  {
+    "index": 308,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-07",
+      "V4-19"
+    ],
+    "max_sorties": 23,
+    "pool_size": 973,
+    "physical_evaluations": 8675,
+    "energy": 7628,
+    "workload_pruned": 74,
+    "deadline_necessary": 873,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 2.1597493999870494
+  },
+  {
+    "index": 309,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-07",
+      "V4-20"
+    ],
+    "max_sorties": 23,
+    "pool_size": 256,
+    "physical_evaluations": 7095,
+    "energy": 6813,
+    "workload_pruned": 26,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 1.490245099994354
+  },
+  {
+    "index": 310,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-07",
+      "V4-21"
+    ],
+    "max_sorties": 23,
+    "pool_size": 454,
+    "physical_evaluations": 13371,
+    "energy": 12622,
+    "workload_pruned": 295,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 1.7617801000014879
+  },
+  {
+    "index": 311,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-07",
+      "V4-23"
+    ],
+    "max_sorties": 23,
+    "pool_size": 619,
+    "physical_evaluations": 6461,
+    "energy": 5193,
+    "workload_pruned": 649,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 4.153450399986468
+  },
+  {
+    "index": 312,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-09",
+      "V4-18"
+    ],
+    "max_sorties": 23,
+    "pool_size": 173,
+    "physical_evaluations": 6993,
+    "workload_pruned": 685,
+    "energy": 6135,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.509709500009194
+  },
+  {
+    "index": 313,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-07",
+      "V4-20"
+    ],
+    "max_sorties": 23,
+    "pool_size": 258,
+    "physical_evaluations": 6461,
+    "energy": 6173,
+    "workload_pruned": 30,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 1.4421984000364318
+  },
+  {
+    "index": 314,
+    "kind": "3-route",
+    "removed": [
+      "V4-14",
+      "V4-07",
+      "V4-21"
+    ],
+    "max_sorties": 23,
+    "pool_size": 438,
+    "physical_evaluations": 9624,
+    "energy": 8852,
+    "workload_pruned": 334,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 1.7188123000087216
+  },
+  {
+    "index": 315,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-04",
+      "V4-08"
+    ],
+    "max_sorties": 23,
+    "pool_size": 213,
+    "physical_evaluations": 8852,
+    "workload_pruned": 1146,
+    "energy": 7493,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.6995830000378191
+  },
+  {
+    "index": 316,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-04",
+      "V4-12"
+    ],
+    "max_sorties": 23,
+    "pool_size": 372,
+    "physical_evaluations": 19195,
+    "workload_pruned": 3275,
+    "energy": 15548,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 1.0958576999837533
+  },
+  {
+    "index": 317,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-04",
+      "V4-17"
+    ],
+    "max_sorties": 23,
+    "pool_size": 225,
+    "physical_evaluations": 8852,
+    "workload_pruned": 1077,
+    "energy": 7550,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.5765873999916948
+  },
+  {
+    "index": 318,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-04",
+      "V4-22"
+    ],
+    "max_sorties": 23,
+    "pool_size": 196,
+    "physical_evaluations": 8852,
+    "workload_pruned": 1059,
+    "energy": 7597,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.4872167000430636
+  },
+  {
+    "index": 319,
+    "kind": "3-route",
+    "removed": [
+      "V4-10",
+      "V4-04",
+      "V4-23"
+    ],
+    "max_sorties": 23,
+    "pool_size": 213,
+    "physical_evaluations": 8852,
+    "workload_pruned": 1150,
+    "energy": 7489,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.5846392000094056
+  },
+  {
+    "index": 320,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-04",
+      "V4-01"
+    ],
+    "max_sorties": 23,
+    "pool_size": 150,
+    "physical_evaluations": 4132,
+    "workload_pruned": 431,
+    "energy": 3551,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.30409639998106286
+  },
+  {
+    "index": 321,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-04",
+      "V4-08"
+    ],
+    "max_sorties": 23,
+    "pool_size": 174,
+    "physical_evaluations": 4132,
+    "workload_pruned": 441,
+    "energy": 3517,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.3313031999859959
+  },
+  {
+    "index": 322,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-04",
+      "V4-12"
+    ],
+    "max_sorties": 23,
+    "pool_size": 206,
+    "physical_evaluations": 8915,
+    "workload_pruned": 881,
+    "energy": 7828,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.5509706999873742
+  },
+  {
+    "index": 323,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-04",
+      "V4-13"
+    ],
+    "max_sorties": 23,
+    "pool_size": 157,
+    "physical_evaluations": 8915,
+    "workload_pruned": 230,
+    "energy": 8528,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.4384796000085771
+  },
+  {
+    "index": 324,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-04",
+      "V4-14"
+    ],
+    "max_sorties": 23,
+    "pool_size": 130,
+    "physical_evaluations": 4167,
+    "workload_pruned": 120,
+    "energy": 3917,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.5134959999704733
+  },
+  {
+    "index": 325,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-04",
+      "V4-15"
+    ],
+    "max_sorties": 23,
+    "pool_size": 162,
+    "physical_evaluations": 4132,
+    "workload_pruned": 429,
+    "energy": 3541,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.31437279999954626
+  },
+  {
+    "index": 326,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-04",
+      "V4-17"
+    ],
+    "max_sorties": 23,
+    "pool_size": 165,
+    "physical_evaluations": 4132,
+    "workload_pruned": 407,
+    "energy": 3560,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.9285597000271082
+  },
+  {
+    "index": 327,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-04",
+      "V4-18"
+    ],
+    "max_sorties": 23,
+    "pool_size": 204,
+    "physical_evaluations": 6993,
+    "workload_pruned": 1132,
+    "energy": 5657,
+    "deadline_necessary": 461,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.48046930000418797
+  },
+  {
+    "index": 328,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-04",
+      "V4-19"
+    ],
+    "max_sorties": 23,
+    "pool_size": 186,
+    "physical_evaluations": 4286,
+    "workload_pruned": 435,
+    "energy": 3665,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.3206032000016421
+  },
+  {
+    "index": 329,
+    "kind": "3-route",
+    "removed": [
+      "V4-11",
+      "V4-04",
+      "V4-20"
+    ],
+    "max_sorties": 23,
+    "pool_size": 117,
+    "physical_evaluations": 2018,
+    "workload_pruned": 105,
+    "energy": 1796,
+    "outcome": "finite_pool_no_candidate",
+    "elapsed_s": 0.23921909998171031
+  }
+]
