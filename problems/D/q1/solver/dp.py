@@ -7,8 +7,8 @@ from model.physics import ENERGY_TOL,TIME_TOL
 @dataclass(frozen=True)
 class Label:
     n: int=0
-    e: float=0.
-    t: float=0.
+    e: float=0
+    t: float=0
     path: tuple=()
 
     def plus(self,p):
