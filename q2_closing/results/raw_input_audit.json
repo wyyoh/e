@@ -1,0 +1,17 @@
+{
+  "attachment_field_checks": 959,
+  "undirected_legs": 120,
+  "directed_legs": 240,
+  "independent_full_cell_agreement": true,
+  "max_snapshot_distance_difference_m": 1.046373654389754e-09,
+  "changed_max_dem_legs": [],
+  "minimum_monotonic_margin": 0.003625781558344314,
+  "raw_sha256": {
+    "山区洪涝灾害下无人机运输与通信协同优化.docx": "0a4f507b91a02a0ea4264973dd432cdcb5b8916c61c24214719665f326d57685",
+    "物资需求与配送时限.xlsx": "5a3346159ceddcf585859d270b8f62114b388a1f737fbe64ffde0ee1fdc8170a",
+    "调度中心与服务区.xlsx": "541a7af1ded08c9a3ff448480332cb5f6a54902f0afa6e9bcd50c1d2b2b34e38",
+    "运输无人机数据.xlsx": "9296a657c07e042afba6aeea7999665d9cd24e00b592fd6c269de6e338480dcb",
+    "镇龙乡及周边30米DEM.mat": "c68703e0cc8f94f4bd52ff6e9974b66a2dae33865f0723ad71c04b6694bf4fbf",
+    "镇龙乡及周边30米DEM.tif": "741fe6de0b2bcaffd0f4007f574ee698d46197094f52cc954b532c4f90fc7c03"
+  }
+}

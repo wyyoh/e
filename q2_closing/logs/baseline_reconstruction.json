@@ -1,0 +1,20 @@
+{
+  "A": {
+    "tested": 23143,
+    "status": "feasible",
+    "makespan_s": 5615.040709638748,
+    "seed": 20260924
+  },
+  "B": {
+    "tested": 3,
+    "status": "feasible",
+    "makespan_s": 5693.231489105106,
+    "seed": 20260924
+  },
+  "C": {
+    "tested": 3,
+    "status": "feasible",
+    "makespan_s": 5683.315363783122,
+    "seed": 20260924
+  }
+}
