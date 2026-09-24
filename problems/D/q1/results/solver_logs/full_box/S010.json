@@ -1,0 +1,118 @@
+[
+  {
+    "service_area": "S010",
+    "stage": "min_N",
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "success": true,
+    "mip_gap": 0.0,
+    "dual_bound": 1.0,
+    "objective_value": 1.0,
+    "objective_scale": 1,
+    "variables": 20,
+    "constraints": 3,
+    "runtime_s": 0.00078959995880723,
+    "time_limit_s": 300,
+    "mip_node_count": 1,
+    "selected": [
+      {
+        "aircraft_type": "B",
+        "box_ids": [
+          "S010-FOD-01",
+          "S010-MED-01",
+          "S010-WAT-01"
+        ]
+      }
+    ],
+    "n": 1,
+    "e": 1.8231956980898123,
+    "t": 1555.3795658311765
+  },
+  {
+    "service_area": "S010",
+    "stage": "fixed_N_min_E",
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "success": true,
+    "mip_gap": 0.0,
+    "dual_bound": 1823195.6980898122,
+    "objective_value": 1823195.6980898122,
+    "objective_scale": 1000000.0,
+    "variables": 20,
+    "constraints": 4,
+    "runtime_s": 0.00042449997272342443,
+    "time_limit_s": 300,
+    "mip_node_count": 0,
+    "selected": [
+      {
+        "aircraft_type": "B",
+        "box_ids": [
+          "S010-FOD-01",
+          "S010-MED-01",
+          "S010-WAT-01"
+        ]
+      }
+    ],
+    "n": 1,
+    "e": 1.8231956980898123,
+    "t": 1555.3795658311765
+  },
+  {
+    "service_area": "S010",
+    "stage": "fixed_N_E_min_T",
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "success": true,
+    "mip_gap": 0.0,
+    "dual_bound": 1555.3795658311765,
+    "objective_value": 1555.3795658311765,
+    "objective_scale": 1,
+    "variables": 20,
+    "constraints": 5,
+    "runtime_s": 0.0006131000118330121,
+    "time_limit_s": 300,
+    "mip_node_count": 0,
+    "selected": [
+      {
+        "aircraft_type": "B",
+        "box_ids": [
+          "S010-FOD-01",
+          "S010-MED-01",
+          "S010-WAT-01"
+        ]
+      }
+    ],
+    "n": 1,
+    "e": 1.8231956980898123,
+    "t": 1555.3795658311765
+  },
+  {
+    "service_area": "S010",
+    "stage": "min_T",
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "success": true,
+    "mip_gap": 0.0,
+    "dual_bound": 1555.3795658311765,
+    "objective_value": 1555.3795658311765,
+    "objective_scale": 1,
+    "variables": 20,
+    "constraints": 3,
+    "runtime_s": 0.0006315999780781567,
+    "time_limit_s": 300,
+    "mip_node_count": 1,
+    "selected": [
+      {
+        "aircraft_type": "B",
+        "box_ids": [
+          "S010-FOD-01",
+          "S010-MED-01",
+          "S010-WAT-01"
+        ]
+      }
+    ],
+    "n": 1,
+    "e": 1.8231956980898123,
+    "t": 1555.3795658311765
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "source": "User-supplied historical Q1 vectors; never imported by model or solvers",
+  "reserve": 0.2,
+  "rounded_energy_tolerance_kwh": 1e-8,
+  "rounded_time_tolerance_min": 1e-8,
+  "vectors": [
+    {"sorties": 18, "energy_kwh": 59.131296022, "time_min": 546.266929149},
+    {"sorties": 19, "energy_kwh": 59.033942092, "time_min": 573.999623453}
+  ]
+}

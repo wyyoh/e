@@ -1,0 +1,138 @@
+{
+  "reserve": 0.2,
+  "objective_order": [
+    "sorties",
+    "energy_kwh",
+    "cumulative_time_s"
+  ],
+  "lexicographic": {
+    "sorties": 18,
+    "energy_kwh": 59.13129602205317,
+    "time_s": 32776.015748915604,
+    "time_min": 546.2669291485934,
+    "pattern_ids": [
+      "S001-C-0.0.1.5",
+      "S001-C-2.3.1.3",
+      "S002-C-0.1.1.3",
+      "S002-B-1.1.0.1",
+      "S003-C-0.1.1.3",
+      "S003-B-1.1.0.1",
+      "S004-C-1.1.1.3",
+      "S005-C-1.1.1.3",
+      "S006-C-1.1.1.3",
+      "S007-C-1.1.1.2",
+      "S008-C-1.1.1.2",
+      "S009-B-1.1.1",
+      "S010-B-1.1.1",
+      "S011-B-1.1.1",
+      "S012-B-1.1.1",
+      "S013-B-1.1.1",
+      "S014-B-1.1.1",
+      "S015-B-1.1.1"
+    ]
+  },
+  "independent_MILP_DP_agree": true,
+  "energy_tol_kwh": 1e-10,
+  "time_tol_s": 1e-07,
+  "count_patterns_capacity": 742,
+  "count_patterns_feasible": 732,
+  "boxes": 80,
+  "baseline": [
+    {
+      "aircraft_type": "A",
+      "method": "exact",
+      "feasible": true,
+      "sorties": 52,
+      "energy_kwh": 112.18015314076078,
+      "time_min": 1488.7630069419472
+    },
+    {
+      "aircraft_type": "A",
+      "method": "FFD_mass",
+      "feasible": true,
+      "sorties": 52,
+      "energy_kwh": 112.65663607053095,
+      "time_min": 1488.7630069419472
+    },
+    {
+      "aircraft_type": "A",
+      "method": "FFD_volume",
+      "feasible": true,
+      "sorties": 55,
+      "energy_kwh": 118.9093784524763,
+      "time_min": 1574.7174529881802
+    },
+    {
+      "aircraft_type": "B",
+      "method": "exact",
+      "feasible": true,
+      "sorties": 35,
+      "energy_kwh": 68.35065705975953,
+      "time_min": 927.6254732722764
+    },
+    {
+      "aircraft_type": "B",
+      "method": "FFD_mass",
+      "feasible": true,
+      "sorties": 37,
+      "energy_kwh": 73.61156093863586,
+      "time_min": 981.593920516285
+    },
+    {
+      "aircraft_type": "B",
+      "method": "FFD_volume",
+      "feasible": true,
+      "sorties": 37,
+      "energy_kwh": 72.93648943006774,
+      "time_min": 981.593920516285
+    },
+    {
+      "aircraft_type": "C",
+      "method": "exact",
+      "feasible": true,
+      "sorties": 18,
+      "energy_kwh": 73.93490844547165,
+      "time_min": 563.9792350228881
+    },
+    {
+      "aircraft_type": "C",
+      "method": "FFD_mass",
+      "feasible": true,
+      "sorties": 18,
+      "energy_kwh": 75.11669658841016,
+      "time_min": 563.9792350228881
+    },
+    {
+      "aircraft_type": "C",
+      "method": "FFD_volume",
+      "feasible": true,
+      "sorties": 18,
+      "energy_kwh": 75.11669658841016,
+      "time_min": 563.9792350228881
+    },
+    {
+      "aircraft_type": "mixed",
+      "method": "exact",
+      "feasible": true,
+      "sorties": 18,
+      "energy_kwh": 59.13129602205317,
+      "time_min": 546.2669291485934
+    },
+    {
+      "aircraft_type": "mixed",
+      "method": "FFD_mass",
+      "feasible": true,
+      "sorties": 18,
+      "energy_kwh": 75.11669658841016,
+      "time_min": 563.9792350228881
+    },
+    {
+      "aircraft_type": "mixed",
+      "method": "FFD_volume",
+      "feasible": true,
+      "sorties": 18,
+      "energy_kwh": 75.11669658841016,
+      "time_min": 563.9792350228881
+    }
+  ]
+}

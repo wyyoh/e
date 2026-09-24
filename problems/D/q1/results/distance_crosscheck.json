@@ -1,0 +1,12 @@
+{
+  "main_model": "AEQD centred on O01",
+  "independent_distance": "WGS84 GeographicLib inverse",
+  "max_absolute_distance_difference_m": 1.4115357771515846e-09,
+  "max_relative_distance_difference": 2.908962210414106e-13,
+  "max_absolute_payload_difference_kg": 1.8431478565617e-11,
+  "feasible_pattern_sets_equal": true,
+  "same_selected_count_pattern_representative": true,
+  "sortie_difference": 0,
+  "energy_difference_kwh": 6.039613253960852e-13,
+  "cumulative_time_difference_s": 2.1100277081131935e-10
+}

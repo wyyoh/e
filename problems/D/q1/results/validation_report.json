@@ -1,0 +1,32 @@
+{
+  "status": "VERIFIED_BY_RECOMPUTATION",
+  "raw_files": 7,
+  "boxes": 80,
+  "geometry_routes": 15,
+  "payloads": 45,
+  "max_payload_root_error_kg": 1.8431478565617e-11,
+  "objective": {
+    "sorties": 18,
+    "energy_kwh": 59.13129602205377,
+    "time_s": 32776.01574891582
+  },
+  "pareto_assignments": 2,
+  "milp_solutions_recalculated": 120,
+  "checked": [
+    "raw_hashes",
+    "TIF_MAT",
+    "independent_geodesic_cell_intersections",
+    "geometry",
+    "safe_payload_roots",
+    "exactly_once",
+    "no_cross_service",
+    "mass",
+    "volume",
+    "energy",
+    "return_empty_with_climb",
+    "full_time",
+    "assignment_metadata",
+    "objective",
+    "pareto_assignments"
+  ]
+}

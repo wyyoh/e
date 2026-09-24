@@ -1,0 +1,75 @@
+{
+  "candidate_events": 569,
+  "sortie_change_events": 8,
+  "batching_change_events": 19,
+  "domain": [
+    0.0,
+    1.0
+  ],
+  "right_endpoint_excluded": true,
+  "segments": [
+    {
+      "alpha_left": 0.0,
+      "alpha_right": 0.2308834976366333,
+      "left_closed": true,
+      "right_closed": true,
+      "min_sorties": 18
+    },
+    {
+      "alpha_left": 0.2308834976366333,
+      "alpha_right": 0.27049853606455476,
+      "left_closed": false,
+      "right_closed": true,
+      "min_sorties": 19
+    },
+    {
+      "alpha_left": 0.27049853606455476,
+      "alpha_right": 0.3362580918991762,
+      "left_closed": false,
+      "right_closed": true,
+      "min_sorties": 20
+    },
+    {
+      "alpha_left": 0.3362580918991762,
+      "alpha_right": 0.33896917675205007,
+      "left_closed": false,
+      "right_closed": true,
+      "min_sorties": 21
+    },
+    {
+      "alpha_left": 0.33896917675205007,
+      "alpha_right": 0.3437353155592552,
+      "left_closed": false,
+      "right_closed": true,
+      "min_sorties": 22
+    },
+    {
+      "alpha_left": 0.3437353155592552,
+      "alpha_right": 0.3439187251825956,
+      "left_closed": false,
+      "right_closed": true,
+      "min_sorties": 23
+    },
+    {
+      "alpha_left": 0.3439187251825956,
+      "alpha_right": 0.3477789719927312,
+      "left_closed": false,
+      "right_closed": true,
+      "min_sorties": 24
+    },
+    {
+      "alpha_left": 0.3477789719927312,
+      "alpha_right": 0.35267806887191433,
+      "left_closed": false,
+      "right_closed": true,
+      "min_sorties": 25
+    },
+    {
+      "alpha_left": 0.35267806887191433,
+      "alpha_right": 1.0,
+      "left_closed": false,
+      "right_closed": false,
+      "min_sorties": null
+    }
+  ]
+}

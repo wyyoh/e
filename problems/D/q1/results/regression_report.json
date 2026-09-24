@@ -1,0 +1,26 @@
+{
+  "status": "MATCH",
+  "comparisons": [
+    {
+      "target": {
+        "sorties": 18,
+        "energy_kwh": 59.131296022,
+        "time_min": 546.266929149
+      },
+      "energy_difference_kwh": 5.31699129169283e-11,
+      "time_difference_min": -4.0665781853022054e-10,
+      "matches": true
+    },
+    {
+      "target": {
+        "sorties": 19,
+        "energy_kwh": 59.033942092,
+        "time_min": 573.999623453
+      },
+      "energy_difference_kwh": 2.0264678823878057e-10,
+      "time_difference_min": -4.873754733125679e-10,
+      "matches": true
+    }
+  ],
+  "note": "Regression of rounded published targets only, not an optimality proof; not consumed by solver."
+}

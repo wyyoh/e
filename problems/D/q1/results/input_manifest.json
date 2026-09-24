@@ -1,0 +1,43 @@
+{
+  "raw_files": [
+    {
+      "file": "山区洪涝灾害下无人机运输与通信协同优化.docx",
+      "bytes": 6971534,
+      "sha256": "0a4f507b91a02a0ea4264973dd432cdcb5b8916c61c24214719665f326d57685"
+    },
+    {
+      "file": "物资需求与配送时限.xlsx",
+      "bytes": 17474,
+      "sha256": "5a3346159ceddcf585859d270b8f62114b388a1f737fbe64ffde0ee1fdc8170a"
+    },
+    {
+      "file": "调度中心与服务区.xlsx",
+      "bytes": 11017,
+      "sha256": "541a7af1ded08c9a3ff448480332cb5f6a54902f0afa6e9bcd50c1d2b2b34e38"
+    },
+    {
+      "file": "运输无人机数据.xlsx",
+      "bytes": 11746,
+      "sha256": "9296a657c07e042afba6aeea7999665d9cd24e00b592fd6c269de6e338480dcb"
+    },
+    {
+      "file": "镇龙乡及周边30米DEM.mat",
+      "bytes": 6746494,
+      "sha256": "c68703e0cc8f94f4bd52ff6e9974b66a2dae33865f0723ad71c04b6694bf4fbf"
+    },
+    {
+      "file": "镇龙乡及周边30米DEM.tif",
+      "bytes": 7867096,
+      "sha256": "741fe6de0b2bcaffd0f4007f574ee698d46197094f52cc954b532c4f90fc7c03"
+    },
+    {
+      "file": "镇龙乡地理空间数据说明.pdf",
+      "bytes": 85812,
+      "sha256": "6d1522c6832a5d91a108dae0d07954845025c0dabd44af8ee78c7860d7c405e4"
+    }
+  ],
+  "distance_method": "aeqd_o01",
+  "boxes": 80,
+  "nodes": 16,
+  "aircraft_types": 3
+}
