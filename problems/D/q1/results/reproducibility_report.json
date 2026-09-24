@@ -1,0 +1,173 @@
+{
+  "status": "REPRODUCIBLE",
+  "numeric_files": [
+    {
+      "file": "input_manifest.json",
+      "sha256": "0d3d30ef92dbfcc903da32978824d5dd0428d32fcf4cabed9155b30b9a5847b7",
+      "byte_identical": true
+    },
+    {
+      "file": "geometry.csv",
+      "sha256": "24242a02be468e72118405b01679b591c018e91eba41ee53b856f4e617926ba3",
+      "byte_identical": true
+    },
+    {
+      "file": "geometry.json",
+      "sha256": "0d267ba6e888a629cf7de25cafa9e490172c0879cde37286a29dcfe789717a15",
+      "byte_identical": true
+    },
+    {
+      "file": "traversed_cells.json",
+      "sha256": "a4975e49261cb1b5daee0843ca75b6da27a688a2650c37581f137994be040895",
+      "byte_identical": true
+    },
+    {
+      "file": "geometry_validation.csv",
+      "sha256": "134fbd96b92c517e35dbeda372e5f57260db1edafff07f8cd96ecbb72da8298f",
+      "byte_identical": true
+    },
+    {
+      "file": "max_safe_payload.csv",
+      "sha256": "fe02b9fd01f42bcb59ddcfc20bf41ed0baeab22aee689570135ae9da1f6468b4",
+      "byte_identical": true
+    },
+    {
+      "file": "all_capacity_patterns.csv",
+      "sha256": "7170c501b7097ae7555781042f02c6f4c1b1499d614d7b5c92116762a7efa6c1",
+      "byte_identical": true
+    },
+    {
+      "file": "candidate_patterns.csv",
+      "sha256": "ac322a5678cd41523823f80532008e6454e8358b90e6cd7ad000126555fa29e2",
+      "byte_identical": true
+    },
+    {
+      "file": "candidate_box_patterns.csv",
+      "sha256": "479759be18e9565c174b2d3e09cbb92d55a524dd43cbac6f238e753ad68d0298",
+      "byte_identical": true
+    },
+    {
+      "file": "optimal_batches.csv",
+      "sha256": "77e60676fee9486e7bc9883920d8fb139ad44298cafeec81b938dc2b346fa864",
+      "byte_identical": true
+    },
+    {
+      "file": "box_assignment.csv",
+      "sha256": "dced6970fc807f72996638bca77d4789bfd31056ed33229bad1b944c16527288",
+      "byte_identical": true
+    },
+    {
+      "file": "objective_summary.json",
+      "sha256": "f88f80a9bcd5b8215f2b4fc873e33627fd36ad168e8fe75af803c2f3cc86faa8",
+      "byte_identical": true
+    },
+    {
+      "file": "milp_dp_crosscheck.csv",
+      "sha256": "6be180ef32f3438387d060528276d4f8d586b3810c5405c445638cf661a38b89",
+      "byte_identical": true
+    },
+    {
+      "file": "baseline_by_area.csv",
+      "sha256": "eb028ae662f91ea32a2e16b3ebd75c0f4a35b199aa950f0e74394a8e48149989",
+      "byte_identical": true
+    },
+    {
+      "file": "baseline_summary.csv",
+      "sha256": "da626e5325958e4f3bd6d26917597667dad535d9fd0e4c07daba6deb955fb8a8",
+      "byte_identical": true
+    },
+    {
+      "file": "pareto_front.csv",
+      "sha256": "215acfb86ce2d5682d9ae5d60ec5544a97216b9b10fcf0a2ec1d9ad227eb496a",
+      "byte_identical": true
+    },
+    {
+      "file": "pareto_local.csv",
+      "sha256": "2194996bfe3e6c95dad96f3d6ce5e68eb7e5c4a8ff5db66c80653217efce56d0",
+      "byte_identical": true
+    },
+    {
+      "file": "pareto_assignments.json",
+      "sha256": "d19e9fa9eb282288e89c40060ed40e358fcaaf1b7d2401531633669a84ec7025",
+      "byte_identical": true
+    },
+    {
+      "file": "reserve_payload_grid.csv",
+      "sha256": "3a553948b05ecadebda5d12c71e0a4b947f4656cb452a79026cc0ff592a4d786",
+      "byte_identical": true
+    },
+    {
+      "file": "reserve_thresholds.csv",
+      "sha256": "4c3ecb3fdb3920db19f94dea5f6a06c22e25d19d18d330513987d636383f4c0e",
+      "byte_identical": true
+    },
+    {
+      "file": "reserve_segments.csv",
+      "sha256": "f553dc395e78553cb5d349a09d54eae945aa0fdf01ab431b2928cd363e159cb9",
+      "byte_identical": true
+    },
+    {
+      "file": "reserve_optimal_segments.csv",
+      "sha256": "ba50529b3c4f6ef844b1e5dad3788f3281f4ceac6821874c5f45d7765f172df4",
+      "byte_identical": true
+    },
+    {
+      "file": "sensitivity_summary.json",
+      "sha256": "3194164efc3f97fe675878b9bd20fb79da4c33d475cf820d5fb7aa784e785bc3",
+      "byte_identical": true
+    },
+    {
+      "file": "distance_crosscheck.json",
+      "sha256": "68a2c64318e82e7176c6848fbe15f171f630b3263e20a682a34212ce5b59567e",
+      "byte_identical": true
+    },
+    {
+      "file": "distance_payload_crosscheck.csv",
+      "sha256": "d1552bd72fc6cca1fe877e5a34c1ea75c9b86a4e41e913e4097a29efc97b6256",
+      "byte_identical": true
+    },
+    {
+      "file": "pareto_integer_audit.json",
+      "sha256": "147e4b2b1ad71802fdb7d0c34717ae2e8ac2494278d7b064be55e4d5eeb29f02",
+      "byte_identical": true
+    },
+    {
+      "file": "regression_report.json",
+      "sha256": "d3ac5b73a6a662da2fe9dd1c75bd59d91056aa232f37fedfd5c5769874bfd056",
+      "byte_identical": true
+    }
+  ],
+  "figures": [
+    {
+      "file": "map_single_routes.png",
+      "sha256": "3753ac472208f0c3a928d24f4b99f1b31383dc94fb010eaba6ae1e1b9471dd51",
+      "byte_identical": true
+    },
+    {
+      "file": "pareto_front.png",
+      "sha256": "0e54d8eb44d936900e07c9c4cdcd5a8f3079e835bbfab46112a9f7b4b8c34382",
+      "byte_identical": true
+    },
+    {
+      "file": "reserve_vs_min_sorties.png",
+      "sha256": "fa64c9a4af28b6791ac1c9dd5edf985e1b35967ff75f7f3e2acced8a118ebb93",
+      "byte_identical": true
+    },
+    {
+      "file": "reserve_vs_safe_payload.png",
+      "sha256": "d05961e005021335cc8eb68236e93bf405f2119c4774a74fe36663cdb132e00d",
+      "byte_identical": true
+    },
+    {
+      "file": "safe_payload_heatmap.png",
+      "sha256": "f72347a885c24b123662209edba5b3add4e57fbb185e16e615f164e7fcfaee39",
+      "byte_identical": true
+    }
+  ],
+  "independent_objective_identical": true,
+  "excluded": [
+    "environment.json (runtime)",
+    "solver_logs (runtime and interchangeable box choices)",
+    "validation_report.json full-box historical evidence count (main objectives compared separately)"
+  ]
+}

@@ -10,11 +10,11 @@ from scripts.prepare import prepare
 from scripts.payload import payloads
 from solver.patterns import group_boxes,enumerate_patterns,available,assign_ids
 from solver.dp import Label,scalar_dp
-from solver.milp import solve_area,SolverFailure
+from solver.milp import solve_area,box_patterns,SolverFailure
 from solver.baseline import compare
 
 
-def optimize(types,boxes,geo,out,alpha=.2):
+def optimize(types,boxes,geo,out,alpha=.2,full_box=False):
     groups=group_boxes(boxes)
     patterns=enumerate_patterns(groups,types,geo)
     lookup={p.id:p for ps in patterns.values() for p in ps}
@@ -22,6 +22,16 @@ def optimize(types,boxes,geo,out,alpha=.2):
               (p.record(groups[s][1],alpha) for s,ps in patterns.items() for p in ps))
     write_csv(out/'candidate_patterns.csv',
               (p.record(groups[s][1],alpha) for s,ps in patterns.items() for p in available(ps,alpha)))
+    def binary_records():
+        for s,data in groups.items():
+            local=data[0]
+            for p in box_patterns(local,types,geo[s],alpha):
+                selected=[local[j] for j in p['indices']]
+                yield dict(pattern_id=f'{s}-{p["aircraft"]}-mask-{p["mask"]}',service_area=s,
+                           aircraft_type=p['aircraft'],covered_boxes=[b.id for b in selected],
+                           mass_kg=math.fsum(b.mass_kg for b in selected),volume_m3=math.fsum(b.volume_m3 for b in selected),
+                           energy_kwh=p['energy'],time_s=p['time'])
+    write_csv(out/'candidate_box_patterns.csv',binary_records())
     combined=Label();checks=[]
     for area,(_,_,_,demand) in groups.items():
         feasible=available(patterns[area],alpha)
@@ -33,6 +43,12 @@ def optimize(types,boxes,geo,out,alpha=.2):
             write_json(out/'solver_logs'/f'{area}.json',failure.logs)
             raise
         write_json(out/'solver_logs'/f'{area}.json',logs)
+        if full_box:
+            try:original_logs=solve_area(groups[area][0],types,geo[area],alpha,box_level=True)
+            except SolverFailure as failure:
+                write_json(out/'solver_logs/full_box'/f'{area}.json',failure.logs)
+                raise
+            write_json(out/'solver_logs/full_box'/f'{area}.json',original_logs)
         checks.append(dict(service_area=area,dp_min_N=best.n,milp_min_N=logs[0]['n'],
                            dp_fixed_N_min_E=best.e,milp_fixed_N_min_E=logs[1]['e'],
                            dp_lex_time_s=best.t,milp_lex_time_s=logs[2]['t'],
@@ -65,7 +81,8 @@ def optimize(types,boxes,geo,out,alpha=.2):
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path,default=ROOT/'results')
+    parser.add_argument('--full-box-milp',action='store_true')
     args=parser.parse_args()
     _,types,boxes,_,geo=prepare(args.output)
     payloads(types,geo,args.output)
-    optimize(types,boxes,geo,args.output)
+    optimize(types,boxes,geo,args.output,full_box=args.full_box_milp)

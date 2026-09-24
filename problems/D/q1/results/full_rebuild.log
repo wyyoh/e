@@ -1,0 +1,85 @@
+1/7 Raw attachments and complete projected DEM traversal
+2/7 Continuous safe-payload roots
+3/7 Independent MILP / DP and two FFD orders
+  S001 min_N: 289 binary variables
+  S001 fixed_N_min_E: 289 binary variables
+  S001 fixed_N_E_min_T: 289 binary variables
+  S001 min_T: 289 binary variables
+S001: count patterns=201, binary box patterns=289; MILP/DP agree.
+  S002 min_N: 94 binary variables
+  S002 fixed_N_min_E: 94 binary variables
+  S002 fixed_N_E_min_T: 94 binary variables
+  S002 min_T: 94 binary variables
+S002: count patterns=76, binary box patterns=94; MILP/DP agree.
+  S003 min_N: 94 binary variables
+  S003 fixed_N_min_E: 94 binary variables
+  S003 fixed_N_E_min_T: 94 binary variables
+  S003 min_T: 94 binary variables
+S003: count patterns=76, binary box patterns=94; MILP/DP agree.
+  S004 min_N: 57 binary variables
+  S004 fixed_N_min_E: 57 binary variables
+  S004 fixed_N_E_min_T: 57 binary variables
+  S004 min_T: 57 binary variables
+S004: count patterns=51, binary box patterns=57; MILP/DP agree.
+  S005 min_N: 57 binary variables
+  S005 fixed_N_min_E: 57 binary variables
+  S005 fixed_N_E_min_T: 57 binary variables
+  S005 min_T: 57 binary variables
+S005: count patterns=51, binary box patterns=57; MILP/DP agree.
+  S006 min_N: 57 binary variables
+  S006 fixed_N_min_E: 57 binary variables
+  S006 fixed_N_E_min_T: 57 binary variables
+  S006 min_T: 57 binary variables
+S006: count patterns=51, binary box patterns=57; MILP/DP agree.
+  S007 min_N: 46 binary variables
+  S007 fixed_N_min_E: 46 binary variables
+  S007 fixed_N_E_min_T: 46 binary variables
+  S007 min_T: 46 binary variables
+S007: count patterns=43, binary box patterns=46; MILP/DP agree.
+  S008 min_N: 46 binary variables
+  S008 fixed_N_min_E: 46 binary variables
+  S008 fixed_N_E_min_T: 46 binary variables
+  S008 min_T: 46 binary variables
+S008: count patterns=43, binary box patterns=46; MILP/DP agree.
+  S009 min_N: 20 binary variables
+  S009 fixed_N_min_E: 20 binary variables
+  S009 fixed_N_E_min_T: 20 binary variables
+  S009 min_T: 20 binary variables
+S009: count patterns=20, binary box patterns=20; MILP/DP agree.
+  S010 min_N: 20 binary variables
+  S010 fixed_N_min_E: 20 binary variables
+  S010 fixed_N_E_min_T: 20 binary variables
+  S010 min_T: 20 binary variables
+S010: count patterns=20, binary box patterns=20; MILP/DP agree.
+  S011 min_N: 20 binary variables
+  S011 fixed_N_min_E: 20 binary variables
+  S011 fixed_N_E_min_T: 20 binary variables
+  S011 min_T: 20 binary variables
+S011: count patterns=20, binary box patterns=20; MILP/DP agree.
+  S012 min_N: 20 binary variables
+  S012 fixed_N_min_E: 20 binary variables
+  S012 fixed_N_E_min_T: 20 binary variables
+  S012 min_T: 20 binary variables
+S012: count patterns=20, binary box patterns=20; MILP/DP agree.
+  S013 min_N: 20 binary variables
+  S013 fixed_N_min_E: 20 binary variables
+  S013 fixed_N_E_min_T: 20 binary variables
+  S013 min_T: 20 binary variables
+S013: count patterns=20, binary box patterns=20; MILP/DP agree.
+  S014 min_N: 20 binary variables
+  S014 fixed_N_min_E: 20 binary variables
+  S014 fixed_N_E_min_T: 20 binary variables
+  S014 min_T: 20 binary variables
+S014: count patterns=20, binary box patterns=20; MILP/DP agree.
+  S015 min_N: 20 binary variables
+  S015 fixed_N_min_E: 20 binary variables
+  S015 fixed_N_E_min_T: 20 binary variables
+  S015 min_T: 20 binary variables
+S015: count patterns=20, binary box patterns=20; MILP/DP agree.
+4/7 Complete Pareto and reserve events
+Complete Pareto objective vectors: 2
+Reserve events: 569; sortie transitions: 8
+5/7 Independent raw-input validation
+6/7 Five figures
+7/7 Regression only after independent solution and validation
+Complete: E:\研究生\数学建模\e\problems\D\q1\results (36.6 s)

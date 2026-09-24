@@ -13,7 +13,7 @@
 
 ## 阶段与提交
 
-1. **输入与几何**：原始附件、严格校验的 XLSX loader、TIF/MAT 一致性、PixelIsPoint 半像元处理、闭像元 supercover 遍历。独立 slab 线段/矩形相交与 ≤0.25 m 采样交叉检查。提交 `feat(D-Q1): add raw data loader and exact DEM geometry`。
+1. **输入与几何**：原始附件、严格校验的 XLSX loader、TIF/MAT 一致性、PixelIsPoint 半像元处理、闭像元 supercover 遍历。投影直线反变换后逐边界求交，用独立 GeographicLib 条带时间区间交集与 ≤0.25 m 采样交叉检查；仿射直线的角点/沿边界用 slab 检查。提交 `feat(D-Q1): add raw data loader and exact DEM geometry`。
 2. **物理模型**：3/2 次幂航程、去程载货/返程空载且两次爬升、完整时间、端点检查与 Brent 安全载荷、二分交叉检查。提交 `feat(D-Q1): implement energy and safe-payload model`。
 3. **精确组批**：完整类型数量模式用于 DP，展开箱级模式用于独立二元 set partitioning MILP；分别核对 min N、固定 N min E、min T，并输出逐箱分配。两种排序 FFD 与同机型精确解比较。提交 `feat(D-Q1): implement exact batching optimization`。
 4. **多目标及敏感性**：局部完整 Pareto label DP 与全局卷积剪枝；5%–40% 的安全载荷网格；所有质量/体积可行模式的 rho 临界事件，包含阈值本身及两侧，输出严格阶梯与最优组批变化。提交 `feat(D-Q1): add Pareto and reserve sensitivity analysis`。
@@ -33,3 +33,12 @@
 输出用户要求的全部 results、五张 figures、五份 docs、可运行 CLI、依赖清单和测试。
 记录 45 个安全载荷、80 箱分配、Pareto 全部不同目标向量、临界事件及边界方向。
 完成后报告文件范围、提交 hashes、公式、基准数值、FFD 差距、MILP/DP 一致性、回归及证明边界。
+
+## 完成记录
+
+- 数据/几何、物理模型、精确组批、多目标/敏感性阶段均已分别提交。
+- 原始完整箱级MILP和对称压缩MILP各60个阶段；15区目标与DP一致。
+- 42项测试通过，七类指定负例均执行并检出；最终回归 MATCH。
+- 新目录从原始附件重算：27个数值文件与5幅图逐字节一致。
+- 45项安全载荷、80箱分配、全部目标向量、569个候选事件与阈值三侧验证已输出。
+- 无Q2/Q3/Q4导入、代码或发布结果修改；距离采用用户确认的AEQD口径。
