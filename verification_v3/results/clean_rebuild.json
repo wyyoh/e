@@ -1,0 +1,19 @@
+{
+  "entrypoint": "python code/run_all.py --solve --nodes 500",
+  "clean_run_started_without_results": true,
+  "started_with": "same published core code and normalized input snapshot",
+  "completed": true,
+  "verified_lower_bound_s": 5390.423694,
+  "verified_upper_bound_s": 5693.231489105107,
+  "gap_over_upper_bound": 0.05318733230584029,
+  "same_result_objects": 10,
+  "core_audit_failures": 0,
+  "reachable_tree_regions": 1001,
+  "binary_splits": 500,
+  "covering_certificates_repriced": 250,
+  "complete_pricing_calls": 750,
+  "published_core_source_blobs_compared": 7,
+  "all_published_source_blobs_equal_tested_local_source": true,
+  "core_source_commit": "4a1ac40a3cd7976f0478added0ca69c31a8816b2",
+  "limits": "This was not a remote git-clone integration test. It regenerated root and tree evidence from normalized inputs. Byte-identical outputs describe this execution only, not every platform. Full original optimality remains unproved."
+}
