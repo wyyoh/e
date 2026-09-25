@@ -1,0 +1,28 @@
+name: Materialize verified Q3 V6 runtime
+on:
+  push:
+    branches: [research/integrate-q3-bottleneck-v6]
+    paths: ['.q3-v6-import/READY']
+permissions:
+  contents: write
+jobs:
+  materialize:
+    if: github.repository == 'wyyoh/e'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/integrate-q3-bottleneck-v6
+          fetch-depth: 1
+      - name: Verify and materialize repository-local payload
+        run: python3 .q3-v6-import/materialize.py
+      - name: Verify materialized file hashes
+        run: python3 problems/D/q3/v6/run_v6.py check
+      - name: Commit expanded runtime to the integration branch only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add problems/D/q3/v6
+          git diff --cached --quiet || git commit -m 'build(Q3): materialize complete V6 runtime and published decisions'
+          git push origin HEAD:refs/heads/research/integrate-q3-bottleneck-v6
