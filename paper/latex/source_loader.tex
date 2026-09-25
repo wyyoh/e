@@ -1,0 +1,63 @@
+% Extract the frozen source without executing its original preamble.
+% main.tex invokes this loader only when the generated chapters are absent.
+\ExplSyntaxOn
+\cs_generate_variant:Nn \iow_open:Nn {Nx}
+\ior_new:N \l_review_source_ior
+\iow_new:N \l_review_chapter_iow
+\int_new:N \l_review_state_int
+\int_new:N \l_review_chapter_int
+\tl_new:N \l_review_line_tl
+\cs_new_protected:Npn \review_write_line:n #1
+  {
+    \tl_set:Nn \l_review_line_tl {#1}
+    % Source typographical error: a superscript must be in math mode.
+    \regex_replace_all:nnN { \\text \{ 体积：m\^3 \} }
+      { \\text\{体积：m\}\^3 } \l_review_line_tl
+    \iow_now:NV \l_review_chapter_iow \l_review_line_tl
+  }
+\ior_open:Nn \l_review_source_ior {source_main.tex}
+\ior_str_map_inline:Nn \l_review_source_ior
+  {
+    \int_case:nnF {\l_review_state_int}
+      {
+        {0}{
+          \regex_match:nnT { ^ \\begin \{abstract\} } {#1}
+            {
+              \iow_open:Nn \l_review_chapter_iow {chapters/00_abstract.tex}
+              \int_set:Nn \l_review_state_int {1}
+            }
+        }
+        {1}{
+          \regex_match:nnTF { ^ \\end \{abstract\} } {#1}
+            {\iow_close:N \l_review_chapter_iow \int_set:Nn \l_review_state_int {2}}
+            {\review_write_line:n {#1}}
+        }
+        {2}{
+          \regex_match:nnT { ^ \\section \{ } {#1}
+            {
+              \int_set:Nn \l_review_chapter_int {1}
+              \iow_open:Nn \l_review_chapter_iow {chapters/01.tex}
+              \review_write_line:n {#1}
+              \int_set:Nn \l_review_state_int {3}
+            }
+        }
+        {3}{
+          \regex_match:nnTF { ^ \\end \{document\} } {#1}
+            {\iow_close:N \l_review_chapter_iow \int_set:Nn \l_review_state_int {4}}
+            {
+              \regex_match:nnT { ^ \\section \{ } {#1}
+                {
+                  \iow_close:N \l_review_chapter_iow
+                  \int_incr:N \l_review_chapter_int
+                  \iow_open:Nx \l_review_chapter_iow
+                    {chapters/0\int_use:N\l_review_chapter_int.tex}
+                }
+              \review_write_line:n {#1}
+            }
+        }
+      }{}
+  }
+\ior_close:N \l_review_source_ior
+\int_compare:nNnF {\l_review_chapter_int} = {9}
+  {\PackageError{template-review}{Expected~nine~source~chapters}{Check~source_main.tex.}}
+\ExplSyntaxOff

@@ -1,0 +1,57 @@
+% Layout-only compatibility fixes; numerical results and scientific claims
+% remain those of the frozen manuscript. Original missing-figure placeholders
+% are deliberately preserved, not replaced with template sample graphics.
+\setlength{\emergencystretch}{2em}
+\setlength{\parskip}{0pt}
+\raggedbottom
+\newcommand{\figplaceholder}[2][5.2cm]{%
+  \begin{figure}[H]\centering
+    \fbox{\parbox[c][#1][c]{0.92\textwidth}{\centering #2}}
+  \end{figure}}
+% Keep long original displays inside the template's text block.
+\long\def\[#1\]{%
+  \begin{equation*}
+    \begin{adjustbox}{max width=.98\linewidth}
+      $\displaystyle #1$
+    \end{adjustbox}
+  \end{equation*}}
+% Ordinary tables may be shrunk, but multipage longtables must remain breakable.
+\BeforeBeginEnvironment{tabular}{\begin{adjustbox}{max width=\linewidth}}
+\AfterEndEnvironment{tabular}{\end{adjustbox}}
+\AtBeginEnvironment{longtable}{\small\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.14}}
+% Break long SHA-256 strings without modifying their contents.
+\let\ReviewOriginalTexttt\texttt
+\ExplSyntaxOn
+\RenewDocumentCommand\texttt{m}{%
+  \regex_match:nnTF {\A [0-9a-f]{64} \Z} {#1}
+    {\ReviewOriginalTexttt{\seqsplit{#1}}}
+    {\ReviewOriginalTexttt{#1}}}
+\ExplSyntaxOff
+\apptocmd{\appendix}{%
+  \renewcommand{\thesection}{附录~\Alph{section}}
+  \renewcommand{\thesubsection}{\Alph{section}.\arabic{subsection}}
+  \renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
+}{}{}
+% Review builds alone can show explicitly labelled unavailable local PNGs.
+% main.tex is strict: missing original graphics produce a compilation error.
+\ifdefined\ReviewAllowMissingGraphics
+  \let\ReviewOriginalIncludegraphics\includegraphics
+  \RenewDocumentCommand\includegraphics{O{} m}{%
+    \IfFileExists{figures/#2}{\ReviewOriginalIncludegraphics[#1]{#2}}{%
+      \IfFileExists{../../problems/D/q1/figures/#2}{\ReviewOriginalIncludegraphics[#1]{#2}}{%
+        \PackageWarning{template-review}{Original PNG unavailable locally: #2}%
+        \fbox{\parbox[c][5.2cm][c]{.90\linewidth}{\centering
+          \textbf{检阅稿：原始图片未载入}\par\medskip
+          \texttt{\detokenize{#2}}\par\medskip
+          原图保存在 GitHub 分支中。\par
+          当前编译环境未能下载该 PNG；此框不是论文结果图。}}%
+      }%
+    }%
+  }
+\fi
+
+% Keep the complete reference list together without deleting entries.
+\AtBeginEnvironment{thebibliography}{\small\linespread{1.18}\selectfont}
+% The only itemize in the source is the appendix's final evidence checklist.
+% Keep this audit list compact so its concluding paragraph is not orphaned.
+\AtBeginEnvironment{itemize}{\small\linespread{1.20}\selectfont}
