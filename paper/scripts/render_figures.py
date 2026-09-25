@@ -60,7 +60,7 @@ def main(out: Path) -> None:
     ax.legend(loc='upper center', bbox_to_anchor=(.5, -.085), ncol=3, frameon=False, fontsize=8)
     export(fig, 'F01_pricing_paired_speedup')
 
-    # F2: preserve paired seeds and duplicate uniform/feasible values.
+    # F2: historical pre-V6 proxy experiment; not a current V6 robustness figure.
     q = data['q3_sampling']
     methods = ['uniform', 'feasible', 'informed']
     fig, ax = plt.subplots(figsize=(6.30, 3.75))
@@ -73,10 +73,10 @@ def main(out: Path) -> None:
     ax.set_xlim(-.15, 2.40)
     ax.set_ylim(.40, .60)
     ax.set_xticks(range(3), ['均匀采样', '必要条件筛选', '关键点引导'])
-    ax.set_ylabel('静态轨迹样本评分（dB）')
+    ax.set_ylabel('历史静态轨迹样本评分（dB）')
     ax.spines[['top', 'right']].set_visible(False)
     ax.legend(loc='upper center', bbox_to_anchor=(.5, -.15), ncol=5, frameon=False, fontsize=7.5, title='配对随机种子', title_fontsize=8)
-    export(fig, 'F02_q3_paired_proxy_scores')
+    export(fig, 'F02_q3_historical_proxy_scores')
 
     # F3: a deterministic optimization interval, explicitly not a confidence band.
     b = data['q2_bounds']; lo = b['lb_s']/60; hi = b['ub_s']/60

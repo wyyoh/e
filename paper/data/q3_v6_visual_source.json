@@ -1,0 +1,35 @@
+{
+  "version":"Q3-V6-VISUAL-SOURCE-1",
+  "source":"problems/D/q3/release_v6/time",
+  "primary":{
+    "joint_makespan_s":5836.969929328251,
+    "transport_energy_kwh":66.25127994199477,
+    "relay_energy_kwh":2.688136268186355,
+    "total_energy_kwh":68.93941621018112,
+    "transport_sorties":23,
+    "relay_sorties":4,
+    "min_hard_slack_s":360.86693760394974,
+    "min_transport_soc":0.2009738280072748,
+    "validation_checks":17756,
+    "independent_points":36672
+  },
+  "alternatives":{
+    "energy":{"makespan_s":5911.5481346609085,"energy_kwh":68.73579123708348,"extra_loss_db":0.0},
+    "robust025":{"makespan_s":5866.140526535532,"energy_kwh":69.03175130785294,"extra_loss_db":0.25},
+    "q4_tradeoff":{"makespan_s":5866.140526535532,"energy_kwh":68.9754972006408,"extra_loss_db":0.0}
+  },
+  "relays":[
+    {"id":"Q3-R-01","lon":109.20100273230365,"lat":23.0337027093412,"agl_m":300.0},
+    {"id":"Q3-R-02","lon":109.26830909379996,"lat":23.01474079797837,"agl_m":275.0},
+    {"id":"Q3-R-03","lon":109.21134265042933,"lat":23.020247892872725,"agl_m":300.0},
+    {"id":"Q3-R-04","lon":109.23767732182206,"lat":23.059302674654138,"agl_m":300.0}
+  ],
+  "q4_strict":{
+    "inventory":[4,2,2,6,4,4,2,6],
+    "pooled":[4,2,2,6,4,4,2,3],
+    "K2_need":[4,2,3,6,4,4,2,3],
+    "K2_gap":[0,0,1,0,0,0,0,0],
+    "K3_need":[5,2,5,7,4,6,2,3],
+    "K3_gap":[1,0,3,1,0,2,0,0]
+  }
+}

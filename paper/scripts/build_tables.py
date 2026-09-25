@@ -30,8 +30,8 @@ def main(out: Path):
     for key,name in [('uniform','均匀采样'),('feasible','必要条件筛选'),('informed','关键点引导')]:
       vals=[x['sample_best_extra_db'] for x in q if x['method']==key]
       rows.append([name,f'{max(vals):.6f}',f'{statistics.median(vals):.6f}',f'{min(vals):.6f}',f'{sum(v>=.5 for v in vals)}/5'])
-    tables.append({'title':'表2　同预算采样的静态代理评分','headers':['方法','最好 / dB','中位 / dB','最差 / dB','达0.5 dB'], 'rows':rows,
-      'note':'注：5个配对随机种子，每方法每种子192次候选评估。评分来自697个轨迹样本点，假设中继始终在线；不等于连续通信或联合调度保证。必要条件筛选未排除提案。最佳新增候选未产生可接纳的完整联合方案，不能把0.573414 dB写成新的可行裕度。',
+    tables.append({'title':'表2　历史Q3同预算采样的静态代理评分','headers':['方法','最好 / dB','中位 / dB','最差 / dB','达0.5 dB'], 'rows':rows,
+      'note':'注：这是pre-V6历史筛查实验。5个配对随机种子，每方法每种子192次候选评估；评分假设中继始终在线，不等于连续通信或联合调度保证，更不能作为V6通信裕度。',
       'widths':[42,29,29,29,31]})
     r=data['q4']; rows=[]
     for i,name in enumerate(r['resource_names']):

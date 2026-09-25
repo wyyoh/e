@@ -1,1 +1,412 @@
-{"version":"PAPER-VISUAL-DATA-V1","source_main":"c3ae26996c0e71cda066533b7ec33e9e142e3b9a","source_experiment":"64ec4029095f7200dad73e014f2569d97b12a5da","provenance":{"experiment_archive":"D题_三项算法验证_代码输入与完整证据.zip","experiment_archive_sha256":"5dc3b6d90d7e15386b9cd76c0f074b04f7e579de82b90e0d8252484b07fe08a1","pricing":"threeway_assistant_20260925/results/pricing_benchmark.json","sampling":"threeway_assistant_20260925/results/q3_sampling_records.json","bounds":"paper_integration/FINAL_SELECTION.json@c3ae26996c0e71cda066533b7ec33e9e142e3b9a","q4":"Q4-EXACT-V1, frozen Q3-FINAL-V1/time, strict; numbers match source report resource comparison"},"pricing":[{"case":0,"node":3,"type":"A","baseline_labels":3745,"accelerated_labels":2046,"baseline_median_s":0.004343840000046839,"accelerated_median_s":0.004171285999973406,"technical_repeats_per_method":3},{"case":1,"node":3,"type":"B","baseline_labels":12743,"accelerated_labels":7101,"baseline_median_s":0.00916312999999036,"accelerated_median_s":0.006068136000010327,"technical_repeats_per_method":3},{"case":2,"node":3,"type":"C","baseline_labels":941785,"accelerated_labels":305226,"baseline_median_s":1.0691821400000094,"accelerated_median_s":0.3544975589999808,"technical_repeats_per_method":3},{"case":3,"node":275,"type":"A","baseline_labels":8896,"accelerated_labels":7828,"baseline_median_s":0.007000199999993129,"accelerated_median_s":0.006019394000020384,"technical_repeats_per_method":3},{"case":4,"node":275,"type":"B","baseline_labels":27455,"accelerated_labels":23609,"baseline_median_s":0.023142978999999286,"accelerated_median_s":0.01411491900000783,"technical_repeats_per_method":3},{"case":5,"node":275,"type":"C","baseline_labels":377708,"accelerated_labels":125510,"baseline_median_s":0.32972085500000503,"accelerated_median_s":0.14513833800003795,"technical_repeats_per_method":3},{"case":6,"node":546,"type":"A","baseline_labels":3720,"accelerated_labels":1666,"baseline_median_s":0.004389441000000716,"accelerated_median_s":0.004215845000032914,"technical_repeats_per_method":3},{"case":7,"node":546,"type":"B","baseline_labels":5634,"accelerated_labels":961,"baseline_median_s":0.005200110999965091,"accelerated_median_s":0.0047229639999955,"technical_repeats_per_method":3},{"case":8,"node":546,"type":"C","baseline_labels":1969120,"accelerated_labels":716486,"baseline_median_s":2.857434694999995,"accelerated_median_s":0.7134678570000119,"technical_repeats_per_method":3},{"case":9,"node":815,"type":"A","baseline_labels":9274,"accelerated_labels":7911,"baseline_median_s":0.007329434000041601,"accelerated_median_s":0.005704508000007991,"technical_repeats_per_method":3},{"case":10,"node":815,"type":"B","baseline_labels":27791,"accelerated_labels":23071,"baseline_median_s":0.023114163999991888,"accelerated_median_s":0.013802853000015602,"technical_repeats_per_method":3},{"case":11,"node":815,"type":"C","baseline_labels":443427,"accelerated_labels":143836,"baseline_median_s":0.3653311400000234,"accelerated_median_s":0.15711597600000005,"technical_repeats_per_method":3},{"case":12,"node":1085,"type":"A","baseline_labels":7783,"accelerated_labels":6422,"baseline_median_s":0.006638672000008228,"accelerated_median_s":0.0049560300000166535,"technical_repeats_per_method":3},{"case":13,"node":1085,"type":"B","baseline_labels":27826,"accelerated_labels":22583,"baseline_median_s":0.022315866000042206,"accelerated_median_s":0.013559462999978678,"technical_repeats_per_method":3},{"case":14,"node":1085,"type":"C","baseline_labels":619816,"accelerated_labels":216171,"baseline_median_s":0.46166867499999853,"accelerated_median_s":0.17296695999999656,"technical_repeats_per_method":3},{"case":15,"node":1089,"type":"A","baseline_labels":8238,"accelerated_labels":7874,"baseline_median_s":0.006047028000011778,"accelerated_median_s":0.005289326999957211,"technical_repeats_per_method":3},{"case":16,"node":1089,"type":"B","baseline_labels":24442,"accelerated_labels":22520,"baseline_median_s":0.01567177999999103,"accelerated_median_s":0.013770632999978716,"technical_repeats_per_method":3},{"case":17,"node":1089,"type":"C","baseline_labels":321234,"accelerated_labels":170622,"baseline_median_s":0.22028984199999968,"accelerated_median_s":0.12345169200000328,"technical_repeats_per_method":3},{"case":18,"node":1353,"type":"A","baseline_labels":1773,"accelerated_labels":841,"baseline_median_s":0.004458322000004955,"accelerated_median_s":0.003912419000016598,"technical_repeats_per_method":3},{"case":19,"node":1353,"type":"B","baseline_labels":2762,"accelerated_labels":735,"baseline_median_s":0.004002581999998256,"accelerated_median_s":0.005124783999974625,"technical_repeats_per_method":3},{"case":20,"node":1353,"type":"C","baseline_labels":405082,"accelerated_labels":183793,"baseline_median_s":0.43748560000000225,"accelerated_median_s":0.1620248290000177,"technical_repeats_per_method":3},{"case":21,"node":1618,"type":"A","baseline_labels":2210,"accelerated_labels":705,"baseline_median_s":0.003439771000046221,"accelerated_median_s":0.004268276000004789,"technical_repeats_per_method":3},{"case":22,"node":1618,"type":"B","baseline_labels":3592,"accelerated_labels":692,"baseline_median_s":0.006405355000026702,"accelerated_median_s":0.003785860999983015,"technical_repeats_per_method":3},{"case":23,"node":1618,"type":"C","baseline_labels":450926,"accelerated_labels":62966,"baseline_median_s":0.4293231870000227,"accelerated_median_s":0.08443120800001225,"technical_repeats_per_method":3}],"q3_sampling":[{"seed":92550,"method":"uniform","rf_evaluations":192,"sample_best_extra_db":0.5063007650277083},{"seed":92550,"method":"feasible","rf_evaluations":192,"sample_best_extra_db":0.5063007650277083},{"seed":92550,"method":"informed","rf_evaluations":192,"sample_best_extra_db":0.5645534418789993},{"seed":92551,"method":"uniform","rf_evaluations":192,"sample_best_extra_db":0.5248783050448154},{"seed":92551,"method":"feasible","rf_evaluations":192,"sample_best_extra_db":0.5248783050448154},{"seed":92551,"method":"informed","rf_evaluations":192,"sample_best_extra_db":0.550737910279004},{"seed":92552,"method":"uniform","rf_evaluations":192,"sample_best_extra_db":0.5372883026723212},{"seed":92552,"method":"feasible","rf_evaluations":192,"sample_best_extra_db":0.5372883026723212},{"seed":92552,"method":"informed","rf_evaluations":192,"sample_best_extra_db":0.5734136412978899},{"seed":92553,"method":"uniform","rf_evaluations":192,"sample_best_extra_db":0.5295858481625899},{"seed":92553,"method":"feasible","rf_evaluations":192,"sample_best_extra_db":0.5295858481625899},{"seed":92553,"method":"informed","rf_evaluations":192,"sample_best_extra_db":0.5378706407375056},{"seed":92554,"method":"uniform","rf_evaluations":192,"sample_best_extra_db":0.43364780896},{"seed":92554,"method":"feasible","rf_evaluations":192,"sample_best_extra_db":0.43364780896},{"seed":92554,"method":"informed","rf_evaluations":192,"sample_best_extra_db":0.5557718689792139}],"q2_bounds":{"lb_s":5433.956428,"ub_s":5693.23149,"type":"certified deterministic bound interval, not a confidence interval","global_optimal":false},"q4":{"resource_names":["A型运输机","B型运输机","C型运输机","A型电池","B型电池","C型电池","中继机","中继能源组件"],"inventory":[4,2,2,6,4,4,2,6],"pooled":[4,2,2,6,4,4,2,3],"strict_2":[4,2,3,6,4,5,2,3],"strict_3":[5,2,5,7,4,6,2,3],"scope":"strict main scenario, resources not interchangeable, count not cost"},"scope_notes":["Historical measurements replayed from evidence; no fresh algorithm benchmark in this release.","Timing replicates per case are technical repeats; 24 cases are 8 nodes by 3 types, not 24 independent scenarios.","All candidate score points assume always-online relays; not continuous feasible margins. Five paired random seeds, not 15 independent instances.","No new accepted Q2 or Q3 plan."]}
+{
+  "version": "PAPER-VISUAL-DATA-V2-Q3-V6",
+  "source_experiment": "64ec4029095f7200dad73e014f2569d97b12a5da",
+  "provenance": {
+    "experiment_archive": "D题_三项算法验证_代码输入与完整证据.zip",
+    "experiment_archive_sha256": "5dc3b6d90d7e15386b9cd76c0f074b04f7e579de82b90e0d8252484b07fe08a1",
+    "pricing": "threeway_assistant_20260925/results/pricing_benchmark.json",
+    "sampling": "threeway_assistant_20260925/results/q3_sampling_records.json",
+    "bounds": "paper_integration/FINAL_SELECTION.json",
+    "q4": "Q4-STRICT-FROM-Q3-V6, frozen Q3-BOTTLENECK-V6/time, strict"
+  },
+  "pricing": [
+    {
+      "case": 0,
+      "node": 3,
+      "type": "A",
+      "baseline_labels": 3745,
+      "accelerated_labels": 2046,
+      "baseline_median_s": 0.004343840000046839,
+      "accelerated_median_s": 0.004171285999973406,
+      "technical_repeats_per_method": 3
+    },
+    {
+      "case": 1,
+      "node": 3,
+      "type": "B",
+      "baseline_labels": 12743,
+      "accelerated_labels": 7101,
+      "baseline_median_s": 0.00916312999999036,
+      "accelerated_median_s": 0.006068136000010327,
+      "technical_repeats_per_method": 3
+    },
+    {
+      "case": 2,
+      "node": 3,
+      "type": "C",
+      "baseline_labels": 941785,
+      "accelerated_labels": 305226,
+      "baseline_median_s": 1.0691821400000094,
+      "accelerated_median_s": 0.3544975589999808,
+      "technical_repeats_per_method": 3
+    },
+    {
+      "case": 3,
+      "node": 275,
+      "type": "A",
+      "baseline_labels": 8896,
+      "accelerated_labels": 7828,
+      "baseline_median_s": 0.007000199999993129,
+      "accelerated_median_s": 0.006019394000020384,
+      "technical_repeats_per_method": 3
+    },
+    {
+      "case": 4,
+      "node": 275,
+      "type": "B",
+      "baseline_labels": 27455,
+      "accelerated_labels": 23609,
+      "baseline_median_s": 0.023142978999999286,
+      "accelerated_median_s": 0.01411491900000783,
+      "technical_repeats_per_method": 3
+    },
+    {
+      "case": 5,
+      "node": 275,
+      "type": "C",
+      "baseline_labels": 377708,
+      "accelerated_labels": 125510,
+      "baseline_median_s": 0.32972085500000503,
+      "accelerated_median_s": 0.14513833800003795,
+      "technical_repeats_per_method": 3
+    },
+    {
+      "case": 6,
+      "node": 546,
+      "type": "A",
+      "baseline_labels": 3720,
+      "accelerated_labels": 1666,
+      "baseline_median_s": 0.004389441000000716,
+      "accelerated_median_s": 0.004215845000032914,
+      "technical_repeats_per_method": 3
+    },
+    {
+      "case": 7,
+      "node": 546,
+      "type": "B",
+      "baseline_labels": 5634,
+      "accelerated_labels": 961,
+      "baseline_median_s": 0.005200110999965091,
+      "accelerated_median_s": 0.0047229639999955,
+      "technical_repeats_per_method": 3
+    },
+    {
+      "case": 8,
+      "node": 546,
+      "type": "C",
+      "baseline_labels": 1969120,
+      "accelerated_labels": 716486,
+      "baseline_median_s": 2.857434694999995,
+      "accelerated_median_s": 0.7134678570000119,
+      "technical_repeats_per_method": 3
+    },
+    {
+      "case": 9,
+      "node": 815,
+      "type": "A",
+      "baseline_labels": 9274,
+      "accelerated_labels": 7911,
+      "baseline_median_s": 0.007329434000041601,
+      "accelerated_median_s": 0.005704508000007991,
+      "technical_repeats_per_method": 3
+    },
+    {
+      "case": 10,
+      "node": 815,
+      "type": "B",
+      "baseline_labels": 27791,
+      "accelerated_labels": 23071,
+      "baseline_median_s": 0.023114163999991888,
+      "accelerated_median_s": 0.013802853000015602,
+      "technical_repeats_per_method": 3
+    },
+    {
+      "case": 11,
+      "node": 815,
+      "type": "C",
+      "baseline_labels": 443427,
+      "accelerated_labels": 143836,
+      "baseline_median_s": 0.3653311400000234,
+      "accelerated_median_s": 0.15711597600000005,
+      "technical_repeats_per_method": 3
+    },
+    {
+      "case": 12,
+      "node": 1085,
+      "type": "A",
+      "baseline_labels": 7783,
+      "accelerated_labels": 6422,
+      "baseline_median_s": 0.006638672000008228,
+      "accelerated_median_s": 0.0049560300000166535,
+      "technical_repeats_per_method": 3
+    },
+    {
+      "case": 13,
+      "node": 1085,
+      "type": "B",
+      "baseline_labels": 27826,
+      "accelerated_labels": 22583,
+      "baseline_median_s": 0.022315866000042206,
+      "accelerated_median_s": 0.013559462999978678,
+      "technical_repeats_per_method": 3
+    },
+    {
+      "case": 14,
+      "node": 1085,
+      "type": "C",
+      "baseline_labels": 619816,
+      "accelerated_labels": 216171,
+      "baseline_median_s": 0.46166867499999853,
+      "accelerated_median_s": 0.17296695999999656,
+      "technical_repeats_per_method": 3
+    },
+    {
+      "case": 15,
+      "node": 1089,
+      "type": "A",
+      "baseline_labels": 8238,
+      "accelerated_labels": 7874,
+      "baseline_median_s": 0.006047028000011778,
+      "accelerated_median_s": 0.005289326999957211,
+      "technical_repeats_per_method": 3
+    },
+    {
+      "case": 16,
+      "node": 1089,
+      "type": "B",
+      "baseline_labels": 24442,
+      "accelerated_labels": 22520,
+      "baseline_median_s": 0.01567177999999103,
+      "accelerated_median_s": 0.013770632999978716,
+      "technical_repeats_per_method": 3
+    },
+    {
+      "case": 17,
+      "node": 1089,
+      "type": "C",
+      "baseline_labels": 321234,
+      "accelerated_labels": 170622,
+      "baseline_median_s": 0.22028984199999968,
+      "accelerated_median_s": 0.12345169200000328,
+      "technical_repeats_per_method": 3
+    },
+    {
+      "case": 18,
+      "node": 1353,
+      "type": "A",
+      "baseline_labels": 1773,
+      "accelerated_labels": 841,
+      "baseline_median_s": 0.004458322000004955,
+      "accelerated_median_s": 0.003912419000016598,
+      "technical_repeats_per_method": 3
+    },
+    {
+      "case": 19,
+      "node": 1353,
+      "type": "B",
+      "baseline_labels": 2762,
+      "accelerated_labels": 735,
+      "baseline_median_s": 0.004002581999998256,
+      "accelerated_median_s": 0.005124783999974625,
+      "technical_repeats_per_method": 3
+    },
+    {
+      "case": 20,
+      "node": 1353,
+      "type": "C",
+      "baseline_labels": 405082,
+      "accelerated_labels": 183793,
+      "baseline_median_s": 0.43748560000000225,
+      "accelerated_median_s": 0.1620248290000177,
+      "technical_repeats_per_method": 3
+    },
+    {
+      "case": 21,
+      "node": 1618,
+      "type": "A",
+      "baseline_labels": 2210,
+      "accelerated_labels": 705,
+      "baseline_median_s": 0.003439771000046221,
+      "accelerated_median_s": 0.004268276000004789,
+      "technical_repeats_per_method": 3
+    },
+    {
+      "case": 22,
+      "node": 1618,
+      "type": "B",
+      "baseline_labels": 3592,
+      "accelerated_labels": 692,
+      "baseline_median_s": 0.006405355000026702,
+      "accelerated_median_s": 0.003785860999983015,
+      "technical_repeats_per_method": 3
+    },
+    {
+      "case": 23,
+      "node": 1618,
+      "type": "C",
+      "baseline_labels": 450926,
+      "accelerated_labels": 62966,
+      "baseline_median_s": 0.4293231870000227,
+      "accelerated_median_s": 0.08443120800001225,
+      "technical_repeats_per_method": 3
+    }
+  ],
+  "q3_sampling": [
+    {
+      "seed": 92550,
+      "method": "uniform",
+      "rf_evaluations": 192,
+      "sample_best_extra_db": 0.5063007650277083
+    },
+    {
+      "seed": 92550,
+      "method": "feasible",
+      "rf_evaluations": 192,
+      "sample_best_extra_db": 0.5063007650277083
+    },
+    {
+      "seed": 92550,
+      "method": "informed",
+      "rf_evaluations": 192,
+      "sample_best_extra_db": 0.5645534418789993
+    },
+    {
+      "seed": 92551,
+      "method": "uniform",
+      "rf_evaluations": 192,
+      "sample_best_extra_db": 0.5248783050448154
+    },
+    {
+      "seed": 92551,
+      "method": "feasible",
+      "rf_evaluations": 192,
+      "sample_best_extra_db": 0.5248783050448154
+    },
+    {
+      "seed": 92551,
+      "method": "informed",
+      "rf_evaluations": 192,
+      "sample_best_extra_db": 0.550737910279004
+    },
+    {
+      "seed": 92552,
+      "method": "uniform",
+      "rf_evaluations": 192,
+      "sample_best_extra_db": 0.5372883026723212
+    },
+    {
+      "seed": 92552,
+      "method": "feasible",
+      "rf_evaluations": 192,
+      "sample_best_extra_db": 0.5372883026723212
+    },
+    {
+      "seed": 92552,
+      "method": "informed",
+      "rf_evaluations": 192,
+      "sample_best_extra_db": 0.5734136412978899
+    },
+    {
+      "seed": 92553,
+      "method": "uniform",
+      "rf_evaluations": 192,
+      "sample_best_extra_db": 0.5295858481625899
+    },
+    {
+      "seed": 92553,
+      "method": "feasible",
+      "rf_evaluations": 192,
+      "sample_best_extra_db": 0.5295858481625899
+    },
+    {
+      "seed": 92553,
+      "method": "informed",
+      "rf_evaluations": 192,
+      "sample_best_extra_db": 0.5378706407375056
+    },
+    {
+      "seed": 92554,
+      "method": "uniform",
+      "rf_evaluations": 192,
+      "sample_best_extra_db": 0.43364780896
+    },
+    {
+      "seed": 92554,
+      "method": "feasible",
+      "rf_evaluations": 192,
+      "sample_best_extra_db": 0.43364780896
+    },
+    {
+      "seed": 92554,
+      "method": "informed",
+      "rf_evaluations": 192,
+      "sample_best_extra_db": 0.5557718689792139
+    }
+  ],
+  "q2_bounds": {
+    "lb_s": 5433.956428,
+    "ub_s": 5693.23149,
+    "type": "certified deterministic bound interval, not a confidence interval",
+    "global_optimal": false
+  },
+  "q4": {
+    "resource_names": [
+      "A型运输机",
+      "B型运输机",
+      "C型运输机",
+      "A型电池",
+      "B型电池",
+      "C型电池",
+      "中继机",
+      "中继能源组件"
+    ],
+    "inventory": [
+      4,
+      2,
+      2,
+      6,
+      4,
+      4,
+      2,
+      6
+    ],
+    "pooled": [
+      4,
+      2,
+      2,
+      6,
+      4,
+      4,
+      2,
+      3
+    ],
+    "strict_2": [
+      4,
+      2,
+      3,
+      6,
+      4,
+      4,
+      2,
+      3
+    ],
+    "strict_3": [
+      5,
+      2,
+      5,
+      7,
+      4,
+      6,
+      2,
+      3
+    ],
+    "scope": "current strict Q4 inherited from Q3-BOTTLENECK-V6/time; resources not interchangeable; count not cost"
+  },
+  "scope_notes": [
+    "pricing and q3_sampling arrays are historical algorithm experiments retained for comparison; they are not current Q3 V6 guarantees.",
+    "Timing replicates per pricing case are technical repeats, not independent rescue scenarios.",
+    "The old informed-sampling extra-dB scores are screening proxies and must not be quoted as V6 continuous-feasibility margins.",
+    "Current Q2 bounds and Q4 resource vectors are synchronized to FINAL_SELECTION.",
+    "Current Q3 V6 figures should use paper/data/q3_v6_visual_source.json."
+  ]
+}

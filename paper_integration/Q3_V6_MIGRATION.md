@@ -1,13 +1,11 @@
-# Q3 V6 main integration and migration note
+# Q3 V6 migration note
 
-Main selection is advanced to **Q3-BOTTLENECK-V6 / time**. The primary result is `5836.969929328251 s`, `68.93941621018112 kWh`, with 23 transport and 4 relay sorties. The physical model is **Q3-HOVER-COMPATIBLE-V5**.
+当前正式选择已经推进到 **Q3-BOTTLENECK-V6 / time**：5836.969929328251 s、68.93941621018112 kWh、23运输+4中继。物理模型为 **Q3-HOVER-COMPATIBLE-V5**。
 
-Q1 and Q2 are unchanged. Strict Q4 is recomputed from the V6 time calendar: K=2 shortage 1, K=3 shortage 7. Old Q4 relay-copy/N-1/Pareto sensitivity results remain historical and were not recomputed for V6.
+Q1/Q2不变。Q4 strict已从V6/time日程重新计算：K=2缺口1，K=3缺口7。旧Q4 relay-copy/N-1/Pareto敏感性仍为历史结果。
 
-The prior Q3 `release_final/` remains in the repository as historical evidence. The authoritative current machine-readable selector is `paper_integration/FINAL_SELECTION.json`.
+旧Q3 `release_final/` 保留作审计；当前入口为 `problems/D/q3/release_v6/time/`。完整运行包 `q3_bottleneck_v6_full.zip` 的SHA-256为 `f8efc0cb0859fe0bd39f0f23f1a18e824d3848873344ef3e7a93b11a93b257bf`，未作为36MB二进制提交。
 
-The complete runtime archive `q3_bottleneck_v6_full.zip` was independently validated with SHA-256 `f8efc0cb0859fe0bd39f0f23f1a18e824d3848873344ef3e7a93b11a93b257bf`, but this connector-based main update does **not** upload the 36 MB binary archive. The primary decision, schedule summaries, relay/flight/delivery records, validation summaries and strict Q4 handoff are expanded in the repository.
+后续仓库清理已经同步更新 `paper/latex/main.tex`、`appendices.tex`、论文数据源和README。因此旧“论文尚未同步”的迁移备注不再适用。
 
-Old finite-domain four-relay lower bounds and old +0.50/+0.55 dB robustness claims do not transfer to V6. The V6 primary is nominal (0 dB extra loss); +0.25 dB belongs only to the separately documented robust candidate.
-
-Manuscript prose/figures are not mechanically rewritten by this integration. Any old Q3/Q4 numbers in the LaTeX draft require a consistency pass before final submission.
+旧有限域四中继下界和旧+0.50/+0.55 dB鲁棒结论不转移到V6。V6主方案为名义0 dB；+0.25 dB只属于单独的robust025候选。

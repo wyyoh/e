@@ -1,8 +1,9 @@
-# D题最终复现入口
+# D题当前复现入口
 
-- `q1/`：单点往返运输能力与箱组批精确模型。
-- `q2/`：最终证据增强与外部结果复核；主可行解仍引用仓库根目录 `q2_final/`。
-- `q3/`：连续通信约束下的运输—中继联合调度正式封口版。
-- `q4/`：冻结Q3后的精确分区、资源配置与敏感性。
+- `q1/`：Q1单点往返能力与精确组批。
+- `q2/`：Q2 V7正式证明与外部方案审计；primal在仓库根目录 `q2_final/`。
+- `q3/`：Q3当前 `Q3-BOTTLENECK-V6/time` 及历史release。
+- `q4/`：冻结Q3 V6/time后的strict分区与资源配置；旧V2敏感性为历史。
 
-全题选择锁见 `/paper_integration/FINAL_SELECTION.json`。
+全题机器可读选择锁：`/paper_integration/FINAL_SELECTION.json`。
+历史Q2研究材料统一归档在 `/archive/q2/`。
