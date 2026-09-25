@@ -5,8 +5,10 @@
 \usepackage{amsmath,amssymb}
 \usepackage{booktabs,longtable,array}
 \usepackage{graphicx,float}
-\graphicspath{{../../problems/D/q1/figures/}{../../q2_closing/figures/}{problems/D/q1/figures/}{q2_closing/figures/}}
+\graphicspath{{../../problems/D/q1/figures/}{problems/D/q1/figures/}}
 \usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,fit,patterns,shapes.geometric}
 \usepackage{enumitem}
 \usepackage{caption}
 \usepackage{subcaption}
@@ -30,6 +32,8 @@
 \large 当前整合草稿（第1--9章）}
 \author{}
 \date{基于 main@95c2b4a24409fbce6c216b45ed02c69a7612634c 的冻结结果口径}
+
+\input{q2_v7_figures}
 
 \begin{document}
 
@@ -905,7 +909,12 @@ Q1中一个运输任务只要自身满足物理约束即可视为可行；Q2中�
 
 Q2需要同时决定货箱组批、访问路线、机型、实体飞机、电池以及任务开始时刻。
 
-\figplaceholder{图5-1占位：Q2从运输任务构造到飞机--电池双资源联合排程及上下界认证的整体框架。}
+\begin{figure}[H]
+  \centering
+  \resizebox{0.95\textwidth}{!}{\QTwoFigFramework}
+  \caption{问题二从运输任务构造到飞机--电池联合调度及上下界认证的整体框架。可行上界路线负责构造真实可执行时间表，下界路线负责量化当前方案距离理论最优的确定性区间。}
+  \label{fig:q2_framework_v7}
+\end{figure}
 
 \subsection{运输任务与双资源占用}
 
@@ -928,7 +937,12 @@ I_r^B=[s_r,s_r+p_r+c_r).
 \boxed{I_r^U\neq I_r^B}.
 \]
 
-\figplaceholder{图5-2占位：单个运输任务对实体无人机与共享电池的不同占用区间。}
+\begin{figure}[H]
+  \centering
+  \resizebox{0.88\textwidth}{!}{\QTwoFigOccupancy}
+  \caption{单个运输任务对实体无人机和共享电池的不同占用区间。运输无人机返航后即可释放，而原电池仍需继续占用至充电恢复完成。}
+  \label{fig:q2_resource_occupancy_v7}
+\end{figure}
 
 \subsection{箱级时限与词典序目标}
 
@@ -956,7 +970,12 @@ Q2采用词典序目标：
 
 完整组合空间同时具有组批、路线、机型和排程耦合，其资源占用与并行调度结构可由经典调度框架刻画\cite{pinedo2016scheduling}。因此采用“高质量可行上界+全局有效下界”的双路线：上界侧通过问题特定的破坏--修复、完整物理重建和事件排程寻找真实可执行方案；下界侧通过任务列松弛、完整定价和互补分支构造证书。大规模列式整数规划中的列生成与branch-and-price思想参见\cite{barnhart1998branchprice}。
 
-\figplaceholder{图5-3占位：Q2高质量上界搜索、精确事件排程与下界认证的双路线框架。}
+\begin{figure}[H]
+  \centering
+  \resizebox{0.88\textwidth}{!}{\QTwoFigUpperSearch}
+  \caption{问题二高质量可行上界搜索与完整资源重放闭环。候选方案只有通过真实飞机、电池、充电恢复和箱级时限重放后，才进入正式可行上界。}
+  \label{fig:q2_upper_search_v7}
+\end{figure}
 
 \subsection{23架次正式主方案}
 
@@ -1010,20 +1029,16 @@ A/B/C架次 & 11/6/6\\
 
 \begin{figure}[H]
   \centering
-  \begin{subfigure}[t]{0.98\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{aircraft_gantt.png}
-    \caption{实体运输无人机时间表}
-  \end{subfigure}
+  \resizebox{0.86\textwidth}{!}{\QTwoFigRouteMap}
+  \caption{问题二V7正式23架次方案的空间路线与机型结构。全部路线来自正式incumbent replay；空间几何描述任务构成，资源可执行性由飞机--电池联合甘特图进一步验证。}
+  \label{fig:q2_route_map_v7}
+\end{figure}
 
-  \vspace{0.5em}
-  \begin{subfigure}[t]{0.98\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{battery_gantt.png}
-    \caption{共享电池占用与充电恢复时间表}
-  \end{subfigure}
-  \caption{飞机--电池双资源联合甘特图。当前暂采用 \texttt{q2\_closing} 旧版封口图展示资源链结构；最终提交版将按Q2-EVIDENCE-V7-FOCUSED正式方案统一重绘。}
-  \label{fig:q2_gantt_legacy}
+\begin{figure}[H]
+  \centering
+  \resizebox{0.98\textwidth}{!}{\QTwoFigGantt}
+  \caption{问题二V7正式23架次方案的飞机--电池双资源联合甘特图。上图给出8架实体运输无人机的任务链，下图给出14组共享电池的任务占用与充电恢复；虚线对应正式makespan $5693.231489$ s（$94.887$ min）。}
+  \label{fig:q2_gantt_v7}
 \end{figure}
 
 \subsection{固定B型任务结构下的离散瓶颈}
@@ -1044,7 +1059,12 @@ A/B/C架次 & 11/6/6\\
 \]
 而当前时间表恰好达到该值。因此，在保持当前6个B型任务的箱组、机型和路线不变时，仅重新排序已经不能继续缩短当前工期。进一步改善必须改变跨任务货箱、机型或访问结构。该结论仅适用于固定B型任务结构，并非原Q2的全局makespan下界。
 
-\figplaceholder{图5-9占位：固定B型任务结构下6个任务在2架B型无人机上的离散负载瓶颈。}
+\begin{figure}[H]
+  \centering
+  \resizebox{0.86\textwidth}{!}{\QTwoFigBBottleneck}
+  \caption{固定B型任务结构下的两机离散负载瓶颈。连续平均负载下界为$5566.591421$ s，而考虑6个不可拆任务的精确两机分区后，下界提高至$5693.231489$ s；当前U06任务链恰好达到该值。该结论仅针对固定B型任务结构。}
+  \label{fig:q2_B_bottleneck_v7}
+\end{figure}
 
 \subsection{22架次可行见证与目标冲突}
 
@@ -1071,9 +1091,9 @@ L_w=0.
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.90\textwidth]{incumbent_comparison.png}
-  \caption{23架次保留方案与22架次可行见证的旧版封口对照图。该图当前用于展示“减少架次数不必然缩短系统工期”的结构性结论；最终提交版将使用V7正式数值重新绘制。}
-  \label{fig:q2_incumbent_comparison_legacy}
+  \resizebox{0.78\textwidth}{!}{\QTwoFigTwentyTwoTwentyThree}
+  \caption{22架次可行见证与23架次V7正式方案的工期--能耗对照。22架次点只证明“22架次可行”，不代表22架次条件下的最优工期，因此不能据此推广为所有22架次方案均更慢。}
+  \label{fig:q2_22_23_v7}
 \end{figure}
 
 \subsection{全局有效下界与认证区间}
@@ -1111,13 +1131,25 @@ UB=5693.231490\ {\rm s}
 
 最终覆盖包含809个互补分支与810份叶证书，对全部叶证书重新进行2430次完整机型定价，审计失败为0。上下界尚未闭合，因此不能宣称5693.231489 s已证明为全局最优。
 
-\figplaceholder{图5-8占位：Q2零加权迟到最优面上的确定性完成时间上下界认证区间。}
+\begin{figure}[H]
+  \centering
+  \resizebox{0.80\textwidth}{!}{\QTwoFigInterval}
+  \caption{问题二V7确定性完成时间认证区间。在零加权迟到最优面上，原问题最优makespan满足$5433.956428\le T^*\le5693.231490$ s，UB归一化证据间隙为$4.5541\%$；由于区间尚未闭合，本文不宣称makespan全局最优。}
+  \label{fig:q2_interval_v7}
+\end{figure}
 
 \subsection{补充搜索与计算证据}
 
 围绕当前关键任务进行了330个定向局部邻域重构，未发现严格改善上界；另有一个限时模型保持未知，不将其解释为不可行。更大的跨资源链6/7任务有限邻域同样未产生工期改善。这些结果仅支持局部稳定性，不替代全局证明。
 
 针对证明阶段的pricing kernel，在24个固定真实定价输入上，支配强化将各组中位耗时之和由6.323099 s降至2.026581 s，比值为3.1201；累计生成标签由5,706,982降至2,061,175，减少63.88\%，且24个输入的最小约化成本全部保持一致。随后完整重定价810份证书、2430次调用后原下界仍有效。该3.1201倍仅表示固定pricing输入的合计中位耗时比，不表示整个Q2求解器提速3.12倍。
+
+\begin{figure}[H]
+  \centering
+  \resizebox{0.78\textwidth}{!}{\QTwoFigPricing}
+  \caption{问题二定价器支配强化的受控配对实验。24组固定真实定价输入的各组中位耗时之和由$6.323099$ s降至$2.026581$ s，生成标签减少$63.88\%$，且24/24输入的最小约化成本保持一致。图中$3.1201\times$仅表示该受控pricing实验的中位耗时之和比，不代表整个Q2求解器获得同等加速。}
+  \label{fig:q2_pricing_v7}
+\end{figure}
 
 % ============================================================
 \section{问题三：连续通信约束下的运输--中继联合优化}
