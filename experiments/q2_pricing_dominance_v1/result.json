@@ -1,0 +1,20 @@
+{
+  "baseline": "main Q2-EVIDENCE-V7-FOCUSED hard-30 leaf repricing",
+  "experiment": "capacity-monotone future-irrelevant parity/site-memory compression",
+  "nodes": 30,
+  "all_minimum_reduced_costs_identical": true,
+  "baseline_labels": 32562316,
+  "accelerated_labels": 26163250,
+  "label_reduction_fraction": 0.19651753272095265,
+  "baseline_pricing_s": 24.442093787995873,
+  "accelerated_pricing_s": 22.812487412998962,
+  "pricing_time_reduction_fraction": 0.06667212674706499,
+  "baseline_elapsed_s": 24.707738189999873,
+  "accelerated_elapsed_s": 23.056130068999664,
+  "elapsed_reduction_fraction": 0.0668457836285749,
+  "nodes_faster": 29,
+  "median_node_time_reduction_fraction": 0.06354676456688124,
+  "accelerated_unit_tests_passed": 29,
+  "full_cover_reaudit_completed": false,
+  "official_bound_changed": false
+}
