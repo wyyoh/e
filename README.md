@@ -1,36 +1,40 @@
 # D题：山区洪涝灾害下无人机运输与通信协同优化
 
-## 当前研究分支：Q2-PROOF-UNIFIED-V3
+## 当前正式入口
 
-最新说明在 [verification_v3/README.md](verification_v3/README.md)，证明范围在 [verification_v3/docs/model_v3.md](verification_v3/docs/model_v3.md)，机器可读结论在 [verification_v3/results/status.json](verification_v3/results/status.json)。
+四问选解及适用范围以 [`paper_integration/FINAL_SELECTION.json`](paper_integration/FINAL_SELECTION.json) 为唯一选择入口。历史文件保留，不因合并实验改变原始任务、时间表、物理公式或正式结果。
 
-|项目|本轮核验结果|
-|---|---:|
-|完整可行上界|5693.231489105107秒（94分53.231秒）|
-|全80箱有效下界|5390.423694秒（约89分50.424秒）|
-|相对上界间隙|5.318733%|
-|上界架次与能耗|23趟，66.252068563 kWh|
-|全局最优|尚未证明|
+|问题|正式版本|关键结果|
+|---|---|---|
+|Q1|冻结精确模型|18架次；59.131296022053 kWh；546.266929148593 min累计作业时间|
+|Q2|23架次主方案＋V7-FOCUSED证据|5693.231489105106 s；66.21445957313102 kWh；有效下界5433.956428 s|
+|Q3|Q3-FINAL-V1/time|23运输＋4中继；6340.439338658365 s；69.30853085578303 kWh|
+|Q4|Q4-SENSITIVITY-V2/strict|两组补C机1/C电池1；三组补A机1/C机3/A电池1/C电池2|
 
-23趟来自父版本已有的 `verification_v2/selected_incumbent.csv`，本轮独立重建并核验，不冒称本轮启发式新发现。仍为80箱零迟到、8架飞机、14组电池。
+Q1累计时间与Q2/Q3并行完工时间不是同一指标。Q2有理数上包络5693.231490秒，以上界为分母的认证间隙4.554093%；未证明原问题工期全局最优。Q3的额外损耗和节能候选保留为备选，Q4复制中继仅为反事实敏感性。
 
-已统一旧5349.079436秒与4899.348242秒两份证据；旧强界不被弱界覆盖。新版运行完整松弛定价、500个部分整数分支节点、250份覆盖证书和750次复定价，原问题完整路线整数化与电池排程证明仍未闭合。
+## 三项算法实验
 
-## 运行V3
+[`experiments/threeway_assistant_20260925/`](experiments/threeway_assistant_20260925/) 保存定价支配、资源链重构和Q3引导候选试验。
 
-```bash
-python -m pip install numpy scipy
-python verification_v3/code/run_all.py --solve --nodes 500
-```
+- 定价：24个固定输入三次配对测量，中位耗时合计比3.1201、生成标签减少约63.88%，原最小约化成本一致；原810份覆盖证书由新核重新定价通过。是核心计算加速，不是全局求解器3.12倍，也没有新下界。
+- 资源链：3池×2模型，4个有限最优、2个限时未知，没有更快完整方案。
+- 中继采样：5配对种子×3方法×192评估，静态评分改善未转化为完整可接纳排程；0.573414dB不作为新可行裕度。
 
-本次从无既有结果的新目录实际运行了相同代码及规范化输入，核心结果一致；7份源文件与GitHub回读blob一致。记录见 [clean_rebuild.json](verification_v3/results/clean_rebuild.json)。不承诺跨平台搜索路径或浮点字节一致。
+实验进入main供复现和论文对照，不自动替换冻结求解器或正式方案。尚未复核的其他并行实验分支没有在本次合并中纳入。
 
-核心代码和状态已提交到本研究分支，完整节点证据、23趟CSV/JSON、辅助子集行割与截止前缀实验随对应计算包交付。不要把辅助实验与分支树的提升相加，也不要把有限列池或固定任务最优标记为原问题最优。
+完整原始日志、定价输入、排程与上游归档保留在哈希绑定的配套ZIP，见实验BASELINE及说明；仓库保存可执行源码、摘要和本文图表所需数据，不宣称已上传所有大体积原始证据。
 
-## 历史版本
+## 开始撰写
 
-- 原V1源码仍在 `src/`，说明 `docs/EXPERIMENT_V1.md`，原结果在根 `results/`；这些不是V3当前结论。
-- V2代码与候选在 `verification_v2/`。
-- `data/encoded/*.b64` 为原有无损输入分片，V3直接复用并验证父manifest，不重新提取DEM，也不改变物理参数。
+- [`paper/`](paper/)：图表数据、可复现绘图和可编辑制表脚本。
+- [`paper/docs/VISUAL_STYLE_GUIDE.md`](paper/docs/VISUAL_STYLE_GUIDE.md)：绘图、制表、排版与提交前检查。
+- [`paper/docs/RESEARCH_SOURCES.md`](paper/docs/RESEARCH_SOURCES.md)：公开规范来源及赛事/期刊要求区别。
+- [`paper_integration/PAPER_OUTLINE.md`](paper_integration/PAPER_OUTLINE.md)：九章论文组织。
+- [`paper/qa/RELEASE_AUDIT.json`](paper/qa/RELEASE_AUDIT.json)：本次归档验收、9份实验源码身份和图表QA范围。
 
-第一、三、四问及正式综合模板不因当前Q2研究自动覆盖。研究分支不强推、不改main。所有上下界限定于已明确的航程标定、能耗推导、精确时间与准备前满电操作流程；最低SOC仍20.097383%，不得称为实飞鲁棒保证。
+先冻结证据与结论，再写四问模型、机制图、认证和敏感性；不要将局部最优、静态样本评分或检查次数扩大为原问题全局最优/实飞保证。样张不是官方母版，正式封皮、匿名与上传格式仍以当届模板为准。
+
+## 历史
+
+`verification_v2/`、`verification_v3/`、`q2_closing/`、`q2_final/`及旧日志原样保留。过去根README中的V3数值为历史版本，已不作为最新选择。所有数值结论限定给定输入、能耗推导、精确时间和准备前满电的执行流程。
