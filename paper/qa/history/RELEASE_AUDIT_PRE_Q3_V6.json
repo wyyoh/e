@@ -1,0 +1,29 @@
+{
+  "release_base_main": "c3ae26996c0e71cda066533b7ec33e9e142e3b9a",
+  "experiment_commit": "64ec4029095f7200dad73e014f2569d97b12a5da",
+  "validation_scope": "This release reruns archived result acceptance and 6 guards; it does not rerun all optimizations or 2430 pricing calls. Historical audit remains attributed to experiment release.",
+  "archive_sha256": "5dc3b6d90d7e15386b9cd76c0f074b04f7e579de82b90e0d8252484b07fe08a1",
+  "experiment_source_checks": [
+    {"file":"acceptance.py","git_blob":"d55cbd4eefbb56ee303ff4b9a6e5097e9a2afbca","match":true},
+    {"file":"audit_accelerated.py","git_blob":"c79afb04b668d831d03138eda3cc3248d398a8b7","match":true},
+    {"file":"build_pricers.py","git_blob":"3abfb134d20a5bab4f76c80b4abb916f91470bb7","match":true},
+    {"file":"pricing_experiment.py","git_blob":"806bf4c3706484009bd9f802d0779898b9456e86","match":true},
+    {"file":"q3_candidates_experiment.py","git_blob":"92125fc3e65a45f79d043690791d342de1b2d14d","match":true},
+    {"file":"q3_control.py","git_blob":"8c71c4319e4293070aa6960f76a4373097fa2c11","match":true},
+    {"file":"q3_schedule_followup.py","git_blob":"a655fe7aaffe578f672737e9d8be11054482b27b","match":true},
+    {"file":"resource_chain_experiment.py","git_blob":"e43c242acb001a9957e92663a00837e7447de45f","match":true},
+    {"file":"run_all.py","git_blob":"df7a65d6f6b1f56364866cee8f97e74ee3998b4d","match":true}
+  ],
+  "archived_acceptance_exit_code":0,
+  "guard_tests_run_this_release":6,
+  "guard_failures":0,
+  "pricing_median_rows_checked_this_release":24,
+  "generated_figures":4,
+  "native_docx_tables":3,
+  "docx_pages":2,
+  "specimen_figure_pages":4,
+  "visual_qa":"All four PDF figure pages and both native-table pages inspected; final DOCX raster pages identical to inspected pages.",
+  "new_optimization":false,
+  "official_results_changed":false,
+  "unreviewed_parallel_experiment_branches_merged":false
+}

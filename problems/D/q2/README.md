@@ -1,8 +1,14 @@
-# Q2论文接口
+# Q2 current evidence
 
-正式 primal 仍位于仓库根目录 `q2_final/solution/main_23/`，避免复制历史结果。
+- 正式primal：`q2_final/solution/main_23/`
+- 正式证明：`evidence_v7/`
+- 版本：`Q2-EVIDENCE-V7-FOCUSED`
+- 加权迟到：0
+- makespan：5693.231489105106 s
+- energy：66.21445957313102 kWh
+- certified LB：5433.956428 s
+- certified UB：5693.231490 s
+- UB-normalized gap：4.554093092%
+- 完整原问题makespan全局最优：未证明
 
-- `evidence_v7/`：最新定向证据强化源码、文档、测试和紧凑审计结果。
-- `external_audit/`：网络论文22架次方案的独立复核，仅作外部对照。
-
-论文口径：`5433.956428 s <= T* <= 5693.231490 s`，UB归一化证据间隙约4.5541%，未证明全局最优。
+外部网络方案复核位于 `external_audit/`，只作对照。

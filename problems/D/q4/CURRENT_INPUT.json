@@ -1,0 +1,19 @@
+{
+  "version":"Q4-STRICT-FROM-Q3-V6",
+  "q3_version":"Q3-BOTTLENECK-V6",
+  "q3_variant":"time",
+  "model":"strict indivisible logical relay sorties; fixed times; same-type resources interchangeable",
+  "source_selected_path":"problems/D/q3/release_v6/time/selected.json",
+  "source_selected_sha256":"ab58246d33b5948d0c4576246e07f09e27d3eef4acf7e072cb91bd5842e66d93",
+  "source_plan":"problems/D/q3/release_v6/time/plan",
+  "resource_order":["A_plane","B_plane","C_plane","A_battery","B_battery","C_battery","R_plane","R_component"],
+  "inventory":{"A_plane":4,"B_plane":2,"C_plane":2,"A_battery":6,"B_battery":4,"C_battery":4,"R_plane":2,"R_component":6},
+  "blocks":[["S001"],["S002","S003","S004","S005","S007","S008","S009","S010","S011","S012","S013","S014","S015"],["S006"]],
+  "result_path":"problems/D/q4/results_q3_v6/summary.json",
+  "by_group_count":{
+    "2":{"enumerated":3,"groups":[["S001","S002","S003","S004","S005","S007","S008","S009","S010","S011","S012","S013","S014","S015"],["S006"]],"need_vector":[4,2,3,6,4,4,2,3],"gap_vector":[0,0,1,0,0,0,0,0],"total_need":28,"total_gap":1,"workload_cv":0.9417615727779963},
+    "3":{"enumerated":1,"groups":[["S001"],["S002","S003","S004","S005","S007","S008","S009","S010","S011","S012","S013","S014","S015"],["S006"]],"need_vector":[5,2,5,7,4,6,2,3],"gap_vector":[1,0,3,1,0,2,0,0],"total_need":34,"total_gap":7,"workload_cv":1.1837975013700406}
+  },
+  "relay_copy_sensitivity_recomputed":false,
+  "old_relay_copy_results_are_historical_only":true
+}

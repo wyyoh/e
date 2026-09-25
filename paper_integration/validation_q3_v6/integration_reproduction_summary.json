@@ -1,0 +1,12 @@
+{
+  "version":"Q3-V6-MAIN-INTEGRATION-AUDIT",
+  "primary":{"joint_makespan_s":5836.969929328251,"total_energy_kwh":68.93941621018112,"transport_sorties":23,"relay_sorties":4,"validation":{"physical_and_interval_checks":17756,"failed":0,"independent_points_including_boundaries":36672,"point_failures":0}},
+  "source_test_count":47,
+  "clean_rebuild_candidates":4,
+  "transport_dem_reextracted_directed_legs":240,
+  "transport_dem_coefficients_compared":1200,
+  "transport_dem_max_difference":0,
+  "runtime_archive_sha256":"f8efc0cb0859fe0bd39f0f23f1a18e824d3848873344ef3e7a93b11a93b257bf",
+  "runtime_archive_tracked_in_this_commit":false,
+  "notes":["Physical/radio verification and Q4 strict handoff were rerun before integration.","The full 36 MB validated runtime archive is identified by SHA-256 but is not uploaded by this connector commit."]
+}

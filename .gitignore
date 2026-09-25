@@ -1,8 +1,11 @@
 __pycache__/
-*.pyc
+*.py[cod]
 .venv/
-src/energy_pricer
-src/pattern_pricer
-data/*.json
-data/*.zip
-results/*.npz
+**/.venv/
+.pytest_cache/
+**/.pytest_cache/
+*.egg-info/
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
