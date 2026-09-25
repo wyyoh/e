@@ -1,10 +1,10 @@
-# D题最终整合分支
+# D题最终整合入口
 
-本分支用于最终论文与复现，统一锁定 Q1–Q4 正式方案、证明范围与跨问数据继承。
+机器可读正式选择以 `FINAL_SELECTION.json` 为准。
 
-- Q1：`problems/D/q1/`，18架次，59.131296 kWh。
-- Q2：主解沿用 `q2_final/solution/main_23/`；最新证据放在 `problems/D/q2/evidence_v7/`，有效区间 `5433.956428 <= T* <= 5693.231490 s`，不宣称全局最优。外部网络论文22架次方案复核在 `problems/D/q2/external_audit/`，仅作对照。
-- Q3：`problems/D/q3/release_final/primary/`，正式主方案 time：23运输+4中继，联合返航6340.439339 s，总能耗69.308531 kWh。
-- Q4：`problems/D/q4/`，严格中继绑定为主口径；中继复制仅作敏感性。
+- Q1：18架次，59.131296022053 kWh。
+- Q2：23架次，5693.231489105106 s，66.21445957313102 kWh；认证区间 `5433.956428 <= T* <= 5693.231490 s`，不宣称全局最优。
+- **Q3：Q3-BOTTLENECK-V6/time，23运输+4中继，5836.969929328251 s，68.93941621018112 kWh。**
+- **Q4：严格继承V6/time日程；K=2缺口1，K=3缺口7。** 旧relay-copy等敏感性只保留为历史结果，未针对V6重跑。
 
-仓库仅展开论文复现所需源码、文档、正式结果与关键审计；体量很大的历史搜索缓存和完整证书由 companion archive 的 SHA-256 锁定。机器可读选择见 `FINAL_SELECTION.json`。
+Q3旧 `release_final/` 保留作历史审计；当前展开证据在 `problems/D/q3/release_v6/time/`。完整V6运行包SHA-256为 `f8efc0cb0859fe0bd39f0f23f1a18e824d3848873344ef3e7a93b11a93b257bf`，本次连接器提交未上传该36MB二进制包。

@@ -1,0 +1,11 @@
+{
+  "release":"Q3-BOTTLENECK-V6",
+  "primary":"time",
+  "physical_model_version":"Q3-HOVER-COMPATIBLE-V5",
+  "primary_path":"problems/D/q3/release_v6/time",
+  "selected_sha256":"ab58246d33b5948d0c4576246e07f09e27d3eef4acf7e072cb91bd5842e66d93",
+  "primary_summary":{"transport_sorties":23,"relay_sorties":4,"box_count":80,"joint_makespan_s":5836.969929328251,"transport_energy_kwh":66.25127994199477,"relay_energy_kwh":2.688136268186355,"total_energy_kwh":68.93941621018112,"weighted_tardiness_s":0,"hard_late_boxes":0,"min_hard_slack_s":360.86693760394974,"min_transport_soc":0.2009738280072748,"min_relay_soc":0.723158162768235,"communication_phase_count":181,"critical_endpoint_certificates":1238,"whole_interval_certificates":700,"full_q3_global_optimality_proved":false,"validation_status":"PASS"},
+  "alternatives":{"energy":{"joint_makespan_s":5911.5481346609085,"total_energy_kwh":68.73579123708348},"robust025":{"joint_makespan_s":5866.140526535532,"total_energy_kwh":69.03175130785294,"extra_loss_db":0.25},"q4_tradeoff":{"joint_makespan_s":5866.140526535532,"total_energy_kwh":68.9754972006408}},
+  "runtime_archive":{"filename":"q3_bottleneck_v6_full.zip","sha256":"f8efc0cb0859fe0bd39f0f23f1a18e824d3848873344ef3e7a93b11a93b257bf","tracked_in_this_commit":false},
+  "limitations":["No full-Q3 global optimality proof.","Old 5755-site relay-count certificate does not transfer.","Old +0.50/+0.55 dB robustness claims do not transfer."]
+}

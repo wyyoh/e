@@ -1,0 +1,15 @@
+{
+  "release":"Q3-BOTTLENECK-V6",
+  "primary":"time",
+  "physical_model_version":"Q3-HOVER-COMPATIBLE-V5",
+  "primary_path":"problems/D/q3/release_v6/time",
+  "selected_sha256":"ab58246d33b5948d0c4576246e07f09e27d3eef4acf7e072cb91bd5842e66d93",
+  "primary":{"joint_makespan_s":5836.969929328251,"total_energy_kwh":68.93941621018112,"extra_loss_db":0.0,"min_hard_slack_s":360.86693760394974,"strict_q4_K2_gap":1,"strict_q4_K3_gap":7},
+  "alternatives":{
+    "energy":{"joint_makespan_s":5911.5481346609085,"total_energy_kwh":68.73579123708348,"extra_loss_db":0.0,"strict_q4_K2_gap":2,"strict_q4_K3_gap":7},
+    "robust025":{"joint_makespan_s":5866.140526535532,"total_energy_kwh":69.03175130785294,"extra_loss_db":0.25,"strict_q4_K2_gap":2,"strict_q4_K3_gap":6},
+    "q4_tradeoff":{"joint_makespan_s":5866.140526535532,"total_energy_kwh":68.9754972006408,"extra_loss_db":0.0,"strict_q4_K2_gap":2,"strict_q4_K3_gap":6}
+  },
+  "runtime_archive":{"filename":"q3_bottleneck_v6_full.zip","sha256":"f8efc0cb0859fe0bd39f0f23f1a18e824d3848873344ef3e7a93b11a93b257bf","tracked_in_this_commit":false},
+  "limitations":["No original-problem global optimality claim.","Old 5755-site relay-count certificate does not transfer.","Old +0.50/+0.55 dB robustness claims do not transfer.","Only robust025 is independently replayed at +0.25 dB extra loss."]
+}
