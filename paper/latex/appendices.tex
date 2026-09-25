@@ -1,0 +1,512 @@
+
+\section{原始数据与公共物理模型核验}
+\label{app:common}
+
+\subsection{数据对象、单位与复现口径}
+
+全文公共模型使用同一套节点、货箱、机型、DEM与任务参数。内部统一采用 m、s、kg、m$^3$、kWh 和 dB；正文显示时允许换算为 min，但后续计算始终使用未舍入原值。Q1公共物理验证不读取Q2--Q4求解结果，Q2--Q4均继承同一地形、航段与能耗口径。
+
+\begin{table}[H]
+\centering
+\caption{公共模型关键核验结果}
+\label{tab:app_common_validation}
+\begin{tabular}{p{4.2cm}p{7.0cm}p{3.2cm}}
+\toprule
+核验对象 & 独立核验方式 & 结果\\
+\midrule
+TIF/MAT高程矩阵 & 逐像元比对 & 完全一致\\
+AEQD水平距离 & GeographicLib独立测地线计算 & 最大差 $1.412\times10^{-9}$ m\\
+DEM航段像元集合 & 网格边界交点遍历与条带区间求交 & 完全一致\\
+45个安全载荷根 & Brent法与独立二分法 & 最大差 $1.843\times10^{-11}$ kg\\
+Q1精确优化 & 原始箱级MILP、压缩MILP、DP & 词典序目标一致\\
+自动化测试 & 42项测试 & 0失败、0错误、0跳过\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{公共物理错误注入}
+
+为验证公共物理层检查器确实能够识别错误，而非仅重放既有结果，对以下七类错误进行了故障注入。
+
+\begin{table}[H]
+\centering
+\caption{公共物理模型故障注入}
+\label{tab:app_fault_injection}
+\begin{tabular}{p{4.4cm}p{9.2cm}}
+\toprule
+错误类型 & 检出机制\\
+\midrule
+将载荷--航程指数 $3/2$ 错改为1 & 独立航程中间值与能耗重算不一致\\
+遗漏返程爬升 & 往返能耗独立检查失败\\
+返程错误沿用起飞载荷 & 逐段载荷重算失败\\
+跨服务区混箱 & 服务区归属检查失败\\
+重复分配同一货箱 & 原始货箱ID唯一计数失败\\
+只检查质量、忽略体积 & 质量可行但体积超限的批型被拒绝\\
+使用thin Bresenham替代完整像元遍历 & 航段相交像元集合不一致\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{复现性}
+
+Q1在全新输出目录中从原始输入完整重跑，27个确定性数值文件与5幅生成图逐字节一致。求解耗时、平台元数据和可交换箱号代表不要求字节一致。公共模型的目标是保证“任务属性算得一致”，而各问最优性或近优性证据分别在后续附录中给出。
+
+% ============================================================
+\section{问题一完整能力、组批与敏感性结果}
+\label{app:q1}
+
+\subsection{45组最大安全载荷}
+
+20\%返航安全余量下，15个服务区与3种机型的最大安全载荷如下。除表中低于额定载荷的6项外，其余组合均由额定载荷而非能源约束决定。
+
+\begin{table}[H]
+\centering
+\caption{Q1各服务区三类机型最大安全载荷/kg}
+\label{tab:app_q1_payload}
+\begin{tabular}{lrrr}
+\toprule
+服务区 & A型 & B型 & C型\\
+\midrule
+S001 & 25.000000 & 30.000000 & 80.000000\\
+S002 & 25.000000 & 30.000000 & 68.860343\\
+S003 & 25.000000 & 30.000000 & 68.206491\\
+S004 & 25.000000 & 30.000000 & 63.696955\\
+S005 & 25.000000 & 30.000000 & 80.000000\\
+S006 & 25.000000 & 30.000000 & 80.000000\\
+S007 & 25.000000 & 30.000000 & 80.000000\\
+S008 & 25.000000 & 28.801234 & 58.904361\\
+S009 & 25.000000 & 30.000000 & 80.000000\\
+S010 & 25.000000 & 30.000000 & 80.000000\\
+S011 & 25.000000 & 30.000000 & 80.000000\\
+S012 & 25.000000 & 30.000000 & 68.117193\\
+S013 & 25.000000 & 30.000000 & 80.000000\\
+S014 & 25.000000 & 30.000000 & 80.000000\\
+S015 & 25.000000 & 30.000000 & 80.000000\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{18架次正式组批摘要}
+
+完整箱号分配可由机器可读文件 \path{problems/D/q1/results/optimal_batches.csv} 复现。表\ref{tab:app_q1_batches}给出18个正式批次的主要物理属性。
+
+\begin{longtable}{llllrrrr}
+\caption{Q1正式18架次批次摘要}\label{tab:app_q1_batches}\\
+\toprule
+批次 & 区域 & 机型 & 质量/kg & 体积/m$^3$ & 能耗/kWh & 作业时间/s & 返航SOC/\%\\
+\midrule
+\endfirsthead
+\toprule
+批次 & 区域 & 机型 & 质量/kg & 体积/m$^3$ & 能耗/kWh & 作业时间/s & 返航SOC/\%\\
+\midrule
+\endhead
+Q1-001 & S001 & C & 76 & 0.170 & 2.917582 & 1494.169 & 63.530\\
+Q1-002 & S001 & C & 78 & 0.224 & 2.995769 & 1692.169 & 62.553\\
+Q1-003 & S002 & B & 25 & 0.067 & 2.713422 & 1816.694 & 32.164\\
+Q1-004 & S002 & C & 56 & 0.144 & 5.721225 & 2041.812 & 28.485\\
+Q1-005 & S003 & B & 25 & 0.067 & 2.779917 & 2080.523 & 30.502\\
+Q1-006 & S003 & C & 56 & 0.144 & 5.764965 & 2370.091 & 27.938\\
+Q1-007 & S004 & C & 59 & 0.156 & 6.152932 & 2301.057 & 23.088\\
+Q1-008 & S005 & C & 59 & 0.156 & 4.222193 & 1877.191 & 47.223\\
+Q1-009 & S006 & C & 59 & 0.156 & 2.597988 & 1561.554 & 67.525\\
+Q1-010 & S007 & C & 45 & 0.129 & 3.410894 & 1907.566 & 57.364\\
+Q1-011 & S008 & C & 45 & 0.129 & 5.836012 & 2199.701 & 27.050\\
+Q1-012 & S009 & B & 25 & 0.067 & 2.096234 & 1558.442 & 47.594\\
+Q1-013 & S010 & B & 25 & 0.067 & 1.823196 & 1555.380 & 54.420\\
+Q1-014 & S011 & B & 25 & 0.067 & 1.073952 & 1188.420 & 73.151\\
+Q1-015 & S012 & B & 25 & 0.067 & 2.752414 & 1922.740 & 31.190\\
+Q1-016 & S013 & B & 25 & 0.067 & 1.824759 & 1510.472 & 54.381\\
+Q1-017 & S014 & B & 25 & 0.067 & 2.140388 & 1869.756 & 46.490\\
+Q1-018 & S015 & B & 25 & 0.067 & 2.307453 & 1828.277 & 42.314\\
+\bottomrule
+\end{longtable}
+
+\subsection{基线与Pareto结果}
+
+\begin{table}[H]
+\centering
+\caption{Q1主要基线与正式方案}
+\label{tab:app_q1_baseline}
+\begin{tabular}{llrrr}
+\toprule
+机型策略 & 方法 & 架次 & 能耗/kWh & 累计作业时间/min\\
+\midrule
+A-only & exact & 52 & 112.180153 & 1488.763007\\
+B-only & exact & 35 & 68.350657 & 927.625473\\
+C-only & exact & 18 & 73.934908 & 563.979235\\
+mixed & FFD-mass & 18 & 75.116697 & 563.979235\\
+mixed & exact & 18 & \textbf{59.131296} & \textbf{546.266929}\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+完整不同Pareto目标向量仅有两组：
+\[
+(18,\ 59.131296022053,\ 546.266929148593),
+\]
+\[
+(19,\ 59.033942092203,\ 573.999623452513).
+\]
+
+\subsection{改变全局最少架次数的安全余量阈值}
+
+\begin{table}[H]
+\centering
+\caption{Q1八个全局架次数临界阈值}
+\label{tab:app_q1_thresholds}
+\begin{tabular}{lcrr}
+\toprule
+安全余量阈值/\% & 触发区域 & 阈值处架次 & 严格右侧\\
+\midrule
+23.088350 & S004 & 18 & 19\\
+27.049854 & S008 & 19 & 20\\
+33.625809 & S008 & 20 & 21\\
+33.896918 & S003 & 21 & 22\\
+34.373532 & S004 & 22 & 23\\
+34.391873 & S002 & 23 & 24\\
+34.777897 & S008 & 24 & 25\\
+35.267807 & S008 & 25 & 不可行\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+完整569个候选事件与19次词典序最优代表变化由 \path{problems/D/q1/results/reserve_thresholds.csv} 和 \path{problems/D/q1/results/reserve_optimal_segments.csv} 保存。
+
+% ============================================================
+\section{问题二任务构造、调度结果与认证证据}
+\label{app:q2}
+
+\subsection{23个正式运输任务}
+
+表\ref{tab:app_q2_tasks}直接对应 \path{q2_final/solution/main_23/decisions.json}。任务编号T01--T23仅用于论文展示，原始箱号保持不变。
+
+\scriptsize
+\begin{longtable}{cllp{8.2cm}}
+\caption{Q2正式23个运输任务构成}\label{tab:app_q2_tasks}\\
+\toprule
+任务 & 机型 & 访问顺序 & 原始货箱ID\\
+\midrule
+\endfirsthead
+\toprule
+任务 & 机型 & 访问顺序 & 原始货箱ID\\
+\midrule
+\endhead
+T01 & C & S001 & S001-MED-01, S001-MED-02, S001-WAT-06, S001-WAT-07, S001-WAT-08, S001-FOD-03, S001-HYG-01, S001-HYG-02\\
+T02 & C & S001 & S001-WAT-02, S001-WAT-03, S001-WAT-04, S001-WAT-05, S001-FOD-02\\
+T03 & B & S010 & S010-MED-01, S010-WAT-01, S010-FOD-01\\
+T04 & B & S014 & S014-MED-01, S014-WAT-01, S014-FOD-01\\
+T05 & B & S012 & S012-MED-01, S012-WAT-01, S012-FOD-01\\
+T06 & A & S001 & S001-WAT-01, S001-FOD-01\\
+T07 & A & S004 & S004-WAT-01, S004-FOD-01\\
+T08 & A & S013 & S013-WAT-01, S013-FOD-01\\
+T09 & A & S011$\rightarrow$S004 & S004-MED-01, S004-WAT-02, S011-MED-01\\
+T10 & C & S006 & S006-MED-01, S006-WAT-01, S006-WAT-02, S006-WAT-03, S006-FOD-01, S006-HYG-01\\
+T11 & C & S002 & S002-MED-01, S002-WAT-02, S002-WAT-03, S002-WAT-04, S002-FOD-01, S002-FOD-02, S002-HYG-01\\
+T12 & C & S007$\rightarrow$S003 & S003-WAT-02, S003-WAT-03, S003-WAT-04, S003-FOD-01, S003-FOD-02, S003-HYG-01, S007-HYG-01\\
+T13 & C & S005 & S005-MED-01, S005-WAT-01, S005-WAT-02, S005-WAT-03, S005-FOD-01, S005-HYG-01\\
+T14 & A & S009$\rightarrow$S002$\rightarrow$S013 & S002-WAT-01, S009-MED-01, S013-MED-01\\
+T15 & A & S007 & S007-MED-01, S007-WAT-01\\
+T16 & A & S007 & S007-WAT-02, S007-FOD-01\\
+T17 & B & S004 & S004-WAT-03, S004-HYG-01\\
+T18 & B & S008 & S008-MED-01, S008-WAT-01, S008-FOD-01\\
+T19 & B & S008 & S008-WAT-02, S008-HYG-01\\
+T20 & A & S003$\rightarrow$S015 & S003-MED-01, S003-WAT-01, S015-MED-01\\
+T21 & A & S015 & S015-WAT-01, S015-FOD-01\\
+T22 & A & S009 & S009-WAT-01, S009-FOD-01\\
+T23 & A & S011 & S011-WAT-01, S011-FOD-01\\
+\bottomrule
+\end{longtable}
+\normalsize
+
+\subsection{正式主方案与22架次见证}
+
+\begin{table}[H]
+\centering
+\caption{Q2正式23架次方案与22架次可行见证}
+\label{tab:app_q2_22_23}
+\begin{tabular}{lrr}
+\toprule
+指标 & 正式23架次 & 22架次见证\\
+\midrule
+A/B/C架次 & 11/6/6 & 11/4/7\\
+加权迟到/s & 0 & 0\\
+makespan/s & 5693.231489 & 7767.058323\\
+总能耗/kWh & 66.214460 & 66.323024\\
+最紧硬截止余量/s & 202.096058 & 645.017134\\
+最低返航SOC/\% & 20.097383 & 20.097383\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+22架次方案只证明“22架次可行”，不证明22架次的最小makespan，也不能据此推出所有22架次方案均慢于23架次主方案。
+
+\subsection{V7全局有效上下界}
+
+\begin{table}[H]
+\centering
+\caption{Q2-EVIDENCE-V7-FOCUSED认证摘要}
+\label{tab:app_q2_v7}
+\begin{tabular}{lr}
+\toprule
+证据项 & 数值\\
+\midrule
+全局有效下界/s & 5433.956428\\
+认证可行上界/s & 5693.231490\\
+区间宽度/s & 259.275062\\
+UB归一化间隙 & 4.554093092\%\\
+互补分支数 & 809\\
+叶证书数 & 810\\
+完整机型定价调用 & 2430\\
+审计失败数 & 0\\
+原问题makespan全局最优 & 未证明\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{有限邻域与计算层负结果}
+
+围绕当前主方案共检查330个定向局部邻域，329个有限模型返回不可行，1个达到时限后保持未知；不能将该结果解释为原问题局部或全局最优证明。pricing dominance实验只评价固定真实定价输入：24个输入的各组中位耗时之和由6.323099 s降至2.026581 s，比值为3.1201；生成标签由5,706,982降至2,061,175，最小约化成本保持一致。该3.1201倍不是整个Q2求解器速度比。
+
+% ============================================================
+\section{问题三运输--中继联合方案与有限域证据}
+\label{app:q3}
+
+% NOTE: 若Q3正式版本重新冻结，应由新的FINAL_SELECTION与正式归档重新生成本附录。
+\subsection{当前正式release摘要}
+
+Q3相关数值必须以最终正式release为唯一依据。当前主稿对应的正式版本为Q3-FINAL-V1，主变体为 \texttt{time}。
+
+\begin{table}[H]
+\centering
+\caption{Q3当前正式主方案摘要}
+\label{tab:app_q3_summary}
+\begin{tabular}{lr}
+\toprule
+指标 & 数值\\
+\midrule
+运输架次 & 23\\
+中继架次 & 4\\
+实体运输无人机 & 8\\
+运输电池 & 14\\
+中继无人机 & 2\\
+中继能源组件 & 3\\
+联合最后返航/s & 6340.439339\\
+运输能耗/kWh & 66.376821\\
+中继能耗/kWh & 2.931710\\
+总能耗/kWh & 69.308531\\
+加权迟到 & 0\\
+硬迟到箱数 & 0\\
+最小硬截止余量/s & 30\\
+最低运输返航SOC/\% & 20.097383\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{连续通信验证}
+
+正式方案针对真实运输轨迹重新进行通信区间、临界端点、飞行阶段切换和通信提供方切换核验。主验证器完成19,215项检查，独立过程生成36,995个核验点，正式方案未发现通信中断。完整通信区间与逐点证据由Q3正式归档保存。
+
+\subsection{4中继架次有限域下界}
+
+固定正式运输航迹后，共得到196个真实通信保障需求。在5755个明确候选中继位置上构造有限集合覆盖矩阵，并存在非负对偶权重满足：
+\[
+\sum_j\omega_j=3.5,
+\qquad
+\sum_{j\in C_p}\omega_j\le1,\quad\forall p.
+\]
+因此任意3个候选中继架次最多覆盖总权重3，无法覆盖全部需求，故
+\[
+N_R\ge\lceil3.5\rceil=4.
+\]
+正式方案恰使用4个中继架次。该结论仅适用于固定运输几何与5755个候选位置的有限域，不推广到自由连续三维选址。
+
+\subsection{通信鲁棒备选}
+
+\begin{table}[H]
+\centering
+\caption{Q3三个完整可行通信裕度方案}
+\label{tab:app_q3_robust}
+\begin{tabular}{lrrr}
+\toprule
+方案 & 额外统一损耗/dB & 联合工期/s & 总能耗/kWh\\
+\midrule
+time & 0 & 6340.439339 & 69.308531\\
+robust\_fast & 0.50 & 6369.026365 & 69.314466\\
+robust\_margin & 0.55 & 6395.090950 & 69.235215\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+对固定新四点布局与固定运输轨迹，条件最大统一附加传播损耗裕度满足
+\[
+0.55\le\Delta^*\le0.555382021\ {\rm dB}.
+\]
+该区间不是自由选址下的全局裕度界。
+
+% ============================================================
+\section{问题四完整分区、资源向量与敏感性}
+\label{app:q4}
+
+\subsection{严格模型不可拆块与完整分区}
+
+冻结Q3正式任务、绝对时刻和实际通信保障关系后，严格模型形成三个不可拆块：
+\[
+B_1=\{S001\},
+\]
+\[
+B_2=\{S002,S003,S004,S005,S007,S008,S009,S010,S011,S012,S013,S014,S015\},
+\]
+\[
+B_3=\{S006\}.
+\]
+
+严格两组仅有3种无标签合法分区，严格三组仅有1种。两组完整结果如下。
+
+\begin{table}[H]
+\centering
+\caption{Q4严格两组全部合法分区}
+\label{tab:app_q4_partitions}
+\begin{tabular}{lrrr}
+\toprule
+分组 & 总配置 & 总缺口 & 工作量CV\\
+\midrule
+其余14区 / S006 & 29 & 2 & 0.9424\\
+S001+S006 / 其余13区 & 33 & 6 & 0.7837\\
+S001 / 其余14区 & 32 & 5 & 0.8413\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{共享、两组与三组资源向量}
+
+\begin{table}[H]
+\centering
+\caption{Q4分类型资源需求与库存}
+\label{tab:app_q4_vectors}
+\begin{tabular}{lrrrr}
+\toprule
+资源类型 & 原库存 & 全局共享 & 严格K2 & 严格K3\\
+\midrule
+A型运输机 & 4 & 4 & 4 & 5\\
+B型运输机 & 2 & 2 & 2 & 2\\
+C型运输机 & 2 & 2 & 3 & 5\\
+A型电池 & 6 & 6 & 6 & 7\\
+B型电池 & 4 & 4 & 4 & 4\\
+C型电池 & 4 & 4 & 5 & 6\\
+中继无人机 & 2 & 2 & 2 & 2\\
+中继能源组件 & 6 & 3 & 3 & 3\\
+\midrule
+总配置 & 30 & 27 & 29 & 34\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+严格两组缺口向量为
+\[
+\mathbf G^{(2)}=(0,0,1,0,0,1,0,0),
+\]
+严格三组缺口向量为
+\[
+\mathbf G^{(3)}=(1,0,3,1,0,2,0,0).
+\]
+
+\subsection{中继复制反事实}
+
+复制模型只保持运输关联块不可拆；若原逻辑中继任务跨越多个组，则为每个相关组复制一整趟中继任务。该模型改变任务集合，因此只作敏感性。
+
+\begin{table}[H]
+\centering
+\caption{Q4严格模型与中继复制敏感性}
+\label{tab:app_q4_clone}
+\begin{tabular}{lrrr}
+\toprule
+情景 & 完整枚举分区数 & 最小缺口 & 最小总配置\\
+\midrule
+严格K2 & 3 & 2 & 29\\
+严格K3 & 1 & 7 & 34\\
+复制K2 & 511 & 2 & 29\\
+复制K3 & 9330 & 4 & 32\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+复制K3需增加1趟中继任务和约0.8981 kWh中继能耗，且全部9330个分区中仍无原库存零缺口方案。
+
+代表性复制情景中，总资源需求增量可分解为
+\[
+32-27
+=
+\underbrace{(29-27)}_{\text{复制任务成本 }2}
++
+\underbrace{(32-29)}_{\text{池化损失 }3}.
+\]
+因此不能把全部5个资源增量统称为池化损失。
+
+\subsection{资源最小数量的交叉核验}
+
+对固定任务组和固定资源类型，最小资源数量
+\[
+N_{gp}^{\min}=\max_t n_{gp}(t)
+\]
+分别使用事件扫描、直接区间重叠、最早释放优先实体构造、兼容DAG最大匹配和独立MILP核验，结果一致。其理论基础对应区间图着色中“色数等于最大团大小”的性质。
+
+完整9845个严格与复制情景记录、31份构造见证以及库存减少1个的全量敏感性结果由Q4正式归档保存。
+
+% ============================================================
+\section{复现、版本锁与证据清单}
+\label{app:repro}
+
+\subsection{正式版本入口}
+
+\begin{table}[H]
+\centering
+\caption{四问正式结果入口}
+\label{tab:app_release}
+\begin{tabular}{lll}
+\toprule
+问题 & 正式版本/提交 & 论文复现入口\\
+\midrule
+Q1 & \texttt{f905acc8482966c...} & \path{problems/D/q1/}\\
+Q2 & Q2-EVIDENCE-V7-FOCUSED & \path{problems/D/q2/evidence_v7/}\\
+Q3 & Q3-FINAL-V1 / time & \path{problems/D/q3/release_final/}\\
+Q4 & Q4-SENSITIVITY-V2 / strict & \path{problems/D/q4/}\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{哈希锁定的伴随归档}
+
+\begin{longtable}{p{6.5cm}p{8.0cm}}
+\caption{正式伴随归档SHA-256}\label{tab:app_archives}\\
+\toprule
+归档 & SHA-256\\
+\midrule
+\endfirsthead
+\toprule
+归档 & SHA-256\\
+\midrule
+\endhead
+D题\_Q2定向证据强化V7\_源码证书与复核.zip &
+\texttt{0804f989699dc506b3111dacc7408d9acdeb6e1115e7f32ec36934116de6ce58}\\
+D题\_Q3正式封口\_FINAL\_源码结果与交接.zip &
+\texttt{97f5ea8018a557d604bee87d6886675ecf7648f035e8df0f47f20ff6e7fbc56b}\\
+D题\_Q4稳健性完善V2\_源码结果与验证.zip &
+\texttt{9c8d1a6410c2de0a410318fc3525dc162613deabf4ba9dd1d59cdeb98437f5b4}\\
+D题\_Q2外部方案复核\_代码明细与验证.zip &
+\texttt{b41a0416313a123e734e01d7ca1672b99acee41f16edd79812302e1007610b77}\\
+\bottomrule
+\end{longtable}
+
+\subsection{证据等级与最终提交前检查}
+
+正式论文中只允许使用与证据强度相匹配的表述：
+\begin{itemize}
+  \item Q1最少18架次：原Q1模型下全局证明；
+  \item Q2加权迟到0：第一层目标全局证明；
+  \item Q2 makespan：有效全局下界与完整可行上界，未闭合；
+  \item Q3四中继架次：固定运输轨迹与5755候选位置有限域证明；
+  \item Q3 0.50/0.55 dB：完整可行见证；
+  \item Q4 K2/K3：冻结Q3严格模型下完整分区枚举。
+\end{itemize}
+
+最终提交前应再次以 \path{paper_integration/FINAL_SELECTION.json} 为唯一选择入口，逐项核对正文、摘要、图表、附录和机器可读结果，避免旧版本数字残留。
