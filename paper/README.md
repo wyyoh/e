@@ -1,18 +1,67 @@
 # 论文制作入口
 
-本目录提供科研绘图、制表与制作规范，不是官方比赛母版，不是新优化结果。
+## 当前唯一主稿
 
-先读 [图表与制作规范](docs/VISUAL_STYLE_GUIDE.md)，公开来源见 [研究来源](docs/RESEARCH_SOURCES.md)。四问叙事结构继续使用 `paper_integration/PAPER_OUTLINE.md`，正式数值以 `paper_integration/FINAL_SELECTION.json` 为准。
+- [`latex/main.tex`](latex/main.tex)
 
-`data/visual_data.json`保存冻结实验的24组配对耗时中位数、15组采样分数、Q2认证区间与Q4严格资源向量。每组耗时的3次技术重复原值及完整定价输入仍保留在其哈希绑定的实验归档中，不冒充新增测量。
+配套文件：
 
-```bash
-python paper/scripts/render_figures.py --out /path/new_figures
-python paper/scripts/build_tables.py --out /path/new_tables
-```
+- [`latex/appendices.tex`](latex/appendices.tex)：附录A--F
+- [`latex/references.bib`](latex/references.bib)：参考文献
+- [`latex/q2_v7_figures.tex`](latex/q2_v7_figures.tex)：Q2 V7正式TikZ图
+- [`data/q2_v7_visual_source.json`](data/q2_v7_visual_source.json)：Q2图源数据
 
-需要Python、Matplotlib、python-docx和本机中文字体。图脚本拒绝缺字输出，不随包分发字体。生成4图的PDF/SVG/PNG及3张Word原生表、booktabs表代码和数据清单。生成目录应为新目录，避免覆盖已验收输出。
+旧的分章节整合草稿已经从main删除，避免出现多个主稿入口。需要历史版本时请直接查Git提交记录。
 
-本轮配套下载包额外含6页图表样张PDF、可编辑DOCX、完整画图数据和LaTeX样张源码；这些生成物不作为比赛官方模板，也不需要全部打印进正文。主图与主表选择应以论证需要决定，勿重复整组数据。
+## 正式数值入口
 
-范围：0.573414dB是静态样本评分，不是新可行裕度；3.1201倍是固定输入定价中位耗时合计比，不是整个求解器速度比；4.554093%是以上界为分母的确定性认证间隙，不是统计误差。当前合并验收没有重启原优化。
+四问论文数字始终以：
+
+- [`../paper_integration/FINAL_SELECTION.json`](../paper_integration/FINAL_SELECTION.json)
+
+为最高优先级。
+
+Q1--Q4正式目录及证据边界见根目录 [`README.md`](../README.md) 和 [`../docs/MAIN_BRANCH_STATUS.md`](../docs/MAIN_BRANCH_STATUS.md)。
+
+## 当前图表状态
+
+- Q1：现有安全载荷、Pareto、余量敏感性图已经接入主稿
+- Q2：已统一切换到V7正式数据驱动的9张TikZ图，不再引用 `q2_closing` 旧图
+- Q3：正文仍按当前正式 `Q3-FINAL-V1/time` 口径；若未来正式Q3发生替换，必须同步重画第6章并重算Q4
+- Q4：strict主模型不变，clone仅作敏感性
+- 第1/4/6/7/8章仍有待完成的部分图位，以主稿中的 `\figplaceholder` 为准
+
+## 论文组成
+
+当前主稿已包含：
+
+- 摘要与关键词
+- 第1--9章
+- 参考文献
+- 附录A--F
+
+当前文件还是论文工程稿，不是官方比赛母版。最终提交前仍需迁移到当届官方模板并做版式检查。
+
+## 绘图与制表
+
+已有工具：
+
+- [`scripts/render_figures.py`](scripts/render_figures.py)
+- [`scripts/build_tables.py`](scripts/build_tables.py)
+- [`scripts/generate_q2_v7_figures.py`](scripts/generate_q2_v7_figures.py)
+
+视觉规范：
+
+- [`docs/VISUAL_STYLE_GUIDE.md`](docs/VISUAL_STYLE_GUIDE.md)
+
+公开研究来源：
+
+- [`docs/RESEARCH_SOURCES.md`](docs/RESEARCH_SOURCES.md)
+
+## 解释边界
+
+- 0.573414 dB 是Q3静态proxy评分，不是新连续可行通信裕度
+- 3.1201× 是固定pricing输入的中位耗时合计比，不是整个Q2求解器加速比
+- 4.554093% 是Q2确定性认证间隙，不是统计误差
+- Q3四中继下界仅适用于冻结运输几何+5755候选位置有限域
+- Q4 relay clone只作反事实敏感性
