@@ -5,6 +5,7 @@
 \usepackage{amsmath,amssymb}
 \usepackage{booktabs,longtable,array}
 \usepackage{graphicx,float}
+\graphicspath{{../../problems/D/q1/figures/}{../../q2_closing/figures/}{problems/D/q1/figures/}{q2_closing/figures/}}
 \usepackage{xcolor}
 \usepackage{enumitem}
 \usepackage{caption}
@@ -740,7 +741,12 @@ w_{S012,C}^{safe}\approx68.117\ {\rm kg}.
 \]
 这说明额定载荷并不能完全代表山区条件下的实际运输能力。
 
-\figplaceholder[6.0cm]{图4-2占位：15个服务区$\times$3种机型的低饱和蓝灰安全载荷矩阵。颜色表示额定能力损失率，单元格显示最大安全载荷/kg。}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.72\textwidth]{safe_payload_heatmap.png}
+  \caption{20\%返航安全余量下15个服务区与三类机型的最大安全载荷。}
+  \label{fig:q1_safe_payload_heatmap}
+\end{figure}
 
 \subsection{可行批型与组批模型}
 
@@ -828,7 +834,12 @@ A/B/C=0/9/9.
 \boxed{\text{最少架次}\neq\text{最低能耗}}.
 \]
 
-\figplaceholder{图4-3占位：18架次主方案与19架次节能方案的离散Pareto权衡。}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{pareto_front.png}
+  \caption{问题一完整离散Pareto目标集合。18架次方案首先达到最少架次数，19架次方案进一步降低少量能耗，但累计作业时间增加。}
+  \label{fig:q1_pareto}
+\end{figure}
 
 \subsection{安全余量敏感性}
 
@@ -863,7 +874,19 @@ p\text{可行}\iff\alpha\le\rho_p.
 
 当安全余量严格超过约35.2678\%时，S008的一只14 kg饮用水箱即使单独配送，也无法由任一机型完成安全往返；由于货箱不可拆，整个任务直接失去可行解。由此可见，连续安全要求会通过不可拆箱约束转化为离散架次数跃迁。
 
-\figplaceholder[6.0cm]{图4-4占位：安全余量--最少架次数阶梯图及临界事件轨。}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.95\textwidth]{reserve_vs_min_sorties.png}
+  \caption{返航安全余量变化引起的最少架次数阶梯跃迁。连续安全参数通过不可拆货箱组批转化为离散结构变化。}
+  \label{fig:q1_reserve_sorties}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.98\textwidth]{reserve_vs_safe_payload.png}
+  \caption{不同返航安全余量下各服务区三类机型最大安全载荷的变化。该图用于解释架次数临界事件产生的物理来源。}
+  \label{fig:q1_reserve_payload}
+\end{figure}
 
 % ============================================================
 \section{问题二：异构多架次运输与共享电池联合调度}
@@ -985,7 +1008,23 @@ A/B/C架次 & 11/6/6\\
 \end{tabular}
 \end{table}
 
-\figplaceholder[7.0cm]{图5-5占位：8架实体运输无人机与14组共享电池的联合事件甘特图。}
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}[t]{0.98\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{aircraft_gantt.png}
+    \caption{实体运输无人机时间表}
+  \end{subfigure}
+
+  \vspace{0.5em}
+  \begin{subfigure}[t]{0.98\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{battery_gantt.png}
+    \caption{共享电池占用与充电恢复时间表}
+  \end{subfigure}
+  \caption{飞机--电池双资源联合甘特图。当前暂采用 \texttt{q2\_closing} 旧版封口图展示资源链结构；最终提交版将按Q2-EVIDENCE-V7-FOCUSED正式方案统一重绘。}
+  \label{fig:q2_gantt_legacy}
+\end{figure}
 
 \subsection{固定B型任务结构下的离散瓶颈}
 
@@ -1030,7 +1069,12 @@ L_w=0.
 \]
 这里的7767.058 s只是一个可行见证，不是所有22架次方案的下界。
 
-\figplaceholder{图5-6占位：22架次可行见证与23架次主方案的工期--能耗离散对照。}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.90\textwidth]{incumbent_comparison.png}
+  \caption{23架次保留方案与22架次可行见证的旧版封口对照图。该图当前用于展示“减少架次数不必然缩短系统工期”的结构性结论；最终提交版将使用V7正式数值重新绘制。}
+  \label{fig:q2_incumbent_comparison_legacy}
+\end{figure}
 
 \subsection{全局有效下界与认证区间}
 
