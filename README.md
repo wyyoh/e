@@ -1,40 +1,112 @@
 # D题：山区洪涝灾害下无人机运输与通信协同优化
 
-## 当前正式入口
+本仓库的 **main 分支是当前论文与正式结果的唯一发布入口**。历史验证目录、研究分支和实验分支保留用于追溯，不自动覆盖 main 中已经冻结的正式结果。
 
-四问选解及适用范围以 [`paper_integration/FINAL_SELECTION.json`](paper_integration/FINAL_SELECTION.json) 为唯一选择入口。历史文件保留，不因合并实验改变原始任务、时间表、物理公式或正式结果。
+## 1. 唯一正式选择入口
 
-|问题|正式版本|关键结果|
+四问正式版本、证据范围和 companion archive 哈希统一由：
+
+- [`paper_integration/FINAL_SELECTION.json`](paper_integration/FINAL_SELECTION.json)
+
+决定。
+
+如果历史文件、实验分支、旧报告与该文件冲突，以 `FINAL_SELECTION.json` 及其引用的正式目录为准。
+
+| 问题 | main 中正式版本 | 当前正式结论 |
 |---|---|---|
-|Q1|冻结精确模型|18架次；59.131296022053 kWh；546.266929148593 min累计作业时间|
-|Q2|23架次主方案＋V7-FOCUSED证据|5693.231489105106 s；66.21445957313102 kWh；有效下界5433.956428 s|
-|Q3|Q3-FINAL-V1/time|23运输＋4中继；6340.439338658365 s；69.30853085578303 kWh|
-|Q4|Q4-SENSITIVITY-V2/strict|两组补C机1/C电池1；三组补A机1/C机3/A电池1/C电池2|
+| Q1 | `problems/D/q1` / frozen exact model | 18架次；59.131296022053 kWh；546.266929148593 min累计作业时间 |
+| Q2 | `Q2-EVIDENCE-V7-FOCUSED` | 23架次、零加权迟到；5693.231489105106 s；66.21445957313102 kWh；认证下界5433.956428 s |
+| Q3 | `Q3-FINAL-V1 / time` | 23运输+4中继；6340.439338658365 s；69.30853085578303 kWh |
+| Q4 | `Q4-SENSITIVITY-V2 / strict` | K=2缺口2；K=3缺口7；relay clone仅为敏感性 |
 
-Q1累计时间与Q2/Q3并行完工时间不是同一指标。Q2有理数上包络5693.231490秒，以上界为分母的认证间隙4.554093%；未证明原问题工期全局最优。Q3的额外损耗和节能候选保留为备选，Q4复制中继仅为反事实敏感性。
+### Q2证据边界
 
-## 三项算法实验
+当前Q2正式认证区间为：
 
-[`experiments/threeway_assistant_20260925/`](experiments/threeway_assistant_20260925/) 保存定价支配、资源链重构和Q3引导候选试验。
+[
+5433.956428 \le T^* \le 5693.231490\quad \mathrm{s}.
+]
 
-- 定价：24个固定输入三次配对测量，中位耗时合计比3.1201、生成标签减少约63.88%，原最小约化成本一致；原810份覆盖证书由新核重新定价通过。是核心计算加速，不是全局求解器3.12倍，也没有新下界。
-- 资源链：3池×2模型，4个有限最优、2个限时未知，没有更快完整方案。
-- 中继采样：5配对种子×3方法×192评估，静态评分改善未转化为完整可接纳排程；0.573414dB不作为新可行裕度。
+UB归一化间隙为 **4.554093092%**。零加权迟到最优值为0，但 **makespan全局最优尚未证明**。
 
-实验进入main供复现和论文对照，不自动替换冻结求解器或正式方案。尚未复核的其他并行实验分支没有在本次合并中纳入。
+### Q3证据边界
 
-完整原始日志、定价输入、排程与上游归档保留在哈希绑定的配套ZIP，见实验BASELINE及说明；仓库保存可执行源码、摘要和本文图表所需数据，不宣称已上传所有大体积原始证据。
+Q3正式主方案仍是 `Q3-FINAL-V1/time`。当前研究分支中存在更晚的架构验证与候选生成实验，但它们均明确记录：
 
-## 开始撰写
+- `formal_q3_primary_unchanged = true`
+- `adopted_new_plan = false`
 
-- [`paper/`](paper/)：图表数据、可复现绘图和可编辑制表脚本。
-- [`paper/docs/VISUAL_STYLE_GUIDE.md`](paper/docs/VISUAL_STYLE_GUIDE.md)：绘图、制表、排版与提交前检查。
-- [`paper/docs/RESEARCH_SOURCES.md`](paper/docs/RESEARCH_SOURCES.md)：公开规范来源及赛事/期刊要求区别。
-- [`paper_integration/PAPER_OUTLINE.md`](paper_integration/PAPER_OUTLINE.md)：九章论文组织。
-- [`paper/qa/RELEASE_AUDIT.json`](paper/qa/RELEASE_AUDIT.json)：本次归档验收、9份实验源码身份和图表QA范围。
+因此这些研究分支不替换main中的正式Q3。
 
-先冻结证据与结论，再写四问模型、机制图、认证和敏感性；不要将局部最优、静态样本评分或检查次数扩大为原问题全局最优/实飞保证。样张不是官方母版，正式封皮、匿名与上传格式仍以当届模板为准。
+### Q4证据边界
 
-## 历史
+Q4严格模型冻结Q3正式任务、时序、路线和实际通信关系。严格K=2/K=3分别完整枚举3种/1种合法分区；relay-copy模型只用于反事实敏感性，不能作为正式主答案。
 
-`verification_v2/`、`verification_v3/`、`q2_closing/`、`q2_final/`及旧日志原样保留。过去根README中的V3数值为历史版本，已不作为最新选择。所有数值结论限定给定输入、能耗推导、精确时间和准备前满电的执行流程。
+## 2. 当前论文入口
+
+论文当前唯一LaTeX主文件：
+
+- [`paper/latex/main.tex`](paper/latex/main.tex)
+
+配套文件：
+
+- [`paper/latex/appendices.tex`](paper/latex/appendices.tex)：附录A--F
+- [`paper/latex/references.bib`](paper/latex/references.bib)：参考文献
+- [`paper/latex/q2_v7_figures.tex`](paper/latex/q2_v7_figures.tex)：Q2最新V7正式TikZ图组
+- [`paper/data/q2_v7_visual_source.json`](paper/data/q2_v7_visual_source.json)：Q2正式绘图数据
+
+旧的 `current_draft_ch*.tex` 文件已从main删除，避免出现多个“主稿”入口。
+
+## 3. 目录职责
+
+- `problems/D/q1/`：Q1正式精确模型、结果、测试、图和验证
+- `problems/D/q2/evidence_v7/`：Q2 V7正式证据
+- `q2_final/solution/main_23/`：Q2正式23架次primal方案
+- `problems/D/q3/release_final/`：Q3正式冻结release
+- `problems/D/q4/`：Q4正式strict结果与敏感性
+- `paper/`：论文正文、数据、图、参考文献与QA
+- `paper_integration/`：四问正式选择、论文组织与整合证据
+- `experiments/`：已合入main、但不自动替换正式结果的实验记录
+
+## 4. 历史目录说明
+
+下列目录保留是为了可追溯，不是当前正式入口：
+
+- `q2_closing/`
+- `verification_v2/`
+- `verification_v3/`
+- 早期 `results/`、`logs/`
+- 历史研究分支中的Q2 proof / Q3 candidate experiments
+
+不得因为这些目录中存在旧数值，就覆盖当前正式论文结果。
+
+## 5. 分支规则
+
+- `main`：当前正式结果 + 论文主稿
+- `research/*`、`experiments/*`：研究与验证材料，只有通过正式验收并明确更新 `FINAL_SELECTION.json` 后，才能改变main正式口径
+- `release/*`：历史发布快照，不作为比main更新的自动来源
+
+截至本次整理，Q1/Q2正式研究分支均已被main完整包含；Q3较新的研究分支只提供“没有实质改进”的审计材料，不改变正式Q3。
+
+更详细的main状态说明见：
+
+- [`docs/MAIN_BRANCH_STATUS.md`](docs/MAIN_BRANCH_STATUS.md)
+
+## 6. 论文制作
+
+论文制作入口：
+
+- [`paper/README.md`](paper/README.md)
+- [`paper/docs/VISUAL_STYLE_GUIDE.md`](paper/docs/VISUAL_STYLE_GUIDE.md)
+- [`paper/docs/RESEARCH_SOURCES.md`](paper/docs/RESEARCH_SOURCES.md)
+
+当前Q2图已经统一为V7正式口径，不再引用 `q2_closing` 旧版图。
+
+## 7. 使用原则
+
+1. 先读 `FINAL_SELECTION.json`，再读取各问正式目录。
+2. 不把历史试验、静态proxy、有限邻域“未改善”扩大为全局最优证明。
+3. Q1累计作业时间与Q2/Q3并行makespan不是同一指标。
+4. Q3的4中继下界只对固定运输轨迹+5755候选位置的有限域成立。
+5. Q4的clone结果只作敏感性。
+6. 最终论文提交仍需按当届官方模板完成封面、匿名、版式和上传格式检查。
