@@ -50,3 +50,20 @@ latexmk -xelatex -interaction=nonstopmode -halt-on-error main.tex
 `main.tex` 为严格图片模式：缺原图时报错，不会悄悄用空框替代。`review.tex` 是本次环境受限时使用的显式检阅入口；不要将其缺图容错模式用于正式提交。仓库中的原PNG齐全，可在具备完整文件的环境编译 `main.tex`；完整原图版PDF在本环境未能实编确认，图像尺寸可能使分页不同。
 
 本PDF只用于检阅排版和原稿内容，不是已清除占位图、已完成内容审定或已经官方格式核验的提交版。
+
+## 2026-09-26 structure revision
+
+Review branch: paper/structure-revision-v2-20260926.
+
+This revision keeps the formal numerical selections in paper_integration/FINAL_SELECTION.json unchanged and reorganizes the manuscript around the competition-facing chain **model -> solution process -> concrete plan -> verification**.
+
+Main changes:
+
+- Q1 expands the exact MILP / symmetry-compressed MILP / count-state DP methodology.
+- Q2 expands the joint scheduling model, two-stage battery recovery, deterministic aircraft-battery event decoder, ALNS destroy/repair/local operators, and independent lower-bound certification route.
+- Q3 corrects terrain blockage semantics (additional propagation loss, not a hard LoS veto), and expands communication-state constraints, relay lifecycle, candidate screening, joint scheduling, and continuous verification.
+- Q4 explains how frozen transport/relay relations generate indivisible task blocks and distinguishes stock surplus from time-axis idleness.
+- The editorial-only evidence-placement note was removed from the manuscript.
+- Chapters 8 and 9 were shortened so that more of the body is devoted to Q2/Q3 modeling and solution steps.
+
+No new formal Q1/Q2/Q3/Q4 headline result is introduced by this writing revision.
