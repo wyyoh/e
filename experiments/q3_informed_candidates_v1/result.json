@@ -1,0 +1,112 @@
+{
+  "source": "Q3-FINAL-V1 / V3 robust_spatial local candidate universe",
+  "official_q3_changed": false,
+  "candidate_pool": 578,
+  "screen_threshold_db": 0.5,
+  "screen_pass_count": 66,
+  "screen_pass_fraction": 0.11418685121107267,
+  "random_hit_probability_without_replacement": {
+    "1": 0.11418685121107264,
+    "3": 0.3053998029020967,
+    "5": 0.455827413531286,
+    "10": 0.7055502740419839
+  },
+  "informed_rule": "rank by sampled system minimum margin on critical hardpoints, then keep candidates >=35m apart before expensive full geometry/scheduling solve",
+  "informed_first3": [
+    {
+      "xyz": [
+        475,
+        5850,
+        366.501513671875
+      ],
+      "sampled_minimum_margin_db": 0.5680878870686978,
+      "historical_joint_status": "no_witness"
+    },
+    {
+      "xyz": [
+        525,
+        5850,
+        385.3645935058594
+      ],
+      "sampled_minimum_margin_db": 0.5607152770059525,
+      "historical_joint_status": "no_witness"
+    },
+    {
+      "xyz": [
+        750,
+        5825,
+        388.08189544677737
+      ],
+      "sampled_minimum_margin_db": 0.555382020859648,
+      "historical_joint_status": "verified_0.5dB_witness"
+    }
+  ],
+  "uniform_seed": 20260925,
+  "uniform_six": [
+    {
+      "xyz": [
+        625,
+        6100,
+        406.2113342285156
+      ],
+      "sampled_minimum_margin_db": 0.18611260262543183,
+      "screen_pass": false
+    },
+    {
+      "xyz": [
+        650,
+        5800,
+        397.866764831543
+      ],
+      "sampled_minimum_margin_db": 0.42370246999004735,
+      "screen_pass": false
+    },
+    {
+      "xyz": [
+        425,
+        5775,
+        360.1726699829102
+      ],
+      "sampled_minimum_margin_db": -2.5001960068010973,
+      "screen_pass": false
+    },
+    {
+      "xyz": [
+        750,
+        5800,
+        401.1022644042969
+      ],
+      "sampled_minimum_margin_db": 0.4345458480360307,
+      "screen_pass": false
+    },
+    {
+      "xyz": [
+        425,
+        5975,
+        361.6552474975586
+      ],
+      "sampled_minimum_margin_db": -2.2522017727606674,
+      "screen_pass": false
+    },
+    {
+      "xyz": [
+        575,
+        6025,
+        384.0446517944336
+      ],
+      "sampled_minimum_margin_db": 0.3006402897182099,
+      "screen_pass": false
+    }
+  ],
+  "uniform_screen_passes": 0,
+  "archived_third_informed_witness": {
+    "extra_db": 0.5,
+    "joint_makespan_s": 6395.090950337773,
+    "total_energy_kwh": 69.33760399060057,
+    "hard_late_boxes": 0,
+    "weighted_tardiness_s": 0,
+    "min_hard_slack_s": 30
+  },
+  "interpretation": "screening-efficiency pilot only. Sampled hardpoint score is not a complete joint-schedule certificate. The historical V3 search required three expensive informed trials before obtaining a 0.5 dB witness. A seeded uniform six-candidate draw from the same universe contained no candidate that even passed the 0.5 dB sampled screen. Q3-FINAL-V1 remains unchanged.",
+  "current_q3_final_gate_after_restoring_frozen_package": "PASS"
+}
