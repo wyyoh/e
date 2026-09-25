@@ -1,0 +1,49 @@
+{
+  "source": "authoritative Q2-EVIDENCE-V7-FOCUSED incumbent",
+  "incumbent_makespan_s": 5693.231489105106,
+  "incumbent_energy_kwh": 66.21445957313102,
+  "critical_aircraft": "U06",
+  "critical_slots": [
+    3,
+    16,
+    18
+  ],
+  "same_final_site_slots": [
+    17
+  ],
+  "late_C_slots": [
+    11,
+    12
+  ],
+  "target_slots": [
+    3,
+    11,
+    12,
+    16,
+    17,
+    18
+  ],
+  "target_box_count": 23,
+  "neighborhood": "target slot may remove<=3 own boxes, add<=3 boxes from 23-box chain union, change A/B/C type, enumerate all service orders up to 4 unique sites; other slots fixed",
+  "option_counts": {
+    "3": 1784,
+    "11": 107,
+    "12": 1757,
+    "16": 2301,
+    "17": 3133,
+    "18": 2521
+  },
+  "total_target_options": 11603,
+  "generation_s": 14.993847846984863,
+  "milp_variables": 35727,
+  "milp_rows": 11725,
+  "milp_nonzeros": 111165,
+  "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "mip_gap": 0,
+  "mip_nodes": 69,
+  "solve_s": 11.003333806991577,
+  "relaxed_aircraft_workload_lower_bound_s": 5693.231489105105,
+  "strict_improvement_possible_in_neighborhood": false,
+  "logic": "battery/time-window/ordering constraints are relaxed; therefore if even this relaxation is >= incumbent, no executable member of the defined neighborhood can improve makespan",
+  "global_Q2_claim": false
+}
