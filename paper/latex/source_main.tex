@@ -1321,10 +1321,26 @@ t_k\leftarrow s_r+p_r+\tau(SOC_r^{return}).
 \end{table}
 
 \begin{figure}[H]
-  \centering
-  \resizebox{0.86\textwidth}{!}{\QTwoFigUpperSearch}
-  \caption{问题二可行上界搜索与资源重放闭环。任务重构后的每个候选方案都必须重新通过真实飞机、电池、充电恢复和箱级时限检查。}
-  \label{fig:q2_upper_search_v7}
+\centering
+\resizebox{0.96\textwidth}{!}{%
+\begin{tikzpicture}[>=Latex,font=\footnotesize]
+\tikzset{
+ q2c/.style={draw=qDark,fill=qLight,rounded corners=2pt,minimum width=3.0cm,minimum height=.75cm,align=center},
+ q2s/.style={q2c,fill=qLMid}
+}
+\node[q2s] (a) at (0,1.6) {当前可行方案};
+\node[q2c] (b) at (3.45,1.6) {识别关键链\\迟到·飞机·电池};
+\node[q2c] (c) at (6.90,1.6) {破坏与重构\\货箱·路线·机型};
+\node[q2c] (d) at (10.35,1.6) {物理筛选\\质量·体积·能量};
+\node[q2s] (e) at (10.35,0) {事件排程与独立重放};
+\node[q2c] (f) at (6.90,0) {箱级时限与资源检查};
+\node[q2c] (g) at (3.45,0) {严格改善？\\是：更新上界};
+\draw[->,qDark](a)--(b); \draw[->,qDark](b)--(c); \draw[->,qDark](c)--(d);
+\draw[->,qDark](d)--(e); \draw[->,qDark](e)--(f); \draw[->,qDark](f)--(g);
+\draw[->,qDark](g.west)--++(-.65,0)|-(c.west);
+\end{tikzpicture}}
+\caption{问题二可行上界搜索与资源重放闭环。}
+\label{fig:q2_upper_search_v7}
 \end{figure}
 
 \subsubsection{独立验证}
