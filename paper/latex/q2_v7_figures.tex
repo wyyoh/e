@@ -1,0 +1,254 @@
+% Q2-EVIDENCE-V7-FOCUSED formal manuscript figures.
+% Auto-generated from paper/data/q2_v7_visual_source.json.
+% No legacy q2_closing figure is used by these macros.
+\definecolor{qLight}{HTML}{E4E8EB}
+\definecolor{qLMid}{HTML}{C4CDD3}
+\definecolor{qMid}{HTML}{98A8B2}
+\definecolor{qDark}{HTML}{657A87}
+\definecolor{qDeep}{HTML}{3F5663}
+\definecolor{qText}{HTML}{30343A}
+\definecolor{qGrid}{HTML}{D9DDE0}
+
+\newcommand{\QTwoFigFramework}{%
+\begin{tikzpicture}[>=Latex,font=\small]
+\node[draw=qDark,fill=qLight,rounded corners=2pt,minimum width=5.0cm,minimum height=.8cm,align=center] (a) at (0,4.9) {Q1安全可行批型 / 候选运输任务};
+\node[draw=qDark,fill=qLight,rounded corners=2pt,minimum width=6.2cm,minimum height=1.05cm,align=center] (b) at (0,3.5) {多点运输任务构造\\箱组 · 访问顺序 · 机型 · 时长 · 能耗 · 箱级送达偏移};
+\node[draw=qDark,fill=qLMid,rounded corners=2pt,minimum width=6.2cm,minimum height=1.05cm,align=center] (c) at (0,2.0) {飞机--电池联合资源排程\\实体飞机 · 共享电池 · 充电恢复 · deadline · 开始时刻};
+\node[draw=qDark,fill=qLight,rounded corners=2pt,minimum width=5.2cm,minimum height=1.35cm,align=center] (u) at (-3.7,.25) {可行上界路线\\任务重构 $\to$ 事件排程 $\to$ 独立重放\\得到真实可执行 UB};
+\node[draw=qDark,fill=qLight,rounded corners=2pt,minimum width=5.2cm,minimum height=1.35cm,align=center] (l) at (3.7,.25) {全局下界路线\\任务列松弛 $\to$ 完整定价 $\to$ 分支覆盖证书\\得到有效 LB};
+\node[draw=qDark,fill=qLMid,rounded corners=2pt,minimum width=5.4cm,minimum height=.85cm,align=center] (z) at (0,-1.45) {确定性认证区间：$LB\le T^*\le UB$};
+\draw[->,qDark] (a)--(b); \draw[->,qDark] (b)--(c); \draw[->,qDark] (c)--(u); \draw[->,qDark] (c)--(l); \draw[->,qDark] (u)--(z); \draw[->,qDark] (l)--(z);
+\node[qDark,font=\footnotesize,align=center] at (0,-2.25) {同时回答“方案能否真实执行”与“当前方案距离理论下界还有多远”};
+\end{tikzpicture}}
+
+\newcommand{\QTwoFigOccupancy}{%
+\begin{tikzpicture}[x=1.05cm,y=1cm,font=\small]
+\foreach \x/\lab in {1/任务开始,7/返航,9/电池恢复满电}{\draw[dashed,qGrid] (\x,.25)--(\x,2.15); \node[font=\footnotesize] at (\x,2.38){\lab};}
+\node[anchor=east] at (.65,1.65){运输无人机}; \node[anchor=east] at (.65,.75){共享电池};
+\fill[qDark] (1,1.4) rectangle (7,1.9); \node[white] at (4,1.65){准备 + 飞行 + 配送 + 返航};
+\fill[qDark] (1,.5) rectangle (7,1.0); \node[white] at (4,.75){任务占用};
+\fill[qLMid] (7,.5) rectangle (9,1.0); \node[qText] at (8,.75){充电恢复};
+\node[qDark,font=\footnotesize] at (4,1.22){$I_r^U=[s_r,s_r+p_r)$};
+\node[qDark,font=\footnotesize] at (5,.32){$I_r^B=[s_r,s_r+p_r+c_r)$};
+\node[qDark,font=\footnotesize] at (5,-.05){飞机返航后释放，而原电池继续占用至恢复满电};
+\end{tikzpicture}}
+
+\newcommand{\QTwoFigUpperSearch}{%
+\begin{tikzpicture}[>=Latex,font=\small,node distance=8mm]
+\tikzset{bx/.style={draw=qDark,fill=qLight,rounded corners=2pt,minimum width=7.4cm,minimum height=.9cm,align=center}, strong/.style={bx,fill=qLMid}}
+\node[strong] (a) {当前完整可行方案};
+\node[bx,below=of a] (b) {识别关键链：迟到风险 · makespan瓶颈 · 飞机链 · 电池链};
+\node[bx,below=of b] (c) {构造重构邻域：货箱重分配 · 路线重构 · 机型调整 · 资源链释放};
+\node[bx,below=of c] (d) {快速物理筛选：质量 · 体积 · 能量 · 时限必要条件};
+\node[strong,below=of d] (e) {精确事件排程 + 独立重放：飞机 · 电池 · 充电 · 箱级deadline};
+\node[bx,below=of e,minimum width=3.2cm] (g) {严格改善？};
+\draw[->,qDark] (a)--(b);\draw[->,qDark](b)--(c);\draw[->,qDark](c)--(d);\draw[->,qDark](d)--(e);\draw[->,qDark](e)--(g);
+\node[right=18mm of g,qDark] (yes) {是：接受为新UB}; \draw[->,qDark] (g)--(yes);
+\node[left=18mm of g,qDark] (no) {否：拒绝并换邻域}; \draw[->,qDark] (g)--(no);
+\draw[->,qDark] (no.west) -- ++(-.7,0) |- (c.west);
+\node[qDark,font=\footnotesize,below=5mm of g,align=center] {候选必须经过完整事件排程与重放后才能成为正式可行上界};
+\end{tikzpicture}}
+
+\newcommand{\QTwoFigRouteMap}{%
+\begin{tikzpicture}[x=.85cm,y=.85cm,font=\footnotesize]
+\draw[->,qText] (-6.9,-.8)--(6.2,-.8) node[right]{AEQD $x$/km};
+\draw[->,qText] (-6.9,-.8)--(-6.9,8.35) node[above]{AEQD $y$/km};
+\draw[qLMid,line width=.65pt,opacity=.78] (0.000,0.000) -- (1.269,2.778) -- (0.000,0.000);
+\draw[qLMid,line width=.65pt,opacity=.78] (0.000,0.000) -- (0.750,7.678) -- (0.000,0.000);
+\draw[qLMid,line width=.65pt,opacity=.78] (0.000,0.000) -- (4.155,2.501) -- (0.000,0.000);
+\draw[qLMid,line width=.65pt,opacity=.78] (0.000,0.000) -- (-1.078,2.593) -- (0.750,7.678) -- (0.000,0.000);
+\draw[qDark,dashed,line width=.65pt,opacity=.78] (0.000,0.000) -- (4.630,1.207) -- (0.000,0.000);
+\draw[qDark,dashed,line width=.65pt,opacity=.78] (0.000,0.000) -- (5.407,-0.364) -- (0.000,0.000);
+\draw[qMid,dotted,line width=.65pt,opacity=.78] (0.000,0.000) -- (1.269,2.778) -- (0.000,0.000);
+\draw[qMid,dotted,line width=.65pt,opacity=.78] (0.000,0.000) -- (1.269,2.778) -- (0.000,0.000);
+\draw[qLMid,line width=.65pt,opacity=.78] (0.000,0.000) -- (2.387,5.182) -- (2.838,6.846) -- (4.155,2.501) -- (0.000,0.000);
+\draw[qMid,dotted,line width=.65pt,opacity=.78] (0.000,0.000) -- (-3.185,-0.088) -- (0.000,0.000);
+\draw[qDark,dashed,line width=.65pt,opacity=.78] (0.000,0.000) -- (5.358,5.090) -- (0.000,0.000);
+\draw[qLMid,line width=.65pt,opacity=.78] (0.000,0.000) -- (-3.898,2.316) -- (0.000,0.000);
+\draw[qMid,dotted,line width=.65pt,opacity=.78] (0.000,0.000) -- (2.838,6.846) -- (0.000,0.000);
+\draw[qDark,dashed,line width=.65pt,opacity=.78] (0.000,0.000) -- (0.750,7.678) -- (0.000,0.000);
+\draw[qLMid,line width=.65pt,opacity=.78] (0.000,0.000) -- (-3.898,2.316) -- (0.000,0.000);
+\draw[qLMid,line width=.65pt,opacity=.78] (0.000,0.000) -- (-6.354,3.519) -- (-3.943,4.535) -- (0.000,0.000);
+\draw[qMid,dotted,line width=.65pt,opacity=.78] (0.000,0.000) -- (-3.898,2.316) -- (-6.354,3.519) -- (0.000,0.000);
+\draw[qDark,dashed,line width=.65pt,opacity=.78] (0.000,0.000) -- (-1.855,7.863) -- (0.000,0.000);
+\draw[qLMid,line width=.65pt,opacity=.78] (0.000,0.000) -- (-3.943,4.535) -- (0.000,0.000);
+\draw[qDark,dashed,line width=.65pt,opacity=.78] (0.000,0.000) -- (-1.855,7.863) -- (0.000,0.000);
+\draw[qMid,dotted,line width=.65pt,opacity=.78] (0.000,0.000) -- (-0.261,5.274) -- (0.000,0.000);
+\draw[qLMid,line width=.65pt,opacity=.78] (0.000,0.000) -- (2.387,5.182) -- (0.000,0.000);
+\draw[qLMid,line width=.65pt,opacity=.78] (0.000,0.000) -- (-1.078,2.593) -- (0.000,0.000);
+\node[star,star points=5,fill=qDeep,minimum size=5pt,inner sep=1.2pt,label={below right:O01}] at (0,0) {};
+\fill[qDeep] (1.269,2.778) circle (1.25pt); \node[anchor=south west] at (1.369,2.838) {S001};
+\fill[qDeep] (2.838,6.846) circle (1.25pt); \node[anchor=south west] at (2.938,6.906) {S002};
+\fill[qDeep] (-6.354,3.519) circle (1.25pt); \node[anchor=south west] at (-6.254,3.579) {S003};
+\fill[qDeep] (0.750,7.678) circle (1.25pt); \node[anchor=south west] at (0.850,7.738) {S004};
+\fill[qDeep] (-0.261,5.274) circle (1.25pt); \node[anchor=south west] at (-0.161,5.334) {S005};
+\fill[qDeep] (-3.185,-0.088) circle (1.25pt); \node[anchor=south west] at (-3.085,-0.028) {S006};
+\fill[qDeep] (-3.898,2.316) circle (1.25pt); \node[anchor=south west] at (-3.798,2.376) {S007};
+\fill[qDeep] (-1.855,7.863) circle (1.25pt); \node[anchor=south west] at (-1.755,7.923) {S008};
+\fill[qDeep] (2.387,5.182) circle (1.25pt); \node[anchor=south west] at (2.487,5.242) {S009};
+\fill[qDeep] (4.630,1.207) circle (1.25pt); \node[anchor=south west] at (4.730,1.267) {S010};
+\fill[qDeep] (-1.078,2.593) circle (1.25pt); \node[anchor=south west] at (-0.978,2.653) {S011};
+\fill[qDeep] (5.358,5.090) circle (1.25pt); \node[anchor=south west] at (5.458,5.150) {S012};
+\fill[qDeep] (4.155,2.501) circle (1.25pt); \node[anchor=south west] at (4.255,2.561) {S013};
+\fill[qDeep] (5.407,-0.364) circle (1.25pt); \node[anchor=south west] at (5.507,-0.304) {S014};
+\fill[qDeep] (-3.943,4.535) circle (1.25pt); \node[anchor=south west] at (-3.843,4.595) {S015};
+\node[qDark,anchor=north west,font=\small] at (-6.65,8.1){23架次；A/B/C=11/6/6};
+\draw[qLMid,line width=.8pt] (1.45,-.45)--(2.15,-.45) node[right,qText]{A型};
+\draw[qDark,dashed,line width=.8pt] (3.0,-.45)--(3.7,-.45) node[right,qText]{B型};
+\draw[qMid,dotted,line width=.8pt] (4.55,-.45)--(5.25,-.45) node[right,qText]{C型};
+\end{tikzpicture}}
+
+\newcommand{\QTwoFigGantt}{%
+\begin{minipage}{.99\linewidth}\centering
+\begin{tikzpicture}[x=.095cm,y=.48cm,font=\scriptsize]
+\draw[qGrid] (0,0)--(0,8.6); \node[below] at (0,0) {0};
+\draw[qGrid] (20,0)--(20,8.6); \node[below] at (20,0) {20};
+\draw[qGrid] (40,0)--(40,8.6); \node[below] at (40,0) {40};
+\draw[qGrid] (60,0)--(60,8.6); \node[below] at (60,0) {60};
+\draw[qGrid] (80,0)--(80,8.6); \node[below] at (80,0) {80};
+\draw[qGrid] (100,0)--(100,8.6); \node[below] at (100,0) {100};
+\draw[qGrid] (120,0)--(120,8.6); \node[below] at (120,0) {120};
+\draw[qGrid] (140,0)--(140,8.6); \node[below] at (140,0) {140};
+\node[anchor=east] at (-1,8) {U01};
+\node[anchor=east] at (-1,7) {U02};
+\node[anchor=east] at (-1,6) {U03};
+\node[anchor=east] at (-1,5) {U04};
+\node[anchor=east] at (-1,4) {U05};
+\node[anchor=east] at (-1,3) {U06};
+\node[anchor=east] at (-1,2) {U07};
+\node[anchor=east] at (-1,1) {U08};
+\fill[qLMid] (0.000,7.68) rectangle (20.848,8.32); \node at (10.424,8) {R01};
+\fill[qLMid] (0.000,6.68) rectangle (36.313,7.32); \node at (18.157,7) {R02};
+\fill[qLMid] (0.000,5.68) rectangle (26.869,6.32); \node at (13.434,6) {R03};
+\fill[qLMid] (0.000,4.68) rectangle (41.068,5.32); \node at (20.534,5) {R04};
+\fill[qDark] (0.000,3.68) rectangle (25.923,4.32); \node at (12.961,4) {R05};
+\fill[qDark] (0.000,2.68) rectangle (31.163,3.32); \node at (15.581,3) {R06};
+\fill[qMid] (0.000,1.68) rectangle (27.103,2.32); \node at (13.551,2) {R07};
+\fill[qMid] (0.000,0.68) rectangle (23.803,1.32); \node at (11.901,1) {R08};
+\fill[qLMid] (20.848,7.68) rectangle (65.440,8.32); \node at (43.144,8) {R09};
+\fill[qMid] (23.803,0.68) rectangle (49.829,1.32); \node at (36.816,1) {R10};
+\fill[qDark] (25.923,3.68) rectangle (57.969,4.32); \node at (41.946,4) {R11};
+\fill[qLMid] (26.869,5.68) rectangle (55.659,6.32); \node at (41.264,6) {R12};
+\fill[qMid] (27.103,1.68) rectangle (63.333,2.32); \node at (45.218,2) {R13};
+\fill[qDark] (31.163,2.68) rectangle (63.190,3.32); \node at (47.176,3) {R14};
+\fill[qLMid] (36.313,6.68) rectangle (65.104,7.32); \node at (50.709,7) {R15};
+\fill[qLMid] (44.954,4.68) rectangle (88.343,5.32); \node at (66.648,5) {R16};
+\fill[qMid] (49.829,0.68) rectangle (94.722,1.32); \node at (72.275,1) {R17};
+\fill[qDark] (57.969,3.68) rectangle (90.666,4.32); \node at (74.317,4) {R18};
+\fill[qLMid] (60.011,5.68) rectangle (92.821,6.32); \node at (76.416,6) {R19};
+\fill[qDark] (63.190,2.68) rectangle (94.887,3.32); \node at (79.039,3) {R20};
+\fill[qMid] (63.333,1.68) rectangle (94.620,2.32); \node at (78.976,2) {R21};
+\fill[qLMid] (65.104,6.68) rectangle (93.247,7.32); \node at (79.176,7) {R22};
+\fill[qLMid] (73.166,7.68) rectangle (93.533,8.32); \node at (83.350,8) {R23};
+\draw[qDeep,dashed,line width=.8pt] (94.887,.35)--(94.887,8.45);
+\node[anchor=west,qDark] at (95.887,8.2){(a) 飞机占用};
+\node[rotate=90] at (-4,4.5){运输无人机}; \node at (70,-.8){从调度开始计时 / min};
+\end{tikzpicture}\par\smallskip
+\begin{tikzpicture}[x=.095cm,y=.38cm,font=\scriptsize]
+\draw[qGrid] (0,0)--(0,14.8); \node[below] at (0,0) {0};
+\draw[qGrid] (20,0)--(20,14.8); \node[below] at (20,0) {20};
+\draw[qGrid] (40,0)--(40,14.8); \node[below] at (40,0) {40};
+\draw[qGrid] (60,0)--(60,14.8); \node[below] at (60,0) {60};
+\draw[qGrid] (80,0)--(80,14.8); \node[below] at (80,0) {80};
+\draw[qGrid] (100,0)--(100,14.8); \node[below] at (100,0) {100};
+\draw[qGrid] (120,0)--(120,14.8); \node[below] at (120,0) {120};
+\draw[qGrid] (140,0)--(140,14.8); \node[below] at (140,0) {140};
+\node[anchor=east] at (-1,14) {A-BAT01};
+\node[anchor=east] at (-1,13) {A-BAT02};
+\node[anchor=east] at (-1,12) {A-BAT03};
+\node[anchor=east] at (-1,11) {A-BAT04};
+\node[anchor=east] at (-1,10) {A-BAT05};
+\node[anchor=east] at (-1,9) {A-BAT06};
+\node[anchor=east] at (-1,8) {B-BAT01};
+\node[anchor=east] at (-1,7) {B-BAT02};
+\node[anchor=east] at (-1,6) {B-BAT03};
+\node[anchor=east] at (-1,5) {B-BAT04};
+\node[anchor=east] at (-1,4) {C-BAT01};
+\node[anchor=east] at (-1,3) {C-BAT02};
+\node[anchor=east] at (-1,2) {C-BAT03};
+\node[anchor=east] at (-1,1) {C-BAT04};
+\fill[qLMid] (0.000,13.73) rectangle (20.848,14.27); \fill[qLight] (20.848,13.73) rectangle (35.356,14.27);
+\fill[qLMid] (0.000,12.73) rectangle (36.313,13.27); \fill[qLight] (36.313,12.73) rectangle (60.011,13.27);
+\fill[qLMid] (0.000,11.73) rectangle (26.869,12.27); \fill[qLight] (26.869,11.73) rectangle (44.954,12.27);
+\fill[qLMid] (0.000,10.73) rectangle (41.068,11.27); \fill[qLight] (41.068,10.73) rectangle (64.930,11.27);
+\fill[qDark] (0.000,7.73) rectangle (25.923,8.27); \fill[qLight] (25.923,7.73) rectangle (50.202,8.27);
+\fill[qDark] (0.000,6.73) rectangle (31.163,7.27); \fill[qLight] (31.163,6.73) rectangle (57.732,7.27);
+\fill[qMid] (0.000,3.73) rectangle (27.103,4.27); \fill[qLight] (27.103,3.73) rectangle (53.020,4.27);
+\fill[qMid] (0.000,2.73) rectangle (23.803,3.27); \fill[qLight] (23.803,2.73) rectangle (49.272,3.27);
+\fill[qLMid] (20.848,9.73) rectangle (65.440,10.27); \fill[qLight] (65.440,9.73) rectangle (90.096,10.27);
+\fill[qMid] (23.803,1.73) rectangle (49.829,2.27); \fill[qLight] (49.829,1.73) rectangle (75.445,2.27);
+\fill[qDark] (25.923,5.73) rectangle (57.969,6.27); \fill[qLight] (57.969,5.73) rectangle (88.958,6.27);
+\fill[qLMid] (26.869,8.73) rectangle (55.659,9.27); \fill[qLight] (55.659,8.73) rectangle (73.166,9.27);
+\fill[qMid] (27.103,0.73) rectangle (63.333,1.27); \fill[qLight] (63.333,0.73) rectangle (105.573,1.27);
+\fill[qDark] (31.163,4.73) rectangle (63.190,5.27); \fill[qLight] (63.190,4.73) rectangle (93.573,5.27);
+\fill[qLMid] (36.313,13.73) rectangle (65.104,14.27); \fill[qLight] (65.104,13.73) rectangle (82.927,14.27);
+\fill[qLMid] (44.954,11.73) rectangle (88.343,12.27); \fill[qLight] (88.343,11.73) rectangle (112.552,12.27);
+\fill[qMid] (49.829,2.73) rectangle (94.722,3.27); \fill[qLight] (94.722,2.73) rectangle (137.465,3.27);
+\fill[qDark] (57.969,7.73) rectangle (90.666,8.27); \fill[qLight] (90.666,7.73) rectangle (123.265,8.27);
+\fill[qLMid] (60.011,12.73) rectangle (92.821,13.27); \fill[qLight] (92.821,12.73) rectangle (113.469,13.27);
+\fill[qDark] (63.190,6.73) rectangle (94.887,7.27); \fill[qLight] (94.887,6.73) rectangle (125.956,7.27);
+\fill[qMid] (63.333,3.73) rectangle (94.620,4.27); \fill[qLight] (94.620,3.73) rectangle (127.567,4.27);
+\fill[qLMid] (65.104,10.73) rectangle (93.247,11.27); \fill[qLight] (93.247,10.73) rectangle (112.805,11.27);
+\fill[qLMid] (73.166,8.73) rectangle (93.533,9.27); \fill[qLight] (93.533,8.73) rectangle (107.602,9.27);
+\draw[qDeep,dashed,line width=.8pt] (94.887,.35)--(94.887,14.45);
+\node[anchor=west,qDark] at (116,1.0){(b) 电池任务占用 + 充电恢复};
+\node[rotate=90] at (-5,7.5){共享电池}; \node at (70,-.8){从调度开始计时 / min};
+\end{tikzpicture}
+\end{minipage}}
+
+\newcommand{\QTwoFigTwentyTwoTwentyThree}{%
+\begin{tikzpicture}[x=1cm,y=1cm,font=\small]
+\draw[->,qText] (0,0)--(10.6,0) node[right]{总能耗/kWh};
+\draw[->,qText] (0,0)--(0,4.6) node[above]{makespan/min};
+\foreach \x/\lab in {0/66.20,2.667/66.24,5.333/66.28,8/66.32,10/66.35}{\draw[qGrid] (\x,0)--(\x,4.35);\node[below,font=\scriptsize] at (\x,0){\lab};}
+\foreach \y/\lab in {0/90,0.889/100,1.778/110,2.667/120,3.556/130}{\draw[qGrid] (0,\y)--(10.2,\y);\node[left,font=\scriptsize] at (0,\y){\lab};}
+\fill[qDeep] (0.964,0.434) circle (2.1pt);
+\node[anchor=south west,align=left] at (1.15,.55) {23架次正式方案\\66.214 kWh，94.89 min};
+\draw[qMid,line width=1pt] (8.202,3.507) circle (2.1pt);
+\node[anchor=south east,align=right] at (8.0,3.65) {22架次可行见证\\66.323 kWh，129.45 min};
+\draw[->,qDark] (5.8,2.05)--(7.9,3.35);
+\node[qDark,align=center] at (4.55,1.82){少1架次，但当前见证工期\\反而增加约34.56 min};
+\end{tikzpicture}}
+
+\newcommand{\QTwoFigPricing}{%
+\begin{tikzpicture}[x=1cm,y=.75cm,font=\small]
+\node[font=\footnotesize] at (2.3,5.3){24组固定真实定价输入的中位耗时之和 / s};
+\fill[qLMid] (.9,0) rectangle (2.0,4.65);\node at (1.45,-.35){原版};\node at (1.45,4.9){6.323};
+\fill[qDeep] (2.7,0) rectangle (3.8,1.49);\node at (3.25,-.35){支配强化};\node at (3.25,1.74){2.027};
+\node[qDark] at (2.35,3.05){3.1201$\times$};
+\draw[qGrid] (4.5,-.8)--(4.5,5.6);
+\node[font=\footnotesize] at (7.15,5.3){生成标签数 / 百万};
+\fill[qLMid] (5.7,0) rectangle (6.8,4.2);\node at (6.25,-.35){原版};\node at (6.25,4.45){5.707M};
+\fill[qDeep] (7.5,0) rectangle (8.6,1.52);\node at (8.05,-.35){支配强化};\node at (8.05,1.77){2.061M};
+\node[qDark] at (7.15,3.05){减少63.88\%};
+\node[qDark,font=\footnotesize,align=center] at (4.7,-1.15){24/24输入的最小约化成本保持一致；3.1201$\times$仅指受控pricing实验};
+\end{tikzpicture}}
+
+\newcommand{\QTwoFigInterval}{%
+\begin{tikzpicture}[x=1cm,y=1cm,font=\small]
+\draw[->,qText] (0,0)--(10.7,0) node[right]{完成时间/min};
+\foreach \x/\lab in {0/90,1.818/91,3.636/92,5.455/93,7.273/94,9.091/95}{\draw[qGrid] (\x,0)--(\x,1.35);\node[below,font=\scriptsize] at (\x,0){\lab};}
+\draw[qDark,line width=1.5pt] (1.029,1)--(8.886,1);
+\fill[qDeep] (1.029,1) rectangle ++(.08,.18); \fill[qDeep] (8.886,1) circle (1.7pt);
+\node[align=center,above] at (1.029,1.15) {有效全局下界\\90.566 min};
+\node[align=center,above] at (8.886,1.15) {认证可行上界\\94.887 min};
+\node[qDark] at (4.96,.50) {UB归一化间隙 = 4.554\%};
+\node[qDark,font=\footnotesize] at (4.96,.18) {上下界尚未闭合：不宣称makespan全局最优};
+\end{tikzpicture}}
+
+\newcommand{\QTwoFigBBottleneck}{%
+\begin{tikzpicture}[x=.12cm,y=1.0cm,font=\small]
+\node[anchor=east] at (-1,2) {U05};
+\fill[qLight] (0.00000,1.72) rectangle (25.92299,2.28); \node at (12.96150,2) {R05};
+\fill[qLMid] (25.92299,1.72) rectangle (57.96867,2.28); \node at (41.94583,2) {R11};
+\fill[qMid] (57.96867,1.72) rectangle (90.66586,2.28); \node at (74.31726,2) {R18};
+\node[anchor=east] at (-1,1) {U06};
+\fill[qLight] (0.00000,0.72) rectangle (31.16261,1.28); \node at (15.58130,1) {R06};
+\fill[qLMid] (31.16261,0.72) rectangle (63.19000,1.28); \node at (47.17630,1) {R14};
+\fill[qMid] (63.19000,0.72) rectangle (94.88719,1.28); \node at (79.03860,1) {R20};
+\draw[qMid,dotted,line width=1pt] (92.776524,.45)--(92.776524,2.55);
+\node[qDark,anchor=east,align=right,font=\footnotesize] at (92.476524,2.55) {平均负载下界\\92.777 min};
+\draw[qDeep,dashed,line width=1pt] (94.887191,.45)--(94.887191,2.55);
+\node[qDeep,anchor=west,align=left,font=\footnotesize] at (95.187191,2.55) {离散精确下界\\94.887 min};
+\draw[->,qText] (0,.3)--(100,.3) node[right]{固定B型任务累计工作量/min};
+\end{tikzpicture}}
