@@ -1,0 +1,12 @@
+{
+  "version":"Q4-SENSITIVITY-V2",
+  "strict_K2":{"enumerated":3,"minimum_shortage":2,"minimum_resources_after_shortage":29,"zero_shortage_count":0},
+  "strict_K3":{"enumerated":1,"minimum_shortage":7,"minimum_resources_after_shortage":34,"zero_shortage_count":0},
+  "clone_full_window_K2":{"enumerated":511,"minimum_shortage":2,"minimum_resources_after_shortage":29,"zero_shortage_count":0},
+  "clone_full_window_K3":{"enumerated":9330,"minimum_shortage":4,"minimum_resources_after_shortage":32,"zero_shortage_count":0},
+  "computed_partitions":9845,
+  "witness_count":31,
+  "primary_strict_unchanged":true,
+  "source_q3_unchanged":true,
+  "official_permission_to_clone":false
+}

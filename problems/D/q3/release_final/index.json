@@ -1,0 +1,12 @@
+{
+  "release":"Q3-FINAL-V1",
+  "status":"FROZEN",
+  "main_variant":"time",
+  "main_path":"release_final/primary",
+  "main_communication_extra_loss_db":0.0,
+  "optimization_search_enabled":false,
+  "q2_modified":false,
+  "q4_modified":false,
+  "main_summary":{"transport_sorties":23,"relay_sorties":4,"joint_makespan_s":6340.439338658365,"transport_energy_kwh":66.3768205132508,"relay_energy_kwh":2.9317103425322286,"total_energy_kwh":69.30853085578303,"weighted_tardiness_s":0,"hard_late_boxes":0,"min_hard_slack_s":30.0,"min_transport_soc":0.2009738280072748,"validation_status":"PASS","verification_checks":19215,"independent_points":36995,"global_optimality_proved":false},
+  "alternatives":{"robust_fast":{"joint_makespan_s":6369.026365292443,"total_energy_kwh":69.31446588372889,"extra_loss_db":0.5},"robust_margin":{"joint_makespan_s":6395.090950337773,"total_energy_kwh":69.23521510175232,"extra_loss_db":0.55},"compact22":{"joint_makespan_s":6500.047581007018,"total_energy_kwh":68.690348971069,"transport_sorties":22}}
+}

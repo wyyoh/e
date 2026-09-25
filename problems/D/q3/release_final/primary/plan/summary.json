@@ -1,0 +1,23 @@
+{
+  "version":"Q3-CLOSING-V3",
+  "transport_sorties":23,
+  "relay_sorties":4,
+  "used_transport_aircraft":8,
+  "used_transport_batteries":14,
+  "used_relay_aircraft":2,
+  "used_relay_components":3,
+  "box_count":80,
+  "joint_makespan_s":6340.439338658365,
+  "transport_energy_kwh":66.3768205132508,
+  "relay_energy_kwh":2.9317103425322286,
+  "total_energy_kwh":69.30853085578303,
+  "weighted_tardiness_s":0,
+  "hard_late_boxes":0,
+  "min_hard_slack_s":30.0,
+  "min_transport_soc":0.2009738280072748,
+  "min_relay_soc":0.6773606167980135,
+  "validation_status":"PASS",
+  "verification_checks":19215,
+  "independent_points":36995,
+  "full_q3_global_optimality_proved":false
+}

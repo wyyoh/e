@@ -1,0 +1,21 @@
+{
+  "version":"Q2-EVIDENCE-V7-FOCUSED",
+  "certified_lower_bound_s":5433.956428,
+  "rational_upper_bound_s":5693.23149,
+  "numerical_incumbent_makespan_s":5693.231489105106,
+  "previous_lower_bound_s":5432.287415,
+  "lower_bound_gain_s":1.669013,
+  "gap_over_upper_bound":0.04554093092041125,
+  "absolute_interval_s":259.275062,
+  "worst_relative_excess_bound":0.047713864738408975,
+  "weighted_tardiness_optimum":0,
+  "incumbent_sorties":23,
+  "incumbent_energy_kwh":66.21445957313102,
+  "incumbent_changed":false,
+  "global_original_optimality_proven":false,
+  "C5_infeasible_proven":false,
+  "under_4_percent_target_met":false,
+  "main_stop_decision":"Stop proof search: predefined material-breakthrough criterion not met; preserve small audited improvement only.",
+  "audit_summary":{"split_nodes":809,"covering_certificates":810,"complete_pricing_calls":2430,"failures":0},
+  "clean_rebuild_verified":true
+}
