@@ -1,0 +1,20 @@
+{
+  "main_sha": "c3ae26996c0e71cda066533b7ec33e9e142e3b9a",
+  "main_selection_file": "paper_integration/FINAL_SELECTION.json",
+  "main_readme_warning": "Root README describes old V3; use FINAL_SELECTION instead.",
+  "q2_version": "Q2-EVIDENCE-V7-FOCUSED",
+  "q2_makespan_s": 5693.231489105106,
+  "q2_energy_kwh": 66.21445957313102,
+  "q2_lower_bound_s": 5433.956428,
+  "q2_rational_upper_bound_s": 5693.23149,
+  "q3_version": "Q3-FINAL-V1/time",
+  "q3_makespan_s": 6340.439338658365,
+  "q3_energy_kwh": 69.30853085578303,
+  "q2_archive_sha256": "0804f989699dc506b3111dacc7408d9acdeb6e1115e7f32ec36934116de6ce58",
+  "q3_archive_sha256": "97f5ea8018a557d604bee87d6886675ecf7648f035e8df0f47f20ff6e7fbc56b",
+  "q2_q3_common_boxes_types_nodes_legs": "semantically identical, checked in this experiment",
+  "official_results_modified": false,
+  "parallel_branches_modified": false,
+  "experiment_scope": ["same-dual exact pricing dominance benchmark", "paired finite box-option MILPs with fixed vs released resource chains", "same-budget local uniform vs necessary-feasible vs critical-guided relay sampling"],
+  "full_archive_sources": "Archives are selected by main FINAL_SELECTION, not substituted with older V6. Materialized archives match the pinned SHA256 values."
+}
