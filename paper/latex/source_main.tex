@@ -739,19 +739,19 @@ O01\rightarrow S_i\rightarrow O01
 
 \begin{figure}[H]
 \centering
-\resizebox{0.92\textwidth}{!}{%
-\begin{tikzpicture}[>=Latex,font=\small,node distance=8mm]
+\resizebox{0.96\textwidth}{!}{%
+\begin{tikzpicture}[>=Latex,font=\footnotesize]
 \tikzset{
-  q1box/.style={draw=qDark,fill=qLight,rounded corners=2pt,minimum width=7.0cm,minimum height=.8cm,align=center},
+  q1box/.style={draw=qDark,fill=qLight,rounded corners=2pt,minimum width=3.15cm,minimum height=.78cm,align=center},
   q1strong/.style={q1box,fill=qLMid}
 }
-\node[q1strong] (a) {题目输入：服务区、DEM、机型参数、货箱数据、返航安全余量};
-\node[q1box,below=of a] (b) {单点往返物理计算：距离、巡航高度、时间、载荷相关能耗};
-\node[q1box,below=of b] (c) {45组最大安全载荷：确定“机型--服务区”真实运输能力};
-\node[q1box,below=of c] (d) {逐服务区生成可行批型：质量 + 体积 + 能量约束};
-\node[q1strong,below=of d] (e) {0--1精确组批：最少架次 $\rightarrow$ 最低能耗 $\rightarrow$ 最短累计作业时间};
-\node[q1box,below=of e] (f) {正式18架次方案：机型配置、分区结果、能耗与作业时间};
-\node[q1box,below=of f] (g) {方案解释：基线比较、Pareto权衡、安全余量敏感性};
+\node[q1strong] (a) at (0,2.0) {题目输入\\服务区·DEM·机型·货箱};
+\node[q1box] (b) at (3.65,2.0) {单点往返物理计算\\距离·高度·时间·能耗};
+\node[q1box] (c) at (7.30,2.0) {45组安全载荷\\确定真实运输能力};
+\node[q1box] (d) at (10.95,2.0) {生成可行批型\\质量·体积·能量};
+\node[q1strong] (e) at (10.95,0) {0--1精确组批\\架次$\to$能耗$\to$时间};
+\node[q1box] (f) at (7.30,0) {18架次正式方案\\机型·箱组·结果};
+\node[q1box] (g) at (3.65,0) {方案分析\\基线·Pareto·敏感性};
 \draw[->,qDark] (a)--(b);
 \draw[->,qDark] (b)--(c);
 \draw[->,qDark] (c)--(d);
@@ -759,7 +759,7 @@ O01\rightarrow S_i\rightarrow O01
 \draw[->,qDark] (e)--(f);
 \draw[->,qDark] (f)--(g);
 \end{tikzpicture}}
-\caption{问题一建模与求解流程。先确定连续的安全运输能力，再将其转化为不可拆货箱的离散组批问题。}
+\caption{问题一建模与求解流程。}
 \label{fig:q1_framework}
 \end{figure}
 
