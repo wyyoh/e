@@ -1,0 +1,46 @@
+name: Build structure review PDF
+
+on:
+  push:
+    branches:
+      - paper/structure-revision-v2-20260926
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install XeLaTeX toolchain
+        run: |
+          sudo apt-get update
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+            texlive-xetex texlive-lang-chinese texlive-latex-extra texlive-bibtex-extra \
+            texlive-fonts-recommended fonts-noto-cjk poppler-utils
+
+      - name: Build paper
+        working-directory: paper/latex
+        run: |
+          set -euxo pipefail
+          xelatex -interaction=nonstopmode -halt-on-error main.tex
+          bibtex main || true
+          xelatex -interaction=nonstopmode -halt-on-error main.tex
+          xelatex -interaction=nonstopmode -halt-on-error main.tex
+          test -s main.pdf
+          cp main.pdf D_problem_structure_review_20260926.pdf
+          pdfinfo D_problem_structure_review_20260926.pdf | tee pdfinfo.txt
+
+      - name: Upload review PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: d-problem-structure-review-pdf
+          path: |
+            paper/latex/D_problem_structure_review_20260926.pdf
+            paper/latex/main.log
+            paper/latex/pdfinfo.txt
+          if-no-files-found: error
+          retention-days: 7
