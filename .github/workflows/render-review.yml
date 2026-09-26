@@ -1,0 +1,34 @@
+name: Render Review PDF
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/render-review.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install XeLaTeX toolchain
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y latexmk texlive-xetex texlive-lang-chinese texlive-latex-extra texlive-fonts-recommended
+      - name: Build review PDF
+        working-directory: paper/latex
+        run: |
+          rm -f chapters/00_abstract.tex chapters/0[1-9].tex
+          latexmk -xelatex -interaction=nonstopmode -halt-on-error main.tex
+      - name: Package PDF
+        run: |
+          mkdir -p review-output
+          cp paper/latex/main.pdf 'review-output/D题论文_2026华为杯_检阅版.pdf'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: review-pdf
+          path: review-output/*.pdf
+          if-no-files-found: error
