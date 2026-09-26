@@ -1,3 +1,10 @@
 # 分章文件
 
-第一次编译 main.tex 时，由 source_loader.tex 从 source_main.tex 自动生成 00_abstract.tex、01.tex—09.tex。后续编译不覆盖这些文件，可直接编辑并提交修改后的分章文件。原始快照 source_main.tex 保持不变。详细编译与限制见 ../README_TEMPLATE_2026.md。
+\`main.tex\` 是正式编译入口。首次编译时，\`source_loader.tex\` 从 \`source_main.tex\` 中提取：
+
+- \`00_abstract.tex\`：摘要；
+- \`01.tex\`--\`09.tex\`：九章正文。
+
+参考文献与附录不属于第9章，分别由 \`main.tex\` 直接调用 \`references.bib\` 和 \`appendices.tex\`。
+
+如本地已经生成旧的分章文件，而 \`source_main.tex\` 已更新，应先备份人工修改，再重新生成分章文件，避免旧的 \`09.tex\` 携带历史参考文献或附录内容。
