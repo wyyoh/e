@@ -1,40 +1,24 @@
 % !TeX program = xelatex
-% Typesetting template supplied by the user: 数模陪跑 2026 研赛 LaTeX 模板.
-% Revised manuscript: based on wyyoh/e main @ 86aa4da46d7218e001d1012f804f0acece94ca60; structure revision 2026-09-26.
-% Editable chapters take precedence over source_main.tex. The loader creates
-% only missing files, so a partial checkout does not overwrite revised chapters.
-% Chapter 3 is maintained directly in chapters/03.tex.
+% Independent chapters are authoritative. No legacy-source auto-regeneration.
 \PassOptionsToPackage{quiet}{xeCJK}
-\documentclass[withoutpreface,bwprint]{format}
-\newcommand{\PaperTitle}{山区洪涝救援中无人机运输--通信协同调度与独立资源配置}
-\newcommand{\PaperKeywords}{无人机应急运输；异构资源调度；连续通信保障；中继优化；资源池化}
-\newif\ifshowteaching
-\showteachingfalse
-\usepackage{tikz}
-\usetikzlibrary{arrows.meta,positioning,calc,fit,patterns,shapes.geometric}
-\usepackage{adjustbox,seqsplit,xurl}
-\graphicspath{{figures/}{../../problems/D/q1/figures/}}
-\setcounter{tocdepth}{2}
-\input{layout_fixes.tex}
-\input{source_loader.tex}
-\input{q2_v7_figures.tex}
+\documentclass[withoutpreface,colorprint]{format}
+\input{deep_layout.tex}
+\graphicspath{{figures_generated/}}
 \begin{document}
 \song\zihao{-4}
 \setcounter{page}{1}
 \begin{center}
-  {\zihao{-3}\heiti 中国研究生创新实践系列大赛\par}
-  \vspace{0.35em}
-  {\zihao{3}\bfseries\heiti “华为杯”第二十三届中国研究生数学建模竞赛\par}
-  \vspace{1.1em}
-  {\zihao{3}\bfseries\heiti 题\quad 目：\PaperTitle\par}
+{\zihao{-3}\heiti 中国研究生创新实践系列大赛\par}
+\vspace{.3em}
+{\zihao{3}\bfseries\heiti “华为杯”第二十三届中国研究生数学建模竞赛\par}
+\vspace{.7em}
+{\zihao{3}\bfseries\heiti 山区洪涝救援中无人机运输—通信\par 协同调度与独立资源配置\par}
 \end{center}
-\vspace{0.5em}
 \begin{abstract}
-  \input{chapters/00_abstract.tex}
-  \keywords{\PaperKeywords}
+\input{chapters/00_abstract.tex}
+\keywords{无人机应急运输；异构资源调度；连续通信保障；资源配置；敏感性分析}
 \end{abstract}
-{\linespread{1.16}\selectfont\tableofcontents}
-\clearpage
+{\linespread{1.08}\selectfont\tableofcontents}\clearpage
 \input{chapters/01.tex}
 \input{chapters/02.tex}
 \input{chapters/03.tex}
@@ -44,13 +28,10 @@
 \input{chapters/07.tex}
 \input{chapters/08.tex}
 \input{chapters/09.tex}
-
+\FloatBarrier\clearpage
 \nocite{*}
 \bibliographystyle{unsrt}
 \bibliography{references}
-
-\clearpage
-\appendix
+\clearpage\appendix
 \input{appendices.tex}
-
 \end{document}

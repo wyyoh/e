@@ -1,0 +1,7 @@
+{
+  "sha256": "ef4e5ec177362b4b8f5367cb5f6c096384d849dc46e700a78879fcf6925962b1",
+  "encoding": "concatenate part_*.b64, base64 decode, ZIP-LZMA",
+  "size_bytes": 45399,
+  "parts": 4,
+  "files": ["terrain_display.csv", "paper_data.json", "terrain_metadata.json"]
+}

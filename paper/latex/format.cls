@@ -1,5 +1,4 @@
-% Adapted from the user-supplied 数模陪跑 2026 研赛 template.
-% Only font-availability fallbacks are added; template comments are shortened.
+% User-provided 2026 template, retained; portable CJK fallback only.
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
 \ProvidesClass{format}
               [2026/09/18 Graduate mathematical modeling template for Overleaf]
@@ -69,26 +68,29 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 
 \newcolumntype{Y}{>{\centering\arraybackslash}X}
 
+
+
 \RequirePackage{fontspec}
 \newfontfamily\yaheiconsola{lmmono10-regular.otf}
 \setmonofont{lmmono10-regular.otf}
 
 \definecolor{codegreen}{rgb}{0,0.6,0}
 
+
 \lstset
 {
     tabsize=4,
     captionpos=b,
-    numbers=left,                    
-    numbersep=1em,                  
+    numbers=left,
+    numbersep=1em,
     sensitive=true,
-    showtabs=false, 
+    showtabs=false,
     frame=shadowbox,
     breaklines=true,
-    keepspaces=true,                 
-    showspaces=false,                
+    keepspaces=true,
+    showspaces=false,
     showstringspaces=false,
-    breakatwhitespace=false,         
+    breakatwhitespace=false,
     basicstyle=\yaheiconsola,
     keywordstyle=\color{NavyBlue},
     commentstyle=\color{codegreen},
@@ -103,6 +105,7 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 \RequirePackage{calc}
 
 \RequirePackage[titletoc,title]{appendix}
+
 
 \RequirePackage{etoolbox}
 \AtBeginEnvironment{thebibliography}{%
@@ -122,23 +125,22 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 	{\mcm@endoldtabular\egroup}
 \setlength\parindent{2em}
 
-\IfFileExists{texgyretermes-regular.otf}{%
-\setmainfont{texgyretermes}[Extension=.otf,UprightFont=*-regular,BoldFont=*-bold,ItalicFont=*-italic,BoldItalicFont=*-bolditalic]
-}{\setmainfont{Liberation Serif}}
-\IfFileExists{texgyreheros-regular.otf}{%
-\setsansfont{texgyreheros}[Extension=.otf,UprightFont=*-regular,BoldFont=*-bold,ItalicFont=*-italic,BoldItalicFont=*-bolditalic]
-}{\setsansfont{Liberation Sans}}
+
+
+\IfFontExistsTF{TeX Gyre Termes}{\setmainfont{TeX Gyre Termes}}{\setmainfont{Liberation Serif}}
+\IfFontExistsTF{TeX Gyre Heros}{\setsansfont{TeX Gyre Heros}}{\setsansfont{Liberation Sans}}
+
+
 
 \IfFileExists{fonts/SourceHanSerifCN-Regular.otf}{%
-  \setCJKfamilyfont{song}[Path=./fonts/,
-    UprightFont=SourceHanSerifCN-Regular.otf,
-    BoldFont=SourceHanSerifCN-Bold.otf]{SourceHanSerifCN}
-}{%
-  \setCJKfamilyfont{song}[BoldFont=FandolSong-Bold.otf]{FandolSong-Regular.otf}
-}
+\setCJKfamilyfont{song}[Path=./fonts/,UprightFont=SourceHanSerifCN-Regular.otf,BoldFont=SourceHanSerifCN-Bold.otf]{SourceHanSerifCN}
+}{\setCJKfamilyfont{song}[BoldFont=FandolSong-Bold.otf]{FandolSong-Regular.otf}}
 
 \newcommand*{\song}{\CJKfamily{song}}
 \newcommand*{\kai}{\song}
+
+
+
 
 \renewcommand\normalsize{%
 	\@setfontsize\normalsize{12.05}{14.45}%
@@ -194,8 +196,8 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
     CJKbookmarks=true,
     bookmarksnumbered=true,
     bookmarksopen=true,
-    colorlinks, 
-    pdfborder=001, 
+    colorlinks,
+    pdfborder=001,
     allcolors=black,
     breaklinks=true
 }
@@ -263,6 +265,7 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 \crefrangeformat{solution}{\mcm@cap@solution~(#3#1#4)\;\~{}\;(#5#2#6)}
 \crefmultiformat{solution}{\mcm@cap@solution~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
 
+
 \renewcommand{\maketitle}{\ClassWarning{format}{Use the title block in main.tex}}
 
 \renewcommand\contentsname{\mcm@cap@contentsname}
@@ -294,6 +297,7 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 	{1.5ex \@plus .2ex}%
 	{\normalfont\normalsize\bfseries\heiti}}
 
+
 \renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
 	{3.25ex \@plus1ex \@minus.2ex}%
 	{-1em}%
@@ -303,6 +307,7 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 	{3.25ex \@plus1ex \@minus .2ex}%
 	{-1em}%
 	{\normalfont\normalsize\bfseries\heiti}}
+
 
 \renewenvironment{abstract}{%
 \if@twocolumn
@@ -370,6 +375,7 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 	\renewcommand{\mcm@tokens@monthinput}{#1}}
 \newcommand*\dayinput[1]{%
 	\renewcommand{\mcm@tokens@dayinput}{#1}}
+
 
 \newcommand*{\mcm@cap@definition}{定义}
 \newcommand*{\mcm@cap@theorem}{定理}
