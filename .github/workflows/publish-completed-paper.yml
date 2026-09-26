@@ -19,6 +19,7 @@ jobs:
         run: |
           set -euo pipefail
           git fetch --depth=1 origin e6329c2bbc2cdd983c0dc412bef93d80820f2356
+          git fetch --depth=1 origin 773567ffe32e6827889aef4f35b0d72aa8e6698f
           mkdir -p baseline/checkpoint baseline/current
           git archive e6329c2bbc2cdd983c0dc412bef93d80820f2356 paper/latex | tar -x -C baseline/checkpoint
           git archive 773567ffe32e6827889aef4f35b0d72aa8e6698f paper/latex paper_integration/FINAL_SELECTION.json | tar -x -C baseline/current
