@@ -1,4 +1,4 @@
-name: Check completed-paper publication runner
+name: Export source baseline for completed-paper publication
 on:
   push:
     branches:
@@ -9,11 +9,22 @@ on:
 permissions:
   contents: read
 jobs:
-  runner-check:
+  source-baseline:
     runs-on: ubuntu-latest
     steps:
-      - name: Verify build runner
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Export source checkpoint and current assets
         run: |
-          python3 --version
-          git --version
-          echo 'Publication runner ready; manuscript files are not changed by this check.'
+          set -euo pipefail
+          git fetch --depth=1 origin e6329c2bbc2cdd983c0dc412bef93d80820f2356
+          mkdir -p baseline/checkpoint baseline/current
+          git archive e6329c2bbc2cdd983c0dc412bef93d80820f2356 paper/latex | tar -x -C baseline/checkpoint
+          git archive 773567ffe32e6827889aef4f35b0d72aa8e6698f paper/latex paper_integration/FINAL_SELECTION.json | tar -x -C baseline/current
+          git ls-tree -r 773567ffe32e6827889aef4f35b0d72aa8e6698f > baseline/current_tree.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: completed-paper-source-baseline
+          path: baseline/
+          retention-days: 3
