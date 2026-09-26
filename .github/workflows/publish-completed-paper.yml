@@ -37,7 +37,7 @@ jobs:
             apt-get update -qq
             apt-get install -y --no-install-recommends python3 python3-numpy python3-scipy python3-pandas python3-matplotlib python3-rasterio python3-pyproj python3-pymupdf libzstd1 texlive-xetex texlive-lang-chinese texlive-latex-extra texlive-science texlive-fonts-recommended texlive-bibtex-extra fonts-noto-cjk fonts-liberation fonts-liberation2 fonts-croscore poppler-utils ca-certificates >/tmp/install.log
             python3 .publication/completed_20260926/restore.py --checkpoint /checkpoint/paper/latex
-            python3 paper/latex/scripts/build_common_figures.py
+            python3 -c "import pymupdf, runpy, sys; sys.modules[\"fitz\"]=pymupdf; runpy.run_path(\"paper/latex/scripts/build_common_figures.py\", run_name=\"__main__\")"
             cd paper/latex
             python3 scripts/build_assets.py > ../../publication-output/figures.log 2>&1
             python3 scripts/build_audit_assets.py > ../../publication-output/audit-assets.log 2>&1
@@ -101,4 +101,5 @@ jobs:
           path: |
             publication-output/
             paper/review/
+            paper/latex/build_logs/
           retention-days: 14
