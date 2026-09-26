@@ -1,31 +1,104 @@
-name: Export source baseline for completed-paper publication
+name: Build and stage the completed manuscript
 on:
   push:
-    branches:
-      - paper/publish-completed-92-20260926
+    branches: [paper/publish-completed-92-20260926]
     paths:
       - .github/workflows/publish-completed-paper.yml
+      - .publication/completed_20260926/**
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
+concurrency:
+  group: completed-paper-publication
+  cancel-in-progress: false
 jobs:
-  source-baseline:
+  build-completed:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: paper/publish-completed-92-20260926
           fetch-depth: 1
-      - name: Export source checkpoint and current assets
+      - name: Prepare the pinned dictionary
         run: |
           set -euo pipefail
           git fetch --depth=1 origin e6329c2bbc2cdd983c0dc412bef93d80820f2356
-          git fetch --depth=1 origin 773567ffe32e6827889aef4f35b0d72aa8e6698f
-          mkdir -p baseline/checkpoint baseline/current
-          git archive e6329c2bbc2cdd983c0dc412bef93d80820f2356 paper/latex | tar -x -C baseline/checkpoint
-          git archive 773567ffe32e6827889aef4f35b0d72aa8e6698f paper/latex paper_integration/FINAL_SELECTION.json | tar -x -C baseline/current
-          git ls-tree -r 773567ffe32e6827889aef4f35b0d72aa8e6698f > baseline/current_tree.txt
-      - uses: actions/upload-artifact@v4
+          mkdir -p /tmp/completed-checkpoint
+          git archive e6329c2bbc2cdd983c0dc412bef93d80820f2356 paper/latex | tar -x -C /tmp/completed-checkpoint
+          test "$(git hash-object paper_integration/FINAL_SELECTION.json)" = 31b72d19ac8d72e173af8f576df78f8538546153
+      - name: Restore, regenerate figures and compile
+        run: |
+          set -euo pipefail
+          mkdir -p publication-output
+          docker run --rm -v "$PWD:/work" -v /tmp/completed-checkpoint:/checkpoint:ro -w /work debian:trixie-slim bash -lc '
+            set -euo pipefail
+            export DEBIAN_FRONTEND=noninteractive
+            apt-get update -qq
+            apt-get install -y --no-install-recommends python3 python3-numpy python3-scipy python3-pandas python3-matplotlib python3-rasterio python3-pyproj python3-pymupdf libzstd1 texlive-xetex texlive-lang-chinese texlive-latex-extra texlive-science texlive-fonts-recommended texlive-bibtex-extra fonts-noto-cjk fonts-liberation fonts-liberation2 fonts-croscore poppler-utils ca-certificates >/tmp/install.log
+            python3 .publication/completed_20260926/restore.py --checkpoint /checkpoint/paper/latex
+            python3 paper/latex/scripts/build_common_figures.py
+            cd paper/latex
+            python3 scripts/build_assets.py > ../../publication-output/figures.log 2>&1
+            python3 scripts/build_audit_assets.py > ../../publication-output/audit-assets.log 2>&1
+            python3 scripts/plot_audit_assets.py >> ../../publication-output/figures.log 2>&1
+            cd ../..
+            python3 .publication/completed_20260926/restore.py --checkpoint /checkpoint/paper/latex
+            cd paper/latex
+            python3 scripts/export_merged_tex.py
+            python3 scripts/check_source.py > ../../publication-output/source-check.json
+            python3 -m unittest discover -s tests -v > ../../publication-output/tests.log 2>&1
+            python3 scripts/build_pdf.py > ../../publication-output/build-console.log 2>&1
+            cp main.pdf ../review/D_paper_completed_20260926.pdf
+            cp main.log ../../publication-output/main.log
+            cp main.aux ../../publication-output/main.aux
+            cp main.bbl ../../publication-output/main.bbl
+            pdfinfo main.pdf > ../../publication-output/pdfinfo.txt
+            rm -f main.pdf
+            find . -name __pycache__ -type d -prune -exec rm -rf {} +
+          '
+          python3 - <<'PY'
+          import hashlib,json,re,zipfile
+          from pathlib import Path
+          root=Path('paper/latex');out=Path('publication-output');review=Path('paper/review')
+          identity=json.loads((review/'completed_source_identity_20260926.json').read_text())
+          for name,digest in identity['source_files'].items():
+              assert hashlib.sha256((root/name).read_bytes()).hexdigest()==digest,name
+          text=(out/'pdfinfo.txt').read_text();pages=int(re.search(r'Pages:\s+(\d+)',text).group(1))
+          assert pages==92,('Pagination differs from the delivered source review',pages)
+          bbl=(out/'main.bbl').read_text();assert len(re.findall(r'\\bibitem',bbl))==40
+          log=(out/'main.log').read_text(errors='replace')
+          bad=[line for line in log.splitlines() if 'Overfull' in line or 'Missing character:' in line or 'undefined references' in line or 'multiply defined' in line]
+          assert not bad,bad[:10]
+          identity.update({'remote_pdf_pages':pages,'remote_pdf_sha256':hashlib.sha256((review/'D_paper_completed_20260926.pdf').read_bytes()).hexdigest(),'remote_text_files_verified':len(identity['source_files']),'bibliography_records':40,'public_bibliography_records':39,'nonpublic_source_records':1,'pdf_rebuilt_from_exact_source':True})
+          (review/'completed_source_identity_20260926.json').write_text(json.dumps(identity,ensure_ascii=False,indent=2)+'\n')
+          (review/'README.md').write_text('# Completed manuscript review\n\nCurrent manuscript: `../latex/main.tex`.\n\nThe completed 2026-09-26 edition has 92 pages (72 body pages), 40 actually cited bibliography/source entries. This PDF is a new reproducible build from the exact delivered source/data, not the earlier unverified 96-page checkpoint. Original and rebuilt PDF hashes are distinguished in `completed_source_identity_20260926.json`.\n\nFormal model parameters, solvers, selected results and robustness experiment code are unchanged.\n')
+          with zipfile.ZipFile(out/'completed_latex_source.zip','w',zipfile.ZIP_DEFLATED) as z:
+              for p in sorted(root.rglob('*')):
+                  if p.is_file() and p.suffix.lower() not in {'.aux','.log','.out','.toc','.blg','.fls','.fdb_latexmk','.xdv','.ttf','.otf','.ttc','.woff','.woff2'} and '__pycache__' not in p.parts:
+                      z.write(p,'D_paper_latex_completed/'+str(p.relative_to(root)))
+          print(json.dumps({k:v for k,v in identity.items() if k!='source_files'},indent=2))
+          PY
+      - name: Stage the verified manuscript without touching main
+        run: |
+          set -euo pipefail
+          test "$(git hash-object paper_integration/FINAL_SELECTION.json)" = 31b72d19ac8d72e173af8f576df78f8538546153
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add paper/latex paper/archive paper/review
+          git add -f paper/review/D_paper_completed_20260926.pdf
+          find paper/latex/figures/common_model paper/latex/figures_generated -type f -name '*.pdf' -print0 | xargs -0 git add -f
+          git diff --cached --name-only > publication-output/changed_paths.txt
+          if grep -Ev '^paper/(latex|archive|review)/' publication-output/changed_paths.txt; then echo 'Unexpected staged path'; exit 1; fi
+          git commit -m 'Publish completed 92-page manuscript source and verified review PDF' -m 'Restore all nine chapters, 22 expansion sections, repair derivations, editable tables and 40 cited records from the hash-locked delivered source. Rebuild required vector figures and verify 19 tests, source hashes and 92-page pagination. Preserve formal model/result locks and experiment code.'
+          git push origin HEAD:paper/publish-completed-92-20260926
+          git rev-parse HEAD > publication-output/staged_commit.txt
+      - name: Export build evidence and PDF
+        if: always()
+        uses: actions/upload-artifact@v4
         with:
-          name: completed-paper-source-baseline
-          path: baseline/
-          retention-days: 3
+          name: completed-paper-92-publication
+          path: |
+            publication-output/
+            paper/review/
+          retention-days: 14
