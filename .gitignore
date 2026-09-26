@@ -9,3 +9,36 @@ __pycache__/
 Thumbs.db
 *.tmp
 *.bak
+
+# Regenerable TeX outputs, scoped to the active manuscript directory.
+# Keep review PDFs, vector figures and solver/evidence logs tracked.
+/paper/latex/*.aux
+/paper/latex/*.bbl
+/paper/latex/*.blg
+/paper/latex/*.log
+/paper/latex/*.out
+/paper/latex/*.toc
+/paper/latex/*.lof
+/paper/latex/*.lot
+/paper/latex/*.fls
+/paper/latex/*.fdb_latexmk
+/paper/latex/*.xdv
+/paper/latex/*.synctex.gz
+/paper/latex/*.nav
+/paper/latex/*.snm
+/paper/latex/*.vrb
+/paper/latex/*.idx
+/paper/latex/*.ilg
+/paper/latex/*.ind
+/paper/latex/main.pdf
+/paper/latex/main_merged.pdf
+/paper/latex/review.pdf
+/paper/latex/build/
+/paper/latex/build_logs/
+/paper/latex/.latex-cache/
+/paper/latex/checks/*.log
+/paper/latex/checks/*.bbl
+/paper/latex/checks/*_tex_no_pdf.json
+/review-build/
+/review-output/
+/publication-output/

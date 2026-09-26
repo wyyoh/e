@@ -1,0 +1,125 @@
+{
+  "base_commit": "06ef89d99da85f2e1e293cc459a782f18e8aac71",
+  "entries": [
+    {
+      "source": "paper/latex/source_main.tex",
+      "destination": "paper/archive/pre_cleanup_20260927/latex/source_main.tex",
+      "blob_sha": "168489f24d025b6e2df9cde606273d47e157e545",
+      "remove_source": true
+    },
+    {
+      "source": "paper/latex/source_loader.tex",
+      "destination": "paper/archive/pre_cleanup_20260927/latex/source_loader.tex",
+      "blob_sha": "0f9fc27a139c586f2d46ac45f39a81a42e0fd528",
+      "remove_source": true
+    },
+    {
+      "source": "paper/latex/layout_fixes.tex",
+      "destination": "paper/archive/pre_cleanup_20260927/latex/layout_fixes.tex",
+      "blob_sha": "1e6b262fba46aa22288973d845e79ff9f3d87d47",
+      "remove_source": true
+    },
+    {
+      "source": "paper/latex/q2_v7_figures.tex",
+      "destination": "paper/archive/pre_cleanup_20260927/latex/q2_v7_figures.tex",
+      "blob_sha": "68b1315f689c7113f856fc4c8d742e8c2389281e",
+      "remove_source": true
+    },
+    {
+      "source": "paper/latex/common_figures.tex",
+      "destination": "paper/archive/pre_cleanup_20260927/latex/common_figures.tex",
+      "blob_sha": "c62e71c0bd44eacaa4a93a854a084b1a7e56a4e0",
+      "remove_source": true
+    },
+    {
+      "source": "paper/latex/appendix_dem_figure.tex",
+      "destination": "paper/archive/pre_cleanup_20260927/latex/appendix_dem_figure.tex",
+      "blob_sha": "27b156840a65995734c7b96c9aec2948a2b7141c",
+      "remove_source": true
+    },
+    {
+      "source": "paper/latex/review.tex",
+      "destination": "paper/archive/pre_cleanup_20260927/latex/review.tex",
+      "blob_sha": "290830309af48f5b331076265829758169663039",
+      "remove_source": true
+    },
+    {
+      "source": "paper/latex/README_TEMPLATE_2026.md",
+      "destination": "paper/archive/pre_cleanup_20260927/latex/README_TEMPLATE_2026.md",
+      "blob_sha": "6cb0faa92a423cbab6c7913d1c8e921aef50568d",
+      "remove_source": true
+    },
+    {
+      "source": "paper/latex/CH123_FIGURE_INTEGRATION.md",
+      "destination": "paper/archive/pre_cleanup_20260927/latex/CH123_FIGURE_INTEGRATION.md",
+      "blob_sha": "f0211d1049bef62f16bf767847bacd046a7d639c",
+      "remove_source": true
+    },
+    {
+      "source": "paper/latex/CH3_REWRITE_NOTES_20260926.md",
+      "destination": "paper/archive/pre_cleanup_20260927/latex/CH3_REWRITE_NOTES_20260926.md",
+      "blob_sha": "cc033a3a45a2b82a9c66223da8e7d658947ea431",
+      "remove_source": true
+    },
+    {
+      "source": "paper/latex/CH4_REWRITE_NOTES_20260926.md",
+      "destination": "paper/archive/pre_cleanup_20260927/latex/CH4_REWRITE_NOTES_20260926.md",
+      "blob_sha": "55fd602b09d73c7411e7fdefaa50b0a6a7594689",
+      "remove_source": true
+    },
+    {
+      "source": "paper/latex/CH5_REWRITE_NOTES_20260926.md",
+      "destination": "paper/archive/pre_cleanup_20260927/latex/CH5_REWRITE_NOTES_20260926.md",
+      "blob_sha": "78d2830f78ed7998bdb029de36eafc75d1ae4eac",
+      "remove_source": true
+    },
+    {
+      "source": "paper/latex/CH6_REWRITE_NOTES_20260926.md",
+      "destination": "paper/archive/pre_cleanup_20260927/latex/CH6_REWRITE_NOTES_20260926.md",
+      "blob_sha": "991926a939e797054518e55bd4460d8c512fc802",
+      "remove_source": true
+    },
+    {
+      "source": "paper/latex/REVIEW_AUDIT.json",
+      "destination": "paper/archive/pre_cleanup_20260927/latex/REVIEW_AUDIT.json",
+      "blob_sha": "956b1c43e06ad04560eedd54ee9095ccd2408174",
+      "remove_source": true
+    },
+    {
+      "source": "paper/latex/REVISION_NOTES_20260926.md",
+      "destination": "paper/archive/pre_cleanup_20260927/latex/REVISION_NOTES_20260926.md",
+      "blob_sha": "9af2779b10ded4d1ce32b704d7d49a96b574e776",
+      "remove_source": true
+    },
+    {
+      "source": "paper/latex/README.md",
+      "destination": "paper/archive/pre_cleanup_20260927/latex/README.md",
+      "blob_sha": "592400f1878fa056895219860d21f58887d89965",
+      "remove_source": false
+    },
+    {
+      "source": "paper/latex/main.bbl",
+      "destination": "paper/review/publication_references_20260926.bbl",
+      "blob_sha": "cf9e0f14e8f6edaa985156499db12bb1ea295ecb",
+      "remove_source": true
+    },
+    {
+      "source": ".github/workflows/render-review.yml",
+      "destination": "paper/archive/pre_cleanup_20260927/workflows/render-review.yml",
+      "blob_sha": "dfa8d6d10949b05c155efce3a8e6e8da6e9da88d",
+      "remove_source": true
+    },
+    {
+      "source": ".github/workflows/build-structure-review-pdf.yml",
+      "destination": "paper/archive/pre_cleanup_20260927/workflows/build-structure-review-pdf.yml",
+      "blob_sha": "9c7198d04a473108ca2f1f771f4768d520dd3e68",
+      "remove_source": true
+    },
+    {
+      "source": "paper/README.md",
+      "destination": "paper/archive/pre_cleanup_20260927/paper_README.md",
+      "blob_sha": "94655a69924194021f9e8942cdf88113645d9b47",
+      "remove_source": false
+    }
+  ]
+}
