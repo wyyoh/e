@@ -1,0 +1,25 @@
+name: Chapter 1-3 isolated figure review
+on:
+  push:
+    branches:
+      - paper/ch123-figure-integration-20260926
+    paths:
+      - .github/workflows/ch123-review-transfer.yml
+permissions:
+  contents: read
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Package the exact LaTeX source and existing figure dependencies
+        run: |
+          git archive --format=zip --output=latex-source.zip HEAD paper/latex problems/D/q1/figures paper_integration/FINAL_SELECTION.json
+          git rev-parse HEAD > snapshot-commit.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ch123-latex-source
+          path: |
+            latex-source.zip
+            snapshot-commit.txt
+          retention-days: 2
