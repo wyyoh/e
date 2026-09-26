@@ -1,0 +1,19 @@
+name: Check completed-paper publication runner
+on:
+  push:
+    branches:
+      - paper/publish-completed-92-20260926
+    paths:
+      - .github/workflows/publish-completed-paper.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  runner-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify build runner
+        run: |
+          python3 --version
+          git --version
+          echo 'Publication runner ready; manuscript files are not changed by this check.'
