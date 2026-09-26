@@ -1,9 +1,9 @@
 % !TeX program = xelatex
 % Typesetting template supplied by the user: 数模陪跑 2026 研赛 LaTeX 模板.
 % Revised manuscript: based on wyyoh/e main @ 86aa4da46d7218e001d1012f804f0acece94ca60; structure revision 2026-09-26.
-% On the first build, source_loader.tex extracts editable chapters/ from the
-% revised source (with one documented m^3 typography repair). Later builds
-% use those chapter files directly; source_main.tex is the review manuscript source.
+% Editable chapters take precedence over source_main.tex. The loader creates
+% only missing files, so a partial checkout does not overwrite revised chapters.
+% Chapter 3 is maintained directly in chapters/03.tex.
 \PassOptionsToPackage{quiet}{xeCJK}
 \documentclass[withoutpreface,bwprint]{format}
 \newcommand{\PaperTitle}{山区洪涝救援中无人机运输--通信协同调度与独立资源配置}
@@ -16,7 +16,7 @@
 \graphicspath{{figures/}{../../problems/D/q1/figures/}}
 \setcounter{tocdepth}{2}
 \input{layout_fixes.tex}
-\IfFileExists{chapters/09.tex}{}{\input{source_loader.tex}}
+\input{source_loader.tex}
 \input{q2_v7_figures.tex}
 \begin{document}
 \song\zihao{-4}

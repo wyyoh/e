@@ -1,19 +1,39 @@
-% Extract the frozen source without executing its original preamble.
-% main.tex invokes this loader only when the generated chapters are absent.
+% Bootstrap missing chapters from source_main.tex without executing its preamble.
+% Existing chapter files are authoritative and are never overwritten.
+% main.tex invokes this loader on every build so partial chapter folders work.
 \ExplSyntaxOn
-\cs_generate_variant:Nn \iow_open:Nn {Nx}
 \ior_new:N \l_review_source_ior
 \iow_new:N \l_review_chapter_iow
 \int_new:N \l_review_state_int
 \int_new:N \l_review_chapter_int
 \tl_new:N \l_review_line_tl
+\bool_new:N \l_review_write_bool
+\cs_new_protected:Npn \review_open_chapter:n #1
+  {
+    \file_if_exist:nTF {#1}
+      {\bool_set_false:N \l_review_write_bool}
+      {
+        \bool_set_true:N \l_review_write_bool
+        \iow_open:Nn \l_review_chapter_iow {#1}
+      }
+  }
+\cs_generate_variant:Nn \review_open_chapter:n {x}
+\cs_new_protected:Npn \review_close_chapter:
+  {
+    \bool_if:NT \l_review_write_bool
+      {\iow_close:N \l_review_chapter_iow}
+    \bool_set_false:N \l_review_write_bool
+  }
 \cs_new_protected:Npn \review_write_line:n #1
   {
-    \tl_set:Nn \l_review_line_tl {#1}
-    % Source typographical error: a superscript must be in math mode.
-    \regex_replace_all:nnN { \\text \{ 体积：m\^3 \} }
-      { \\text\{体积：m\}\^3 } \l_review_line_tl
-    \iow_now:NV \l_review_chapter_iow \l_review_line_tl
+    \bool_if:NT \l_review_write_bool
+      {
+        \tl_set:Nn \l_review_line_tl {#1}
+        % Preserve the existing source typography repair.
+        \regex_replace_all:nnN { \\text \{ 体积：m\^3 \} }
+          { \\text\{体积：m\}\^3 } \l_review_line_tl
+        \iow_now:NV \l_review_chapter_iow \l_review_line_tl
+      }
   }
 \ior_open:Nn \l_review_source_ior {source_main.tex}
 \ior_str_map_inline:Nn \l_review_source_ior
@@ -23,36 +43,36 @@
         {0}{
           \regex_match:nnT { ^ \\begin \{abstract\} } {#1}
             {
-              \iow_open:Nn \l_review_chapter_iow {chapters/00_abstract.tex}
+              \review_open_chapter:n {chapters/00_abstract.tex}
               \int_set:Nn \l_review_state_int {1}
             }
         }
         {1}{
           \regex_match:nnTF { ^ \\end \{abstract\} } {#1}
-            {\iow_close:N \l_review_chapter_iow \int_set:Nn \l_review_state_int {2}}
+            {\review_close_chapter: \int_set:Nn \l_review_state_int {2}}
             {\review_write_line:n {#1}}
         }
         {2}{
           \regex_match:nnT { ^ \\section \{ } {#1}
             {
               \int_set:Nn \l_review_chapter_int {1}
-              \iow_open:Nn \l_review_chapter_iow {chapters/01.tex}
+              \review_open_chapter:n {chapters/01.tex}
               \review_write_line:n {#1}
               \int_set:Nn \l_review_state_int {3}
             }
         }
         {3}{
           \regex_match:nnTF { ^ \\renewcommand \{ \\refname \} } {#1}
-            {\iow_close:N \l_review_chapter_iow \int_set:Nn \l_review_state_int {4}}
+            {\review_close_chapter: \int_set:Nn \l_review_state_int {4}}
             {
               \regex_match:nnTF { ^ \\end \{document\} } {#1}
-                {\iow_close:N \l_review_chapter_iow \int_set:Nn \l_review_state_int {4}}
+                {\review_close_chapter: \int_set:Nn \l_review_state_int {4}}
                 {
                   \regex_match:nnT { ^ \\section \{ } {#1}
                     {
-                      \iow_close:N \l_review_chapter_iow
+                      \review_close_chapter:
                       \int_incr:N \l_review_chapter_int
-                      \iow_open:Nx \l_review_chapter_iow
+                      \review_open_chapter:x
                         {chapters/0\int_use:N\l_review_chapter_int.tex}
                     }
                   \review_write_line:n {#1}
@@ -61,6 +81,7 @@
         }
       }{}
   }
+\review_close_chapter:
 \ior_close:N \l_review_source_ior
 \int_compare:nNnF {\l_review_chapter_int} = {9}
   {\PackageError{template-review}{Expected~nine~source~chapters}{Check~source_main.tex.}}
