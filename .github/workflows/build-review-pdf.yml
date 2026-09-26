@@ -1,0 +1,39 @@
+name: Build review PDF
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'paper/latex/**'
+      - '.github/workflows/build-review-pdf.yml'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install TeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y latexmk texlive-xetex texlive-lang-chinese texlive-latex-extra texlive-fonts-recommended
+
+      - name: Prepare generated chapters
+        working-directory: paper/latex
+        run: |
+          rm -f chapters/00_abstract.tex chapters/01.tex chapters/02.tex chapters/03.tex chapters/04.tex chapters/05.tex chapters/06.tex chapters/07.tex chapters/08.tex chapters/09.tex
+          mkdir -p chapters
+
+      - name: Build PDF
+        working-directory: paper/latex
+        run: |
+          latexmk -xelatex -interaction=nonstopmode -halt-on-error main.tex
+          cp main.pdf D题论文_当前main_检阅版.pdf
+
+      - name: Upload PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: D题论文_当前main_检阅版
+          path: paper/latex/D题论文_当前main_检阅版.pdf
+          if-no-files-found: error
