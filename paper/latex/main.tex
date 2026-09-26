@@ -7,7 +7,7 @@
 \PassOptionsToPackage{quiet}{xeCJK}
 \documentclass[withoutpreface,bwprint]{format}
 \newcommand{\PaperTitle}{山区洪涝救援中无人机运输--通信协同调度与独立资源配置}
-\newcommand{\PaperKeywords}{山区洪涝救援；无人机应急运输；异构资源调度；连续通信保障；资源池化；多目标优化}
+\newcommand{\PaperKeywords}{无人机应急运输；异构资源调度；连续通信保障；中继优化；资源池化}
 \newif\ifshowteaching
 \showteachingfalse
 \usepackage{tikz}
@@ -20,11 +20,16 @@
 \input{q2_v7_figures.tex}
 \begin{document}
 \song\zihao{-4}
-{\centering\zihao{3}\bfseries\heiti \PaperTitle\par}
 \setcounter{page}{1}
-\thispagestyle{empty}
+\begin{center}
+  {\zihao{-3}\heiti 中国研究生创新实践系列大赛\par}
+  \vspace{0.35em}
+  {\zihao{3}\bfseries\heiti “华为杯”第二十三届中国研究生数学建模竞赛\par}
+  \vspace{1.1em}
+  {\zihao{3}\bfseries\heiti 题\quad 目：\PaperTitle\par}
+\end{center}
+\vspace{0.5em}
 \begin{abstract}
-  \linespread{1.12}\selectfont % Keep the full original abstract on one page.
   \input{chapters/00_abstract.tex}
   \keywords{\PaperKeywords}
 \end{abstract}
@@ -39,4 +44,12 @@
 \input{chapters/07.tex}
 \input{chapters/08.tex}
 \input{chapters/09.tex}
+
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+\clearpage
+\appendix
+\input{appendices.tex}
+
 \end{document}
