@@ -12,35 +12,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Install XeLaTeX toolchain
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y latexmk texlive-xetex texlive-lang-chinese texlive-latex-extra texlive-fonts-recommended
-      - name: Build review PDF
-        id: build
-        continue-on-error: true
-        working-directory: paper/latex
-        run: |
-          rm -f chapters/00_abstract.tex chapters/0[1-9].tex
-          set +e
-          latexmk -xelatex -interaction=nonstopmode -halt-on-error main.tex > build.log 2>&1
-          status=$?
-          echo "status=$status" >> "$GITHUB_OUTPUT"
-          tail -n 200 build.log
-          exit 0
-      - name: Collect build outputs
-        if: always()
+      - name: Remove stale generated chapters
+        run: rm -f paper/latex/chapters/00_abstract.tex paper/latex/chapters/0[1-9].tex
+      - name: Compile XeLaTeX review PDF
+        uses: xu-cheng/latex-action@v3
+        with:
+          working_directory: paper/latex
+          root_file: main.tex
+          latexmk_use_xelatex: true
+      - name: Package PDF
         run: |
           mkdir -p review-output
-          cp paper/latex/build.log review-output/build.log || true
-          cp paper/latex/main.log review-output/main.log || true
-          cp paper/latex/main.pdf 'review-output/D题论文_2026华为杯_检阅版.pdf' || true
+          cp paper/latex/main.pdf 'review-output/D题论文_2026华为杯_检阅版.pdf'
       - uses: actions/upload-artifact@v4
-        if: always()
         with:
-          name: review-build
-          path: review-output/*
+          name: review-pdf
+          path: review-output/*.pdf
           if-no-files-found: error
-      - name: Fail if LaTeX failed
-        if: steps.build.outputs.status != '0'
-        run: exit 1
