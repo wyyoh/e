@@ -1,0 +1,26 @@
+{
+  "scope": "Executed model-based tests; repeated baselines and deterministic scenarios are not independent stochastic samples",
+  "counts": {
+    "q1_exact_scenarios": 24,
+    "q2_fixed_or_time_repair_records": 262,
+    "q2_independent_seeds": 20,
+    "q2_energy_structural_witnesses": 2,
+    "q3_fixed_loss_records": 12,
+    "q3_fixed_delay_records": 24,
+    "q3_full_validated_time_repairs": 12,
+    "q4_inventory_by_group_count": 34,
+    "q4_upstream_plan_audits": 4
+  },
+  "q2_search": {
+    "minimum_s": 6229.573880636706,
+    "median_s": 6457.7140844355345,
+    "maximum_s": 6862.169450392368,
+    "sample_sd_s": 169.20940712561594,
+    "coefficient_of_variation": 0.026108048797209314,
+    "iterations_per_seed": 150,
+    "known_feasible_common_initial": true
+  },
+  "q3_repair_all_pass": true,
+  "q4_inventory_selection_componentwise_dominance": true,
+  "q2_global_certificate": "Inherited formal certificate; all historical pricing leaves were not rerun in this study"
+}

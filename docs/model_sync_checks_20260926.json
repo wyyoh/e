@@ -1,0 +1,28 @@
+{
+  "base_main": "db37b18f70185b90caf3fc22a3bd2f8fa3355c5c",
+  "source_commit": "d56045aa5b12ef8519308116a4ad892380a61fd1",
+  "source_subtree": "aab6314c8ebb2ea118aedf999292cc608288bb39",
+  "destination": "experiments/paper_robustness_20260926",
+  "files_hash_matched": 10,
+  "python_files_parsed": 6,
+  "saved_evidence_tests_run": 9,
+  "saved_evidence_tests_passed": 9,
+  "optimizers_rerun": false,
+  "formal_model_parameters_changed": false,
+  "formal_result_lock_changed": false,
+  "paper_changed": false,
+  "unvalidated_expansion_imported": false,
+  "files": {
+    "README.md": "86e1e98dad941fdf399a706e6bc3ea3b7ee27fd8",
+    "RESULTS_SUMMARY.json": "50b7802815a0735298fd90ee9f6f5c9248175679",
+    "bootstrap_q2.py": "d264d526cf71b708a1ca2838930f0574aaa1725f",
+    "environment_versions.json": "3e085856ec5231385499b42699ae53be594cabc9",
+    "requirements_recorded.txt": "479b6434091a793732f0061f1bc8c5ac24b384f0",
+    "run_q1_q2.py": "e78f368dd3c992200920fa5177aaa521f36f93d7",
+    "run_q2_search.py": "57c9a6142e00c04fc0b78b671aedf942c54403b9",
+    "run_q3_q4.py": "b2149583dd3d087af117722656442bb516f9c260",
+    "summarize_results.py": "a39bc948bd0aa36fdc044598c75e1b72c4ed5591",
+    "test_results.py": "10aed6a5a4948149e7e4e4ba27b711b3c93e26a9"
+  },
+  "test_scope": "Re-ran test_results.py against the matching saved full experiment package; did not rerun the original optimization searches or all historical communication certificates."
+}
