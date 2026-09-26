@@ -56,6 +56,8 @@ jobs:
             pdfinfo main.pdf > ../../publication-output/pdfinfo.txt
             rm -f main.pdf
             find . -name __pycache__ -type d -prune -exec rm -rf {} +
+            cd ../..
+            python3 .publication/completed_20260926/restore.py --checkpoint /checkpoint/paper/latex
           '
           python3 - <<'PY'
           import hashlib,json,re,zipfile
