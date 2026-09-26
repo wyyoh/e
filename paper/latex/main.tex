@@ -3,7 +3,7 @@
 % Revised manuscript: based on wyyoh/e main @ 86aa4da46d7218e001d1012f804f0acece94ca60; structure revision 2026-09-26.
 % Editable chapters take precedence over source_main.tex. The loader creates
 % only missing files, so a partial checkout does not overwrite revised chapters.
-% Chapter 3 is maintained directly in chapters/03.tex.
+% Chapters 1 and 3 are maintained directly in chapters/01.tex and chapters/03.tex.
 \PassOptionsToPackage{quiet}{xeCJK}
 \documentclass[withoutpreface,bwprint]{format}
 \newcommand{\PaperTitle}{山区洪涝救援中无人机运输--通信协同调度与独立资源配置}
@@ -18,6 +18,7 @@
 \input{layout_fixes.tex}
 \input{source_loader.tex}
 \input{q2_v7_figures.tex}
+\input{common_figures.tex}
 \begin{document}
 \song\zihao{-4}
 \setcounter{page}{1}
@@ -52,5 +53,6 @@
 \clearpage
 \appendix
 \input{appendices.tex}
+\input{appendix_dem_figure.tex}
 
 \end{document}

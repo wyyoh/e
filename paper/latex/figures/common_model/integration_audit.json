@@ -1,0 +1,32 @@
+{
+  "base_commit": "e9e5ddea20a43f23661e7a39179e6b720efbc00f",
+  "original_chapter3_git_blob": "dc274fbd0bbf4da1fa611d92d28bc98c01122571",
+  "unchanged_display_math_environments": 19,
+  "display_math_sha256": "f8ad3a647a7ae16f33ee399cd3e02d0c458301508a8463ad13fda2257b860ff8",
+  "figure_render_equivalence_at_144_dpi": {
+    "fig1_1_decision_inheritance": {
+      "same_page_size": true,
+      "different_channel_samples": 0,
+      "max_channel_difference": 0
+    },
+    "fig3_1_terrain_and_demand": {
+      "same_page_size": true,
+      "different_channel_samples": 0,
+      "max_channel_difference": 0
+    },
+    "fig3_2_transport_physics": {
+      "same_page_size": true,
+      "different_channel_samples": 0,
+      "max_channel_difference": 0
+    },
+    "figA1_dem_cells": {
+      "same_page_size": true,
+      "different_channel_samples": 0,
+      "max_channel_difference": 0
+    }
+  },
+  "solver_rerun": false,
+  "whole_main_compile": false,
+  "binary_pdfs_in_git": false,
+  "binary_pdfs_in_ready_package": true
+}

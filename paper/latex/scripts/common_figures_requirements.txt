@@ -1,0 +1,7 @@
+# Figure rendering only; no optimizer is run.
+numpy
+matplotlib
+rasterio
+pyproj
+scipy
+PyMuPDF

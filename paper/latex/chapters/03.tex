@@ -15,12 +15,17 @@
 
 两种DEM文件的高程矩阵、像元中心坐标及仿射变换分别核对，确认数据对应关系后，直接在原始栅格上计算航段经过的地形，不通过平滑或重采样改变山体高程。节点作业高度仍由位置表给定高程确定，不以邻近DEM像元值替换。距离、时间、质量、体积和能量分别统一为m、s、kg、m$^3$和kWh，后续计算使用未舍入值。
 
+基地、服务区与物资需求的空间分布见图\ref{fig:terrain_demand}。图中的需求质量由逐箱清单按目的地汇总，地形底图仅用于展示，不替代后续航段计算使用的原始DEM。
+
+\CommonTerrainFigure
+
 \subsubsection{运输机参数}
 
 三类运输无人机的主要参数见表\ref{tab:common_drone}。其中，空载质量包含电池质量；额定载荷与货舱体积是彼此独立的装载限制；空载和满载航程用于确定不同载荷下的水平飞行能耗。准备、逐箱装载、交接、爬升及下降参数同样按机型读取，在相应公式中定义。
 
-\begin{table}[htbp]
+\begin{table}[H]
 \centering
+\linespread{1.0}\selectfont
 \caption{三类运输无人机主要物理参数}
 \label{tab:common_drone}
 \begin{tabular}{lrrr}
@@ -38,6 +43,7 @@
 \bottomrule
 \end{tabular}
 \end{table}
+\FloatBarrier
 
 \subsection{地形约束下的航段几何模型}
 
@@ -81,7 +87,7 @@
  H_{ij}=z_{ij}^{\max}+50,
 \label{eq:common_cruise_altitude}
 \end{equation}
-其中$Z_c$为像元$c$的地形高程。航段越出DEM范围或经过无效高程时，不将其按零高程处理，而是拒绝该几何输入。固定步长采样可以用于绘图和对照，但不能保证发现短暂经过的每一个像元。
+其中$Z_c$为像元$c$的地形高程。航段越出DEM范围或经过无效高程时，不将其按零高程处理，而是拒绝该几何输入。固定步长采样可以用于绘图和对照，但不能保证发现短暂经过的每一个像元。像元中心到边界的换算及闭像元相交规则另见\ref{sec:dem_figure_notes}中的图\ref{fig:dem_closed_cells}。
 
 \subsubsection{作业高度与三阶段飞行}
 
@@ -100,26 +106,7 @@
 
 式\eqref{eq:common_cruise_altitude}适用于普通运输航段。中继任务的悬停端点可能高于该巡航面，第6章因此对中继转场单独采用地形净空高度、悬停海拔和基地作业高度三者的最大值；该规则不反向改写普通运输模型。
 
-\begin{figure}[htbp]
-\centering
-\begin{tikzpicture}[x=1cm,y=1cm,>=Stealth,font=\small]
-\draw[thick] (0,0.35)--(1.2,0.55)--(2.0,1.2)--(2.8,0.8)--(3.7,1.65)--(4.6,1.0)--(5.7,0.55)--(7.3,0.7);
-\draw[densely dashed] (0,2.45)--(7.3,2.45);
-\draw[very thick,->] (0.3,0.65)--(0.3,2.45);
-\draw[very thick,->] (0.3,2.45)--(7.0,2.45);
-\draw[very thick,->] (7.0,2.45)--(7.0,1.0);
-\draw[<->] (3.7,1.65)--node[right]{50\,m}(3.7,2.45);
-\node[above] at (2.0,2.45){水平巡航：$d_{ij}$};
-\node[above] at (6.3,2.45){$H_{ij}$};
-\node[left,align=right] at (0.3,1.6){爬升\\$H_{ij}-h_i$};
-\node[right,align=left] at (7.0,1.65){下降\\$H_{ij}-h_j$};
-\node[below,align=center] at (0.3,0.05){节点$i$\\作业高度$h_i$};
-\node[below,align=center] at (7.0,0.05){节点$j$\\作业高度$h_j$};
-\node at (3.9,0.15){沿航迹地形剖面};
-\end{tikzpicture}
-\caption{普通运输航段的三阶段飞行与高度关系（示意图，非实际地形剖面）}
-\label{fig:common_leg_geometry}
-\end{figure}
+航段飞行与多站交接的衔接关系见图\ref{fig:transport_physics}（a）；其中各航段采用各自的巡航海拔。
 
 \subsection{运输任务表示与逐段载荷递推}
 
@@ -145,6 +132,10 @@
 \label{eq:common_load}
 \end{equation}
 从$v_j$飞往$v_{j+1}$时使用$q_{r,j}$计算能耗，包括$j=K$时的空载返航。由于途中只卸货、不补货，初始装载满足质量和体积约束后，后续载荷不会增加；但各航段的能耗仍须按卸货后的实际载荷分别计算。改变访问顺序可能同时改变航段长度、爬升高度和高载荷飞行距离，不能只比较总航程。
+
+以$O01\rightarrow S_i\rightarrow S_j\rightarrow O01$为例，图\ref{fig:transport_physics}将航段几何、逐段载荷与交付时间的计算关系联系起来。图中距离与时间采用不同横轴，阶段长度仅作示意；具体时间、能耗与恢复时长仍按下文公式计算。
+
+\CommonTransportFigure
 
 \subsection{飞行时间、交付时刻与返航时间}
 

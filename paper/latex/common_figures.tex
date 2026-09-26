@@ -1,0 +1,37 @@
+% Reviewed chapter 1--3 assets; numbers remain controlled by the paper template.
+% Build missing PDFs with: python scripts/build_common_figures.py
+\RequirePackage{placeins}
+\newcommand{\CommonFigureNote}[1]{\par\smallskip
+  {\footnotesize\songti\noindent\begin{minipage}{\linewidth}#1\end{minipage}\par}}
+\newcommand{\CommonDecisionFigure}{%
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{figures/common_model/fig1_1_decision_inheritance.pdf}
+\caption{统一物理模型支撑的四问决策层次与数据继承关系}
+\label{fig:decision_inheritance}\label{fig:overall_framework}
+\CommonFigureNote{Q1到Q2传递能力与组批分析基础，Q2到Q3传递运输结构与物理属性；仅Q3到Q4严格冻结正式\texttt{time}日程、任务与实际保障关系。颜色表示问题模块，不表示运输机型。}
+\end{figure}}
+\newcommand{\CommonTerrainFigure}{%
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\linewidth]{figures/common_model/fig3_1_terrain_and_demand.pdf}
+\caption{救援区域地形、服务区位置与不可拆物资需求分布}
+\label{fig:terrain_demand}
+\CommonFigureNote{（a）以O01为中心的WGS84 AEQD平面底图，服务区圆点面积与需求质量成正比；（b）同一逐箱聚合结果的需求质量面板。显示重投影不参与航段最高地形计算。}
+\end{figure}\FloatBarrier}
+\newcommand{\CommonTransportFigure}{%
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\linewidth]{figures/common_model/fig3_2_transport_physics.pdf}
+\caption{多点运输任务的航段几何、载荷递推与交付时间计算机制（示意）}
+\label{fig:transport_physics}\label{fig:common_leg_geometry}
+\CommonFigureNote{（a）累计路径距离上的航段几何；（b）相对任务时间及离站载荷；（c）能耗关系与公共输出。到达不等于交接完成，空载返航仍计能耗，末次充电不并入任务作业时长。Q1仅为单点访问特例。}
+\end{figure}\FloatBarrier}
+\newcommand{\CommonDEMFigure}{%
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\linewidth]{figures/common_model/figA1_dem_cells.pdf}
+\caption{DEM像元中心约定与连续航迹的完整像元相交（示意）}
+\label{fig:dem_closed_cells}
+\CommonFigureNote{（a）PixelIsPoint中心坐标到边界坐标的半像元换算；（b）闭像元规则纳入轨迹穿过及边界、角点接触的像元。本图不对应实际航段，也不表示已识别DEM分辨率以下的障碍物。}
+\end{figure}\FloatBarrier}

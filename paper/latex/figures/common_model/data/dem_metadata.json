@@ -1,0 +1,50 @@
+{
+  "shape": [
+    1309,
+    1486
+  ],
+  "crs": "EPSG:4326",
+  "transform_corner": [
+    0.00027777777777777393,
+    0.0,
+    109.0326388888889,
+    0.0,
+    -0.0002777777777777777,
+    23.22486111111111
+  ],
+  "nodata": null,
+  "bounds": [
+    109.0326388888889,
+    22.86125,
+    109.44541666666667,
+    23.22486111111111
+  ],
+  "tags": {
+    "TIFFTAG_SOFTWARE": "MATLAB 9.14, Mapping Toolbox 5.5",
+    "AREA_OR_POINT": "Point"
+  },
+  "min": 41.68907928466797,
+  "max": 1132.8560791015625,
+  "valid_pixels": 1945174,
+  "geotiff_metadata": {
+    "KeyDirectoryVersion": 1,
+    "KeyRevision": 1,
+    "KeyRevisionMinor": 0,
+    "GTModelTypeGeoKey": 2,
+    "GTRasterTypeGeoKey": 2,
+    "GeographicTypeGeoKey": 4326,
+    "ModelPixelScale": [
+      0.00027777777777777393,
+      0.0002777777777777777,
+      0.0
+    ],
+    "ModelTiepoint": [
+      0.0,
+      0.0,
+      0.0,
+      109.03277777777778,
+      23.224722222222223,
+      0.0
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "repository": "wyyoh/e",
+  "ref": "main",
+  "commit": "e9e5ddea20a43f23661e7a39179e6b720efbc00f",
+  "files": [
+    {
+      "repository_path": "problems/D/q1/data/raw/物资需求与配送时限.xlsx",
+      "bytes": 17474,
+      "git_blob_sha1": "86c363075ee3c1c59071caf6970afdbf44bc10cf",
+      "sha256": "5a3346159ceddcf585859d270b8f62114b388a1f737fbe64ffde0ee1fdc8170a",
+      "matches_main": true
+    },
+    {
+      "repository_path": "problems/D/q1/data/raw/调度中心与服务区.xlsx",
+      "bytes": 11017,
+      "git_blob_sha1": "540abc43f058bba1ba3332551c99acfac1dd730b",
+      "sha256": "541a7af1ded08c9a3ff448480332cb5f6a54902f0afa6e9bcd50c1d2b2b34e38",
+      "matches_main": true
+    },
+    {
+      "repository_path": "problems/D/q1/data/raw/运输无人机数据.xlsx",
+      "bytes": 11746,
+      "git_blob_sha1": "b731d958dfbf1770eb1d19eeb2830552df7d2c62",
+      "sha256": "9296a657c07e042afba6aeea7999665d9cd24e00b592fd6c269de6e338480dcb",
+      "matches_main": true
+    },
+    {
+      "repository_path": "problems/D/q1/data/raw/镇龙乡及周边30米DEM.tif",
+      "bytes": 7867096,
+      "git_blob_sha1": "76c871fc4bfdd09630cee4648d61c55471f7c323",
+      "sha256": "741fe6de0b2bcaffd0f4007f574ee698d46197094f52cc954b532c4f90fc7c03",
+      "matches_main": true
+    },
+    {
+      "repository_path": "problems/D/q1/data/raw/镇龙乡及周边30米DEM.mat",
+      "bytes": 6746494,
+      "git_blob_sha1": "4a69a56b36b0e80012da04a72d69308726fdf894",
+      "sha256": "c68703e0cc8f94f4bd52ff6e9974b66a2dae33865f0723ad71c04b6694bf4fbf",
+      "matches_main": true
+    }
+  ],
+  "original_package_binary_transport": "Library q3_v6_main_integration.zip; inner q3_bottleneck_v6_full.zip; verified byte-for-byte using Git blob SHA against main",
+  "binary_transport": "This review recovered raw TIF and three XLSX files from Library Chapters_1-3_Figures_e9e5ddea.zip and the raw MAT from Library 26研赛D代码结果最终版(1).zip. Every file independently matches the pinned main Git blob. No external solver results were used."
+}
