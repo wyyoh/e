@@ -1,25 +1,36 @@
 # 论文工作区
 
-当前唯一LaTeX主文件：
-- `latex/main.tex`
-- 附录：`latex/appendices.tex`
-- 参考文献：`latex/references.bib`
+正式编译入口：
+- \`latex/main.tex\`
 
-正式数值以 `../paper_integration/FINAL_SELECTION.json` 为准。
+正文与前后置材料：
+- \`latex/source_main.tex\`：当前九章正文与摘要的连续源稿；
+- \`latex/source_loader.tex\`：首次编译时提取摘要与第1--9章；
+- \`latex/references.bib\`：参考文献数据库；
+- \`latex/appendices.tex\`：独立附录；
+- \`latex/q2_v7_figures.tex\`：Q2矢量图。
+
+当前论文结构为：
+
+\`竞赛题头/题目 → 摘要与关键词 → 目录 → 第1--9章 → 参考文献 → 附录\`
+
+参考文献和附录不再写入第9章文件。
+
+正式数值以 \`../paper_integration/FINAL_SELECTION.json\` 为准。
 
 ## 当前口径
 
-- Q1：18架次 / 59.131296 kWh。
-- Q2：V7证据，5693.231489 s，LB 5433.956428 s。
-- Q3：**Q3-BOTTLENECK-V6/time**，5836.969929 s，68.939416 kWh。
-- Q4：严格继承V6/time，K2缺口1、K3缺口7。
+- Q1：18架次，59.131296 kWh，累计作业时间546.266929 min。
+- Q2：23架次零加权迟到方案，5693.231489 s；全局有效下界5433.956428 s。
+- Q3：Q3-BOTTLENECK-V6/time，5836.969929 s，68.939416 kWh。
+- Q4：严格继承V6/time；两组缺口1，三组缺口7。
 
-主稿与附录已同步到上述口径。Q3旧Q3-FINAL-V1、旧5755候选域下界、旧0.50/0.55 dB方案以及Q4旧V2敏感性仅作为历史材料，不再作为当前结论。
+## 前后置材料写作口径
 
-## 图表与数据
+- 摘要按“总体方法 + 各问题方法与关键结果 + 综合结论”组织；
+- 关键词保留5个核心概念；
+- 参考文献独立置于九章正文之后；
+- 附录只保留主要程序入口、关键补充结果和复核表格，不放Git哈希、旧版本日志和历史失败实验；
+- 旧Q3候选域证明、旧0.50/0.55 dB方案以及旧Q4敏感性仅保留于仓库历史材料，不进入当前论文后置材料。
 
-- Q2正式绘图数据：`data/q2_v7_visual_source.json`
-- Q3 V6正式绘图数据：`data/q3_v6_visual_source.json`
-- `data/visual_data.json` 中pricing/q3_sampling数组是历史算法实验；当前Q4资源字段已同步到V6 strict结果。
-
-最终投稿前仍需按官方模板检查版式、图号、交叉引用和生成PDF。
+最终提交前仍需在完整XeLaTeX环境中检查分页、图号、交叉引用及目录页码。
