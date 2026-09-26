@@ -42,17 +42,21 @@
             }
         }
         {3}{
-          \regex_match:nnTF { ^ \\end \{document\} } {#1}
+          \regex_match:nnTF { ^ \\renewcommand \{ \\refname \} } {#1}
             {\iow_close:N \l_review_chapter_iow \int_set:Nn \l_review_state_int {4}}
             {
-              \regex_match:nnT { ^ \\section \{ } {#1}
+              \regex_match:nnTF { ^ \\end \{document\} } {#1}
+                {\iow_close:N \l_review_chapter_iow \int_set:Nn \l_review_state_int {4}}
                 {
-                  \iow_close:N \l_review_chapter_iow
-                  \int_incr:N \l_review_chapter_int
-                  \iow_open:Nx \l_review_chapter_iow
-                    {chapters/0\int_use:N\l_review_chapter_int.tex}
+                  \regex_match:nnT { ^ \\section \{ } {#1}
+                    {
+                      \iow_close:N \l_review_chapter_iow
+                      \int_incr:N \l_review_chapter_int
+                      \iow_open:Nx \l_review_chapter_iow
+                        {chapters/0\int_use:N\l_review_chapter_int.tex}
+                    }
+                  \review_write_line:n {#1}
                 }
-              \review_write_line:n {#1}
             }
         }
       }{}
