@@ -1,0 +1,158 @@
+name: Verify and promote completed manuscript
+on:
+  push:
+    branches: [paper/publish-completed-92-20260926]
+    paths: [.github/workflows/promote-completed-paper.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: completed-paper-publication
+  cancel-in-progress: false
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: paper/publish-completed-92-20260926
+          fetch-depth: 0
+      - name: Verify exact source, complete PDF and unchanged models
+        run: |
+          set -euo pipefail
+          git fetch origin main
+          test "$(git rev-parse origin/main)" = 773567ffe32e6827889aef4f35b0d72aa8e6698f
+          git merge-base --is-ancestor origin/main HEAD
+          test "$(git hash-object paper_integration/FINAL_SELECTION.json)" = 31b72d19ac8d72e173af8f576df78f8538546153
+          git diff --name-only origin/main HEAD > /tmp/publish-paths.txt
+          if grep -Ev '^(paper/|\.github/|\.publication/)' /tmp/publish-paths.txt; then echo 'Unexpected changes outside manuscript publication'; exit 1; fi
+          python3 - <<'PY'
+          import hashlib,json,re
+          from pathlib import Path
+          root=Path('paper/latex'); review=Path('paper/review')
+          identity=json.loads((review/'completed_source_identity_20260926.json').read_text())
+          assert identity['remote_pdf_pages']==92
+          assert identity['remote_text_files_verified']==119
+          assert identity['bibliography_records']==40
+          assert identity['pdf_rebuilt_from_exact_source'] is True
+          pdf=review/'D_paper_completed_20260926.pdf'
+          assert pdf.read_bytes().startswith(b'%PDF-')
+          assert hashlib.sha256(pdf.read_bytes()).hexdigest()==identity['remote_pdf_sha256']
+          for name,h in identity['source_files'].items():
+              assert hashlib.sha256((root/name).read_bytes()).hexdigest()==h,name
+          for i in range(1,10): assert (root/'chapters'/f'{i:02d}.tex').is_file()
+          assert len(re.findall(r'^@\w+\{',(root/'references.bib').read_text(),re.M))==40
+          print('Verified 119 exact source/data files, all nine chapters, 40 cited records and the rebuilt 92-page PDF.')
+          PY
+          cd paper/latex
+          python3 scripts/check_source.py > /tmp/publish-source-check.json
+          python3 -m unittest discover -s tests -v > /tmp/publish-tests.log 2>&1
+          git restore -- checks/source_validation.json
+      - name: Retire temporary transport and preserve a read-only build workflow
+        run: |
+          set -euo pipefail
+          git rm -r --ignore-unmatch .publication
+          git rm --ignore-unmatch .github/workflows/publish-completed-paper.yml .github/workflows/promote-completed-paper.yml
+          python3 - <<'PY'
+          from pathlib import Path
+          import json,shutil
+          workflow='''name: Build review PDF
+          on:
+            workflow_dispatch:
+            push:
+              branches: [main]
+              paths:
+                - paper/latex/**
+                - .github/workflows/build-review-pdf.yml
+          permissions:
+            contents: read
+          jobs:
+            build:
+              runs-on: ubuntu-latest
+              timeout-minutes: 20
+              steps:
+                - uses: actions/checkout@v4
+                - name: Check independent chapters and build PDF
+                  run: |
+                    set -euo pipefail
+                    mkdir -p review-build
+                    docker run --rm -v "$PWD:/work" -w /work debian:trixie-slim bash -lc '
+                      set -euo pipefail
+                      export DEBIAN_FRONTEND=noninteractive
+                      apt-get update -qq
+                      apt-get install -y --no-install-recommends python3 texlive-xetex texlive-lang-chinese texlive-latex-extra texlive-science texlive-plain-generic texlive-fonts-recommended texlive-bibtex-extra fonts-noto-cjk fonts-liberation fonts-liberation2 fonts-croscore poppler-utils >/tmp/tex-install.log
+                      cd paper/latex
+                      python3 scripts/check_source.py > ../../review-build/source-check.json
+                      python3 -m unittest discover -s tests -v > ../../review-build/tests.log 2>&1
+                      python3 scripts/build_pdf.py > ../../review-build/build-console.log 2>&1
+                      cp main.pdf ../../review-build/D_paper_review.pdf
+                      cp main.log ../../review-build/main.log
+                      pdfinfo main.pdf > ../../review-build/pdfinfo.txt
+                    '
+                - uses: actions/upload-artifact@v4
+                  if: always()
+                  with:
+                    name: paper-review-pdf
+                    path: review-build/
+                    retention-days: 14
+          '''
+          import textwrap
+          workflow='\n'.join([workflow.splitlines()[0]]+[line[10:] if line.startswith('          ') else line for line in workflow.splitlines()[1:]])+'\n'
+          Path('.github/workflows/build-review-pdf.yml').write_text(workflow)
+          root=Path('paper/latex');review=Path('paper/review')
+          note='''# 已发布的完整论文（2026-09-26）
+
+          当前编辑与编译入口为 `paper/latex/main.tex`，逐章源码位于 `paper/latex/chapters/`，合并阅读版为 `paper/latex/main_merged.tex`。
+
+          本次发布来自已交付的完整续写源码，不是此前未完成的96页检查点。检阅PDF为92页，第1—9章正文为72页，含40条实际引用的文献及来源记录（39条公开文献/书籍/标准等、1条非公开候选来源记录）。
+
+          PDF：`paper/review/D_paper_completed_20260926.pdf`。
+          源码/输入逐文件哈希及原交付PDF与远端重编译PDF的独立哈希：`paper/review/completed_source_identity_20260926.json`。
+
+          119份正文、公式、表格、代码和输入与已交付源码逐字节核对；插图由相同输入重新生成；远端XeLaTeX/BibTeX编译和19项检查通过。发布不改动正式模型、求解器、结果锁和稳健性实验代码。
+
+          `source_main.tex`、旧加载器、旧检阅入口及原历史说明保留用于追溯，不是当前编辑入口。构建流程不再删除 `chapters/` 或从旧连续稿重建章节。
+
+          已移除临时压缩传输文件。克隆当前main即可直接读取普通TeX、CSV、JSON和PDF，不需要从旧检查点恢复。编译使用 `cd paper/latex && python3 scripts/build_pdf.py`；已提交所有必需插图，不需要重新运行优化器。字体不随仓库发布。
+          '''
+          Path('paper/latex/PUBLICATION_20260926.md').write_text(textwrap.dedent(note))
+          readme=Path('README.md');old=readme.read_text()
+          announcement='''## 最新完整论文（92页检阅版）
+
+          - [LaTeX主入口](paper/latex/main.tex) · [独立章节](paper/latex/chapters/) · [合并源码](paper/latex/main_merged.tex)
+          - [92页检阅PDF](paper/review/D_paper_completed_20260926.pdf)
+          - [发布与构建说明](paper/latex/PUBLICATION_20260926.md) · [逐文件身份核验](paper/review/completed_source_identity_20260926.json)
+
+          第1—9章正文72页；40条文献/来源记录。正式模型和结果锁保持原值。
+
+          '''
+          if '## 最新完整论文（92页检阅版）' not in old:
+              readme.write_text(textwrap.dedent(announcement)+old)
+          shutil.copy('/tmp/publish-source-check.json',review/'publication_source_check_20260926.json')
+          shutil.copy('/tmp/publish-tests.log',review/'publication_tests_20260926.log')
+          PY
+          git add README.md .github/workflows/build-review-pdf.yml paper/latex/PUBLICATION_20260926.md paper/review
+      - name: Atomically publish the verified tree to main
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git diff --cached --name-only > /tmp/final-publication-paths.txt
+          if grep -Ev '^(paper/|\.github/|\.publication/|README\.md$)' /tmp/final-publication-paths.txt; then exit 1; fi
+          git commit -m 'Publish the completed manuscript on main and retire temporary transfer scaffolding' -m 'Verified 119 source/data files, 19 checks, nine chapters and the 92-page PDF. Preserve model parameters, formal results and experiments. Keep independent chapters authoritative and remove the obsolete chapter-deletion build step.'
+          git fetch origin main
+          test "$(git rev-parse origin/main)" = 773567ffe32e6827889aef4f35b0d72aa8e6698f
+          git push --atomic origin HEAD:refs/heads/paper/publish-completed-92-20260926 HEAD:refs/heads/main
+          git rev-parse HEAD | tee /tmp/published-commit.txt
+      - name: Save promotion audit
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: completed-paper-main-publication
+          path: |
+            /tmp/published-commit.txt
+            /tmp/publish-tests.log
+            /tmp/publish-source-check.json
+            /tmp/final-publication-paths.txt
+          retention-days: 14
