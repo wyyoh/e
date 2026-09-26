@@ -1,0 +1,118 @@
+name: Publish completed manuscript from isolated main
+on:
+  push:
+    branches: [paper/publish-completed-92-20260926]
+    paths: [.github/workflows/recover-completed-main.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: completed-paper-publication
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: paper/publish-completed-92-20260926
+          fetch-depth: 0
+      - name: Prepare isolated current-main worktree
+        run: |
+          set -euo pipefail
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          git fetch origin main
+          BASE=$(git rev-parse origin/main)
+          echo "BASE=$BASE" >> "$GITHUB_ENV"
+          MAIN="$RUNNER_TEMP/completed-main"
+          CHECKPOINT="$RUNNER_TEMP/completed-checkpoint"
+          git worktree add --detach "$MAIN" "$BASE"
+          git config --global --add safe.directory "$MAIN"
+          git fetch origin e6329c2bbc2cdd983c0dc412bef93d80820f2356
+          mkdir -p "$CHECKPOINT" "$RUNNER_TEMP/completed-evidence"
+          git archive e6329c2bbc2cdd983c0dc412bef93d80820f2356 paper/latex | tar -x -C "$CHECKPOINT"
+          test "$(git -C "$MAIN" hash-object paper_integration/FINAL_SELECTION.json)" = 31b72d19ac8d72e173af8f576df78f8538546153
+          echo "MAIN=$MAIN" >> "$GITHUB_ENV"
+          echo "CHECKPOINT=$CHECKPOINT" >> "$GITHUB_ENV"
+      - name: Rebuild and check the exact completed source
+        run: |
+          set -euo pipefail
+          docker run --rm -v "$MAIN:/work" -v "$CHECKPOINT:/checkpoint:ro" -v "$GITHUB_WORKSPACE/.publication/completed_20260926:/transfer:ro" -v "$RUNNER_TEMP/completed-evidence:/evidence" -w /work debian:trixie-slim bash -lc '
+            set -euo pipefail
+            export DEBIAN_FRONTEND=noninteractive
+            apt-get update -qq
+            apt-get install -y --no-install-recommends python3 python3-numpy python3-scipy python3-pandas python3-matplotlib python3-rasterio python3-pyproj python3-pymupdf libzstd1 texlive-xetex texlive-lang-chinese texlive-latex-extra texlive-science texlive-plain-generic texlive-fonts-recommended texlive-bibtex-extra fonts-noto-cjk fonts-liberation fonts-liberation2 fonts-croscore poppler-utils ca-certificates >/evidence/install.log 2>&1
+            python3 /transfer/restore.py --checkpoint /checkpoint/paper/latex
+            python3 -c "import pymupdf, runpy, sys; sys.modules[\"fitz\"]=pymupdf; runpy.run_path(\"paper/latex/scripts/build_common_figures.py\", run_name=\"__main__\")" > /evidence/common-figures.log 2>&1
+            cd paper/latex
+            python3 scripts/build_assets.py > /evidence/figures.log 2>&1
+            python3 scripts/build_audit_assets.py > /evidence/audit-assets.log 2>&1
+            python3 scripts/plot_audit_assets.py >> /evidence/figures.log 2>&1
+            cd /work
+            python3 /transfer/restore.py --checkpoint /checkpoint/paper/latex
+            cd paper/latex
+            python3 scripts/export_merged_tex.py > /evidence/merged.log 2>&1
+            python3 scripts/check_source.py > /evidence/source-check.json
+            python3 -m unittest discover -s tests -v > /evidence/tests.log 2>&1
+            python3 scripts/build_pdf.py > /evidence/build-console.log 2>&1
+            cp main.pdf ../review/D_paper_completed_20260926.pdf
+            cp main.log /evidence/main.log
+            cp main.aux /evidence/main.aux
+            cp main.bbl /evidence/main.bbl
+            pdfinfo main.pdf > /evidence/pdfinfo.txt
+            rm -f main.pdf
+            find . -name __pycache__ -type d -prune -exec rm -rf {} +
+            cd /work
+            python3 /transfer/restore.py --checkpoint /checkpoint/paper/latex
+          '
+          sudo chown -R "$(id -u):$(id -g)" "$MAIN" "$RUNNER_TEMP/completed-evidence"
+          echo 'Compilation complete; verifying source and bibliography identity.'
+          python3 - <<'PY'
+          import hashlib,json,os,re,shutil
+          from pathlib import Path
+          root=Path(os.environ['MAIN'])/'paper/latex'; review=root.parent/'review'; ev=Path(os.environ['RUNNER_TEMP'])/'completed-evidence'
+          ident=json.loads((review/'completed_source_identity_20260926.json').read_text())
+          for name,digest in ident['source_files'].items():
+              assert hashlib.sha256((root/name).read_bytes()).hexdigest()==digest, name
+          info=(ev/'pdfinfo.txt').read_text();pages=int(re.search(r'Pages:\s+(\d+)',info).group(1));assert pages==92,pages
+          count=len(re.findall(r'\\bibitem',(ev/'main.bbl').read_text()));assert count==40,count
+          for i in range(1,10):assert (root/'chapters'/f'{i:02d}.tex').is_file()
+          text=(ev/'main.log').read_text(errors='replace')
+          bad=[s for s in text.splitlines() if any(v in s for v in ('Overfull','Missing character:','undefined references','multiply defined'))];assert not bad,bad[:10]
+          tests=(ev/'tests.log').read_text();assert 'Ran 19 tests' in tests and '\nOK' in tests,tests[-1000:]
+          ident.update({'remote_pdf_pages':pages,'remote_pdf_sha256':hashlib.sha256((review/'D_paper_completed_20260926.pdf').read_bytes()).hexdigest(),'remote_text_files_verified':len(ident['source_files']),'bibliography_records':count,'public_bibliography_records':39,'nonpublic_source_records':1,'pdf_rebuilt_from_exact_source':True,'main_base':os.environ['BASE'],'remote_tests_passed':19})
+          (review/'completed_source_identity_20260926.json').write_text(json.dumps(ident,ensure_ascii=False,indent=2)+'\n')
+          (review/'README.md').write_text('# Latest completed manuscript\n\nSource: `../latex/main.tex`; independent chapters: `../latex/chapters/`; merged reading copy: `../latex/main_merged.tex`.\n\nPDF: `D_paper_completed_20260926.pdf` (92 pages, 72 body pages, 40 bibliography/source records).\n\nAll 119 delivered source/data files were verified byte-for-byte and 19 tests passed. The review PDF was rebuilt from this source; its SHA-256 is distinguished from the original delivered PDF in `completed_source_identity_20260926.json`. Model parameters, selected results and experiment code are unchanged.\n')
+          (root/'PUBLICATION_20260926.md').write_text('# 最新完整论文（2026-09-26）\n\n编辑与编译入口：`main.tex`。各章直接位于`chapters/`，合并阅读版为`main_merged.tex`。\n\n本稿为真实完成的92页检阅版，第1—9章正文72页；含40条实际引用的文献与来源记录（39条公开文献/书籍/标准等，1条候选来源记录）。\n\nPDF位于`../review/D_paper_completed_20260926.pdf`。原交付文件和远端重编译文件哈希分别记录在`../review/completed_source_identity_20260926.json`。\n\n119份源文件及数据逐字节一致，远端19项测试通过。旧`source_main.tex`、旧加载器仅作历史留存，不是本次编辑来源。不要删除`chapters/`重新从旧稿生成。\n\n已提交所有必需插图；执行`python3 scripts/build_pdf.py`编译。没有重新运行优化器，也没有改变正式模型参数、结果锁和稳健性试验代码。字体文件不分发。\n')
+          shutil.copy(ev/'source-check.json',review/'publication_source_check_20260926.json')
+          shutil.copy(ev/'tests.log',review/'publication_tests_20260926.txt')
+          shutil.copy(ev/'pdfinfo.txt',review/'publication_pdfinfo_20260926.txt')
+          print(json.dumps({k:v for k,v in ident.items() if k!='source_files'},indent=2))
+          PY
+      - name: Publish only verified manuscript files to main
+        run: |
+          set -euo pipefail
+          git config --global --add safe.directory "$MAIN"
+          git -C "$MAIN" config user.name 'github-actions[bot]'
+          git -C "$MAIN" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$MAIN" add paper/latex paper/archive paper/review
+          git -C "$MAIN" add -f paper/review/D_paper_completed_20260926.pdf
+          find "$MAIN/paper/latex/figures/common_model" "$MAIN/paper/latex/figures_generated" -type f -name '*.pdf' -print0 | xargs -0 git -C "$MAIN" add -f
+          git -C "$MAIN" diff --cached --name-only > "$RUNNER_TEMP/completed-evidence/changed_paths.txt"
+          if grep -Ev '^paper/(latex|archive|review)/' "$RUNNER_TEMP/completed-evidence/changed_paths.txt"; then exit 1; fi
+          test "$(git -C "$MAIN" hash-object paper_integration/FINAL_SELECTION.json)" = 31b72d19ac8d72e173af8f576df78f8538546153
+          git -C "$MAIN" commit -m 'Publish complete 92-page manuscript and verified PDF on main' -m 'Restore all nine independent chapters, 22 expanded sections, all repaired derivations and tables, and 40 actual bibliography/source entries. Verify 119 exact source/data hashes, 19 tests and a 92-page remote XeLaTeX build. Preserve model parameters, formal results, existing experiment code and unrelated repository files.'
+          git fetch origin main
+          test "$(git rev-parse origin/main)" = "$BASE"
+          git -C "$MAIN" push origin HEAD:refs/heads/main
+          git -C "$MAIN" rev-parse HEAD | tee "$RUNNER_TEMP/completed-evidence/published_commit.txt"
+      - name: Export final publication evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: completed-main-final-evidence
+          path: |
+            ${{ runner.temp }}/completed-evidence/
+            ${{ runner.temp }}/completed-main/paper/review/
+          retention-days: 14
