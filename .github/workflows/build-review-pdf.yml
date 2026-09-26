@@ -1,39 +1,47 @@
 name: Build review PDF
 
 on:
+  workflow_dispatch:
   push:
-    branches: [ main ]
+    branches: [main]
     paths:
       - 'paper/latex/**'
       - '.github/workflows/build-review-pdf.yml'
-  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: review-pdf-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
-
-      - name: Install TeX
+      - name: Check independent chapters and compile
         run: |
-          sudo apt-get update
-          sudo apt-get install -y latexmk texlive-xetex texlive-lang-chinese texlive-latex-extra texlive-fonts-recommended
-
-      - name: Prepare generated chapters
-        working-directory: paper/latex
-        run: |
-          rm -f chapters/00_abstract.tex chapters/01.tex chapters/02.tex chapters/03.tex chapters/04.tex chapters/05.tex chapters/06.tex chapters/07.tex chapters/08.tex chapters/09.tex
-          mkdir -p chapters
-
-      - name: Build PDF
-        working-directory: paper/latex
-        run: |
-          latexmk -xelatex -interaction=nonstopmode -halt-on-error main.tex
-          cp main.pdf D题论文_当前main_检阅版.pdf
-
-      - name: Upload PDF
+          set -euo pipefail
+          mkdir -p review-build
+          docker run --rm -v "$PWD:/work" -w /work debian:trixie-slim bash -lc '
+            set -euo pipefail
+            export DEBIAN_FRONTEND=noninteractive
+            apt-get update -qq
+            apt-get install -y --no-install-recommends python3 texlive-xetex texlive-lang-chinese texlive-latex-extra texlive-science texlive-plain-generic texlive-fonts-recommended texlive-bibtex-extra fonts-noto-cjk fonts-liberation fonts-liberation2 fonts-croscore poppler-utils >/tmp/tex-install.log
+            cd paper/latex
+            python3 scripts/check_source.py > ../../review-build/source-check.json
+            python3 -m unittest discover -s tests -v > ../../review-build/tests.log 2>&1
+            python3 scripts/build_pdf.py > ../../review-build/build-console.log 2>&1
+            cp main.pdf ../../review-build/D_paper_review.pdf
+            cp main.log ../../review-build/main.log
+            pdfinfo main.pdf > ../../review-build/pdfinfo.txt
+          '
+      - name: Upload PDF and verification logs
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: D题论文_当前main_检阅版
-          path: paper/latex/D题论文_当前main_检阅版.pdf
-          if-no-files-found: error
+          name: paper-review-pdf
+          path: review-build/
+          retention-days: 14
