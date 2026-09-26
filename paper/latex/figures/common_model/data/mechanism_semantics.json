@@ -1,0 +1,31 @@
+{
+  "kind": "mechanism schematic, not a measured or scheduled task",
+  "example_route": [
+    "O01",
+    "S_i",
+    "S_j",
+    "O01"
+  ],
+  "Q1_is_K1_special_case": true,
+  "profile_coordinates": "qualitative drawing units, not DEM elevations or flight results",
+  "timeline_positions": [
+    9,
+    21,
+    38,
+    47,
+    62,
+    72,
+    96
+  ],
+  "timeline_units": "schematic layout only; not seconds or minutes",
+  "payloads": [
+    "D_i + D_j",
+    "D_j",
+    "0"
+  ],
+  "handover_definition": "delivery at completion, not arrival",
+  "normal_transport_clearance_m": 50,
+  "service_work_AGL_m": 30,
+  "ordinary_transport_height_conflict_handling": "report H_ij < max(h_i,h_j); do not clip negative climb",
+  "charge_excluded_from_task_duration": true
+}

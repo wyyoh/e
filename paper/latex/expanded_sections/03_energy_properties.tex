@@ -1,0 +1,27 @@
+\subsubsection{载荷的边际能耗与安全边界}
+记$a_m=L_m^0-L_m^F>0$。在$q>0$时，给定航程公式有
+\begin{equation}
+L'_m(q)=-\frac{3a_m}{2Q_m^{3/2}}\sqrt q<0,\qquad
+\frac{\partial E_m^{\mathrm{hor}}}{\partial q}
+=-\frac{E_m dL'_m(q)}{L_m(q)^2}>0.
+\label{eq:energy_load_derivative}
+\end{equation}
+爬升能耗对载荷的导数为$gh/(\eta_m3.6\times10^6)$，亦不小于0。因此固定机型和航段后，增加离站载荷不会降低能耗。单点往返中返程为空载，边界求根只需处理起飞载荷对去程的影响。
+
+此外，$L''_m(q)<0$，从而
+\begin{equation}
+\frac{\partial^2 E_m^{\mathrm{hor}}}{\partial q^2}
+=E_md\left[\frac{2(L'_m)^2}{L_m^3}-\frac{L''_m}{L_m^2}\right]>0.
+\label{eq:energy_load_convexity}
+\end{equation}
+高载荷区间具有更高的边际水平能耗，这解释了把货箱从重载任务移至较轻任务可能产生节能。然而新增任务也引入准备、交接、空载返航和额外爬升，故不能仅按载荷均衡确定组批。后文在完整任务成本上评价这种权衡。
+
+当安全能量约束决定最大载荷时，对$E_{im}(w)=(1-\alpha)E_m$求导得到
+\begin{equation}
+\frac{\mathrm d w_{im}^{safe}}{\mathrm d\alpha}
+=-\frac{E_m}{\partial E_{im}/\partial w}<0.
+\label{eq:payload_alpha_derivative}
+\end{equation}
+当额定质量先起作用，安全载荷曲线保持平台；能量边界降至额定质量以下才开始下降。这给出了第四章载荷曲线“平台—下降”结构的模型解释。
+
+本文的$E_r$是给定模型下的任务电池能耗。Stolaroff等的生命周期研究还涉及供电来源和物流系统边界\cite{stolaroff2018,stolaroff2018corr}。本题使用任务能耗直接计算返航余量与恢复时间，相关节能结果按这一明确单位和范围报告。

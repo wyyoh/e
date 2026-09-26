@@ -1,0 +1,24 @@
+test_actual_methods_and_provenance (test_audit_repair.AuditRepairChecks.test_actual_methods_and_provenance) ... ok
+test_equivalent_boxes (test_audit_repair.AuditRepairChecks.test_equivalent_boxes) ... ok
+test_inputs_hashes (test_audit_repair.AuditRepairChecks.test_inputs_hashes) ... ok
+test_lower_bound_cover_direction (test_audit_repair.AuditRepairChecks.test_lower_bound_cover_direction) ... ok
+test_q3_full_schedule_identity (test_audit_repair.AuditRepairChecks.test_q3_full_schedule_identity) ... ok
+test_q3_same_transport_structure (test_audit_repair.AuditRepairChecks.test_q3_same_transport_structure) ... ok
+test_q4_group_sums (test_audit_repair.AuditRepairChecks.test_q4_group_sums) ... ok
+test_safe_payload_monotonicity (test_audit_repair.AuditRepairChecks.test_safe_payload_monotonicity) ... ok
+test_actual_source_graph (test_completion.CompletionChecks.test_actual_source_graph) ... ok
+test_all_new_tables_present (test_completion.CompletionChecks.test_all_new_tables_present) ... ok
+test_bibliography_identity (test_completion.CompletionChecks.test_bibliography_identity) ... ok
+test_new_analysis_inputs (test_completion.CompletionChecks.test_new_analysis_inputs) ... ok
+test_no_external_fonts_or_manuscript_pdf (test_completion.CompletionChecks.test_no_external_fonts_or_manuscript_pdf) ... ok
+test_saved_result_totals (test_completion.CompletionChecks.test_saved_result_totals) ... ok
+test_heading_depth_and_scope (test_sources.SourceChecks.test_heading_depth_and_scope) ... ok
+test_images_present (test_sources.SourceChecks.test_images_present) ... ok
+test_input_fingerprints (test_sources.SourceChecks.test_input_fingerprints) ... ok
+test_maintained_chapters (test_sources.SourceChecks.test_maintained_chapters) ... ok
+test_no_duplicate_labels_or_unknown_refs (test_sources.SourceChecks.test_no_duplicate_labels_or_unknown_refs) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.051s
+
+OK

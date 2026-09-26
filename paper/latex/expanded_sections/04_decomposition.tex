@@ -1,0 +1,21 @@
+\subsubsection{按服务区分解的等价性}
+问题一禁止跨区组批，且不计实体并行与电池接续，故不同服务区之间没有共享时序约束。设各区可行组批集合为$\mathcal X_i$，则
+\begin{equation}
+\mathcal X=\mathcal X_1\times\cdots\times\mathcal X_{15},\qquad
+(N,E,T^{\mathrm{sum}})=\sum_i(N_i,E_i,T_i).
+\label{eq:q1_separable}
+\end{equation}
+若一个全局最少架次方案在某区使用了多于局部最少的架次数，用该区局部最少方案替换即可减少总架次且不影响其他区，产生矛盾。因此$N^*=\sum_iN_i^*$。固定各区最少架次后，同样的替换论证适用于能耗；最后固定前两层，累计时间也可逐区最小化。
+
+这种分解来自约束可分离性，而非启发式近似。问题二允许跨区并使用有限实体，任务之间出现资源耦合，因而不再具有式\eqref{eq:q1_separable}的乘积结构。
+
+\subsubsection{容量下界与候选筛选}
+对需求质量$M_i$、体积$V_i^{dem}$，可构造必要下界
+\begin{equation}
+N_i\ge\max\left\{1,\left\lceil\frac{M_i}{Q^{max}}\right\rceil,
+\left\lceil\frac{V_i^{dem}}{V^{max}}\right\rceil\right\}.
+\label{eq:q1_capacity_lower}
+\end{equation}
+质量分母还可替换为该区全部机型安全载荷的最大值。质量界与体积界分别是必要条件，其最大值仍有效；是否达到它则由实际不可拆货箱覆盖决定。S001、S002和S003超过80 kg形成三项两架次下界，其余12区至少一架次，总下界为18。
+
+候选筛选依次检查目的地与箱号、质量与体积、完整任务能源。便宜的组合条件先执行，避免对必定超载的箱组重复查询物理代价。在同一区域同一机型下，增加箱子只会增加质量、体积和给定单调能耗，因此已经超限的组合不能通过继续加箱恢复。筛选后保留原箱号，以便从计数解恢复完整配送清单。

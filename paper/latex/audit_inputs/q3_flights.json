@@ -1,0 +1,708 @@
+[
+  {
+    "flight_id": "Q3-T-01",
+    "task_group": null,
+    "type": "A",
+    "aircraft": "U01",
+    "battery": "A-BAT01",
+    "route": [
+      "O01",
+      "S001",
+      "O01"
+    ],
+    "box_ids": [
+      "S001-WAT-01",
+      "S001-FOD-01"
+    ],
+    "box_count": 2,
+    "payload_kg": 22,
+    "volume_m3": 0.055,
+    "start_s": 0.0,
+    "takeoff_s": 360.0,
+    "return_s": 1250.899502077302,
+    "prep_s": 360,
+    "work_s": 1250.899502077302,
+    "energy_kwh": 1.2823460485526663,
+    "return_soc": 0.7150342114327408,
+    "charge_duration_s": 870.4555251374368,
+    "charge_end_s": 2121.3550272147386,
+    "min_hard_slack_s": 2691.4269156280156
+  },
+  {
+    "flight_id": "Q3-T-02",
+    "task_group": null,
+    "type": "A",
+    "aircraft": "U02",
+    "battery": "A-BAT02",
+    "route": [
+      "O01",
+      "S007",
+      "O01"
+    ],
+    "box_ids": [
+      "S007-MED-01",
+      "S007-WAT-01"
+    ],
+    "box_count": 2,
+    "payload_kg": 17,
+    "volume_m3": 0.039,
+    "start_s": 0.0,
+    "takeoff_s": 360.0,
+    "return_s": 1727.4240845407844,
+    "prep_s": 360,
+    "work_s": 1727.4240845407844,
+    "energy_kwh": 1.9053430084223224,
+    "return_soc": 0.5765904425728172,
+    "charge_duration_s": 1050.4324246553374,
+    "charge_end_s": 2777.856509196122,
+    "min_hard_slack_s": 2458.6479577296077
+  },
+  {
+    "flight_id": "Q3-T-03",
+    "task_group": null,
+    "type": "A",
+    "aircraft": "U03",
+    "battery": "A-BAT03",
+    "route": [
+      "O01",
+      "S007",
+      "O01"
+    ],
+    "box_ids": [
+      "S007-WAT-02",
+      "S007-FOD-01"
+    ],
+    "box_count": 2,
+    "payload_kg": 22,
+    "volume_m3": 0.055,
+    "start_s": 0.0,
+    "takeoff_s": 360.0,
+    "return_s": 1727.4240845407844,
+    "prep_s": 360,
+    "work_s": 1727.4240845407844,
+    "energy_kwh": 1.970922394846492,
+    "return_soc": 0.5620172455896684,
+    "charge_duration_s": 1069.377580733431,
+    "charge_end_s": 2796.8016652742153,
+    "min_hard_slack_s": null
+  },
+  {
+    "flight_id": "Q3-T-04",
+    "task_group": null,
+    "type": "B",
+    "aircraft": "U05",
+    "battery": "B-BAT01",
+    "route": [
+      "O01",
+      "S010",
+      "O01"
+    ],
+    "box_ids": [
+      "S010-MED-01",
+      "S010-WAT-01",
+      "S010-FOD-01"
+    ],
+    "box_count": 3,
+    "payload_kg": 25,
+    "volume_m3": 0.067,
+    "start_s": 0.0,
+    "takeoff_s": 390.0,
+    "return_s": 1555.379565831177,
+    "prep_s": 390,
+    "work_s": 1555.379565831177,
+    "energy_kwh": 1.8231956980898132,
+    "return_soc": 0.5442010754775467,
+    "charge_duration_s": 1456.7181358389187,
+    "charge_end_s": 3012.0977016700954,
+    "min_hard_slack_s": 2514.773550417745
+  },
+  {
+    "flight_id": "Q3-T-05",
+    "task_group": null,
+    "type": "B",
+    "aircraft": "U06",
+    "battery": "B-BAT02",
+    "route": [
+      "O01",
+      "S014",
+      "O01"
+    ],
+    "box_ids": [
+      "S014-MED-01",
+      "S014-WAT-01",
+      "S014-FOD-01"
+    ],
+    "box_count": 3,
+    "payload_kg": 25,
+    "volume_m3": 0.067,
+    "start_s": 0.0,
+    "takeoff_s": 390.0,
+    "return_s": 1869.7564163815437,
+    "prep_s": 390,
+    "work_s": 1869.7564163815437,
+    "energy_kwh": 2.1403884821074026,
+    "return_soc": 0.46490287947314934,
+    "charge_duration_s": 1594.1683422465408,
+    "charge_end_s": 3463.9247586280844,
+    "min_hard_slack_s": 2357.5651251425616
+  },
+  {
+    "flight_id": "Q3-T-06",
+    "task_group": null,
+    "type": "C",
+    "aircraft": "U08",
+    "battery": "C-BAT02",
+    "route": [
+      "O01",
+      "S001",
+      "O01"
+    ],
+    "box_ids": [
+      "S001-MED-01",
+      "S001-MED-02",
+      "S001-WAT-02",
+      "S001-WAT-03",
+      "S001-WAT-04",
+      "S001-FOD-02",
+      "S001-HYG-01",
+      "S001-HYG-02"
+    ],
+    "box_count": 8,
+    "payload_kg": 68,
+    "volume_m3": 0.203,
+    "start_s": 0.0,
+    "takeoff_s": 540.0,
+    "return_s": 1626.1690773291593,
+    "prep_s": 540,
+    "work_s": 1626.1690773291593,
+    "energy_kwh": 2.6647831410542304,
+    "return_soc": 0.6669021073682212,
+    "charge_duration_s": 1555.0454340355204,
+    "charge_end_s": 3181.2145113646798,
+    "min_hard_slack_s": 2285.7304613354204
+  },
+  {
+    "flight_id": "Q3-T-07",
+    "task_group": null,
+    "type": "C",
+    "aircraft": "U07",
+    "battery": "C-BAT03",
+    "route": [
+      "O01",
+      "S006",
+      "O01"
+    ],
+    "box_ids": [
+      "S006-MED-01",
+      "S006-WAT-01",
+      "S006-WAT-02",
+      "S006-WAT-03",
+      "S006-FOD-01",
+      "S006-HYG-01"
+    ],
+    "box_count": 6,
+    "payload_kg": 59,
+    "volume_m3": 0.156,
+    "start_s": 1428.1691773291593,
+    "takeoff_s": 1908.1691773291593,
+    "return_s": 2989.723045290789,
+    "prep_s": 480,
+    "work_s": 1561.5538679616293,
+    "energy_kwh": 2.5979878649119788,
+    "return_soc": 0.6752515168860027,
+    "charge_duration_s": 1536.955046746994,
+    "charge_end_s": 4526.678092037782,
+    "min_hard_slack_s": 962.4088886900258
+  },
+  {
+    "flight_id": "Q3-T-08",
+    "task_group": null,
+    "type": "A",
+    "aircraft": "U01",
+    "battery": "A-BAT04",
+    "route": [
+      "O01",
+      "S009",
+      "O01"
+    ],
+    "box_ids": [
+      "S009-WAT-01",
+      "S009-FOD-01"
+    ],
+    "box_count": 2,
+    "payload_kg": 22,
+    "volume_m3": 0.055,
+    "start_s": 4081.0471322858493,
+    "takeoff_s": 4441.047132285849,
+    "return_s": 5769.660364117119,
+    "prep_s": 360,
+    "work_s": 1688.6132318312698,
+    "energy_kwh": 2.3313164072530776,
+    "return_soc": 0.48192968727709384,
+    "charge_duration_s": 1173.4914065397777,
+    "charge_end_s": 6943.151770656897,
+    "min_hard_slack_s": 5593.056251798516
+  },
+  {
+    "flight_id": "Q3-T-09",
+    "task_group": null,
+    "type": "A",
+    "aircraft": "U01",
+    "battery": "A-BAT05",
+    "route": [
+      "O01",
+      "S013",
+      "S002",
+      "S009",
+      "O01"
+    ],
+    "box_ids": [
+      "S002-WAT-01",
+      "S009-MED-01",
+      "S013-MED-01"
+    ],
+    "box_count": 3,
+    "payload_kg": 20,
+    "volume_m3": 0.051,
+    "start_s": 1270.740465984831,
+    "takeoff_s": 1660.740465984831,
+    "return_s": 3946.2684417150076,
+    "prep_s": 390,
+    "work_s": 2675.527975730177,
+    "energy_kwh": 3.4267182823447677,
+    "return_soc": 0.23850704836782943,
+    "charge_duration_s": 1489.9408371218215,
+    "charge_end_s": 5436.209278836829,
+    "min_hard_slack_s": 615.7373189011553
+  },
+  {
+    "flight_id": "Q3-T-10",
+    "task_group": null,
+    "type": "B",
+    "aircraft": "U05",
+    "battery": "B-BAT03",
+    "route": [
+      "O01",
+      "S012",
+      "O01"
+    ],
+    "box_ids": [
+      "S012-MED-01",
+      "S012-WAT-01",
+      "S012-FOD-01"
+    ],
+    "box_count": 3,
+    "payload_kg": 25,
+    "volume_m3": 0.067,
+    "start_s": 1555.379665831177,
+    "takeoff_s": 1945.379665831177,
+    "return_s": 3478.1200165752216,
+    "prep_s": 390,
+    "work_s": 1922.7403507440445,
+    "energy_kwh": 2.752414298801364,
+    "return_soc": 0.311896425299659,
+    "charge_duration_s": 1859.379529480591,
+    "charge_end_s": 5337.499546055813,
+    "min_hard_slack_s": 773.3201587968008
+  },
+  {
+    "flight_id": "Q3-T-11",
+    "task_group": null,
+    "type": "C",
+    "aircraft": "U07",
+    "battery": "C-BAT01",
+    "route": [
+      "O01",
+      "S001",
+      "O01"
+    ],
+    "box_ids": [
+      "S001-WAT-05",
+      "S001-WAT-06",
+      "S001-WAT-07",
+      "S001-WAT-08",
+      "S001-FOD-03"
+    ],
+    "box_count": 5,
+    "payload_kg": 64,
+    "volume_m3": 0.136,
+    "start_s": 0.0,
+    "takeoff_s": 450.0,
+    "return_s": 1428.1690773291593,
+    "prep_s": 450,
+    "work_s": 1428.1690773291593,
+    "energy_kwh": 2.565578385924292,
+    "return_soc": 0.6793027017594635,
+    "charge_duration_s": 1528.177479521162,
+    "charge_end_s": 2956.3465568503216,
+    "min_hard_slack_s": null
+  },
+  {
+    "flight_id": "Q3-T-12",
+    "task_group": null,
+    "type": "C",
+    "aircraft": "U08",
+    "battery": "C-BAT04",
+    "route": [
+      "O01",
+      "S002",
+      "O01"
+    ],
+    "box_ids": [
+      "S002-MED-01",
+      "S002-WAT-02",
+      "S002-WAT-03",
+      "S002-WAT-04",
+      "S002-FOD-01",
+      "S002-FOD-02",
+      "S002-HYG-01"
+    ],
+    "box_count": 7,
+    "payload_kg": 67,
+    "volume_m3": 0.184,
+    "start_s": 1685.8168699884434,
+    "takeoff_s": 2195.8168699884436,
+    "return_s": 3859.629254803657,
+    "prep_s": 510,
+    "work_s": 2173.812384815214,
+    "energy_kwh": 6.280824662604656,
+    "return_soc": 0.21489691717441795,
+    "charge_duration_s": 2534.3900127887605,
+    "charge_end_s": 6394.019267592417,
+    "min_hard_slack_s": 360.8669376039495
+  },
+  {
+    "flight_id": "Q3-T-13",
+    "task_group": null,
+    "type": "A",
+    "aircraft": "U02",
+    "battery": "A-BAT06",
+    "route": [
+      "O01",
+      "S013",
+      "O01"
+    ],
+    "box_ids": [
+      "S013-WAT-01",
+      "S013-FOD-01"
+    ],
+    "box_count": 2,
+    "payload_kg": 22,
+    "volume_m3": 0.055,
+    "start_s": 1727.4241845407844,
+    "takeoff_s": 2087.424184540784,
+    "return_s": 3339.5379222170477,
+    "prep_s": 360,
+    "work_s": 1612.113737676263,
+    "energy_kwh": 2.025445644148618,
+    "return_soc": 0.5499009679669737,
+    "charge_duration_s": 1085.128741642934,
+    "charge_end_s": 4424.666663859982,
+    "min_hard_slack_s": 788.9856132877508
+  },
+  {
+    "flight_id": "Q3-T-14",
+    "task_group": null,
+    "type": "B",
+    "aircraft": "U06",
+    "battery": "B-BAT04",
+    "route": [
+      "O01",
+      "S004",
+      "O01"
+    ],
+    "box_ids": [
+      "S004-WAT-02",
+      "S004-HYG-01"
+    ],
+    "box_count": 2,
+    "payload_kg": 20,
+    "volume_m3": 0.062,
+    "start_s": 1937.4556940070113,
+    "takeoff_s": 2297.4556940070115,
+    "return_s": 3859.0993310702897,
+    "prep_s": 360,
+    "work_s": 1921.6436370632784,
+    "energy_kwh": 2.6683684978530016,
+    "return_soc": 0.3329078755367496,
+    "charge_duration_s": 1822.9596824029672,
+    "charge_end_s": 5682.059013473257,
+    "min_hard_slack_s": null
+  },
+  {
+    "flight_id": "Q3-T-15",
+    "task_group": null,
+    "type": "A",
+    "aircraft": "U03",
+    "battery": "A-BAT01",
+    "route": [
+      "O01",
+      "S011",
+      "S004",
+      "O01"
+    ],
+    "box_ids": [
+      "S004-MED-01",
+      "S004-WAT-01",
+      "S011-MED-01"
+    ],
+    "box_count": 3,
+    "payload_kg": 20,
+    "volume_m3": 0.051,
+    "start_s": 2121.355127214739,
+    "takeoff_s": 2511.355127214739,
+    "return_s": 4585.433117276951,
+    "prep_s": 390,
+    "work_s": 2464.077990062212,
+    "energy_kwh": 3.2252546434280376,
+    "return_soc": 0.2832767459048805,
+    "charge_duration_s": 1431.7402303236552,
+    "charge_end_s": 6017.173347600606,
+    "min_hard_slack_s": 3422.3203087399747
+  },
+  {
+    "flight_id": "Q3-T-16",
+    "task_group": null,
+    "type": "C",
+    "aircraft": "U07",
+    "battery": "C-BAT01",
+    "route": [
+      "O01",
+      "S007",
+      "S003",
+      "O01"
+    ],
+    "box_ids": [
+      "S003-WAT-01",
+      "S003-WAT-02",
+      "S003-WAT-03",
+      "S003-FOD-01",
+      "S003-FOD-02",
+      "S003-HYG-01",
+      "S007-HYG-01"
+    ],
+    "box_count": 7,
+    "payload_kg": 70,
+    "volume_m3": 0.207,
+    "start_s": 3143.3775108359177,
+    "takeoff_s": 3653.3775108359177,
+    "return_s": 5836.969929328251,
+    "prep_s": 510,
+    "work_s": 2693.5924184923333,
+    "energy_kwh": 6.3922093759418015,
+    "return_soc": 0.2009738280072748,
+    "charge_duration_s": 2564.5567059842374,
+    "charge_end_s": 8401.526635312488,
+    "min_hard_slack_s": 2153.6157454740833
+  },
+  {
+    "flight_id": "Q3-T-17",
+    "task_group": null,
+    "type": "A",
+    "aircraft": "U04",
+    "battery": "A-BAT02",
+    "route": [
+      "O01",
+      "S003",
+      "S015",
+      "O01"
+    ],
+    "box_ids": [
+      "S003-MED-01",
+      "S003-WAT-04",
+      "S015-MED-01"
+    ],
+    "box_count": 3,
+    "payload_kg": 20,
+    "volume_m3": 0.051,
+    "start_s": 3187.3421947037978,
+    "takeoff_s": 3577.3421947037978,
+    "return_s": 5790.6746408107265,
+    "prep_s": 390,
+    "work_s": 2603.332446106929,
+    "energy_kwh": 3.2972189227836624,
+    "return_soc": 0.2672846838258528,
+    "charge_duration_s": 1452.5299110263911,
+    "charge_end_s": 7243.204551837118,
+    "min_hard_slack_s": 2120.18006076307
+  },
+  {
+    "flight_id": "Q3-T-18",
+    "task_group": null,
+    "type": "A",
+    "aircraft": "U02",
+    "battery": "A-BAT03",
+    "route": [
+      "O01",
+      "S004",
+      "O01"
+    ],
+    "box_ids": [
+      "S004-WAT-03",
+      "S004-FOD-01"
+    ],
+    "box_count": 2,
+    "payload_kg": 22,
+    "volume_m3": 0.055,
+    "start_s": 3339.5380222170475,
+    "takeoff_s": 3699.5380222170475,
+    "return_s": 5518.338207584231,
+    "prep_s": 360,
+    "work_s": 2178.800185367184,
+    "energy_kwh": 3.1911204497526215,
+    "return_soc": 0.2908621222771952,
+    "charge_duration_s": 1421.8792410396459,
+    "charge_end_s": 6940.217448623876,
+    "min_hard_slack_s": null
+  },
+  {
+    "flight_id": "Q3-T-19",
+    "task_group": null,
+    "type": "C",
+    "aircraft": "U08",
+    "battery": "C-BAT02",
+    "route": [
+      "O01",
+      "S005",
+      "O01"
+    ],
+    "box_ids": [
+      "S005-MED-01",
+      "S005-WAT-01",
+      "S005-WAT-02",
+      "S005-WAT-03",
+      "S005-FOD-01",
+      "S005-HYG-01"
+    ],
+    "box_count": 6,
+    "payload_kg": 59,
+    "volume_m3": 0.156,
+    "start_s": 3859.6293548036574,
+    "takeoff_s": 4339.629354803657,
+    "return_s": 5736.819879329485,
+    "prep_s": 480,
+    "work_s": 1877.190524525828,
+    "energy_kwh": 4.222192859507306,
+    "return_soc": 0.47222589256158676,
+    "charge_duration_s": 1976.843899449895,
+    "charge_end_s": 7713.66377877938,
+    "min_hard_slack_s": 5567.140382933429
+  },
+  {
+    "flight_id": "Q3-T-20",
+    "task_group": null,
+    "type": "B",
+    "aircraft": "U05",
+    "battery": "B-BAT01",
+    "route": [
+      "O01",
+      "S008",
+      "O01"
+    ],
+    "box_ids": [
+      "S008-MED-01",
+      "S008-WAT-01",
+      "S008-FOD-01"
+    ],
+    "box_count": 3,
+    "payload_kg": 25,
+    "volume_m3": 0.067,
+    "start_s": 3800.5263382151497,
+    "takeoff_s": 4190.52633821515,
+    "return_s": 5762.357773875434,
+    "prep_s": 390,
+    "work_s": 1961.8314356602841,
+    "energy_kwh": 2.9752165263680417,
+    "return_soc": 0.2561958684079896,
+    "charge_duration_s": 1955.927161426151,
+    "charge_end_s": 7718.2849353015845,
+    "min_hard_slack_s": 2108.3312772880417
+  },
+  {
+    "flight_id": "Q3-T-21",
+    "task_group": null,
+    "type": "B",
+    "aircraft": "U06",
+    "battery": "B-BAT02",
+    "route": [
+      "O01",
+      "S008",
+      "O01"
+    ],
+    "box_ids": [
+      "S008-WAT-02",
+      "S008-HYG-01"
+    ],
+    "box_count": 2,
+    "payload_kg": 20,
+    "volume_m3": 0.062,
+    "start_s": 3860.5263382151497,
+    "takeoff_s": 4220.52633821515,
+    "return_s": 5762.357773875434,
+    "prep_s": 360,
+    "work_s": 1901.8314356602841,
+    "energy_kwh": 2.7634412552649943,
+    "return_soc": 0.3091396861837514,
+    "charge_duration_s": 1864.1578772814973,
+    "charge_end_s": 7626.515651156931,
+    "min_hard_slack_s": null
+  },
+  {
+    "flight_id": "Q3-T-22",
+    "task_group": null,
+    "type": "A",
+    "aircraft": "U04",
+    "battery": "A-BAT04",
+    "route": [
+      "O01",
+      "S015",
+      "O01"
+    ],
+    "box_ids": [
+      "S015-WAT-01",
+      "S015-FOD-01"
+    ],
+    "box_count": 2,
+    "payload_kg": 22,
+    "volume_m3": 0.055,
+    "start_s": 0.0,
+    "takeoff_s": 360.0,
+    "return_s": 1968.5894031475937,
+    "prep_s": 360,
+    "work_s": 1968.5894031475937,
+    "energy_kwh": 2.557694473533907,
+    "return_soc": 0.4316234503257985,
+    "charge_duration_s": 1238.8895145764618,
+    "charge_end_s": 3207.4789177240555,
+    "min_hard_slack_s": 9542.265298426202
+  },
+  {
+    "flight_id": "Q3-T-23",
+    "task_group": null,
+    "type": "A",
+    "aircraft": "U03",
+    "battery": "A-BAT06",
+    "route": [
+      "O01",
+      "S011",
+      "O01"
+    ],
+    "box_ids": [
+      "S011-WAT-01",
+      "S011-FOD-01"
+    ],
+    "box_count": 2,
+    "payload_kg": 22,
+    "volume_m3": 0.055,
+    "start_s": 4614.94698267049,
+    "takeoff_s": 4974.94698267049,
+    "return_s": 5836.969929328251,
+    "prep_s": 360,
+    "work_s": 1222.0229466577612,
+    "energy_kwh": 1.1912986184997079,
+    "return_soc": 0.7352669736667317,
+    "charge_duration_s": 844.1529342332486,
+    "charge_end_s": 6681.1228635615,
+    "min_hard_slack_s": 5291.854877333963
+  }
+]

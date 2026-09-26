@@ -1,0 +1,33 @@
+{
+  "projection": "PROJCRS[\"unknown\",BASEGEOGCRS[\"unknown\",DATUM[\"World Geodetic System 1984\",ELLIPSOID[\"WGS 84\",6378137,298.257223563,LENGTHUNIT[\"metre\",1]],ID[\"EPSG\",6326]],PRIMEM[\"Greenwich\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8901]]],CONVERSION[\"unknown\",METHOD[\"Azimuthal Equidistant\",ID[\"EPSG\",1125]],PARAMETER[\"Latitude of natural origin\",23.0085095,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8801]],PARAMETER[\"Longitude of natural origin\",109.2308517,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8802]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"(E)\",east,ORDER[1],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]],AXIS[\"(N)\",north,ORDER[2],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]]",
+  "centre": {
+    "lon": 109.2308517,
+    "lat": 23.0085095
+  },
+  "original_spacing_degrees": [
+    0.00027777777777777393,
+    0.0002777777777777777
+  ],
+  "original_spacing_arcseconds": 1,
+  "spacing_at_O01_m": {
+    "east_west": 28.476696703917536,
+    "north_south": 30.762258316770303
+  },
+  "display_resampling": "nearest",
+  "display_pixel_m": 25.0,
+  "extent_m": [
+    -7200.0,
+    6500.0,
+    -1600.0,
+    9400.0
+  ],
+  "model_geometry_recomputed_from_display_raster": false,
+  "display_elevation_min_m": 116.0,
+  "display_elevation_max_m": 746.0787353515625,
+  "PixelIsPoint_half_pixel_correction": "rasterio transform checked against tiepoint; not applied a second time",
+  "nodata": {
+    "source": "MAT nodata field",
+    "value": -32767.0,
+    "display_window_has_invalid_pixels": false
+  }
+}

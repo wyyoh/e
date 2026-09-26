@@ -1,0 +1,23 @@
+{
+  "base_main": "e9e5ddea20a43f23661e7a39179e6b720efbc00f",
+  "paper_parent": "d2595aad5e4289d03e426ef391e4f1f14fe7782b",
+  "q3_runtime_sha256": "f8efc0cb0859fe0bd39f0f23f1a18e824d3848873344ef3e7a93b11a93b257bf",
+  "q2_v7_archive_sha256": "0804f989699dc506b3111dacc7408d9acdeb6e1115e7f32ec36934116de6ce58",
+  "data_sha256": {
+    "terrain_display.csv": "da588e8af9a71a37b74278964e91ce68a8b0224eddf16b3b3ade4fcb0b505f0f",
+    "paper_data.json": "64bd2e8bd80741da737fc0ccead7d48277cad30f08779c46d57724d15296e33b",
+    "terrain_metadata.json": "9f4c30a3a68d413bbf8453de78b4b77b5dd90022804c506b78146535f998af4d"
+  },
+  "physics_rerun": {
+    "q1_exact_scenarios": 24,
+    "q2_parameter_replays": 262,
+    "q2_independent_search_runs": 20,
+    "q2_structural_energy_repairs": 2,
+    "q3_fixed_loss_scenarios": 12,
+    "q3_fixed_relay_delay_scenarios": 24,
+    "q3_fixed_structure_time_repairs": 12,
+    "q4_inventory_by_K_scenarios": 34,
+    "q4_upstream_candidate_full_audits": 4
+  },
+  "not_independent_statistical_sample_count": "Several grids include duplicated baselines and deterministic variants of the same problem."
+}

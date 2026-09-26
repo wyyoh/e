@@ -1,0 +1,18 @@
+\begin{table}[htbp]\centering\small
+\caption{各类型库存单项增减后的最小总缺口}\label{tab:q4_inventory_stress}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+扰动资源 & 两组：减1 & 两组：加1 & 三组：减1 & 三组：加1\\
+\midrule
+A型运输机 & 2 & 1 & 8 & 6\\
+B型运输机 & 2 & 1 & 8 & 7\\
+C型运输机 & 2 & 0 & 8 & 6\\
+A型电池 & 2 & 1 & 8 & 6\\
+B型电池 & 2 & 1 & 8 & 7\\
+C型电池 & 2 & 1 & 8 & 6\\
+中继无人机 & 2 & 1 & 8 & 7\\
+中继能源组件 & 1 & 1 & 7 & 7\\
+\bottomrule
+\end{tabular}
+\par\smallskip\parbox{.96\linewidth}{\footnotesize 每次只改变一类库存，其余保持原值；两组三组重新比较全部合法分区。基准缺口分别为1与7。}
+\end{table}

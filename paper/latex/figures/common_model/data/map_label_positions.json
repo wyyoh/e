@@ -1,0 +1,130 @@
+[
+  {
+    "id": "S001",
+    "offset_points": [
+      15,
+      13
+    ],
+    "location_unchanged": true
+  },
+  {
+    "id": "S002",
+    "offset_points": [
+      10,
+      9
+    ],
+    "location_unchanged": true
+  },
+  {
+    "id": "S003",
+    "offset_points": [
+      12,
+      10
+    ],
+    "location_unchanged": true
+  },
+  {
+    "id": "S004",
+    "offset_points": [
+      10,
+      9
+    ],
+    "location_unchanged": true
+  },
+  {
+    "id": "S005",
+    "offset_points": [
+      10,
+      9
+    ],
+    "location_unchanged": true
+  },
+  {
+    "id": "S006",
+    "offset_points": [
+      10,
+      9
+    ],
+    "location_unchanged": true
+  },
+  {
+    "id": "S007",
+    "offset_points": [
+      10,
+      9
+    ],
+    "location_unchanged": true
+  },
+  {
+    "id": "S008",
+    "offset_points": [
+      -10,
+      9
+    ],
+    "location_unchanged": true
+  },
+  {
+    "id": "S009",
+    "offset_points": [
+      10,
+      9
+    ],
+    "location_unchanged": true
+  },
+  {
+    "id": "S010",
+    "offset_points": [
+      10,
+      9
+    ],
+    "location_unchanged": true
+  },
+  {
+    "id": "S011",
+    "offset_points": [
+      -10,
+      -12
+    ],
+    "location_unchanged": true
+  },
+  {
+    "id": "S012",
+    "offset_points": [
+      -10,
+      -12
+    ],
+    "location_unchanged": true
+  },
+  {
+    "id": "S013",
+    "offset_points": [
+      10,
+      9
+    ],
+    "location_unchanged": true
+  },
+  {
+    "id": "S014",
+    "offset_points": [
+      -10,
+      -12
+    ],
+    "location_unchanged": true
+  },
+  {
+    "id": "S015",
+    "offset_points": [
+      -10,
+      9
+    ],
+    "location_unchanged": true
+  },
+  {
+    "id": "O01",
+    "offset_points": [
+      11,
+      -16
+    ],
+    "location_unchanged": true
+  }
+]

@@ -1,0 +1,274 @@
+{
+  "decisions": [
+    {
+      "type": "C",
+      "boxes": [
+        "S001-MED-01",
+        "S001-MED-02",
+        "S001-WAT-06",
+        "S001-WAT-07",
+        "S001-WAT-08",
+        "S001-FOD-02",
+        "S001-FOD-03",
+        "S001-HYG-02"
+      ],
+      "route": [
+        "S001"
+      ]
+    },
+    {
+      "type": "A",
+      "boxes": [
+        "S001-WAT-01",
+        "S001-FOD-01"
+      ],
+      "route": [
+        "S001"
+      ]
+    },
+    {
+      "type": "C",
+      "boxes": [
+        "S001-WAT-02",
+        "S001-WAT-03",
+        "S001-WAT-04",
+        "S001-WAT-05",
+        "S001-HYG-01"
+      ],
+      "route": [
+        "S001"
+      ]
+    },
+    {
+      "type": "A",
+      "boxes": [
+        "S004-MED-01",
+        "S004-WAT-01",
+        "S011-MED-01"
+      ],
+      "route": [
+        "S011",
+        "S004"
+      ]
+    },
+    {
+      "type": "A",
+      "boxes": [
+        "S007-WAT-01",
+        "S007-FOD-01"
+      ],
+      "route": [
+        "S007"
+      ]
+    },
+    {
+      "type": "C",
+      "boxes": [
+        "S006-MED-01",
+        "S006-WAT-01",
+        "S006-WAT-02",
+        "S006-WAT-03",
+        "S006-FOD-01",
+        "S006-HYG-01"
+      ],
+      "route": [
+        "S006"
+      ]
+    },
+    {
+      "type": "B",
+      "boxes": [
+        "S010-MED-01",
+        "S010-WAT-01",
+        "S010-FOD-01"
+      ],
+      "route": [
+        "S010"
+      ]
+    },
+    {
+      "type": "B",
+      "boxes": [
+        "S008-WAT-01",
+        "S008-HYG-01"
+      ],
+      "route": [
+        "S008"
+      ]
+    },
+    {
+      "type": "A",
+      "boxes": [
+        "S015-WAT-01",
+        "S015-FOD-01"
+      ],
+      "route": [
+        "S015"
+      ]
+    },
+    {
+      "type": "A",
+      "boxes": [
+        "S002-WAT-01",
+        "S009-MED-01",
+        "S013-MED-01"
+      ],
+      "route": [
+        "S009",
+        "S002",
+        "S013"
+      ]
+    },
+    {
+      "type": "A",
+      "boxes": [
+        "S013-WAT-01",
+        "S013-FOD-01"
+      ],
+      "route": [
+        "S013"
+      ]
+    },
+    {
+      "type": "B",
+      "boxes": [
+        "S012-MED-01",
+        "S012-WAT-01",
+        "S012-FOD-01"
+      ],
+      "route": [
+        "S012"
+      ]
+    },
+    {
+      "type": "A",
+      "boxes": [
+        "S007-MED-01",
+        "S007-WAT-02"
+      ],
+      "route": [
+        "S007"
+      ]
+    },
+    {
+      "type": "A",
+      "boxes": [
+        "S003-MED-01",
+        "S003-WAT-01",
+        "S015-MED-01"
+      ],
+      "route": [
+        "S003",
+        "S015"
+      ]
+    },
+    {
+      "type": "A",
+      "boxes": [
+        "S004-WAT-02",
+        "S004-FOD-01"
+      ],
+      "route": [
+        "S004"
+      ]
+    },
+    {
+      "type": "B",
+      "boxes": [
+        "S014-MED-01",
+        "S014-WAT-01",
+        "S014-FOD-01"
+      ],
+      "route": [
+        "S014"
+      ]
+    },
+    {
+      "type": "B",
+      "boxes": [
+        "S008-MED-01",
+        "S008-WAT-02",
+        "S008-FOD-01"
+      ],
+      "route": [
+        "S008"
+      ]
+    },
+    {
+      "type": "B",
+      "boxes": [
+        "S004-WAT-03",
+        "S004-HYG-01"
+      ],
+      "route": [
+        "S004"
+      ]
+    },
+    {
+      "type": "C",
+      "boxes": [
+        "S002-MED-01",
+        "S002-WAT-02",
+        "S002-WAT-03",
+        "S002-WAT-04",
+        "S002-FOD-01",
+        "S002-FOD-02",
+        "S002-HYG-01"
+      ],
+      "route": [
+        "S002"
+      ]
+    },
+    {
+      "type": "C",
+      "boxes": [
+        "S003-WAT-02",
+        "S003-WAT-03",
+        "S003-WAT-04",
+        "S003-FOD-01",
+        "S003-FOD-02",
+        "S003-HYG-01",
+        "S007-HYG-01"
+      ],
+      "route": [
+        "S007",
+        "S003"
+      ]
+    },
+    {
+      "type": "C",
+      "boxes": [
+        "S005-MED-01",
+        "S005-WAT-01",
+        "S005-WAT-02",
+        "S005-WAT-03",
+        "S005-FOD-01",
+        "S005-HYG-01"
+      ],
+      "route": [
+        "S005"
+      ]
+    },
+    {
+      "type": "A",
+      "boxes": [
+        "S009-WAT-01",
+        "S009-FOD-01"
+      ],
+      "route": [
+        "S009"
+      ]
+    },
+    {
+      "type": "A",
+      "boxes": [
+        "S011-WAT-01",
+        "S011-FOD-01"
+      ],
+      "route": [
+        "S011"
+      ]
+    }
+  ],
+  "source": "This run: ALNS seed8101,700 iterations; prior V3 incumbent as start"
+}

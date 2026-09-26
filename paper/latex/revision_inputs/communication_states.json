@@ -1,0 +1,2054 @@
+[
+  {
+    "flight_id": "Q3-T-01",
+    "phase": 0,
+    "stage": "爬升",
+    "start_s": 360.0,
+    "end_s": 408.45220336914065,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-01",
+    "phase": 1,
+    "stage": "巡航",
+    "start_s": 408.45220336914065,
+    "end_s": 662.9504403290156,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-01",
+    "phase": 2,
+    "stage": "下降",
+    "start_s": 662.9504403290156,
+    "end_s": 698.5730843719844,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-01",
+    "phase": 3,
+    "stage": "交接",
+    "start_s": 698.5730843719844,
+    "end_s": 908.5730843719844,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-01",
+    "phase": 4,
+    "stage": "爬升",
+    "start_s": 908.5730843719844,
+    "end_s": 938.2586210744583,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-01",
+    "phase": 5,
+    "stage": "巡航",
+    "start_s": 938.2586210744583,
+    "end_s": 1192.7568580343334,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-01",
+    "phase": 6,
+    "stage": "下降",
+    "start_s": 1192.7568580343334,
+    "end_s": 1250.8995020773023,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-02",
+    "phase": 7,
+    "stage": "爬升",
+    "start_s": 360.0,
+    "end_s": 488.0910583496094,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-02",
+    "phase": 8,
+    "stage": "巡航",
+    "start_s": 488.0910583496094,
+    "end_s": 816.3818947331232,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-02",
+    "phase": 8,
+    "stage": "巡航",
+    "start_s": 816.3818947331232,
+    "end_s": 865.9627722508609,
+    "state": "中继",
+    "provider": "Q3-R-03"
+  },
+  {
+    "flight_id": "Q3-T-02",
+    "phase": 9,
+    "stage": "下降",
+    "start_s": 865.9627722508609,
+    "end_s": 931.3520422703922,
+    "state": "中继",
+    "provider": "Q3-R-03"
+  },
+  {
+    "flight_id": "Q3-T-02",
+    "phase": 10,
+    "stage": "交接",
+    "start_s": 931.3520422703922,
+    "end_s": 1141.3520422703923,
+    "state": "中继",
+    "provider": "Q3-R-03"
+  },
+  {
+    "flight_id": "Q3-T-02",
+    "phase": 11,
+    "stage": "爬升",
+    "start_s": 1141.3520422703923,
+    "end_s": 1195.8431006200017,
+    "state": "中继",
+    "provider": "Q3-R-03"
+  },
+  {
+    "flight_id": "Q3-T-02",
+    "phase": 12,
+    "stage": "巡航",
+    "start_s": 1195.8431006200017,
+    "end_s": 1245.4239781377394,
+    "state": "中继",
+    "provider": "Q3-R-03"
+  },
+  {
+    "flight_id": "Q3-T-02",
+    "phase": 12,
+    "stage": "巡航",
+    "start_s": 1245.4239781377394,
+    "end_s": 1573.7148145212532,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-02",
+    "phase": 13,
+    "stage": "下降",
+    "start_s": 1573.7148145212532,
+    "end_s": 1727.4240845407844,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-03",
+    "phase": 14,
+    "stage": "爬升",
+    "start_s": 360.0,
+    "end_s": 488.0910583496094,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-03",
+    "phase": 15,
+    "stage": "巡航",
+    "start_s": 488.0910583496094,
+    "end_s": 816.3818947331232,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-03",
+    "phase": 15,
+    "stage": "巡航",
+    "start_s": 816.3818947331232,
+    "end_s": 865.9627722508609,
+    "state": "中继",
+    "provider": "Q3-R-03"
+  },
+  {
+    "flight_id": "Q3-T-03",
+    "phase": 16,
+    "stage": "下降",
+    "start_s": 865.9627722508609,
+    "end_s": 931.3520422703922,
+    "state": "中继",
+    "provider": "Q3-R-03"
+  },
+  {
+    "flight_id": "Q3-T-03",
+    "phase": 17,
+    "stage": "交接",
+    "start_s": 931.3520422703922,
+    "end_s": 1141.3520422703923,
+    "state": "中继",
+    "provider": "Q3-R-03"
+  },
+  {
+    "flight_id": "Q3-T-03",
+    "phase": 18,
+    "stage": "爬升",
+    "start_s": 1141.3520422703923,
+    "end_s": 1195.8431006200017,
+    "state": "中继",
+    "provider": "Q3-R-03"
+  },
+  {
+    "flight_id": "Q3-T-03",
+    "phase": 19,
+    "stage": "巡航",
+    "start_s": 1195.8431006200017,
+    "end_s": 1245.4239781377394,
+    "state": "中继",
+    "provider": "Q3-R-03"
+  },
+  {
+    "flight_id": "Q3-T-03",
+    "phase": 19,
+    "stage": "巡航",
+    "start_s": 1245.4239781377394,
+    "end_s": 1573.7148145212532,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-03",
+    "phase": 20,
+    "stage": "下降",
+    "start_s": 1573.7148145212532,
+    "end_s": 1727.4240845407844,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-04",
+    "phase": 21,
+    "stage": "爬升",
+    "start_s": 390.0,
+    "end_s": 492.6455118815104,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-04",
+    "phase": 22,
+    "stage": "巡航",
+    "start_s": 492.6455118815104,
+    "end_s": 755.6991122158141,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-04",
+    "phase": 22,
+    "stage": "巡航",
+    "start_s": 755.6991122158141,
+    "end_s": 811.6118353244426,
+    "state": "中继",
+    "provider": "Q3-R-02"
+  },
+  {
+    "flight_id": "Q3-T-04",
+    "phase": 23,
+    "stage": "下降",
+    "start_s": 811.6118353244426,
+    "end_s": 845.2264495822551,
+    "state": "中继",
+    "provider": "Q3-R-02"
+  },
+  {
+    "flight_id": "Q3-T-04",
+    "phase": 24,
+    "stage": "交接",
+    "start_s": 845.2264495822551,
+    "end_s": 1085.226449582255,
+    "state": "中继",
+    "provider": "Q3-R-02"
+  },
+  {
+    "flight_id": "Q3-T-04",
+    "phase": 25,
+    "stage": "爬升",
+    "start_s": 1085.226449582255,
+    "end_s": 1113.238628130432,
+    "state": "中继",
+    "provider": "Q3-R-02"
+  },
+  {
+    "flight_id": "Q3-T-04",
+    "phase": 26,
+    "stage": "巡航",
+    "start_s": 1113.238628130432,
+    "end_s": 1169.1513512390607,
+    "state": "中继",
+    "provider": "Q3-R-02"
+  },
+  {
+    "flight_id": "Q3-T-04",
+    "phase": 26,
+    "stage": "巡航",
+    "start_s": 1169.1513512390607,
+    "end_s": 1432.2049515733643,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-04",
+    "phase": 27,
+    "stage": "下降",
+    "start_s": 1432.2049515733643,
+    "end_s": 1555.3795658311767,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-05",
+    "phase": 28,
+    "stage": "爬升",
+    "start_s": 390.0,
+    "end_s": 544.7491292317709,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-05",
+    "phase": 29,
+    "stage": "巡航",
+    "start_s": 544.7491292317709,
+    "end_s": 806.8341108106792,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-05",
+    "phase": 29,
+    "stage": "巡航",
+    "start_s": 806.8341108106792,
+    "end_s": 906.0559197793136,
+    "state": "中继",
+    "provider": "Q3-R-02"
+  },
+  {
+    "flight_id": "Q3-T-05",
+    "phase": 30,
+    "stage": "下降",
+    "start_s": 906.0559197793136,
+    "end_s": 1002.4348748574387,
+    "state": "中继",
+    "provider": "Q3-R-02"
+  },
+  {
+    "flight_id": "Q3-T-05",
+    "phase": 31,
+    "stage": "交接",
+    "start_s": 1002.4348748574386,
+    "end_s": 1242.4348748574384,
+    "state": "中继",
+    "provider": "Q3-R-02"
+  },
+  {
+    "flight_id": "Q3-T-05",
+    "phase": 32,
+    "stage": "爬升",
+    "start_s": 1242.4348748574384,
+    "end_s": 1322.750670755876,
+    "state": "中继",
+    "provider": "Q3-R-02"
+  },
+  {
+    "flight_id": "Q3-T-05",
+    "phase": 33,
+    "stage": "巡航",
+    "start_s": 1322.750670755876,
+    "end_s": 1421.9724797245103,
+    "state": "中继",
+    "provider": "Q3-R-02"
+  },
+  {
+    "flight_id": "Q3-T-05",
+    "phase": 33,
+    "stage": "巡航",
+    "start_s": 1421.9724797245103,
+    "end_s": 1684.0574613034187,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-05",
+    "phase": 34,
+    "stage": "下降",
+    "start_s": 1684.0574613034187,
+    "end_s": 1869.7564163815437,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-06",
+    "phase": 35,
+    "stage": "爬升",
+    "start_s": 540.0,
+    "end_s": 598.1426440429688,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-06",
+    "phase": 36,
+    "stage": "巡航",
+    "start_s": 598.1426440429688,
+    "end_s": 801.7412336108687,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-06",
+    "phase": 37,
+    "stage": "下降",
+    "start_s": 801.7412336108687,
+    "end_s": 846.2695386645796,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-06",
+    "phase": 38,
+    "stage": "交接",
+    "start_s": 846.2695386645796,
+    "end_s": 1314.2695386645796,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-06",
+    "phase": 39,
+    "stage": "爬升",
+    "start_s": 1314.2695386645796,
+    "end_s": 1349.8921827075483,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-06",
+    "phase": 40,
+    "stage": "巡航",
+    "start_s": 1349.8921827075483,
+    "end_s": 1553.4907722754483,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-06",
+    "phase": 41,
+    "stage": "下降",
+    "start_s": 1553.4907722754483,
+    "end_s": 1626.1690773291593,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-07",
+    "phase": 42,
+    "stage": "爬升",
+    "start_s": 1908.1691773291593,
+    "end_s": 2003.528313071347,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-07",
+    "phase": 43,
+    "stage": "巡航",
+    "start_s": 2003.528313071347,
+    "end_s": 2215.9421916322394,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-07",
+    "phase": 44,
+    "stage": "下降",
+    "start_s": 2215.9421916322394,
+    "end_s": 2241.5911113099737,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-07",
+    "phase": 45,
+    "stage": "交接",
+    "start_s": 2241.5911113099737,
+    "end_s": 2637.5911113099737,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-07",
+    "phase": 46,
+    "stage": "爬升",
+    "start_s": 2637.5911113099737,
+    "end_s": 2658.1102470521614,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-07",
+    "phase": 47,
+    "stage": "巡航",
+    "start_s": 2658.1102470521614,
+    "end_s": 2870.524125613054,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-07",
+    "phase": 48,
+    "stage": "下降",
+    "start_s": 2870.524125613054,
+    "end_s": 2989.723045290789,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-08",
+    "phase": 49,
+    "stage": "爬升",
+    "start_s": 4441.047132285849,
+    "end_s": 4496.223436403688,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-08",
+    "phase": 50,
+    "stage": "巡航",
+    "start_s": 4496.223436403688,
+    "end_s": 4825.691631949946,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-08",
+    "phase": 50,
+    "stage": "巡航",
+    "start_s": 4825.691631949946,
+    "end_s": 4971.652183260077,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-08",
+    "phase": 51,
+    "stage": "下降",
+    "start_s": 4971.652183260077,
+    "end_s": 4996.943748201484,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-08",
+    "phase": 52,
+    "stage": "交接",
+    "start_s": 4996.943748201485,
+    "end_s": 5206.943748201484,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-08",
+    "phase": 53,
+    "stage": "爬升",
+    "start_s": 5206.943748201484,
+    "end_s": 5228.0200523193225,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-08",
+    "phase": 54,
+    "stage": "巡航",
+    "start_s": 5228.0200523193225,
+    "end_s": 5373.980603629454,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-08",
+    "phase": 54,
+    "stage": "巡航",
+    "start_s": 5373.980603629454,
+    "end_s": 5703.448799175712,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-08",
+    "phase": 55,
+    "stage": "下降",
+    "start_s": 5703.448799175712,
+    "end_s": 5769.660364117119,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-09",
+    "phase": 56,
+    "stage": "爬升",
+    "start_s": 1660.740465984831,
+    "end_s": 1751.2344072283206,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-09",
+    "phase": 57,
+    "stage": "巡航",
+    "start_s": 1751.2344072283206,
+    "end_s": 2080.258992459689,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-09",
+    "phase": 57,
+    "stage": "巡航",
+    "start_s": 2080.258992459689,
+    "end_s": 2155.337938664108,
+    "state": "中继",
+    "provider": "Q3-R-02"
+  },
+  {
+    "flight_id": "Q3-T-09",
+    "phase": 58,
+    "stage": "下降",
+    "start_s": 2155.337938664108,
+    "end_s": 2174.330668156296,
+    "state": "中继",
+    "provider": "Q3-R-02"
+  },
+  {
+    "flight_id": "Q3-T-09",
+    "phase": 59,
+    "stage": "交接",
+    "start_s": 2174.330668156296,
+    "end_s": 2354.330668156296,
+    "state": "中继",
+    "provider": "Q3-R-02"
+  },
+  {
+    "flight_id": "Q3-T-09",
+    "phase": 60,
+    "stage": "爬升",
+    "start_s": 2354.330668156296,
+    "end_s": 2362.834110539108,
+    "state": "中继",
+    "provider": "Q3-R-02"
+  },
+  {
+    "flight_id": "Q3-T-09",
+    "phase": 61,
+    "stage": "巡航",
+    "start_s": 2362.834110539108,
+    "end_s": 2741.1785502394696,
+    "state": "中继",
+    "provider": "Q3-R-02"
+  },
+  {
+    "flight_id": "Q3-T-09",
+    "phase": 62,
+    "stage": "下降",
+    "start_s": 2741.1785502394696,
+    "end_s": 2792.7880669370224,
+    "state": "中继",
+    "provider": "Q3-R-02"
+  },
+  {
+    "flight_id": "Q3-T-09",
+    "phase": 62,
+    "stage": "下降",
+    "start_s": 2792.7880669370224,
+    "end_s": 2804.262681098845,
+    "state": "中继",
+    "provider": "Q3-R-04"
+  },
+  {
+    "flight_id": "Q3-T-09",
+    "phase": 63,
+    "stage": "交接",
+    "start_s": 2804.262681098845,
+    "end_s": 2984.262681098845,
+    "state": "中继",
+    "provider": "Q3-R-04"
+  },
+  {
+    "flight_id": "Q3-T-09",
+    "phase": 64,
+    "stage": "爬升",
+    "start_s": 2984.262681098845,
+    "end_s": 3020.5248983026213,
+    "state": "中继",
+    "provider": "Q3-R-04"
+  },
+  {
+    "flight_id": "Q3-T-09",
+    "phase": 65,
+    "stage": "巡航",
+    "start_s": 3020.5248983026213,
+    "end_s": 3164.237165154842,
+    "state": "中继",
+    "provider": "Q3-R-04"
+  },
+  {
+    "flight_id": "Q3-T-09",
+    "phase": 66,
+    "stage": "下降",
+    "start_s": 3164.237165154842,
+    "end_s": 3203.551825799373,
+    "state": "中继",
+    "provider": "Q3-R-04"
+  },
+  {
+    "flight_id": "Q3-T-09",
+    "phase": 67,
+    "stage": "交接",
+    "start_s": 3203.551825799373,
+    "end_s": 3383.5518257993726,
+    "state": "中继",
+    "provider": "Q3-R-04"
+  },
+  {
+    "flight_id": "Q3-T-09",
+    "phase": 68,
+    "stage": "爬升",
+    "start_s": 3383.5518257993726,
+    "end_s": 3404.6281299172115,
+    "state": "中继",
+    "provider": "Q3-R-04"
+  },
+  {
+    "flight_id": "Q3-T-09",
+    "phase": 69,
+    "stage": "巡航",
+    "start_s": 3404.6281299172115,
+    "end_s": 3550.588681227343,
+    "state": "中继",
+    "provider": "Q3-R-04"
+  },
+  {
+    "flight_id": "Q3-T-09",
+    "phase": 69,
+    "stage": "巡航",
+    "start_s": 3550.588681227343,
+    "end_s": 3880.0568767736013,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-09",
+    "phase": 70,
+    "stage": "下降",
+    "start_s": 3880.0568767736013,
+    "end_s": 3946.2684417150076,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-10",
+    "phase": 71,
+    "stage": "爬升",
+    "start_s": 1945.379665831177,
+    "end_s": 2040.579997455526,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-10",
+    "phase": 72,
+    "stage": "巡航",
+    "start_s": 2040.579997455526,
+    "end_s": 2303.7380218529534,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-10",
+    "phase": 72,
+    "stage": "巡航",
+    "start_s": 2303.7380218529534,
+    "end_s": 2533.2794432539804,
+    "state": "中继",
+    "provider": "Q3-R-02"
+  },
+  {
+    "flight_id": "Q3-T-10",
+    "phase": 73,
+    "stage": "下降",
+    "start_s": 2533.2794432539804,
+    "end_s": 2586.6798412031994,
+    "state": "中继",
+    "provider": "Q3-R-02"
+  },
+  {
+    "flight_id": "Q3-T-10",
+    "phase": 74,
+    "stage": "交接",
+    "start_s": 2586.6798412031994,
+    "end_s": 2826.6798412031994,
+    "state": "中继",
+    "provider": "Q3-R-02"
+  },
+  {
+    "flight_id": "Q3-T-10",
+    "phase": 75,
+    "stage": "爬升",
+    "start_s": 2826.6798412031994,
+    "end_s": 2830.7045916480783,
+    "state": "中继",
+    "provider": "Q3-R-02"
+  },
+  {
+    "flight_id": "Q3-T-10",
+    "phase": 75,
+    "stage": "爬升",
+    "start_s": 2830.7045916480783,
+    "end_s": 2871.180172827548,
+    "state": "中继",
+    "provider": "Q3-R-04"
+  },
+  {
+    "flight_id": "Q3-T-10",
+    "phase": 76,
+    "stage": "巡航",
+    "start_s": 2871.180172827548,
+    "end_s": 3100.721594228575,
+    "state": "中继",
+    "provider": "Q3-R-04"
+  },
+  {
+    "flight_id": "Q3-T-10",
+    "phase": 76,
+    "stage": "巡航",
+    "start_s": 3100.721594228575,
+    "end_s": 3363.8796186260024,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-10",
+    "phase": 77,
+    "stage": "下降",
+    "start_s": 3363.8796186260024,
+    "end_s": 3478.1200165752216,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-11",
+    "phase": 78,
+    "stage": "爬升",
+    "start_s": 450.0,
+    "end_s": 508.14264404296875,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-11",
+    "phase": 79,
+    "stage": "巡航",
+    "start_s": 508.14264404296875,
+    "end_s": 711.7412336108687,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-11",
+    "phase": 80,
+    "stage": "下降",
+    "start_s": 711.7412336108687,
+    "end_s": 756.2695386645796,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-11",
+    "phase": 81,
+    "stage": "交接",
+    "start_s": 756.2695386645796,
+    "end_s": 1116.2695386645796,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-11",
+    "phase": 82,
+    "stage": "爬升",
+    "start_s": 1116.2695386645796,
+    "end_s": 1151.8921827075483,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-11",
+    "phase": 83,
+    "stage": "巡航",
+    "start_s": 1151.8921827075483,
+    "end_s": 1355.4907722754483,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-11",
+    "phase": 84,
+    "stage": "下降",
+    "start_s": 1355.4907722754483,
+    "end_s": 1428.1690773291593,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-12",
+    "phase": 85,
+    "stage": "爬升",
+    "start_s": 2195.8168699884436,
+    "end_s": 2268.3185716485996,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-12",
+    "phase": 86,
+    "stage": "巡航",
+    "start_s": 2268.3185716485996,
+    "end_s": 2531.8524510650695,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-12",
+    "phase": 86,
+    "stage": "巡航",
+    "start_s": 2531.8524510650695,
+    "end_s": 2762.405935320855,
+    "state": "中继",
+    "provider": "Q3-R-02"
+  },
+  {
+    "flight_id": "Q3-T-12",
+    "phase": 87,
+    "stage": "下降",
+    "start_s": 2762.405935320855,
+    "end_s": 2792.7897946937724,
+    "state": "中继",
+    "provider": "Q3-R-02"
+  },
+  {
+    "flight_id": "Q3-T-12",
+    "phase": 87,
+    "stage": "下降",
+    "start_s": 2792.7897946937724,
+    "end_s": 2807.1330623960503,
+    "state": "中继",
+    "provider": "Q3-R-04"
+  },
+  {
+    "flight_id": "Q3-T-12",
+    "phase": 88,
+    "stage": "交接",
+    "start_s": 2807.1330623960503,
+    "end_s": 3239.1330623960503,
+    "state": "中继",
+    "provider": "Q3-R-04"
+  },
+  {
+    "flight_id": "Q3-T-12",
+    "phase": 89,
+    "stage": "爬升",
+    "start_s": 3239.1330623960503,
+    "end_s": 3274.914764056207,
+    "state": "中继",
+    "provider": "Q3-R-04"
+  },
+  {
+    "flight_id": "Q3-T-12",
+    "phase": 90,
+    "stage": "巡航",
+    "start_s": 3274.914764056207,
+    "end_s": 3505.4682483119923,
+    "state": "中继",
+    "provider": "Q3-R-04"
+  },
+  {
+    "flight_id": "Q3-T-12",
+    "phase": 90,
+    "stage": "巡航",
+    "start_s": 3505.4682483119923,
+    "end_s": 3769.0021277284623,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-12",
+    "phase": 91,
+    "stage": "下降",
+    "start_s": 3769.0021277284623,
+    "end_s": 3859.629254803657,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-13",
+    "phase": 92,
+    "stage": "爬升",
+    "start_s": 2087.424184540784,
+    "end_s": 2177.918125784274,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-13",
+    "phase": 93,
+    "stage": "巡航",
+    "start_s": 2177.918125784274,
+    "end_s": 2506.9427110156425,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-13",
+    "phase": 93,
+    "stage": "巡航",
+    "start_s": 2506.9427110156425,
+    "end_s": 2582.0216572200616,
+    "state": "中继",
+    "provider": "Q3-R-02"
+  },
+  {
+    "flight_id": "Q3-T-13",
+    "phase": 94,
+    "stage": "下降",
+    "start_s": 2582.0216572200616,
+    "end_s": 2601.0143867122492,
+    "state": "中继",
+    "provider": "Q3-R-02"
+  },
+  {
+    "flight_id": "Q3-T-13",
+    "phase": 95,
+    "stage": "交接",
+    "start_s": 2601.0143867122492,
+    "end_s": 2811.0143867122492,
+    "state": "中继",
+    "provider": "Q3-R-02"
+  },
+  {
+    "flight_id": "Q3-T-13",
+    "phase": 96,
+    "stage": "爬升",
+    "start_s": 2811.0143867122492,
+    "end_s": 2826.8416612890724,
+    "state": "中继",
+    "provider": "Q3-R-02"
+  },
+  {
+    "flight_id": "Q3-T-13",
+    "phase": 97,
+    "stage": "巡航",
+    "start_s": 2826.8416612890724,
+    "end_s": 2830.7045916480783,
+    "state": "中继",
+    "provider": "Q3-R-02"
+  },
+  {
+    "flight_id": "Q3-T-13",
+    "phase": 97,
+    "stage": "巡航",
+    "start_s": 2830.7045916480783,
+    "end_s": 2901.9206074934914,
+    "state": "中继",
+    "provider": "Q3-R-04"
+  },
+  {
+    "flight_id": "Q3-T-13",
+    "phase": 97,
+    "stage": "巡航",
+    "start_s": 2901.9206074934914,
+    "end_s": 3230.94519272486,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-13",
+    "phase": 98,
+    "stage": "下降",
+    "start_s": 3230.94519272486,
+    "end_s": 3339.5379222170477,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-14",
+    "phase": 99,
+    "stage": "爬升",
+    "start_s": 2297.4556940070115,
+    "end_s": 2387.6354160936,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-14",
+    "phase": 100,
+    "stage": "巡航",
+    "start_s": 2387.6354160936,
+    "end_s": 2760.008926067472,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-14",
+    "phase": 100,
+    "stage": "巡航",
+    "start_s": 2760.008926067472,
+    "end_s": 2792.781155910022,
+    "state": "中继",
+    "provider": "Q3-R-02"
+  },
+  {
+    "flight_id": "Q3-T-14",
+    "phase": 100,
+    "stage": "巡航",
+    "start_s": 2792.781155910022,
+    "end_s": 2901.948512701411,
+    "state": "中继",
+    "provider": "Q3-R-04"
+  },
+  {
+    "flight_id": "Q3-T-14",
+    "phase": 101,
+    "stage": "下降",
+    "start_s": 2901.948512701411,
+    "end_s": 2969.924179205317,
+    "state": "中继",
+    "provider": "Q3-R-04"
+  },
+  {
+    "flight_id": "Q3-T-14",
+    "phase": 102,
+    "stage": "交接",
+    "start_s": 2969.924179205317,
+    "end_s": 3179.924179205317,
+    "state": "中继",
+    "provider": "Q3-R-04"
+  },
+  {
+    "flight_id": "Q3-T-14",
+    "phase": 103,
+    "stage": "爬升",
+    "start_s": 3179.924179205317,
+    "end_s": 3236.5705679585726,
+    "state": "中继",
+    "provider": "Q3-R-04"
+  },
+  {
+    "flight_id": "Q3-T-14",
+    "phase": 104,
+    "stage": "巡航",
+    "start_s": 3236.5705679585726,
+    "end_s": 3378.510154592511,
+    "state": "中继",
+    "provider": "Q3-R-04"
+  },
+  {
+    "flight_id": "Q3-T-14",
+    "phase": 104,
+    "stage": "巡航",
+    "start_s": 3378.510154592511,
+    "end_s": 3750.8836645663832,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-14",
+    "phase": 105,
+    "stage": "下降",
+    "start_s": 3750.8836645663832,
+    "end_s": 3859.0993310702897,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-15",
+    "phase": 106,
+    "stage": "爬升",
+    "start_s": 2511.355127214739,
+    "end_s": 2567.2423790051034,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-15",
+    "phase": 107,
+    "stage": "巡航",
+    "start_s": 2567.2423790051034,
+    "end_s": 2801.2485650618482,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-15",
+    "phase": 108,
+    "stage": "下降",
+    "start_s": 2801.2485650618482,
+    "end_s": 2834.553267210286,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-15",
+    "phase": 109,
+    "stage": "交接",
+    "start_s": 2834.553267210286,
+    "end_s": 3014.553267210286,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-15",
+    "phase": 110,
+    "stage": "爬升",
+    "start_s": 3014.553267210286,
+    "end_s": 3064.232905882161,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-15",
+    "phase": 111,
+    "stage": "巡航",
+    "start_s": 3064.232905882161,
+    "end_s": 3180.2999617832734,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-15",
+    "phase": 111,
+    "stage": "巡航",
+    "start_s": 3180.2999617832734,
+    "end_s": 3200.037672438934,
+    "state": "中继",
+    "provider": "Q3-R-04"
+  },
+  {
+    "flight_id": "Q3-T-15",
+    "phase": 111,
+    "stage": "巡航",
+    "start_s": 3200.037672438934,
+    "end_s": 3267.1725375864953,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-15",
+    "phase": 111,
+    "stage": "巡航",
+    "start_s": 3267.1725375864953,
+    "end_s": 3514.544124853775,
+    "state": "中继",
+    "provider": "Q3-R-04"
+  },
+  {
+    "flight_id": "Q3-T-15",
+    "phase": 112,
+    "stage": "下降",
+    "start_s": 3514.544124853775,
+    "end_s": 3567.679691260025,
+    "state": "中继",
+    "provider": "Q3-R-04"
+  },
+  {
+    "flight_id": "Q3-T-15",
+    "phase": 113,
+    "stage": "交接",
+    "start_s": 3567.6796912600253,
+    "end_s": 3777.6796912600253,
+    "state": "中继",
+    "provider": "Q3-R-04"
+  },
+  {
+    "flight_id": "Q3-T-15",
+    "phase": 114,
+    "stage": "爬升",
+    "start_s": 3777.6796912600253,
+    "end_s": 3834.3260800132803,
+    "state": "中继",
+    "provider": "Q3-R-04"
+  },
+  {
+    "flight_id": "Q3-T-15",
+    "phase": 115,
+    "stage": "巡航",
+    "start_s": 3834.3260800132803,
+    "end_s": 4011.7505633057035,
+    "state": "中继",
+    "provider": "Q3-R-04"
+  },
+  {
+    "flight_id": "Q3-T-15",
+    "phase": 115,
+    "stage": "巡航",
+    "start_s": 4011.7505633057035,
+    "end_s": 4477.217450773044,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-15",
+    "phase": 116,
+    "stage": "下降",
+    "start_s": 4477.217450773044,
+    "end_s": 4585.433117276951,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-16",
+    "phase": 117,
+    "stage": "爬升",
+    "start_s": 3653.3775108359177,
+    "end_s": 3807.086780855449,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-16",
+    "phase": 118,
+    "stage": "巡航",
+    "start_s": 3807.086780855449,
+    "end_s": 4069.71944996226,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-16",
+    "phase": 118,
+    "stage": "巡航",
+    "start_s": 4069.71944996226,
+    "end_s": 4109.38415197645,
+    "state": "中继",
+    "provider": "Q3-R-04"
+  },
+  {
+    "flight_id": "Q3-T-16",
+    "phase": 119,
+    "stage": "下降",
+    "start_s": 4109.38415197645,
+    "end_s": 4182.52769836132,
+    "state": "中继",
+    "provider": "Q3-R-04"
+  },
+  {
+    "flight_id": "Q3-T-16",
+    "phase": 119,
+    "stage": "下降",
+    "start_s": 4182.52769836132,
+    "end_s": 4191.120739500864,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-16",
+    "phase": 120,
+    "stage": "交接",
+    "start_s": 4191.120739500864,
+    "end_s": 4407.120739500864,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-16",
+    "phase": 121,
+    "stage": "爬升",
+    "start_s": 4407.120739500864,
+    "end_s": 4432.000475828989,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-16",
+    "phase": 122,
+    "stage": "巡航",
+    "start_s": 4432.000475828989,
+    "end_s": 4614.2845841157605,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-16",
+    "phase": 123,
+    "stage": "下降",
+    "start_s": 4614.2845841157605,
+    "end_s": 4650.384254525917,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-16",
+    "phase": 124,
+    "stage": "交接",
+    "start_s": 4650.384254525917,
+    "end_s": 5046.384254525917,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-16",
+    "phase": 125,
+    "stage": "爬升",
+    "start_s": 5046.384254525917,
+    "end_s": 5135.705909799354,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-16",
+    "phase": 126,
+    "stage": "巡航",
+    "start_s": 5135.705909799354,
+    "end_s": 5357.613588595148,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-16",
+    "phase": 126,
+    "stage": "巡航",
+    "start_s": 5357.613588595148,
+    "end_s": 5619.9178602364545,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-16",
+    "phase": 127,
+    "stage": "下降",
+    "start_s": 5619.9178602364545,
+    "end_s": 5836.969929328252,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-17",
+    "phase": 128,
+    "stage": "爬升",
+    "start_s": 3577.3421947037978,
+    "end_s": 3722.043574098329,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-17",
+    "phase": 129,
+    "stage": "巡航",
+    "start_s": 3722.043574098329,
+    "end_s": 4049.9239136499614,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-17",
+    "phase": 129,
+    "stage": "巡航",
+    "start_s": 4049.9239136499614,
+    "end_s": 4182.52769836132,
+    "state": "中继",
+    "provider": "Q3-R-04"
+  },
+  {
+    "flight_id": "Q3-T-17",
+    "phase": 129,
+    "stage": "巡航",
+    "start_s": 4182.52769836132,
+    "end_s": 4327.308512144704,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-17",
+    "phase": 130,
+    "stage": "下降",
+    "start_s": 4327.308512144704,
+    "end_s": 4416.630167418141,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-17",
+    "phase": 131,
+    "stage": "交接",
+    "start_s": 4416.630167418141,
+    "end_s": 4626.630167418141,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-17",
+    "phase": 132,
+    "stage": "爬升",
+    "start_s": 4626.630167418141,
+    "end_s": 4676.429789000173,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-17",
+    "phase": 133,
+    "stage": "巡航",
+    "start_s": 4676.429789000173,
+    "end_s": 4894.460393338492,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-17",
+    "phase": 134,
+    "stage": "下降",
+    "start_s": 4894.460393338492,
+    "end_s": 4899.81993923693,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-17",
+    "phase": 135,
+    "stage": "交接",
+    "start_s": 4899.81993923693,
+    "end_s": 5079.81993923693,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-17",
+    "phase": 136,
+    "stage": "爬升",
+    "start_s": 5079.81993923693,
+    "end_s": 5112.253024360628,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-17",
+    "phase": 137,
+    "stage": "巡航",
+    "start_s": 5112.253024360628,
+    "end_s": 5285.24333273308,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-17",
+    "phase": 137,
+    "stage": "巡航",
+    "start_s": 5285.24333273308,
+    "end_s": 5613.034938662289,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-17",
+    "phase": 138,
+    "stage": "下降",
+    "start_s": 5613.034938662289,
+    "end_s": 5790.674640810727,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-18",
+    "phase": 139,
+    "stage": "爬升",
+    "start_s": 3699.5380222170475,
+    "end_s": 3789.717744303636,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-18",
+    "phase": 140,
+    "stage": "巡航",
+    "start_s": 3789.717744303636,
+    "end_s": 4255.184631770977,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-18",
+    "phase": 140,
+    "stage": "巡航",
+    "start_s": 4255.184631770977,
+    "end_s": 4432.6091150634,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-18",
+    "phase": 141,
+    "stage": "下降",
+    "start_s": 4432.6091150634,
+    "end_s": 4486.84064063295,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-18",
+    "phase": 141,
+    "stage": "下降",
+    "start_s": 4486.84064063295,
+    "end_s": 4500.584781567306,
+    "state": "中继",
+    "provider": "Q3-R-04"
+  },
+  {
+    "flight_id": "Q3-T-18",
+    "phase": 142,
+    "stage": "交接",
+    "start_s": 4500.584781567306,
+    "end_s": 4710.584781567306,
+    "state": "中继",
+    "provider": "Q3-R-04"
+  },
+  {
+    "flight_id": "Q3-T-18",
+    "phase": 143,
+    "stage": "爬升",
+    "start_s": 4710.584781567306,
+    "end_s": 4722.038232345936,
+    "state": "中继",
+    "provider": "Q3-R-04"
+  },
+  {
+    "flight_id": "Q3-T-18",
+    "phase": 143,
+    "stage": "爬升",
+    "start_s": 4722.038232345936,
+    "end_s": 4767.231170320561,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-18",
+    "phase": 144,
+    "stage": "巡航",
+    "start_s": 4767.231170320561,
+    "end_s": 4944.655653612985,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-18",
+    "phase": 144,
+    "stage": "巡航",
+    "start_s": 4944.655653612985,
+    "end_s": 5410.122541080325,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-18",
+    "phase": 145,
+    "stage": "下降",
+    "start_s": 5410.122541080325,
+    "end_s": 5518.338207584231,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-19",
+    "phase": 146,
+    "stage": "爬升",
+    "start_s": 4339.629354803657,
+    "end_s": 4419.113710272408,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-19",
+    "phase": 147,
+    "stage": "巡航",
+    "start_s": 4419.113710272408,
+    "end_s": 4682.597541636501,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-19",
+    "phase": 147,
+    "stage": "巡航",
+    "start_s": 4682.597541636501,
+    "end_s": 4771.154172730634,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-19",
+    "phase": 148,
+    "stage": "下降",
+    "start_s": 4771.154172730634,
+    "end_s": 4836.859617066571,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-19",
+    "phase": 149,
+    "stage": "交接",
+    "start_s": 4836.859617066571,
+    "end_s": 5232.859617066571,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-19",
+    "phase": 150,
+    "stage": "爬升",
+    "start_s": 5232.859617066571,
+    "end_s": 5285.423972535322,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-19",
+    "phase": 151,
+    "stage": "巡航",
+    "start_s": 5285.423972535322,
+    "end_s": 5373.980603629455,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-19",
+    "phase": 151,
+    "stage": "巡航",
+    "start_s": 5373.980603629455,
+    "end_s": 5637.464434993548,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-19",
+    "phase": 152,
+    "stage": "下降",
+    "start_s": 5637.464434993548,
+    "end_s": 5736.819879329485,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-20",
+    "phase": 153,
+    "stage": "爬升",
+    "start_s": 4190.52633821515,
+    "end_s": 4272.262782306947,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-20",
+    "phase": 154,
+    "stage": "巡航",
+    "start_s": 4272.262782306947,
+    "end_s": 4562.630344487594,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-20",
+    "phase": 154,
+    "stage": "巡航",
+    "start_s": 4562.630344487594,
+    "end_s": 4810.864989801802,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-20",
+    "phase": 155,
+    "stage": "下降",
+    "start_s": 4810.864989801802,
+    "end_s": 4851.668722711958,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-20",
+    "phase": 156,
+    "stage": "交接",
+    "start_s": 4851.668722711958,
+    "end_s": 5091.668722711958,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-20",
+    "phase": 157,
+    "stage": "爬升",
+    "start_s": 5091.668722711958,
+    "end_s": 5125.671833470422,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-20",
+    "phase": 158,
+    "stage": "巡航",
+    "start_s": 5125.671833470422,
+    "end_s": 5373.906478784631,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-20",
+    "phase": 158,
+    "stage": "巡航",
+    "start_s": 5373.906478784631,
+    "end_s": 5664.274040965278,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-20",
+    "phase": 159,
+    "stage": "下降",
+    "start_s": 5664.274040965278,
+    "end_s": 5762.357773875434,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-21",
+    "phase": 160,
+    "stage": "爬升",
+    "start_s": 4220.52633821515,
+    "end_s": 4302.262782306947,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-21",
+    "phase": 161,
+    "stage": "巡航",
+    "start_s": 4302.262782306947,
+    "end_s": 4592.630344487594,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-21",
+    "phase": 161,
+    "stage": "巡航",
+    "start_s": 4592.630344487594,
+    "end_s": 4840.864989801802,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-21",
+    "phase": 162,
+    "stage": "下降",
+    "start_s": 4840.864989801802,
+    "end_s": 4881.668722711958,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-21",
+    "phase": 163,
+    "stage": "交接",
+    "start_s": 4881.668722711958,
+    "end_s": 5091.668722711958,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-21",
+    "phase": 164,
+    "stage": "爬升",
+    "start_s": 5091.668722711958,
+    "end_s": 5125.671833470422,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-21",
+    "phase": 165,
+    "stage": "巡航",
+    "start_s": 5125.671833470422,
+    "end_s": 5373.906478784631,
+    "state": "中继",
+    "provider": "Q3-R-01"
+  },
+  {
+    "flight_id": "Q3-T-21",
+    "phase": 165,
+    "stage": "巡航",
+    "start_s": 5373.906478784631,
+    "end_s": 5664.274040965278,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-21",
+    "phase": 166,
+    "stage": "下降",
+    "start_s": 5664.274040965278,
+    "end_s": 5762.357773875434,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-22",
+    "phase": 167,
+    "stage": "爬升",
+    "start_s": 360.0,
+    "end_s": 508.0330851236979,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-22",
+    "phase": 168,
+    "stage": "巡航",
+    "start_s": 508.0330851236979,
+    "end_s": 835.8246910529067,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-22",
+    "phase": 168,
+    "stage": "巡航",
+    "start_s": 835.8246910529067,
+    "end_s": 1008.8149994253592,
+    "state": "中继",
+    "provider": "Q3-R-03"
+  },
+  {
+    "flight_id": "Q3-T-22",
+    "phase": 169,
+    "stage": "下降",
+    "start_s": 1008.8149994253592,
+    "end_s": 1047.7347015737967,
+    "state": "中继",
+    "provider": "Q3-R-03"
+  },
+  {
+    "flight_id": "Q3-T-22",
+    "phase": 170,
+    "stage": "交接",
+    "start_s": 1047.7347015737969,
+    "end_s": 1257.7347015737969,
+    "state": "中继",
+    "provider": "Q3-R-03"
+  },
+  {
+    "flight_id": "Q3-T-22",
+    "phase": 171,
+    "stage": "爬升",
+    "start_s": 1257.7347015737969,
+    "end_s": 1290.1677866974949,
+    "state": "中继",
+    "provider": "Q3-R-03"
+  },
+  {
+    "flight_id": "Q3-T-22",
+    "phase": 172,
+    "stage": "巡航",
+    "start_s": 1290.1677866974949,
+    "end_s": 1463.1580950699474,
+    "state": "中继",
+    "provider": "Q3-R-03"
+  },
+  {
+    "flight_id": "Q3-T-22",
+    "phase": 172,
+    "stage": "巡航",
+    "start_s": 1463.1580950699474,
+    "end_s": 1790.9497009991562,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-22",
+    "phase": 173,
+    "stage": "下降",
+    "start_s": 1790.9497009991562,
+    "end_s": 1968.5894031475937,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-23",
+    "phase": 174,
+    "stage": "爬升",
+    "start_s": 4974.94698267049,
+    "end_s": 5030.8342344608545,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-23",
+    "phase": 175,
+    "stage": "巡航",
+    "start_s": 5030.8342344608545,
+    "end_s": 5264.840420517599,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-23",
+    "phase": 176,
+    "stage": "下降",
+    "start_s": 5264.840420517599,
+    "end_s": 5298.145122666037,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-23",
+    "phase": 177,
+    "stage": "交接",
+    "start_s": 5298.145122666037,
+    "end_s": 5508.145122666037,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-23",
+    "phase": 178,
+    "stage": "爬升",
+    "start_s": 5508.145122666037,
+    "end_s": 5535.899041123068,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-23",
+    "phase": 179,
+    "stage": "巡航",
+    "start_s": 5535.899041123068,
+    "end_s": 5769.905227179814,
+    "state": "直连",
+    "provider": "G01"
+  },
+  {
+    "flight_id": "Q3-T-23",
+    "phase": 180,
+    "stage": "下降",
+    "start_s": 5769.905227179814,
+    "end_s": 5836.969929328251,
+    "state": "直连",
+    "provider": "G01"
+  }
+]

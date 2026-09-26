@@ -1,0 +1,89 @@
+{
+  "kind": "schematic, not an actual flight leg",
+  "grid_shape": [
+    5,
+    5
+  ],
+  "path_start": [
+    0.25,
+    0.25
+  ],
+  "path_end": [
+    4.75,
+    4.75
+  ],
+  "sampling_parameters": [
+    0,
+    0.45,
+    1
+  ],
+  "closed_cells": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      4,
+      4
+    ]
+  ],
+  "sample_cells": [
+    [
+      0,
+      0
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      4,
+      4
+    ]
+  ],
+  "not_a_reproduced_counterexample": true
+}

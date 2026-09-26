@@ -1,0 +1,62 @@
+\subsubsection{完成时间下界与可行方案差距}
+\label{sec:q2_bound_derivation}
+高质量可行解给出上界，但“搜索未改善”不能证明接近全局最优。本文另外采用任务列松弛与互补分支覆盖\cite{barnhart1998branchprice}。下界的关键在于保证每份原问题可行日程都能映射到所求松弛，而不要求松弛解能够反向执行。
+
+\textbf{从实际任务到乐观任务列。}把同一服务区、物资类型、质量及体积的货箱压缩为53个物理类，需求为$d_j$；期限仍留在上界的逐箱验证中，下界不直接施加这些期限。真实航段的时间和能量分别向下取整到毫秒、Wh，再分别作最短路闭包，能量预算向上包络。因此两种闭包不必对应同一条实际航迹，却不会高估实际代价。
+
+在这个删除时限的闭包模型中，可把某服务区全部物资提前到其首次正交付时一起交付，再删除后续重复访问。总装载量、体积和交付数量不变；提前卸货使后续载荷不增，载荷单调能耗与闭包三角不等式保证时间和能耗不增。这个投影论证\textbf{只适用于下界模型}，不能倒过来证明真实山区路线不存在有益的回访。实际定价只要求A、B型不重复访问，C型仍允许回访，因而进一步放松而不排除上述投影。
+
+记乐观列$r$的机型为$g(r)$、交付计数为$a_{jr}$、时间下界为$\underline p_r$（本节统一换算成秒），$n_g$为机型$g$的实体数量。连续主问题为
+\begin{equation}
+\begin{aligned}
+ \min\quad &T\\
+ \mathrm{s.t.}\quad&\sum_ra_{jr}x_r=d_j,\quad j=1,\ldots,53,\\
+ &\sum_{r:g(r)=g}\underline p_rx_r\le n_gT,\quad g\in\{A,B,C\},\\
+ &Bx\le b,\qquad x_r\ge0,\quad T\ge0.
+\end{aligned}
+\label{eq:q2_relaxed_master}
+\end{equation}
+根问题的$B$行可为空，节点中则包含有效的整数割和分支条件。任一真实日程的单机累计工作量不超过其最后返航时间，故机型总工作量不超过$n_gT$。这里放松了单架飞机的非抢占接续、共享电池恢复及逐箱时限，故只给下界，不能把分数列解释为配送任务。
+
+\textbf{加强约束与适用条件。}对于货箱类子集$S$，整数覆盖满足
+\begin{equation}
+ \sum_r\left\lfloor\frac{\sum_{j\in S}a_{jr}}2\right\rfloor x_r
+ \le\left\lfloor\frac{\sum_{j\in S}d_j}2\right\rfloor .
+ \label{eq:q2_subset_cut}
+\end{equation}
+其有效性来自整数任务计数和向下取整的次可加性。另在条件$T\le H$下，$H=5465.503$\,s，定义$f_k(p)=\lceil kp/H\rceil-1$。每架飞机上一组任务满足$\sum f_k(p)<(k/H)\sum p\le k$，左侧为整数，所以对$k=2,\ldots,8$有
+\begin{equation}
+ \sum_{r:g(r)=g}f_k(\underline p_r)x_r\le n_g(k-1).
+ \label{eq:q2_packing_cut}
+\end{equation}
+这些割可排除部分平均工作量合格、却不能装进有限单机时间轴的分数解。它们有$T\le H$的前提，必须把$T>H$的补集一同纳入全局证明。
+
+\textbf{完整定价而不是有限列池的最优值。}对覆盖等式取自由乘子$\pi$，机型工作量和$Bx\le b$分别取非负乘子$\mu,\lambda$。当$\sum_gn_g\mu_g\le1$，且对\emph{所有允许列}有
+\begin{equation}
+ \bar c_r=\mu_{g(r)}\underline p_r+\lambda^{\mathsf T}B_{\cdot r}
+            -\sum_j\pi_ja_{jr}\ge0,
+ \label{eq:q2_pricing_rc}
+\end{equation}
+由弱对偶可得
+\begin{equation}
+ T\ge\beta=d^{\mathsf T}\pi-b^{\mathsf T}\lambda.
+ \label{eq:q2_dual_bound}
+\end{equation}
+因此，受限列池求得对偶后，还须按机型完整求解$\min_r\bar c_r$。发现负约化成本则加入对应列；没有完成定价时，不把受限主问题目标作为新下界，而保留该区域已有的有效证据。
+
+定价标签保存末节点、质量、体积、能量、时间及相关割状态；A、B型还保存访问集合。两服务区共同配送的分支要求标签保留相应成员状态，只有状态兼容时才能作支配删除，否则可能丢掉负约化成本列。节点中机型$g$对类$j$的总配送量边界为$l_{gj},u_{gj}$时，由覆盖关系再收紧单次停靠的必要上限为$\min\{u_{gj},d_j-\sum_{h\ne g}l_{hj}\}$；这一筛选来自整数可行域，不来自当前列池中是否出现过该组合。
+
+\textbf{互补分支与全域下界。}机型架次数、物理类配送数量、规范化访问次数和两服务区共同配送次数均为整数聚合量。对分数值$v$分成$v\le\lfloor v\rfloor$与$v\ge\lfloor v\rfloor+1$，两子域覆盖该节点的所有规范化真实方案。设完整覆盖的叶域下界为$\beta_\ell$，则包含上述时域补集的全局下界为
+\begin{equation}
+ LB=\min\left\{H,\min_{\ell\in\mathcal L}\beta_\ell\right\}.
+ \label{eq:q2_cover_bound}
+\end{equation}
+不能取不同叶域下界的最大值，也不能遗漏未解决的子域。不同证明树仅在相同覆盖区域上选择较强的完整子证明；最终仍对整个覆盖取最小值。
+
+正式证据以缩放整数保存乘子，向安全方向修复舍入造成的负约化成本，再对修复后的乘子重新完整定价；分子、分母采用有理数比较。最终下界向下取到微秒，可行上界向上包络。保存的809个分支、810份叶材料和2430次完整机型定价支持
+\begin{equation}
+ 5433.956428\le T^*\le5693.231490\ \mathrm{(s)},\qquad
+ \frac{UB-LB}{UB}=4.5541\%.
+ \label{eq:q2_bound}
+\end{equation}
+该确定性区间适用于原始名义实例，不是统计置信区间，也不迁移到改变充电或能耗的新实例。详细叶材料来自已锁定的历史完整认证；本次论文修订核对其数学和数据对应关系，并未重新运行全部2430次定价。附录保留复算入口，正文不以材料数量代替上述有效性链条。

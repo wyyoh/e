@@ -1,0 +1,82 @@
+[
+  {
+    "id": "A",
+    "name": "中轻载标准测试多旋翼",
+    "empty_mass_kg": 70,
+    "max_payload_kg": 25,
+    "max_volume_m3": 0.06,
+    "cruise_mps": 12,
+    "empty_range_m": 25000,
+    "full_range_m": 20000,
+    "battery_kwh": 4.5,
+    "reserve_pct": 20,
+    "prep_s": 300,
+    "load_per_box_s": 30,
+    "handover_base_s": 150,
+    "handover_per_box_s": 30,
+    "up_mps": 3,
+    "down_mps": 2.5,
+    "up_efficiency": 0.72,
+    "down_efficiency": 0,
+    "aircraft": [
+      "U01",
+      "U02",
+      "U03",
+      "U04"
+    ],
+    "battery_count": 6,
+    "charge_full_s": 1800
+  },
+  {
+    "id": "B",
+    "name": "中载标准测试多旋翼",
+    "empty_mass_kg": 65,
+    "max_payload_kg": 30,
+    "max_volume_m3": 0.073,
+    "cruise_mps": 15,
+    "empty_range_m": 28000,
+    "full_range_m": 16000,
+    "battery_kwh": 4,
+    "reserve_pct": 20,
+    "prep_s": 300,
+    "load_per_box_s": 30,
+    "handover_base_s": 150,
+    "handover_per_box_s": 30,
+    "up_mps": 3,
+    "down_mps": 2.5,
+    "up_efficiency": 0.72,
+    "down_efficiency": 0,
+    "aircraft": [
+      "U05",
+      "U06"
+    ],
+    "battery_count": 4,
+    "charge_full_s": 2400
+  },
+  {
+    "id": "C",
+    "name": "重载标准测试多旋翼",
+    "empty_mass_kg": 69.9,
+    "max_payload_kg": 80,
+    "max_volume_m3": 0.25,
+    "cruise_mps": 15,
+    "empty_range_m": 26000,
+    "full_range_m": 12000,
+    "battery_kwh": 8,
+    "reserve_pct": 20,
+    "prep_s": 300,
+    "load_per_box_s": 30,
+    "handover_base_s": 180,
+    "handover_per_box_s": 36,
+    "up_mps": 2.5,
+    "down_mps": 2,
+    "up_efficiency": 0.72,
+    "down_efficiency": 0,
+    "aircraft": [
+      "U07",
+      "U08"
+    ],
+    "battery_count": 4,
+    "charge_full_s": 3000
+  }
+]

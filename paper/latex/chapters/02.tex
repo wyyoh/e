@@ -1,0 +1,84 @@
+% Current editable Chapter 2; based on main e9e5ddea20a43f23661e7a39179e6b720efbc00f.
+% Exposition and notation only. Solver assumptions, parameters and selected results are unchanged.
+\section{模型假设与符号说明}
+\label{sec:assumptions_symbols}
+
+\subsection{基本假设}
+
+题目规定的货箱不可拆分、配送时限和通信规则直接作为相应模型的约束。名义模型采用给定参数；稳健性与敏感性试验仅改变各节明确列出的参数，并单独说明允许调整的决策。在此基础上，结合现有数据与计算模型，作如下假设。
+
+\begin{enumerate}[label=\textbf{假设\arabic*.},leftmargin=3.5em]
+\item \textbf{输入确定。}以附件给出的节点、物资需求和装备参数进行本轮规划，不另设设备随机故障情景；任务时间与能耗按给定参数计算。
+\item \textbf{装载简化。}货箱作为不可拆分单位，仅按总质量和总体积判断装载可行性，不考虑货箱姿态与三维排布；组批结果只确定货箱归属。
+\item \textbf{航迹简化。}相邻访问节点采用以O01为中心的WGS84方位等距投影（AEQD）平面直线，地形限制由相交DEM像元确定，不增设未给定的地物、禁飞区或动态障碍物。
+\item \textbf{同型资源等效。}同型号无人机、电池及同类中继资源性能一致，可以在类型内部指派复用；不同类型之间不可替代。
+\item \textbf{能源独立恢复。}电池与中继能源组件分别按规定充电关系恢复，不另设共享充电设备的容量和排队约束；同一资源未恢复前不得复用。
+\end{enumerate}
+
+\subsection{统一计算约定}
+\subsubsection{空间、时间与资源释放}
+\begin{enumerate}[label=(\arabic*),leftmargin=3.0em]
+\item \textbf{空间与能耗。}普通运输采用第3章的地形净空、作业高度和能耗规则：下降计时但不另计下降能耗，空载返航仍计水平与爬升能耗。中继转场与悬停按第6章单独处理，不改写普通运输模型。
+\item \textbf{时间与交付。}运输任务以开始准备为相对零时刻，作业时长$p_r$计至返航。送达时刻取所在服务区的交接完成时刻，而非抵达时刻。累计作业时间$T^{\mathrm{sum}}$是各架次时长之和，不是并行执行的最后返航时刻。
+\item \textbf{资源占用。}统一采用半开区间$[\mathrm{start},\mathrm{release})$，同刻释放与开始不重复计占用。运输机返航后释放，电池充满后可用，中继机另计规定周转。末次充电保留在能源占用中，但不计入最后返航时间。
+\end{enumerate}
+\subsubsection{通信条件、评价与数据继承}
+\noindent\textbf{通信与分组。}通信采用直连优先、必要时单中继接入与回传共同保障的方式，地形遮挡按第6章处理。问题四固定问题三正式联合方案的任务、绝对时刻、位置及实际保障关系，仅改变服务区分组和组内同型资源指派，组间不共享实体资源。
+
+内部计算统一使用m、s、kg、m$^3$、kWh和dB；比例量按无量纲数计算。分钟、百分数及小数位仅用于展示，模型判定与跨问继承使用未舍入值。各问目标优先关系与局部变量在相应章节定义。
+
+\subsection{主要符号说明}
+
+表\ref{tab:main_symbols}列出公共模型与各问衔接所用的主要符号。下标$i,j$用于节点或路径位置，$b$用于货箱，$m$用于机型，$r$用于运输任务；资源配置中的$g,p$分别表示任务组和资源类型。
+
+\begingroup
+\begin{longtable}{@{}p{3.0cm}p{\dimexpr\textwidth-4.8cm-4\tabcolsep\relax}p{1.8cm}@{}}
+\caption{主要符号及计量单位}\label{tab:main_symbols}\\
+\toprule
+\textbf{符号} & \textbf{含义} & \textbf{单位}\\
+\midrule
+\endfirsthead
+\caption[]{主要符号及计量单位（续）}\\
+\toprule
+\textbf{符号} & \textbf{含义} & \textbf{单位}\\
+\midrule
+\endhead
+\midrule
+\multicolumn{3}{r}{\small 接下页}\\
+\endfoot
+\bottomrule
+\endlastfoot
+\multicolumn{3}{l}{\textbf{对象与物理量}}\\*
+$\mathcal V,\mathcal S$ & 全部空间节点集合、服务区集合，$\mathcal V=\{O01\}\cup\mathcal S$ & --\\
+$\mathcal B,\mathcal B_i,\mathcal B_r$ & 全部货箱、服务区$i$的货箱及任务$r$携带的货箱集合 & --\\
+$\mathcal M,\mathcal R$ & 机型集合$\{A,B,C\}$、运输任务集合 & --\\
+$m_r,\pi_r$ & 任务$r$的机型、有序访问路径 & --\\
+$\mu_b,\nu_b$ & 货箱$b$的质量、体积 & kg，m$^3$\\
+$Q_m,V_m$ & 机型$m$的额定载荷、货舱体积 & kg，m$^3$\\
+$E_m$ & 机型$m$满电电池的可用能量 & kWh\\
+$d_{ij}$ & 节点$i$至$j$的水平航段距离 & m\\
+$z_i,h_i,H_{ij}$ & 节点地面海拔、作业海拔及航段巡航海拔 & m\\
+$q_{r,j}$ & 任务$r$从$v_j$飞往$v_{j+1}$时的实际载荷；$q_{r,0}$为初始载荷 & kg\\
+$E_r$ & 运输任务$r$的总能耗 & kWh\\
+$\alpha_m,SOC_r^{\mathrm{return}}$ & 机型$m$的返航安全余量、任务$r$的返航荷电状态 & --\\
+\midrule
+\multicolumn{3}{l}{\textbf{时间与配送}}\\*
+$s_r,p_r$ & 任务$r$的绝对开始时刻、从准备至返航的作业时长 & s\\
+$c_r$ & 任务$r$返航后对应电池充至满电的恢复时长 & s\\
+$\delta_{rb},C_b$ & 货箱$b$的相对交接完成偏移、绝对送达时刻，$C_b=s_r+\delta_{rb}$ & s\\
+$d_b,h_b$ & 货箱$b$的期望送达时刻、硬截止时刻；后者仅对有硬时限的货箱定义 & s\\
+$\omega_b,L_w$ & 货箱优先权重、全部货箱的加权迟到 & --，s\\
+$T^{\mathrm{sum}}$ & 运输架次累计作业时间，$\sum_{r\in\mathcal R}p_r$ & s\\
+$T_{\max}$ & 全部运输任务的最后返航时刻 & s\\
+$T_{\max}^{joint}$ & 全部运输与中继任务的联合最后返航时刻 & s\\
+\midrule
+\multicolumn{3}{l}{\textbf{通信与资源配置}}\\*
+$L_{ab}(t),L_{ab}^{\max}$ & 通信端点$a,b$间的传播损耗、允许传播损耗上限 & dB\\
+$\Delta$ & 统一增加的传播损耗 & dB\\
+$\mathcal P,I_{jp}$ & 资源类型集合、固定任务$j$对资源类型$p$的占用区间 & --，s\\
+$N_{gp}^{\min}$ & 任务组$g$独立执行所需的$p$类资源最小数量 & 个\\
+$I_p,D_p,G_p$ & $p$类资源的现有库存、独立分组后总需求及正缺口 & 个\\
+\end{longtable}
+\endgroup
+
+表中“--”表示集合、标识或无量纲量。通信端点$a,b$与货箱下标$b$分别在各自语境中使用；资源配置中任务下标$j$不表示运输路径的第$j$站。

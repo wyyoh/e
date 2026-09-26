@@ -1,0 +1,40 @@
+% Layout and terminology pass. No solver parameters are set in this file.
+\usepackage{tikz,pgfplots,adjustbox,seqsplit,xurl,needspace,placeins}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{arrows.meta,positioning,calc,fit,patterns,shapes.geometric}
+\usepackage{etoolbox}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\setlength{\emergencystretch}{1.5em}
+\setlength{\parskip}{0pt}
+\raggedbottom
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+\captionsetup{font={small},labelfont=bf,skip=7pt}
+\setlist{itemsep=2pt,parsep=0pt,topsep=4pt}
+\AtBeginEnvironment{longtable}{\small\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.16}}
+\AtBeginEnvironment{thebibliography}{\small\linespread{1.15}\selectfont}
+\pretocmd{\section}{\FloatBarrier\Needspace{12\baselineskip}}{}{}
+\pretocmd{\subsection}{\Needspace{9\baselineskip}}{}{}
+\pretocmd{\subsubsection}{\Needspace{5\baselineskip}}{}{}
+\newcommand{\fig}[4][.95]{\begin{figure}[htbp]\centering\includegraphics[width=#1\linewidth]{#2}\caption{#3}\label{#4}\end{figure}}
+\definecolor{cA}{HTML}{2F5D8A}
+\definecolor{cB}{HTML}{E6A23C}
+\definecolor{cC}{HTML}{54B8A9}
+\definecolor{cR}{HTML}{D97C6C}
+\definecolor{cP}{HTML}{8064B2}
+\definecolor{cG}{HTML}{E6E6E6}
+\newcommand{\unit}[1]{\,\mathrm{#1}}
+% Heading styles retain the supplied template's hierarchy; only TOC density changes.
+\titlecontents{section}[0em]{\vspace{3pt}\small\bfseries}{\contentslabel{1.7em}}{}{\titlerule*[4pt]{.}\contentspage}
+\titlecontents{subsection}[2.0em]{\small}{\contentslabel{2.4em}}{}{\titlerule*[4pt]{.}\contentspage}
+\titlecontents{subsubsection}[4.6em]{\footnotesize}{\contentslabel{3.1em}}{}{\titlerule*[4pt]{.}\contentspage}
+\apptocmd{\appendix}{\renewcommand{\thesection}{\Alph{section}}\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}}{}{}
+\hypersetup{pdftitle={山区洪涝救援中无人机运输—通信协同调度与独立资源配置},pdfauthor={},colorlinks=true,allcolors=black}
+
+% Wrapped descriptive columns for added method and contribution tables.
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}

@@ -1,25 +1,5 @@
-# 分章文件与编辑入口
+# 分章编辑入口
 
-正式编译入口仍为 `../main.tex`。该入口直接加载本目录的摘要与第1—9章；参考文献和附录由主文件独立调用，不属于第9章。
+主文件直接加载00_abstract.tex和01.tex—09.tex。这些文件及其明确引用的expanded_sections、repair_sections为当前编辑源，不从source_main.tex或source_loader自动生成。修改后运行scripts/check_source.py，再按需要运行无PDF检查。
 
-## 第一章与第三章的当前编辑入口
-
-`01.tex` 已纳入版本控制，保留基线第一章正文并接入核验后的四问决策与继承关系图。后续修改第一章请直接编辑本文件；连续源稿中的旧TikZ总图不再是当前编译图件。
-
-`03.tex` 是核对main最新物理代码后重写、并纳入版本控制的第三章。后续修改第三章请直接修改这个文件。`../source_main.tex` 中保留的旧第三章属于回退源稿，不是当前主文件实际编译的第三章，不应据此覆盖本文件。
-
-新增图片定义在 `../common_figures.tex`，PDF位于 `../figures/common_model/`；缺失PDF时从 `paper/latex/` 运行 `python scripts/build_common_figures.py`。完整说明见 `../CH123_FIGURE_INTEGRATION.md`。
-
-## 缺失文件的生成
-
-`../source_loader.tex` 每次编译扫描连续源稿，仅生成尚不存在的 `00_abstract.tex` 和 `01.tex`—`09.tex`。已经存在的分章文件优先，绝不自动覆写。因此从仓库首次编译时，已提交的 `01.tex`、`03.tex` 保持不变，其余未提交的章节仍由最新连续源稿生成。
-
-若修改了连续源稿并需要重生成某一尚未独立维护的章节，应先备份本地人工修改，再仅移走需要重新生成的文件。不要删除已纳入版本控制的 `01.tex`、`03.tex`，否则会回退到连续源稿中的旧内容。
-
-从 `paper/latex/` 运行加载器回归检查：
-
-```sh
-python -m unittest discover -s tests -v
-```
-
-原有加载器测试要求本机安装XeLaTeX。新增插图接入测试不运行求解器。
+main_merged.tex是派生阅读版本；用scripts/export_merged_tex.py重新生成。不要同时独立修改分章与合并稿后混用。

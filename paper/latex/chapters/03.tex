@@ -1,279 +1,203 @@
-% Current editable Chapter 3. Source of truth for main.tex.
-% Audited against main 8b1531f379983ebdebf40e85759fec40c21c7a80.
-\section{数据处理与统一运输任务物理模型}
+% Derived from independently maintained chapters/03.tex, not the legacy fallback.
+% Physical definitions and critical labels preserved; hierarchy reorganized.
+\section{数据处理与公共物理模型}
 \label{sec:foundation}
 
-四个问题的决策变量虽不相同，但都需要判断一项运输任务能否执行，以及执行该任务所需的时间和能量。本章先将原始节点、货箱和装备数据整理为统一计算对象，再依次建立航段几何、载荷递推、作业时间、能耗与充电恢复模型。由此得到的任务属性作为后续组批、调度和通信保障的共同输入，不在各问中重复计算或改变物理参数。
+各问首先都需要判断一项运输任务是否能飞，以及执行它需要多少时间和能量。本章将节点、货箱、装备和地形数据转换为统一任务属性。后续改变的是任务组合、资源时序与组织方式，而不是在不同问题中任意改用另一套距离或能耗公式。
 
-\subsection{基础数据整理与计算对象}
+\subsection{输入数据整理与一致性检查}
+\subsubsection{节点、货箱与装备数据关联}
+位置表以节点编号关联，逐箱清单以货箱编号唯一标识。将同一服务区、同一物资类型的箱数汇总后与需求汇总表核对，避免重复计入汇总需求和明细需求。整理结果为1个基地O01、15个服务区和80箱物资，总质量758\,kg、总体积2.011\,m$^3$。记服务区集合为$\mathcal S$，空间节点集合为$\mathcal V=\{O01\}\cup\mathcal S$，货箱集合为$\mathcal B$。
 
-\subsubsection{数据关联与一致性检查}
+节点$i$保留原表经纬度$(\lambda_i,\varphi_i)$与地面高程$z_i$；货箱$b$记录目的地$s(b)$、质量$\mu_b$和体积$\nu_b$。配送时限和优先权重在问题二以后进入调度评价，不参与问题一的静态组批。图\ref{fig:scene}展示位置与需求，点面积表示质量，不表示灾情严重程度。
+\begin{figure}[htbp]\centering
+\includegraphics[width=\linewidth]{figures/common_model/fig3_1_terrain_and_demand.pdf}
+\caption{救援区域地形与不可拆物资需求。显示重投影不参与航段计算，点面积与需求质量成正比}\label{fig:scene}
+\end{figure}
 
-原始数据包括调度中心与服务区位置、运输无人机参数、逐箱物资需求及配送时限，以及以TIF和MAT两种格式提供的数字高程模型（DEM）。位置表以节点编号关联，逐箱清单以货箱编号唯一标识；将同一服务区、同一物资类型的逐箱数量汇总后，与需求汇总表核对。机型参数按型号读取，并检查载荷、体积、航程和效率参数的取值范围。
-
-整理后共有1个调度中心O01、15个服务区和80个不可拆货箱，总质量为758\,kg，总体积为2.011\,m$^3$。记服务区集合为$\mathcal S$，空间节点集合为$\mathcal V=\{O01\}\cup\mathcal S$，货箱集合为$\mathcal B$。对节点$i$，保留原表中的经纬度$(\lambda_i,\varphi_i)$和地面高程$z_i$；对货箱$b$，记录其目的地$s(b)$、质量$\mu_b$和体积$\nu_b$。配送期望时刻、硬截止时刻及优先权重在问题二以后进入调度评价，不参与问题一的静态组批计算。
-
-两种DEM文件的高程矩阵、像元中心坐标及仿射变换分别核对，确认数据对应关系后，直接在原始栅格上计算航段经过的地形，不通过平滑或重采样改变山体高程。节点作业高度仍由位置表给定高程确定，不以邻近DEM像元值替换。距离、时间、质量、体积和能量分别统一为m、s、kg、m$^3$和kWh，后续计算使用未舍入值。
-
-基地、服务区与物资需求的空间分布见图\ref{fig:terrain_demand}。图中的需求质量由逐箱清单按目的地汇总，地形底图仅用于展示，不替代后续航段计算使用的原始DEM。
-
-\CommonTerrainFigure
-
-\subsubsection{运输机参数}
-
-三类运输无人机的主要参数见表\ref{tab:common_drone}。其中，空载质量包含电池质量；额定载荷与货舱体积是彼此独立的装载限制；空载和满载航程用于确定不同载荷下的水平飞行能耗。准备、逐箱装载、交接、爬升及下降参数同样按机型读取，在相应公式中定义。
-
-\begin{table}[H]
-\centering
-\linespread{1.0}\selectfont
-\caption{三类运输无人机主要物理参数}
-\label{tab:common_drone}
-\begin{tabular}{lrrr}
-\toprule
-参数 & A型 & B型 & C型\\
-\midrule
-含电池空载质量/kg & 70 & 65 & 69.9\\
-额定载荷/kg & 25 & 30 & 80\\
-货舱体积/m$^3$ & 0.060 & 0.073 & 0.250\\
-巡航速度/(m/s) & 12 & 15 & 15\\
-空载航程/m & 25000 & 28000 & 26000\\
-满载航程/m & 20000 & 16000 & 12000\\
-可用电池能量/kWh & 4.5 & 4.0 & 8.0\\
-基准返航安全余量 & 20\% & 20\% & 20\%\\
-\bottomrule
+机型参数见表\ref{tab:common_drone}。含电池空载质量、额定载荷和电池可用能量分别参与不同公式，不能混为有效载重。准备、装载、交接、升降速度和爬升效率同样按机型读取。
+\begin{table}[htbp]\centering\small
+\caption{三类运输无人机主要物理参数}\label{tab:common_drone}
+\begin{tabular}{lrrr}\toprule 参数 & A型 & B型 & C型\\\midrule
+含电池空载质量/kg &70&65&69.9\\
+额定载荷/kg &25&30&80\\
+货舱体积/m$^3$ &0.060&0.073&0.250\\
+巡航速度/(m/s)&12&15&15\\
+空载航程/m&25000&28000&26000\\
+满载航程/m&20000&16000&12000\\
+可用电池能量/kWh&4.5&4.0&8.0\\
+基准返航安全余量&20\%&20\%&20\%\\\bottomrule
 \end{tabular}
 \end{table}
-\FloatBarrier
 
-\subsection{地形约束下的航段几何模型}
+\input{expanded_sections/03_data_analysis.tex}
 
-\subsubsection{平面航迹与地理坐标转换}
+\subsubsection{地形数据及空间坐标转换}
+TIF与MAT两种地形文件分别核对高程矩阵、像元中心坐标和仿射边界。模型直接在原始栅格上计算航段经过地形，不用平滑或重采样改变山体。节点高程仍使用位置表值，不能用邻近DEM值悄然替换。地形显示与计算使用不同副本，显示分辨率不改变物理判定。
 
-经纬度不能直接代入以米为单位的距离和能耗公式。本文以O01为投影中心，采用WGS84椭球上的方位等距投影（AEQD）\cite{snyder1987}，将全部节点转换到同一平面。令$\boldsymbol{x}_i=(x_i,y_i)^{\mathsf T}$，则
+以O01为中心建立WGS84方位等距投影（AEQD）\cite{snyder1987}。令$\boldsymbol x_i=(x_i,y_i)^{\mathsf T}$，则
 \begin{equation}
-\boldsymbol{x}_i=\operatorname{AEQD}_{O01}(\lambda_i,\varphi_i),\qquad
- d_{ij}=\|\boldsymbol{x}_j-\boldsymbol{x}_i\|_2.
+\boldsymbol x_i=\operatorname{AEQD}_{O01}(\lambda_i,\varphi_i),\qquad
+ d_{ij}=\|\boldsymbol x_j-\boldsymbol x_i\|_2.
 \label{eq:common_projection}
 \end{equation}
-航段$i\rightarrow j$的水平轨迹定义为
+任意访问节点间的水平航迹规定为投影平面直线：
 \begin{equation}
-\boldsymbol{r}_{ij}(u)=(1-u)\boldsymbol{x}_i+u\boldsymbol{x}_j,
-\qquad 0\le u\le1.
+\boldsymbol r_{ij}(u)=(1-u)\boldsymbol x_i+u\boldsymbol x_j,\qquad 0\le u\le1.
 \label{eq:common_planar_path}
 \end{equation}
-式\eqref{eq:common_planar_path}规定的是投影平面直线。计算其经过的DEM像元时，应先连续反投影到经纬度，而不能直接对两个端点的经纬度作线性插值。以O01为端点的径向航段可用椭球测地线独立核对；这一性质不意味着任意两个服务区之间的平面距离都与测地线距离完全相等。
+以O01为端点的径向航段可用椭球测地线独立核验；这不意味着任意服务区间的投影距离都等于测地线距离。求与地形栅格的相交时，需要连续反投影式\eqref{eq:common_planar_path}，不能对经纬度端点直接线性插值代替。
 
-\subsubsection{DEM像元定位与完整遍历}
-
-原始GeoTIFF采用像元中心定位（PixelIsPoint）。设左上方参考像元的中心经纬度为$(\lambda_c,\varphi_c)$，东西与南北方向的角度间隔分别为$\Delta\lambda>0$、$\Delta\varphi>0$，则左上边界为
+\subsection{地形约束下的航段几何}
+\subsubsection{航迹与地形像元的完整相交}
+原始GeoTIFF采用像元中心定位。设左上参考像元中心为$(\lambda_c,\varphi_c)$，角度间隔为$\Delta\lambda,\Delta\varphi>0$，则栅格左上边界为
 \begin{equation}
-\lambda_0=\lambda_c-\frac{\Delta\lambda}{2},\qquad
-\varphi_0=\varphi_c+\frac{\Delta\varphi}{2}.
+\lambda_0=\lambda_c-\tfrac12\Delta\lambda,\qquad
+\varphi_0=\varphi_c+\tfrac12\Delta\varphi.
 \label{eq:common_half_pixel}
 \end{equation}
-记轨迹反投影后的经纬度为$(\lambda(u),\varphi(u))$，对应的连续列、行坐标为
+反投影航迹$(\lambda(u),\varphi(u))$对应连续列、行坐标
 \begin{equation}
 \xi(u)=\frac{\lambda(u)-\lambda_0}{\Delta\lambda},\qquad
 \eta(u)=\frac{\varphi_0-\varphi(u)}{\Delta\varphi}.
 \label{eq:common_raster_coordinates}
 \end{equation}
-半像元校正使TIF的中心定位与MAT中的边界仿射变换对应，避免航迹在栅格上整体偏移。
+半像元校正用于对应TIF中心定位与MAT边界变换，不是人为移动航迹。求出轨迹与整数行列边界的交点并按$u$排序；相邻交点之间没有新的栅格边界，检查其中点及全部交点即可得到相交像元集合$\mathcal C_{ij}$。采用闭像元约定，格边与角点接触的所有像元均计入。
 
-为确定航段最高地形，求出连续轨迹与整数行、列边界的交点，并按轨迹参数排序。相邻交点之间没有新的栅格边界，因而区间内部所属像元不变；检查各区间中点及全部交点，即可获得相交像元集合$\mathcal C_{ij}$。采用闭像元约定，航迹经过边界或角点时将所有接触像元计入。问题一的径向航段在核实坐标单调性后逐边界求根；这一核验不外推为任意长距离或非单调航迹均可直接用同一求根区间。
+问题一的径向航段在核实坐标单调性后逐边界求根，这一处理不外推到任意非单调长轨迹。超出DEM范围或经过无效高程时拒绝该几何输入，不以零高程填补。固定步长采样可以用于显示与对照，但不能保证发现短暂接触的每个像元。
 
-航段最高地形及普通运输巡航海拔分别为
+\input{expanded_sections/03_geometry_reasoning.tex}
+
+\subsubsection{巡航海拔、作业高度与飞行阶段}
+设$Z_c$为像元高程，普通运输的航段最高地形、巡航海拔及作业高度为
 \begin{equation}
- z_{ij}^{\max}=\max_{c\in\mathcal C_{ij}}Z_c,\qquad
- H_{ij}=z_{ij}^{\max}+50,
+ z_{ij}^{\max}=\max_{c\in\mathcal C_{ij}}Z_c,\qquad H_{ij}=z_{ij}^{\max}+50,
 \label{eq:common_cruise_altitude}
 \end{equation}
-其中$Z_c$为像元$c$的地形高程。航段越出DEM范围或经过无效高程时，不将其按零高程处理，而是拒绝该几何输入。固定步长采样可以用于绘图和对照，但不能保证发现短暂经过的每一个像元。像元中心到边界的换算及闭像元相交规则另见\ref{sec:dem_figure_notes}中的图\ref{fig:dem_closed_cells}。
-
-\subsubsection{作业高度与三阶段飞行}
-
-基地作业高度取其地面高程，服务区交接高度为当地地面以上30\,m，即
 \begin{equation}
- h_i=\begin{cases}
- z_i,&i=O01,\\
- z_i+30,&i\in\mathcal S.
- \end{cases}
- \qquad
- h_{ij}^{\uparrow}=H_{ij}-h_i,\quad
- h_{ij}^{\downarrow}=H_{ij}-h_j.
+ h_i=\begin{cases}z_i,&i=O01,\\z_i+30,&i\in\mathcal S,\end{cases}
+ \quad h_{ij}^{\uparrow}=H_{ij}-h_i,\quad h_{ij}^{\downarrow}=H_{ij}-h_j.
 \label{eq:common_work_height}
 \end{equation}
-每一航段均包含爬升、水平巡航和下降三个阶段。在服务区完成交接后，下一航段从该区作业高度重新起算，因此多点运输和空载返航都可能再次爬升。计算前检查$H_{ij}\ge\max(h_i,h_j)$；若条件不满足，应报告高度口径冲突，不将负爬升直接截为零。
+每段均经历爬升、巡航和下降。完成服务区交接后，下一段从该区作业高度重新起算，空载返航也可能再次爬升。计算前检查$H_{ij}\ge\max(h_i,h_j)$；若不成立，应报告高度口径冲突，不能把负爬升直接截为零。中继悬停端点可能高于该巡航面，第\ref{sec:q3}章单独定义中继转场规则，不反向修改普通运输模型。
 
-式\eqref{eq:common_cruise_altitude}适用于普通运输航段。中继任务的悬停端点可能高于该巡航面，第6章因此对中继转场单独采用地形净空高度、悬停海拔和基地作业高度三者的最大值；该规则不反向改写普通运输模型。
+\begin{figure}[htbp]\centering
+\includegraphics[width=\linewidth]{figures/common_model/fig3_2_transport_physics.pdf}
+\caption{多点运输的航段几何、离站载荷、交接完成与能耗计算机制（示意）；距离轴与时间轴不同}\label{fig:common_leg_geometry}
+\end{figure}
 
-航段飞行与多站交接的衔接关系见图\ref{fig:transport_physics}（a）；其中各航段采用各自的巡航海拔。
-
-\subsection{运输任务表示与逐段载荷递推}
-
-将一项候选运输任务表示为$r=(m_r,\mathcal B_r,\pi_r)$，其中$m_r\in\{A,B,C\}$为机型，$\mathcal B_r$为携带的货箱集合，$\pi_r=(v_0,v_1,\ldots,v_K,v_{K+1})$为有序访问路径，$v_0=v_{K+1}=O01$。中间节点与所带货箱的目的地一致，当前任务构造不重复访问同一服务区。
-
-记第$j$站交付的箱数与质量为
+\subsection{运输任务的载荷与时间计算}
+\subsubsection{任务组成与逐站卸货}
+一项任务表示为$r=(m_r,\mathcal B_r,\pi_r)$，其中机型$m_r\in\{A,B,C\}$，箱组为$\mathcal B_r$，有序路线$\pi_r=(v_0,v_1,\ldots,v_K,v_{K+1})$满足$v_0=v_{K+1}=O01$。中间节点与箱组目的地一致，当前任务构造不重复访问同一服务区。第$j$站交付数量与质量为
 \begin{equation}
  n_{rj}=|\{b\in\mathcal B_r:s(b)=v_j\}|,\qquad
- D_{rj}=\sum_{\substack{b\in\mathcal B_r\\s(b)=v_j}}\mu_b,
- \quad j=1,\ldots,K.
+ D_{rj}=\sum_{\substack{b\in\mathcal B_r\\s(b)=v_j}}\mu_b.
 \label{eq:common_drop}
 \end{equation}
-起飞载荷及货箱总体积满足
+起飞容量与逐站载荷满足
 \begin{equation}
  q_{r,0}=\sum_{b\in\mathcal B_r}\mu_b\le Q_{m_r},\qquad
- \sum_{b\in\mathcal B_r}\nu_b\le V_{m_r}.
+ \sum_{b\in\mathcal B_r}\nu_b\le V_{m_r},
 \label{eq:common_capacity}
 \end{equation}
-完成第$j$站交付后，载荷更新为
 \begin{equation}
- q_{r,j}=q_{r,j-1}-D_{rj},\qquad
- q_{r,0}\ge q_{r,1}\ge\cdots\ge q_{r,K}=0.
+ q_{r,j}=q_{r,j-1}-D_{rj},\qquad q_{r,0}\ge\cdots\ge q_{r,K}=0.
 \label{eq:common_load}
 \end{equation}
-从$v_j$飞往$v_{j+1}$时使用$q_{r,j}$计算能耗，包括$j=K$时的空载返航。由于途中只卸货、不补货，初始装载满足质量和体积约束后，后续载荷不会增加；但各航段的能耗仍须按卸货后的实际载荷分别计算。改变访问顺序可能同时改变航段长度、爬升高度和高载荷飞行距离，不能只比较总航程。
+$v_j\to v_{j+1}$使用$q_{r,j}$计算，包括$j=K$的空载返航。途中只卸货、不补货，故初始容量合格后质量与体积不再增加；但能耗必须按卸货后的各段载荷计算。改变访问顺序会改变高载荷飞行距离，不能只比较总路程。
 
-以$O01\rightarrow S_i\rightarrow S_j\rightarrow O01$为例，图\ref{fig:transport_physics}将航段几何、逐段载荷与交付时间的计算关系联系起来。图中距离与时间采用不同横轴，阶段长度仅作示意；具体时间、能耗与恢复时长仍按下文公式计算。
-
-\CommonTransportFigure
-
-\subsection{飞行时间、交付时刻与返航时间}
-
-设机型$m$的爬升、巡航和下降速度分别为$v_m^{\uparrow}$、$v_m^c$和$v_m^{\downarrow}$，则单航段飞行时间为
+\subsubsection{交接完成时刻与返航时间}
+设爬升、巡航、下降速度为$v_m^\uparrow,v_m^c,v_m^\downarrow$，则
 \begin{equation}
- t_{ij}^{\mathrm{fly}}(m)=
- \frac{h_{ij}^{\uparrow}}{v_m^{\uparrow}}
- +\frac{d_{ij}}{v_m^c}
- +\frac{h_{ij}^{\downarrow}}{v_m^{\downarrow}}.
+ t_{ij}^{\mathrm{fly}}(m)=\frac{h_{ij}^{\uparrow}}{v_m^{\uparrow}}+\frac{d_{ij}}{v_m^c}+\frac{h_{ij}^{\downarrow}}{v_m^{\downarrow}}.
 \label{eq:common_leg_time}
 \end{equation}
-设任务共携带$n_r=|\mathcal B_r|$个货箱，机型的固定准备、单箱装载、每站基础交接和逐箱交接时间分别为$t_m^{\mathrm{prep}}$、$t_m^{\mathrm{load}}$、$t_m^{\mathrm{hand}}$和$t_m^{\mathrm{box}}$。以开始准备为任务相对零时刻，起飞时刻为$\theta_{r,0}=t_{m_r}^{\mathrm{prep}}+n_rt_{m_r}^{\mathrm{load}}$。第$j$站的到达与交接完成时刻依次为
+以开始准备为任务相对零时刻。固定准备、单箱装载、每站基础交接和单箱交接时间分别为$t_m^{\mathrm{prep}},t_m^{\mathrm{load}},t_m^{\mathrm{hand}},t_m^{\mathrm{box}}$。令$n_r=|\mathcal B_r|$，起飞时刻$\theta_{r,0}=t_{m_r}^{\mathrm{prep}}+n_rt_{m_r}^{\mathrm{load}}$。到达与交接完成时间依次为
 \begin{equation}
 \begin{aligned}
  a_{r,j}&=\theta_{r,j-1}+t_{v_{j-1}v_j}^{\mathrm{fly}}(m_r),\\
- \theta_{r,j}&=a_{r,j}+t_{m_r}^{\mathrm{hand}}+n_{rj}t_{m_r}^{\mathrm{box}},
- \qquad j=1,\ldots,K.
+ \theta_{r,j}&=a_{r,j}+t_{m_r}^{\mathrm{hand}}+n_{rj}t_{m_r}^{\mathrm{box}},\quad j=1,\ldots,K.
 \end{aligned}
 \label{eq:common_delivery_recursion}
 \end{equation}
-实际采用\emph{交接完成}而非抵达服务区作为送达时刻，同站货箱使用同一交接完成时刻。若货箱$b$在第$j$站交付，则相对送达偏移$\delta_{rb}=\theta_{r,j}$；任务在绝对时刻$s_r$开始时，有
+货箱以\emph{交接完成}而非抵达作为送达时刻；同站货箱共享该交接完成时刻。若$b$在第$j$站交付，则$\delta_{rb}=\theta_{r,j}$，绝对开始时刻为$s_r$时有
 \begin{equation}
- C_b=s_r+\delta_{rb},\qquad
- p_r=\theta_{r,K}+t_{v_KO01}^{\mathrm{fly}}(m_r).
+ C_b=s_r+\delta_{rb},\qquad p_r=\theta_{r,K}+t_{v_KO01}^{\mathrm{fly}}(m_r).
 \label{eq:common_delivery_return}
 \end{equation}
-因此，完整作业时长还可写为
+展开得到
 \begin{equation}
- p_r=t_{m_r}^{\mathrm{prep}}+n_rt_{m_r}^{\mathrm{load}}
- +\sum_{j=0}^{K}t_{v_jv_{j+1}}^{\mathrm{fly}}(m_r)
- +\sum_{j=1}^{K}\bigl(t_{m_r}^{\mathrm{hand}}+n_{rj}t_{m_r}^{\mathrm{box}}\bigr).
+\begin{split}
+ p_r={}&t_{m_r}^{\mathrm{prep}}+n_rt_{m_r}^{\mathrm{load}}
+ +\sum_{j=0}^Kt_{v_jv_{j+1}}^{\mathrm{fly}}(m_r)\\
+ &+\sum_{j=1}^K\bigl(t_{m_r}^{\mathrm{hand}}+n_{rj}t_{m_r}^{\mathrm{box}}\bigr).
+\end{split}
 \label{eq:common_task_duration}
 \end{equation}
-这一递推同时给出每站交付偏移和最终返航时刻，使配送时限检查不再依赖任务总时长的近似分摊。问题一使用累计作业时间$T^{\mathrm{sum}}=\sum_r p_r$；任务允许并行后，运输完成时间为$T_{\max}=\max_r(s_r+p_r)$。二者分别衡量累计工作量和最后返航时刻，不能相互替代。
+该递推同时输出每箱交付偏移和返航时间，不需要按总时长平均分摊。问题一用$T^{\mathrm{sum}}=\sum_rp_r$衡量累计工作量；并行调度用$T_{\max}=\max_r(s_r+p_r)$衡量最后返航时刻。二者不能替代。
 
-\subsection{载荷相关能耗与返航安全约束}
-
-\subsubsection{水平飞行与爬升能耗}
-
-配送无人机能耗模型需要考虑载荷和任务组织方式的影响\cite{dorling2017,zhang2021energy,zhang2023corrigendum}。本文采用题目给定的载荷--航程关系，并沿用各问一致的水平飞行与爬升能耗参数化，不另行拟合其他机型的功率曲线。对$0\le q\le Q_m$，等效航程为
+\subsection{能耗计算与返航安全约束}
+\subsubsection{载荷相关航程与分阶段能耗}
+配送能耗需要考虑载荷与任务组织\cite{zhang2021energy,zhang2023corrigendum}。具体计算沿用题面给定关系，不拟合其他型号的功率曲线。对$0\le q\le Q_m$，等效航程为
 \begin{equation}
- L_m(q)=L_m^0-(L_m^0-L_m^F)\left(\frac q{Q_m}\right)^{3/2},
+ L_m(q)=L_m^0-(L_m^0-L_m^F)\left(\frac q{Q_m}\right)^{3/2}.
 \label{eq:common_range}
 \end{equation}
-其中$L_m^0,L_m^F$分别为空载、满载标准航程。$L_m(q)$是水平能耗的标定长度，不是一次往返任务允许的单程半径。
-
-将水平能耗按距离占等效航程的比例计算，爬升能耗按克服重力所需能量及爬升效率折算，得到
+该量是水平能耗的标定长度，不是一次往返可到达的单程半径。水平与爬升能耗分别为
 \begin{equation}
  E_m^{\mathrm{hor}}(d,q)=E_m\frac d{L_m(q)},\qquad
- E_m^{\mathrm{up}}(q,h)=\frac{(m_m^0+q)gh}{\eta_m\,3.6\times10^6},
+ E_m^{\mathrm{up}}(q,h)=\frac{(m_m^0+q)gh}{\eta_m\,3.6\times10^6}.
 \label{eq:common_energy_parts}
 \end{equation}
-其中$m_m^0$为含电池空载质量，$\eta_m$为爬升效率，$g=9.81\,\mathrm{m/s^2}$；分母$3.6\times10^6$用于将焦耳转换为kWh。下降阶段计入时间但不另加能耗；普通运输任务也不额外引入未给定的装卸或交接悬停功率。中继长时间悬停的能耗由第6章单独建模。
+$m_m^0$包含电池质量，$\eta_m$为爬升效率，$g=9.81\,\mathrm{m/s^2}$；焦耳除以$3.6\times10^6$转换为kWh。当前参数化中，下降计时但不另加能耗；普通交接不额外添加未给定的悬停功率。中继长时间悬停由第\ref{sec:q3}章单独计算。这是模型约定，不是对实际下降或交接能量的普遍断言。
 
-\subsubsection{任务总能耗与安全判定}
-
-将式\eqref{eq:common_load}得到的逐段载荷代入式\eqref{eq:common_energy_parts}，任务总能耗为
+\subsubsection{任务总能耗与返航剩余电量}
+按实际逐段载荷求和：
 \begin{equation}
  E_r=\sum_{j=0}^{K}\left[
  E_{m_r}\frac{d_{v_jv_{j+1}}}{L_{m_r}(q_{r,j})}
- +\frac{(m_{m_r}^0+q_{r,j})g\,h_{v_jv_{j+1}}^{\uparrow}}
- {\eta_{m_r}\,3.6\times10^6}\right].
+ +\frac{(m_{m_r}^0+q_{r,j})g\,h_{v_jv_{j+1}}^{\uparrow}}{\eta_{m_r}\,3.6\times10^6}\right].
 \label{eq:common_task_energy}
 \end{equation}
-在最后一段中$q_{r,K}=0$，但式中水平飞行和空载爬升两项仍然存在。若机型$m$的返航安全余量为$\alpha_m$，每次任务使用满电电池，则
+最后一段$q_{r,K}=0$，但水平飞行和空载爬升项仍然存在。每次任务使用满电电池时，返航安全判据为
 \begin{equation}
  E_r\le(1-\alpha_{m_r})E_{m_r},\qquad
  SOC_r^{\mathrm{return}}=1-\frac{E_r}{E_{m_r}}\ge\alpha_{m_r}.
 \label{eq:common_reserve}
 \end{equation}
-基准场景取$\alpha_m=0.20$。式\eqref{eq:common_capacity}和式\eqref{eq:common_reserve}共同决定候选任务的物理可行性；第4章在单点往返条件下由此反求最大安全载荷，第5、6章用它们筛选多点运输任务。
+基准$\alpha_m=0.20$。式\eqref{eq:common_capacity}与\eqref{eq:common_reserve}共同决定物理可行性。它们本身不保证有限资源排程或连续通信可行。
 
-\subsection{充电恢复与资源释放时刻}
+\input{expanded_sections/03_energy_properties.tex}
 
-对运输电池或中继能源组件，设等效完全充电时间为$\tau^{\mathrm{full}}$，任务结束时的荷电状态为$\rho$。题目采用两阶段充电规则：从0充至90\%占完全充电时间的65\%，从90\%充至100\%占35\%。因此，低于90\%时需完成剩余第一阶段和全部第二阶段；达到90\%后只需完成剩余第二阶段，恢复时间为
+\subsection{能源恢复与资源占用}
+\subsubsection{两阶段充电恢复时间}
+设完全充电等效时间为$\tau^{\mathrm{full}}$，任务结束荷电状态为$\rho$。从0充至90\%占完全充电时间65\%，90\%至100\%占35\%，故
 \begin{equation}
-\tau(\rho)=\tau^{\mathrm{full}}\begin{cases}
- 0.65\dfrac{0.9-\rho}{0.9}+0.35,&0\le\rho<0.9,\\[4pt]
- 0.35\dfrac{1-\rho}{0.1},&0.9\le\rho\le1.
-\end{cases}
+ \tau(\rho)=\tau^{\mathrm{full}}\begin{cases}
+ 0.65(0.9-\rho)/0.9+0.35,&0\le\rho<0.9,\\
+ 0.35(1-\rho)/0.1,&0.9\le\rho\le1.
+ \end{cases}
 \label{eq:common_recharge}
 \end{equation}
-在$\rho=0,0.9,1$处分别得到$\tau^{\mathrm{full}}$、$0.35\tau^{\mathrm{full}}$和0，且两段在90\%处连续。该关系不能简化为“耗电比例乘完全充电时间”。
+在$\rho=0,0.9,1$处分别得到$\tau^{\mathrm{full}}$、$0.35\tau^{\mathrm{full}}$、0，且90\%处连续。该函数不能简化为“耗电比例乘完全充电时间”。充电敏感性试验统一缩放$\tau^{\mathrm{full}}$，仍保留上述两段比例。
 
-运输任务$r$从开始准备起占用无人机及满电电池。记$c_r=\tau(SOC_r^{\mathrm{return}})$，则两种资源的占用区间为
+\subsubsection{飞机、电池与中继资源的释放区别}
+令$c_r=\tau(SOC_r^{\mathrm{return}})$，从任务开始准备起，运输飞机与电池分别占用
 \begin{equation}
- I_r^U=[s_r,s_r+p_r),\qquad
- I_r^B=[s_r,s_r+p_r+c_r).
+ I_r^U=[s_r,s_r+p_r),\qquad I_r^B=[s_r,s_r+p_r+c_r).
 \label{eq:common_occupancy}
 \end{equation}
-因此运输无人机返航后即可释放，而原电池须充满后才能再次使用。最后一次返航后的充电不计入本轮运输完成时间，但保留在电池资源占用中。中继无人机还有规定的返航周转过程，其实体释放时刻不能直接套用$I_r^U$；中继实体和能源组件的完整占用区间在第6章确定，第7章原样继承。
+运输机返航后释放，原电池须充满才能再用；末次充电不计入最后返航时间，但仍计入能源占用。中继实体还有规定的返航周转，其释放不能直接套用$I_r^U$。各区间使用原始精度；同刻释放与开始允许衔接，不能先舍入分钟再计算资源峰值。
 
-\subsection{公共模型核验与后续问题衔接}
+\input{expanded_sections/03_resource_derivation.tex}
 
-\subsubsection{边界检查与单任务核对}
+\subsection{公共模型核验}
+\subsubsection{几何与单任务计算核对}
+先检查$L_m(0)=L_m^0$、$L_m(Q_m)=L_m^F$、完整交付后$q_{r,K}=0$，再逐项核对时间、交付偏移、SOC及充电分段连续性。以S006的C型单点任务为例，6箱共59\,kg、0.156\,m$^3$，能耗2.597987865\,kWh、作业时长1561.553868\,s。代回8\,kWh电池容量得到返航SOC为67.525152\%，恢复时长为$0.512318349\tau_C^{\mathrm{full}}$。本例只检查任务属性，未把单架次可行误写成系统排程可行。
 
-在进入组合优化前，先检查$L_m(0)=L_m^0$、$L_m(Q_m)=L_m^F$，以及完整交付后的$q_{r,K}=0$；再分别核对飞行时间之和、每站交接偏移和返航SOC。充电模型还检查式\eqref{eq:common_recharge}的三个端点与分段连续性，避免资源恢复时间计算错误传递到后续排程。
+已有几何核验对15条基地径向航段使用独立测地线和像元条带求交：距离最大差为$1.412\times10^{-9}$\,m，相交集合一致；0.25\,m固定采样对照合计漏过4个相交像元。这说明完整相交优于该采样对照，但不构成任意服务区间投影误差的上界，也不能识别DEM分辨率以下的障碍物。本轮进一步从原始任务属性重算问题二23个架次及80箱交付，与保存计划在$10^{-6}$\,s和$10^{-7}$\,kWh范围内对应。
 
-以S006的C型单点任务为例，其6个货箱总质量59\,kg、总体积0.156\,m$^3$，满足额定80\,kg和0.250\,m$^3$装载限制。保存的任务计算结果为$E_r=2.597987865$\,kWh、$p_r=1561.553868$\,s。由8\,kWh电池容量独立代回式\eqref{eq:common_reserve}，返航SOC为67.525152\%，与任务记录一致；对应恢复时间为$0.512318349\tau_C^{\mathrm{full}}$。该例用于检查任务属性之间的一致性，不代表已经完成有限无人机和电池条件下的排程。
+\subsubsection{任务输出与后续模型接口}
+公共计算将任务转换为机型、箱组、路线、载荷序列、$p_r,E_r,SOC_r,c_r$和$\delta_{rb}$。问题一在此基础上选择可行批型，问题二加入有限飞机、电池及配送时限，问题三使用分段三维轨迹检查通信，问题四冻结运输与中继的实际占用区间。
 
-\subsubsection{几何核验及其适用范围}
-
-已有独立核验对问题一15条基地径向航段采用另一套测地线和像元条带求交方法，检查结果见表\ref{tab:common_geometry_checks}。表中的微小距离差属于同一径向几何的数值一致性，不是对任意服务区间投影误差的上界；“完整遍历”也仅指完整利用给定DEM中的相交像元，不表示能识别DEM分辨率以下的障碍物。
-
-\begin{table}[htbp]
-\centering
-\caption{公共几何模型已有独立核验结果}
-\label{tab:common_geometry_checks}
-\begin{tabular}{p{4.1cm}p{5.7cm}p{4.2cm}}
-\toprule
-核验对象 & 比较方法 & 结果\\
-\midrule
-TIF与MAT地形输入 & 高程矩阵、中心坐标与仿射边界核对 & 对应一致\\
-15条基地径向航段 & AEQD与独立椭球测地线距离 & 最大差$1.412\times10^{-9}$\,m\\
-相交像元集合 & 边界交点遍历与独立条带求交 & 集合一致\\
-固定步长采样对照 & 0.25\,m采样与完整像元集合比较 & 合计漏过4个相交像元\\
-\bottomrule
-\end{tabular}
-\end{table}
-
-\subsubsection{输出属性与四问接口}
-
-通过上述计算，每个候选任务确定机型、货箱集合、访问路径、逐段载荷、作业时长$p_r$、能耗$E_r$、返航SOC、恢复时长$c_r$以及各货箱的交付偏移$\delta_{rb}$。具体优化只在这些共同属性上增加新的决策与约束，衔接关系见表\ref{tab:common_interface}。
-
-\begin{table}[htbp]
-\centering
-\caption{公共任务属性在四个问题中的用途}
-\label{tab:common_interface}
-\begin{tabular}{lp{5.4cm}p{7.1cm}}
-\toprule
-问题 & 使用的公共属性 & 新增建模内容\\
-\midrule
-问题一 & 单点距离、爬升、时间、能耗和余量 & 最大安全载荷、不可拆货箱精确组批\\
-问题二 & 多点逐段载荷、交付偏移、任务时长及电池恢复 & 箱级时限、飞机--电池联合排程\\
-问题三 & 运输任务物理属性及分段时空轨迹 & 连续通信、中继转场与悬停、联合时序\\
-问题四 & 冻结后的运输和中继资源占用区间 & 不可拆分组、组内峰值与异构资源缺口\\
-\bottomrule
-\end{tabular}
-\end{table}
-
-本章据此完成从原始数据到可计算运输任务的转换。任务物理可行是后续优化的必要条件，但并不单独保证资源、配送时限或连续通信可行；这些条件分别在对应问题中进一步施加。
+对于敏感性计算，输入扰动必须进入相关物理项，而非直接放大结果工期。例如能耗增加会同时改变SOC与充电时间；交接延迟改变后续交付和返航，但在当前无额外交接功率的模型中不自动增加能耗。本文分别保留名义计算、固定决策重放和允许调整后的结果，避免把不同实验权限混为一个“通过率”。

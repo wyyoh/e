@@ -1,0 +1,2623 @@
+{
+  "model": "strict logical relay sorties; fixed VERIFIED V5 time table; same-type resources interchangeable",
+  "source_plan": "release_v6/time/plan",
+  "input_sha256": {
+    "flights.json": "49188b11ec555b69f6a396b80116633fa3f74d92086bad4b188b3c32246a3398",
+    "relays.json": "f57ee6a759087fa258c78d32f7437092d85b84b43410c1321137068db6837220",
+    "communication_states.json": "547bde37a39223688dc64aab4e1ce1ba9a2376057f634cdd61cea067736666e0",
+    "actual_endpoint_states.json": "0a7d77b2f6cae851452a7551941ef616b470f56ae5ffcf8f8f91601036374f03"
+  },
+  "decimal_exact_event_order": true,
+  "blocks": [
+    [
+      "S001"
+    ],
+    [
+      "S002",
+      "S003",
+      "S004",
+      "S005",
+      "S007",
+      "S008",
+      "S009",
+      "S010",
+      "S011",
+      "S012",
+      "S013",
+      "S014",
+      "S015"
+    ],
+    [
+      "S006"
+    ]
+  ],
+  "inventory": {
+    "A_plane": 4,
+    "B_plane": 2,
+    "C_plane": 2,
+    "A_battery": 6,
+    "B_battery": 4,
+    "C_battery": 4,
+    "R_plane": 2,
+    "R_component": 6
+  },
+  "resource_order": [
+    "A_plane",
+    "B_plane",
+    "C_plane",
+    "A_battery",
+    "B_battery",
+    "C_battery",
+    "R_plane",
+    "R_component"
+  ],
+  "global_pool": {
+    "A_plane": {
+      "minimum": 4,
+      "peak_time_s": "0.0",
+      "peak_tasks": [
+        "Q3-T-01",
+        "Q3-T-02",
+        "Q3-T-03",
+        "Q3-T-22"
+      ],
+      "resource_chains": [
+        [
+          "Q3-T-01",
+          "Q3-T-09",
+          "Q3-T-08"
+        ],
+        [
+          "Q3-T-02",
+          "Q3-T-13",
+          "Q3-T-18"
+        ],
+        [
+          "Q3-T-03",
+          "Q3-T-15",
+          "Q3-T-23"
+        ],
+        [
+          "Q3-T-22",
+          "Q3-T-17"
+        ]
+      ],
+      "matching_minimum": 4
+    },
+    "B_plane": {
+      "minimum": 2,
+      "peak_time_s": "0.0",
+      "peak_tasks": [
+        "Q3-T-04",
+        "Q3-T-05"
+      ],
+      "resource_chains": [
+        [
+          "Q3-T-04",
+          "Q3-T-10",
+          "Q3-T-20"
+        ],
+        [
+          "Q3-T-05",
+          "Q3-T-14",
+          "Q3-T-21"
+        ]
+      ],
+      "matching_minimum": 2
+    },
+    "C_plane": {
+      "minimum": 2,
+      "peak_time_s": "0.0",
+      "peak_tasks": [
+        "Q3-T-06",
+        "Q3-T-11"
+      ],
+      "resource_chains": [
+        [
+          "Q3-T-11",
+          "Q3-T-07",
+          "Q3-T-16"
+        ],
+        [
+          "Q3-T-06",
+          "Q3-T-12",
+          "Q3-T-19"
+        ]
+      ],
+      "matching_minimum": 2
+    },
+    "A_battery": {
+      "minimum": 6,
+      "peak_time_s": "1727.4241845407844",
+      "peak_tasks": [
+        "Q3-T-01",
+        "Q3-T-02",
+        "Q3-T-03",
+        "Q3-T-09",
+        "Q3-T-13",
+        "Q3-T-22"
+      ],
+      "resource_chains": [
+        [
+          "Q3-T-01",
+          "Q3-T-15"
+        ],
+        [
+          "Q3-T-02",
+          "Q3-T-17"
+        ],
+        [
+          "Q3-T-03",
+          "Q3-T-18"
+        ],
+        [
+          "Q3-T-22",
+          "Q3-T-08"
+        ],
+        [
+          "Q3-T-09"
+        ],
+        [
+          "Q3-T-13",
+          "Q3-T-23"
+        ]
+      ],
+      "matching_minimum": 6
+    },
+    "B_battery": {
+      "minimum": 4,
+      "peak_time_s": "1937.4556940070113",
+      "peak_tasks": [
+        "Q3-T-04",
+        "Q3-T-05",
+        "Q3-T-10",
+        "Q3-T-14"
+      ],
+      "resource_chains": [
+        [
+          "Q3-T-04",
+          "Q3-T-20"
+        ],
+        [
+          "Q3-T-05",
+          "Q3-T-21"
+        ],
+        [
+          "Q3-T-10"
+        ],
+        [
+          "Q3-T-14"
+        ]
+      ],
+      "matching_minimum": 4
+    },
+    "C_battery": {
+      "minimum": 4,
+      "peak_time_s": "1685.8168699884434",
+      "peak_tasks": [
+        "Q3-T-06",
+        "Q3-T-07",
+        "Q3-T-11",
+        "Q3-T-12"
+      ],
+      "resource_chains": [
+        [
+          "Q3-T-11",
+          "Q3-T-16"
+        ],
+        [
+          "Q3-T-06",
+          "Q3-T-19"
+        ],
+        [
+          "Q3-T-07"
+        ],
+        [
+          "Q3-T-12"
+        ]
+      ],
+      "matching_minimum": 4
+    },
+    "R_plane": {
+      "minimum": 2,
+      "peak_time_s": "331.87688133891515",
+      "peak_tasks": [
+        "Q3-R-02",
+        "Q3-R-03"
+      ],
+      "resource_chains": [
+        [
+          "Q3-R-02",
+          "Q3-R-01"
+        ],
+        [
+          "Q3-R-03",
+          "Q3-R-04"
+        ]
+      ],
+      "matching_minimum": 2
+    },
+    "R_component": {
+      "minimum": 3,
+      "peak_time_s": "2076.1588378383417",
+      "peak_tasks": [
+        "Q3-R-02",
+        "Q3-R-03",
+        "Q3-R-04"
+      ],
+      "resource_chains": [
+        [
+          "Q3-R-02"
+        ],
+        [
+          "Q3-R-03",
+          "Q3-R-01"
+        ],
+        [
+          "Q3-R-04"
+        ]
+      ],
+      "matching_minimum": 3
+    }
+  },
+  "by_group_count": {
+    "2": {
+      "count": 3,
+      "minimum_configuration": {
+        "groups": [
+          [
+            "S001",
+            "S002",
+            "S003",
+            "S004",
+            "S005",
+            "S007",
+            "S008",
+            "S009",
+            "S010",
+            "S011",
+            "S012",
+            "S013",
+            "S014",
+            "S015"
+          ],
+          [
+            "S006"
+          ]
+        ],
+        "need": {
+          "A_plane": 4,
+          "B_plane": 2,
+          "C_plane": 3,
+          "A_battery": 6,
+          "B_battery": 4,
+          "C_battery": 4,
+          "R_plane": 2,
+          "R_component": 3
+        },
+        "gap": {
+          "A_plane": 0,
+          "B_plane": 0,
+          "C_plane": 1,
+          "A_battery": 0,
+          "B_battery": 0,
+          "C_battery": 0,
+          "R_plane": 0,
+          "R_component": 0
+        },
+        "need_vector": [
+          4,
+          2,
+          3,
+          6,
+          4,
+          4,
+          2,
+          3
+        ],
+        "gap_vector": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "total_need": 28,
+        "total_gap": 1,
+        "workload_s": [
+          52064.68373660206,
+          1561.5538679616295
+        ],
+        "workload_cv": 0.9417615727779963,
+        "resource_certificates": {
+          "0": {
+            "A_plane": {
+              "minimum": 4,
+              "peak_time_s": "0.0",
+              "peak_tasks": [
+                "Q3-T-01",
+                "Q3-T-02",
+                "Q3-T-03",
+                "Q3-T-22"
+              ],
+              "resource_chains": [
+                [
+                  "Q3-T-01",
+                  "Q3-T-09",
+                  "Q3-T-08"
+                ],
+                [
+                  "Q3-T-02",
+                  "Q3-T-13",
+                  "Q3-T-18"
+                ],
+                [
+                  "Q3-T-03",
+                  "Q3-T-15",
+                  "Q3-T-23"
+                ],
+                [
+                  "Q3-T-22",
+                  "Q3-T-17"
+                ]
+              ],
+              "matching_minimum": 4
+            },
+            "B_plane": {
+              "minimum": 2,
+              "peak_time_s": "0.0",
+              "peak_tasks": [
+                "Q3-T-04",
+                "Q3-T-05"
+              ],
+              "resource_chains": [
+                [
+                  "Q3-T-04",
+                  "Q3-T-10",
+                  "Q3-T-20"
+                ],
+                [
+                  "Q3-T-05",
+                  "Q3-T-14",
+                  "Q3-T-21"
+                ]
+              ],
+              "matching_minimum": 2
+            },
+            "C_plane": {
+              "minimum": 2,
+              "peak_time_s": "0.0",
+              "peak_tasks": [
+                "Q3-T-06",
+                "Q3-T-11"
+              ],
+              "resource_chains": [
+                [
+                  "Q3-T-11",
+                  "Q3-T-12",
+                  "Q3-T-19"
+                ],
+                [
+                  "Q3-T-06",
+                  "Q3-T-16"
+                ]
+              ],
+              "matching_minimum": 2
+            },
+            "A_battery": {
+              "minimum": 6,
+              "peak_time_s": "1727.4241845407844",
+              "peak_tasks": [
+                "Q3-T-01",
+                "Q3-T-02",
+                "Q3-T-03",
+                "Q3-T-09",
+                "Q3-T-13",
+                "Q3-T-22"
+              ],
+              "resource_chains": [
+                [
+                  "Q3-T-01",
+                  "Q3-T-15"
+                ],
+                [
+                  "Q3-T-02",
+                  "Q3-T-17"
+                ],
+                [
+                  "Q3-T-03",
+                  "Q3-T-18"
+                ],
+                [
+                  "Q3-T-22",
+                  "Q3-T-08"
+                ],
+                [
+                  "Q3-T-09"
+                ],
+                [
+                  "Q3-T-13",
+                  "Q3-T-23"
+                ]
+              ],
+              "matching_minimum": 6
+            },
+            "B_battery": {
+              "minimum": 4,
+              "peak_time_s": "1937.4556940070113",
+              "peak_tasks": [
+                "Q3-T-04",
+                "Q3-T-05",
+                "Q3-T-10",
+                "Q3-T-14"
+              ],
+              "resource_chains": [
+                [
+                  "Q3-T-04",
+                  "Q3-T-20"
+                ],
+                [
+                  "Q3-T-05",
+                  "Q3-T-21"
+                ],
+                [
+                  "Q3-T-10"
+                ],
+                [
+                  "Q3-T-14"
+                ]
+              ],
+              "matching_minimum": 4
+            },
+            "C_battery": {
+              "minimum": 3,
+              "peak_time_s": "1685.8168699884434",
+              "peak_tasks": [
+                "Q3-T-06",
+                "Q3-T-11",
+                "Q3-T-12"
+              ],
+              "resource_chains": [
+                [
+                  "Q3-T-11",
+                  "Q3-T-16"
+                ],
+                [
+                  "Q3-T-06",
+                  "Q3-T-19"
+                ],
+                [
+                  "Q3-T-12"
+                ]
+              ],
+              "matching_minimum": 3
+            },
+            "R_plane": {
+              "minimum": 2,
+              "peak_time_s": "331.87688133891515",
+              "peak_tasks": [
+                "Q3-R-02",
+                "Q3-R-03"
+              ],
+              "resource_chains": [
+                [
+                  "Q3-R-02",
+                  "Q3-R-01"
+                ],
+                [
+                  "Q3-R-03",
+                  "Q3-R-04"
+                ]
+              ],
+              "matching_minimum": 2
+            },
+            "R_component": {
+              "minimum": 3,
+              "peak_time_s": "2076.1588378383417",
+              "peak_tasks": [
+                "Q3-R-02",
+                "Q3-R-03",
+                "Q3-R-04"
+              ],
+              "resource_chains": [
+                [
+                  "Q3-R-02"
+                ],
+                [
+                  "Q3-R-03",
+                  "Q3-R-01"
+                ],
+                [
+                  "Q3-R-04"
+                ]
+              ],
+              "matching_minimum": 3
+            }
+          },
+          "1": {
+            "A_plane": {
+              "minimum": 0,
+              "peak_time_s": null,
+              "peak_tasks": [],
+              "resource_chains": [],
+              "matching_minimum": 0
+            },
+            "B_plane": {
+              "minimum": 0,
+              "peak_time_s": null,
+              "peak_tasks": [],
+              "resource_chains": [],
+              "matching_minimum": 0
+            },
+            "C_plane": {
+              "minimum": 1,
+              "peak_time_s": "1428.1691773291593",
+              "peak_tasks": [
+                "Q3-T-07"
+              ],
+              "resource_chains": [
+                [
+                  "Q3-T-07"
+                ]
+              ],
+              "matching_minimum": 1
+            },
+            "A_battery": {
+              "minimum": 0,
+              "peak_time_s": null,
+              "peak_tasks": [],
+              "resource_chains": [],
+              "matching_minimum": 0
+            },
+            "B_battery": {
+              "minimum": 0,
+              "peak_time_s": null,
+              "peak_tasks": [],
+              "resource_chains": [],
+              "matching_minimum": 0
+            },
+            "C_battery": {
+              "minimum": 1,
+              "peak_time_s": "1428.1691773291593",
+              "peak_tasks": [
+                "Q3-T-07"
+              ],
+              "resource_chains": [
+                [
+                  "Q3-T-07"
+                ]
+              ],
+              "matching_minimum": 1
+            },
+            "R_plane": {
+              "minimum": 0,
+              "peak_time_s": null,
+              "peak_tasks": [],
+              "resource_chains": [],
+              "matching_minimum": 0
+            },
+            "R_component": {
+              "minimum": 0,
+              "peak_time_s": null,
+              "peak_tasks": [],
+              "resource_chains": [],
+              "matching_minimum": 0
+            }
+          }
+        },
+        "pooling_loss_vector": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "3": {
+      "count": 1,
+      "minimum_configuration": {
+        "groups": [
+          [
+            "S001"
+          ],
+          [
+            "S002",
+            "S003",
+            "S004",
+            "S005",
+            "S007",
+            "S008",
+            "S009",
+            "S010",
+            "S011",
+            "S012",
+            "S013",
+            "S014",
+            "S015"
+          ],
+          [
+            "S006"
+          ]
+        ],
+        "need": {
+          "A_plane": 5,
+          "B_plane": 2,
+          "C_plane": 5,
+          "A_battery": 7,
+          "B_battery": 4,
+          "C_battery": 6,
+          "R_plane": 2,
+          "R_component": 3
+        },
+        "gap": {
+          "A_plane": 1,
+          "B_plane": 0,
+          "C_plane": 3,
+          "A_battery": 1,
+          "B_battery": 0,
+          "C_battery": 2,
+          "R_plane": 0,
+          "R_component": 0
+        },
+        "need_vector": [
+          5,
+          2,
+          5,
+          7,
+          4,
+          6,
+          2,
+          3
+        ],
+        "gap_vector": [
+          1,
+          0,
+          3,
+          1,
+          0,
+          2,
+          0,
+          0
+        ],
+        "total_need": 34,
+        "total_gap": 7,
+        "workload_s": [
+          4305.2376567356205,
+          47759.44607986644,
+          1561.5538679616295
+        ],
+        "workload_cv": 1.1837975013700406,
+        "resource_certificates": {
+          "0": {
+            "A_plane": {
+              "minimum": 1,
+              "peak_time_s": "0.0",
+              "peak_tasks": [
+                "Q3-T-01"
+              ],
+              "resource_chains": [
+                [
+                  "Q3-T-01"
+                ]
+              ],
+              "matching_minimum": 1
+            },
+            "B_plane": {
+              "minimum": 0,
+              "peak_time_s": null,
+              "peak_tasks": [],
+              "resource_chains": [],
+              "matching_minimum": 0
+            },
+            "C_plane": {
+              "minimum": 2,
+              "peak_time_s": "0.0",
+              "peak_tasks": [
+                "Q3-T-06",
+                "Q3-T-11"
+              ],
+              "resource_chains": [
+                [
+                  "Q3-T-11"
+                ],
+                [
+                  "Q3-T-06"
+                ]
+              ],
+              "matching_minimum": 2
+            },
+            "A_battery": {
+              "minimum": 1,
+              "peak_time_s": "0.0",
+              "peak_tasks": [
+                "Q3-T-01"
+              ],
+              "resource_chains": [
+                [
+                  "Q3-T-01"
+                ]
+              ],
+              "matching_minimum": 1
+            },
+            "B_battery": {
+              "minimum": 0,
+              "peak_time_s": null,
+              "peak_tasks": [],
+              "resource_chains": [],
+              "matching_minimum": 0
+            },
+            "C_battery": {
+              "minimum": 2,
+              "peak_time_s": "0.0",
+              "peak_tasks": [
+                "Q3-T-06",
+                "Q3-T-11"
+              ],
+              "resource_chains": [
+                [
+                  "Q3-T-11"
+                ],
+                [
+                  "Q3-T-06"
+                ]
+              ],
+              "matching_minimum": 2
+            },
+            "R_plane": {
+              "minimum": 0,
+              "peak_time_s": null,
+              "peak_tasks": [],
+              "resource_chains": [],
+              "matching_minimum": 0
+            },
+            "R_component": {
+              "minimum": 0,
+              "peak_time_s": null,
+              "peak_tasks": [],
+              "resource_chains": [],
+              "matching_minimum": 0
+            }
+          },
+          "1": {
+            "A_plane": {
+              "minimum": 4,
+              "peak_time_s": "1270.740465984831",
+              "peak_tasks": [
+                "Q3-T-02",
+                "Q3-T-03",
+                "Q3-T-09",
+                "Q3-T-22"
+              ],
+              "resource_chains": [
+                [
+                  "Q3-T-02",
+                  "Q3-T-13",
+                  "Q3-T-18"
+                ],
+                [
+                  "Q3-T-03",
+                  "Q3-T-15",
+                  "Q3-T-23"
+                ],
+                [
+                  "Q3-T-22",
+                  "Q3-T-17"
+                ],
+                [
+                  "Q3-T-09",
+                  "Q3-T-08"
+                ]
+              ],
+              "matching_minimum": 4
+            },
+            "B_plane": {
+              "minimum": 2,
+              "peak_time_s": "0.0",
+              "peak_tasks": [
+                "Q3-T-04",
+                "Q3-T-05"
+              ],
+              "resource_chains": [
+                [
+                  "Q3-T-04",
+                  "Q3-T-10",
+                  "Q3-T-20"
+                ],
+                [
+                  "Q3-T-05",
+                  "Q3-T-14",
+                  "Q3-T-21"
+                ]
+              ],
+              "matching_minimum": 2
+            },
+            "C_plane": {
+              "minimum": 2,
+              "peak_time_s": "3143.3775108359177",
+              "peak_tasks": [
+                "Q3-T-12",
+                "Q3-T-16"
+              ],
+              "resource_chains": [
+                [
+                  "Q3-T-12",
+                  "Q3-T-19"
+                ],
+                [
+                  "Q3-T-16"
+                ]
+              ],
+              "matching_minimum": 2
+            },
+            "A_battery": {
+              "minimum": 6,
+              "peak_time_s": "2121.355127214739",
+              "peak_tasks": [
+                "Q3-T-02",
+                "Q3-T-03",
+                "Q3-T-09",
+                "Q3-T-13",
+                "Q3-T-15",
+                "Q3-T-22"
+              ],
+              "resource_chains": [
+                [
+                  "Q3-T-02",
+                  "Q3-T-17"
+                ],
+                [
+                  "Q3-T-03",
+                  "Q3-T-18"
+                ],
+                [
+                  "Q3-T-22",
+                  "Q3-T-08"
+                ],
+                [
+                  "Q3-T-09"
+                ],
+                [
+                  "Q3-T-13",
+                  "Q3-T-23"
+                ],
+                [
+                  "Q3-T-15"
+                ]
+              ],
+              "matching_minimum": 6
+            },
+            "B_battery": {
+              "minimum": 4,
+              "peak_time_s": "1937.4556940070113",
+              "peak_tasks": [
+                "Q3-T-04",
+                "Q3-T-05",
+                "Q3-T-10",
+                "Q3-T-14"
+              ],
+              "resource_chains": [
+                [
+                  "Q3-T-04",
+                  "Q3-T-20"
+                ],
+                [
+                  "Q3-T-05",
+                  "Q3-T-21"
+                ],
+                [
+                  "Q3-T-10"
+                ],
+                [
+                  "Q3-T-14"
+                ]
+              ],
+              "matching_minimum": 4
+            },
+            "C_battery": {
+              "minimum": 3,
+              "peak_time_s": "3859.6293548036574",
+              "peak_tasks": [
+                "Q3-T-12",
+                "Q3-T-16",
+                "Q3-T-19"
+              ],
+              "resource_chains": [
+                [
+                  "Q3-T-12"
+                ],
+                [
+                  "Q3-T-16"
+                ],
+                [
+                  "Q3-T-19"
+                ]
+              ],
+              "matching_minimum": 3
+            },
+            "R_plane": {
+              "minimum": 2,
+              "peak_time_s": "331.87688133891515",
+              "peak_tasks": [
+                "Q3-R-02",
+                "Q3-R-03"
+              ],
+              "resource_chains": [
+                [
+                  "Q3-R-02",
+                  "Q3-R-01"
+                ],
+                [
+                  "Q3-R-03",
+                  "Q3-R-04"
+                ]
+              ],
+              "matching_minimum": 2
+            },
+            "R_component": {
+              "minimum": 3,
+              "peak_time_s": "2076.1588378383417",
+              "peak_tasks": [
+                "Q3-R-02",
+                "Q3-R-03",
+                "Q3-R-04"
+              ],
+              "resource_chains": [
+                [
+                  "Q3-R-02"
+                ],
+                [
+                  "Q3-R-03",
+                  "Q3-R-01"
+                ],
+                [
+                  "Q3-R-04"
+                ]
+              ],
+              "matching_minimum": 3
+            }
+          },
+          "2": {
+            "A_plane": {
+              "minimum": 0,
+              "peak_time_s": null,
+              "peak_tasks": [],
+              "resource_chains": [],
+              "matching_minimum": 0
+            },
+            "B_plane": {
+              "minimum": 0,
+              "peak_time_s": null,
+              "peak_tasks": [],
+              "resource_chains": [],
+              "matching_minimum": 0
+            },
+            "C_plane": {
+              "minimum": 1,
+              "peak_time_s": "1428.1691773291593",
+              "peak_tasks": [
+                "Q3-T-07"
+              ],
+              "resource_chains": [
+                [
+                  "Q3-T-07"
+                ]
+              ],
+              "matching_minimum": 1
+            },
+            "A_battery": {
+              "minimum": 0,
+              "peak_time_s": null,
+              "peak_tasks": [],
+              "resource_chains": [],
+              "matching_minimum": 0
+            },
+            "B_battery": {
+              "minimum": 0,
+              "peak_time_s": null,
+              "peak_tasks": [],
+              "resource_chains": [],
+              "matching_minimum": 0
+            },
+            "C_battery": {
+              "minimum": 1,
+              "peak_time_s": "1428.1691773291593",
+              "peak_tasks": [
+                "Q3-T-07"
+              ],
+              "resource_chains": [
+                [
+                  "Q3-T-07"
+                ]
+              ],
+              "matching_minimum": 1
+            },
+            "R_plane": {
+              "minimum": 0,
+              "peak_time_s": null,
+              "peak_tasks": [],
+              "resource_chains": [],
+              "matching_minimum": 0
+            },
+            "R_component": {
+              "minimum": 0,
+              "peak_time_s": null,
+              "peak_tasks": [],
+              "resource_chains": [],
+              "matching_minimum": 0
+            }
+          }
+        },
+        "pooling_loss_vector": [
+          1,
+          0,
+          3,
+          1,
+          0,
+          2,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "all_partitions": [
+    {
+      "groups": [
+        [
+          "S001",
+          "S002",
+          "S003",
+          "S004",
+          "S005",
+          "S007",
+          "S008",
+          "S009",
+          "S010",
+          "S011",
+          "S012",
+          "S013",
+          "S014",
+          "S015"
+        ],
+        [
+          "S006"
+        ]
+      ],
+      "need": {
+        "A_plane": 4,
+        "B_plane": 2,
+        "C_plane": 3,
+        "A_battery": 6,
+        "B_battery": 4,
+        "C_battery": 4,
+        "R_plane": 2,
+        "R_component": 3
+      },
+      "gap": {
+        "A_plane": 0,
+        "B_plane": 0,
+        "C_plane": 1,
+        "A_battery": 0,
+        "B_battery": 0,
+        "C_battery": 0,
+        "R_plane": 0,
+        "R_component": 0
+      },
+      "need_vector": [
+        4,
+        2,
+        3,
+        6,
+        4,
+        4,
+        2,
+        3
+      ],
+      "gap_vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "total_need": 28,
+      "total_gap": 1,
+      "workload_s": [
+        52064.68373660206,
+        1561.5538679616295
+      ],
+      "workload_cv": 0.9417615727779963,
+      "resource_certificates": {
+        "0": {
+          "A_plane": {
+            "minimum": 4,
+            "peak_time_s": "0.0",
+            "peak_tasks": [
+              "Q3-T-01",
+              "Q3-T-02",
+              "Q3-T-03",
+              "Q3-T-22"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-01",
+                "Q3-T-09",
+                "Q3-T-08"
+              ],
+              [
+                "Q3-T-02",
+                "Q3-T-13",
+                "Q3-T-18"
+              ],
+              [
+                "Q3-T-03",
+                "Q3-T-15",
+                "Q3-T-23"
+              ],
+              [
+                "Q3-T-22",
+                "Q3-T-17"
+              ]
+            ],
+            "matching_minimum": 4
+          },
+          "B_plane": {
+            "minimum": 2,
+            "peak_time_s": "0.0",
+            "peak_tasks": [
+              "Q3-T-04",
+              "Q3-T-05"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-04",
+                "Q3-T-10",
+                "Q3-T-20"
+              ],
+              [
+                "Q3-T-05",
+                "Q3-T-14",
+                "Q3-T-21"
+              ]
+            ],
+            "matching_minimum": 2
+          },
+          "C_plane": {
+            "minimum": 2,
+            "peak_time_s": "0.0",
+            "peak_tasks": [
+              "Q3-T-06",
+              "Q3-T-11"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-11",
+                "Q3-T-12",
+                "Q3-T-19"
+              ],
+              [
+                "Q3-T-06",
+                "Q3-T-16"
+              ]
+            ],
+            "matching_minimum": 2
+          },
+          "A_battery": {
+            "minimum": 6,
+            "peak_time_s": "1727.4241845407844",
+            "peak_tasks": [
+              "Q3-T-01",
+              "Q3-T-02",
+              "Q3-T-03",
+              "Q3-T-09",
+              "Q3-T-13",
+              "Q3-T-22"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-01",
+                "Q3-T-15"
+              ],
+              [
+                "Q3-T-02",
+                "Q3-T-17"
+              ],
+              [
+                "Q3-T-03",
+                "Q3-T-18"
+              ],
+              [
+                "Q3-T-22",
+                "Q3-T-08"
+              ],
+              [
+                "Q3-T-09"
+              ],
+              [
+                "Q3-T-13",
+                "Q3-T-23"
+              ]
+            ],
+            "matching_minimum": 6
+          },
+          "B_battery": {
+            "minimum": 4,
+            "peak_time_s": "1937.4556940070113",
+            "peak_tasks": [
+              "Q3-T-04",
+              "Q3-T-05",
+              "Q3-T-10",
+              "Q3-T-14"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-04",
+                "Q3-T-20"
+              ],
+              [
+                "Q3-T-05",
+                "Q3-T-21"
+              ],
+              [
+                "Q3-T-10"
+              ],
+              [
+                "Q3-T-14"
+              ]
+            ],
+            "matching_minimum": 4
+          },
+          "C_battery": {
+            "minimum": 3,
+            "peak_time_s": "1685.8168699884434",
+            "peak_tasks": [
+              "Q3-T-06",
+              "Q3-T-11",
+              "Q3-T-12"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-11",
+                "Q3-T-16"
+              ],
+              [
+                "Q3-T-06",
+                "Q3-T-19"
+              ],
+              [
+                "Q3-T-12"
+              ]
+            ],
+            "matching_minimum": 3
+          },
+          "R_plane": {
+            "minimum": 2,
+            "peak_time_s": "331.87688133891515",
+            "peak_tasks": [
+              "Q3-R-02",
+              "Q3-R-03"
+            ],
+            "resource_chains": [
+              [
+                "Q3-R-02",
+                "Q3-R-01"
+              ],
+              [
+                "Q3-R-03",
+                "Q3-R-04"
+              ]
+            ],
+            "matching_minimum": 2
+          },
+          "R_component": {
+            "minimum": 3,
+            "peak_time_s": "2076.1588378383417",
+            "peak_tasks": [
+              "Q3-R-02",
+              "Q3-R-03",
+              "Q3-R-04"
+            ],
+            "resource_chains": [
+              [
+                "Q3-R-02"
+              ],
+              [
+                "Q3-R-03",
+                "Q3-R-01"
+              ],
+              [
+                "Q3-R-04"
+              ]
+            ],
+            "matching_minimum": 3
+          }
+        },
+        "1": {
+          "A_plane": {
+            "minimum": 0,
+            "peak_time_s": null,
+            "peak_tasks": [],
+            "resource_chains": [],
+            "matching_minimum": 0
+          },
+          "B_plane": {
+            "minimum": 0,
+            "peak_time_s": null,
+            "peak_tasks": [],
+            "resource_chains": [],
+            "matching_minimum": 0
+          },
+          "C_plane": {
+            "minimum": 1,
+            "peak_time_s": "1428.1691773291593",
+            "peak_tasks": [
+              "Q3-T-07"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-07"
+              ]
+            ],
+            "matching_minimum": 1
+          },
+          "A_battery": {
+            "minimum": 0,
+            "peak_time_s": null,
+            "peak_tasks": [],
+            "resource_chains": [],
+            "matching_minimum": 0
+          },
+          "B_battery": {
+            "minimum": 0,
+            "peak_time_s": null,
+            "peak_tasks": [],
+            "resource_chains": [],
+            "matching_minimum": 0
+          },
+          "C_battery": {
+            "minimum": 1,
+            "peak_time_s": "1428.1691773291593",
+            "peak_tasks": [
+              "Q3-T-07"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-07"
+              ]
+            ],
+            "matching_minimum": 1
+          },
+          "R_plane": {
+            "minimum": 0,
+            "peak_time_s": null,
+            "peak_tasks": [],
+            "resource_chains": [],
+            "matching_minimum": 0
+          },
+          "R_component": {
+            "minimum": 0,
+            "peak_time_s": null,
+            "peak_tasks": [],
+            "resource_chains": [],
+            "matching_minimum": 0
+          }
+        }
+      },
+      "pooling_loss_vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "groups": [
+        [
+          "S001",
+          "S006"
+        ],
+        [
+          "S002",
+          "S003",
+          "S004",
+          "S005",
+          "S007",
+          "S008",
+          "S009",
+          "S010",
+          "S011",
+          "S012",
+          "S013",
+          "S014",
+          "S015"
+        ]
+      ],
+      "need": {
+        "A_plane": 5,
+        "B_plane": 2,
+        "C_plane": 4,
+        "A_battery": 7,
+        "B_battery": 4,
+        "C_battery": 6,
+        "R_plane": 2,
+        "R_component": 3
+      },
+      "gap": {
+        "A_plane": 1,
+        "B_plane": 0,
+        "C_plane": 2,
+        "A_battery": 1,
+        "B_battery": 0,
+        "C_battery": 2,
+        "R_plane": 0,
+        "R_component": 0
+      },
+      "need_vector": [
+        5,
+        2,
+        4,
+        7,
+        4,
+        6,
+        2,
+        3
+      ],
+      "gap_vector": [
+        1,
+        0,
+        2,
+        1,
+        0,
+        2,
+        0,
+        0
+      ],
+      "total_need": 33,
+      "total_gap": 6,
+      "workload_s": [
+        5866.79152469725,
+        47759.44607986644
+      ],
+      "workload_cv": 0.7811969742140562,
+      "resource_certificates": {
+        "0": {
+          "A_plane": {
+            "minimum": 1,
+            "peak_time_s": "0.0",
+            "peak_tasks": [
+              "Q3-T-01"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-01"
+              ]
+            ],
+            "matching_minimum": 1
+          },
+          "B_plane": {
+            "minimum": 0,
+            "peak_time_s": null,
+            "peak_tasks": [],
+            "resource_chains": [],
+            "matching_minimum": 0
+          },
+          "C_plane": {
+            "minimum": 2,
+            "peak_time_s": "0.0",
+            "peak_tasks": [
+              "Q3-T-06",
+              "Q3-T-11"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-11",
+                "Q3-T-07"
+              ],
+              [
+                "Q3-T-06"
+              ]
+            ],
+            "matching_minimum": 2
+          },
+          "A_battery": {
+            "minimum": 1,
+            "peak_time_s": "0.0",
+            "peak_tasks": [
+              "Q3-T-01"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-01"
+              ]
+            ],
+            "matching_minimum": 1
+          },
+          "B_battery": {
+            "minimum": 0,
+            "peak_time_s": null,
+            "peak_tasks": [],
+            "resource_chains": [],
+            "matching_minimum": 0
+          },
+          "C_battery": {
+            "minimum": 3,
+            "peak_time_s": "1428.1691773291593",
+            "peak_tasks": [
+              "Q3-T-06",
+              "Q3-T-07",
+              "Q3-T-11"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-11"
+              ],
+              [
+                "Q3-T-06"
+              ],
+              [
+                "Q3-T-07"
+              ]
+            ],
+            "matching_minimum": 3
+          },
+          "R_plane": {
+            "minimum": 0,
+            "peak_time_s": null,
+            "peak_tasks": [],
+            "resource_chains": [],
+            "matching_minimum": 0
+          },
+          "R_component": {
+            "minimum": 0,
+            "peak_time_s": null,
+            "peak_tasks": [],
+            "resource_chains": [],
+            "matching_minimum": 0
+          }
+        },
+        "1": {
+          "A_plane": {
+            "minimum": 4,
+            "peak_time_s": "1270.740465984831",
+            "peak_tasks": [
+              "Q3-T-02",
+              "Q3-T-03",
+              "Q3-T-09",
+              "Q3-T-22"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-02",
+                "Q3-T-13",
+                "Q3-T-18"
+              ],
+              [
+                "Q3-T-03",
+                "Q3-T-15",
+                "Q3-T-23"
+              ],
+              [
+                "Q3-T-22",
+                "Q3-T-17"
+              ],
+              [
+                "Q3-T-09",
+                "Q3-T-08"
+              ]
+            ],
+            "matching_minimum": 4
+          },
+          "B_plane": {
+            "minimum": 2,
+            "peak_time_s": "0.0",
+            "peak_tasks": [
+              "Q3-T-04",
+              "Q3-T-05"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-04",
+                "Q3-T-10",
+                "Q3-T-20"
+              ],
+              [
+                "Q3-T-05",
+                "Q3-T-14",
+                "Q3-T-21"
+              ]
+            ],
+            "matching_minimum": 2
+          },
+          "C_plane": {
+            "minimum": 2,
+            "peak_time_s": "3143.3775108359177",
+            "peak_tasks": [
+              "Q3-T-12",
+              "Q3-T-16"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-12",
+                "Q3-T-19"
+              ],
+              [
+                "Q3-T-16"
+              ]
+            ],
+            "matching_minimum": 2
+          },
+          "A_battery": {
+            "minimum": 6,
+            "peak_time_s": "2121.355127214739",
+            "peak_tasks": [
+              "Q3-T-02",
+              "Q3-T-03",
+              "Q3-T-09",
+              "Q3-T-13",
+              "Q3-T-15",
+              "Q3-T-22"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-02",
+                "Q3-T-17"
+              ],
+              [
+                "Q3-T-03",
+                "Q3-T-18"
+              ],
+              [
+                "Q3-T-22",
+                "Q3-T-08"
+              ],
+              [
+                "Q3-T-09"
+              ],
+              [
+                "Q3-T-13",
+                "Q3-T-23"
+              ],
+              [
+                "Q3-T-15"
+              ]
+            ],
+            "matching_minimum": 6
+          },
+          "B_battery": {
+            "minimum": 4,
+            "peak_time_s": "1937.4556940070113",
+            "peak_tasks": [
+              "Q3-T-04",
+              "Q3-T-05",
+              "Q3-T-10",
+              "Q3-T-14"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-04",
+                "Q3-T-20"
+              ],
+              [
+                "Q3-T-05",
+                "Q3-T-21"
+              ],
+              [
+                "Q3-T-10"
+              ],
+              [
+                "Q3-T-14"
+              ]
+            ],
+            "matching_minimum": 4
+          },
+          "C_battery": {
+            "minimum": 3,
+            "peak_time_s": "3859.6293548036574",
+            "peak_tasks": [
+              "Q3-T-12",
+              "Q3-T-16",
+              "Q3-T-19"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-12"
+              ],
+              [
+                "Q3-T-16"
+              ],
+              [
+                "Q3-T-19"
+              ]
+            ],
+            "matching_minimum": 3
+          },
+          "R_plane": {
+            "minimum": 2,
+            "peak_time_s": "331.87688133891515",
+            "peak_tasks": [
+              "Q3-R-02",
+              "Q3-R-03"
+            ],
+            "resource_chains": [
+              [
+                "Q3-R-02",
+                "Q3-R-01"
+              ],
+              [
+                "Q3-R-03",
+                "Q3-R-04"
+              ]
+            ],
+            "matching_minimum": 2
+          },
+          "R_component": {
+            "minimum": 3,
+            "peak_time_s": "2076.1588378383417",
+            "peak_tasks": [
+              "Q3-R-02",
+              "Q3-R-03",
+              "Q3-R-04"
+            ],
+            "resource_chains": [
+              [
+                "Q3-R-02"
+              ],
+              [
+                "Q3-R-03",
+                "Q3-R-01"
+              ],
+              [
+                "Q3-R-04"
+              ]
+            ],
+            "matching_minimum": 3
+          }
+        }
+      },
+      "pooling_loss_vector": [
+        1,
+        0,
+        2,
+        1,
+        0,
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "groups": [
+        [
+          "S001"
+        ],
+        [
+          "S002",
+          "S003",
+          "S004",
+          "S005",
+          "S007",
+          "S008",
+          "S009",
+          "S010",
+          "S011",
+          "S012",
+          "S013",
+          "S014",
+          "S015",
+          "S006"
+        ]
+      ],
+      "need": {
+        "A_plane": 5,
+        "B_plane": 2,
+        "C_plane": 4,
+        "A_battery": 7,
+        "B_battery": 4,
+        "C_battery": 6,
+        "R_plane": 2,
+        "R_component": 3
+      },
+      "gap": {
+        "A_plane": 1,
+        "B_plane": 0,
+        "C_plane": 2,
+        "A_battery": 1,
+        "B_battery": 0,
+        "C_battery": 2,
+        "R_plane": 0,
+        "R_component": 0
+      },
+      "need_vector": [
+        5,
+        2,
+        4,
+        7,
+        4,
+        6,
+        2,
+        3
+      ],
+      "gap_vector": [
+        1,
+        0,
+        2,
+        1,
+        0,
+        2,
+        0,
+        0
+      ],
+      "total_need": 33,
+      "total_gap": 6,
+      "workload_s": [
+        4305.2376567356205,
+        49320.999947828066
+      ],
+      "workload_cv": 0.8394354014360599,
+      "resource_certificates": {
+        "0": {
+          "A_plane": {
+            "minimum": 1,
+            "peak_time_s": "0.0",
+            "peak_tasks": [
+              "Q3-T-01"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-01"
+              ]
+            ],
+            "matching_minimum": 1
+          },
+          "B_plane": {
+            "minimum": 0,
+            "peak_time_s": null,
+            "peak_tasks": [],
+            "resource_chains": [],
+            "matching_minimum": 0
+          },
+          "C_plane": {
+            "minimum": 2,
+            "peak_time_s": "0.0",
+            "peak_tasks": [
+              "Q3-T-06",
+              "Q3-T-11"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-11"
+              ],
+              [
+                "Q3-T-06"
+              ]
+            ],
+            "matching_minimum": 2
+          },
+          "A_battery": {
+            "minimum": 1,
+            "peak_time_s": "0.0",
+            "peak_tasks": [
+              "Q3-T-01"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-01"
+              ]
+            ],
+            "matching_minimum": 1
+          },
+          "B_battery": {
+            "minimum": 0,
+            "peak_time_s": null,
+            "peak_tasks": [],
+            "resource_chains": [],
+            "matching_minimum": 0
+          },
+          "C_battery": {
+            "minimum": 2,
+            "peak_time_s": "0.0",
+            "peak_tasks": [
+              "Q3-T-06",
+              "Q3-T-11"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-11"
+              ],
+              [
+                "Q3-T-06"
+              ]
+            ],
+            "matching_minimum": 2
+          },
+          "R_plane": {
+            "minimum": 0,
+            "peak_time_s": null,
+            "peak_tasks": [],
+            "resource_chains": [],
+            "matching_minimum": 0
+          },
+          "R_component": {
+            "minimum": 0,
+            "peak_time_s": null,
+            "peak_tasks": [],
+            "resource_chains": [],
+            "matching_minimum": 0
+          }
+        },
+        "1": {
+          "A_plane": {
+            "minimum": 4,
+            "peak_time_s": "1270.740465984831",
+            "peak_tasks": [
+              "Q3-T-02",
+              "Q3-T-03",
+              "Q3-T-09",
+              "Q3-T-22"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-02",
+                "Q3-T-13",
+                "Q3-T-18"
+              ],
+              [
+                "Q3-T-03",
+                "Q3-T-15",
+                "Q3-T-23"
+              ],
+              [
+                "Q3-T-22",
+                "Q3-T-17"
+              ],
+              [
+                "Q3-T-09",
+                "Q3-T-08"
+              ]
+            ],
+            "matching_minimum": 4
+          },
+          "B_plane": {
+            "minimum": 2,
+            "peak_time_s": "0.0",
+            "peak_tasks": [
+              "Q3-T-04",
+              "Q3-T-05"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-04",
+                "Q3-T-10",
+                "Q3-T-20"
+              ],
+              [
+                "Q3-T-05",
+                "Q3-T-14",
+                "Q3-T-21"
+              ]
+            ],
+            "matching_minimum": 2
+          },
+          "C_plane": {
+            "minimum": 2,
+            "peak_time_s": "1685.8168699884434",
+            "peak_tasks": [
+              "Q3-T-07",
+              "Q3-T-12"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-07",
+                "Q3-T-16"
+              ],
+              [
+                "Q3-T-12",
+                "Q3-T-19"
+              ]
+            ],
+            "matching_minimum": 2
+          },
+          "A_battery": {
+            "minimum": 6,
+            "peak_time_s": "2121.355127214739",
+            "peak_tasks": [
+              "Q3-T-02",
+              "Q3-T-03",
+              "Q3-T-09",
+              "Q3-T-13",
+              "Q3-T-15",
+              "Q3-T-22"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-02",
+                "Q3-T-17"
+              ],
+              [
+                "Q3-T-03",
+                "Q3-T-18"
+              ],
+              [
+                "Q3-T-22",
+                "Q3-T-08"
+              ],
+              [
+                "Q3-T-09"
+              ],
+              [
+                "Q3-T-13",
+                "Q3-T-23"
+              ],
+              [
+                "Q3-T-15"
+              ]
+            ],
+            "matching_minimum": 6
+          },
+          "B_battery": {
+            "minimum": 4,
+            "peak_time_s": "1937.4556940070113",
+            "peak_tasks": [
+              "Q3-T-04",
+              "Q3-T-05",
+              "Q3-T-10",
+              "Q3-T-14"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-04",
+                "Q3-T-20"
+              ],
+              [
+                "Q3-T-05",
+                "Q3-T-21"
+              ],
+              [
+                "Q3-T-10"
+              ],
+              [
+                "Q3-T-14"
+              ]
+            ],
+            "matching_minimum": 4
+          },
+          "C_battery": {
+            "minimum": 4,
+            "peak_time_s": "3859.6293548036574",
+            "peak_tasks": [
+              "Q3-T-07",
+              "Q3-T-12",
+              "Q3-T-16",
+              "Q3-T-19"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-07"
+              ],
+              [
+                "Q3-T-12"
+              ],
+              [
+                "Q3-T-16"
+              ],
+              [
+                "Q3-T-19"
+              ]
+            ],
+            "matching_minimum": 4
+          },
+          "R_plane": {
+            "minimum": 2,
+            "peak_time_s": "331.87688133891515",
+            "peak_tasks": [
+              "Q3-R-02",
+              "Q3-R-03"
+            ],
+            "resource_chains": [
+              [
+                "Q3-R-02",
+                "Q3-R-01"
+              ],
+              [
+                "Q3-R-03",
+                "Q3-R-04"
+              ]
+            ],
+            "matching_minimum": 2
+          },
+          "R_component": {
+            "minimum": 3,
+            "peak_time_s": "2076.1588378383417",
+            "peak_tasks": [
+              "Q3-R-02",
+              "Q3-R-03",
+              "Q3-R-04"
+            ],
+            "resource_chains": [
+              [
+                "Q3-R-02"
+              ],
+              [
+                "Q3-R-03",
+                "Q3-R-01"
+              ],
+              [
+                "Q3-R-04"
+              ]
+            ],
+            "matching_minimum": 3
+          }
+        }
+      },
+      "pooling_loss_vector": [
+        1,
+        0,
+        2,
+        1,
+        0,
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "groups": [
+        [
+          "S001"
+        ],
+        [
+          "S002",
+          "S003",
+          "S004",
+          "S005",
+          "S007",
+          "S008",
+          "S009",
+          "S010",
+          "S011",
+          "S012",
+          "S013",
+          "S014",
+          "S015"
+        ],
+        [
+          "S006"
+        ]
+      ],
+      "need": {
+        "A_plane": 5,
+        "B_plane": 2,
+        "C_plane": 5,
+        "A_battery": 7,
+        "B_battery": 4,
+        "C_battery": 6,
+        "R_plane": 2,
+        "R_component": 3
+      },
+      "gap": {
+        "A_plane": 1,
+        "B_plane": 0,
+        "C_plane": 3,
+        "A_battery": 1,
+        "B_battery": 0,
+        "C_battery": 2,
+        "R_plane": 0,
+        "R_component": 0
+      },
+      "need_vector": [
+        5,
+        2,
+        5,
+        7,
+        4,
+        6,
+        2,
+        3
+      ],
+      "gap_vector": [
+        1,
+        0,
+        3,
+        1,
+        0,
+        2,
+        0,
+        0
+      ],
+      "total_need": 34,
+      "total_gap": 7,
+      "workload_s": [
+        4305.2376567356205,
+        47759.44607986644,
+        1561.5538679616295
+      ],
+      "workload_cv": 1.1837975013700406,
+      "resource_certificates": {
+        "0": {
+          "A_plane": {
+            "minimum": 1,
+            "peak_time_s": "0.0",
+            "peak_tasks": [
+              "Q3-T-01"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-01"
+              ]
+            ],
+            "matching_minimum": 1
+          },
+          "B_plane": {
+            "minimum": 0,
+            "peak_time_s": null,
+            "peak_tasks": [],
+            "resource_chains": [],
+            "matching_minimum": 0
+          },
+          "C_plane": {
+            "minimum": 2,
+            "peak_time_s": "0.0",
+            "peak_tasks": [
+              "Q3-T-06",
+              "Q3-T-11"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-11"
+              ],
+              [
+                "Q3-T-06"
+              ]
+            ],
+            "matching_minimum": 2
+          },
+          "A_battery": {
+            "minimum": 1,
+            "peak_time_s": "0.0",
+            "peak_tasks": [
+              "Q3-T-01"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-01"
+              ]
+            ],
+            "matching_minimum": 1
+          },
+          "B_battery": {
+            "minimum": 0,
+            "peak_time_s": null,
+            "peak_tasks": [],
+            "resource_chains": [],
+            "matching_minimum": 0
+          },
+          "C_battery": {
+            "minimum": 2,
+            "peak_time_s": "0.0",
+            "peak_tasks": [
+              "Q3-T-06",
+              "Q3-T-11"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-11"
+              ],
+              [
+                "Q3-T-06"
+              ]
+            ],
+            "matching_minimum": 2
+          },
+          "R_plane": {
+            "minimum": 0,
+            "peak_time_s": null,
+            "peak_tasks": [],
+            "resource_chains": [],
+            "matching_minimum": 0
+          },
+          "R_component": {
+            "minimum": 0,
+            "peak_time_s": null,
+            "peak_tasks": [],
+            "resource_chains": [],
+            "matching_minimum": 0
+          }
+        },
+        "1": {
+          "A_plane": {
+            "minimum": 4,
+            "peak_time_s": "1270.740465984831",
+            "peak_tasks": [
+              "Q3-T-02",
+              "Q3-T-03",
+              "Q3-T-09",
+              "Q3-T-22"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-02",
+                "Q3-T-13",
+                "Q3-T-18"
+              ],
+              [
+                "Q3-T-03",
+                "Q3-T-15",
+                "Q3-T-23"
+              ],
+              [
+                "Q3-T-22",
+                "Q3-T-17"
+              ],
+              [
+                "Q3-T-09",
+                "Q3-T-08"
+              ]
+            ],
+            "matching_minimum": 4
+          },
+          "B_plane": {
+            "minimum": 2,
+            "peak_time_s": "0.0",
+            "peak_tasks": [
+              "Q3-T-04",
+              "Q3-T-05"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-04",
+                "Q3-T-10",
+                "Q3-T-20"
+              ],
+              [
+                "Q3-T-05",
+                "Q3-T-14",
+                "Q3-T-21"
+              ]
+            ],
+            "matching_minimum": 2
+          },
+          "C_plane": {
+            "minimum": 2,
+            "peak_time_s": "3143.3775108359177",
+            "peak_tasks": [
+              "Q3-T-12",
+              "Q3-T-16"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-12",
+                "Q3-T-19"
+              ],
+              [
+                "Q3-T-16"
+              ]
+            ],
+            "matching_minimum": 2
+          },
+          "A_battery": {
+            "minimum": 6,
+            "peak_time_s": "2121.355127214739",
+            "peak_tasks": [
+              "Q3-T-02",
+              "Q3-T-03",
+              "Q3-T-09",
+              "Q3-T-13",
+              "Q3-T-15",
+              "Q3-T-22"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-02",
+                "Q3-T-17"
+              ],
+              [
+                "Q3-T-03",
+                "Q3-T-18"
+              ],
+              [
+                "Q3-T-22",
+                "Q3-T-08"
+              ],
+              [
+                "Q3-T-09"
+              ],
+              [
+                "Q3-T-13",
+                "Q3-T-23"
+              ],
+              [
+                "Q3-T-15"
+              ]
+            ],
+            "matching_minimum": 6
+          },
+          "B_battery": {
+            "minimum": 4,
+            "peak_time_s": "1937.4556940070113",
+            "peak_tasks": [
+              "Q3-T-04",
+              "Q3-T-05",
+              "Q3-T-10",
+              "Q3-T-14"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-04",
+                "Q3-T-20"
+              ],
+              [
+                "Q3-T-05",
+                "Q3-T-21"
+              ],
+              [
+                "Q3-T-10"
+              ],
+              [
+                "Q3-T-14"
+              ]
+            ],
+            "matching_minimum": 4
+          },
+          "C_battery": {
+            "minimum": 3,
+            "peak_time_s": "3859.6293548036574",
+            "peak_tasks": [
+              "Q3-T-12",
+              "Q3-T-16",
+              "Q3-T-19"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-12"
+              ],
+              [
+                "Q3-T-16"
+              ],
+              [
+                "Q3-T-19"
+              ]
+            ],
+            "matching_minimum": 3
+          },
+          "R_plane": {
+            "minimum": 2,
+            "peak_time_s": "331.87688133891515",
+            "peak_tasks": [
+              "Q3-R-02",
+              "Q3-R-03"
+            ],
+            "resource_chains": [
+              [
+                "Q3-R-02",
+                "Q3-R-01"
+              ],
+              [
+                "Q3-R-03",
+                "Q3-R-04"
+              ]
+            ],
+            "matching_minimum": 2
+          },
+          "R_component": {
+            "minimum": 3,
+            "peak_time_s": "2076.1588378383417",
+            "peak_tasks": [
+              "Q3-R-02",
+              "Q3-R-03",
+              "Q3-R-04"
+            ],
+            "resource_chains": [
+              [
+                "Q3-R-02"
+              ],
+              [
+                "Q3-R-03",
+                "Q3-R-01"
+              ],
+              [
+                "Q3-R-04"
+              ]
+            ],
+            "matching_minimum": 3
+          }
+        },
+        "2": {
+          "A_plane": {
+            "minimum": 0,
+            "peak_time_s": null,
+            "peak_tasks": [],
+            "resource_chains": [],
+            "matching_minimum": 0
+          },
+          "B_plane": {
+            "minimum": 0,
+            "peak_time_s": null,
+            "peak_tasks": [],
+            "resource_chains": [],
+            "matching_minimum": 0
+          },
+          "C_plane": {
+            "minimum": 1,
+            "peak_time_s": "1428.1691773291593",
+            "peak_tasks": [
+              "Q3-T-07"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-07"
+              ]
+            ],
+            "matching_minimum": 1
+          },
+          "A_battery": {
+            "minimum": 0,
+            "peak_time_s": null,
+            "peak_tasks": [],
+            "resource_chains": [],
+            "matching_minimum": 0
+          },
+          "B_battery": {
+            "minimum": 0,
+            "peak_time_s": null,
+            "peak_tasks": [],
+            "resource_chains": [],
+            "matching_minimum": 0
+          },
+          "C_battery": {
+            "minimum": 1,
+            "peak_time_s": "1428.1691773291593",
+            "peak_tasks": [
+              "Q3-T-07"
+            ],
+            "resource_chains": [
+              [
+                "Q3-T-07"
+              ]
+            ],
+            "matching_minimum": 1
+          },
+          "R_plane": {
+            "minimum": 0,
+            "peak_time_s": null,
+            "peak_tasks": [],
+            "resource_chains": [],
+            "matching_minimum": 0
+          },
+          "R_component": {
+            "minimum": 0,
+            "peak_time_s": null,
+            "peak_tasks": [],
+            "resource_chains": [],
+            "matching_minimum": 0
+          }
+        }
+      },
+      "pooling_loss_vector": [
+        1,
+        0,
+        3,
+        1,
+        0,
+        2,
+        0,
+        0
+      ]
+    }
+  ],
+  "interval_profiles_crosschecked": 80,
+  "official_q4_modified": false
+}

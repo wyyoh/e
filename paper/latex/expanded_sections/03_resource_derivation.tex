@@ -1,0 +1,26 @@
+\subsubsection{充电恢复对能源偏差的响应}
+令放电比例$e=E_r/E_m$，两阶段恢复函数可等价改写为
+\begin{equation}
+ c(e)=\tau^{\mathrm{full}}
+ \begin{cases}
+ 3.5e,&0\le e\le0.1,\\
+ \dfrac{13}{18}e+\dfrac5{18},&0.1<e\le1.
+ \end{cases}
+\label{eq:charge_energy_fraction}
+\end{equation}
+两段在$e=0.1$均等于$0.35\tau^{\mathrm{full}}$，恢复时间随耗电单调增加。慢充末段每单位充电量需要更多时间，因而恢复时长不宜用“耗电比例乘完全充电时间”代替。
+
+若统一能耗偏差为$\varepsilon$，且扰动前后处于相同充电分段，则
+\begin{equation}
+ \Delta c_r=\tau_m^{\mathrm{full}}\kappa_r\frac{E_r}{E_m}\varepsilon,
+ \qquad \kappa_r\in\{3.5,13/18\}.
+\label{eq:charge_local_perturbation}
+\end{equation}
+能源偏差由此转化为可用时刻偏差。即使返航SOC仍满足下限，只要前后任务之间没有足够的电池接续余量，原日程也可能需要修复。这正是第五章分别检查能量与时间接续的原因。
+
+\subsubsection{完整单点任务的计算链示例}
+S006的C型任务携带6箱、59 kg、0.156 m$^3$。准备与装载共$300+6\times30=480$ s，交接共$180+6\times36=396$ s。从完整任务1561.553868 s中扣除两项，往返飞行为685.553868 s，三部分之和返回原任务时长。
+
+其能耗2.597987865 kWh，返航SOC为67.525152\%。根据式\eqref{eq:charge_energy_fraction}，在完全充电时间3000 s下，恢复时长为1536.955047 s。任务若在$s$开始，飞机于$s+1561.553868$释放，电池约于$s+3098.508915$恢复。这个单任务算例连接了箱组、飞行、交付、能源和资源释放，也为后续敏感性重放提供统一计算顺序。
+
+资源调度研究把容量、占用和先后关系作为可扩展的结构要素\cite{hartmann2022}。本题将飞机和电池建为可分离资源池，允许返航飞机使用另一组已满电的兼容电池；因此增配电池能缓解恢复等待，但不能突破飞机总工作量下界。后续用日程和瓶颈分析分别识别这两类限制。

@@ -1,0 +1,32 @@
+\subsubsection{链路距离门限与地形状态}
+总损耗约束可以在地形状态固定时改写成距离门限。给定遮挡状态$\zeta\in\{0,1\}$和额外损耗$\Delta$，由式\eqref{eq:q3_loss}得
+\begin{equation}
+ d_{ab}^{max}(\zeta,\Delta)=1000\times10^{\{L_{ab}^{max}-32.45-20\log_{10}f-10\zeta-\Delta\}/20}.
+ \label{eq:q3_range_threshold}
+\end{equation}
+距离单位为m，频率仍用MHz。同一设备下，10 dB遮挡使允许距离变为无遮挡的$10^{-1/2}$，约31.62\%。因而轨迹即使只移动很小距离，只要跨过遮挡事件，也可能改变通信可行性。一个与地形无关的圆形覆盖圈不足以描述这种关系。
+
+固定遮挡状态时，附加0.25 dB使允许距离乘以$10^{-0.25/20}\approx0.9716$，约缩小2.84\%。这个变化可能移动关键服务区间端点，进而影响运输开始时刻。接入与回传又必须同时可用，所以把中继移近运输机改善一跳，并不保证另一跳同步改善。这些关系将空间位置、悬停高度和服务时间联系起来。
+
+\subsubsection{阶段轨迹与通信事件分割}
+在一段爬升、巡航或下降中，运输位置可写为$\boldsymbol x(\tau)=\boldsymbol x_0+\boldsymbol v\tau$。对固定通信端点$\boldsymbol p$，距离平方是
+\begin{equation}
+ d^2(\tau)=\|\boldsymbol v\|^2\tau^2+2\boldsymbol v^{\mathsf T}(\boldsymbol x_0-\boldsymbol p)\tau+\|\boldsymbol x_0-\boldsymbol p\|^2.
+ \label{eq:q3_distance_quadratic}
+\end{equation}
+在遮挡状态不变的区间内，将此式与相应门限平方联立，可以确定进入或离开距离可行域的时刻。交接阶段的位置固定，则退化为常数判定。
+
+地形遮挡部分沿传播线扫过的射线扇面求与闭合像元棱柱的接触事件，再与距离根、阶段端点和服务窗口端点合并排序。相邻事件间没有新状态变化，可用区间内部状态代表该开区间；每个端点另行检查，保留瞬时擦边事件。连续条件因此被转化为有限的区间与端点对象，而不是以稀疏采样近似宣称全过程连通。
+
+\begin{table}[htbp]\centering\small
+\caption{连续通信判定中需要保留的事件}\label{tab:comm_events}
+\begin{tabularx}{\linewidth}{p{2.8cm}LL}\toprule
+事件类型 & 来源 & 对计算的作用\\\midrule
+阶段切换 & 爬升、巡航、下降与交接转换 & 更新位置函数和速度\\
+地形接触 & 传播线开始或停止触及地形棱柱 & 更新遮挡损耗状态\\
+距离门限 & 端点间距达到允许值 & 更新距离可行状态\\
+服务窗口端点 & 中继建链完成或停止服务 & 更新在线提供方集合\\
+瞬时擦边 & 边、角点和孤立接触 & 对单独时刻核验闭边界条件\\\bottomrule
+\end{tabularx}\end{table}
+
+Saunders等对自主配送无人机技术的综述同时讨论航行、通信与任务执行需求\cite{saunders2024}。本题将这些关系集中到可计算的轨迹与服务接口：几何模块说明某链路何时可用，联合排程说明提供方何时真正上线，最终验证检查它们能否覆盖运输执行的全部必要时段。

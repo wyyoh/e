@@ -1,0 +1,54 @@
+{
+  "q2_types.json": {
+    "sha256": "8012ece24c3808ee6df961233ae12580c1aa2d7cc8363a6406210837a1e46048",
+    "source_path": "experiments/experiments/paper_robustness_20260926/q2_runtime/inputs/types.json"
+  },
+  "q2_nodes.json": {
+    "sha256": "ce9f10f71f726d49ec1dc2c490a19a5a9c834e78dca08023ec00c0878ebc841c",
+    "source_path": "experiments/experiments/paper_robustness_20260926/q2_runtime/inputs/nodes.json"
+  },
+  "q2_boxes.json": {
+    "sha256": "53e847d3131fc327bfc882c0ae3a01fb045db22ca35564a1685bc61117305e8c",
+    "source_path": "experiments/experiments/paper_robustness_20260926/q2_runtime/inputs/boxes.json"
+  },
+  "q2_legs.json": {
+    "sha256": "7a0ad55e04237fff7c2d474d3bd4a6d272f1ad93b59e96e27271ad12eb577842",
+    "source_path": "experiments/experiments/paper_robustness_20260926/q2_runtime/inputs/legs.json"
+  },
+  "q1_payload_reference.csv": {
+    "sha256": "24cf943fd7f8a3e10c1f159c50cdd0a09e91b31d91a4e38e9035d1a0b5d89db6",
+    "source_path": "experiments/experiments/paper_robustness_20260926/inputs/q1/fig4_1_payload_and_reduction.csv"
+  },
+  "q3_flights.json": {
+    "sha256": "49188b11ec555b69f6a396b80116633fa3f74d92086bad4b188b3c32246a3398",
+    "source_path": "runtime/q3/q3_bottleneck_v6/problems/D/q3/release_v6/time/plan/flights.json"
+  },
+  "q3_deliveries.json": {
+    "sha256": "2e2da713586c5691bd8dcdb4b4f71305a1952eae462137844b69b577d1651072",
+    "source_path": "runtime/q3/q3_bottleneck_v6/problems/D/q3/release_v6/time/plan/deliveries.json"
+  },
+  "q3_relays.json": {
+    "sha256": "f57ee6a759087fa258c78d32f7437092d85b84b43410c1321137068db6837220",
+    "source_path": "runtime/q3/q3_bottleneck_v6/problems/D/q3/release_v6/time/plan/relays.json"
+  },
+  "q4_enumeration.json": {
+    "sha256": "6b5f6dd01f6e1a58a6cf22b8279d52eecd1a5a3f8093db64311f878b49231a6b",
+    "source_path": "audit/checks/q4_fresh_time/summary.json"
+  },
+  "q2_baseline_v4.json": {
+    "sha256": "ee2b3b658dcf367d33c17c6d8a4b660be73b33a9feb0e0b2df1dcbf825fc6efc",
+    "source_path": "runtime/q2/q2_evidence_v7/upstream/primal/inputs/baseline_v4.json"
+  },
+  "q2_selected_v5.json": {
+    "sha256": "d1374395cfdcad1ce580c0932e7939d2935a9737f0a782e4e853e43e941b66ef",
+    "source_path": "runtime/q2/q2_evidence_v7/upstream/primal/inputs/selected_v5.json"
+  },
+  "q3_v5_baseline.json": {
+    "sha256": "669cd054dbede68da98713055946bcd72937c129d3a2602e24d8b2b13849eb75",
+    "source_path": "runtime/q3/q3_bottleneck_v6/problems/D/q3/release_v5/time_energy/selected.json"
+  },
+  "q3_v6_selected.json": {
+    "sha256": "ab58246d33b5948d0c4576246e07f09e27d3eef4acf7e072cb91bd5842e66d93",
+    "source_path": "runtime/q3/q3_bottleneck_v6/problems/D/q3/release_v6/time/selected.json"
+  }
+}

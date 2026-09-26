@@ -1,0 +1,12 @@
+{
+  "source_files_hash_checked": true,
+  "q1_nominal_combinations": 45,
+  "q1_nominal_max_abs_error_kg": 9.2228447101661e-12,
+  "q1_grid_rows": 1980,
+  "q3_tasks": 23,
+  "q3_unique_boxes": 80,
+  "q3_last_return_s": 5836.969929328251,
+  "q4_group_rows": 5,
+  "q4_sums_match": true,
+  "q4_resource_chains_matching_checked": true
+}

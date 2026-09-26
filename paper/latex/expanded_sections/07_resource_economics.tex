@@ -1,0 +1,21 @@
+\subsubsection{共享增量、库存缺口与剩余的分离}
+设共享峰值为$P_p$，独立配置为$D_p$，库存为$I_p$。共享损失$D_p-P_p$比较两种组织方式，缺口$(D_p-I_p)_+$比较需求与现有装备，两者基准不同。表\ref{tab:rev_q4_organization}把这两种比较放在一起：共享配置27件，两组28件，三组34件；相对共享，独立两组和三组分别增加3.70\%和25.93\%。
+\input{revision_tables/q4_organization.tex}
+
+对任意需求向量都存在恒等式
+\begin{equation}
+ \sum_p(D_p-I_p)=\sum_p(D_p-I_p)_+-\sum_p(I_p-D_p)_+=G_\Sigma-R_\Sigma.
+ \label{eq:q4_gap_balance}
+\end{equation}
+两组总需求28小于库存30，却仍有1架C型机缺口并剩3组中继组件；三组总量差为4，但指定类型的正缺口为7，同时仍剩3组组件。剩余不能跨类型抵消短缺，正是异构配置区别于总件数比较的原因。
+
+\subsubsection{补充一件资源的边际作用}
+固定分区后，增加类型$p$库存一件的缺口改善为
+\begin{equation}
+ G_\Sigma(I)-G_\Sigma(I+\boldsymbol e_p)=
+ \begin{cases}1,&D_p>I_p,\\0,&D_p\le I_p.\end{cases}
+ \label{eq:q4_marginal_stock}
+\end{equation}
+两组配置优先补1架C型运输机即可消除缺口，增加已有剩余的中继组件则无效；三组需分别补A型机、C型机、A型电池和C型电池。这给出了指定组织方式下的直接补充清单，而非一个不能落实到型号的“资源不足”结论。
+
+此处采用题目规定的件数目标，不额外赋予设备等价价格。若另有成本、运输重量或采购周期，可以在同一需求向量上形成有权重的补充决策。原始向量和资源链提供其数量基础，价格或可靠性权重则应来自新的实际输入。

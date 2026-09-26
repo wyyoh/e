@@ -1,0 +1,16 @@
+{
+  "input_commit": "e9e5ddea20a43f23661e7a39179e6b720efbc00f",
+  "checked_raw_files": 5,
+  "service_areas": 15,
+  "boxes": 80,
+  "mass_kg": 758,
+  "volume_m3": 2.011,
+  "font_family": "Noto Sans CJK JP",
+  "solver_rerun": false,
+  "figures": {
+    "fig1_1_decision_inheritance": "90cbc5081f7441c29c2cb028333b44f6fed03d8f3170233df091095bf40b0163",
+    "fig3_1_terrain_and_demand": "df66e3988142bf37d50a5d1dc99c11ce5dadf4f623ecabc76f4f09be0a669621",
+    "fig3_2_transport_physics": "dc0ea117efda6b6551c9705f50b21cc60b28ea86ea698076f32e8d415a61898e",
+    "figA1_dem_cells": "7996fa00e6040c19f163ed68f85473012e14604b9dd9d2527d27c72e715ac14a"
+  }
+}

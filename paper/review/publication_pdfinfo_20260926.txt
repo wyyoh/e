@@ -1,0 +1,18 @@
+Title:           山区洪涝救援中无人机运输—通信协同调度与独立资源配置
+Creator:         LaTeX with hyperref
+Producer:        xdvipdfmx (20240305)
+CreationDate:    Sat Sep 26 15:59:34 2026 UTC
+Custom Metadata: no
+Metadata Stream: no
+Tagged:          no
+UserProperties:  no
+Suspects:        no
+Form:            none
+JavaScript:      no
+Pages:           92
+Encrypted:       no
+Page size:       595.28 x 841.89 pts (A4)
+Page rot:        0
+File size:       1892980 bytes
+Optimized:       no
+PDF version:     1.5

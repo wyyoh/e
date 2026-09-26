@@ -1,0 +1,775 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand*\HyPL@Entry[1]{}
+\HyPL@Entry{0<</S/D>>}
+\providecommand \oddpage@label [2]{}
+\citation{dorling2017}
+\citation{murray2015fstsp}
+\@writefile{toc}{\contentsline {section}{\numberline {1}问题重述与分析}{6}{section.1}\protected@file@percent }
+\newlabel{sec:problem_analysis}{{1}{6}{问题重述与分析}{section.1}{}}
+\newlabel{sec:problem_analysis@cref}{{[section][1][]1}{[1][6][]6}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}救援场景与任务要求}{6}{subsection.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.1.1}运输需求、地形条件与装备资源}{6}{subsubsection.1.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.1.2}四个问题的决策范围与输出要求}{6}{subsubsection.1.1.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1.1}{\ignorespaces 四个问题的决策范围与主要输出}}{6}{table.caption.2}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tab:problem_scope}{{1.1}{6}{四个问题的决策范围与主要输出}{table.caption.2}{}}
+\newlabel{tab:problem_scope@cref}{{[table][1][1]1.1}{[1][6][]6}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}关键问题与建模思路}{7}{subsection.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.2.1}安全载荷与不可拆货箱组批}{7}{subsubsection.1.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.2.2}有限飞机和电池条件下的调度}{7}{subsubsection.1.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.2.3}运输全过程的通信保障}{7}{subsubsection.1.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.2.4}固定日程下的独立分组配置}{7}{subsubsection.1.2.4}\protected@file@percent }
+\citation{otto2018}
+\citation{macrina2020}
+\citation{murray2015fstsp}
+\citation{agatz2018}
+\citation{bhuiyan2026}
+\citation{altheeb2017relief}
+\citation{yucesoy2025}
+\citation{dorling2017}
+\citation{zhang2021energy}
+\citation{zhang2023corrigendum}
+\citation{liu2025battery}
+\citation{zeng2016uavcom}
+\citation{zeng2019sky}
+\citation{zhang2019cellular}
+\citation{zeng2019energy}
+\citation{hong2025}
+\citation{akpunar2025}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}相关研究与本题的建模切入点}{8}{subsection.1.3}\protected@file@percent }
+\newlabel{sec:research_position}{{1.3}{8}{相关研究与本题的建模切入点}{subsection.1.3}{}}
+\newlabel{sec:research_position@cref}{{[subsection][3][1]1.3}{[1][8][]8}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.3.1}无人机配送中的路线与资源协同}{8}{subsubsection.1.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.3.2}载荷能耗与电池恢复的联合决策}{8}{subsubsection.1.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.3.3}连续通信与中继服务窗口}{8}{subsubsection.1.3.3}\protected@file@percent }
+\citation{bertsimas2004}
+\citation{xin2025}
+\citation{dukkanci2026}
+\citation{li2025hurricane}
+\citation{zhang2026communication}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.3.4}名义性能、保障水平与执行恢复}{9}{subsubsection.1.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4}方法组织与实质输出}{9}{subsection.1.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1.2}{\ignorespaces 四个决策层次的方法与实质输出}}{9}{table.caption.3}\protected@file@percent }
+\newlabel{tab:contribution_map}{{1.2}{9}{四个决策层次的方法与实质输出}{table.caption.3}{}}
+\newlabel{tab:contribution_map@cref}{{[table][2][1]1.2}{[1][9][]9}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.5}总体技术路线与问题衔接}{10}{subsection.1.5}\protected@file@percent }
+\newlabel{sec:overall_route}{{1.5}{10}{总体技术路线与问题衔接}{subsection.1.5}{}}
+\newlabel{sec:overall_route@cref}{{[subsection][5][1]1.5}{[1][10][]10}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.1}{\ignorespaces 统一物理模型支撑的四问决策层次与数据继承关系；仅问题三到问题四冻结已选日程}}{10}{figure.caption.4}\protected@file@percent }
+\newlabel{fig:overall_framework}{{1.1}{10}{统一物理模型支撑的四问决策层次与数据继承关系；仅问题三到问题四冻结已选日程}{figure.caption.4}{}}
+\newlabel{fig:overall_framework@cref}{{[figure][1][1]1.1}{[1][10][]10}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}模型假设与符号说明}{11}{section.2}\protected@file@percent }
+\newlabel{sec:assumptions_symbols}{{2}{11}{模型假设与符号说明}{section.2}{}}
+\newlabel{sec:assumptions_symbols@cref}{{[section][2][]2}{[1][11][]11}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}基本假设}{11}{subsection.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}统一计算约定}{11}{subsection.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1}空间、时间与资源释放}{11}{subsubsection.2.2.1}\protected@file@percent }
+\gdef \LT@i {\LT@entry 
+    {1}{89.35826pt}\LT@entry 
+    {1}{310.6708pt}\LT@entry 
+    {1}{55.21504pt}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}通信条件、评价与数据继承}{12}{subsubsection.2.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}主要符号说明}{12}{subsection.2.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces 主要符号及计量单位}}{12}{table.2.1}\protected@file@percent }
+\newlabel{tab:main_symbols}{{2.1}{12}{主要符号及计量单位}{table.2.1}{}}
+\newlabel{tab:main_symbols@cref}{{[table][1][2]2.1}{[1][12][]12}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}数据处理与公共物理模型}{13}{section.3}\protected@file@percent }
+\newlabel{sec:foundation}{{3}{13}{数据处理与公共物理模型}{section.3}{}}
+\newlabel{sec:foundation@cref}{{[section][3][]3}{[1][13][]13}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}输入数据整理与一致性检查}{13}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1}节点、货箱与装备数据关联}{13}{subsubsection.3.1.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces 救援区域地形与不可拆物资需求。显示重投影不参与航段计算，点面积与需求质量成正比}}{14}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:scene}{{3.1}{14}{救援区域地形与不可拆物资需求。显示重投影不参与航段计算，点面积与需求质量成正比}{figure.caption.5}{}}
+\newlabel{fig:scene@cref}{{[figure][1][3]3.1}{[1][13][]14}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces 三类运输无人机主要物理参数}}{14}{table.caption.6}\protected@file@percent }
+\newlabel{tab:common_drone}{{3.1}{14}{三类运输无人机主要物理参数}{table.caption.6}{}}
+\newlabel{tab:common_drone@cref}{{[table][1][3]3.1}{[1][13][]14}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.2}需求结构与机型容量的对应}{14}{subsubsection.3.1.2}\protected@file@percent }
+\citation{snyder1987}
+\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces 逐箱需求的类型结构与容量规模}}{15}{table.caption.7}\protected@file@percent }
+\newlabel{tab:rev_cargo}{{3.2}{15}{逐箱需求的类型结构与容量规模}{table.caption.7}{}}
+\newlabel{tab:rev_cargo@cref}{{[table][2][3]3.2}{[1][14][]15}{}{}{}}
+\newlabel{eq:dimensionless_capacity}{{3.1}{15}{需求结构与机型容量的对应}{equation.3.1}{}}
+\newlabel{eq:dimensionless_capacity@cref}{{[equation][1][3]3.1}{[1][15][]15}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.3}地形数据及空间坐标转换}{15}{subsubsection.3.1.3}\protected@file@percent }
+\newlabel{eq:common_projection}{{3.2}{15}{地形数据及空间坐标转换}{equation.3.2}{}}
+\newlabel{eq:common_projection@cref}{{[equation][2][3]3.2}{[1][15][]15}{}{}{}}
+\newlabel{eq:common_planar_path}{{3.3}{15}{地形数据及空间坐标转换}{equation.3.3}{}}
+\newlabel{eq:common_planar_path@cref}{{[equation][3][3]3.3}{[1][15][]15}{}{}{}}
+\citation{karney2013}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}地形约束下的航段几何}{16}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1}航迹与地形像元的完整相交}{16}{subsubsection.3.2.1}\protected@file@percent }
+\newlabel{eq:common_half_pixel}{{3.4}{16}{航迹与地形像元的完整相交}{equation.3.4}{}}
+\newlabel{eq:common_half_pixel@cref}{{[equation][4][3]3.4}{[1][16][]16}{}{}{}}
+\newlabel{eq:common_raster_coordinates}{{3.5}{16}{航迹与地形像元的完整相交}{equation.3.5}{}}
+\newlabel{eq:common_raster_coordinates@cref}{{[equation][5][3]3.5}{[1][16][]16}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2}几何事件分割与计算缓存}{16}{subsubsection.3.2.2}\protected@file@percent }
+\newlabel{eq:geometry_breakpoints}{{3.6}{16}{几何事件分割与计算缓存}{equation.3.6}{}}
+\newlabel{eq:geometry_breakpoints@cref}{{[equation][6][3]3.6}{[1][16][]16}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3}巡航海拔、作业高度与飞行阶段}{17}{subsubsection.3.2.3}\protected@file@percent }
+\newlabel{eq:common_cruise_altitude}{{3.7}{17}{巡航海拔、作业高度与飞行阶段}{equation.3.7}{}}
+\newlabel{eq:common_cruise_altitude@cref}{{[equation][7][3]3.7}{[1][17][]17}{}{}{}}
+\newlabel{eq:common_work_height}{{3.8}{17}{巡航海拔、作业高度与飞行阶段}{equation.3.8}{}}
+\newlabel{eq:common_work_height@cref}{{[equation][8][3]3.8}{[1][17][]17}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}运输任务的载荷与时间计算}{17}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1}任务组成与逐站卸货}{17}{subsubsection.3.3.1}\protected@file@percent }
+\newlabel{eq:common_drop}{{3.9}{17}{任务组成与逐站卸货}{equation.3.9}{}}
+\newlabel{eq:common_drop@cref}{{[equation][9][3]3.9}{[1][17][]17}{}{}{}}
+\newlabel{eq:common_capacity}{{3.10}{17}{任务组成与逐站卸货}{equation.3.10}{}}
+\newlabel{eq:common_capacity@cref}{{[equation][10][3]3.10}{[1][17][]17}{}{}{}}
+\newlabel{eq:common_load}{{3.11}{17}{任务组成与逐站卸货}{equation.3.11}{}}
+\newlabel{eq:common_load@cref}{{[equation][11][3]3.11}{[1][17][]17}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2}交接完成时刻与返航时间}{17}{subsubsection.3.3.2}\protected@file@percent }
+\newlabel{eq:common_leg_time}{{3.12}{17}{交接完成时刻与返航时间}{equation.3.12}{}}
+\newlabel{eq:common_leg_time@cref}{{[equation][12][3]3.12}{[1][17][]17}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces 多点运输的航段几何、离站载荷、交接完成与能耗计算机制（示意）；距离轴与时间轴不同}}{18}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:common_leg_geometry}{{3.2}{18}{多点运输的航段几何、离站载荷、交接完成与能耗计算机制（示意）；距离轴与时间轴不同}{figure.caption.8}{}}
+\newlabel{fig:common_leg_geometry@cref}{{[figure][2][3]3.2}{[1][17][]18}{}{}{}}
+\newlabel{eq:common_delivery_recursion}{{3.13}{18}{交接完成时刻与返航时间}{equation.3.13}{}}
+\newlabel{eq:common_delivery_recursion@cref}{{[equation][13][3]3.13}{[1][17][]18}{}{}{}}
+\newlabel{eq:common_delivery_return}{{3.14}{18}{交接完成时刻与返航时间}{equation.3.14}{}}
+\newlabel{eq:common_delivery_return@cref}{{[equation][14][3]3.14}{[1][18][]18}{}{}{}}
+\citation{zhang2021energy}
+\citation{zhang2023corrigendum}
+\newlabel{eq:common_task_duration}{{3.15}{19}{交接完成时刻与返航时间}{equation.3.15}{}}
+\newlabel{eq:common_task_duration@cref}{{[equation][15][3]3.15}{[1][18][]19}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}能耗计算与返航安全约束}{19}{subsection.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1}载荷相关航程与分阶段能耗}{19}{subsubsection.3.4.1}\protected@file@percent }
+\newlabel{eq:common_range}{{3.16}{19}{载荷相关航程与分阶段能耗}{equation.3.16}{}}
+\newlabel{eq:common_range@cref}{{[equation][16][3]3.16}{[1][19][]19}{}{}{}}
+\newlabel{eq:common_energy_parts}{{3.17}{19}{载荷相关航程与分阶段能耗}{equation.3.17}{}}
+\newlabel{eq:common_energy_parts@cref}{{[equation][17][3]3.17}{[1][19][]19}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.2}任务总能耗与返航剩余电量}{19}{subsubsection.3.4.2}\protected@file@percent }
+\newlabel{eq:common_task_energy}{{3.18}{19}{任务总能耗与返航剩余电量}{equation.3.18}{}}
+\newlabel{eq:common_task_energy@cref}{{[equation][18][3]3.18}{[1][19][]19}{}{}{}}
+\newlabel{eq:common_reserve}{{3.19}{19}{任务总能耗与返航剩余电量}{equation.3.19}{}}
+\newlabel{eq:common_reserve@cref}{{[equation][19][3]3.19}{[1][19][]19}{}{}{}}
+\citation{stolaroff2018}
+\citation{stolaroff2018corr}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.3}载荷的边际能耗与安全边界}{20}{subsubsection.3.4.3}\protected@file@percent }
+\newlabel{eq:energy_load_derivative}{{3.20}{20}{载荷的边际能耗与安全边界}{equation.3.20}{}}
+\newlabel{eq:energy_load_derivative@cref}{{[equation][20][3]3.20}{[1][20][]20}{}{}{}}
+\newlabel{eq:energy_load_convexity}{{3.21}{20}{载荷的边际能耗与安全边界}{equation.3.21}{}}
+\newlabel{eq:energy_load_convexity@cref}{{[equation][21][3]3.21}{[1][20][]20}{}{}{}}
+\newlabel{eq:payload_alpha_derivative}{{3.22}{20}{载荷的边际能耗与安全边界}{equation.3.22}{}}
+\newlabel{eq:payload_alpha_derivative@cref}{{[equation][22][3]3.22}{[1][20][]20}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}能源恢复与资源占用}{20}{subsection.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.1}两阶段充电恢复时间}{20}{subsubsection.3.5.1}\protected@file@percent }
+\newlabel{eq:common_recharge}{{3.23}{20}{两阶段充电恢复时间}{equation.3.23}{}}
+\newlabel{eq:common_recharge@cref}{{[equation][23][3]3.23}{[1][20][]20}{}{}{}}
+\citation{hartmann2022}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.2}飞机、电池与中继资源的释放区别}{21}{subsubsection.3.5.2}\protected@file@percent }
+\newlabel{eq:common_occupancy}{{3.24}{21}{飞机、电池与中继资源的释放区别}{equation.3.24}{}}
+\newlabel{eq:common_occupancy@cref}{{[equation][24][3]3.24}{[1][21][]21}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.3}充电恢复对能源偏差的响应}{21}{subsubsection.3.5.3}\protected@file@percent }
+\newlabel{eq:charge_energy_fraction}{{3.25}{21}{充电恢复对能源偏差的响应}{equation.3.25}{}}
+\newlabel{eq:charge_energy_fraction@cref}{{[equation][25][3]3.25}{[1][21][]21}{}{}{}}
+\newlabel{eq:charge_local_perturbation}{{3.26}{21}{充电恢复对能源偏差的响应}{equation.3.26}{}}
+\newlabel{eq:charge_local_perturbation@cref}{{[equation][26][3]3.26}{[1][21][]21}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.4}完整单点任务的计算链示例}{21}{subsubsection.3.5.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6}公共模型核验}{22}{subsection.3.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.6.1}几何与单任务计算核对}{22}{subsubsection.3.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.6.2}任务输出与后续模型接口}{22}{subsubsection.3.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}问题一：安全运输能力与货箱组批}{22}{section.4}\protected@file@percent }
+\newlabel{sec:q1}{{4}{22}{问题一：安全运输能力与货箱组批}{section.4}{}}
+\newlabel{sec:q1@cref}{{[section][4][]4}{[1][22][]22}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}问题分析与求解思路}{22}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1}单点往返的运输能力限制}{22}{subsubsection.4.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.2}从安全载荷到离散组批}{23}{subsubsection.4.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}安全载荷与组批模型}{23}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}最大安全载荷计算}{23}{subsubsection.4.2.1}\protected@file@percent }
+\newlabel{eq:q1_safe_payload}{{4.1}{23}{最大安全载荷计算}{equation.4.1}{}}
+\newlabel{eq:q1_safe_payload@cref}{{[equation][1][4]4.1}{[1][23][]23}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2}可行货箱组合与完整配送约束}{23}{subsubsection.4.2.2}\protected@file@percent }
+\newlabel{eq:q1_pattern_feasibility}{{4.2}{23}{可行货箱组合与完整配送约束}{equation.4.2}{}}
+\newlabel{eq:q1_pattern_feasibility@cref}{{[equation][2][4]4.2}{[1][23][]23}{}{}{}}
+\newlabel{eq:q1_cover}{{4.3}{23}{可行货箱组合与完整配送约束}{equation.4.3}{}}
+\newlabel{eq:q1_cover@cref}{{[equation][3][4]4.3}{[1][23][]23}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces 20\%返航安全余量下的最大安全载荷。格内为kg，颜色为安全载荷与额定载荷之比；描框项受到能量限制。}}{24}{figure.caption.9}\protected@file@percent }
+\newlabel{fig:q1_payload}{{4.1}{24}{20\%返航安全余量下的最大安全载荷。格内为kg，颜色为安全载荷与额定载荷之比；描框项受到能量限制。}{figure.caption.9}{}}
+\newlabel{fig:q1_payload@cref}{{[figure][1][4]4.1}{[1][23][]24}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.3}架次、能耗与累计时间的比较顺序}{24}{subsubsection.4.2.3}\protected@file@percent }
+\newlabel{eq:q1_objective}{{4.4}{24}{架次、能耗与累计时间的比较顺序}{equation.4.4}{}}
+\newlabel{eq:q1_objective@cref}{{[equation][4][4]4.4}{[1][24][]24}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.4}按服务区分解的等价性}{24}{subsubsection.4.2.4}\protected@file@percent }
+\newlabel{eq:q1_separable}{{4.5}{24}{按服务区分解的等价性}{equation.4.5}{}}
+\newlabel{eq:q1_separable@cref}{{[equation][5][4]4.5}{[1][24][]24}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.5}容量下界与候选筛选}{25}{subsubsection.4.2.5}\protected@file@percent }
+\newlabel{eq:q1_capacity_lower}{{4.6}{25}{容量下界与候选筛选}{equation.4.6}{}}
+\newlabel{eq:q1_capacity_lower@cref}{{[equation][6][4]4.6}{[1][25][]25}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}精确求解方法}{25}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.1}原始货箱模型与等价货箱压缩}{25}{subsubsection.4.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.2}剩余需求状态的动态规划}{25}{subsubsection.4.3.2}\protected@file@percent }
+\newlabel{eq:q1_dp}{{4.7}{25}{剩余需求状态的动态规划}{equation.4.7}{}}
+\newlabel{eq:q1_dp@cref}{{[equation][7][4]4.7}{[1][25][]25}{}{}{}}
+\citation{bouman2018}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.3}递推顺序、支配筛选与原箱号恢复}{26}{subsubsection.4.3.3}\protected@file@percent }
+\newlabel{eq:q1_dp_states}{{4.8}{26}{递推顺序、支配筛选与原箱号恢复}{equation.4.8}{}}
+\newlabel{eq:q1_dp_states@cref}{{[equation][8][4]4.8}{[1][26][]26}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces 精确组批递推与方案恢复步骤}}{26}{table.caption.10}\protected@file@percent }
+\newlabel{tab:dp_execution}{{4.1}{26}{精确组批递推与方案恢复步骤}{table.caption.10}{}}
+\newlabel{tab:dp_execution@cref}{{[table][1][4]4.1}{[1][26][]26}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.4}多种精确方法的交叉核验}{26}{subsubsection.4.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}运输方案与结果分析}{27}{subsection.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.1}18架次方案及最少架次证明}{27}{subsubsection.4.4.1}\protected@file@percent }
+\newlabel{eq:q1_sortie_lb}{{4.9}{27}{18架次方案及最少架次证明}{equation.4.9}{}}
+\newlabel{eq:q1_sortie_lb@cref}{{[equation][9][4]4.9}{[1][27][]27}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2}服务区组批与机型分配}{27}{subsubsection.4.4.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4.2}{\ignorespaces 问题一各服务区正式运输安排}}{27}{table.caption.11}\protected@file@percent }
+\newlabel{tab:q1_area_plan}{{4.2}{27}{问题一各服务区正式运输安排}{table.caption.11}{}}
+\newlabel{tab:q1_area_plan@cref}{{[table][2][4]4.2}{[1][27][]27}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.3}基线方案与架次—能耗权衡}{28}{subsubsection.4.4.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4.3}{\ignorespaces 单机型、混合机型与启发式基线}}{28}{table.caption.12}\protected@file@percent }
+\newlabel{tab:q1_baselines}{{4.3}{28}{单机型、混合机型与启发式基线}{table.caption.12}{}}
+\newlabel{tab:q1_baselines@cref}{{[table][3][4]4.3}{[1][28][]28}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.4}混合机型的成本分担}{28}{subsubsection.4.4.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4.4}{\ignorespaces 18架次正式组批方案的机型分工}}{28}{table.caption.13}\protected@file@percent }
+\newlabel{tab:rev_q1_types}{{4.4}{28}{18架次正式组批方案的机型分工}{table.caption.13}{}}
+\newlabel{tab:rev_q1_types@cref}{{[table][4][4]4.4}{[1][28][]28}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.5}参数变化与实际任务调整}{29}{subsubsection.4.4.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}稳健性与敏感性分析}{29}{subsection.4.5}\protected@file@percent }
+\newlabel{sec:q1_robust}{{4.5}{29}{稳健性与敏感性分析}{subsection.4.5}{}}
+\newlabel{sec:q1_robust@cref}{{[subsection][5][4]4.5}{[1][29][]29}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.1}原组批方案的安全余量容忍范围}{29}{subsubsection.4.5.1}\protected@file@percent }
+\newlabel{eq:q1_keep}{{4.10}{29}{原组批方案的安全余量容忍范围}{equation.4.10}{}}
+\newlabel{eq:q1_keep@cref}{{[equation][10][4]4.10}{[1][29][]29}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.2}安全余量对载荷能力与最少架次的影响}{29}{subsubsection.4.5.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4.5}{\ignorespaces 安全余量变化下代表服务区的最大安全载荷/kg}}{30}{table.caption.14}\protected@file@percent }
+\newlabel{tab:q1_payload_response}{{4.5}{30}{安全余量变化下代表服务区的最大安全载荷/kg}{table.caption.14}{}}
+\newlabel{tab:q1_payload_response@cref}{{[table][5][4]4.5}{[1][29][]30}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces S008三类机型的安全载荷随返航余量变化。水平虚线为不可拆14\,kg饮用水箱，末端临界点由连续物理函数求根，未用1\%网格插值替代。}}{30}{figure.caption.15}\protected@file@percent }
+\newlabel{fig:q1_payload_response}{{4.2}{30}{S008三类机型的安全载荷随返航余量变化。水平虚线为不可拆14\,kg饮用水箱，末端临界点由连续物理函数求根，未用1\%网格插值替代。}{figure.caption.15}{}}
+\newlabel{fig:q1_payload_response@cref}{{[figure][2][4]4.2}{[1][29][]30}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces 返航安全余量与最少架次数。阈值处保留较少架次，严格右侧跳升；阴影为不可行情景，不将其编码为某个有限架次数。}}{31}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:q1_reserve}{{4.3}{31}{返航安全余量与最少架次数。阈值处保留较少架次，严格右侧跳升；阴影为不可行情景，不将其编码为某个有限架次数。}{figure.caption.16}{}}
+\newlabel{fig:q1_reserve@cref}{{[figure][3][4]4.3}{[1][30][]31}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.3}能耗估计偏差与组批结构变化}{31}{subsubsection.4.5.3}\protected@file@percent }
+\newlabel{eq:q1_energy_limit}{{4.11}{31}{能耗估计偏差与组批结构变化}{equation.4.11}{}}
+\newlabel{eq:q1_energy_limit@cref}{{[equation][11][4]4.11}{[1][31][]31}{}{}{}}
+\citation{pinedo2016scheduling}
+\@writefile{lot}{\contentsline {table}{\numberline {4.6}{\ignorespaces 统一能耗正偏差下重新求解的最少架次方案}}{32}{table.caption.17}\protected@file@percent }
+\newlabel{tab:q1_sensitivity}{{4.6}{32}{统一能耗正偏差下重新求解的最少架次方案}{table.caption.17}{}}
+\newlabel{tab:q1_sensitivity@cref}{{[table][6][4]4.6}{[1][31][]32}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}问题二：运输任务与共享电池联合调度}{32}{section.5}\protected@file@percent }
+\newlabel{sec:q2}{{5}{32}{问题二：运输任务与共享电池联合调度}{section.5}{}}
+\newlabel{sec:q2@cref}{{[section][5][]5}{[1][32][]32}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}问题分析与求解思路}{32}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.1}组批、访问顺序与配送时限的耦合}{32}{subsubsection.5.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.2}飞机释放与电池恢复的不同步}{32}{subsubsection.5.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}多架次联合调度模型}{33}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1}运输任务选择与货箱完整配送}{33}{subsubsection.5.2.1}\protected@file@percent }
+\newlabel{eq:q2_cover}{{5.1}{33}{运输任务选择与货箱完整配送}{equation.5.1}{}}
+\newlabel{eq:q2_cover@cref}{{[equation][1][5]5.1}{[1][33][]33}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2}飞机、电池指派与时间冲突约束}{33}{subsubsection.5.2.2}\protected@file@percent }
+\newlabel{eq:q2_assignment}{{5.2}{33}{飞机、电池指派与时间冲突约束}{equation.5.2}{}}
+\newlabel{eq:q2_assignment@cref}{{[equation][2][5]5.2}{[1][33][]33}{}{}{}}
+\newlabel{eq:q2_disjoint}{{5.3}{33}{飞机、电池指派与时间冲突约束}{equation.5.3}{}}
+\newlabel{eq:q2_disjoint@cref}{{[equation][3][5]5.3}{[1][33][]33}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.3}硬截止、期望送达与目标优先关系}{33}{subsubsection.5.2.3}\protected@file@percent }
+\newlabel{eq:q2_tardiness}{{5.4}{33}{硬截止、期望送达与目标优先关系}{equation.5.4}{}}
+\newlabel{eq:q2_tardiness@cref}{{[equation][4][5]5.4}{[1][33][]33}{}{}{}}
+\newlabel{eq:q2_objective}{{5.5}{33}{硬截止、期望送达与目标优先关系}{equation.5.5}{}}
+\newlabel{eq:q2_objective@cref}{{[equation][5][5]5.5}{[1][33][]33}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.4}任务启用与资源先后的显式连接}{34}{subsubsection.5.2.4}\protected@file@percent }
+\newlabel{eq:q2_plane_disjunction}{{5.6}{34}{任务启用与资源先后的显式连接}{equation.5.6}{}}
+\newlabel{eq:q2_plane_disjunction@cref}{{[equation][6][5]5.6}{[1][34][]34}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.5}分层目标与搜索评分的分工}{34}{subsubsection.5.2.5}\protected@file@percent }
+\citation{ropke2006alns}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}调度方案的构造与改进}{35}{subsection.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.1}从任务顺序生成执行时间表}{35}{subsubsection.5.3.1}\protected@file@percent }
+\newlabel{eq:q2_decoder}{{5.7}{35}{从任务顺序生成执行时间表}{equation.5.7}{}}
+\newlabel{eq:q2_decoder@cref}{{[equation][7][5]5.7}{[1][35][]35}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2}货箱移除、重新插入与局部调整}{35}{subsubsection.5.3.2}\protected@file@percent }
+\newlabel{eq:q2_regret}{{5.8}{35}{货箱移除、重新插入与局部调整}{equation.5.8}{}}
+\newlabel{eq:q2_regret@cref}{{[equation][8][5]5.8}{[1][35][]35}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.3}搜索接受规则与独立方案核验}{36}{subsubsection.5.3.3}\protected@file@percent }
+\newlabel{eq:q2_search_score}{{5.9}{36}{搜索接受规则与独立方案核验}{equation.5.9}{}}
+\newlabel{eq:q2_search_score@cref}{{[equation][9][5]5.9}{[1][36][]36}{}{}{}}
+\newlabel{eq:q2_temperature}{{5.10}{36}{搜索接受规则与独立方案核验}{equation.5.10}{}}
+\newlabel{eq:q2_temperature@cref}{{[equation][10][5]5.10}{[1][36][]36}{}{}{}}
+\newlabel{eq:q2_operator_weight}{{5.11}{36}{搜索接受规则与独立方案核验}{equation.5.11}{}}
+\newlabel{eq:q2_operator_weight@cref}{{[equation][11][5]5.11}{[1][36][]36}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces 任务重构与双资源搜索的一次完整迭代}}{36}{table.caption.18}\protected@file@percent }
+\newlabel{tab:q2_algorithm}{{5.1}{36}{任务重构与双资源搜索的一次完整迭代}{table.caption.18}{}}
+\newlabel{tab:q2_algorithm@cref}{{[table][1][5]5.1}{[1][36][]36}{}{}{}}
+\citation{pisinger2007}
+\citation{turkes2021}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.4}插入机会与资源瓶颈的配合}{37}{subsubsection.5.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.5}一次箱组调整怎样传播到完整日程}{37}{subsubsection.5.3.5}\protected@file@percent }
+\gdef \LT@ii {\LT@entry 
+    {3}{36.11655pt}\LT@entry 
+    {1}{26.06749pt}\LT@entry 
+    {3}{82.29344pt}\LT@entry 
+    {1}{26.06749pt}\LT@entry 
+    {3}{43.63211pt}\LT@entry 
+    {1}{42.63081pt}\LT@entry 
+    {1}{38.63081pt}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}调度结果与质量评价}{38}{subsection.5.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.1}运输路线及飞机—电池执行安排}{38}{subsubsection.5.4.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces 问题二正式23架次的资源指派与执行时刻}}{38}{table.5.2}\protected@file@percent }
+\newlabel{tab:q2_schedule}{{5.2}{38}{问题二正式23架次的资源指派与执行时刻}{table.5.2}{}}
+\newlabel{tab:q2_schedule@cref}{{[table][2][5]5.2}{[1][38][]38}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces 正式23架次方案的双资源时间表。上图为运输机，下图为电池；浅填充与斜线为充电恢复，虚线为最后返航。所有条块与表\ref {tab:q2_schedule}来自同一份日程。}}{39}{figure.caption.19}\protected@file@percent }
+\newlabel{fig:q2_gantt}{{5.1}{39}{正式23架次方案的双资源时间表。上图为运输机，下图为电池；浅填充与斜线为充电恢复，虚线为最后返航。所有条块与表\ref {tab:q2_schedule}来自同一份日程。}{figure.caption.19}{}}
+\newlabel{fig:q2_gantt@cref}{{[figure][1][5]5.1}{[1][38][]39}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.2}箱级时限与返航电量核验}{39}{subsubsection.5.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.3}机型分工与执行负载}{40}{subsubsection.5.4.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5.3}{\ignorespaces 正式运输日程的分机型任务与负载}}{40}{table.caption.20}\protected@file@percent }
+\newlabel{tab:rev_q2_types}{{5.3}{40}{正式运输日程的分机型任务与负载}{table.caption.20}{}}
+\newlabel{tab:rev_q2_types@cref}{{[table][3][5]5.3}{[1][40][]40}{}{}{}}
+\newlabel{eq:q2_occupation}{{5.12}{40}{机型分工与执行负载}{equation.5.12}{}}
+\newlabel{eq:q2_occupation@cref}{{[equation][12][5]5.12}{[1][40][]40}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.4}交付进度与任务完成层次}{40}{subsubsection.5.4.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5.4}{\ignorespaces 共同执行时间窗口内的运输机作业占用}}{41}{table.caption.21}\protected@file@percent }
+\newlabel{tab:rev_q2_util}{{5.4}{41}{共同执行时间窗口内的运输机作业占用}{table.caption.21}{}}
+\newlabel{tab:rev_q2_util@cref}{{[table][4][5]5.4}{[1][40][]41}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.5}{\ignorespaces 交接完成口径下的累计配送进度}}{41}{table.caption.22}\protected@file@percent }
+\newlabel{tab:rev_q2_milestones}{{5.5}{41}{交接完成口径下的累计配送进度}{table.caption.22}{}}
+\newlabel{tab:rev_q2_milestones@cref}{{[table][5][5]5.5}{[1][40][]41}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.6}{\ignorespaces 各物资类别的实际交付时段与硬时限余量}}{41}{table.caption.23}\protected@file@percent }
+\newlabel{tab:rev_delivery_kind}{{5.6}{41}{各物资类别的实际交付时段与硬时限余量}{table.caption.23}{}}
+\newlabel{tab:rev_delivery_kind@cref}{{[table][6][5]5.6}{[1][40][]41}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.5}电池共享的实际接续关系}{42}{subsubsection.5.4.5}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5.7}{\ignorespaces 共享电池再次投入任务的接续关系}}{42}{table.caption.24}\protected@file@percent }
+\newlabel{tab:rev_q2_tight_chains}{{5.7}{42}{共享电池再次投入任务的接续关系}{table.caption.24}{}}
+\newlabel{tab:rev_q2_tight_chains@cref}{{[table][7][5]5.7}{[1][42][]42}{}{}{}}
+\newlabel{eq:q2_battery_slack}{{5.13}{42}{电池共享的实际接续关系}{equation.5.13}{}}
+\newlabel{eq:q2_battery_slack@cref}{{[equation][13][5]5.13}{[1][42][]42}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.6}关键资源负载及不同架次数方案比较}{42}{subsubsection.5.4.6}\protected@file@percent }
+\citation{barnhart1998branchprice}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.7}完成时间下界与可行方案差距}{43}{subsubsection.5.4.7}\protected@file@percent }
+\newlabel{sec:q2_bound_derivation}{{5.4.7}{43}{完成时间下界与可行方案差距}{subsubsection.5.4.7}{}}
+\newlabel{sec:q2_bound_derivation@cref}{{[subsubsection][7][5,4]5.4.7}{[1][43][]43}{}{}{}}
+\newlabel{eq:q2_relaxed_master}{{5.14}{43}{完成时间下界与可行方案差距}{equation.5.14}{}}
+\newlabel{eq:q2_relaxed_master@cref}{{[equation][14][5]5.14}{[1][43][]43}{}{}{}}
+\newlabel{eq:q2_subset_cut}{{5.15}{43}{完成时间下界与可行方案差距}{equation.5.15}{}}
+\newlabel{eq:q2_subset_cut@cref}{{[equation][15][5]5.15}{[1][43][]43}{}{}{}}
+\newlabel{eq:q2_packing_cut}{{5.16}{43}{完成时间下界与可行方案差距}{equation.5.16}{}}
+\newlabel{eq:q2_packing_cut@cref}{{[equation][16][5]5.16}{[1][43][]43}{}{}{}}
+\citation{feillet2004}
+\newlabel{eq:q2_pricing_rc}{{5.17}{44}{完成时间下界与可行方案差距}{equation.5.17}{}}
+\newlabel{eq:q2_pricing_rc@cref}{{[equation][17][5]5.17}{[1][43][]44}{}{}{}}
+\newlabel{eq:q2_dual_bound}{{5.18}{44}{完成时间下界与可行方案差距}{equation.5.18}{}}
+\newlabel{eq:q2_dual_bound@cref}{{[equation][18][5]5.18}{[1][44][]44}{}{}{}}
+\newlabel{eq:q2_cover_bound}{{5.19}{44}{完成时间下界与可行方案差距}{equation.5.19}{}}
+\newlabel{eq:q2_cover_bound@cref}{{[equation][19][5]5.19}{[1][44][]44}{}{}{}}
+\newlabel{eq:q2_bound}{{5.20}{44}{完成时间下界与可行方案差距}{equation.5.20}{}}
+\newlabel{eq:q2_bound@cref}{{[equation][20][5]5.20}{[1][44][]44}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.8}完整定价怎样把计算结果转为下界}{44}{subsubsection.5.4.8}\protected@file@percent }
+\newlabel{eq:q2_weak_dual_chain}{{5.21}{45}{完整定价怎样把计算结果转为下界}{equation.5.21}{}}
+\newlabel{eq:q2_weak_dual_chain@cref}{{[equation][21][5]5.21}{[1][45][]45}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}稳健性与敏感性分析}{45}{subsection.5.5}\protected@file@percent }
+\newlabel{sec:q2_robust}{{5.5}{45}{稳健性与敏感性分析}{subsection.5.5}{}}
+\newlabel{sec:q2_robust@cref}{{[subsection][5][5]5.5}{[1][45][]45}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.1}不同随机种子下的结果稳定性}{45}{subsubsection.5.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.2}充电时间变化对调度的影响}{45}{subsubsection.5.5.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces 相同起点与150轮预算下20次独立搜索的工期。虚线标出正式方案供参照，但其历史计算预算不同，不用该差值作公平算法排名。}}{46}{figure.caption.25}\protected@file@percent }
+\newlabel{fig:q2_seed}{{5.2}{46}{相同起点与150轮预算下20次独立搜索的工期。虚线标出正式方案供参照，但其历史计算预算不同，不用该差值作公平算法排名。}{figure.caption.25}{}}
+\newlabel{fig:q2_seed@cref}{{[figure][2][5]5.2}{[1][45][]46}{}{}{}}
+\newlabel{eq:q2_repair}{{5.22}{46}{充电时间变化对调度的影响}{equation.5.22}{}}
+\newlabel{eq:q2_repair@cref}{{[equation][22][5]5.22}{[1][45][]46}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces 充电时间倍率与执行代价。叉号表示原固定日程发生资源冲突；曲线为仅顺延开始时刻后的可行结果，不代表重新优化的最短工期。}}{46}{figure.caption.26}\protected@file@percent }
+\newlabel{fig:q2_charging}{{5.3}{46}{充电时间倍率与执行代价。叉号表示原固定日程发生资源冲突；曲线为仅顺延开始时刻后的可行结果，不代表重新优化的最短工期。}{figure.caption.26}{}}
+\newlabel{fig:q2_charging@cref}{{[figure][3][5]5.3}{[1][46][]46}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.3}作业延迟对按时交付的影响}{47}{subsubsection.5.5.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces 单任务首次交接延迟的情景通过数。固定日程与仅顺延修复分开统计；每个延迟水平含23个不同任务情景。}}{47}{figure.caption.27}\protected@file@percent }
+\newlabel{fig:q2_delay}{{5.4}{47}{单任务首次交接延迟的情景通过数。固定日程与仅顺延修复分开统计；每个延迟水平含23个不同任务情景。}{figure.caption.27}{}}
+\newlabel{fig:q2_delay@cref}{{[figure][4][5]5.4}{[1][47][]47}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.4}能耗偏差与安全余量的容忍范围}{47}{subsubsection.5.5.4}\protected@file@percent }
+\newlabel{eq:q2_energy_limit}{{5.23}{47}{能耗偏差与安全余量的容忍范围}{equation.5.23}{}}
+\newlabel{eq:q2_energy_limit@cref}{{[equation][23][5]5.23}{[1][47][]47}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.8}{\ignorespaces 能耗偏差下重新调整结构所得可行备选}}{48}{table.caption.28}\protected@file@percent }
+\newlabel{tab:q2_energy_alternatives}{{5.8}{48}{能耗偏差下重新调整结构所得可行备选}{table.caption.28}{}}
+\newlabel{tab:q2_energy_alternatives@cref}{{[table][8][5]5.8}{[1][47][]48}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.5}固定资源顺序下的最早顺延修复}{48}{subsubsection.5.5.5}\protected@file@percent }
+\newlabel{eq:q2_maxplus_repair}{{5.24}{48}{固定资源顺序下的最早顺延修复}{equation.5.24}{}}
+\newlabel{eq:q2_maxplus_repair@cref}{{[equation][24][5]5.24}{[1][48][]48}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.6}从压力曲线形成分级调整规则}{48}{subsubsection.5.5.6}\protected@file@percent }
+\citation{dolan2002}
+\citation{zeng2016uavcom}
+\citation{zeng2019sky}
+\citation{iturp525}
+\@writefile{toc}{\contentsline {section}{\numberline {6}问题三：连续通信保障下的运输—中继联合调度}{49}{section.6}\protected@file@percent }
+\newlabel{sec:q3}{{6}{49}{问题三：连续通信保障下的运输—中继联合调度}{section.6}{}}
+\newlabel{sec:q3@cref}{{[section][6][]6}{[1][49][]49}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}问题分析与求解思路}{49}{subsection.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.1}运输轨迹中的通信需求}{49}{subsubsection.6.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.2}中继位置、服务窗口与运输时刻的耦合}{49}{subsubsection.6.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}连续通信与联合调度模型}{49}{subsection.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.1}直连和单中继链路可用条件}{49}{subsubsection.6.2.1}\protected@file@percent }
+\newlabel{eq:q3_loss}{{6.1}{49}{直连和单中继链路可用条件}{equation.6.1}{}}
+\newlabel{eq:q3_loss@cref}{{[equation][1][6]6.1}{[1][49][]49}{}{}{}}
+\citation{saunders2024}
+\newlabel{eq:q3_link}{{6.2}{50}{直连和单中继链路可用条件}{equation.6.2}{}}
+\newlabel{eq:q3_link@cref}{{[equation][2][6]6.2}{[1][49][]50}{}{}{}}
+\newlabel{eq:q3_provider}{{6.3}{50}{直连和单中继链路可用条件}{equation.6.3}{}}
+\newlabel{eq:q3_provider@cref}{{[equation][3][6]6.3}{[1][50][]50}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.2}链路距离门限与地形状态}{50}{subsubsection.6.2.2}\protected@file@percent }
+\newlabel{eq:q3_range_threshold}{{6.4}{50}{链路距离门限与地形状态}{equation.6.4}{}}
+\newlabel{eq:q3_range_threshold@cref}{{[equation][4][6]6.4}{[1][50][]50}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.3}阶段轨迹与通信事件分割}{50}{subsubsection.6.2.3}\protected@file@percent }
+\newlabel{eq:q3_distance_quadratic}{{6.5}{50}{阶段轨迹与通信事件分割}{equation.6.5}{}}
+\newlabel{eq:q3_distance_quadratic@cref}{{[equation][5][6]6.5}{[1][50][]50}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6.1}{\ignorespaces 连续通信判定中需要保留的事件}}{51}{table.caption.29}\protected@file@percent }
+\newlabel{tab:comm_events}{{6.1}{51}{连续通信判定中需要保留的事件}{table.caption.29}{}}
+\newlabel{tab:comm_events@cref}{{[table][1][6]6.1}{[1][50][]51}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.4}中继转场、悬停与能源消耗}{51}{subsubsection.6.2.4}\protected@file@percent }
+\newlabel{eq:q3_relay_height}{{6.6}{51}{中继转场、悬停与能源消耗}{equation.6.6}{}}
+\newlabel{eq:q3_relay_height@cref}{{[equation][6][6]6.6}{[1][51][]51}{}{}{}}
+\newlabel{eq:q3_lifecycle}{{6.7}{51}{中继转场、悬停与能源消耗}{equation.6.7}{}}
+\newlabel{eq:q3_lifecycle@cref}{{[equation][7][6]6.7}{[1][51][]51}{}{}{}}
+\newlabel{eq:q3_relay_energy}{{6.8}{51}{中继转场、悬停与能源消耗}{equation.6.8}{}}
+\newlabel{eq:q3_relay_energy@cref}{{[equation][8][6]6.8}{[1][51][]51}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.5}连续服务、资源接续与联合完成时间}{51}{subsubsection.6.2.5}\protected@file@percent }
+\newlabel{eq:q3_cover}{{6.9}{51}{连续服务、资源接续与联合完成时间}{equation.6.9}{}}
+\newlabel{eq:q3_cover@cref}{{[equation][9][6]6.9}{[1][51][]51}{}{}{}}
+\newlabel{eq:q3_objective}{{6.10}{52}{连续服务、资源接续与联合完成时间}{equation.6.10}{}}
+\newlabel{eq:q3_objective@cref}{{[equation][10][6]6.10}{[1][51][]52}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.6}服务窗口与两类中继资源的连接}{52}{subsubsection.6.2.6}\protected@file@percent }
+\newlabel{eq:q3_two_relay_resources}{{6.11}{52}{服务窗口与两类中继资源的连接}{equation.6.11}{}}
+\newlabel{eq:q3_two_relay_resources@cref}{{[equation][11][6]6.11}{[1][52][]52}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.7}分层计算中的决策接口}{52}{subsubsection.6.2.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}中继部署与任务时序的联合求解}{53}{subsection.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.1}候选悬停位置生成与可服务区间计算}{53}{subsubsection.6.3.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6.2}{\ignorespaces 联合求解各阶段的开放变量与固定范围}}{53}{table.caption.30}\protected@file@percent }
+\newlabel{tab:q3_decision_scope}{{6.2}{53}{联合求解各阶段的开放变量与固定范围}{table.caption.30}{}}
+\newlabel{tab:q3_decision_scope@cref}{{[table][2][6]6.2}{[1][53][]53}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.2}通信提供方与资源顺序的联合选择}{54}{subsubsection.6.3.2}\protected@file@percent }
+\newlabel{eq:q3_transport_paths}{{6.12}{54}{通信提供方与资源顺序的联合选择}{equation.6.12}{}}
+\newlabel{eq:q3_transport_paths@cref}{{[equation][12][6]6.12}{[1][54][]54}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6.3}{\ignorespaces 不同运输及中继架次试验的实际范围}}{55}{table.caption.31}\protected@file@percent }
+\newlabel{tab:q3_sortie_scope}{{6.3}{55}{不同运输及中继架次试验的实际范围}{table.caption.31}{}}
+\newlabel{tab:q3_sortie_scope@cref}{{[table][3][6]6.3}{[1][54][]55}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.3}给定任务结构后的时间安排优化}{55}{subsubsection.6.3.3}\protected@file@percent }
+\newlabel{sec:q3_fixed_lp}{{6.3.3}{55}{给定任务结构后的时间安排优化}{subsubsection.6.3.3}{}}
+\newlabel{sec:q3_fixed_lp@cref}{{[subsubsection][3][6,3]6.3.3}{[1][55][]55}{}{}{}}
+\newlabel{eq:q3_lp_start_bounds}{{6.13}{55}{给定任务结构后的时间安排优化}{equation.6.13}{}}
+\newlabel{eq:q3_lp_start_bounds@cref}{{[equation][13][6]6.13}{[1][55][]55}{}{}{}}
+\newlabel{eq:q3_lp_coverage}{{6.14}{55}{给定任务结构后的时间安排优化}{equation.6.14}{}}
+\newlabel{eq:q3_lp_coverage@cref}{{[equation][14][6]6.14}{[1][55][]55}{}{}{}}
+\newlabel{eq:q3_lp_energy}{{6.15}{55}{给定任务结构后的时间安排优化}{equation.6.15}{}}
+\newlabel{eq:q3_lp_energy@cref}{{[equation][15][6]6.15}{[1][55][]55}{}{}{}}
+\newlabel{eq:q3_lp_charge}{{6.16}{55}{给定任务结构后的时间安排优化}{equation.6.16}{}}
+\newlabel{eq:q3_lp_charge@cref}{{[equation][16][6]6.16}{[1][55][]55}{}{}{}}
+\citation{huangfu2018}
+\newlabel{eq:q3_lp_resource}{{6.17}{56}{给定任务结构后的时间安排优化}{equation.6.17}{}}
+\newlabel{eq:q3_lp_resource@cref}{{[equation][17][6]6.17}{[1][56][]56}{}{}{}}
+\newlabel{eq:q3_lp_objective}{{6.18}{56}{给定任务结构后的时间安排优化}{equation.6.18}{}}
+\newlabel{eq:q3_lp_objective@cref}{{[equation][18][6]6.18}{[1][56][]56}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.4}给定结构的连续精修与复核接口}{56}{subsubsection.6.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}联合方案与结果验证}{57}{subsection.6.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.1}运输日程与中继部署方案}{57}{subsubsection.6.4.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6.4}{\ignorespaces 中继任务、实体资源与悬停位置}}{57}{table.caption.32}\protected@file@percent }
+\newlabel{tab:q3_sites}{{6.4}{57}{中继任务、实体资源与悬停位置}{table.caption.32}{}}
+\newlabel{tab:q3_sites@cref}{{[table][4][6]6.4}{[1][57][]57}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6.5}{\ignorespaces 四项中继任务的实际服务时间表}}{57}{table.caption.33}\protected@file@percent }
+\newlabel{tab:q3_relays}{{6.5}{57}{四项中继任务的实际服务时间表}{table.caption.33}{}}
+\newlabel{tab:q3_relays@cref}{{[table][5][6]6.5}{[1][57][]57}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.2}连续通信及资源占用核验}{57}{subsubsection.6.4.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces 工期优先方案的中继悬停位置与关键运输路线。中继点为实际位置，不用圆形覆盖圈代替地形条件下的可服务区域。}}{58}{figure.caption.34}\protected@file@percent }
+\newlabel{fig:q3_deployment}{{6.1}{58}{工期优先方案的中继悬停位置与关键运输路线。中继点为实际位置，不用圆形覆盖圈代替地形条件下的可服务区域。}{figure.caption.34}{}}
+\newlabel{fig:q3_deployment@cref}{{[figure][1][6]6.1}{[1][57][]58}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.2}{\ignorespaces 四项中继任务的实体复用与服务窗口。深色表示实际服务；任务开始、服务开始、返航和周转分别处理。}}{58}{figure.caption.35}\protected@file@percent }
+\newlabel{fig:q3_resources}{{6.2}{58}{四项中继任务的实体复用与服务窗口。深色表示实际服务；任务开始、服务开始、返航和周转分别处理。}{figure.caption.35}{}}
+\newlabel{fig:q3_resources@cref}{{[figure][2][6]6.2}{[1][57][]58}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.3}{\ignorespaces 关键运输任务的阶段与实际通信提供方。横轴为绝对调度时间，提供方切换来自正式区间记录，不是抽样插值。}}{59}{figure.caption.36}\protected@file@percent }
+\newlabel{fig:q3_provider}{{6.3}{59}{关键运输任务的阶段与实际通信提供方。横轴为绝对调度时间，提供方切换来自正式区间记录，不是抽样插值。}{figure.caption.36}{}}
+\newlabel{fig:q3_provider@cref}{{[figure][3][6]6.3}{[1][57][]59}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.3}运输与中继能源成本的分解}{59}{subsubsection.6.4.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6.6}{\ignorespaces 联合方案运输能耗的物理分解}}{59}{table.caption.37}\protected@file@percent }
+\newlabel{tab:rev_q3_transport_energy}{{6.6}{59}{联合方案运输能耗的物理分解}{table.caption.37}{}}
+\newlabel{tab:rev_q3_transport_energy@cref}{{[table][6][6]6.6}{[1][59][]59}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6.7}{\ignorespaces 中继任务的转场、建链与悬停服务成本}}{60}{table.caption.38}\protected@file@percent }
+\newlabel{tab:rev_q3_relay_energy}{{6.7}{60}{中继任务的转场、建链与悬停服务成本}{table.caption.38}{}}
+\newlabel{tab:rev_q3_relay_energy@cref}{{[table][7][6]6.7}{[1][59][]60}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.4}通信提供方的实际保障工作量}{60}{subsubsection.6.4.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6.8}{\ignorespaces 实际通信提供方的累计保障工作量}}{60}{table.caption.39}\protected@file@percent }
+\newlabel{tab:rev_q3_provider}{{6.8}{60}{实际通信提供方的累计保障工作量}{table.caption.39}{}}
+\newlabel{tab:rev_q3_provider@cref}{{[table][8][6]6.8}{[1][60][]60}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6.9}{\ignorespaces 中继保障需求较大的运输任务}}{61}{table.caption.40}\protected@file@percent }
+\newlabel{tab:rev_q3_comm_tasks}{{6.9}{61}{中继保障需求较大的运输任务}{table.caption.40}{}}
+\newlabel{tab:rev_q3_comm_tasks@cref}{{[table][9][6]6.9}{[1][60][]61}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.5}通信切换对最后返航时间的影响}{61}{subsubsection.6.4.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.6}工期优先与节能备选方案比较}{61}{subsubsection.6.4.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.5}稳健性与敏感性分析}{62}{subsection.6.5}\protected@file@percent }
+\newlabel{sec:q3_robust}{{6.5}{62}{稳健性与敏感性分析}{subsection.6.5}{}}
+\newlabel{sec:q3_robust@cref}{{[subsection][5][6]6.5}{[1][62][]62}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.5.1}附加传播损耗下的通信可行性}{62}{subsubsection.6.5.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6.10}{\ignorespaces 附加损耗下两份固定方案的连续通信核验}}{62}{table.caption.41}\protected@file@percent }
+\newlabel{tab:q3_loss}{{6.10}{62}{附加损耗下两份固定方案的连续通信核验}{table.caption.41}{}}
+\newlabel{tab:q3_loss@cref}{{[table][10][6]6.10}{[1][62][]62}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.4}{\ignorespaces 固定两份方案后的附加损耗响应。纵轴为逐运输任务累计失联时长；增强保障备选与原工期优先方案分别核验，不混合统计。}}{62}{figure.caption.42}\protected@file@percent }
+\newlabel{fig:q3_loss}{{6.4}{62}{固定两份方案后的附加损耗响应。纵轴为逐运输任务累计失联时长；增强保障备选与原工期优先方案分别核验，不混合统计。}{figure.caption.42}{}}
+\newlabel{fig:q3_loss@cref}{{[figure][4][6]6.4}{[1][62][]62}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.5.2}中继到位延迟下的服务连续性}{63}{subsubsection.6.5.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6.11}{\ignorespaces 固定结构修复中继上线延迟的额外工期}}{63}{table.caption.43}\protected@file@percent }
+\newlabel{tab:q3_repair}{{6.11}{63}{固定结构修复中继上线延迟的额外工期}{table.caption.43}{}}
+\newlabel{tab:q3_repair@cref}{{[table][11][6]6.11}{[1][63][]63}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.5}{\ignorespaces 给定任务结构下修复中继上线延迟的工期代价。每个点均经完整模型核验；曲线只连接已计算情景，不表示全局最优恢复策略。}}{64}{figure.caption.44}\protected@file@percent }
+\newlabel{fig:q3_repair}{{6.5}{64}{给定任务结构下修复中继上线延迟的工期代价。每个点均经完整模型核验；曲线只连接已计算情景，不表示全局最优恢复策略。}{figure.caption.44}{}}
+\newlabel{fig:q3_repair@cref}{{[figure][5][6]6.5}{[1][63][]64}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.5.3}保障裕度与工期、能耗的权衡}{64}{subsubsection.6.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.5.4}通信交接约束的恢复解释}{64}{subsubsection.6.5.4}\protected@file@percent }
+\newlabel{eq:q3_handoff_start}{{6.19}{64}{通信交接约束的恢复解释}{equation.6.19}{}}
+\newlabel{eq:q3_handoff_start@cref}{{[equation][19][6]6.19}{[1][64][]64}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6.12}{\ignorespaces 不同通信变化对应的计算与调整层次}}{65}{table.caption.45}\protected@file@percent }
+\newlabel{tab:q3_recovery_policy}{{6.12}{65}{不同通信变化对应的计算与调整层次}{table.caption.45}{}}
+\newlabel{tab:q3_recovery_policy@cref}{{[table][12][6]6.12}{[1][64][]65}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}问题四：固定日程下的独立分组与资源配置}{65}{section.7}\protected@file@percent }
+\newlabel{sec:q4}{{7}{65}{问题四：固定日程下的独立分组与资源配置}{section.7}{}}
+\newlabel{sec:q4@cref}{{[section][7][]7}{[1][65][]65}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}问题分析与求解思路}{65}{subsection.7.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.1.1}固定任务日程与组间不共享约束}{65}{subsubsection.7.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.1.2}运输与通信关联形成的不可拆分关系}{65}{subsubsection.7.1.2}\protected@file@percent }
+\newlabel{eq:q4_blocks}{{7.1}{65}{运输与通信关联形成的不可拆分关系}{equation.7.1}{}}
+\newlabel{eq:q4_blocks@cref}{{[equation][1][7]7.1}{[1][65][]65}{}{}{}}
+\citation{fulkerson1965interval}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.1.3}关联压缩的等价性}{66}{subsubsection.7.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}分组与分类型资源配置模型}{66}{subsection.7.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.1}合法分组与完整任务归属}{66}{subsubsection.7.2.1}\protected@file@percent }
+\newlabel{eq:q4_inventory}{{7.2}{66}{合法分组与完整任务归属}{equation.7.2}{}}
+\newlabel{eq:q4_inventory@cref}{{[equation][2][7]7.2}{[1][66][]66}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.2}固定占用区间与组内最少资源数}{66}{subsubsection.7.2.2}\protected@file@percent }
+\newlabel{eq:q4_peak}{{7.3}{66}{固定占用区间与组内最少资源数}{equation.7.3}{}}
+\newlabel{eq:q4_peak@cref}{{[equation][3][7]7.3}{[1][66][]66}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.3}库存缺口、配置规模与工作量均衡}{67}{subsubsection.7.2.3}\protected@file@percent }
+\newlabel{eq:q4_gap}{{7.4}{67}{库存缺口、配置规模与工作量均衡}{equation.7.4}{}}
+\newlabel{eq:q4_gap@cref}{{[equation][4][7]7.4}{[1][67][]67}{}{}{}}
+\newlabel{eq:q4_cv}{{7.5}{67}{库存缺口、配置规模与工作量均衡}{equation.7.5}{}}
+\newlabel{eq:q4_cv@cref}{{[equation][5][7]7.5}{[1][67][]67}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}合法分区的完整枚举}{67}{subsection.7.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.1}不可拆任务块压缩与分区生成}{67}{subsubsection.7.3.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {7.1}{\ignorespaces 全部三种两组分区的配置与均衡结果}}{67}{table.caption.46}\protected@file@percent }
+\newlabel{tab:q4_partitions}{{7.1}{67}{全部三种两组分区的配置与均衡结果}{table.caption.46}{}}
+\newlabel{tab:q4_partitions@cref}{{[table][1][7]7.1}{[1][67][]67}{}{}{}}
+\citation{fulkerson1965interval}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.2}资源峰值、实体指派与最少配置核验}{68}{subsubsection.7.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.3}最少资源数与可执行资源链}{68}{subsubsection.7.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4}独立执行方案与资源缺口}{68}{subsection.7.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.4.1}两组独立执行的配置结果}{68}{subsubsection.7.4.1}\protected@file@percent }
+\newlabel{eq:q4_two}{{7.6}{68}{两组独立执行的配置结果}{equation.7.6}{}}
+\newlabel{eq:q4_two@cref}{{[equation][6][7]7.6}{[1][68][]68}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.4.2}三组独立执行的配置结果}{69}{subsubsection.7.4.2}\protected@file@percent }
+\newlabel{eq:q4_three}{{7.7}{69}{三组独立执行的配置结果}{equation.7.7}{}}
+\newlabel{eq:q4_three@cref}{{[equation][7][7]7.7}{[1][69][]69}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.1}{\ignorespaces 固定工期优先预案后的分类型资源配置。格内为整数件数，红框表示超过同类型库存；不同资源不能按总件数相互替代。}}{69}{figure.caption.47}\protected@file@percent }
+\newlabel{fig:q4_resources}{{7.1}{69}{固定工期优先预案后的分类型资源配置。格内为整数件数，红框表示超过同类型库存；不同资源不能按总件数相互替代。}{figure.caption.47}{}}
+\newlabel{fig:q4_resources@cref}{{[figure][1][7]7.1}{[1][69][]69}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.4.3}分组引起的资源共享损失}{69}{subsubsection.7.4.3}\protected@file@percent }
+\newlabel{eq:q4_pooling}{{7.8}{69}{分组引起的资源共享损失}{equation.7.8}{}}
+\newlabel{eq:q4_pooling@cref}{{[equation][8][7]7.8}{[1][69][]69}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {7.2}{\ignorespaces 两组与三组方案中各执行组的独立资源配置}}{70}{table.caption.48}\protected@file@percent }
+\newlabel{tab:q4_each_group}{{7.2}{70}{两组与三组方案中各执行组的独立资源配置}{table.caption.48}{}}
+\newlabel{tab:q4_each_group@cref}{{[table][2][7]7.2}{[1][69][]70}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.4.4}共享增量、库存缺口与剩余的分离}{70}{subsubsection.7.4.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {7.3}{\ignorespaces 固定日程不同组织方式的配置与库存关系}}{70}{table.caption.49}\protected@file@percent }
+\newlabel{tab:rev_q4_organization}{{7.3}{70}{固定日程不同组织方式的配置与库存关系}{table.caption.49}{}}
+\newlabel{tab:rev_q4_organization@cref}{{[table][3][7]7.3}{[1][70][]70}{}{}{}}
+\newlabel{eq:q4_gap_balance}{{7.9}{70}{共享增量、库存缺口与剩余的分离}{equation.7.9}{}}
+\newlabel{eq:q4_gap_balance@cref}{{[equation][9][7]7.9}{[1][70][]70}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.4.5}补充一件资源的边际作用}{71}{subsubsection.7.4.5}\protected@file@percent }
+\newlabel{eq:q4_marginal_stock}{{7.10}{71}{补充一件资源的边际作用}{equation.7.10}{}}
+\newlabel{eq:q4_marginal_stock@cref}{{[equation][10][7]7.10}{[1][71][]71}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.5}稳健性与敏感性分析}{71}{subsection.7.5}\protected@file@percent }
+\newlabel{sec:q4_robust}{{7.5}{71}{稳健性与敏感性分析}{subsection.7.5}{}}
+\newlabel{sec:q4_robust@cref}{{[subsection][5][7]7.5}{[1][71][]71}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.5.1}分类型库存增减与关键资源识别}{71}{subsubsection.7.5.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {7.4}{\ignorespaces 各类型库存单项增减后的最小总缺口}}{71}{table.caption.50}\protected@file@percent }
+\newlabel{tab:q4_inventory_stress}{{7.4}{71}{各类型库存单项增减后的最小总缺口}{table.caption.50}{}}
+\newlabel{tab:q4_inventory_stress@cref}{{[table][4][7]7.4}{[1][71][]71}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.5.2}库存变化下的分组选择稳定性}{72}{subsubsection.7.5.2}\protected@file@percent }
+\newlabel{eq:q4_inventory_dominance}{{7.11}{72}{库存变化下的分组选择稳定性}{equation.7.11}{}}
+\newlabel{eq:q4_inventory_dominance@cref}{{[equation][11][7]7.11}{[1][72][]72}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.5.3}不同运输—中继预案的配置代价}{72}{subsubsection.7.5.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {7.5}{\ignorespaces 不同上游预案冻结后的独立配置比较}}{72}{table.caption.51}\protected@file@percent }
+\newlabel{tab:q4_crossplans}{{7.5}{72}{不同上游预案冻结后的独立配置比较}{table.caption.51}{}}
+\newlabel{tab:q4_crossplans@cref}{{[table][5][7]7.5}{[1][72][]72}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.5.4}库存稳定性与组织均衡的共同解释}{72}{subsubsection.7.5.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.5.5}上游预案与独立配置的衔接}{73}{subsubsection.7.5.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {8}模型评价与改进}{73}{section.8}\protected@file@percent }
+\newlabel{sec:evaluation}{{8}{73}{模型评价与改进}{section.8}{}}
+\newlabel{sec:evaluation@cref}{{[section][8][]8}{[1][73][]73}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}统一模型与分层求解的特点}{73}{subsection.8.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.1.1}从单架次属性到系统执行的连续论证}{73}{subsubsection.8.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.1.2}按问题结构选择计算方法}{73}{subsubsection.8.1.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {8.1}{\ignorespaces 各问题求解结构与主要证据的对应}}{74}{table.caption.52}\protected@file@percent }
+\newlabel{tab:evidence_levels}{{8.1}{74}{各问题求解结构与主要证据的对应}{table.caption.52}{}}
+\newlabel{tab:evidence_levels@cref}{{[table][1][8]8.1}{[1][74][]74}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}从数值结果提炼救援决策规律}{74}{subsection.8.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.2.1}载荷、能源和时间的相互作用}{74}{subsubsection.8.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.2.2}共享资源与独立组织的量化价值}{74}{subsubsection.8.2.2}\protected@file@percent }
+\citation{xin2025}
+\citation{dukkanci2026}
+\citation{li2025hurricane}
+\citation{zhang2026communication}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.3}保障与恢复的实施路径}{75}{subsection.8.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.3.1}按变化来源选择最小调整层次}{75}{subsubsection.8.3.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {8.2}{\ignorespaces 模型结果对应的分级执行调整}}{75}{table.caption.53}\protected@file@percent }
+\newlabel{tab:execution_policy}{{8.2}{75}{模型结果对应的分级执行调整}{table.caption.53}{}}
+\newlabel{tab:execution_policy@cref}{{[table][2][8]8.2}{[1][75][]75}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.3.2}与更广泛不确定优化的衔接}{75}{subsubsection.8.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {9}结论}{76}{section.9}\protected@file@percent }
+\newlabel{sec:conclusion}{{9}{76}{结论}{section.9}{}}
+\newlabel{sec:conclusion@cref}{{[section][9][]9}{[1][76][]76}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.1}四个问题的主要结果}{76}{subsection.9.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.1.1}安全能力与有限资源运输}{76}{subsubsection.9.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.1.2}连续通信与独立资源配置}{76}{subsubsection.9.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.2}救援协同执行的决策启示}{76}{subsection.9.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.2.1}从局部能力转向完整时间轴}{76}{subsubsection.9.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.2.2}把方案效率、保障等级与资源投入共同呈现}{77}{subsubsection.9.2.2}\protected@file@percent }
+\bibstyle{unsrt}
+\bibdata{references}
+\bibcite{dorling2017}{1}
+\bibcite{murray2015fstsp}{2}
+\bibcite{otto2018}{3}
+\bibcite{macrina2020}{4}
+\bibcite{agatz2018}{5}
+\bibcite{bhuiyan2026}{6}
+\bibcite{altheeb2017relief}{7}
+\bibcite{yucesoy2025}{8}
+\bibcite{zhang2021energy}{9}
+\bibcite{zhang2023corrigendum}{10}
+\bibcite{liu2025battery}{11}
+\bibcite{zeng2016uavcom}{12}
+\bibcite{zeng2019sky}{13}
+\bibcite{zhang2019cellular}{14}
+\bibcite{zeng2019energy}{15}
+\bibcite{hong2025}{16}
+\bibcite{akpunar2025}{17}
+\bibcite{bertsimas2004}{18}
+\bibcite{xin2025}{19}
+\bibcite{dukkanci2026}{20}
+\bibcite{li2025hurricane}{21}
+\bibcite{zhang2026communication}{22}
+\bibcite{snyder1987}{23}
+\bibcite{karney2013}{24}
+\@writefile{toc}{\contentsline {section}{参考文献}{78}{section*.54}\protected@file@percent }
+\bibcite{stolaroff2018}{25}
+\bibcite{stolaroff2018corr}{26}
+\bibcite{hartmann2022}{27}
+\bibcite{bouman2018}{28}
+\bibcite{pinedo2016scheduling}{29}
+\bibcite{ropke2006alns}{30}
+\bibcite{pisinger2007}{31}
+\bibcite{turkes2021}{32}
+\bibcite{barnhart1998branchprice}{33}
+\bibcite{feillet2004}{34}
+\bibcite{dolan2002}{35}
+\bibcite{iturp525}{36}
+\bibcite{saunders2024}{37}
+\bibcite{huangfu2018}{38}
+\bibcite{fulkerson1965interval}{39}
+\bibcite{candidateArchive}{40}
+\@writefile{toc}{\contentsline {section}{\numberline {A}输入、符号与源文件对应}{80}{appendix.A}\protected@file@percent }
+\newlabel{app:provenance}{{A}{80}{输入、符号与源文件对应}{appendix.A}{}}
+\newlabel{app:provenance@cref}{{[section][1][]A}{[1][80][]80}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.1}正式输入与新增试验的区分}{80}{subsection.A.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {A.1}{\ignorespaces 正文名称与原始实验记录对应}}{80}{table.caption.56}\protected@file@percent }
+\newlabel{tab:app_name_map}{{A.1}{80}{正文名称与原始实验记录对应}{table.caption.56}{}}
+\newlabel{tab:app_name_map@cref}{{[table][1][1]A.1}{[1][80][]80}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.2}坐标、单位与显示精度}{80}{subsection.A.2}\protected@file@percent }
+\gdef \LT@iii {\LT@entry 
+    {3}{31.59967pt}\LT@entry 
+    {3}{26.57475pt}\LT@entry 
+    {1}{26.06749pt}\LT@entry 
+    {1}{268.6107pt}}
+\@writefile{toc}{\contentsline {section}{\numberline {B}完整运输、中继与资源指派}{81}{appendix.B}\protected@file@percent }
+\newlabel{app:full_schedules}{{B}{81}{完整运输、中继与资源指派}{appendix.B}{}}
+\newlabel{app:full_schedules@cref}{{[section][2][]B}{[1][81][]81}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.1}问题一完整货箱分配}{81}{subsection.B.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {B.1}{\ignorespaces 问题一18架次的完整货箱分配}}{81}{table.B.1}\protected@file@percent }
+\newlabel{tab:app_q1_boxes}{{B.1}{81}{问题一18架次的完整货箱分配}{table.B.1}{}}
+\newlabel{tab:app_q1_boxes@cref}{{[table][1][2]B.1}{[1][81][]81}{}{}{}}
+\gdef \LT@iv {\LT@entry 
+    {3}{36.11655pt}\LT@entry 
+    {1}{26.06749pt}\LT@entry 
+    {1}{87.6678pt}\LT@entry 
+    {1}{254.38434pt}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.2}问题二正式架次与货箱对应}{82}{subsection.B.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {B.2}{\ignorespaces 问题二正式运输架次与原始箱号}}{82}{table.B.2}\protected@file@percent }
+\newlabel{tab:app_q2_boxes}{{B.2}{82}{问题二正式运输架次与原始箱号}{table.B.2}{}}
+\newlabel{tab:app_q2_boxes@cref}{{[table][2][2]B.2}{[1][82][]82}{}{}{}}
+\gdef \LT@v {\LT@entry 
+    {3}{57.69958pt}\LT@entry 
+    {3}{40.11655pt}\LT@entry 
+    {3}{41.87653pt}\LT@entry 
+    {1}{35.10123pt}\LT@entry 
+    {1}{44.13496pt}\LT@entry 
+    {3}{37.87653pt}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.3}问题二逐箱交付时刻}{83}{subsection.B.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {B.3}{\ignorespaces 问题二80个货箱的送达与时限核对（秒）}}{83}{table.B.3}\protected@file@percent }
+\newlabel{tab:app_deliveries}{{B.3}{83}{问题二80个货箱的送达与时限核对（秒）}{table.B.3}{}}
+\newlabel{tab:app_deliveries@cref}{{[table][3][2]B.3}{[1][83][]83}{}{}{}}
+\gdef \LT@vi {\LT@entry 
+    {3}{34.78pt}\LT@entry 
+    {1}{26.06749pt}\LT@entry 
+    {1}{87.6678pt}\LT@entry 
+    {1}{254.38434pt}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.4}问题三运输任务构成}{85}{subsection.B.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {B.4}{\ignorespaces 问题三正式运输架次与原始箱号}}{85}{table.B.4}\protected@file@percent }
+\newlabel{tab:app_q3_boxes}{{B.4}{85}{问题三正式运输架次与原始箱号}{table.B.4}{}}
+\newlabel{tab:app_q3_boxes@cref}{{[table][4][2]B.4}{[1][85][]85}{}{}{}}
+\gdef \LT@vii {\LT@entry 
+    {1}{26.06749pt}\LT@entry 
+    {1}{26.06749pt}\LT@entry 
+    {1}{90.51282pt}\LT@entry 
+    {1}{26.06749pt}\LT@entry 
+    {3}{43.63211pt}\LT@entry 
+    {3}{32.84279pt}\LT@entry 
+    {1}{44.13496pt}\LT@entry 
+    {3}{32.84279pt}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.5}问题三运输执行时间表}{86}{subsection.B.5}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {B.5}{\ignorespaces 问题三正式23架次的运输资源与执行时刻（时间单位：min）}}{86}{table.B.5}\protected@file@percent }
+\newlabel{tab:q3_full_schedule}{{B.5}{86}{问题三正式23架次的运输资源与执行时刻（时间单位：min）}{table.B.5}{}}
+\newlabel{tab:q3_full_schedule@cref}{{[table][5][2]B.5}{[1][86][]86}{}{}{}}
+\gdef \LT@viii {\LT@entry 
+    {3}{42.3934pt}\LT@entry 
+    {1}{44.13496pt}\LT@entry 
+    {3}{46.3934pt}\LT@entry 
+    {1}{56.69829pt}}
+\@writefile{toc}{\contentsline {section}{\numberline {C}稳健性与敏感性完整记录}{87}{appendix.C}\protected@file@percent }
+\newlabel{app:experiments}{{C}{87}{稳健性与敏感性完整记录}{appendix.C}{}}
+\newlabel{app:experiments@cref}{{[section][3][]C}{[1][87][]87}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {C.1}试验权限与数量}{87}{subsection.C.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {C.1}{\ignorespaces 本轮执行的补充计算及其范围}}{87}{table.caption.57}\protected@file@percent }
+\newlabel{tab:app_experiment_scope}{{C.1}{87}{本轮执行的补充计算及其范围}{table.caption.57}{}}
+\newlabel{tab:app_experiment_scope@cref}{{[table][1][3]C.1}{[1][87][]87}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {C.2}问题一安全余量重求解}{87}{subsection.C.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {C.2}{\ignorespaces 重新求解的13个安全余量情景}}{87}{table.C.2}\protected@file@percent }
+\newlabel{tab:app_q1_reserve}{{C.2}{87}{重新求解的13个安全余量情景}{table.C.2}{}}
+\newlabel{tab:app_q1_reserve@cref}{{[table][2][3]C.2}{[1][87][]87}{}{}{}}
+\gdef \LT@ix {\LT@entry 
+    {1}{22.06749pt}\LT@entry 
+    {1}{26.06749pt}\LT@entry 
+    {3}{55.42714pt}\LT@entry 
+    {3}{46.3934pt}\LT@entry 
+    {1}{26.06749pt}\LT@entry 
+    {3}{32.84279pt}\LT@entry 
+    {1}{40.13496pt}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {C.3}问题二全部独立搜索结果}{88}{subsection.C.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {C.3}{\ignorespaces 20次独立搜索的全部结果}}{88}{table.C.3}\protected@file@percent }
+\newlabel{tab:app_seeds}{{C.3}{88}{20次独立搜索的全部结果}{table.C.3}{}}
+\newlabel{tab:app_seeds@cref}{{[table][3][3]C.3}{[1][88][]88}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {C.4}失效情景与修复的判定}{89}{subsection.C.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {D}复现环境、验证材料与版本范围}{89}{appendix.D}\protected@file@percent }
+\newlabel{app:reproducibility}{{D}{89}{复现环境、验证材料与版本范围}{appendix.D}{}}
+\newlabel{app:reproducibility@cref}{{[section][4][]D}{[1][89][]89}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {D.1}运行入口与数据锁}{89}{subsection.D.1}\protected@file@percent }
+\citation{ropke2006alns}
+\citation{barnhart1998branchprice}
+\citation{candidateArchive}
+\@writefile{toc}{\contentsline {subsection}{\numberline {D.2}新增计算与继承证据}{90}{subsection.D.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {D.3}方法、候选资料与本项目新增计算的来源}{90}{subsection.D.3}\protected@file@percent }
+\newlabel{app:source_provenance}{{D.3}{90}{方法、候选资料与本项目新增计算的来源}{subsection.D.3}{}}
+\newlabel{app:source_provenance@cref}{{[subsection][3][4]D.3}{[1][90][]90}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {D.1}{\ignorespaces 候选来源与新增计算的职责分离}}{91}{table.caption.58}\protected@file@percent }
+\newlabel{tab:source_responsibility}{{D.1}{91}{候选来源与新增计算的职责分离}{table.caption.58}{}}
+\newlabel{tab:source_responsibility@cref}{{[table][1][4]D.1}{[1][90][]91}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {D.4}历史最好解、有限域进展与本次复算的区别}{91}{subsection.D.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {D.5}DEM像元与连续航迹相交示意}{92}{subsection.D.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {D.1}{\ignorespaces 像元中心约定与连续航迹完整相交（机制示意，非真实航段；不识别DEM分辨率以下障碍物）}}{92}{figure.caption.59}\protected@file@percent }
+\newlabel{fig:dem_closed_cells}{{D.1}{92}{像元中心约定与连续航迹完整相交（机制示意，非真实航段；不识别DEM分辨率以下障碍物）}{figure.caption.59}{}}
+\newlabel{fig:dem_closed_cells@cref}{{[figure][1][4]D.1}{[1][92][]92}{}{}{}}
+\ttl@finishall
+\gdef \@abspage@last{92}

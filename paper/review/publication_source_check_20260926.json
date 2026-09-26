@@ -1,0 +1,23 @@
+{
+  "check": "source graph only; not page-layout validation",
+  "pdf_generated": false,
+  "loaded_tex_files": 72,
+  "unique_loaded_tex_files": 72,
+  "chapters_present": true,
+  "expanded_sections": 22,
+  "revision_tables": 12,
+  "bibliography_entries": 40,
+  "actually_cited_entries": 40,
+  "bibliography_duplicate_keys": [],
+  "unused_bibliography_entries": [],
+  "missing_citations": [],
+  "labels": 178,
+  "duplicate_labels": [],
+  "missing_references": [],
+  "referenced_images": 18,
+  "missing_images": [],
+  "environment_count_mismatches": {},
+  "source_tex_characters": 116843,
+  "CJK_characters": 42706,
+  "passed": true
+}
