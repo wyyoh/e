@@ -11,7 +11,17 @@
 | Q3 | `problems/D/q3/release_v6/time/` | 23运输+4中继；5836.969929328251 s；68.93941621018112 kWh |
 | Q4 | `problems/D/q4/CURRENT_INPUT.json` | 严格K=2缺口1；K=3缺口7 |
 
-Q2和Q3都**不宣称完整原问题全局最优**。Q3采用明确记录的 hover-compatible 中继转场模型；旧5755候选域的4中继下界和旧0.50/0.55 dB鲁棒结论不继承。Q4严格继承Q3 V6/time日程；旧relay-copy等敏感性未针对V6重跑。
+Q2和Q3都**不宣称完整原问题全局最优**。Q3采用明确记录的 hover-compatible 中继转场模型；旧5755候选域的4中继下界和旧0.50/0.55 dB鲁棒结论不继承。Q4严格继承Q3 V6/time日程；旧relay-copy等敏感性未针对V6重跑。新增压力检验的范围与结果见 `experiments/paper_robustness_20260926/`，不与旧实验混用。
+
+## 论文入口
+
+- [当前LaTeX工程](paper/latex/README.md)：从 `paper/latex/main.tex` 编译；编辑 `chapters/`、`expanded_sections/` 和 `repair_sections/`。
+- [已发布检阅PDF](paper/review/D_paper_completed_20260926.pdf)：2026-09-26发布版共92页，正文72页，40条文献及来源记录。
+- `paper/latex/main_merged.tex` 是派生阅读版；修改分章后用导出脚本更新，不作为另一套独立维护的正文。
+- 在仓库根运行 `python3 .github/scripts/ci_review.py`，在临时副本中检查与编译，输出到忽略的 `review-build/`，不改写源码和已发布PDF。
+- `main` 推送、面向 `main` 的PR和手动构建统一使用 `.github/workflows/build-review-pdf.yml`。
+
+旧连续稿、自动拆章加载器及旧流程已经归入 [论文历史目录](paper/archive/pre_cleanup_20260927/README.md)。不要删除当前 `chapters/` 后再从旧稿生成。
 
 ## 目录
 
@@ -33,5 +43,5 @@ Q2和Q3都**不宣称完整原问题全局最优**。Q3采用明确记录的 hov
 2. 旧目录、旧论文数字、有限域证书和历史搜索状态不得覆盖当前选择锁。
 3. Q1累计作业时间与Q2/Q3并行makespan不是同一指标。
 4. Q4不同型号资源不能互相抵扣；总件数不等于采购成本。
-5. 历史目录不删除，只归档；需要恢复旧路径时通过Git历史或 `archive/` 读取。
+5. 历史研究材料归档，普通编译缓存不跟踪；正式PDF、矢量图和实验日志不得一并清除。
 6. 最终投稿前仍需以当前选择锁对论文正文、附录和图表做一致性检查。

@@ -1,71 +1,44 @@
-# D题论文 LaTeX 扩写续写完成版
+# D题论文：当前LaTeX工程
 
-## 打开与编辑
+**主入口：`main.tex`。** 直接维护 `chapters/00_abstract.tex` 和 `chapters/01.tex`—`09.tex`，不通过旧连续稿生成章节。
 
-**主入口：`main.tex`。** 本包是一套完整的论文排版工程，不是仅含部分章节的增量补丁。
+## 编辑对象
 
-- `chapters/00_abstract.tex`：摘要。
-- `chapters/01.tex`—`09.tex`：第一至九章。
-- `expanded_sections/`：接入正文的22份新增方法推导、机制解释与结果分析。
-- `repair_sections/`：保留上一轮修复的搜索步骤、有效下界、联合求解与来源说明。
-- `tables/`、`revision_tables/`：完整可编辑表格；后者为12份新增描述性分析表及逐表CSV。
-- `references.bib`：40条实际引用的文献及来源记录。
-- `appendices.tex`：完整箱号、执行日程、参数记录与来源披露。
-- `figures/`、`figures_generated/`：正文引用的现有插图，包含原有矢量图形PDF，不是本轮新生成的论文PDF。
-- `main_merged.tex`：将72份实际加载的TeX文件展开后的单文件阅读/编辑版本。
+- `chapters/`：摘要与第一至九章。
+- `expanded_sections/`：接入正文的22份方法推导、机制解释和结果分析。
+- `repair_sections/`：搜索步骤、有效下界、联合求解及来源说明。
+- `tables/`、`revision_tables/`：可编辑表格及对应CSV；后者含12份扩展分析表。
+- `references.bib`：40条实际引用的文献与来源记录；来源核对见 `reference_audit.json` 和 `reference_audit.csv`。
+- `appendices.tex`：完整箱号、执行日程、参数与来源附录。
+- `figures/`、`figures_generated/`：当前编译需要的图形；矢量PDF应保留。
+- `audit_inputs/`、`revision_inputs/`、`figdata/`、`figure_inputs/`：核验、复算与图表的输入，不能按“缓存”删除。
+- `main_merged.tex`：派生阅读版。修改分章后运行 `python3 scripts/export_merged_tex.py` 更新，不并行维护两套正文。
 
-`main_merged.tex`也需与本包的`format.cls`、`references.bib`和图片目录放在同一根目录，不能只拷贝一份tex就丢弃依赖。日常维护建议编辑分章文件，再运行合并脚本。
+当前已发布PDF位于 [`../review/D_paper_completed_20260926.pdf`](../review/D_paper_completed_20260926.pdf)，为92页检阅稿，其中第一至九章正文72页。40条记录包含39条公开论文、书籍、标准或勘误以及1条已披露的候选来源记录。实际发布身份见 `../review/completed_source_identity_20260926.json`。
 
-## 本轮完成内容
+## 推荐：隔离构建
 
-本包以上一轮完整风险修复稿为基础，重新接入已保存的扩写内容，并补齐第七至九章、表格依赖、参考文献和源文件接口。扩充集中于需求结构、能量函数性质、精确组批可分离性、双资源调度、定价与下界、中继事件区间、固定结构恢复以及逐组资源核算，没有用占位段落补齐篇幅。
-
-新增12份表由锁定方案重新汇总，包括机型分工、飞机占用、逐箱交付进度、电池接续、运输和中继能耗、实际通信保障工作量及组织配置代价。它们属于对保存结果的描述性复算，不是本轮重新运行优化器所得的新最优解。
-
-参考文献共40条，其中39条为公开论文、书籍、标准或勘误，1条为已经披露的非公开候选资料记录。40条均在实际正文/附录中引用，没有使用`nocite{*}`堆积未引用条目。新增26条公开文献的核对来源与引用用途见`reference_audit.json`和`reference_audit.csv`。
-
-## 与此前版本的关系
-
-- 完整文本基础：上一轮68页风险修复稿的真实源码，不把68页旧稿改名冒充扩写成稿。
-- 扩写参考：已保存的`e6329c2bbc2cdd983c0dc412bef93d80820f2356`中间快照及本轮完成内容。
-- 本轮检查时远端main：`773567ffe32e6827889aef4f35b0d72aa8e6698f`。
-- 本包是**现在新完成的源文件交付**，不是此前所谓“96页成稿”的找回版本。
-- 本轮未修改GitHub main，也没有改写正式结果锁、物理参数或求解器。
-
-## 本轮检查（不生成论文PDF）
-
-1. 源图递归检查：第一至九章、全部输入文件、引用图片、公式标签、图表标签和BibTeX键。
-2. 19项单元检查全部通过，保留了输入哈希、箱号唯一性、正式数值、分组向量和方法来源检查。
-3. 12份新增表及匹配CSV、分析JSON共25个文件重新生成后逐字节一致。
-4. `main.tex`与`main_merged.tex`分别运行XeLaTeX **`-no-pdf`** 和BibTeX检查；不调用PDF驱动。最终缺字、未定义引用、重复标签、Overfull、Underfull和LaTeX警告均为0。
-
-这类无PDF排版处理只验证TeX处理与引用依赖，不等同于整篇PDF的逐页视觉检查。本轮未生成论文PDF，不声明正文或总PDF页数。不同字体、TeX版本与最终图表布局可能改变分页。
-
-查看：`checks/source_check.json`、`checks/unit_tests.log`、`checks/table_regeneration.json`和两个`*_tex_no_pdf.json`。
-
-## 源码自检与表格复算
-
-以下命令不生成论文PDF，也不重跑四问优化器：
+在仓库根执行：
 
 ```sh
-python scripts/check_source.py
-python -m unittest discover -s tests -v
-python scripts/build_expanded_tables.py
-python scripts/export_merged_tex.py
+python3 .github/scripts/ci_review.py
 ```
 
-需要验证TeX处理时：
+需要Python 3、git、XeLaTeX、BibTeX（或bibtex8）及pdfinfo。脚本先运行仓库整洁性回归检查，再复制当前论文到临时目录，重新执行源图检查、正文测试、BibTeX和多轮XeLaTeX。临时副本不继承旧的aux、bbl、toc或编译日志，构建结束后自动释放。
+
+新PDF、编译日志、测试记录和 `validation.json` 写入仓库根的 `review-build/`。脚本核对原论文目录和Git状态未被构建改变；已发布PDF不会被覆盖。`main`推送、PR和手动运行均使用同一份 `.github/workflows/build-review-pdf.yml`，该流程只读挂载仓库，只给产物目录写权限。
+
+GitHub Actions中的Debian工具链安装清单见工作流，已包含模板所需的 `texlive-science`、`texlive-plain-generic` 和中文字体。编译现有正文不需要重跑优化器或安装绘图依赖。
+
+## 独立工程的直接构建
+
+只有本目录的独立副本时，在该目录运行：
 
 ```sh
-python scripts/check_tex_no_pdf.py
-python scripts/check_tex_no_pdf.py --entry main_merged.tex
+python3 scripts/build_pdf.py
 ```
 
-`check_tex_no_pdf.py`需要安装XeLaTeX，以及BibTeX或bibtex8；临时XDV文件会自动删除，只保留核验日志。纯Python源图检查与新增表生成使用Python标准库；原有完整绘图/审计生成器还会使用NumPy、SciPy、pandas、matplotlib等，不是打开本包的前置要求。
-
-## 之后自行生成PDF
-
-用户需要PDF时，可在根目录以XeLaTeX编译`main.tex`：
+或执行：
 
 ```sh
 xelatex -interaction=nonstopmode -halt-on-error main.tex
@@ -74,14 +47,23 @@ xelatex -interaction=nonstopmode -halt-on-error main.tex
 xelatex -interaction=nonstopmode -halt-on-error main.tex
 ```
 
-也可使用包内`python scripts/build_pdf.py`。上述PDF生成命令**本轮没有执行**。若环境只有`bibtex8`，构建脚本会使用该备选。
+这些命令生成本目录的 `main.pdf`、辅助文件和 `build_logs/`。它们不纳入版本控制，不影响 `../review/` 的正式发布文件。需要再次跑全部测试时优先使用隔离构建，避免“独立交付包不含main.pdf”的检查被本地生成文件触发。
 
-字体文件没有随包分发。类文件保留现有字体回退，测试使用TeX可用的中文字体环境；上传到在线LaTeX环境时选择XeLaTeX。无需为编译正文重新准备几十MB的模型运行包，因为本包已包含使用到的图表与源数据摘要。
+`references.bib`是文献维护来源；本目录的 `main.bbl`由BibTeX重新生成。2026-09-26的冻结文献排版快照保存在 `../review/publication_references_20260926.bbl`，不参与当前编译。
 
-## 结果与来源说明
+## 自检与复算
 
-四问正式数值不变：问题一18架次；问题二23架次、5693.231489 s与既有有效上下界；问题三23运输+4中继、5836.969929 s；问题四两组/三组缺口1/7。
+```sh
+python3 scripts/check_source.py
+python3 scripts/build_expanded_tables.py
+python3 scripts/export_merged_tex.py
+python3 scripts/check_tex_no_pdf.py
+```
 
-保存方案的名义可行性、有限预算搜索、固定方案抗扰动和允许修复后的结果分别呈现。来源披露及历史记录状态仍保留在附录：候选资料的作者/团队归属/授权待核验，历史最好解的全程搜索日志未补造。这些事项没有通过删除段落或修改方法名称来规避。
+上述脚本各有明确用途：源图检查不等于页面视觉验收；表格复算不重跑优化器；`check_tex_no_pdf.py`不生成PDF。检查输出可能更新 `checks/` 下的记录；正式发布证据另保存在 `../review/`。无PDF检查日志和普通TeX中间输出已按论文路径忽略，不使用全仓 `*.pdf` 或 `*.log` 忽略规则。
 
-`provenance/previous_delivery/`为历史交付说明，里面的旧页数和检查结果仅指旧版本；本轮以根目录README及`checks/`为准。
+## 版本与历史
+
+本工程是实际完成的92页版，不是此前未完成的96页扩写检查点。旧 `source_main.tex`、`source_loader.tex`、缺图检阅入口、旧排版片段及改稿说明已移至 [`../archive/pre_cleanup_20260927/`](../archive/pre_cleanup_20260927/README.md)，不再作为当前入口。当前源码缺章时应恢复对应Git版本，不能运行旧加载器覆盖人工维护的章节。
+
+2026-09-26发布身份记录中的119个哈希描述当时交付快照；本次README导航修改单独记录，原README保留于归档，不改写历史身份记录。正文TeX、模型参数、正式结果锁、图表和验证数据保持不变。字体文件不随仓库分发。

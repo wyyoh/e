@@ -1,18 +1,17 @@
 name: Build review PDF
 
 on:
-  workflow_dispatch:
   push:
     branches: [main]
-    paths:
-      - 'paper/latex/**'
-      - '.github/workflows/build-review-pdf.yml'
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: read
 
 concurrency:
-  group: review-pdf-${{ github.ref }}
+  group: review-pdf-${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -21,27 +20,29 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
-      - name: Check independent chapters and compile
+        with:
+          persist-credentials: false
+      - name: Validate repository and build in an isolated copy
         run: |
           set -euo pipefail
           mkdir -p review-build
-          docker run --rm -v "$PWD:/work" -w /work debian:trixie-slim bash -lc '
-            set -euo pipefail
-            export DEBIAN_FRONTEND=noninteractive
-            apt-get update -qq
-            apt-get install -y --no-install-recommends python3 texlive-xetex texlive-lang-chinese texlive-latex-extra texlive-science texlive-plain-generic texlive-fonts-recommended texlive-bibtex-extra fonts-noto-cjk fonts-liberation fonts-liberation2 fonts-croscore poppler-utils >/tmp/tex-install.log
-            cd paper/latex
-            python3 scripts/check_source.py > ../../review-build/source-check.json
-            python3 -m unittest discover -s tests -v > ../../review-build/tests.log 2>&1
-            python3 scripts/build_pdf.py > ../../review-build/build-console.log 2>&1
-            cp main.pdf ../../review-build/D_paper_review.pdf
-            cp main.log ../../review-build/main.log
-            pdfinfo main.pdf > ../../review-build/pdfinfo.txt
-          '
+          docker run --rm \
+            -v "$PWD:/work:ro" \
+            -v "$PWD/review-build:/work/review-build" \
+            -w /work -e GITHUB_ACTIONS=true -e PYTHONDONTWRITEBYTECODE=1 -e GIT_OPTIONAL_LOCKS=0 \
+            debian:trixie-slim bash -lc '
+              set -euo pipefail
+              export DEBIAN_FRONTEND=noninteractive
+              apt-get update -qq
+              apt-get install -y --no-install-recommends git ca-certificates python3 texlive-xetex texlive-lang-chinese texlive-latex-extra texlive-science texlive-plain-generic texlive-fonts-recommended texlive-bibtex-extra fonts-noto-cjk fonts-liberation fonts-liberation2 fonts-croscore poppler-utils >/tmp/tex-install.log
+              git config --global --add safe.directory /work
+              python3 .github/scripts/ci_review.py
+            '
       - name: Upload PDF and verification logs
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: paper-review-pdf
           path: review-build/
+          if-no-files-found: error
           retention-days: 14
